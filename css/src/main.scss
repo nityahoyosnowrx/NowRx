@@ -1,0 +1,923 @@
+@import '~foundation-sites/scss/foundation.scss';
+
+@import 'currentfoundation.scss';
+
+
+
+.h1, .h2, h1, h2 {
+    margin-bottom: 1rem;
+}
+
+
+
+/* # Top Bar and Title Bar
+================================================== */
+.top-bar {
+	font-size: 1.125rem;
+	font-family: 'proxima-soft', sans-serif;
+	padding: 30px 20px;
+}
+.top-bar .main-nav-logo {
+	width: 158px;
+	float: left;
+	margin-right: 20px;
+	position: relative;
+	top: 3px;
+}
+.top-bar .button {
+	font-size: 1rem;
+}
+.top-bar a {
+	color: #192d3e;
+}
+.top-bar a.button {
+	color: #ffffff;
+	font-size: 1.125rem;
+	margin-left: 1.25rem;
+}
+
+.top-bar,
+.top-bar ul {
+	background: #ffffff;
+}
+
+.title-bar {
+	display: none;
+	padding: 1.5em;
+	position: relative;
+	background: transparent;
+}
+.title-bar .main-nav-logo {
+	width: 150px;
+}
+
+/* # Home Hero
+================================================== */
+section.hero-home {
+	padding: 3.75rem 0;
+}
+section.hero-home p {
+	margin-bottom: 0;
+}
+section.hero-home .benefits {
+	margin-bottom: 1.25rem;
+}
+section.hero-home img.icon-right-arrow {
+	width: 16px;
+	margin-right: 10px;
+	position: relative;
+	top: -1px;
+}
+section.hero-home h1 {
+	font-size: 4.5rem;
+	letter-spacing: -1px;
+	font-weight: 800;
+	line-height: 1em;
+}
+section.hero-home .orbit-image {
+	border-radius: 80px 0;
+}
+
+/* # Panel - Reversed
+================================================== */
+section.how-it-works {
+	padding: 5rem 0;
+}
+section.how-it-works .pre-headline {
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	font-size: 1.125rem;
+	color: #ffffff;
+}
+section.how-it-works .headline {
+	text-align: center;
+	font-size: 3.75rem;
+	letter-spacing: -1px;
+	font-weight: 800;
+	margin-bottom: 30px;
+}
+section.how-it-works h3 {
+	font-size: 1.375rem;
+	font-weight: 700;
+	position: relative;
+}
+section.how-it-works .steps {
+	margin-top: 5rem;
+	text-align: center;
+}
+section.how-it-works .step {
+	font-size: 50px;
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: -80px;
+	opacity: 1;
+	text-shadow: 0px 4px rgba(0, 0, 0, 0.15);
+}
+section.how-it-works.panel--primary {
+	background-color: #0088ce;
+	color: #ffffff;
+	border-radius: 80px 0;
+}
+section.how-it-works.panel--primary p {
+	font-size: 1.1875rem;
+}
+section.how-it-works.panel--primary.panel--cta {
+	background: #0088ce url('../images/cta-background-dots.svg') no-repeat;
+	background-position: center bottom;
+	background-size: 410px;
+}
+section.how-it-works.panel--primary.panel--cta--doctors {
+	background: #0088ce url('../images/cta-background-dots.svg') no-repeat;
+	background-position: center bottom;
+	background-size: 410px;
+}
+section.how-it-works.panel--primary .button {
+	background: #254e89;
+	margin-bottom: 0;
+}
+
+@media screen and (max-width: 992px) {
+	section.how-it-works .hiw-cell {
+		padding: 30px 30px;
+	}
+}
+
+/* # Button
+================================================== */
+.button {
+	font-size: 1.25rem;
+	border-radius: 30px;
+}
+.button.shadow {
+	-webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
+	box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
+}
+.button.secondary {
+	background: #d0103a;
+}
+.button.secondary:hover {
+	background: #d0103a;
+}
+
+/* # Hero - Subpage
+================================================== */
+section.hero--sub-page {
+	padding: 3.125rem 0;
+}
+section.hero--sub-page h1 {
+	margin-bottom: 2.5rem;
+}
+.page-template-page-get-started section.hero--sub-page h1 {
+	margin-bottom: 1rem;
+}
+.page-template-page-locations section.hero--sub-page h1 {
+	margin-bottom: 0;
+}
+
+/* # Hello Bar
+================================================== */
+.hello-bar {
+	color: #ffffff;
+	background: #00a4bd;
+	-webkit-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.15);
+	box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.15);
+	height: 55px;
+	font-size: 1rem;
+	font-weight: 600;
+	display: block;
+	line-height: 55px;
+	position: relative;
+}
+.hello-bar .button.hollow {
+	position: relative;
+	top: 8px;
+	border-color: #ffffff;
+	color: #ffffff;
+}
+.hello-bar .phone {
+	display: flex;
+    margin-right: 30px;
+    position: relative;
+    right: 0;
+    top: 0;
+    align-self: flex-end;
+    margin-left: auto;
+    margin: 0;
+}
+.hello-bar a {
+	color: inherit;
+	margin: 0 auto;
+}
+
+/* # Global Padding
+================================================== */
+.padded-section {
+	padding-top: 2.5rem;
+	padding-bottom: 2.5rem;
+}
+
+.margin-bottom {
+	margin-bottom: 2.5rem;
+}
+
+.margin-top {
+	margin-top: 2.5rem;
+}
+
+/* # Borders
+================================================== */
+.border-styled {
+	border-radius: 0 5rem;
+}
+
+.border-styled.small {
+	border-radius: 0 3.125rem;
+}
+
+/* # Footer
+================================================== */
+.footer {
+	padding: 60px 0 0;
+}
+.footer .text-small {
+	font-size: 0.875rem;
+}
+.footer .logo {
+	width: 122px;
+}
+.footer a {
+	color: #192d3e;
+}
+.footer .menu a {
+	padding-left: 0px;
+	font-weight: normal;
+}
+.footer .disclaimer {
+	margin-top: 2rem;
+	font-size: 0.875rem;
+	color: #999;
+}
+.footer .disclaimer hr {
+	border-bottom: 1px solid #e5e5e5;
+}
+.footer h6 {
+	font-family: 'proxima-soft', sans-serif;
+	font-weight: 800;
+	color: #254e89;
+}
+
+/* # Testimonials
+================================================== */
+.testimonials-section {
+	padding: 10px 0px 30px;
+}
+
+.testimonials-section .testimonial {
+	padding: 50px 0px 15px;
+}
+
+.testimonials-section .testimonial p {
+	font-size: 1.25rem;
+}
+
+.testimonials-section .testimonial-image {
+	position: relative;
+}
+
+.testimonials-section .testimonial-copy {
+	padding-left: 2rem;
+}
+
+.testimonials-section .testimonial cite {
+	font-size: 1em;
+	font-style: normal;
+}
+
+.testimonials-section-2 {
+	background: #e5f3fa;
+	margin-top: 3rem;
+	padding: 10px 0px 30px;
+}
+
+.testimonials-section-2 .testimonial {
+	padding: 50px 0px 15px;
+}
+
+.testimonials-section-2 .testimonial p {
+	font-size: 1.25rem;
+}
+
+.testimonials-section-2 .testimonial-image {
+	position: relative;
+}
+
+.testimonials-section-2 .testimonial-copy {
+	padding-left: 2rem;
+}
+
+.testimonials-section-2 .testimonial cite {
+	font-size: 1em;
+	font-style: normal;
+}
+/*
+.testimonials-section-2 .orbit-bullets button {
+  width: .5rem;
+  height: .5rem;
+  background-color: #e5f3fa;
+} */
+
+#get-started-carousel .get-started-bullets.is-active {
+	background-color: #737373;
+}
+
+#get-started-carousel .get-started-bullets {
+	width: 3rem;
+	height: 0.25rem;
+	background-color: #ced4db;
+	border-radius: 1rem;
+	cursor: pointer;
+}
+
+.get-started-bullets.is-active {
+	background-color: #616161;
+}
+
+.testimonials-main,
+.disclaimer-main {
+	margin-top: 1rem;
+}
+
+.testimonial-image-wrapper {
+	position: relative;
+}
+
+.testimonial-image {
+	z-index: 1;
+	position: relative;
+}
+
+.testimonial-image-background {
+	border: 2px solid #ccc;
+	background: #eee;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0.8rem;
+	left: 0.8rem;
+}
+
+.testimonials-area h4 {
+	font-size: 2rem;
+	font-weight: 100;
+	text-align: left;
+	color: #126f9e;
+}
+
+.testimonials-carousel-title h4 {
+	color: #d0103a;
+}
+
+.testimonial-copy p,
+.testimonial-copy cite {
+	font-size: 1.2rem;
+	line-height: 1.5rem;
+	text-align: left;
+}
+
+.testimonials-area {
+	margin-bottom: 1rem;
+}
+
+/* # Hubspot Form
+================================================== */
+
+form#hsForm_07939729-ecdf-4ea3-8cd5-56e0d491b44b input[type='text'],
+form#hsForm_07939729-ecdf-4ea3-8cd5-56e0d491b44b input[type='tel'],
+form#hsForm_07939729-ecdf-4ea3-8cd5-56e0d491b44b input[type='email'],
+form#hsForm_07939729-ecdf-4ea3-8cd5-56e0d491b44b textarea {
+	width: 100%;
+}
+
+form#hsForm_07939729-ecdf-4ea3-8cd5-56e0d491b44b textarea {
+	border: 0.15rem solid #0088ce;
+	height: 7rem;
+	font-size: 1.2rem;
+	resize: none;
+}
+
+@media (min-width: 481px) {
+	form#hsForm_07939729-ecdf-4ea3-8cd5-56e0d491b44b .hs-form-field.hs-firstname,
+	form#hsForm_07939729-ecdf-4ea3-8cd5-56e0d491b44b .hs-form-field.hs-lastname {
+		width: calc(50% - 0.5rem);
+	}
+
+	form#hsForm_07939729-ecdf-4ea3-8cd5-56e0d491b44b .hs-firstname {
+		margin-right: 0.5rem;
+	}
+
+	form#hsForm_07939729-ecdf-4ea3-8cd5-56e0d491b44b .hs-lastname {
+		margin-left: 0.5rem;
+	}
+}
+
+form#hsForm_07939729-ecdf-4ea3-8cd5-56e0d491b44b .input {
+	margin-right: 0;
+}
+
+form#hsForm_07939729-ecdf-4ea3-8cd5-56e0d491b44b ul.inputs-list {
+	margin-left: 0;
+	margin-bottom: 0.5rem;
+	list-style-type: none;
+}
+
+form#hsForm_07939729-ecdf-4ea3-8cd5-56e0d491b44b input[type='text'],
+form#hsForm_07939729-ecdf-4ea3-8cd5-56e0d491b44b input[type='tel'],
+form#hsForm_07939729-ecdf-4ea3-8cd5-56e0d491b44b input[type='email'] {
+	border-top: 0;
+	border-left: 0;
+	border-right: 0;
+	border-bottom: 0.15rem solid #0088ce;
+	box-shadow: none;
+	padding: 0.5rem 0;
+	font-size: 1.2rem;
+	line-height: 1.5rem;
+}
+
+.hs_firstname label,
+.hs_lastname label,
+.hs_phone label,
+.hs_email label,
+.hs_city label {
+	display: none;
+}
+
+.hs_firstname::-webkit-input-placeholder::before {
+	color: #666;
+	content: 'Line 1\A Line 2\A Line 3\A';
+}
+
+.hs_switch_to_nowrx_pharmacy label {
+	font-size: 1.2rem;
+	line-height: 1.5rem;
+	display: flex;
+	margin-bottom: 1rem;
+}
+
+.hs_switch_to_nowrx_pharmacy > label,
+.hs_message_to_nowrx > label {
+	font-size: 1.2rem;
+	line-height: 1.5rem;
+	color: #126f9e;
+}
+
+.hs_message_to_nowrx > label {
+	margin-bottom: 1rem;
+}
+
+.hs_switch_to_nowrx_pharmacy > label {
+	margin-bottom: 1rem;
+}
+
+.hs_switch_to_nowrx_pharmacy input[type='checkbox'] {
+	-webkit-appearance: none;
+	background-color: #c7d0d7;
+	padding: 0.75rem;
+	display: inline-block;
+	position: relative;
+	margin-bottom: 0;
+	max-height: 26px;
+}
+
+.hs_switch_to_nowrx_pharmacy input[type='checkbox']:focus {
+	outline: none;
+	outline-style: none;
+}
+
+.hs_switch_to_nowrx_pharmacy span {
+	margin: auto 0;
+}
+
+.hs_switch_to_nowrx_pharmacy input[type='checkbox']:checked {
+	background-color: #0088ce;
+	color: #fff;
+}
+
+.hs_switch_to_nowrx_pharmacy input[type='checkbox']:after {
+	content: '✕';
+	font-size: 1rem;
+	position: absolute;
+	color: #fff;
+	opacity: 0;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.hs_switch_to_nowrx_pharmacy input[type='checkbox']:checked:after {
+	opacity: 1;
+}
+
+form#hsForm_07939729-ecdf-4ea3-8cd5-56e0d491b44b input[type='submit'] {
+	display: inline-block;
+	vertical-align: middle;
+	padding: 0.75em 2em;
+	border: 1px solid transparent;
+	border-radius: 0;
+	-webkit-transition: background-color 0.25s ease-out, color 0.25s ease-out;
+	transition: background-color 0.25s ease-out, color 0.25s ease-out;
+	font-family: inherit;
+	-webkit-appearance: none;
+	line-height: 1;
+	text-align: center;
+	cursor: pointer;
+	background-color: #27cc00;
+	color: #ffffff;
+	border-radius: 8px;
+}
+
+label.hs-error-msg {
+	background: #ff494941;
+	color: #a01616;
+	width: fit-content;
+	padding: 0.25rem 0.5rem;
+	border-radius: 1rem;
+	font-size: 0.75rem;
+	line-height: 1rem;
+	margin-bottom: 1rem;
+}
+
+/* # Featured In Logos
+================================================== */
+.featured-in-section {
+	background: #ffffff;
+	padding: 3.125rem 0px;
+}
+.featured-in-section p {
+	margin-bottom: 0px;
+}
+.featured-in-section-logo {
+	height: 30px;
+	margin: 0px 20px;
+}
+
+/* # Modal - Reveal
+================================================== */
+.reveal {
+	border: none;
+	-webkit-box-shadow: 0px 20px 40px 1px rgba(0, 0, 0, 0.25);
+	box-shadow: 0px 20px 40px 1px rgba(0, 0, 0, 0.25);
+	border-radius: 0 30px;
+}
+
+.reveal-overlay {
+	background-color: rgba(37, 78, 137, 0.95);
+}
+
+.slide-in-down.mui-enter.mui-enter-active,
+.slide-out-up.mui-leave.mui-leave-active {
+	-webkit-transition-duration: 100ms;
+	transition-duration: 100ms;
+}
+
+/* # NowRx In The News
+================================================== */
+section.in-the-news {
+	padding: 5.625rem 0;
+}
+section.in-the-news img {
+	margin-top: 1.25rem;
+	margin-bottom: 1.25rem;
+}
+section.in-the-news a {
+	color: inherit;
+}
+section.in-the-news h5 {
+	font-weight: 600;
+}
+
+/* # Careers
+================================================== */
+.accordion-title {
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+.pre-headline,
+.button {
+	font-family: 'proxima-soft', sans-serif;
+}
+
+.pre-headline {
+	font-weight: 700;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 800;
+}
+
+h1 {
+	font-weight: 800;
+}
+
+h2 {
+	line-height: 1em;
+	font-size: 44px;
+	font-weight: 800;
+}
+
+
+
+.about-us--team-member-title {
+	font-size: 1.125rem;
+	font-weight: 800;
+	font-family: 'proxima-soft', sans-serif;
+	color: #254e89;
+}
+
+.text-small {
+	font-size: 1rem;
+}
+
+.handwriting {
+	font-family: 'rollerscript-smooth', sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 2.5rem;
+	color: #0088ce;
+}
+
+.headline {
+	font-size: 4.5rem;
+	font-weight: 800;
+	line-height: 1em;
+	letter-spacing: -1px;
+}
+
+.pre-headline {
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	font-size: 1.125rem;
+	color: #0088ce;
+}
+
+.blog-content {
+	// padding: 6rem;
+}
+
+/* #Get Started
+================================================== */
+
+.get-started-hero {
+	margin-top: -1rem;
+}
+
+.get-started-headline {
+	font-size: 4rem;
+	line-height: 4.2rem;
+	color: #0088ce;
+}
+
+.get-started-post-headline {
+	font-size: 2rem;
+	font-weight: 100;
+	line-height: 2.5rem;
+	color: #ffffff;
+	margin-bottom: 1.2rem;
+}
+
+.get-started-disclaimer {
+	color: #126f9e;
+	font-weight: 800;
+	margin-top: 1.5rem;
+}
+
+.form-fill {
+	color: #0088ce;
+	text-align: left;
+}
+
+/* # Off Canvas
+================================================== */
+.off-canvas {
+	background: #ffffff;
+	color: #ffffff;
+	padding: 15px 0;
+}
+
+.off-canvas a {
+	font-size: 1.5rem;
+}
+
+/* # Hubspot Styles
+================================================== */
+.submitted-message {
+	text-align: center;
+	background: #00a4bd;
+	color: #ffffff;
+	padding: 1rem;
+	border-radius: 10px;
+}
+
+.hubspot-link__container {
+	display: none;
+}
+
+/* # Sticky Bottom Right CTA
+================================================== */
+.sticky-cta-bottom-right {
+	width: 300px;
+	height: 300px;
+	text-align: center;
+}
+
+/* # Top Bar Sizing
+================================================== */
+.top-bar a,
+.top-bar a.button {
+	font-size: 1rem;
+}
+.menu a,
+.menu .button {
+	padding: 0.7rem 0.7rem;
+}
+
+/* # Single Post
+================================================== */
+
+.single-post .single-title {
+	font-size: 54px;
+    margin-right: 30px;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-top: 0;
+    width: 100%;
+    margin-bottom: 15px;
+	color: #000;
+    @media screen and (max-width:992px){
+        font-size: 35px;
+        
+    }
+}
+
+/* # Styles the new Blog Index Layout with 3 featued posts up top
+================================================== */
+
+.container-featured-posts,
+.container-recent-posts {
+	margin-bottom: 80px;
+}
+.container-featured-posts .headline-container,
+.container-recent-posts .headline-container {
+	margin-bottom: 40px;
+}
+.featured-post--card {
+	margin-bottom: 2rem;
+	box-shadow: 10px 0px 50px 0px rgba(0, 0, 0, 0.15);
+	border-radius: 3px;
+}
+.featured-post-link-title-container {
+	padding: 0px 20px 20px;
+}
+a.featured-post-link-title {
+	color: inherit;
+	font-weight: 600;
+}
+.post--card {
+	margin-bottom: 2rem;
+	box-shadow: 10px 0px 50px 0px rgba(0, 0, 0, 0.15);
+	border-radius: 3px;
+}
+.post-link-title-container {
+	padding: 0 20px 10px;
+}
+a.post-link-title {
+	color: inherit;
+	font-weight: 600;
+	font-size: 16px;
+}
+.pagination {
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+/* # Mobile
+================================================== */
+/* Small only */
+@media screen and (max-width: 39.9375em) {
+	body {
+		font-size: 1rem;
+	}
+	section.hero-home {
+		text-align: center;
+		padding: 0;
+	}
+	section.hero-home .orbit {
+		margin-bottom: 1rem;
+	}
+	section.hero-home .orbit-image {
+		border-radius: 3.125rem 0;
+	}
+	section.hero-home h1 {
+		font-size: 3rem;
+		letter-spacing: 0;
+		text-align: center;
+	}
+	section.hero--sub-page {
+		padding: 3.125rem 0;
+	}
+	section.how-it-works {
+		padding: 3.125rem 0;
+	}
+	section.how-it-works .steps {
+		text-align: left;
+		margin-top: 2rem;
+	}
+	section.how-it-works .steps .step {
+		position: relative;
+		font-size: inherit;
+		top: 0;
+		text-shadow: none;
+	}
+	h2 {
+		font-size: 2rem;
+	}
+	.about-us--team-member-title {
+		font-size: 1rem;
+	}
+	.padded-section {
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+	}
+	.testimonials-section .testimonial p,
+	.testimonials-section-2 .testimonial p {
+		font-size: 1rem;
+	}
+	.testimonials-section .testimonial-copy,
+	.testimonials-section-2 .testimonial-copy {
+		padding: 0;
+	}
+	section.how-it-works.panel--primary {
+		border-radius: 0;
+	}
+	.border-styled {
+		border-radius: 0 3.125rem;
+	}
+	.border-styled.small {
+		border-radius: 0 1.25rem;
+	}
+	.featured-in-section-logo {
+		height: 17px;
+	}
+	.pre-headline {
+		letter-spacing: 0 !important;
+		text-align: center;
+		font-size: 1rem !important;
+	}
+	.headline {
+		font-size: 3rem;
+	}
+	section.how-it-works .headline {
+		font-size: 1.875rem;
+		letter-spacing: 0;
+	}
+	br {
+		display: none;
+	}
+	ul.footer-menu-col {
+		margin-bottom: 2rem;
+	}
+	.switch-back-image {
+		margin-bottom: 2rem;
+	}
+	.reveal {
+		border-radius: 0;
+	}
+	.blog-content {
+		padding: 1rem;
+		@media screen and (max-width: 900px) {
+			padding: 1rem 0;
+		}
+	}
+}
+
+/* Medium and up */
+@media screen and (min-width: 40em) {
+}
+
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+}
+
+/* Large and up */
+@media screen and (min-width: 64em) {
+}
+
+/* Large only */
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {
+}

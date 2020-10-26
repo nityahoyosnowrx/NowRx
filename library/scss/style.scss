@@ -1,0 +1,231 @@
+@import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=bb26f425-ca3f-4db4-b378-127999909b38");
+@font-face{
+    font-family:"ITC Avant Garde";
+    src:url("../fonts/07413afc-2280-4cfc-8860-184839a93fa4.eot?#iefix");
+    src:url("../fonts/07413afc-2280-4cfc-8860-184839a93fa4.eot?#iefix") format("eot"),url("../fonts/6f1146c0-9c0b-4949-866d-9affc396531f.woff2") format("woff2"),url("../fonts/2c50f982-bb73-4891-8d0e-587c1136c2e5.woff") format("woff"),url("../fonts/abf065fe-a1ab-4013-8c49-45ce7f8ac828.ttf") format("truetype"),url("../fonts/33f16cdf-c09a-4344-89ce-e17a5ecf4664.svg#33f16cdf-c09a-4344-89ce-e17a5ecf4664") format("svg");
+    font-weight: normal;
+}
+@font-face{
+    font-family:"ITC Avant Garde";
+    src:url("../fonts/7882e98f-91dc-4562-9ae7-89142461ea7d.eot?#iefix");
+    src:url("../fonts/7882e98f-91dc-4562-9ae7-89142461ea7d.eot?#iefix") format("eot"),url("../fonts/4cadb55f-822a-4a35-8918-becfc5a866a3.woff2") format("woff2"),url("../fonts/af007af5-dcfa-465a-a278-47ab3eb9a589.woff") format("woff"),url("../fonts/9a9365bb-bc37-4768-8d00-df0bdf405665.ttf") format("truetype"),url("../fonts/4443cc42-374b-40e5-968c-b29f549f0835.svg#4443cc42-374b-40e5-968c-b29f549f0835") format("svg");
+    font-weight: bold;
+}
+
+
+h1, h2, h3 {
+	font-family:"ITC Avant Garde";
+}
+
+.button {
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+
+.body {
+	color: #2d2e30;
+}
+
+.footer {
+	margin-top: 1.5rem;
+  padding-bottom: 1.875rem;
+  padding-top: 1.5em;
+  color: #73838e;
+  background-color: #e6f1ff;
+}
+
+.footer hr {
+  border-bottom: 1px solid #d9e1e7;
+}
+
+.top-bar a {
+	color: #2d2e30;
+}
+
+.footer a {
+  color: #00508c;
+}
+
+.top-bar, .top-bar ul {
+	background-color: #fff;
+}
+
+.button.secondary {
+	color: #fff;
+}
+
+.title-bar {
+  background: #fff;
+  padding: 1rem;
+}
+
+.menu-icon {
+  position: absolute;
+  right: 1em;
+}
+
+.title-bar .menu-icon::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #0a0a0a;
+  box-shadow: 0 7px 0 #0a0a0a, 0 14px 0 #0a0a0a;
+  content: '';
+}
+
+#main article p,
+#main article li {
+	font-size: 1.25rem;
+}
+
+/*! Made with Bones: http://themble.com/bones :) */
+
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Main Stylesheet
+
+Here's where the magic happens. Here, you'll see we are calling in
+the separate media queries. The base mobile goes outside any query
+and is called at the beginning, after that we call the rest
+of the styles inside media queries.
+
+Helpful articles on Sass file organization:
+http://thesassway.com/advanced/modular-css-naming-conventions
+
+******************************************************************/
+
+/*********************
+IMPORTING PARTIALS
+These files are needed at the beginning so that we establish all
+our mixins, functions, and variables that we'll be using across
+the whole project.
+*********************/
+
+// normalize: http://necolas.github.io/normalize.css/
+// @import "partials/normalize";
+
+// Sass variables
+// @import "partials/variables";
+
+// typography
+// @import "partials/typography";
+
+// Sass functions
+// @import "partials/functions";
+
+// import mixins
+// @import "partials/mixins";
+
+// the grid
+// @import "partials/grid";
+
+/*********************
+IMPORTING MODULES
+Modules are reusable blocks or elements we use throughout the project.
+We can break them up as much as we want or just keep them all in one.
+I mean, you can do whatever you want. The world is your oyster. Unless
+you hate oysters, then the world is your peanut butter & jelly sandwich.
+*********************/
+
+// alert boxes
+// @import "modules/alerts";
+
+// buttons
+// @import "modules/buttons";
+
+// forms (inputs & labels)
+// @import "modules/forms";
+
+/*********************
+BASE (MOBILE) SIZE
+This are the mobile styles. It's what people see on their phones. If
+you set a great foundation, you won't need to add too many styles in
+the other stylesheets. Remember, keep it light: Speed is Important.
+*********************/
+
+// styles in base.scss
+// @import "breakpoints/base";
+
+/*********************
+LARGER MOBILE DEVICES
+This is for devices like the Galaxy Note or something that's
+larger than an iPhone but smaller than a tablet. Let's call them
+tweeners.
+*********************/
+@media only screen and (min-width: 481px) {
+
+	// styles in 481up.scss
+	// @import "breakpoints/481up";
+
+} // end of media query
+
+/*********************
+TABLET & SMALLER LAPTOPS
+This is the average viewing window. So Desktops, Laptops, and
+in general anyone not viewing on a mobile device. Here's where
+you can add resource intensive styles.
+*********************/
+@media only screen and (min-width: 768px) {
+
+	// styles in 768up.scss
+	// @import "breakpoints/768up";
+
+} // end of media query
+
+/*********************
+DESKTOP
+This is the average viewing window. So Desktops, Laptops, and
+in general anyone not viewing on a mobile device. Here's where
+you can add resource intensive styles.
+*********************/
+@media only screen and (min-width: 1030px) {
+
+	// styles in 1030up.scss
+	// @import "breakpoints/1030up";
+
+} // end of media query
+
+/*********************
+LARGE VIEWING SIZE
+This is for the larger monitors and possibly full screen viewers.
+*********************/
+@media only screen and (min-width: 1240px) {
+
+	// styles in 1240up.scss
+	// @import "breakpoints/1240up";
+
+} // end of media query
+
+/*********************
+RETINA (2x RESOLUTION DEVICES)
+This applies to the retina iPhone (4s) and iPad (2,3) along with
+other displays with a 2x resolution. You can also create a media
+query for retina AND a certain size if you want. Go Nuts.
+*********************/
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (min--moz-device-pixel-ratio: 1.5),
+       only screen and (min-device-pixel-ratio: 1.5) {
+
+	// styles in 2x.scss
+	// @import "breakpoints/2x";
+
+} // end of media query
+
+/*********************
+PRINT STYLESHEET
+Feel free to customize this. Remember to add things that won't make
+sense to print at the bottom. Things like nav, ads, and forms should
+be set to display none.
+*********************/
+@media print {
+
+	// styles in print.scss
+	// @import "partials/print";
+
+}
