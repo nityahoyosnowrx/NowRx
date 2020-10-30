@@ -2,14 +2,11 @@ body {
 	word-break: break-word;
 }
 
-
 // header button
-.top-bar{
-	a.button{
-		
+.top-bar {
+	a.button {
 	}
 }
-
 
 // Hello Bar
 .item-container {
@@ -26,7 +23,7 @@ header {
 	}
 }
 
-header.article-header.entry-header{
+header.article-header.entry-header {
 	width: 100%;
 }
 
@@ -119,14 +116,14 @@ a.ArticleHeader-eyebrow {
 		justify-content: center;
 		padding-left: 15px;
 
-		a.author-name {
+		.author-name {
 			font-weight: 600;
 			color: #000;
 			font-size: 12px;
 			letter-spacing: 0.46px;
 		}
 
-		a.author-twitter {
+		.author-twitter {
 			font-weight: 600;
 			color: #2077b6;
 			font-size: 10px;
@@ -150,6 +147,9 @@ a.ArticleHeader-eyebrow {
 	padding: 30px 0 10px;
 	border-bottom: 1px dotted #9b9b9b;
 	margin: 0 0 30px;
+	img {
+		border-radius: 0 15px;
+	}
 	figcaption {
 		font-weight: 400;
 		color: #747474;
@@ -233,7 +233,7 @@ a.ArticleHeader-eyebrow {
 
 .main-content article {
 	width: 100%;
-	max-width: calc(100% - 300px);
+	max-width: calc(100% - 30%);
 	@media screen and (max-width: 992px) {
 		max-width: 100%;
 	}
@@ -241,9 +241,9 @@ a.ArticleHeader-eyebrow {
 
 .sidebar-articles {
 	width: 100%;
-	max-width: 300px;
+	max-width: 30%;
 	padding-left: 30px;
-	margin-top: 145px;
+	margin-top: 305px;
 	@media screen and (max-width: 992px) {
 		padding: 0;
 		max-width: 100%;
@@ -293,15 +293,36 @@ li.MostPopular-addIndex a.MostPopular-link {
 		margin: 20px 0 0;
 	}
 }
+a.MostPopular-link.title {
+	padding-left: 20px;
+}
 
 li.MostPopular-addIndex a.MostPopular-link {
 	span.posthumb {
+		background-color: #eee;
+		width: 100%;
+		padding-top: 56.25%;
+		position: relative;
 		display: block;
+		border-radius: 0 15px;
+		overflow: hidden;
 		padding-right: 20px;
 	}
 	img {
-		border-radius: 0 15px;
+		width: 100%;
+		border-radius: 0;
+		height: 100%;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		right: 0;
 		display: block;
+		-o-object-fit: cover;
+		object-fit: cover;
+		-o-object-position: center;
+		object-position: center;
+		z-index: 123123;
+		top: 0;
 		@media screen and (max-width: 992px) {
 			padding: 0;
 			margin: 0;
@@ -338,14 +359,14 @@ ol.MostPopular-list {
 section#blog {
 	margin: 60px 0 0;
 	@media screen and (max-width: 992px) {
-		margin:  0 0;
+		margin: 0 0;
 	}
 }
 
 section.entry-content.cf {
 	margin-top: 30px;
 	@media screen and (max-width: 992px) {
-		padding:0;
+		padding: 0;
 	}
 }
 
@@ -361,6 +382,7 @@ section.entry-content.cf {
 .morefrom {
 	display: flex;
 }
+
 .newsletter-title h2 {
 	font-size: 34px;
 	margin-right: 30px;
@@ -370,6 +392,11 @@ section.entry-content.cf {
 	width: 100%;
 	margin-bottom: 5px;
 	color: #000;
+}
+section.in-the-news.padded-section {
+	.large-4.cell.morefrom {
+		flex-direction: row;
+	}
 }
 
 .morefrom img.border-styled {
@@ -402,8 +429,8 @@ section.entry-content.cf {
 	line-height: 22px;
 	display: block;
 	@media screen and (max-width: 992px) {
-		font-size:26px;
-	line-height: 32px;
+		font-size: 26px;
+		line-height: 32px;
 	}
 }
 
@@ -469,7 +496,7 @@ span.arrow-in {
 	margin: 60px auto 0;
 }
 header.page {
-	margin-bottom: 60px;
+	margin-bottom: 30px;
 
 	h1 {
 		font-size: 54px;
@@ -488,6 +515,9 @@ header.page {
 .blog-posts {
 	display: flex;
 	flex-wrap: wrap;
+	position: relative;
+	z-index: 1;
+
 	@media screen and (max-width: 992px) {
 		flex-direction: column;
 	}
@@ -513,14 +543,28 @@ header.page {
 	.rightcolumn {
 		width: 30%;
 		flex: 0 0 30%;
+		padding-bottom: 60px;
+
 		@media screen and (max-width: 992px) {
 			width: 100%;
+			padding-bottom: 0px;
 		}
 	}
 	article.section {
-		&.firsttwo{
+		&.firsttwo {
+			width: 100%;
 			h2 {
-				font-size: 14px;
+				font-size: 16px;
+				margin: 0 0 5px;
+				@media screen and (max-width: 992px) {
+					font-size: 24px;
+				}
+			}
+
+			.content {
+				font-size: 16px;
+			}
+			.image a img.border-styled {
 			}
 		}
 		h2 {
@@ -528,7 +572,7 @@ header.page {
 			width: 100%;
 			margin-bottom: 15px;
 			color: #000;
-	
+
 			display: block;
 			font-size: 24px;
 			font-weight: 900;
@@ -545,27 +589,33 @@ header.page {
 		white-space: normal;
 	}
 
-	.image a {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		height: 100%;
-		width: 100%;
+	.image {
+		a {
+			background-color: #eee;
+			width: 100%;
+			padding-top: 56.25%;
+			position: relative;
+			display: block;
+			border-radius: 0 15px;
+			overflow: hidden;
+			img.border-styled {
+				width: 100%;
+				border-radius: 0;
+				height: 100%;
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				right: 0;
+				display: block;
+				object-fit: cover;
+				object-position: center;
+				z-index: 123123;
+				top: 0px;
+			}
+		}
 	}
 
-	.image a img.border-styled {
-		border-radius: 0;
-		width: 100%;
-		border-radius: 0;
-		height: 100%;
-		object-fit: cover;
-		object-position: center;
-		max-height: 250px;
-		border-radius: 0 15px;
-		
-	}
-	article.section {
+	.image a article.section {
 		flex: 0 0 50%;
 		@media screen and (max-width: 700px) {
 			flex-direction: column;
@@ -579,18 +629,17 @@ header.page {
 
 	article.section {
 		display: flex;
-		padding: 0 0 20px 0;
+		padding: 0 10px 29px;
+		width: 50%;
+		@media screen and (max-width: 992px) {
+			width: 100%;
+		}
 		@media screen and (max-width: 700px) {
 			padding: 0 0px 20px 0;
 		}
 	}
 
 	article.section .image {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		max-width: 250px;
 		width: 100%;
 		@media screen and (max-width: 700px) {
 			max-width: 500px;
@@ -605,12 +654,11 @@ header.page {
 	}
 
 	.rightcolumn h2.title {
-
 		font-weight: 800;
 		border-top: 3px solid #cfd8e2;
 		font-size: 18px;
 		line-height: 19px;
-		letter-spacing: .03em;
+		letter-spacing: 0.03em;
 		text-transform: uppercase;
 		display: inline-block;
 		padding-top: 10px;
@@ -625,6 +673,9 @@ header.page {
 		padding-right: 30px;
 		// margin-bottom: 60px;
 		padding-bottom: 60px;
+		@media screen and (max-width: 992px) {
+			width: 100%;
+		}
 		h2 {
 			font-size: 2rem;
 		}
@@ -635,7 +686,8 @@ header.page {
 			position: relative;
 		}
 		img.border-styled {
-			max-height: 400px;
+			@media screen and (max-width: 992px) {
+			}
 		}
 		span.featuredtext {
 			top: 0px;
@@ -653,10 +705,142 @@ header.page {
 			font-weight: 900;
 			padding: 5px 15px;
 			border-radius: 5px;
+			z-index: 1233442422;
 		}
 	}
 
 	article.section.featured-part .image {
 		max-width: 100%;
+	}
+}
+
+// Testimonials Block
+
+section.testimonials-block {
+	.imageblock {
+		max-width: 120px;
+		margin: 0px auto 20px;
+		border-radius: 50%;
+		align-items: center;
+		display: flex;
+		justify-content: center;
+		position: relative;
+		padding: 20px 0 0;
+	}
+	.blocks {
+		display: flex;
+		@media screen and (max-width: 992px) {
+			flex-direction: column;
+		}
+	}
+	.subtitle {
+		font-size: 1.1875rem;
+		letter-spacing: 4px;
+	}
+
+	h3.name {
+		font-size: 21px;
+		color: #1a2d3d;
+		font-weight: 600;
+		line-height: 25px;
+		margin: 0 0 5px;
+	}
+
+	.usertitle {
+		color: #0388cd;
+		font-weight: 600;
+		text-transform: uppercase;
+		font-size: 15px;
+	}
+
+	.imageblock img {
+		box-shadow: 0 10px 20px rgba(0, 0, 0, 0.18);
+		border-radius: 50%;
+		object-fit: cover;
+	}
+
+	.imageblock:after {
+		content: close-quote;
+		position: absolute;
+		bottom: 100%;
+		left: 0;
+		right: 0;
+		width: 100%;
+		height: 2px;
+		background: #0388cd;
+		margin: 0 auto;
+	}
+
+	.subtitle {
+		text-align: center;
+		text-transform: uppercase;
+		letter-spacing: 4px;
+		margin: 0 0 10px;
+		color: #038ed8;
+		font-weight: 600;
+		@media screen and (max-width: 992px) {
+			font-size: 11px;
+		}
+	}
+
+	h2.main-title {
+		text-align: center;
+		font-size: 3.75rem;
+		letter-spacing: -1px;
+		font-weight: 800;
+		line-height: 4.4rem;
+		@media screen and (max-width: 992px) {
+			font-size: 2.95rem;
+			line-height: 2.9rem;
+		}
+	}
+
+	.blocks {
+		align-items: center;
+		margin: 40px 0 0;
+		justify-content: center;
+	}
+
+	.content {
+		padding: 4rem 10px;
+	}
+
+	.container {
+		max-width: 75rem;
+		margin: 0 auto;
+	}
+
+	.block {
+		text-align: center;
+		text-align: center;
+		margin: 0 40px;
+		max-width: 340px;
+		@media screen and (max-width: 992px) {
+			max-width: 400px;
+			margin: 0 auto 60px;
+		}
+	}
+
+	.block h2.title {
+		text-align: center;
+		font-size: 32px;
+		margin: 0 0 10px;
+	}
+
+	p {
+		font-size: 18px;
+		color: #1a2d3d;
+		font-weight: 500;
+		min-height: 120px;
+		display: block;
+	}
+
+	blockquote,
+	blockquote {
+		padding: 0;
+	}
+
+	.block blockquote {
+		border: none;
 	}
 }

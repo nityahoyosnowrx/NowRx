@@ -347,7 +347,7 @@ function custom1() {
   global $post;
          if (is_single() & 'post' == $post->post_type) {
           add_filter( 'wpseo_json_ld_output', '__return_false' );
-         }
+        }
 
 }
 

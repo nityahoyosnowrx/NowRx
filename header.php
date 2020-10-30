@@ -57,13 +57,15 @@
 
       gtag('config', 'UA-117353738-1');
     </script>
+
+<script>(function(w,d,t,r,u){var f,n,i;w[u]=w[u]||[],f=function(){var o={ti:"56297167"};o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")},n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function(){var s=this.readyState;s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)},i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)})(window,document,"script","//bat.bing.com/bat.js","uetq");</script>
     
 		<?php // end analytics ?>
     <link rel="stylesheet" href="https://use.typekit.net/nng5acr.css">
 	
 	<meta name="p:domain_verify" content="3f36cac4340da88df6ca76c1a431cd53"/>
 
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/public/frontend.css">
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/public/frontend.css?v=<?php echo time(); ?>">
   
 	</head>
 	<body <?php body_class(); ?> itemscope itemtype="http://schema.org/WebPage">
@@ -90,7 +92,7 @@
       <div class="item-container">
         <a href="https://try.nowrxpharmacy.com/prescription-delivery" style="display: block;">
           <span class="hide-for-small-only">
-            Receive up to a $100 bonus with your first prescription delivery!* 
+            Receive up to a $100 bonus with your prescription delivery!* 
             <span class="button hollow small">Let's Go</span>
           </span>
           <span class="show-for-small-only">

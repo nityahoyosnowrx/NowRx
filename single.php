@@ -4,7 +4,7 @@
   <div class="grid-container">
     <div class="grid-x grid-padding-x">
       <div class="large-12 cell">
-      	<main id="main" class="" role="main"  itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
+      	<main id="main" class="" role="main">
 
 			<div class="main-content">
 				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
@@ -76,7 +76,7 @@
 
 								</a>
 
-								<a href="<?php the_permalink(); ?>" class="MostPopular-link">
+								<a href="<?php the_permalink(); ?>" class="MostPopular-link title">
 									<?php the_title(); ?>
 								</a>
 
@@ -102,6 +102,12 @@
 				</div>
 			</div>
 
+
+<?php
+if ( has_post_format( 'quote' )) {
+
+?>
+
 			<div class="blog-content disclaimer-bottom">
             	<p class="text-small">
 					<em>
@@ -109,7 +115,7 @@
 					</em>
 				</p>
           	</div>	
-
+<?php   } ?>
 
 
 

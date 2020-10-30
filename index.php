@@ -6,11 +6,11 @@
 <main id="primary" class="site-main">
 
 <div class="grid-container pageblock">
-<header class="page">
+<!-- <header class="page">
       <h1>
         Latest News on  Drug Prices, Recalls, Savings Tips & More
       </h1>
-    </header>
+    </header> -->
   <div class="blog-posts">
 
 <?php 
@@ -29,7 +29,7 @@
   ) ); 
 
  //set our query's pagination to $paged
- $query -> query('post_type=post&posts_per_page=11'.'&paged='.$paged);
+ $query -> query('post_type=post&posts_per_page=10'.'&paged='.$paged);
 
  $postCount = 0;
 
@@ -73,7 +73,9 @@
         <div class="data">by <?php echo get_the_author_meta( 'nickname', $author_id ); ?>, <?php echo get_the_date( 'D, M n Y - h:i a' ); ?></div>
         <div class="content">
         <?php echo wp_trim_words(get_the_content(), 50, '...'); ?>
-        <a href="<?php the_permalink() ?>" class="readmore">Read More</a>
+        <div class="wd">
+                      <a href="<?php the_permalink(); ?>" class="readmore">Read More</a>
+                      </div>
         </div>
         </article>
 
@@ -95,7 +97,7 @@
     
     ?>
 
-          <article class="section <?php if($postCount == 1 || $postCount == 2 || $postCount == 3 || $postCount == 4){ echo "firsttwo"; } ?>">
+          <article class="section <?php if($postCount == 1 || $postCount == 2 || $postCount == 3 ){ echo "firsttwo"; } ?>">
 
             <div class="image">
               <?php if (has_post_thumbnail( $post->ID )): ?>
@@ -116,15 +118,25 @@
                 <?php echo wp_trim_words(get_the_title(), 8, '...'); ?>
               </h2> 
 
-              <div class="data">
-                by <?php echo get_the_author_meta( 'nickname', $author_id ); ?>, <?php echo get_the_date( 'd, M n Y' ); ?>
-              </div>
 
-                <?php if($postCount == 1 || $postCount == 2 || $postCount == 3 || $postCount == 4): ?>
-                <?php else: ?>
+
+                <?php if($postCount == 1 || $postCount == 2 || $postCount == 3 ): ?>
+
                   <div class="content">
-                      <?php echo wp_trim_words( get_the_content() , 15 , '...'); ?>
+                      <?php echo wp_trim_words( get_the_content() , 0 , ''); ?>
+                      <div class="wd">
                       <a href="<?php the_permalink(); ?>" class="readmore">Read More</a>
+                      </div>
+                  </div>
+                <?php else: ?>
+                  <!-- <div class="data">
+                by <?php echo get_the_author_meta( 'nickname', $author_id ); ?>, <?php echo get_the_date( 'd, M n Y' ); ?>
+              </div> -->
+                  <div class="content">
+                      <?php echo wp_trim_words( get_the_content() , 0 , ''); ?>
+                      <div class="wd">
+                      <a href="<?php the_permalink(); ?>" class="readmore">Read More</a>
+                      </div>
                   </div>
                 <?php endif; ?>
 
@@ -134,7 +146,7 @@
             
 <?php 
 
-if($postCount == 4){
+if($postCount == 3){
   echo '</div>'; 
 }
     $postCount++;
