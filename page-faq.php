@@ -15,307 +15,2324 @@
 
 <?php get_header(); ?>
 
-<?php if (has_post_thumbnail( $post->ID ) ): ?>
-<?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID),'large'); ?>
+<?php if (has_post_thumbnail($post->ID)) : ?>
+<?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'large'); ?>
 
 <?php endif; ?>
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-<section class="hero--sub-page">
-  <div class="grid-container">
-    <div class="grid-x grid-padding-x align-middle">
-      <div class="large-12 cell text-center">
-        <h1 class="headline"><?php the_title(); ?></h1>
-        <h4>Have a question about NowRx Pharmacy that isn't answered below?</h4>
-        <h4>Send us an email at <a href="mailto:info@nowrx.com">info@nowrx.com</a> and we'll be happy to answer.</h4>
-      </div>
-    </div>
-  </div>
-</section>
-<section>
-  <div class="grid-container">
-    <div class="grid-x grid-padding-x">
-      <div class="large-10 large-offset-1 cell">
-        <ul class="accordion" data-accordion data-multi-expand="true" data-allow-all-closed="true">
-          <li class="accordion-item" data-accordion-item>
-            <a href="#" class="accordion-title">What is NowRx pharmacy?</a>
-            <div class="accordion-content" data-tab-content>
-              <p>NowRx pharmacy is a full-service retail pharmacy that uses modern technology and proprietary software to provide a simple, more customer friendly pharmacy.<br><br>This includes things like FREE prescription delivery in under 5 hours, automatic application of coupons, live pharmacist consultations and much more.</p>
-            </div>
-          </li>
-          <li class="accordion-item" data-accordion-item>
-            <a href="#" class="accordion-title">How does NowRx pharmacy work?</a>
-            <div class="accordion-content" data-tab-content>
-              <p>NowRx Pharmacy is easy to use and works in 3 simple steps.</p>
-		<ol>
-		<li>You or your doctor sends a prescription to NowRx Pharmacy</li>
-              	<li>Once we have received your prescription, we will reach out to you in order to get some basic information (insurance, payment method, preferred delivery time, etc.).</li>
-              	<li>Once everything has been confirmed we deliver your medication in under 5 hours for your regular copay!</li>
-		</ol>
-            </div>
-          </li>
-          <li class="accordion-item" data-accordion-item>
-            <a href="#" class="accordion-title">How do I send a new prescription to NowRx pharmacy?</a>
-            <div class="accordion-content" data-tab-content>
-              <p>Your doctor can send a prescription to NowRx Pharmacy through e-prescribe or fax. Just show the following information to your doctor or tell them to look us up in their EMR.</p>
-              <p><strong><u>e-Prescribe</u></strong> <br></p>
-              <p><strong>Bay Area:</strong> NowRx Mtn V</p>
-              <p><strong>Orange County:</strong> NowRx Irvn</p>
-              <p><strong><u>Fax</u></strong> <br></p>
-              <p><strong>Bay Area:</strong> (650) 963-3204 </p>
-              <p><strong>Orange County:</strong> (949) 418-9013 </p>
-              <p>Alternatively, you can text us a picture of your prescription or call us directly at <a href=tel:"(844) 466-6979">(844) 466-6979</a></p>
-            </div>
-          </li>
-          <li class="accordion-item" data-accordion-item>
-            <a href="#" class="accordion-title">How do I transfer refills from my old pharmacy to NowRx pharmacy?</a>
-            <div class="accordion-content" data-tab-content>
-              <p>Transferring a prescription to NowRx pharmacy takes less than 5 minutes.</p>
-	      <p>Just visit <a href="https://try.nowrxpharmacy.com/">https://try.nowrxpharmacy.com/</a> or give us a call at <a href=tel:"(844) 466-6979">(844) 466-6979</a> to get started!</p>
-            </div>
-          </li>
-          <li class="accordion-item" data-accordion-item>
-            <a href="#" class="accordion-title">Where is NowRx pharmacy located and where do you deliver?</a>
-            <div class="accordion-content" data-tab-content>
-              <p>NowRx pharmacy has multiple locations throughout the Silicon Valley and Orange County California areas.</p>
-              <p>We can deliver to your house, your work, or anywhere that is convenient for you!</p>
-              <p><a href="https://www.nowrx.com/locations/">Click here for a full list of locations and service areas.</a></p>
-            </div>
-          </li>
-          <li class="accordion-item" data-accordion-item>
-            <a href="#" class="accordion-title">When will NowRx Pharmacy deliver my prescription?</a>
-            <div class="accordion-content" data-tab-content>
-              <p>NowRx will deliver your prescription within 5 hours of receiving.</p>
-              <p>If we receive a prescription outside of our business hours, we will deliver it as soon as we open the following day! </p>
-	      <p>In some cases if your insurance company asks for more information from your doctor, or if you have a rare medication that we do not carry in inventory, then we may be unable to deliver the same day- we will let you know immediately if such a situation arises so we can make other arrangements.</p>
-            </div>
-          </li>
-          <li class="accordion-item" data-accordion-item>
-            <a href="#" class="accordion-title">How Does NowRx Protect my Health Information?</a>
-            <div class="accordion-content" data-tab-content>
-              <p>All health-related data is stored offline on a secure HIPAA compliant server.</p>
-            </div>
-          </li>
-          <li class="accordion-item" data-accordion-item>
-            <a href="#" class="accordion-title">How does NowRx ensure a safe delivery of my medication?</a>
-            <div class="accordion-content" data-tab-content>
-              <p>All NowRx deliveries are made by HIPAA certified NowRx employees. These drivers have undergone extensive background checks and training to ensure a safe delivery of all your medication needs.</p>
-            </div>
-          </li>
-          <li class="accordion-item" data-accordion-item>
-            <a href="#" class="accordion-title">Is NowRx pharmacy delivery really free?</a>
-            <div class="accordion-content" data-tab-content>
-              <p>Yes! Our tech enabled pharmacy operations significantly reduce operating costs, which allow us to provide customer benefits like free same-day pharmacy delivery for absolutely no charge to the customer! </p>
-            </div>
-          </li>
-          <li class="accordion-item" data-accordion-item>
-            <a href="#" class="accordion-title">How do NowRx prices compare to other pharmacies or GoodRx?</a>
-            <div class="accordion-content" data-tab-content>
-              <p>NowRx proprietary software automatically searches for, acquires and applies available drug manufacturer coupons.</p>
-              <p>This allows us to regularly offer low medication prices that are below or competitive with most retail brick & mortar pharmacies. We will also price match most medications if you are able to find a lower price.</p>
-              <p>For medications covered by insurance, price is set by the insurance company in the form of a copay and cannot be adjusted or altered by NowRx or any other pharmacy.</p>
-            </div>
-          </li>
-          <li class="accordion-item" data-accordion-item>
-            <a href="#" class="accordion-title">Does NowRx pharmacy accept my insurance?</a>
-            <div class="accordion-content" data-tab-content>
-              <p>NowRx accepts all major insurance plans with the exception of Kaiser and Medicaid/MediCal.</p>
-            </div>
-          </li>
-          <li class="accordion-item" data-accordion-item>
-            <a href="#" class="accordion-title">How do I schedule a free consultation?</a>
-            <div class="accordion-content" data-tab-content>
-              <p>Scheduling a consultation with a NowRx pharmacist is easy and can be done in minutes.</p>
-	      <p>Just give us a call at <a href=tel:"(844) 466-6979">(844) 466-6979</a> and we’ll be happy to get you set up!</p>
-            </div>
-          </li>
-          <li class="accordion-item" data-accordion-item>
-            <a href="#" class="accordion-title">Does NowRx pharmacy deliver controlled substances?</a>
-            <div class="accordion-content" data-tab-content>
-              <p>Yes. For controlled substance delivery, NowRx will need proof of identification and a signature from the individual that was prescribed the medication at the time of delivery.</p>
-            </div>
-          </li>
-          <li class="accordion-item" data-accordion-item>
-            <a href="#" class="accordion-title">How does NowRx pharmacy help with prior authorizations?</a>
-            <div class="accordion-content" data-tab-content>
-              <p>NowRx works directly with doctors and prescribers to help streamline prior authorizations. Through our partnership with <a href="https://www.covermymeds.com/main/">CoverMyMeds</a>, NowRx drastically reduces time to approval and helps increase adherence to medication regimens.</p>
-            </div>
-          </li>
-          <li class="accordion-item" data-accordion-item>
-            <a href="#" class="accordion-title">How is NowRx different than mail order?</a>
-            <div class="accordion-content" data-tab-content>
-              <p><strong>Mail order pharmacies</strong></p>
-              <ul>
-                <li>Typically located in different states</li>
-                <li>Restricted in medications they can legally store and deliver</li>
-                <li>Delivery typically takes 3-14 days</li>
-                <li>Automated or no customer support available</li>
-                <li>1 in 5 customers encounter problems (e.g. late delivery,etc.)*</li>
-              </ul>
-              <p><em>*Based off Survey Monkey 2019 Mail Order Pharmacy Survey)</em></p>
-              <p><strong>NowRx Pharmacy</strong></p>
-              <ul>
-                <li>Local pharmacy located in every area we offer delivery</li>
-                <li>Delivers all medications (except Compound)</li>
-                <li>Delivery in under 5 hours, completely FREE</li>
-                <li>Live pharmacist available to talk to you whenever you need it</li>
-                <li>5 Star Rated Customer Service <a href="https://www.yelp.com/biz/nowrx-mountain-view-3">(See Our Reviews)</a></li>
-              </ul>
-            </div>
-          </li>
-          <li class="accordion-item" data-accordion-item>
-            <a href="#" class="accordion-title">Can I manage prescriptions for a family member or loved one?</a>
-            <div class="accordion-content" data-tab-content>
-              <p>Yes! NowRx allows you to set your head of household if a single person will be managing the family’s prescriptions.</p>
-              <p>Just remember, for controlled substances we will need proof of identification and a signature from the individual that was prescribed the medication.</p>
-            </div>
-          </li>
-          <li class="accordion-item" data-accordion-item>
-            <a href="#" class="accordion-title">How does NowRx pharmacy handle special requests?</a>
-            <div class="accordion-content" data-tab-content>
-              <p>Special requests (e.g. blister packs, medication sorting, etc.) are available upon request. Just let our pharmacist know when they reach out to schedule your delivery!</p>
-            </div>
-          </li>
-          <li class="accordion-item" data-accordion-item>
-            <a href="#" class="accordion-title">Where does NowRx get their medications from?</a>
-            <div class="accordion-content" data-tab-content>
-              <p>NowRx only sells FDA approved medications supplied by leading pharmacy wholesalers in the US including McKesson Corporation.</p>
-            </div>
-          </li>
-          <li class="accordion-item" data-accordion-item>
-            <a href="#" class="accordion-title">What forms of payment does NowRx Pharmacy accept?</a>
-            <div class="accordion-content" data-tab-content>
-              <p>NowRx Pharmacy accepts credit card payment either entered securely through our app or via phone. All payment and personal information uses 256 bit encryption technology to keep your information safe and confidential.</p>
-            </div>
-          </li>
-          <li class="accordion-item" data-accordion-item>
-            <a href="#" class="accordion-title">How do I get an FSA receipt?</a>
-            <div class="accordion-content" data-tab-content>
-              <p>NowRx will provide FSA receipts upon request.</p>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
 
-<section class="testimonials-section-2">
-  <div class="grid-container">
-    <div class="grid-x grid-padding-x">
-      <div class="large-8 large-offset-2 cell">
-        <div class="orbit" role="region" aria-label="NowRx Testimonials" data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;">
-          <div class="orbit-wrapper">
-            <div class="orbit-container">
-              <div class="is-active orbit-slide testimonial">
-                <div class="grid-x grid-padding-x">
-                  <div class="small-3 cell">
-                    <img class="testimonial-image border-styled small" src="<?php echo get_template_directory_uri(); ?>/library/images/testimonial-victoria-howard.jpg" alt="First Lastname">
-                  </div>
-                  <div class="small-9 cell">
-                    <div class="testimonial-copy">
-                      <p>“NowRx rocks! I have all my prescriptions delivered straight to my office. The customer service is excellent, they are really fast, and the cost is the same as getting my prescriptions filled at CVS or Walgreens. Thanks NowRx!”</p>
-                      <cite>Victoria H.</cite>
-                    </div>
-                  </div>
+
+<!-- hero -->
+<section class="hero-home">
+
+    <div class="rvl">
+        <picture class="lozad"
+            data-iesrc="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020.png"
+            data-alt="prescription being delivered to mother" data-toggle-class="active">
+            <source type="image/png"
+                srcset="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020.png">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020lowrez.jpg"
+                class="imageblock" height="100px" width="450px">
+        </picture>
+    </div>
+
+    <div class="container">
+        <div class="content">
+
+            <!-- content -->
+            <div class="column-half content-col">
+
+                <div class="rvls">
+                    <span class="sub-headline">
+                        A Better Local Pharmacy Delivered
+                    </span>
                 </div>
-              </div>
-              <div class="orbit-slide testimonial">
-                <div class="grid-x grid-padding-x">
-                  <div class="small-3 cell">
-                    <img class="testimonial-image border-styled small" src="<?php echo get_template_directory_uri(); ?>/library/images/testimonial-danna-y.jpg" alt="First Lastname">
-                  </div>
-                  <div class="small-9 cell">
-                    <div class="testimonial-copy">
-                      <p>“My husband and I have been using NowRx since early this year and I wish we knew about this pharmacy earlier. It's fast (same day delivery), convenient and their customer service people are very friendly. No more driving to the pharmacy and waiting for medications to be filled.”</p>
-                      <cite>Danna Y.</cite>
-                    </div>
-                  </div>
+
+                <div class="rvls">
+                    <h1>
+                        Frequently Asked Questions
+                    </h1>
                 </div>
-              </div>
-              <div class="orbit-slide testimonial">
-                <div class="grid-x grid-padding-x">
-                  <div class="small-3 cell">
-                    <img class="testimonial-image border-styled small" src="<?php echo get_template_directory_uri(); ?>/library/images/testimonial-christene-m.jpg" alt="First Lastname">
-                  </div>
-                  <div class="small-9 cell">
-                    <div class="testimonial-copy">
-                      <p>“I cannot say strongly enough how much better it is to have prescriptions delivered to my door, mostly within hours, as opposed to endlessly waiting at my local drug store. I would never go back. NowRx is the best.”</p>
-                      <cite>Christene M.</cite>
-                    </div>
-                  </div>
+
+                <div class="rvls">
+                    <p>Need some help? Check out our frequently asked questions below or submit a question for our pharmacy team.</p>
                 </div>
-              </div>
-              <div class="orbit-slide testimonial">
-                <div class="grid-x grid-padding-x">
-                  <div class="small-3 cell">
-                    <img class="testimonial-image border-styled small" src="<?php echo get_template_directory_uri(); ?>/library/images/testimonial-tony-m.jpg" alt="First Lastname">
-                  </div>
-                  <div class="small-9 cell">
-                    <div class="testimonial-copy">
-                      <p>“NowRx is great. Huge time saver... no more standing in line or sitting in your idling car waiting for next available teller... They deliver the prescription to your address within a 3 hour time window. They can handle both regular prescriptions and controlled substance prescriptions.”</p>
-                      <cite>Tony M.</cite>
+
+                <div class="rvls">
+                    <div class="btn-container">
+                        <a class="rx-btn" href="#faqblock">View FAQs</a>
+                        <a class="rx-btn mrb" data-toggle="submitaquestion" aria-controls="submitaquestion"
+                            aria-haspopup="true" tabindex="0">Submit a Question</a>
                     </div>
-                  </div>
                 </div>
-              </div>
-              <div class="orbit-slide testimonial">
-                <div class="grid-x grid-padding-x">
-                  <div class="small-3 cell">
-                    <img class="testimonial-image border-styled small" src="<?php echo get_template_directory_uri(); ?>/library/images/testimonial-neil-c.jpg" alt="First Lastname">
-                  </div>
-                  <div class="small-9 cell">
-                    <div class="testimonial-copy">
-                      <p>“We have been using NowRX for the last year and the service is great. NowRx handles our refills and they coordinate with the doctor's office. They go the extra mile in customer service!”</p>
-                      <cite>Neil C.</cite>
-                    </div>
-                  </div>
-                </div>
-              </div>
+
             </div>
-          </div>
-          <nav class="orbit-bullets">
-            <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
-            <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
-            <button data-slide="2"><span class="show-for-sr">Second slide details.</span></button>
-            <button data-slide="3"><span class="show-for-sr">Second slide details.</span></button>
-            <button data-slide="4"><span class="show-for-sr">Second slide details.</span></button>
-          </nav>
+
+            <!-- image -->
+            <div class="column-half image-col">
+
+                <picture class="lozad"
+                    data-iesrc="<?php echo get_template_directory_uri(); ?>/images/AdobeStock_91568410.webp"
+                    data-alt="Free Prescription Delivery in Hours" data-toggle-class="active">
+                    <source type="image/webp"
+                        srcset="<?php echo get_template_directory_uri(); ?>/images/AdobeStock_91568410.webp">
+                    <source type="image/jpeg"
+                        srcset="<?php echo get_template_directory_uri(); ?>/images/AdobeStock_91568410.jpeg">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/AdobeStock_91568410lowres.jpg"
+                        class="orbit-image" height="500px" width="650px">
+                </picture>
+            </div>
+
         </div>
-      </div>
     </div>
-  </div>
 </section>
 
+
+<!-- companies -->
 <section class="featured-in-section">
-  <div class="grid-container">
-    <div class="grid-x grid-padding-x">
-      <div class="large-12 cell text-center">
-        <p class="text-small" style="margin-bottom: 30px;">NowRx Has Been Featured In:</p>
-        <p>
-          <img class="featured-in-section-logo" src="<?php echo get_template_directory_uri(); ?>/library/images/brands-image-cnbc.svg" alt="">
-          <img class="featured-in-section-logo" src="<?php echo get_template_directory_uri(); ?>/library/images/brands-image-fortune.svg" alt="">
-          <img class="featured-in-section-logo" src="<?php echo get_template_directory_uri(); ?>/library/images/brands-image-forbes.svg" alt="">
-          <img class="featured-in-section-logo" src="<?php echo get_template_directory_uri(); ?>/library/images/brands-image-abc-7.svg" alt="">
-          <img class="featured-in-section-logo" src="<?php echo get_template_directory_uri(); ?>/library/images/brands-image-business-insider.svg" alt="">
-          <img class="featured-in-section-logo" src="<?php echo get_template_directory_uri(); ?>/library/images/brands-image-sfc2.svg" alt="">
-        </p>
-      </div>
+    <div class="grid-container">
+        <div class="grid-x grid-padding-x">
+            <div class="large-12 cell text-center">
+                <p>
+                    <img height="100px" width="200px" data-toggle-class="active" class="lozad  featured-in-section-logo"
+                        data-src="<?php echo get_template_directory_uri(); ?>/library/images/brands-image-cnbc.svg"
+                        alt="CNBC logo">
+                    <img height="100px" width="200px" data-toggle-class="active" class="lozad  featured-in-section-logo"
+                        data-src="<?php echo get_template_directory_uri(); ?>/library/images/brands-image-fortune.svg"
+                        alt="Fortune logo">
+                    <img height="100px" width="200px" data-toggle-class="active" class="lozad  featured-in-section-logo"
+                        data-src="<?php echo get_template_directory_uri(); ?>/library/images/brands-image-forbes.svg"
+                        alt="Forbes logo">
+                    <img height="100px" width="200px" data-toggle-class="active" class="lozad  featured-in-section-logo"
+                        data-src="<?php echo get_template_directory_uri(); ?>/library/images/brands-image-abc-7.svg"
+                        alt="ABC 7 logo">
+                    <img height="100px" width="200px" data-toggle-class="active" class="lozad  featured-in-section-logo"
+                        data-src="<?php echo get_template_directory_uri(); ?>/library/images/brands-image-business-insider.svg"
+                        alt="Business Insider logo">
+                    <img height="100px" width="200px" data-toggle-class="active" class="lozad  featured-in-section-logo"
+                        data-src="<?php echo get_template_directory_uri(); ?>/library/images/brands-image-sfc2.svg"
+                        alt="San Francisco Chronicle logo">
+                </p>
+            </div>
+        </div>
     </div>
-  </div>
 </section>
 
-<section class="how-it-works panel--primary panel--cta--doctors">
-  <div class="grid-container text-center">
-    <div class="grid-x grid-padding-x">
-      <div class="large-12 cell">
-        <p class="pre-headline">Learn More About NowRx</p>
-        <h2 class="headline">Discover How NowRx <br>Helps Your Patients</h2>
-        <a style="margin-top: 20px;" data-toggle="for-doctors" class="button">Schedule Appointment</a>
-      </div>
+
+
+<section class="faq-blocks" id="faqblock">
+    <div class="container">
+        <div class="topcontent content">
+            <div class="rvl">
+                <span class="sub-headline">
+                    A better local pharmacy delivered
+                </span>
+            </div>
+
+            <div class="rvl">
+                <h2 class="sec-title">
+                    How can we help you today?
+                </h2>
+            </div>
+        </div>
+        <div class="content botcot">
+            <div class="faq-blocks">
+
+                <!-- faq item -->
+                <div class="faq-block">
+                    <div class="click" data-opentab="0">
+                        <h2 class="sec-title">
+                            Top Frequently Asked Questions
+                            <span class="chevron-arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 256 256"
+                                    style="enable-background:new 0 0 256 256;" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <polygon
+                                                points="79.093,0 48.907,30.187 146.72,128 48.907,225.813 79.093,256 207.093,128   " />
+                                        </g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                </svg>
+                            </span>
+                        </h2>
+                    </div>
+                    <div class="block-content">
+                        <!-- item -->
+                        <div class="item" data-opentab="false">
+                            <span class="title">
+                                What is NowRx Pharmacy?
+                                <span class="question-svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 490.661 490.661"
+                                        style="enable-background:new 0 0 490.661 490.661;" xml:space="preserve">
+                                        <g>
+                                            <path
+                                                d="M453.352,236.091L48.019,1.424c-3.285-1.899-7.36-1.899-10.688,0c-3.285,1.899-5.333,5.419-5.333,9.237v469.333    c0,3.819,2.048,7.339,5.333,9.237c1.643,0.939,3.499,1.429,5.333,1.429c1.856,0,3.691-0.469,5.355-1.429l405.333-234.667    c3.285-1.92,5.312-5.44,5.312-9.237S456.637,237.989,453.352,236.091z" />
+                                        </g>
+
+                                    </svg>
+                                </span>
+                            </span>
+                            <div class="item-block">
+                                <div class="block">
+                                    <div class="q-item">
+                                        <span class="close-itcon">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="">
+                                        </span>
+                                        <div class="title">Q.</div>
+                                        <span class="cntx">
+                                            What is NowRx Pharmacy?
+                                        </span>
+                                    </div>
+                                    <div class="a-item">
+                                        <div class="title">A.</div>
+                                        <span class="cntx">
+                                            <p>
+                                                NowRx is a retail pharmacy just like any CVS or Walgreens, except
+                                                instead of
+                                                customers coming into the store to pick up their medications, we deliver
+                                                it
+                                                in hours free of charge. We have physical locations local to every area
+                                                we
+                                                service and offer the same services as a traditional retail pharmacy.
+                                            </p>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- item -->
+                        <div class="item" data-opentab="false">
+                            <span class="title">
+                                How does NowRx prescription delivery work?
+                                <span class="question-svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 490.661 490.661"
+                                        style="enable-background:new 0 0 490.661 490.661;" xml:space="preserve">
+                                        <g>
+                                            <path
+                                                d="M453.352,236.091L48.019,1.424c-3.285-1.899-7.36-1.899-10.688,0c-3.285,1.899-5.333,5.419-5.333,9.237v469.333    c0,3.819,2.048,7.339,5.333,9.237c1.643,0.939,3.499,1.429,5.333,1.429c1.856,0,3.691-0.469,5.355-1.429l405.333-234.667    c3.285-1.92,5.312-5.44,5.312-9.237S456.637,237.989,453.352,236.091z" />
+                                        </g>
+
+                                    </svg>
+                                </span>
+                            </span>
+                            <div class="item-block">
+                                <div class="block">
+                                    <div class="q-item">
+                                        <span class="close-itcon">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="">
+                                        </span>
+                                        <div class="title">Q.</div>
+                                        <span class="cntx">
+                                            How does NowRx prescription delivery work?
+                                        </span>
+                                    </div>
+                                    <div class="a-item">
+                                        <div class="title">A.</div>
+                                        <span class="cntx">
+                                            <p>
+                                                The prescription delivery process is simple with NowRx Pharmacy.
+                                            </p>
+
+                                            <ol>
+                                                <li> You or your doctor sends a prescription to NowRx (we accept
+                                                    ePrescribe,
+                                                    fax, or calls)</li>
+                                                <li>
+                                                    We call you to confirm the prescription, collect your copay, and
+                                                    set up a
+                                                    delivery time.
+                                                </li>
+                                                <li>
+                                                    A pharmacy employee delivers the prescription in a few hours free
+                                                    of
+                                                    charge.
+                                                </li>
+                                            </ol>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <div class="item" data-opentab="false">
+                            <span class="title">
+                                How is NowRx different than a mail order pharmacy?
+                                <span class="question-svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 490.661 490.661"
+                                        style="enable-background:new 0 0 490.661 490.661;" xml:space="preserve">
+                                        <g>
+                                            <path
+                                                d="M453.352,236.091L48.019,1.424c-3.285-1.899-7.36-1.899-10.688,0c-3.285,1.899-5.333,5.419-5.333,9.237v469.333    c0,3.819,2.048,7.339,5.333,9.237c1.643,0.939,3.499,1.429,5.333,1.429c1.856,0,3.691-0.469,5.355-1.429l405.333-234.667    c3.285-1.92,5.312-5.44,5.312-9.237S456.637,237.989,453.352,236.091z" />
+                                        </g>
+
+                                    </svg>
+                                </span>
+                            </span>
+                            <div class="item-block">
+                                <div class="block">
+                                    <div class="q-item">
+                                        <span class="close-itcon">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="">
+                                        </span>
+                                        <div class="title">Q.</div>
+                                        <span class="cntx">
+                                            How is NowRx different than a mail order pharmacy?
+                                        </span>
+                                    </div>
+                                    <div class="a-item">
+                                        <div class="title">A.</div>
+                                        <span class="cntx">
+                                            <p>
+                                                Unlike mail order pharmacies:
+                                            </p>
+                                            <ul>
+                                                <li>
+                                                    NowRx has physical pharmacies local to every area we service.
+                                                </li>
+                                                <li>
+                                                    NowRx employees deliver all medications (opposed to using 3rd
+                                                    parties like
+                                                    USPS)
+                                                </li>
+                                                <li>
+                                                    NowRx deliveries arrive within hours opposed to mail services
+                                                    which can
+                                                    take 3-14 days.
+                                                </li>
+                                                <li> NowRx delivers both controlled and refrigerated medications for no
+                                                    additional charge</li>
+                                                <li>
+                                                    NowRx always has a live pharmacy team member available to answer
+                                                    your
+                                                    questions.
+                                                </li>
+                                            </ul>
+
+
+
+
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <div class="item" data-opentab="false">
+                            <span class="title">
+                                How does NowRx make money?
+                                <span class="question-svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 490.661 490.661"
+                                        style="enable-background:new 0 0 490.661 490.661;" xml:space="preserve">
+                                        <g>
+                                            <path
+                                                d="M453.352,236.091L48.019,1.424c-3.285-1.899-7.36-1.899-10.688,0c-3.285,1.899-5.333,5.419-5.333,9.237v469.333    c0,3.819,2.048,7.339,5.333,9.237c1.643,0.939,3.499,1.429,5.333,1.429c1.856,0,3.691-0.469,5.355-1.429l405.333-234.667    c3.285-1.92,5.312-5.44,5.312-9.237S456.637,237.989,453.352,236.091z" />
+                                        </g>
+
+                                    </svg>
+                                </span>
+                            </span>
+                            <div class="item-block">
+                                <div class="block">
+                                    <div class="q-item">
+                                        <span class="close-itcon">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="">
+                                        </span>
+                                        <div class="title">Q.</div>
+                                        <span class="cntx">
+                                            How does NowRx make money?
+                                        </span>
+                                    </div>
+                                    <div class="a-item">
+                                        <div class="title">A.</div>
+                                        <span class="cntx">
+                                            <p>
+                                                NowRx makes money like all pharmacies and healthcare services –
+                                                reimbursement from insurance and copays from the patient.
+                                            </p>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <div class="item" data-opentab="false">
+                            <span class="title">
+                                Does NowRx charge more to cover delivery costs?
+                                <span class="question-svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 490.661 490.661"
+                                        style="enable-background:new 0 0 490.661 490.661;" xml:space="preserve">
+                                        <g>
+                                            <path
+                                                d="M453.352,236.091L48.019,1.424c-3.285-1.899-7.36-1.899-10.688,0c-3.285,1.899-5.333,5.419-5.333,9.237v469.333    c0,3.819,2.048,7.339,5.333,9.237c1.643,0.939,3.499,1.429,5.333,1.429c1.856,0,3.691-0.469,5.355-1.429l405.333-234.667    c3.285-1.92,5.312-5.44,5.312-9.237S456.637,237.989,453.352,236.091z" />
+                                        </g>
+
+                                    </svg>
+                                </span>
+                            </span>
+                            <div class="item-block">
+                                <div class="block">
+                                    <div class="q-item">
+                                        <span class="close-itcon">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="">
+                                        </span>
+                                        <div class="title">Q.</div>
+                                        <span class="cntx">
+                                            Does NowRx charge more to cover delivery costs?
+                                        </span>
+                                    </div>
+                                    <div class="a-item">
+                                        <div class="title">A.</div>
+                                        <span class="cntx">
+                                            <p>
+                                                No, NowRx never raises the cost of your medication to offset delivery
+                                                costs.
+                                            </p>
+
+                                            <p>
+                                                For prescriptions paid for through insurance, your copay is set by the
+                                                insurance company and will generally be the same regardless of the
+                                                pharmacy
+                                                you use.
+                                            </p>
+
+                                            <p>
+                                                For prescriptions paid for without insurance, our cash pricing is
+                                                competitive with or lower than competing pharmacies.
+                                            </p>
+
+                                            <p>
+                                                Additionally, anytime we receive a prescription our software
+                                                automatically
+                                                searches for drug coupons and applies them if it will lower your out of
+                                                pocket costs, which has saved NowRx customers over $1.5M in the past
+                                                year.
+                                            </p>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <div class="item" data-opentab="false">
+                            <span class="title">
+                                How can NowRx afford to deliver in hours for free?
+                                <span class="question-svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 490.661 490.661"
+                                        style="enable-background:new 0 0 490.661 490.661;" xml:space="preserve">
+                                        <g>
+                                            <path
+                                                d="M453.352,236.091L48.019,1.424c-3.285-1.899-7.36-1.899-10.688,0c-3.285,1.899-5.333,5.419-5.333,9.237v469.333    c0,3.819,2.048,7.339,5.333,9.237c1.643,0.939,3.499,1.429,5.333,1.429c1.856,0,3.691-0.469,5.355-1.429l405.333-234.667    c3.285-1.92,5.312-5.44,5.312-9.237S456.637,237.989,453.352,236.091z" />
+                                        </g>
+
+                                    </svg>
+                                </span>
+                            </span>
+                            <div class="item-block">
+                                <div class="block">
+                                    <div class="q-item">
+                                        <span class="close-itcon">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="">
+                                        </span>
+                                        <div class="title">Q.</div>
+                                        <span class="cntx">
+                                            How can NowRx afford to deliver in hours for free?
+                                        </span>
+                                    </div>
+                                    <div class="a-item">
+                                        <div class="title">A.</div>
+                                        <span class="cntx">
+                                            <p>
+                                                NowRx has proprietary software and technology inside each pharmacy which
+                                                increases efficiency and reduces costs considerably. This allows nowrx
+                                                to
+                                                operate at about 1/100th the cost of a traditional retail pharmacy like
+                                                CVS
+                                                or Walgreens.
+                                            </p>
+
+                                            <p>
+                                                We then use these savings to provide customer benefits like free
+                                                delivery in
+                                                hours, better customer service, and better cash pricing.
+                                            </p>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <div class="item" data-opentab="false">
+                            <span class="title">
+                                What insurance plans does NowRx accept?
+                                <span class="question-svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 490.661 490.661"
+                                        style="enable-background:new 0 0 490.661 490.661;" xml:space="preserve">
+                                        <g>
+                                            <path
+                                                d="M453.352,236.091L48.019,1.424c-3.285-1.899-7.36-1.899-10.688,0c-3.285,1.899-5.333,5.419-5.333,9.237v469.333    c0,3.819,2.048,7.339,5.333,9.237c1.643,0.939,3.499,1.429,5.333,1.429c1.856,0,3.691-0.469,5.355-1.429l405.333-234.667    c3.285-1.92,5.312-5.44,5.312-9.237S456.637,237.989,453.352,236.091z" />
+                                        </g>
+
+                                    </svg>
+                                </span>
+                            </span>
+                            <div class="item-block">
+                                <div class="block">
+                                    <div class="q-item">
+                                        <span class="close-itcon">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="">
+                                        </span>
+                                        <div class="title">Q.</div>
+                                        <span class="cntx">
+                                            What insurance plans does NowRx accept?
+                                        </span>
+                                    </div>
+                                    <div class="a-item">
+                                        <div class="title">A.</div>
+                                        <span class="cntx">
+                                            <p>
+                                                NowRx Pharmacy accepts all major insurance plans except Kaiser
+                                                Permanente.
+                                                We also offer non-insurance pricing that is competitive with or lower
+                                                than
+                                                even leading discount drug cards like GoodRx.
+                                            </p>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <div class="item" data-opentab="false">
+                            <span class="title">
+                                Where does NowRx Pharmacy offer prescription delivery?
+                                <span class="question-svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 490.661 490.661"
+                                        style="enable-background:new 0 0 490.661 490.661;" xml:space="preserve">
+                                        <g>
+                                            <path
+                                                d="M453.352,236.091L48.019,1.424c-3.285-1.899-7.36-1.899-10.688,0c-3.285,1.899-5.333,5.419-5.333,9.237v469.333    c0,3.819,2.048,7.339,5.333,9.237c1.643,0.939,3.499,1.429,5.333,1.429c1.856,0,3.691-0.469,5.355-1.429l405.333-234.667    c3.285-1.92,5.312-5.44,5.312-9.237S456.637,237.989,453.352,236.091z" />
+                                        </g>
+
+                                    </svg>
+                                </span>
+                            </span>
+                            <div class="item-block">
+                                <div class="block">
+                                    <div class="q-item">
+                                        <span class="close-itcon">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="">
+                                        </span>
+                                        <div class="title">Q.</div>
+                                        <span class="cntx">
+                                            Where does NowRx Pharmacy offer prescription delivery?
+                                        </span>
+                                    </div>
+                                    <div class="a-item">
+                                        <div class="title">A.</div>
+                                        <span class="cntx">
+                                            <p>
+                                                NowRx Pharmacy has physical pharmacy locations throughout California and
+                                                Arizona. We offer free prescription delivery in hours to these cities
+                                                and
+                                                surrounding areas.
+                                            </p>
+
+                                            <p>
+                                                Customer and doctors are also more than welcome to stop by these
+                                                physical
+                                                locations to fill a prescription or ask our pharmacist a question.
+                                            </p>
+
+                                            <p>
+                                                To view our locations and service area maps please visit
+                                                <a href="https://nowrx.com/locations/">https://nowrx.com/locations/</a>
+                                            </p>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <div class="item" data-opentab="false">
+                            <span class="title">
+                                What medications does NowRx Pharmacy deliver?
+                                <span class="question-svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 490.661 490.661"
+                                        style="enable-background:new 0 0 490.661 490.661;" xml:space="preserve">
+                                        <g>
+                                            <path
+                                                d="M453.352,236.091L48.019,1.424c-3.285-1.899-7.36-1.899-10.688,0c-3.285,1.899-5.333,5.419-5.333,9.237v469.333    c0,3.819,2.048,7.339,5.333,9.237c1.643,0.939,3.499,1.429,5.333,1.429c1.856,0,3.691-0.469,5.355-1.429l405.333-234.667    c3.285-1.92,5.312-5.44,5.312-9.237S456.637,237.989,453.352,236.091z" />
+                                        </g>
+
+                                    </svg>
+                                </span>
+                            </span>
+                            <div class="item-block">
+                                <div class="block">
+                                    <div class="q-item">
+                                        <span class="close-itcon">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="">
+                                        </span>
+                                        <div class="title">Q.</div>
+                                        <span class="cntx">
+                                            What medications does NowRx Pharmacy deliver?
+                                        </span>
+                                    </div>
+                                    <div class="a-item">
+                                        <div class="title">A.</div>
+                                        <span class="cntx">
+                                            <p>
+                                                NowRx Pharmacy offers delivery of over 250 prescriptions including
+                                                controlled and refrigerated medications. We also offer delivery of
+                                                common
+                                                over the counter medications and supplements like Tylenol, Vitamin D,
+                                                etc.
+
+                                            </p>
+                                            <p>
+                                                We do not offer compounding at this time.
+                                            </p>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- item -->
+                        <div class="item" data-opentab="false">
+                            <span class="title">
+                                Can I manage a family member or loved one’s prescriptions?
+                                <span class="question-svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 490.661 490.661"
+                                        style="enable-background:new 0 0 490.661 490.661;" xml:space="preserve">
+                                        <g>
+                                            <path
+                                                d="M453.352,236.091L48.019,1.424c-3.285-1.899-7.36-1.899-10.688,0c-3.285,1.899-5.333,5.419-5.333,9.237v469.333    c0,3.819,2.048,7.339,5.333,9.237c1.643,0.939,3.499,1.429,5.333,1.429c1.856,0,3.691-0.469,5.355-1.429l405.333-234.667    c3.285-1.92,5.312-5.44,5.312-9.237S456.637,237.989,453.352,236.091z" />
+                                        </g>
+
+                                    </svg>
+                                </span>
+                            </span>
+                            <div class="item-block">
+                                <div class="block">
+                                    <div class="q-item">
+                                        <span class="close-itcon">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="">
+                                        </span>
+                                        <div class="title">Q.</div>
+                                        <span class="cntx">
+                                            Can I manage a family member or loved one’s prescriptions?
+                                        </span>
+                                    </div>
+                                    <div class="a-item">
+                                        <div class="title">A.</div>
+                                        <span class="cntx">
+                                            <p>
+                                                NowRx allows you to set a head of household or caregiver if one person
+                                                will
+                                                be managing a family member or loved one's prescriptions. Just give us a
+                                                call at (844) 466-6979 or email us at info@nowrx.com and we will be
+                                                happy to
+                                                get you set up.
+                                            </p>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- faq item -->
+                <div class="faq-block">
+                    <div class="click" data-opentab="0">
+                        <h2 class="sec-title">
+                            Patient Frequently Asked Questions
+                            <span class="chevron-arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 256 256"
+                                    style="enable-background:new 0 0 256 256;" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <polygon
+                                                points="79.093,0 48.907,30.187 146.72,128 48.907,225.813 79.093,256 207.093,128   " />
+                                        </g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                </svg>
+                            </span>
+                        </h2>
+                    </div>
+                    <div class="block-content">
+                        <!-- item -->
+                        <div class="item" data-opentab="false">
+                            <span class="title">
+                                What is NowRx Pharmacy?
+                                <span class="question-svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 490.661 490.661"
+                                        style="enable-background:new 0 0 490.661 490.661;" xml:space="preserve">
+                                        <g>
+                                            <path
+                                                d="M453.352,236.091L48.019,1.424c-3.285-1.899-7.36-1.899-10.688,0c-3.285,1.899-5.333,5.419-5.333,9.237v469.333    c0,3.819,2.048,7.339,5.333,9.237c1.643,0.939,3.499,1.429,5.333,1.429c1.856,0,3.691-0.469,5.355-1.429l405.333-234.667    c3.285-1.92,5.312-5.44,5.312-9.237S456.637,237.989,453.352,236.091z" />
+                                        </g>
+
+                                    </svg>
+                                </span>
+                            </span>
+                            <div class="item-block">
+                                <div class="block">
+                                    <div class="q-item">
+                                        <span class="close-itcon">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="">
+                                        </span>
+                                        <div class="title">Q.</div>
+                                        <span class="cntx">
+                                            What is NowRx Pharmacy?
+                                        </span>
+                                    </div>
+                                    <div class="a-item">
+                                        <div class="title">A.</div>
+                                        <span class="cntx">
+                                            <p>
+                                                NowRx is a retail pharmacy just like any CVS or Walgreens, except
+                                                instead of customers coming into the store to pick up their medications,
+                                                we deliver it in hours free of charge. We have physical locations local
+                                                to every area we service and offer the same services as a traditional
+                                                retail pharmacy.
+                                            </p>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <div class="item" data-opentab="false">
+                            <span class="title">
+                                Why is NowRx better than my traditional retail pharmacy?
+                                <span class="question-svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 490.661 490.661"
+                                        style="enable-background:new 0 0 490.661 490.661;" xml:space="preserve">
+                                        <g>
+                                            <path
+                                                d="M453.352,236.091L48.019,1.424c-3.285-1.899-7.36-1.899-10.688,0c-3.285,1.899-5.333,5.419-5.333,9.237v469.333    c0,3.819,2.048,7.339,5.333,9.237c1.643,0.939,3.499,1.429,5.333,1.429c1.856,0,3.691-0.469,5.355-1.429l405.333-234.667    c3.285-1.92,5.312-5.44,5.312-9.237S456.637,237.989,453.352,236.091z" />
+                                        </g>
+
+                                    </svg>
+                                </span>
+                            </span>
+                            <div class="item-block">
+                                <div class="block">
+                                    <div class="q-item">
+                                        <span class="close-itcon">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="">
+                                        </span>
+                                        <div class="title">Q.</div>
+                                        <span class="cntx">
+                                            Why is NowRx better than my traditional retail pharmacy?
+                                        </span>
+                                    </div>
+                                    <div class="a-item">
+                                        <div class="title">A.</div>
+                                        <span class="cntx">
+                                            <p>
+                                                NowRx offers several benefits over traditional retail pharmacies
+                                                including:
+                                            </p>
+                                            <ul>
+                                                <li>Free prescription delivery in hours</li>
+                                                <li> Assistance with insurance & prior auths</li>
+                                                <li> Automatic coupon search & application</li>
+                                                <li> Low cash prescription pricing</li>
+                                                <li> 5-star rated customer service</li>
+                                            </ul>
+
+
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <div class="item" data-opentab="false">
+                            <span class="title">
+                                What insurance plans does NowRx accept?
+                                <span class="question-svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 490.661 490.661"
+                                        style="enable-background:new 0 0 490.661 490.661;" xml:space="preserve">
+                                        <g>
+                                            <path
+                                                d="M453.352,236.091L48.019,1.424c-3.285-1.899-7.36-1.899-10.688,0c-3.285,1.899-5.333,5.419-5.333,9.237v469.333    c0,3.819,2.048,7.339,5.333,9.237c1.643,0.939,3.499,1.429,5.333,1.429c1.856,0,3.691-0.469,5.355-1.429l405.333-234.667    c3.285-1.92,5.312-5.44,5.312-9.237S456.637,237.989,453.352,236.091z" />
+                                        </g>
+
+                                    </svg>
+                                </span>
+                            </span>
+                            <div class="item-block">
+                                <div class="block">
+                                    <div class="q-item">
+                                        <span class="close-itcon">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="">
+                                        </span>
+                                        <div class="title">Q.</div>
+                                        <span class="cntx">
+                                            What insurance plans does NowRx accept?
+                                        </span>
+                                    </div>
+                                    <div class="a-item">
+                                        <div class="title">A.</div>
+                                        <span class="cntx">
+                                            NowRx Pharmacy accepts all major insurance plans with the exception of
+                                            Kaiser.
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <div class="item" data-opentab="false">
+                            <span class="title">
+                                How do I send a new prescription to NowRx Pharmacy?
+                                <span class="question-svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 490.661 490.661"
+                                        style="enable-background:new 0 0 490.661 490.661;" xml:space="preserve">
+                                        <g>
+                                            <path
+                                                d="M453.352,236.091L48.019,1.424c-3.285-1.899-7.36-1.899-10.688,0c-3.285,1.899-5.333,5.419-5.333,9.237v469.333    c0,3.819,2.048,7.339,5.333,9.237c1.643,0.939,3.499,1.429,5.333,1.429c1.856,0,3.691-0.469,5.355-1.429l405.333-234.667    c3.285-1.92,5.312-5.44,5.312-9.237S456.637,237.989,453.352,236.091z" />
+                                        </g>
+
+                                    </svg>
+                                </span>
+                            </span>
+                            <div class="item-block">
+                                <div class="block">
+                                    <div class="q-item">
+                                        <span class="close-itcon">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="">
+                                        </span>
+                                        <div class="title">Q.</div>
+                                        <span class="cntx">
+                                            How do I send a new prescription to NowRx Pharmacy?
+                                        </span>
+                                    </div>
+                                    <div class="a-item">
+                                        <div class="title">A.</div>
+                                        <span class="cntx">
+                                            Your doctor can send a new prescription to NowRx Pharmacy through
+                                            e-prescribe or fax. We are in all EMR systems.
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <div class="item" data-opentab="false">
+                            <span class="title">
+                                How do I transfer/refill a prescription from another pharmacy with NowRx?
+                                <span class="question-svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 490.661 490.661"
+                                        style="enable-background:new 0 0 490.661 490.661;" xml:space="preserve">
+                                        <g>
+                                            <path
+                                                d="M453.352,236.091L48.019,1.424c-3.285-1.899-7.36-1.899-10.688,0c-3.285,1.899-5.333,5.419-5.333,9.237v469.333    c0,3.819,2.048,7.339,5.333,9.237c1.643,0.939,3.499,1.429,5.333,1.429c1.856,0,3.691-0.469,5.355-1.429l405.333-234.667    c3.285-1.92,5.312-5.44,5.312-9.237S456.637,237.989,453.352,236.091z" />
+                                        </g>
+
+                                    </svg>
+                                </span>
+                            </span>
+                            <div class="item-block">
+                                <div class="block">
+                                    <div class="q-item">
+                                        <span class="close-itcon">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="">
+                                        </span>
+                                        <div class="title">Q.</div>
+                                        <span class="cntx">
+                                            How do I transfer/refill a prescription from another pharmacy with NowRx?
+                                        </span>
+                                    </div>
+                                    <div class="a-item">
+                                        <div class="title">A.</div>
+                                        <span class="cntx">
+                                            <p>Transferring/refilling a prescription with NowRx Pharmacy is simple and
+                                                takes seconds.</p>
+
+                                            <p>Just text us at <a href="tel:844-466-6979">(844) 466-6979</a> a picture
+                                                of the empty prescription bottle you would like us to refill/transfer or
+                                                go to <a
+                                                    href="<?= get_site_url(); ?>/get-started">https://nowrx.com/get-started</a>
+                                                and fill out our transfer/refill request form.</p>
+
+                                            <p>We will take care of the rest!</p>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <div class="item" data-opentab="false">
+                            <span class="title">
+                                How many locations does NowRx have and where do they offer delivery?
+                                <span class="question-svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 490.661 490.661"
+                                        style="enable-background:new 0 0 490.661 490.661;" xml:space="preserve">
+                                        <g>
+                                            <path
+                                                d="M453.352,236.091L48.019,1.424c-3.285-1.899-7.36-1.899-10.688,0c-3.285,1.899-5.333,5.419-5.333,9.237v469.333    c0,3.819,2.048,7.339,5.333,9.237c1.643,0.939,3.499,1.429,5.333,1.429c1.856,0,3.691-0.469,5.355-1.429l405.333-234.667    c3.285-1.92,5.312-5.44,5.312-9.237S456.637,237.989,453.352,236.091z" />
+                                        </g>
+
+                                    </svg>
+                                </span>
+                            </span>
+                            <div class="item-block">
+                                <div class="block">
+                                    <div class="q-item">
+                                        <span class="close-itcon">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="">
+                                        </span>
+                                        <div class="title">Q.</div>
+                                        <span class="cntx">
+                                            How many locations does NowRx have and where do they offer delivery?
+                                        </span>
+                                    </div>
+                                    <div class="a-item">
+                                        <div class="title">A.</div>
+                                        <span class="cntx">
+                                            <p>At the moment, NowRx has multiple locations throughout California and
+                                                Arizona.</p>
+
+                                            <p>You can check below to view a full list of NowRx Pharmacy locations and
+                                                enter your address to see if we service your area.</p>
+
+                                            <p><a href="<?= get_site_url(); ?>/locations/">NowRx Pharmacy Locations and
+                                                    Service Area Check</a> </p>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <div class="item" data-opentab="false">
+                            <span class="title">
+                                How long does medication delivery from NowRx typically take?
+                                <span class="question-svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 490.661 490.661"
+                                        style="enable-background:new 0 0 490.661 490.661;" xml:space="preserve">
+                                        <g>
+                                            <path
+                                                d="M453.352,236.091L48.019,1.424c-3.285-1.899-7.36-1.899-10.688,0c-3.285,1.899-5.333,5.419-5.333,9.237v469.333    c0,3.819,2.048,7.339,5.333,9.237c1.643,0.939,3.499,1.429,5.333,1.429c1.856,0,3.691-0.469,5.355-1.429l405.333-234.667    c3.285-1.92,5.312-5.44,5.312-9.237S456.637,237.989,453.352,236.091z" />
+                                        </g>
+
+                                    </svg>
+                                </span>
+                            </span>
+                            <div class="item-block">
+                                <div class="block">
+                                    <div class="q-item">
+                                        <span class="close-itcon">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="">
+                                        </span>
+                                        <div class="title">Q.</div>
+                                        <span class="cntx">
+                                            How long does medication delivery from NowRx typically take?
+                                        </span>
+                                    </div>
+                                    <div class="a-item">
+                                        <div class="title">A.</div>
+                                        <span class="cntx">
+                                            <p>Medication delivery from NowRx will arrive at your house within 3-4 hours
+                                                of us receiving the prescription from your doctor. If you are
+                                                transferring or refilling a prescription from another pharmacy, we will
+                                                deliver the prescription within 3-4 hours of receiving the transfer from
+                                                your current pharmacy.</p>
+
+                                            <p>If we receive a prescription outside of our normal business hours, we
+                                                will deliver it the following business day.</p>
+
+                                            <p>In some cases, there may be delays if your insurance company requires
+                                                prior authorization or if you require a rare medication that we do not
+                                                typically carry in stock. In these situations, we will notify you as
+                                                soon as possible and do everything we can to find a solution!</p>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <div class="item" data-opentab="false">
+                            <span class="title">
+                                How does NowRx ensure safe delivery of my medication?
+                                <span class="question-svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 490.661 490.661"
+                                        style="enable-background:new 0 0 490.661 490.661;" xml:space="preserve">
+                                        <g>
+                                            <path
+                                                d="M453.352,236.091L48.019,1.424c-3.285-1.899-7.36-1.899-10.688,0c-3.285,1.899-5.333,5.419-5.333,9.237v469.333    c0,3.819,2.048,7.339,5.333,9.237c1.643,0.939,3.499,1.429,5.333,1.429c1.856,0,3.691-0.469,5.355-1.429l405.333-234.667    c3.285-1.92,5.312-5.44,5.312-9.237S456.637,237.989,453.352,236.091z" />
+                                        </g>
+
+                                    </svg>
+                                </span>
+                            </span>
+                            <div class="item-block">
+                                <div class="block">
+                                    <div class="q-item">
+                                        <span class="close-itcon">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="">
+                                        </span>
+                                        <div class="title">Q.</div>
+                                        <span class="cntx">
+                                            How does NowRx ensure safe delivery of my medication?
+                                        </span>
+                                    </div>
+                                    <div class="a-item">
+                                        <div class="title">A.</div>
+                                        <span class="cntx">
+                                            <p>All NowRx deliveries are made by HIPAA certified NowRx employees. These
+                                                pharmacy employees have undergone extensive background checks and
+                                                training to ensure a safe medication delivery.</p>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <div class="item" data-opentab="false">
+                            <span class="title">
+                                Does NowRx deliver refrigerated medications or schedule 2 controlled substances?
+                                <span class="question-svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 490.661 490.661"
+                                        style="enable-background:new 0 0 490.661 490.661;" xml:space="preserve">
+                                        <g>
+                                            <path
+                                                d="M453.352,236.091L48.019,1.424c-3.285-1.899-7.36-1.899-10.688,0c-3.285,1.899-5.333,5.419-5.333,9.237v469.333    c0,3.819,2.048,7.339,5.333,9.237c1.643,0.939,3.499,1.429,5.333,1.429c1.856,0,3.691-0.469,5.355-1.429l405.333-234.667    c3.285-1.92,5.312-5.44,5.312-9.237S456.637,237.989,453.352,236.091z" />
+                                        </g>
+
+                                    </svg>
+                                </span>
+                            </span>
+                            <div class="item-block">
+                                <div class="block">
+                                    <div class="q-item">
+                                        <span class="close-itcon">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="">
+                                        </span>
+                                        <div class="title">Q.</div>
+                                        <span class="cntx">
+                                                Does NowRx deliver refrigerated medications or schedule 2 controlled
+                                                substances?
+                                        </span>
+                                    </div>
+                                    <div class="a-item">
+                                        <div class="title">A.</div>
+                                        <span class="cntx">
+                                            <p>
+                                                Yes. For controlled substance or refrigerated medication delivery, NowRx
+                                                will need proof of identification and a signature at the time of
+                                                delivery.
+                                            </p>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <div class="item" data-opentab="false">
+                            <span class="title">
+                                How does NowRx handle special requests?
+                                <span class="question-svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 490.661 490.661"
+                                        style="enable-background:new 0 0 490.661 490.661;" xml:space="preserve">
+                                        <g>
+                                            <path
+                                                d="M453.352,236.091L48.019,1.424c-3.285-1.899-7.36-1.899-10.688,0c-3.285,1.899-5.333,5.419-5.333,9.237v469.333    c0,3.819,2.048,7.339,5.333,9.237c1.643,0.939,3.499,1.429,5.333,1.429c1.856,0,3.691-0.469,5.355-1.429l405.333-234.667    c3.285-1.92,5.312-5.44,5.312-9.237S456.637,237.989,453.352,236.091z" />
+                                        </g>
+
+                                    </svg>
+                                </span>
+                            </span>
+                            <div class="item-block">
+                                <div class="block">
+                                    <div class="q-item">
+                                        <span class="close-itcon">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="">
+                                        </span>
+                                        <div class="title">Q.</div>
+                                        <span class="cntx">
+                                            How does NowRx handle special requests?
+                                        </span>
+                                    </div>
+                                    <div class="a-item">
+                                        <div class="title">A.</div>
+                                        <span class="cntx">
+                                            <p>
+                                                Special requests (e.g. blister packs, medication sorting, etc.) are
+                                                available upon request. Just let our pharmacist know when they reach out
+                                                to schedule your delivery!
+                                            </p>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <div class="item" data-opentab="false">
+                            <span class="title">
+                                How do I schedule a free consultation?
+                                <span class="question-svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 490.661 490.661"
+                                        style="enable-background:new 0 0 490.661 490.661;" xml:space="preserve">
+                                        <g>
+                                            <path
+                                                d="M453.352,236.091L48.019,1.424c-3.285-1.899-7.36-1.899-10.688,0c-3.285,1.899-5.333,5.419-5.333,9.237v469.333    c0,3.819,2.048,7.339,5.333,9.237c1.643,0.939,3.499,1.429,5.333,1.429c1.856,0,3.691-0.469,5.355-1.429l405.333-234.667    c3.285-1.92,5.312-5.44,5.312-9.237S456.637,237.989,453.352,236.091z" />
+                                        </g>
+
+                                    </svg>
+                                </span>
+                            </span>
+                            <div class="item-block">
+                                <div class="block">
+                                    <div class="q-item">
+                                        <span class="close-itcon">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="">
+                                        </span>
+                                        <div class="title">Q.</div>
+                                        <span class="cntx">
+                                            How do I schedule a free consultation?
+                                        </span>
+                                    </div>
+                                    <div class="a-item">
+                                        <div class="title">A.</div>
+                                        <span class="cntx">
+                                            <p>
+                                                Scheduling a consultation with a NowRx pharmacist is easy and can be
+                                                done in minutes.
+
+
+                                            </p>
+
+                                            <p>
+                                                Just text or call <a href="tel:844-466-6979">(844) 466-6979</a> and one
+                                                of our pharmacy team members will be happy to assist you.
+                                            </p>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <div class="item" data-opentab="false">
+                            <span class="title">
+                                What medications does NowRx Pharmacy deliver?
+                                <span class="question-svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 490.661 490.661"
+                                        style="enable-background:new 0 0 490.661 490.661;" xml:space="preserve">
+                                        <g>
+                                            <path
+                                                d="M453.352,236.091L48.019,1.424c-3.285-1.899-7.36-1.899-10.688,0c-3.285,1.899-5.333,5.419-5.333,9.237v469.333    c0,3.819,2.048,7.339,5.333,9.237c1.643,0.939,3.499,1.429,5.333,1.429c1.856,0,3.691-0.469,5.355-1.429l405.333-234.667    c3.285-1.92,5.312-5.44,5.312-9.237S456.637,237.989,453.352,236.091z" />
+                                        </g>
+
+                                    </svg>
+                                </span>
+                            </span>
+                            <div class="item-block">
+                                <div class="block">
+                                    <div class="q-item">
+                                        <span class="close-itcon">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="">
+                                        </span>
+                                        <div class="title">Q.</div>
+                                        <span class="cntx">
+                                            What medications does NowRx Pharmacy deliver?
+                                        </span>
+                                    </div>
+                                    <div class="a-item">
+                                        <div class="title">A.</div>
+                                        <span class="cntx">
+                                            <p>
+                                                NowRx Pharmacy offers delivery of over 250 prescriptions including
+                                                controlled and refrigerated medications. We also offer delivery of
+                                                common over the counter medications and supplements like Tylenol,
+                                                Vitamin D, etc. We do not offer compounding at this time.
+                                            </p>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <div class="item" data-opentab="false">
+                            <span class="title">
+                                How do I request an FSA receipt?
+                                <span class="question-svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 490.661 490.661"
+                                        style="enable-background:new 0 0 490.661 490.661;" xml:space="preserve">
+                                        <g>
+                                            <path
+                                                d="M453.352,236.091L48.019,1.424c-3.285-1.899-7.36-1.899-10.688,0c-3.285,1.899-5.333,5.419-5.333,9.237v469.333    c0,3.819,2.048,7.339,5.333,9.237c1.643,0.939,3.499,1.429,5.333,1.429c1.856,0,3.691-0.469,5.355-1.429l405.333-234.667    c3.285-1.92,5.312-5.44,5.312-9.237S456.637,237.989,453.352,236.091z" />
+                                        </g>
+
+                                    </svg>
+                                </span>
+                            </span>
+                            <div class="item-block">
+                                <div class="block">
+                                    <div class="q-item">
+                                        <span class="close-itcon">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="">
+                                        </span>
+                                        <div class="title">Q.</div>
+                                        <span class="cntx">
+                                            How do I request an FSA receipt?
+                                        </span>
+                                    </div>
+                                    <div class="a-item">
+                                        <div class="title">A.</div>
+                                        <span class="cntx">
+
+                                            How do I request an FSA receipt? NowRx Pharmacy is happy to provide an FSA
+                                            receipt upon request. Just give your local NowRx pharmacy a call or email us
+                                            at <a href="mailto:info@nowrx.com">info@nowrx.com</a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <!-- faq item -->
+                <div class="faq-block">
+                    <div class="click" data-opentab="0">
+                        <h2 class="sec-title">
+                            Doctor Frequently Asked Questions
+                            <span class="chevron-arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 256 256"
+                                    style="enable-background:new 0 0 256 256;" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <polygon
+                                                points="79.093,0 48.907,30.187 146.72,128 48.907,225.813 79.093,256 207.093,128   " />
+                                        </g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                </svg>
+                            </span>
+                        </h2>
+                    </div>
+                    <div class="block-content">
+                        <!-- item -->
+                        <div class="item" data-opentab="false">
+                            <span class="title">
+                                How can NowRx afford to deliver in hours for free?
+                                <span class="question-svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 490.661 490.661"
+                                        style="enable-background:new 0 0 490.661 490.661;" xml:space="preserve">
+                                        <g>
+                                            <path
+                                                d="M453.352,236.091L48.019,1.424c-3.285-1.899-7.36-1.899-10.688,0c-3.285,1.899-5.333,5.419-5.333,9.237v469.333    c0,3.819,2.048,7.339,5.333,9.237c1.643,0.939,3.499,1.429,5.333,1.429c1.856,0,3.691-0.469,5.355-1.429l405.333-234.667    c3.285-1.92,5.312-5.44,5.312-9.237S456.637,237.989,453.352,236.091z" />
+                                        </g>
+
+                                    </svg>
+                                </span>
+                            </span>
+                            <div class="item-block">
+                                <div class="block">
+                                    <div class="q-item">
+                                        <span class="close-itcon">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="">
+                                        </span>
+                                        <div class="title">Q.</div>
+                                        <span class="cntx">
+                                            How can NowRx afford to deliver in hours for free?
+                                        </span>
+                                    </div>
+                                    <div class="a-item">
+                                        <div class="title">A.</div>
+                                        <span class="cntx">
+                                            <p>
+                                                NowRx has proprietary software and technology inside each pharmacy which
+                                                increases efficiency and reduces costs considerably. This allows NowRx
+                                                to operate at about 1/100th the cost of a traditional retail pharmacy
+                                                like CVS or Walgreens.
+
+
+                                            </p>
+
+                                            <p>
+                                                We then use these savings to provide customer benefits like free
+                                                delivery in hours, better customer service, and better cash pricing.
+                                            </p>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- item -->
+                        <div class="item" data-opentab="false">
+                            <span class="title">
+                                How is NowRx different than a mail order pharmacy?
+                                <span class="question-svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 490.661 490.661"
+                                        style="enable-background:new 0 0 490.661 490.661;" xml:space="preserve">
+                                        <g>
+                                            <path
+                                                d="M453.352,236.091L48.019,1.424c-3.285-1.899-7.36-1.899-10.688,0c-3.285,1.899-5.333,5.419-5.333,9.237v469.333    c0,3.819,2.048,7.339,5.333,9.237c1.643,0.939,3.499,1.429,5.333,1.429c1.856,0,3.691-0.469,5.355-1.429l405.333-234.667    c3.285-1.92,5.312-5.44,5.312-9.237S456.637,237.989,453.352,236.091z" />
+                                        </g>
+
+                                    </svg>
+                                </span>
+                            </span>
+                            <div class="item-block">
+                                <div class="block">
+                                    <div class="q-item">
+                                        <span class="close-itcon">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="">
+                                        </span>
+                                        <div class="title">Q.</div>
+                                        <span class="cntx">
+                                            How is NowRx different than a mail order pharmacy?
+                                        </span>
+                                    </div>
+                                    <div class="a-item">
+                                        <div class="title">A.</div>
+                                        <span class="cntx">
+                                            <p>
+                                                Unlike mail order pharmacies:
+
+                                            </p>
+
+                                            <ul>
+                                                <li> NowRx has physical pharmacies local to every area we service.</li>
+                                                <li>
+                                                    NowRx has physical pharmacies local to every area we service.
+
+                                                </li>
+                                                <li>
+                                                    NowRx employees deliver all medications (opposed to using 3rd
+                                                    parties like USPS).
+
+                                                </li>
+                                                <li>
+                                                     NowRx delivers in hours opposed to mail services which can take
+                                                    3-14 days.
+
+                                                </li>
+                                                <li>
+                                                    NowRx delivers controlled and refrigerated medications.
+
+                                                </li>
+                                                <li>
+                                                    NowRx has live pharmacy team members available to answer any
+                                                    questions.
+
+                                                </li>
+                                            </ul>
+
+
+
+
+
+
+
+
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- item -->
+                        <div class="item" data-opentab="false">
+                            <span class="title">
+                                How can NowRx help my practice and patients?
+                                <span class="question-svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 490.661 490.661"
+                                        style="enable-background:new 0 0 490.661 490.661;" xml:space="preserve">
+                                        <g>
+                                            <path
+                                                d="M453.352,236.091L48.019,1.424c-3.285-1.899-7.36-1.899-10.688,0c-3.285,1.899-5.333,5.419-5.333,9.237v469.333    c0,3.819,2.048,7.339,5.333,9.237c1.643,0.939,3.499,1.429,5.333,1.429c1.856,0,3.691-0.469,5.355-1.429l405.333-234.667    c3.285-1.92,5.312-5.44,5.312-9.237S456.637,237.989,453.352,236.091z" />
+                                        </g>
+
+                                    </svg>
+                                </span>
+                            </span>
+                            <div class="item-block">
+                                <div class="block">
+                                    <div class="q-item">
+                                        <span class="close-itcon">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="">
+                                        </span>
+                                        <div class="title">Q.</div>
+                                        <span class="cntx">
+                                            How can NowRx help my practice and patients?
+                                        </span>
+                                    </div>
+                                    <div class="a-item">
+                                        <div class="title">A.</div>
+                                        <span class="cntx">
+                                            <p>
+                                                NowRx can help your office staff and patients save significant time and
+                                                money.
+                                            </p>
+
+                                            <p>
+                                                Saving your office staff time:
+                                            </p>
+                                            <ul>
+                                                <li>
+                                                    Proactively communicate and educate patients on their medication
+                                                    regimen
+                                                </li>
+                                                <li>
+                                                    Assist with prior authorizations and insurance approval
+                                                </li>
+                                                <li>
+                                                    Accept standing orders and special requests
+                                                </li>
+                                            </ul>
+
+                                            <p>
+                                                Saving your patients money:
+                                            </p>
+                                            <ul>
+                                                <li>
+                                                    Free prescription delivery in hours, same or lower drug
+                                                    price/copay
+                                                </li>
+                                                <li>
+                                                    Automatically apply available drug coupons to lower out of pocket
+                                                    costs
+                                                </li>
+                                                <li>
+                                                    Check for lower cash prices and outline options for patients
+                                                </li>
+                                            </ul>
+
+
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- item -->
+                        <div class="item" data-opentab="false">
+                            <span class="title">
+                                How do I send a prescription for my patient to NowRx Pharmacy?
+                                <span class="question-svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 490.661 490.661"
+                                        style="enable-background:new 0 0 490.661 490.661;" xml:space="preserve">
+                                        <g>
+                                            <path
+                                                d="M453.352,236.091L48.019,1.424c-3.285-1.899-7.36-1.899-10.688,0c-3.285,1.899-5.333,5.419-5.333,9.237v469.333    c0,3.819,2.048,7.339,5.333,9.237c1.643,0.939,3.499,1.429,5.333,1.429c1.856,0,3.691-0.469,5.355-1.429l405.333-234.667    c3.285-1.92,5.312-5.44,5.312-9.237S456.637,237.989,453.352,236.091z" />
+                                        </g>
+
+                                    </svg>
+                                </span>
+                            </span>
+                            <div class="item-block">
+                                <div class="block">
+                                    <div class="q-item">
+                                        <span class="close-itcon">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="">
+                                        </span>
+                                        <div class="title">Q.</div>
+                                        <span class="cntx">
+                                            How do I send a prescription for my patient to NowRx Pharmacy?
+                                        </span>
+                                    </div>
+                                    <div class="a-item">
+                                        <div class="title">A.</div>
+                                        <span class="cntx">
+                                            <p>
+                                                Sending a prescription to NowRx Pharmacy is easy.
+
+
+                                            </p>
+                                            <p>
+                                                Just ePrescribe to NowRx (we are in all EMRs) or send it to your local
+                                                NowRx by fax.
+
+                                            </p>
+                                            <p>
+                                                If you are having trouble, please do not hesitate to call our pharmacy
+                                                or email us at info@nowrx.com and we will get back to you as soon as
+                                                possible.
+
+                                            </p>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- item -->
+                        <div class="item" data-opentab="false">
+                            <span class="title">
+                                How does NowRx help with prior authorizations?
+                                <span class="question-svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 490.661 490.661"
+                                        style="enable-background:new 0 0 490.661 490.661;" xml:space="preserve">
+                                        <g>
+                                            <path
+                                                d="M453.352,236.091L48.019,1.424c-3.285-1.899-7.36-1.899-10.688,0c-3.285,1.899-5.333,5.419-5.333,9.237v469.333    c0,3.819,2.048,7.339,5.333,9.237c1.643,0.939,3.499,1.429,5.333,1.429c1.856,0,3.691-0.469,5.355-1.429l405.333-234.667    c3.285-1.92,5.312-5.44,5.312-9.237S456.637,237.989,453.352,236.091z" />
+                                        </g>
+
+                                    </svg>
+                                </span>
+                            </span>
+                            <div class="item-block">
+                                <div class="block">
+                                    <div class="q-item">
+                                        <span class="close-itcon">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="">
+                                        </span>
+                                        <div class="title">Q.</div>
+                                        <span class="cntx">
+                                            How does NowRx help with prior authorizations?
+                                        </span>
+                                    </div>
+                                    <div class="a-item">
+                                        <div class="title">A.</div>
+                                        <span class="cntx">
+                                            <p>
+                                                NowRx can help your office safe significant time by handling prior
+                                                authorizations.
+                                            </p>
+
+                                            <p>
+                                                We use Cover My Meds and can start the process online for you, fill out
+                                                all the information that is needed and then reassign in the portal to
+                                                your team so they can add any medical information that is needed for
+                                                approval. Your office will then need to submit to the insurance company.
+                                                Once this has been submitted, we will track if it is approved or denied
+                                                and communicate with your office and the patient as needed.
+                                            </p>
+
+                                            <p>
+                                                In some cases, if your office has a lot of prior auths and is looking
+                                                for even more support, NowRx Pharmacy can take full responsibility for
+                                                the entire process via a Collaborative Practice Agreement which
+                                                authorizes us to speak to the insurance plan on behalf of your office.To
+                                                learn more about this, please email us at info@nowrx.com.
+                                            </p>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- item -->
+                        <div class="item" data-opentab="false">
+                            <span class="title">
+                                Does NowRx Pharmacy accept standing orders?
+                                <span class="question-svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 490.661 490.661"
+                                        style="enable-background:new 0 0 490.661 490.661;" xml:space="preserve">
+                                        <g>
+                                            <path
+                                                d="M453.352,236.091L48.019,1.424c-3.285-1.899-7.36-1.899-10.688,0c-3.285,1.899-5.333,5.419-5.333,9.237v469.333    c0,3.819,2.048,7.339,5.333,9.237c1.643,0.939,3.499,1.429,5.333,1.429c1.856,0,3.691-0.469,5.355-1.429l405.333-234.667    c3.285-1.92,5.312-5.44,5.312-9.237S456.637,237.989,453.352,236.091z" />
+                                        </g>
+
+                                    </svg>
+                                </span>
+                            </span>
+                            <div class="item-block">
+                                <div class="block">
+                                    <div class="q-item">
+                                        <span class="close-itcon">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="">
+                                        </span>
+                                        <div class="title">Q.</div>
+                                        <span class="cntx">
+                                            Does NowRx Pharmacy accept standing orders?
+                                        </span>
+                                    </div>
+                                    <div class="a-item">
+                                        <div class="title">A.</div>
+                                        <span class="cntx">
+                                            <p>Yes, any practice that wishes to provide a standing order form may
+                                                request one by emailing us at info@nowrx.com or contacting their
+                                                dedicated NowRx representative.
+
+                                            </p>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- item -->
+                        <div class="item" data-opentab="false">
+                            <span class="title">
+                                Does NowRx provide consultation for patients?
+                                <span class="question-svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 490.661 490.661"
+                                        style="enable-background:new 0 0 490.661 490.661;" xml:space="preserve">
+                                        <g>
+                                            <path
+                                                d="M453.352,236.091L48.019,1.424c-3.285-1.899-7.36-1.899-10.688,0c-3.285,1.899-5.333,5.419-5.333,9.237v469.333    c0,3.819,2.048,7.339,5.333,9.237c1.643,0.939,3.499,1.429,5.333,1.429c1.856,0,3.691-0.469,5.355-1.429l405.333-234.667    c3.285-1.92,5.312-5.44,5.312-9.237S456.637,237.989,453.352,236.091z" />
+                                        </g>
+
+                                    </svg>
+                                </span>
+                            </span>
+                            <div class="item-block">
+                                <div class="block">
+                                    <div class="q-item">
+                                        <span class="close-itcon">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="">
+                                        </span>
+                                        <div class="title">Q.</div>
+                                        <span class="cntx">
+                                            Does NowRx provide consultation for patients?
+                                        </span>
+                                    </div>
+                                    <div class="a-item">
+                                        <div class="title">A.</div>
+                                        <span class="cntx">
+                                            <p>
+                                                Yes, NowRx provides free consultations to every patient over the phone
+                                                or in person if they would like to set up an appointment to come see the
+                                                pharmacist in person. For more information, please call your local NowRx
+                                                Pharmacy.
+                                            </p>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- item -->
+                        <div class="item" data-opentab="false">
+                            <span class="title">
+                                How long does medication delivery from NowRx take?
+                                <span class="question-svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 490.661 490.661"
+                                        style="enable-background:new 0 0 490.661 490.661;" xml:space="preserve">
+                                        <g>
+                                            <path
+                                                d="M453.352,236.091L48.019,1.424c-3.285-1.899-7.36-1.899-10.688,0c-3.285,1.899-5.333,5.419-5.333,9.237v469.333    c0,3.819,2.048,7.339,5.333,9.237c1.643,0.939,3.499,1.429,5.333,1.429c1.856,0,3.691-0.469,5.355-1.429l405.333-234.667    c3.285-1.92,5.312-5.44,5.312-9.237S456.637,237.989,453.352,236.091z" />
+                                        </g>
+
+                                    </svg>
+                                </span>
+                            </span>
+                            <div class="item-block">
+                                <div class="block">
+                                    <div class="q-item">
+                                        <span class="close-itcon">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="">
+                                        </span>
+                                        <div class="title">Q.</div>
+                                        <span class="cntx">
+                                            How long does medication delivery from NowRx take?
+                                        </span>
+                                    </div>
+                                    <div class="a-item">
+                                        <div class="title">A.</div>
+                                        <span class="cntx">
+                                            <p>
+                                                Medication delivery from NowRx will arrive at your patient's house
+                                                within 3-4 hours of you sending the prescription to us. If the patient
+                                                is transferring a prescription from another pharmacy, we will deliver
+                                                the prescription within 3-4 hours of receiving the transfer from their
+                                                current pharmacy.
+
+
+
+
+                                            </p>
+                                            <p>
+                                                If a prescription is sent outside of normal business hours we will
+                                                deliver it the following business day.
+                                            </p>
+                                            <p>
+                                                In rare cases, delivery may not be same-day e.g. if a prior
+                                                authorization is required and is taking longer than usual. In these
+                                                situations, we will notify the patient as soon as possible and do
+                                                everything we can to find a solution!
+                                            </p>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- item -->
+                        <div class="item" data-opentab="false">
+                            <span class="title">
+                                What are NowRx cash prices like?
+                                <span class="question-svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 490.661 490.661"
+                                        style="enable-background:new 0 0 490.661 490.661;" xml:space="preserve">
+                                        <g>
+                                            <path
+                                                d="M453.352,236.091L48.019,1.424c-3.285-1.899-7.36-1.899-10.688,0c-3.285,1.899-5.333,5.419-5.333,9.237v469.333    c0,3.819,2.048,7.339,5.333,9.237c1.643,0.939,3.499,1.429,5.333,1.429c1.856,0,3.691-0.469,5.355-1.429l405.333-234.667    c3.285-1.92,5.312-5.44,5.312-9.237S456.637,237.989,453.352,236.091z" />
+                                        </g>
+
+                                    </svg>
+                                </span>
+                            </span>
+                            <div class="item-block">
+                                <div class="block">
+                                    <div class="q-item">
+                                        <span class="close-itcon">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="">
+                                        </span>
+                                        <div class="title">Q.</div>
+                                        <span class="cntx">
+                                            What are NowRx cash prices like?
+                                        </span>
+                                    </div>
+                                    <div class="a-item">
+                                        <div class="title">A.</div>
+                                        <span class="cntx">
+                                            <p>
+                                                NowRx Pharmacy cash prices are competitive or beat even leading coupon
+                                                cards like GoodRx. To check the cash price for a specific medication,
+                                                please give your local NowRx Pharmacy a call.
+                                            </p>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- item -->
+                        <div class="item" data-opentab="false">
+                            <span class="title">
+                                How does NowRx improve medication adherence and patient safety?
+                                <span class="question-svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 490.661 490.661"
+                                        style="enable-background:new 0 0 490.661 490.661;" xml:space="preserve">
+                                        <g>
+                                            <path
+                                                d="M453.352,236.091L48.019,1.424c-3.285-1.899-7.36-1.899-10.688,0c-3.285,1.899-5.333,5.419-5.333,9.237v469.333    c0,3.819,2.048,7.339,5.333,9.237c1.643,0.939,3.499,1.429,5.333,1.429c1.856,0,3.691-0.469,5.355-1.429l405.333-234.667    c3.285-1.92,5.312-5.44,5.312-9.237S456.637,237.989,453.352,236.091z" />
+                                        </g>
+
+                                    </svg>
+                                </span>
+                            </span>
+                            <div class="item-block">
+                                <div class="block">
+                                    <div class="q-item">
+                                        <span class="close-itcon">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="">
+                                        </span>
+                                        <div class="title">Q.</div>
+                                        <span class="cntx">
+                                            How does NowRx improve medication adherence and patient safety?
+                                        </span>
+                                    </div>
+                                    <div class="a-item">
+                                        <div class="title">A.</div>
+                                        <span class="cntx">
+
+                                            <p>
+                                                Multiple studies have shown that home delivery of prescription
+                                                medications and better patient education increase adherence and
+                                                compliance to medication regimens.
+                                            </p>
+                                            <ul>
+                                                <li><a
+                                                        href="https://pubmed.ncbi.nlm.nih.gov/25062079/">https://pubmed.ncbi.nlm.nih.gov/25062079/</a>
+                                                </li>
+                                                <li><a
+                                                        href="https://pubmed.ncbi.nlm.nih.gov/24304158/">https://pubmed.ncbi.nlm.nih.gov/24304158/</a>
+                                                </li>
+                                                <li><a
+                                                        href="https://pubmed.ncbi.nlm.nih.gov/30816817/">https://pubmed.ncbi.nlm.nih.gov/30816817/</a>
+                                                </li>
+                                                <li><a
+                                                        href="https://pubmed.ncbi.nlm.nih.gov/27123916/">https://pubmed.ncbi.nlm.nih.gov/27123916/</a>
+                                                </li>
+                                            </ul>
+
+                                            <p>
+                                                In addition, NowRx Pharmacy proprietary software and robotic automation
+                                                reduces average dispensing error rates by over 1000x. In 2020
+                                                SureScripts recognized Nowrx Pharmacy as a finalist for the White Coat
+                                                Awards in the Highest Accuracy category.
+                                            </p>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- item -->
+                        <div class="item" data-opentab="false">
+                            <span class="title">
+                                What medications does NowRx Pharmacy deliver?
+                                <span class="question-svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 490.661 490.661"
+                                        style="enable-background:new 0 0 490.661 490.661;" xml:space="preserve">
+                                        <g>
+                                            <path
+                                                d="M453.352,236.091L48.019,1.424c-3.285-1.899-7.36-1.899-10.688,0c-3.285,1.899-5.333,5.419-5.333,9.237v469.333    c0,3.819,2.048,7.339,5.333,9.237c1.643,0.939,3.499,1.429,5.333,1.429c1.856,0,3.691-0.469,5.355-1.429l405.333-234.667    c3.285-1.92,5.312-5.44,5.312-9.237S456.637,237.989,453.352,236.091z" />
+                                        </g>
+
+                                    </svg>
+                                </span>
+                            </span>
+                            <div class="item-block">
+                                <div class="block">
+                                    <div class="q-item">
+                                        <span class="close-itcon">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="">
+                                        </span>
+                                        <div class="title">Q.</div>
+                                        <span class="cntx">
+                                            What medications does NowRx Pharmacy deliver?
+                                        </span>
+                                    </div>
+                                    <div class="a-item">
+                                        <div class="title">A.</div>
+                                        <span class="cntx">
+                                            <p>
+                                                NowRx Pharmacy offers delivery of over 250 prescriptions including
+                                                controlled and refrigerated medications. We also offer delivery of
+                                                common over the counter medications and supplements like Tylenol,
+                                                Vitamin D, etc. We do not offer compounding at this time.
+                                            </p>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- item -->
+                        <div class="item" data-opentab="false">
+                            <span class="title">
+                                How does NowRx apply/handle drug coupons?
+                                <span class="question-svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 490.661 490.661"
+                                        style="enable-background:new 0 0 490.661 490.661;" xml:space="preserve">
+                                        <g>
+                                            <path
+                                                d="M453.352,236.091L48.019,1.424c-3.285-1.899-7.36-1.899-10.688,0c-3.285,1.899-5.333,5.419-5.333,9.237v469.333    c0,3.819,2.048,7.339,5.333,9.237c1.643,0.939,3.499,1.429,5.333,1.429c1.856,0,3.691-0.469,5.355-1.429l405.333-234.667    c3.285-1.92,5.312-5.44,5.312-9.237S456.637,237.989,453.352,236.091z" />
+                                        </g>
+
+                                    </svg>
+                                </span>
+                            </span>
+                            <div class="item-block">
+                                <div class="block">
+                                    <div class="q-item">
+                                        <span class="close-itcon">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="">
+                                        </span>
+                                        <div class="title">Q.</div>
+                                        <span class="cntx">
+                                            How does NowRx apply/handle drug coupons?
+                                        </span>
+                                    </div>
+                                    <div class="a-item">
+                                        <div class="title">A.</div>
+                                        <span class="cntx">
+                                            <p>
+                                                NowRx automatically searches for and applies any manufacturer coupon
+                                                that will lower your patient's out of pocket costs. We keep a database
+                                                of existing medication coupons and anytime a new drug is prescribed our
+                                                pharmacy team checks with the manufacturer to see if there is a coupon
+                                                available.
+                                            </p>
+
+                                            <p>
+                                                Many pharmaceutical reps recommend working with NowRx on new medications
+                                                for this reason as we make sure coupons are handled properly and costs
+                                                for new medications are kept in check for patients.
+                                            </p>
+
+                                            <p>
+                                                This feature has saved customers over $1.5M to date.
+                                            </p>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- item -->
+                        <div class="item" data-opentab="false">
+                            <span class="title">
+                                What insurance plans does NowRx Pharmacy accept?
+                                <span class="question-svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 490.661 490.661"
+                                        style="enable-background:new 0 0 490.661 490.661;" xml:space="preserve">
+                                        <g>
+                                            <path
+                                                d="M453.352,236.091L48.019,1.424c-3.285-1.899-7.36-1.899-10.688,0c-3.285,1.899-5.333,5.419-5.333,9.237v469.333    c0,3.819,2.048,7.339,5.333,9.237c1.643,0.939,3.499,1.429,5.333,1.429c1.856,0,3.691-0.469,5.355-1.429l405.333-234.667    c3.285-1.92,5.312-5.44,5.312-9.237S456.637,237.989,453.352,236.091z" />
+                                        </g>
+
+                                    </svg>
+                                </span>
+                            </span>
+                            <div class="item-block">
+                                <div class="block">
+                                    <div class="q-item">
+                                        <span class="close-itcon">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="">
+                                        </span>
+                                        <div class="title">Q.</div>
+                                        <span class="cntx">
+                                            What insurance plans does NowRx Pharmacy accept?
+                                        </span>
+                                    </div>
+                                    <div class="a-item">
+                                        <div class="title">A.</div>
+                                        <span class="cntx">
+                                            <p>
+                                                NowRx Pharmacy accepts all major insurance plans with the exception of
+                                                Kaiser.
+                                            </p>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <!-- faq item -->
+                <div class="faq-block">
+                    <div class="click" data-opentab="0">
+                        <h2 class="sec-title">
+                            General Business Questions
+                            <span class="chevron-arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 256 256"
+                                    style="enable-background:new 0 0 256 256;" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <polygon
+                                                points="79.093,0 48.907,30.187 146.72,128 48.907,225.813 79.093,256 207.093,128   " />
+                                        </g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                </svg>
+                            </span>
+                        </h2>
+                    </div>
+                    <div class="block-content">
+                        <!-- item -->
+                        <div class="item" data-opentab="false">
+                            <span class="title">
+                                What is NowRx Pharmacy?
+                                <span class="question-svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 490.661 490.661"
+                                        style="enable-background:new 0 0 490.661 490.661;" xml:space="preserve">
+                                        <g>
+                                            <path
+                                                d="M453.352,236.091L48.019,1.424c-3.285-1.899-7.36-1.899-10.688,0c-3.285,1.899-5.333,5.419-5.333,9.237v469.333    c0,3.819,2.048,7.339,5.333,9.237c1.643,0.939,3.499,1.429,5.333,1.429c1.856,0,3.691-0.469,5.355-1.429l405.333-234.667    c3.285-1.92,5.312-5.44,5.312-9.237S456.637,237.989,453.352,236.091z" />
+                                        </g>
+
+                                    </svg>
+                                </span>
+                            </span>
+                            <div class="item-block">
+                                <div class="block">
+                                    <div class="q-item">
+                                        <span class="close-itcon">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="">
+                                        </span>
+                                        <div class="title">Q.</div>
+                                        <span class="cntx">
+                                            What is NowRx Pharmacy?
+                                        </span>
+                                    </div>
+                                    <div class="a-item">
+                                        <div class="title">A.</div>
+                                        <span class="cntx">
+                                            <p>
+                                                NowRx is a retail pharmacy just like any CVS or Walgreens, except
+                                                instead of
+                                                customers coming into the store to pick up their medications, we deliver
+                                                it
+                                                in hours free of charge. We have physical locations local to every area
+                                                we
+                                                service and offer the same services as a traditional retail pharmacy.
+                                            </p>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- item -->
+                        <div class="item" data-opentab="false">
+                            <span class="title">
+                                How is NowRx different than a mail order pharmacy?
+                                <span class="question-svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 490.661 490.661"
+                                        style="enable-background:new 0 0 490.661 490.661;" xml:space="preserve">
+                                        <g>
+                                            <path
+                                                d="M453.352,236.091L48.019,1.424c-3.285-1.899-7.36-1.899-10.688,0c-3.285,1.899-5.333,5.419-5.333,9.237v469.333    c0,3.819,2.048,7.339,5.333,9.237c1.643,0.939,3.499,1.429,5.333,1.429c1.856,0,3.691-0.469,5.355-1.429l405.333-234.667    c3.285-1.92,5.312-5.44,5.312-9.237S456.637,237.989,453.352,236.091z" />
+                                        </g>
+
+                                    </svg>
+                                </span>
+                            </span>
+                            <div class="item-block">
+                                <div class="block">
+                                    <div class="q-item">
+                                        <span class="close-itcon">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="">
+                                        </span>
+                                        <div class="title">Q.</div>
+                                        <span class="cntx">
+                                            How is NowRx different than a mail order pharmacy?
+                                        </span>
+                                    </div>
+                                    <div class="a-item">
+                                        <div class="title">A.</div>
+                                        <span class="cntx">
+                                            <p>
+                                                Unlike mail order pharmacies:
+                                            </p>
+
+                                            <ul>
+                                                <li> NowRx has physical pharmacies local to every area we service.</li>
+                                                <li> NowRx employees deliver all medications (opposed to using 3rd
+                                                    parties like
+                                                    USPS)</li>
+                                                <li> NowRx deliveries arrive within hours opposed to mail services
+                                                    which can
+                                                    take 3-14 days.</li>
+                                                <li>
+                                                     NowRx delivers both controlled and refrigerated medications for no
+                                                    additional charge
+                                                </li>
+                                                <li> NowRx always has a live pharmacy team member available to answer
+                                                    your
+                                                    questions.</li>
+                                            </ul>
+
+
+
+
+
+
+
+
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- item -->
+                        <div class="item" data-opentab="false">
+                            <span class="title">
+                                How can NowRx afford to deliver in hours for free?
+                                <span class="question-svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 490.661 490.661"
+                                        style="enable-background:new 0 0 490.661 490.661;" xml:space="preserve">
+                                        <g>
+                                            <path
+                                                d="M453.352,236.091L48.019,1.424c-3.285-1.899-7.36-1.899-10.688,0c-3.285,1.899-5.333,5.419-5.333,9.237v469.333    c0,3.819,2.048,7.339,5.333,9.237c1.643,0.939,3.499,1.429,5.333,1.429c1.856,0,3.691-0.469,5.355-1.429l405.333-234.667    c3.285-1.92,5.312-5.44,5.312-9.237S456.637,237.989,453.352,236.091z" />
+                                        </g>
+
+                                    </svg>
+                                </span>
+                            </span>
+                            <div class="item-block">
+                                <div class="block">
+                                    <div class="q-item">
+                                        <span class="close-itcon">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="">
+                                        </span>
+                                        <div class="title">Q.</div>
+                                        <span class="cntx">
+                                            How can NowRx afford to deliver in hours for free?
+                                        </span>
+                                    </div>
+                                    <div class="a-item">
+                                        <div class="title">A.</div>
+                                        <span class="cntx">
+                                            <p>
+                                                NowRx has proprietary software and technology inside each pharmacy which
+                                                increases efficiency and reduces costs considerably. This allows NowRx
+                                                to
+                                                operate at about 1/100th the cost of a traditional retail pharmacy like
+                                                CVS
+                                                or Walgreens.
+                                            </p>
+
+                                            <p>
+                                                We then use these savings to provide customer benefits like free
+                                                delivery in
+                                                hours, better customer service, and better cash pricing.
+                                            </p>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- item -->
+                        <div class="item" data-opentab="false">
+                            <span class="title">
+                                How does NowRx make money?
+                                <span class="question-svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 490.661 490.661"
+                                        style="enable-background:new 0 0 490.661 490.661;" xml:space="preserve">
+                                        <g>
+                                            <path
+                                                d="M453.352,236.091L48.019,1.424c-3.285-1.899-7.36-1.899-10.688,0c-3.285,1.899-5.333,5.419-5.333,9.237v469.333    c0,3.819,2.048,7.339,5.333,9.237c1.643,0.939,3.499,1.429,5.333,1.429c1.856,0,3.691-0.469,5.355-1.429l405.333-234.667    c3.285-1.92,5.312-5.44,5.312-9.237S456.637,237.989,453.352,236.091z" />
+                                        </g>
+
+                                    </svg>
+                                </span>
+                            </span>
+                            <div class="item-block">
+                                <div class="block">
+                                    <div class="q-item">
+                                        <span class="close-itcon">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="">
+                                        </span>
+                                        <div class="title">Q.</div>
+                                        <span class="cntx">
+                                            How does NowRx make money?
+                                        </span>
+                                    </div>
+                                    <div class="a-item">
+                                        <div class="title">A.</div>
+                                        <span class="cntx">
+                                            <p>
+                                                NowRx makes money like all pharmacies and healthcare services –
+                                                reimbursement from insurance and copays from the patient.
+                                            </p>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- item -->
+                        <div class="item" data-opentab="false">
+                            <span class="title">
+                                How does NowRx protect my personal health information?
+                                <span class="question-svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 490.661 490.661"
+                                        style="enable-background:new 0 0 490.661 490.661;" xml:space="preserve">
+                                        <g>
+                                            <path
+                                                d="M453.352,236.091L48.019,1.424c-3.285-1.899-7.36-1.899-10.688,0c-3.285,1.899-5.333,5.419-5.333,9.237v469.333    c0,3.819,2.048,7.339,5.333,9.237c1.643,0.939,3.499,1.429,5.333,1.429c1.856,0,3.691-0.469,5.355-1.429l405.333-234.667    c3.285-1.92,5.312-5.44,5.312-9.237S456.637,237.989,453.352,236.091z" />
+                                        </g>
+
+                                    </svg>
+                                </span>
+                            </span>
+                            <div class="item-block">
+                                <div class="block">
+                                    <div class="q-item">
+                                        <span class="close-itcon">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="">
+                                        </span>
+                                        <div class="title">Q.</div>
+                                        <span class="cntx">
+                                            How does NowRx protect my personal health information?
+                                        </span>
+                                    </div>
+                                    <div class="a-item">
+                                        <div class="title">A.</div>
+                                        <span class="cntx">
+                                            <p>
+                                                At NowRx Pharmacy, we take our customer's data very seriously and employ
+                                                a
+                                                number of safeguards to ensure the security of the data we collect
+                                                including
+                                                but not limited to maintaining all health related data offline on a
+                                                secure
+                                                HIPAA compliant server.
+                                            </p>
+
+                                            <p>
+                                                To learn more, please take a look at our <a
+                                                    href="https://nowrx.com/privacy-policy/"> Privacy Policy</a> and <a
+                                                    href="https://nowrx.com/hipaa-privacy/">Privacy Practices</a>.
+                                            </p>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+                    </div>
+                </div>
+
+                <div class="faq-block">
+                    <div class="clickmodal" data-opentab="0">
+                        <h2 class="sec-title">
+
+                            <span class="tiltelink" data-toggle="submitaquestion" aria-controls="submitaquestion"
+                                aria-haspopup="true" tabindex="0">Submit a Question</span>
+
+                            <span class="chevron-arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 256 256"
+                                    style="enable-background:new 0 0 256 256;" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <polygon
+                                                points="79.093,0 48.907,30.187 146.72,128 48.907,225.813 79.093,256 207.093,128   " />
+                                        </g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                </svg>
+                            </span>
+                        </h2>
+                    </div>
+                </div>
+
+            </div>
+            <div class="faq-image">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/Prescription-Bottles-White-BG.jpeg" alt=""
+                    class="pic">
+            </div>
+        </div>
     </div>
-  </div>
 </section>
 
-<?php endwhile; endif; ?>
+
+
+<section class="visit-faq">
+    <div class="container">
+        <div class="content">
+            <div class="rvl">
+                <span class="sub-headline">
+                    No Signup Required. No Hidden Fees.
+                </span>
+            </div>
+
+            <div class="rvl">
+                <h2 class="sec-title">
+                    Just a Better Pharmacy
+                </h2>
+            </div>
+            <div class="rvl">
+                <div class="btn-container">
+                    <a class="rx-btn rx-dg" href="<?= get_site_url(); ?>/get-started/">Get Started</a>
+                </div>
+            </div>
+            <div class="rvl">
+                <div class="small-block">
+                    <p>
+                        Still have questions about how to get started with NowRx Pharmacy? Email us at info@nowr.com an
+                        agent will be happy to help.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<?php endwhile;
+endif; ?>
 
 <?php get_footer(); ?>

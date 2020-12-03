@@ -2,6 +2,145 @@
 
 @import 'currentfoundation.scss';
 
+// topbar
+.promo-bar {
+	background-color: rgb(0, 142, 216);
+	padding: 10px 10px;
+	box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.15);
+}
+
+.promo-bar a {
+	color: #fff;
+	margin: 0 auto;
+	font-size: 1rem;
+	font-weight: 600;
+	display: block;
+	line-height: 1.3rem;
+}
+
+.promo-bar span.button.hollow.small {
+	margin: 0 0 0 30px;
+	color: #fff;
+	border-color: #fff;
+	@media screen and (max-width: 992px) {
+		display: none;
+	}
+}
+
+.promo-bar span.phone.hide-for-small-only {
+}
+
+.item-container {
+}
+
+.promo-bar span.button.hollow.small:hover {
+	background: #fff;
+	color: #038ed8;
+}
+// header
+header.main {
+	padding: 30px 20px;
+	position: relative;
+	z-index: 12;
+
+	@media screen and (max-width: 992px) {
+		padding: 30px 0;
+	}
+	.content {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+		@media screen and (max-width: 992px) {
+			padding: 20px 0;
+		}
+	}
+
+	.responsive-bar {
+		position: relative;
+		display: none;
+		@media screen and (max-width: 992px) {
+			display: block;
+			position: absolute;
+			top: 50%;
+			left: 20px;
+			transform: translate(0px, -50%);
+		}
+		a.menu-icon-toggle {
+			position: relative;
+			top: 0;
+			left: 0;
+		}
+	}
+
+	a.main-nav-logo {
+		max-width: 158px;
+		position: relative;
+		display: block;
+	}
+
+	nav.top {
+		margin-left: auto;
+		transition: all 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+
+		@media screen and (max-width: 992px) {
+			position: absolute;
+			top: 100%;
+			left: 0;
+			right: 0;
+			background: #eee;
+			opacity: 0;
+			visibility: hidden;
+			background: #1f4f8b;
+		}
+		&.active-menu {
+			visibility: visible;
+			opacity: 1;
+		}
+	}
+
+	ul.nav {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		@media screen and (max-width: 992px) {
+			flex-direction: column;
+			padding: 30px 0;
+		}
+	}
+
+	ul.nav a {
+		padding: 0.7rem;
+		color: #192d3e;
+		font-size: 1rem;
+		font-family: proxima-soft, sans-serif;
+		border-radius: 5px;
+		display: block;
+		&:hover {
+			background: #eee;
+			@media screen and (max-width: 992px) {
+				color: #1f4f8b;
+			}
+		}
+		@media screen and (max-width: 992px) {
+			color: #fff;
+		}
+	}
+
+	ul.nav a.button.secondary.rounded.shadow {
+		margin: 0px;
+		border-radius: 30px;
+		color: #fff;
+		margin-left: 20px;
+		&:hover {
+			background: #eee;
+		}
+	}
+}
+
 .h1,
 .h2,
 h1,
@@ -54,7 +193,7 @@ h2 {
 ================================================== */
 
 section.hero-home {
-	padding: 140px  0 30px;
+	padding: 140px 0 30px;
 	position: relative;
 
 	@media screen and (max-width: 992px) {
@@ -103,14 +242,12 @@ section.hero-home {
 			&.image-col {
 				width: 70%;
 
-
 				width: 50%;
 				// min-height: 500px;
 				// min-height: 600px;
 				display: flex;
 				align-items: center;
 				justify-content: center;
-
 
 				@media screen and (max-width: 1200px) {
 					width: 40%;
@@ -136,7 +273,7 @@ section.hero-home {
 		}
 		.btn-container {
 			margin: 30px -10px 0;
-			
+
 			@media screen and (max-width: 700px) {
 				margin: 30px 0 0;
 			}
@@ -147,10 +284,20 @@ section.hero-home {
 			letter-spacing: -1px;
 			font-weight: 800;
 			line-height: 1em;
+			&.hiw-title {
+				font-size: 4.1rem;
+				@media screen and (max-width: 992px) {
+					font-size: 3rem;
+					margin: 0 0 20px;
+				}
+			}
 			@media screen and (max-width: 992px) {
 				font-size: 3rem;
 				margin: 0 0 20px;
 			}
+		}
+		a.alink {
+			color: #008ed8;
 		}
 		p {
 			@media screen and (max-width: 992px) {
@@ -252,7 +399,7 @@ section.how-it-works .step {
 section.how-it-works.panel--primary {
 	background-color: #0088ce;
 	color: #ffffff;
-	border-radius: 80px 0;
+	// border-radius: 80px 0;
 }
 section.how-it-works.panel--primary p {
 	font-size: 1.1875rem;
@@ -721,10 +868,10 @@ label.hs-error-msg {
 	height: 30px;
 	margin: 0px 20px;
 	width: auto;
-    height: auto;
-    max-width: 120px;
+	height: auto;
+	max-width: 120px;
 	max-height: 40px;
-	
+
 	@media screen and (max-width: 992px) {
 		margin: 10px 20px;
 	}
@@ -1075,7 +1222,7 @@ a.post-link-title {
 		line-height: 3rem;
 		font-size: 3rem;
 		line-height: 2rem;
-    font-size: 2rem;
+		font-size: 2rem;
 	}
 	br {
 	}
@@ -1151,7 +1298,7 @@ section.faq-section {
 
 	.faq-content .q-item {
 		display: flex;
-		align-items: center;
+		align-items: flex-start;
 		border-left: 3px solid #038ed8;
 		padding: 0 0 0 20px;
 	}
@@ -1173,7 +1320,8 @@ section.faq-section {
 		display: block;
 		width: 45px;
 		font-size: 2.5rem;
-		font-weight: 100;
+		font-weight: 100;padding: 10px 0 0;
+		
 	}
 
 	.container {
@@ -1281,3 +1429,447 @@ section.visit-faq {
 	.btn-container {
 	}
 }
+
+// Locations
+.states-box {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 60px 0;
+	span.state {
+		width: 20%;
+		color: #038ed8;
+		padding: 5px 10px;
+		font-weight: 600;
+		@media screen and (max-width: 992px) {
+			width: 50%;
+		}
+	}
+}
+
+// section faqs page
+section.faq-blocks {
+	padding: 60px 0;
+	max-width: 100%;
+
+	.faq-blocks {
+	}
+	.clickmodal:hover,
+	.click:hover {
+		background: #eee;
+	}
+	.clickmodal,
+	.click {
+		padding: 25px 20px;
+		box-shadow: 0 0px 15px -4px rgba(0, 0, 0, 0.15);
+
+		border: 1px solid #ececec;
+		border-left: 3px solid #038ed8;
+		cursor: pointer;
+		border-radius: 3px;
+		transition: all 0.3s;
+
+		h2.sec-title {
+			color: $m;
+			display: flex;
+
+			font-size: 26px;
+			line-height: 28px;
+			font-weight: 600;
+			margin: 0;
+			font-weight: 600;
+			margin: 0;
+
+			span.chevron-arrow {
+				margin-left: auto;
+				display: flex;
+				align-items: center;
+				svg {
+					width: 30px;
+					height: 20px;
+					color: #038ed8;
+					fill: #038ed8;
+					transition: all 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+				}
+			}
+		}
+	}
+
+	.clickmodal {
+		padding: 0;
+		h2.sec-title {
+			display: flex;
+			align-items: center;
+		}
+		span.chevron-arrow {
+			margin-right: 20px;
+		}
+	}
+	span.tiltelink {
+		padding: 25px 20px;
+		display: block;
+		width: 100%;
+	}
+	.click.active-faq span.chevron-arrow svg {
+		transform: rotate(90deg);
+	}
+
+	.container {
+		// max-width: 75rem;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 0 20px;
+	}
+
+	span.sub-headline {
+		font-weight: 600;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+		color: #038ed8;
+		display: block;
+		margin: 0 0 10px;
+		font-family: proxima-soft, sans-serif;
+		text-align: center;
+	}
+
+	.topcontent.content h2.sec-title {
+		margin: 0 0 20px;
+		font-size: 4.3rem;
+		letter-spacing: -1px;
+		font-weight: 800;
+		line-height: 1em;
+		text-align: center;
+		@media screen and (max-width: 992px) {
+			font-size: 2.7rem;
+		}
+	}
+
+	.topcontent.content {
+		margin: 0 0 60px;
+	}
+	.faq-block {
+		> .block-content {
+			opacity: 0;
+			visibility: hidden;
+			/* display: none; */
+			max-height: 0px;
+			overflow: hidden;
+			transition: all 0.6s cubic-bezier(0.33, 1, 0.68, 1);
+		}
+		> .block-content.active-faq {
+			visibility: visible;
+			opacity: 1;
+			display: block;
+			max-height: 400vh;
+			overflow: visible;
+		}
+	}
+	.faq-block {
+		margin: 0 0 20px;
+	}
+
+	.faq-blocks .item-block {
+		position: absolute;
+		top: 0;
+		left: 100%;
+		width: 100%;
+		visibility: hidden;
+		opacity: 0;
+
+		visibility: hidden;
+		opacity: 0;
+		margin-left: 20px;
+		transform: translate(-20px, 0px);
+		transition: all 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+		border: 1px solid #d4d4d4;
+		border-radius: 10px;
+		overflow: hidden;
+		background: #fff;
+		@media screen and (max-width: 992px) {
+			position: relative;
+			top: 0;
+			left: 0;
+			margin: 0;
+			max-height: 0px;
+			overflow: hidden;
+		}
+	}
+	.item:hover .item-block {
+		// opacity: 1;
+		// visibility: visible;
+	}
+
+	.faq-blocks .item-block.active-faq {
+		opacity: 1;
+		visibility: visible;
+		box-shadow: 0 10px 20px 0px #00000024;
+		border: 1px solid #eee;
+		margin-left: 20px;
+		border: 1px solid #eee;
+		transform: translate(0px, 0px);
+		@media screen and (max-width: 992px) {
+			margin: 10px 0 20px;
+		}
+		max-height: 400vh;
+		overflow: hidden;
+	}
+
+	.faq-blocks {
+		.item {
+			position: relative;
+			margin: 10px 0;
+			padding: 0 15px;
+		}
+	}
+
+	span.title.active-faq span.question-svg {
+		opacity: 1;
+	}
+
+	.faq-blocks {
+		max-width: 45%;
+		width: 100%;
+		margin-left: 5%;
+		@media screen and (max-width: 992px) {
+			max-width: 100%;
+			margin: 0;
+		}
+	}
+
+	section.faq-blocks {
+	}
+
+	.q-item {
+		display: flex;
+	}
+
+	.a-item {
+		display: flex;
+	}
+
+	.faq-blocks .item-block .title {
+		width: 50px;
+		display: block;
+		font-size: 2.5rem;
+		line-height: 2rem;
+	}
+
+	.faq-blocks .item-block span.cntx {
+		width: 100%;
+	}
+	span.title:hover {
+		background: #eee;
+	}
+	span.title {
+		padding: 10px 10px;
+		display: flex;
+		cursor: pointer;
+		color: $m;
+		font-family: proxima-soft, sans-serif;
+		font-size: 22px;
+		line-height: 26px;
+		font-weight: 700;
+
+		span.question-svg {
+			margin-left: auto;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			opacity: 0;
+			transition: all 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+			svg {
+				width: 10px;
+				height: 15px;
+				fill: #038ed8;
+			}
+		}
+
+		&:hover {
+			span.question-svg {
+				opacity: 1;
+			}
+		}
+	}
+
+	.topcontent.content {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.content.botcot {
+		display: flex;
+		@media screen and (max-width: 992px) {
+			flex-direction: column-reverse;
+		}
+		.faq-image {
+			max-width: 45%;
+			width: 100%;
+			margin-left: 5%;
+			padding: 30px 0 0 60px;
+
+			@media screen and (max-width: 992px) {
+				max-width: 500px;
+				margin: 0 auto 40px;
+			}
+		}
+	}
+
+	.q-item {
+		display: flex;
+		align-items: flex-start;
+		border-left: 3px solid #038ed8;
+		padding: 20px 0 10px 20px;
+	}
+	.q-item {
+		position: relative;
+	}
+
+	span.close-itcon {
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		cursor: pointer;
+		height: 20px;
+		width: 20px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	span.close-itcon img {
+		width: 10px;
+		height: 10px;
+	}
+
+	span.close-itcon:hover {
+		border-radius: 50%;
+		border: 1px solid #797979;
+	}
+
+	.a-item {
+		display: flex;
+		align-items: flex-start;
+		border-left: 3px solid #eee;
+		padding: 10px 0 30px 20px;
+	}
+
+	.q-item {
+		background: #fbfbfb;
+	}
+
+	.a-item {
+	}
+
+	.q-item .title {
+		color: #0388cd;
+		padding: 10px 0 0;
+	}
+
+	.q-item span.cntx {
+		font-family: proxima-soft, sans-serif;
+		font-size: 24px;
+		line-height: 28px;
+		font-weight: 700;
+		padding: 0px 20px 10px 5px;
+	}
+
+	.a-item .title {
+	}
+
+	.a-item span.cntx {
+		font-size: 16px;
+	}
+
+	.block {
+	}
+
+	.block:nth-child(even) {
+	}
+
+	.block:nth-child(odd) {
+	}
+
+	span.cntx {
+		padding: 5px 20px 5px 5px;
+	}
+}
+h3.text-center {
+	text-transform: capitalize;
+}
+
+section.locations-item {
+	span.sub-headline {
+		text-align: center;
+		text-transform: uppercase;
+		margin: 0 0 10px;
+		font-weight: 600;
+		font-family: proxima-soft, sans-serif;
+		color: #038ed8;
+		display: block;
+	}
+
+	h2.sec-title {
+		text-align: center;
+		font-size: 3.75rem;
+		letter-spacing: -1px;
+		font-weight: 800;
+		line-height: 4.4rem;
+		margin: 0 0 30px;
+		@media screen and (max-width: 992px) {
+			text-align: center;
+			font-size: 2.75rem;
+			letter-spacing: -1px;
+			font-weight: 800;
+			line-height: 3.4rem;
+			margin: 0 0 30px;
+		}
+	}
+
+	.locatios-mainblock {
+		display: flex;
+		margin: 60px 0 0;
+		flex-wrap: wrap;
+		max-width: 1300px;
+    	margin: 60px auto 0;
+	}
+
+	.content {
+		padding: 60px 20px;
+	}
+
+	.locatios-mainblock .location-item {
+		width: 50%;
+		padding: 20px 20px;
+		@media screen and (max-width: 992px) {
+			width: 100%;
+		}
+	}
+
+	.locatios-mainblock .location-item {
+		h2.sec-title {
+			text-align: left;
+			font-size: 2.3rem;
+			line-height: 2.4rem;
+			color: #038ed8;
+			margin: 0 0 5px;
+			font-weight: 600;
+			&.disclaimer {
+				color: #444;
+				font-size: 18px;
+				line-height: 20px;
+				text-align: center;
+				margin-top: 30px;
+			}
+		}
+	}
+	.locatios-mainblock .location-item span.desc-item {
+		display: block;
+		span.desc-item {
+		}
+
+		a.rx-btn {
+			width: 100%;
+			margin: 10px 0 0;
+		}
+	}
+}
+

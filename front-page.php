@@ -37,7 +37,7 @@
 
                     <div class="rvls">
                         <span class="sub-headline">
-                            A Better Pharmacy Delivered
+                            A Better Local Pharmacy Delivered
                         </span>
                     </div>
 

@@ -23,7 +23,7 @@ a.rx-btn {
 
 	display: inline-block;
 	vertical-align: middle;
-	padding: 15px 40px;
+	padding: 15px 20px;
 	border: 1px solid transparent;
 	border-radius: 0;
 	transition: all 0.25s ease-out, color 0.25s ease-out;
@@ -39,7 +39,7 @@ a.rx-btn {
 	border-radius: 30px;
 	margin: 10px 10px 10px;
 	box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.15);
-	min-width: 200px;
+	min-width: 240px;
 
 	@media screen and (max-width: 700px) {
 		font-size: 14px;
@@ -53,6 +53,12 @@ a.rx-btn {
 	&.rx-dg {
 		background-color: #254e89;
 		color: $f;
+	}
+
+	&.rx-txt {
+		background: transparent;
+		color: #038ed8;
+		box-shadow: none;
 	}
 	//line
 	&.rx-line {

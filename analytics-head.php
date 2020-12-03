@@ -1,0 +1,57 @@
+
+  <?php // drop Google Analytics Here 
+  ?>
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src=https://www.googletagmanager.com/gtag/js?id=UA-117353738-1"> </script> <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-117353738-1');
+  </script>
+
+  <!-- Global site tag (gtag.js) - Google Ads: 875503484 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-875503484"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'AW-875503484');
+  </script>
+
+  <!-- bing -->
+  <script async>
+    (function(w, d, t, r, u) {
+      var f, n, i;
+      w[u] = w[u] || [], f = function() {
+        var o = {
+          ti: "56297167"
+        };
+        o.q = w[u], w[u] = new UET(o), w[u].push("pageLoad")
+      }, n = d.createElement(t), n.src = r, n.async = 1, n.onload = n.onreadystatechange = function() {
+        var s = this.readyState;
+        s && s !== "loaded" && s !== "complete" || (f(), n.onload = n.onreadystatechange = null)
+      }, i = d.getElementsByTagName(t)[0], i.parentNode.insertBefore(n, i)
+    })(window, document, "script", "//bat.bing.com/bat.js", "uetq");
+    //   !function(_window, _document) {
+    // var OB_ADV_ID='00823c7bca4d0fcee5add72e3a165bf2bd';
+    // if (_window.obApi) {var toArray = function(object) {return Object.prototype.toString.call(object) === '[object Array]' ? object : [object];};_window.obApi.marketerId = toArray(_window.obApi.marketerId).concat(toArray(OB_ADV_ID));return;}
+    // var api = _window.obApi = function() {api.dispatch ? api.dispatch.apply(api, arguments) : api.queue.push(arguments);};api.version = '1.1';api.loaded = true;api.marketerId = OB_ADV_ID;api.queue = [];var tag = _document.createElement('script');tag.async = true;tag.src = '//amplify.outbrain.com/cp/obtp.js';tag.type = 'text/javascript';var script = _document.getElementsByTagName('script')[0];script.parentNode.insertBefore(tag, script);}(window, document);
+    // obApi('track', 'PAGE_VIEW');
+  </script>
+
+
+
+
+
+  <?php // end analytics 
+  ?>

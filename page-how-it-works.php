@@ -15,175 +15,589 @@
 
 <?php get_header(); ?>
 
-<?php if (has_post_thumbnail( $post->ID ) ): ?>
-<?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID),'large'); ?>
 
-<?php endif; ?>
-<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-<section class="hero--sub-page">
-<div class="grid-container">
-    <div class="grid-x grid-padding-x align-middle">
-      <div class="large-12 cell text-center">
-        <p class="pre-headline"><?php the_title(); ?></p>
-        <h1 class="headline"><?php the_field('large_page_title'); ?></h1>
-      </div>
+
+<!-- hero -->
+<section class="hero-home">
+    <div class="rvl">
+
+
+        <picture class="lozad"
+            data-iesrc="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020.png"
+            data-alt="prescription being delivered to mother" data-toggle-class="active">
+            <source type="image/png"
+                srcset="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020.png">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020lowrez.jpg"
+                class="imageblock" height="100px" width="450px">
+        </picture>
+
     </div>
-<p style="font-size:1.25em; text-align: center; color: #008ed8; text-shadow: .1px .1px .1px #000000;"><strong>NowRx uses modern technology to provide a simpler, more customer friendly <br>pharmacy experience. Here's how it works!</strong></p>
-    <div class="grid-x grid-padding-x align-middle">
-      <div class="large-8 large-offset-2 cell">
-        <?php the_field('page_intro'); ?>
-      </div>
+
+    <div class="container">
+        <div class="content">
+
+            <!-- content -->
+            <div class="column-half content-col">
+
+
+
+                <div class="rvls">
+                    <span class="sub-headline">
+                    3 EASY STEPS - GET STARTED IN SECONDS
+
+                    </span>
+                </div>
+
+                <div class="rvls">
+                    <h1 class="hiw-title">
+                    Prescription Delivery Simplified
+                    </h1>
+                </div>
+
+                <div class="rvls">
+                    <p>
+                    Text <a href="tel:844-466-6979" class="alink">(844) 466-6979</a> or fill out our <a href="<?= get_site_url(); ?>/get-started/" target="_blank" class="alink">online prescription form</a>. We will call you to confirm and deliver in hours. It’s that easy!
+                    </p>
+                </div>
+
+                <div class="rvls">
+                    <div class="btn-container">
+                        <a class="rx-btn" href="<?= get_site_url(); ?>/get-started/">Get Started</a>
+                        <a class="rx-btn mrb" href="#howitwork">How it Works</a>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+            <!-- image -->
+            <div class="column-half image-col">
+
+                <picture class="lozad"
+                    data-iesrc="<?php echo get_template_directory_uri(); ?>/library/images/hero-home-slider-3.jpg"
+                    data-alt="Free Prescription Delivery in Hours" data-toggle-class="active">
+                 
+                    <source type="image/jpeg"
+                        srcset="<?php echo get_template_directory_uri(); ?>/library/images/hero-home-slider-3.jpg">
+                    <img src="<?php echo get_template_directory_uri(); ?>/library/images/hero-home-slider-3.jpg"
+                        class="orbit-image" height="500px" width="650px">
+                </picture>
+            </div>
+
+        </div>
     </div>
-  </div>
-
-<div class="grid-container">
-
-	<div class="grid-x grid-margin-x" style="padding:3.5rem 0px 2.5rem 0px;">
-		<div class="cell large-12 text-center">
-		</div>
-
-
-		<div class="cell large-4 text-center">
-			<img src="<?php echo get_template_directory_uri(); ?>/library/images/icon-1.png" style="height: auto; width: auto; max-width: 100%; max-height: 100px; padding-bottom: 25px;" alt="pills icon">
-			<h5 style="color: #274e85;">Send Us Your Prescription</h5>
-			<p style="text-align: left;"><strong>New Prescription: </strong>Tell your doctor to fax or ePrescribe to NowRx. <br><strong>Existing Prescription: </strong><a href="https://try.nowrxpharmacy.com/prescription-delivery">Click Here</a></p>
-		</div>
-
-
-		<div class="cell large-4 text-center">
-			<img src="<?php echo get_template_directory_uri(); ?>/library/images/icon-2.svg" style="height: auto; width: auto; max-width: 100%; max-height: 100px; padding-bottom: 25px;" alt="checkmark icon">
-			<h5 style="color: #274e85;">We Confirm Delivery</h5>
-			<p>We will reach out to you via phone to confirm delivery address, insurance, and collect the prescription copy.</p>
-		</div>
-
-
-		<div class="cell large-4 text-center">
-			<img src="<?php echo get_template_directory_uri(); ?>/library/images/icon-3.svg" style="height: auto; width: auto; max-width: 100%; max-height: 100px; padding-bottom: 25px;" alt="delivery car icon">
-			<h5 style="color: #274e85;">Medication is Delivered</h5>
-			<p>A HIPAA certified NowRx driver will deliver your medicine in under 5 hours or as requested for no additional charge.</p>
-		</div>
-
-
-	</div>
-</div>
-
-</section>
-<section>
-  <div class="grid-container">
-    <div class="grid-x grid-padding-x">
-      <div class="large-12 cell">
-        <p class="handwriting text-center"><?php the_field('handwriting'); ?></p>
-      </div>
-    </div>
-  </div>
-  <div class="grid-container">
-    <div class="grid-x grid-padding-x align-middle padded-section switch-back">
-      <div class="large-4 large-offset-1 cell switch-back-image">
-        <img class="border-styled" src="<?php echo get_template_directory_uri(); ?>/library/images/how-it-works-step-switch.jpg" alt="prescription bottle">
-      </div>
-      <div class="large-5 large-offset-1 cell">
-        <p class="about-us--team-member-title">CURRENT PRESCRIPTION</p>
-        <?php the_field('current_prescription'); ?>
-      </div>
-    </div>
-    <div class="grid-x grid-padding-x align-middle padded-section switch-back">
-      <div class="large-4 large-offset-1 cell small-order-1 medium-order-2 switch-back-image">
-        <img class="border-styled" src="<?php echo get_template_directory_uri(); ?>/library/images/how-it-works-step-1.jpg" alt="doctor writing prescription for patient">
-      </div>
-      <div class="large-5 large-offset-1 cell small-order-2 medium-order-1">
-        <p class="about-us--team-member-title">NEW PRESCRIPTION</p>
-        <?php the_field('new_prescription'); ?>
-      </div>
-    </div>
-    <div class="grid-x grid-padding-x align-middle padded-section switch-back">
-      <div class="large-4 large-offset-1 cell switch-back-image">
-        <img class="border-styled" src="<?php echo get_template_directory_uri(); ?>/library/images/how-it-works-step-pharmacist.jpg" alt="pharmacist">
-      </div>
-      <div class="large-5 large-offset-1 cell">
-        <p class="about-us--team-member-title">PRESCRIPTION QUESTIONS?</p>
-        <?php the_field('prescription_questions'); ?>
-      </div>
-    </div>
-    <div class="grid-x grid-padding-x align-middle padded-section switch-back margin-bottom">
-      <div class="large-4 large-offset-1 cell small-order-1 medium-order-2 switch-back-image">
-        <img class="border-styled" src="<?php echo get_template_directory_uri(); ?>/library/images/how-it-works-step-robots.jpg" alt="robot dispensing prescription">
-      </div>
-      <div class="large-5 large-offset-1 cell small-order-2 medium-order-1">
-        <p class="about-us--team-member-title">ROBOTICS</p>
-        <?php the_field('robotics'); ?>
-      </div>
-    </div>
-  </div>
 </section>
 
-<section class="how-it-works panel--primary panel--cta">
-  <div class="grid-container">
-    <div class="grid-x grid-padding-x">
-      <div class="large-12 cell text-center">
-        <p class="pre-headline">Switch Today & Save</p>
-        <h2 class="headline">Get a $20 Visa <br>Gift Card</h2>
-        <p>For a limited time only, get a $20 Visa Gift Card for <br>every prescription you transfer to NowRx.*</p>
-        <a href="https://try.nowrxpharmacy.com/prescription-delivery" class="button">Switch to a Better Pharmacy Today</a>
-      </div>
+
+<!-- companies -->
+<section class="featured-in-section">
+    <div class="grid-container">
+        <div class="grid-x grid-padding-x">
+            <div class="large-12 cell text-center">
+                <p>
+                    <img height="100px" width="200px" data-toggle-class="active" class="lozad  featured-in-section-logo"
+                        data-src="<?php echo get_template_directory_uri(); ?>/library/images/brands-image-cnbc.svg"
+                        alt="CNBC logo">
+                    <img height="100px" width="200px" data-toggle-class="active" class="lozad  featured-in-section-logo"
+                        data-src="<?php echo get_template_directory_uri(); ?>/library/images/brands-image-fortune.svg"
+                        alt="Fortune logo">
+                    <img height="100px" width="200px" data-toggle-class="active" class="lozad  featured-in-section-logo"
+                        data-src="<?php echo get_template_directory_uri(); ?>/library/images/brands-image-forbes.svg"
+                        alt="Forbes logo">
+                    <img height="100px" width="200px" data-toggle-class="active" class="lozad  featured-in-section-logo"
+                        data-src="<?php echo get_template_directory_uri(); ?>/library/images/brands-image-abc-7.svg"
+                        alt="ABC 7 logo">
+                    <img height="100px" width="200px" data-toggle-class="active" class="lozad  featured-in-section-logo"
+                        data-src="<?php echo get_template_directory_uri(); ?>/library/images/brands-image-business-insider.svg"
+                        alt="Business Insider logo">
+                    <img height="100px" width="200px" data-toggle-class="active" class="lozad  featured-in-section-logo"
+                        data-src="<?php echo get_template_directory_uri(); ?>/library/images/brands-image-sfc2.svg"
+                        alt="San Francisco Chronicle logo">
+                </p>
+            </div>
+        </div>
     </div>
-  </div>
 </section>
 
-<section>
-  <div class="grid-container">
-    <div class="grid-x grid-padding-x align-middle padded-section switch-back margin-top">
-      <div class="large-4 large-offset-1 cell switch-back-image">
-        <img class="border-styled" src="<?php echo get_template_directory_uri(); ?>/library/images/how-it-works-step-delivered.jpg" alt="NowRx prescription delivery car">
-      </div>
-      <div class="large-5 large-offset-1 cell">
-        <p class="about-us--team-member-title">DELIVERY</p>
-        <?php the_field('delivery'); ?>
-      </div>
+
+
+<section class="how-it-works panel--primary" id="howitwork">
+    <div class="grid-container">
+        <div class="grid-x grid-padding-x text-center">
+            <div class="large-12 cell">
+                <div class="rvl">
+                    <p class="pre-headline">Using NowRx Pharmacy is Simple</p>
+                </div>
+
+                <div class="rvl">
+                    <h2 class="headline">Here’s How It Works</h2>
+                </div>
+            </div>
+        </div>
+        <div class="grid-x grid-padding-x steps">
+
+            <div class="hiw-cell cell large-4 text-center">
+                <div class="rvl">
+
+                    <h3 class="padding-bottom-3">1. Send Us Your Prescription</h3>
+                    <div class="image">
+                        <img data-toggle-class="active"
+                            data-src="<?php echo get_template_directory_uri(); ?>/library/images/Prescription-Icon.png"
+                            alt="end Us Your Prescription" class="pic lozad">
+                    </div>
+
+                    <p>
+                        <strong>New Prescription: </strong>Tell your doctor to fax or ePrescribe to NowRx. <br>
+                        <strong>Existing Prescription: </strong>Text <a href="tel:844-466-6979" class="tellink">(844)
+                            466-6979</a> or <a href="https://nowrx.com/get-started/" style="color:#fff;">Transfer Online
+                            Here</a>.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="hiw-cell cell large-4 text-center">
+                <div class="rvl">
+
+                    <h3 class="padding-bottom-3">2. We Confirm Delivery</h3>
+                    <div class="image">
+                        <img data-toggle-class="active"
+                            data-src="<?php echo get_template_directory_uri(); ?>/library/images/Confirmation-Icon.png"
+                            alt="We Confirm Delivery" class="pic lozad ">
+                    </div>
+
+                    <p>We will reach out to you via phone to collect your insurance copay confirm your address and set
+                        up a
+                        delivery time.</p>
+                </div>
+            </div>
+
+
+            <div class="hiw-cell cell large-4 text-center">
+                <div class="rvl">
+
+                    <h3 class="padding-bottom-3">3. Medication is Delivered</h3>
+                    <div class="image">
+                        <img data-toggle-class="active"
+                            data-src="<?php echo get_template_directory_uri(); ?>/library/images/Car-Icon.png"
+                            alt="Medication is Delivered" class="pic lozad">
+                    </div>
+
+                    <p>A NowRx employee will deliver your medication in hours from your local NowRx Pharmacy for free.
+                        All you pay is your normal copay.</p>
+                </div>
+            </div>
+
+
+        </div>
     </div>
-    <div class="grid-x grid-padding-x align-middle padded-section switch-back">
-      <div class="large-4 large-offset-1 cell small-order-1 medium-order-2 switch-back-image">
-        <img class="border-styled" src="<?php echo get_template_directory_uri(); ?>/library/images/how-it-works-step-relax.jpg" alt="mother with her baby">
-      </div>
-      <div class="large-5 large-offset-1 cell small-order-2 medium-order-1">
-        <p class="about-us--team-member-title">RELAX</p>
-        <?php the_field('relax'); ?>
-      </div>
-    </div>
-    <div class="grid-x grid-padding-x align-middle padded-section switch-back">
-      <div class="large-4 large-offset-1 cell switch-back-image">
-        <img class="border-styled" src="<?php echo get_template_directory_uri(); ?>/library/images/how-it-works-step-refill.jpg" alt="prescription being delivered to a woman">
-      </div>
-      <div class="large-5 large-offset-1 cell">
-        <p class="about-us--team-member-title">REFILLS</p>
-        <?php the_field('refills'); ?>
-      </div>
-    </div>
-    <div class="grid-x grid-padding-x align-middle padded-section switch-back margin-bottom">
-      <div class="large-4 large-offset-1 small-order-1 medium-order-2 cell switch-back-image">
-        <img class="border-styled" src="<?php echo get_template_directory_uri(); ?>/library/images/how-it-works-step-download-app.jpg" alt="NowRx mobile app">
-      </div>
-      <div class="large-5 large-offset-1 small-order-2 medium-order-1 cell">
-        <p class="about-us--team-member-title">DOWNLOAD THE APP</p>
-        <?php the_field('download_the_app'); ?>
-        <p style="margin-top: 1rem;"><a target="_blank" href="https://itunes.apple.com/us//app/nowrx-pharmacy-on-demand/id1066924988"><img style="max-width: 140px;" src="<?php echo get_template_directory_uri(); ?>/library/images/app-apple-store-button.png" alt="apple App Store icon"></a> <a target="_blank" href="https://play.google.com/store/apps/details?id=com.nowrx.client"><img style="max-width: 140px;" src="<?php echo get_template_directory_uri(); ?>/library/images/app-google-store-button.png" alt="google play store icon"></a></p>
-      </div>
-    </div>
-  </div>
 </section>
 
-<section class="how-it-works panel--primary panel--cta">
-  <div class="grid-container">
-    <div class="grid-x grid-padding-x">
-      <div class="large-12 cell text-center">
-        <p class="pre-headline">Switch Today & Save</p>
-        <h2 class="headline">Get a $20 Visa <br>Gift Card</h2>
-        <p>For a limited time only, get a $20 Visa Gift Card for <br>every prescription you transfer to NowRx.*</p>
-        <a href="https://try.nowrxpharmacy.com/prescription-delivery" class="button">Switch to a Better Pharmacy Today</a>
-      </div>
+
+<!-- faq -->
+<section class="faq-section">
+    <div class="container">
+        <div class="content">
+            <div class="titleblock">
+                <div class="rvl">
+                    <span class="sub-headline">
+                        Pharmacy Delivery from NowRx
+                    </span>
+                </div>
+
+                <div class="rvl">
+                    <h2 class="sec-title">
+                        Frequently Asked Questions
+                    </h2>
+                </div>
+            </div>
+            <div class="faq-content">
+
+                <!-- item -->
+                <div class="block">
+                    <div class="rvl">
+                        <div class="q-item">
+                            <div class="title">Q.</div>
+                            <span class="cntx">
+                                What is NowRx?
+                            </span>
+                        </div>
+                    </div>
+                    <div class="rvl">
+                        <div class="a-item">
+                            <div class="title">A.</div>
+                            <span class="cntx">
+                                NowRx is a pharmacy just like your CVS or Walgreens, except instead of you coming in to
+                                pick up medication, we bring them to you.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- item -->
+                <div class="block">
+                    <div class="rvl">
+                        <div class="q-item">
+                            <div class="title">Q.</div>
+                            <span class="cntx">
+                                Is NowRx a mail-order pharmacy?
+                            </span>
+                        </div>
+                    </div>
+                    <div class="rvl">
+                        <div class="a-item">
+                            <div class="title">A.</div>
+                            <span class="cntx">
+                                NO. NowRx Pharmacy has physical locations in all of our service areas. We accept
+                                walk-ins and our pharmacists are always available to chat in person or over the phone.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- item -->
+                <div class="block">
+                    <div class="rvl">
+                        <div class="q-item">
+                            <div class="title">Q.</div>
+                            <span class="cntx">
+                                How can you afford to provide free same-day delivery?
+                            </span>
+                        </div>
+                    </div>
+                    <div class="rvl">
+                        <div class="a-item">
+                            <div class="title">A.</div>
+                            <span class="cntx">
+                                Proprietary tech inside our pharmacy increases efficiency and reduces our cost to about
+                                1/100th that of a traditional pharmacy like CVS. This enables free same-day delivery.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- item -->
+                <div class="block">
+                    <div class="rvl">
+                        <div class="q-item">
+                            <div class="title">Q.</div>
+                            <span class="cntx">
+                                How do you make money?
+                            </span>
+                        </div>
+                    </div>
+                    <div class="rvl">
+                        <div class="a-item">
+                            <div class="title">A.</div>
+                            <span class="cntx">
+                                We make money like every pharmacy or healthcare service – reimbursement from insurance
+                                and copays from the patient.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- item -->
+                <div class="block">
+                    <div class="rvl">
+                        <div class="q-item">
+                            <div class="title">Q.</div>
+                            <span class="cntx">
+                                Do you charge more to offset the cost of delivery?
+                            </span>
+                        </div>
+                    </div>
+                    <div class="rvl">
+                        <div class="a-item">
+                            <div class="title">A.</div>
+                            <span class="cntx">
+                                NO. Prices are lower than or competitive with all pharmacies. We also automatically
+                                search for and apply available coupons to offer the lowest price possible (over $1M
+                                saved!).
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- item -->
+                <div class="block">
+                    <div class="rvl">
+                        <div class="q-item">
+                            <div class="title">Q.</div>
+                            <span class="cntx">
+                                How do you handle special requests?
+                            </span>
+                        </div>
+                    </div>
+                    <div class="rvl">
+                        <div class="a-item">
+                            <div class="title">A.</div>
+                            <span class="cntx">
+                                Special requests (e.g. blister packs, medication sorting, etc.) are available upon
+                                request. Just let our pharmacist know when they reach out to schedule your delivery!
+
+
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- item -->
+                <div class="block">
+                    <div class="rvl">
+                        <div class="q-item">
+                            <div class="title">Q.</div>
+                            <span class="cntx">
+                                Can I manage prescriptions for a family member?
+                            </span>
+                        </div>
+                    </div>
+                    <div class="rvl">
+                        <div class="a-item">
+                            <div class="title">A.</div>
+                            <span class="cntx">
+                                Yes. You can set a head of household if a single person will be managing a family member
+                                or loved one’s prescriptions.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- item -->
+                <div class="block">
+                    <div class="rvl">
+                        <div class="q-item">
+                            <div class="title">Q.</div>
+                            <span class="cntx">
+                                Do you deliver controlled & refrigerated medication?
+                            </span>
+                        </div>
+                    </div>
+                    <div class="rvl">
+                        <div class="a-item">
+                            <div class="title">A.</div>
+                            <span class="cntx">
+                                YES. If you have a paper copy, a NowRx driver will pick it up from you or your doctor
+                                before delivery. These meds also require a signature & proper ID.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <!-- item -->
+                <div class="block">
+                    <div class="rvl">
+                        <div class="q-item">
+                            <div class="title">Q.</div>
+                            <span class="cntx">
+                                What insurance plans do you take?
+                            </span>
+                        </div>
+                    </div>
+                    <div class="rvl">
+                        <div class="a-item">
+                            <div class="title">A.</div>
+                            <span class="cntx">
+                                NowRx Pharmacy accepts all major insurance plans except Kaiser. We also offer some of
+                                the lowest out of pocket prices in the areas we serve.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- item -->
+                <div class="block">
+                    <div class="rvl">
+                        <div class="q-item">
+                            <div class="title">Q.</div>
+                            <span class="cntx">
+                                How long does does delivery take?
+                            </span>
+                        </div>
+                    </div>
+                    <div class="rvl">
+                        <div class="a-item">
+                            <div class="title">A.</div>
+                            <span class="cntx">
+                                Typically, your prescription will arrive 2-4 hours after we have confirmed your
+                                prescription. We also offer 1hr delivery option for a $5 fee.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+        </div>
     </div>
-  </div>
 </section>
 
-<?php endwhile; endif; ?>
+
+
+
+
+<!-- visit faq -->
+<section class="visit-faq">
+    <div class="container">
+        <div class="content">
+            <div class="rvl">
+                <span class="sub-headline">
+                    Have additional questions about NowRx Pharmacy
+                </span>
+            </div>
+            <div class="rvl">
+                <h2 class="sec-title">
+                    Visit our FAQ Page
+                </h2>
+            </div>
+            <div class="rvl">
+                <div class="btn-container">
+                    <a href="<?= get_site_url(); ?>/faqs/" class="rx-btn rx-dg">
+                        Frequently Asked Questions
+                    </a>
+                </div>
+            </div>
+            <div class="rvl">
+                <div class="small-block">
+                    You can also text us at (844) 466-6979 or send an email to info@nowrx.com and we will get back to
+                    you as soon as possible.
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<section class="split-image">
+  <div class="imagefull">
+    <img src="<?php echo get_template_directory_uri(); ?>/images/whypeoplelovenowrx.jpg" alt="" class="pic">
+  </div>
+    <div class="container">
+        <div class="content">
+            <div class="rvl">
+                <span class="sub-headline">
+                    A Better Local Pharmacy
+                </span>
+            </div>
+            <div class="rvl">
+                <h2 class="sec-title">
+                   Why People Love NowRx 
+                </h2>
+            </div>
+
+            <div class="itemlist">
+              <!-- item -->
+              <div class="item">
+                <div class="rvl">
+                  <h3 class="title">Free Prescription Delivery in Hours</h3>
+                </div>
+                <div class="rvl">
+                  <p>You only pay your normal insurance copay. 1 hour rush delivery is available for a $5 fee.</p>
+                </div>
+              </div>
+              <!-- item -->
+              <div class="item">
+                <div class="rvl">
+                  <h3 class="title">Local Presence in Our Service Areas</h3>
+                </div>
+                <div class="rvl">
+                  <p>Visit your local NowRx Pharmacy in person and meet our hardworking pharmacy staff.</p>
+                </div>
+              </div>
+              <!-- item -->
+              <div class="item">
+                <div class="rvl">
+                  <h3 class="title">Insurance & Prior Authorization Assistance</h3>
+                </div>
+                <div class="rvl">
+                  <p>We help you navigate the insurance process and get your medications covered.</p>
+                </div>
+              </div>
+              <!-- item -->
+              <div class="item">
+                <div class="rvl">
+                  <h3 class="title">Automatic Coupon Search & Application</h3>
+                </div>
+                <div class="rvl">
+                  <p>Our proprietary software finds you savings to help lower your out of pocket costs.</p>
+                </div>
+              </div>
+              <!-- item -->
+              <div class="item">
+                <div class="rvl">
+                  <h3 class="title">Out of Pocket Price Match Guarantee</h3>
+                </div>
+                <div class="rvl">
+                  <p>If your medication is ever more expensive with NowRx we will transfer it for you.</p>
+                </div>
+              </div>
+              <!-- item -->
+              <div class="item">
+                <div class="rvl">
+                  <h3 class="title">5 Star Service (Google/Yelp 2020)</h3>
+                </div>
+                <div class="rvl">
+                  <p>Our staff will do everything to help give you the best possible pharmacy experience.</p>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="rvl">
+                <div class="btn-container">
+                    <a href="<?= get_site_url(); ?>/get-started/" class="rx-btn rx-dg">
+                        Get Started
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- visit faq -->
+<section class="visit-faq">
+    <div class="container">
+        <div class="content">
+            <div class="rvl">
+                <span class="sub-headline">
+                    No Signup Required. No Hidden Fees.
+                </span>
+            </div>
+            <div class="rvl">
+                <h2 class="sec-title">
+                    Just A Better Pharmacy
+                </h2>
+            </div>
+            <div class="rvl">
+                <div class="btn-container">
+                    <a href="<?= get_site_url(); ?>/get-started/" class="rx-btn rx-dg">
+                        Gets Started
+                    </a>
+                </div>
+            </div>
+            <div class="rvl">
+                <div class="small-block">
+                    Still have questions about how to get started with NowRx Pharmacy? Email us at <a href="" class="alink">info@nowrx.com</a> and we will be happy to help.
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
 
 <?php get_footer(); ?>
