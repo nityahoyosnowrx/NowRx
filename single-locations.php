@@ -24,38 +24,52 @@ $mapd = get_field('address');
 <script type="application/ld+json">
 {
     "@context": "https://www.schema.org/",
-    "@type": "MedicalBusiness",
-    "name": "<?= wp_title(); ?>,
-    "description": "<?= get_bloginfo('description'); ?>",
+    "@type": "LocalBusiness",
+    "name": "<?= __(the_title()); ?>",
+    "alternateName": ["NowRx", "NowRx Pharmacy", "Now Rx", "Now Rx Pharmacy"],
     "url": "<?php the_title(); ?>",
-    "@id": "<?php the_title(); ?>#MedicalBusiness",
+    "@id": "<?php the_title(); ?>#LocalBusiness",
     "image": "<?php echo get_template_directory_uri(); ?>/library/images/NowRx-Logo-Pharmacy.png",
     "telephone": "844-466-6979",    
     "sameAs": [
-       "https://www.linkedin.com/company/111/",
-       "https://www.facebook.com/111/"],
+       "https://twitter.com/NowRx?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
+       "https://www.facebook.com/NowRx/"
+       ],
     "openingHoursSpecification": [
-    {
-     "@type": "OpeningHoursSpecification",
-     "dayOfWeek": [
-       "Monday",
-       "Tuesday",
-       "Wednesday",
-       "Thursday",
-       "Friday"     
-     ],
-     "opens": "09:00",
-     "closes": "17:00"
-   }],
-     "priceRange": "$$$",
+        {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"     
+        ],
+        "opens": "09:00",
+        "closes": "17:00"
+        }
+    ],
+     "priceRange": "$",
      "address": {
-	"@type": "PostalAddress",
-	"streetAddress": "<?= $mapd['name']; ?>",
-	"addressLocality": "<?= $mapd['city']; ?>",
-	"addressRegion": "<?= $mapd['state']; ?>",
-	"postalCode": "<?= $mapd['post_code']; ?>",
-	"addressCountry": "<?= $mapd['country']; ?>"
-		},
+        "@type": "PostalAddress",
+        "streetAddress": "<?= $mapd['name']; ?>",
+        "addressLocality": "<?= $mapd['city']; ?>",
+        "addressRegion": "<?= $mapd['state']; ?>",
+        "postalCode": "<?= $mapd['post_code']; ?>",
+        "addressCountry": "<?= $mapd['country']; ?>"
+        },
+    "review": {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "1",
+          "bestRating": "5"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "Lina W."
+        }
+      },
 	"location": {
 	 "@type": "Place",
 	 "geo": {
@@ -63,11 +77,11 @@ $mapd = get_field('address');
 		"latitude": "<?= $mapd['lat']; ?>",
 		"longitude": "<?= $mapd['lng']; ?>"
 			}
-		},
+	},
 	"areaServed": [{
-	  "@type": "City",
-	  "name": ["<?= $mapd['city']; ?>"]
-		}]	
+	    "@type": "City",
+	    "name": ["<?= $mapd['city']; ?>"]
+    }]	
 }
 </script>
 
@@ -485,6 +499,7 @@ label.enter {
     text-align: center;
     margin: 0 0 10px;
     font-size: 1.4rem;
+    display: block;
 }
 
 .controls {
@@ -657,6 +672,18 @@ function initMap() {
         fillOpacity: 0.35
     });
 
+    polygonplntCoordsd = new google.maps.Polygon({
+        path: plntCoordsd,
+        geodesic: true,
+        strokeColor: '#038ed8',
+        strokeOpacity: 1.0,
+        strokeWeight: 4,
+        fillColor: '#038ed8',
+        fillOpacity: 0.35
+    });
+
+    
+
 
 
 
@@ -719,11 +746,15 @@ function geocodeAddress(addr) {
             marker.setMap(map);
             newBounds.extend(results[0].geometry.location);
             map.fitBounds(newBounds);
+
             if (google.maps.geometry.poly.containsLocation(results[0].geometry.location, polygon) ||
                 google.maps.geometry.poly.containsLocation(results[0].geometry.location, polygon2) ||
-                google.maps.geometry.poly.containsLocation(results[0].geometry.location, polygon3) || google
-                .maps.geometry.poly.containsLocation(results[0].geometry.location, polygonoc) || google.maps
-                .geometry.poly.containsLocation(results[0].geometry.location, polygonMesa)) {
+                google.maps.geometry.poly.containsLocation(results[0].geometry.location, polygon3) || 
+                google.maps.geometry.poly.containsLocation(results[0].geometry.location, polygonoc) || 
+                google.maps.geometry.poly.containsLocation(results[0].geometry.location, polygonMesa) || 
+                google.maps.geometry.poly.containsLocation(results[0].geometry.location, polygonplntCoordsd)) {
+
+                    
                 console.log('The area contains the address');
                 $('.results-map').html(
                     'NowRx delivers to this address. <a class="rx-btn mrb" href="<?= get_site_url(); ?>/get-started/">Get Started</a>'
@@ -758,6 +789,9 @@ if(is_single('mountain-view')){
 } 
 if(is_single('irvine')){
     $coord = '33.67015776456957, -117.77854787529476';
+} 
+if(is_single('pleasanton')){
+    $coord = '37.69897832554893, -121.91677365323146';
 } 
 
 ?>
@@ -1045,6 +1079,30 @@ var mesaCoords = [{
         lng: -112.333381
     }
 ];
+
+
+var plntCoordsd = [
+    {lat:37.718984, lng:-121.696681},   //Altamont Pass Rd
+    {lat:37.665259, lng:-121.696628},   //Greenville Rd
+    {lat:37.646371, lng:-121.754199},   //Holdener Park
+    {lat:37.626547, lng:-121.804920},   //CA-84
+    {lat:37.622889, lng:-121.880342},   //Verona
+    {lat:37.628665, lng:-121.895776},   //Castlewood Country Club
+    {lat:37.647128, lng:-121.914731},   //Longview Ln
+    {lat:37.681444, lng:-121.937066},   //Moller Ranch Bench
+    {lat:37.699922, lng:-121.987665},   //580-Castro Valley
+    {lat:37.754333, lng:-122.004854},   //Norris Canyon Rd
+    {lat:37.771550, lng:-122.001759},   //Crow Canyon Rd
+    {lat:37.828422, lng:-122.026914},   //Danville NW
+    {lat:37.846605, lng:-122.015809},   //Danville N
+    {lat:37.821902, lng:-121.921483},   //Blackhawk Rd
+    {lat:37.799766, lng:-121.896387},   //Danville E
+    {lat:37.749441, lng:-121.871704},   //Camino Tassajara
+    {lat:37.745313, lng:-121.850462},   //Tassajara Hills
+    {lat:37.740961, lng:-121.723154},   //N. Vasco Rd
+	{lat:37.718984, lng: -121.696681}
+  ];
+
 </script>
 
 

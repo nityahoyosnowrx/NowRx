@@ -2,59 +2,223 @@
 
 
 <script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-"@type": "Organization",
-"name": "The Gluten-Free Donut Place",
-"url": "https://yoururl.com/",
-"logo": "https://yoururl.com/yourlogo.png",
-"location":
-[
-{
-"@type": "Bakery",
-"parentOrganization": {
-"name": "The Gluten-Free Donut Place"
-},
-"name" : "The Gluten-Free Donut Place – SE Portland",
-"image": "https://yoururl.com/se-portland-location.jpg",
-"address": {
-"@type": "PostalAddress",
-"addressLocality": "Portland",
-"addressRegion": "Oregon",
-"postalCode": "97202",
-"streetAddress": "Address 1 for The Gluten-Free Donut Place"
-},
-"openingHours": [
-"Mo-Su 08:00-22:00"
-],
-"telephone" : "+1(503) 123-4567"
-},
-{
-"@type": "Bakery",
-"parentOrganization": {
-"name": "The Gluten-Free Donut Place"
-},
-"name" : "The Gluten-Free Donut Place – North Portland",
-"image": "https://yoururl.com/north-portland-location.jpg",
-"address": {
-"@type": "PostalAddress",
-"addressLocality": "Portland",
-"addressRegion": "Oregon",
-"postalCode": "97203",
-"streetAddress": "Address 2 The Gluten-Free Donut Place"
-},
-"openingHours": [
-"Mo-Su 08:00-22:00"
-],
-"telephone" : "+1(503) 654-4321"
-}
-],
-"image": "https://yoururl.com/gluten-free-donut-place.jpg",
-"email": "theglutenfreedonutplace@url.com",
-"description": "We make gluten-free donuts so tasty, you’ll question
-everything you thought you knew. Check out our flavor of the day as
-well as our award-winning menu of triple chocolate goodies."
-}
+    {
+        "@context": "https://www.schema.org/",
+        "@type": "LocalBusiness",
+        "name": "<?= __(the_title()); ?>",
+        "alternateName": ["NowRx", "NowRx Pharmacy", "Now Rx", "Now Rx Pharmacy"],
+        "url": "<?= site_url(); ?>",
+        "@id": "<?= site_url(); ?>/#LocalBusiness",
+        "logo": "<?php echo get_template_directory_uri(); ?>/library/images/NowRx-Logo-Pharmacy.png",
+        "image": "<?php echo get_template_directory_uri(); ?>/library/images/NowRx-Logo-Pharmacy.png",
+        "description": "NOWRX PHARMACY - COMING TO A CITY NEAR YOU",
+        "telephone": "(949) 619-6000",
+        "sameAs": [
+            "https://twitter.com/NowRx?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
+            "https://www.facebook.com/NowRx/"
+        ],
+        "openingHoursSpecification": [{
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday"
+            ],
+            "opens": "09:00",
+            "closes": "17:00"
+        }],
+        "priceRange": "$",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "1641 Kaiser Ave",
+            "addressLocality": "Irvine",
+            "addressRegion": "California",
+            "postalCode": "92614",
+            "addressCountry": "USA"
+        },
+
+        "location": {
+            "@type": "Place",
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": "30.0000",
+                "longitude": "-130.0000"
+            }
+        },
+        "areaServed": [{
+            "@type": "City",
+            "name": ["City 1", "City 2"]
+        }],
+        "department": [{
+                "@type": "Pharmacy",
+                "name": "NowRx – Mountain View",
+                "description": "NowRx Mountain View is a local retail pharmacy based out of Mountain View California that provides free prescription delivery in 3-5",
+                "url": "<?= site_url(); ?>/locations/california/mountain-view/",
+                "@id": "<?= site_url(); ?>/locations/california/mountain-view/#Pharmacy",
+                "image": "<?= site_url(); ?>/wp-content/themes/nowrx-optimize/library/images/NowRx-Logo-Pharmacy.png",
+                "telephone": "(650) 499-3000",
+                "priceRange": "$",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "2224 Old Middlefield Way, Suite J",
+                    "addressLocality": "Mountain View",
+                    "addressRegion": "California",
+                    "postalCode": "94043",
+                    "addressCountry": "USA"
+                },
+
+                "location": {
+                    "@type": "Place",
+                    "geo": {
+                        "@type": "GeoCoordinates",
+                        "latitude": "37.415216701214526",
+                        "longitude": "-122.09510250883349"
+                    }
+                }
+
+            },
+            {
+                "@type": "Pharmacy",
+                "name": "NowRx – Burlingame",
+                "description": "NowRx Burlingame is a local retail pharmacy based out of Burlingame California that provides free prescription delivery in 3-5",
+                "url": "<?= site_url(); ?>/locations/california/burlingame/",
+                "@id": "<?= site_url(); ?>/locations/california/burlingame/#Pharmacy",
+                "image": "<?= site_url(); ?>/wp-content/themes/nowrx-optimize/library/images/NowRx-Logo-Pharmacy.png",
+                "telephone": "(650) 499-300",
+                "priceRange": "$",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "800 Burlway Rd.",
+                    "addressLocality": "Burlingame",
+                    "addressRegion": "California",
+                    "postalCode": "94010",
+                    "addressCountry": "USA"
+                },
+
+                "location": {
+                    "@type": "Place",
+                    "geo": {
+                        "@type": "GeoCoordinates",
+                        "latitude": "37.596418685860804",
+                        "longitude": "-122.36602182417356"
+                    }
+                }
+            },
+            {
+                "@type": "Pharmacy",
+                "name": "NowRx – San Jose",
+                "description": "NowRx Burlingame is a local retail pharmacy based out of Burlingame California that provides free prescription delivery in 3-5",
+                "url": "<?= site_url(); ?>/locations/california/san-jose/",
+                "@id": "<?= site_url(); ?>/locations/california/san-jose/#Pharmacy",
+                "image": "<?= site_url(); ?>/wp-content/themes/nowrx-optimize/library/images/NowRx-Logo-Pharmacy.png",
+                "telephone": "(650) 499-3000",
+                "priceRange": "$",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "1310 Tully Road",
+                    "addressLocality": "San Jose",
+                    "addressRegion": "California",
+                    "postalCode": "95122",
+                    "addressCountry": "USA"
+                },
+
+                "location": {
+                    "@type": "Place",
+                    "geo": {
+                        "@type": "GeoCoordinates",
+                        "latitude": "37.31633033505249",
+                        "longitude": "121.83342937814587"
+                    }
+                }
+            },
+            {
+                "@type": "Pharmacy",
+                "name": "NowRx – Irvine",
+                "description": "NowRx Irvine is a local retail pharmacy based out of Irvine California that provides free prescription delivery in 3-5 hours",
+                "url": "<?= site_url(); ?>/locations/california/irvine/",
+                "@id": "<?= site_url(); ?>/locations/california/irvine/#Pharmacy",
+                "image": "<?= site_url(); ?>/wp-content/themes/nowrx-optimize/library/images/NowRx-Logo-Pharmacy.png",
+                "telephone": "(949) 619-6000",
+                "priceRange": "$",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "1641 Kaiser Ave",
+                    "addressLocality": "Irvine",
+                    "addressRegion": "California",
+                    "postalCode": "92614",
+                    "addressCountry": "USA"
+                },
+
+                "location": {
+                    "@type": "Place",
+                    "geo": {
+                        "@type": "GeoCoordinates",
+                        "latitude": "33.695316202996324",
+                        "longitude": "-117.85031817824478"
+                    }
+                }
+            },
+            {
+                "@type": "Pharmacy",
+                "name": "NowRx – Mesa",
+                "description": "NowRx is a local retail pharmacy based out of Mesa Arizona that provides free prescription delivery in 3-5 hours",
+                "url": "<?= site_url(); ?>/locations/arizona/mesa/",
+                "@id": "<?= site_url(); ?>/locations/arizona/mesa/#Pharmacy",
+                "image": "<?= site_url(); ?>/wp-content/themes/nowrx-optimize/library/images/NowRx-Logo-Pharmacy.png",
+                "telephone": "(480) 400-3000",
+                "priceRange": "$",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "2452 W Birchwood Ave, Ste 106",
+                    "addressLocality": "Mesa",
+                    "addressRegion": "Arizona",
+                    "postalCode": "85202",
+                    "addressCountry": "USA"
+                },
+
+                "location": {
+                    "@type": "Place",
+                    "geo": {
+                        "@type": "GeoCoordinates",
+                        "latitude": "33.40968333673354",
+                        "longitude": "-111.8845563089426"
+                    }
+                }
+              
+            },
+            {
+                "@type": "Pharmacy",
+                "name": "NowRx – Pleasanton",
+                "description": "NowRx is a local retail pharmacy based out of Pleasanton Arizona that provides free prescription delivery in 3-5 hours",
+                "url": "<?= site_url(); ?>/locations/arizona/Pleasanton/",
+                "@id": "<?= site_url(); ?>/locations/arizona/Pleasanton/#Pharmacy",
+                "image": "<?= site_url(); ?>/wp-content/themes/nowrx-optimize/library/images/NowRx-Logo-Pharmacy.png",
+                "telephone": "925-701-9424",
+                "priceRange": "$",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "7067 Commerce Cir.",
+                    "addressLocality": "Pleasanton",
+                    "addressRegion": "CA",
+                    "postalCode": "94588",
+                    "addressCountry": "USA"
+                },
+
+                "location": {
+                    "@type": "Place",
+                    "geo": {
+                        "@type": "GeoCoordinates",
+                        "latitude": "33.40968333673354",
+                        "longitude": "-111.8845563089426"
+                    }
+                }
+              
+            }
+
+        ]
+    }
 </script>
 
 <!-- Event snippet for Form Completion conversion page -->
@@ -64,7 +228,7 @@ well as our award-winning menu of triple chocolate goodies."
     });
 </script>
 
-<main id="main" class="main-class" >
+<main id="main" class="main-class">
     <div class="rvl">
 
         <picture class="lozad" data-iesrc="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020.png" data-alt="prescription being delivered to mother" data-toggle-class="active">
@@ -110,7 +274,7 @@ well as our award-winning menu of triple chocolate goodies."
                 </header>
             </div>
 
-             
+
 
         </article>
 
@@ -165,77 +329,92 @@ well as our award-winning menu of triple chocolate goodies."
                 <div class="locatios-mainblock">
                     <!-- item -->
                     <div class="location-item">
-                    <a href="<?= get_site_url(); ?>/locations/california/mountain-view/">
-                        <h2 class="sec-title">NowRx - Mountain View, CA</h2>
-                        <span class="desc-item">
-                            <b>ePrescribe:</b> NowRx MtnV (NCPDP: 56565559)
-                        </span>
-                        <span class="desc-item">
-                            <b>Phone:</b> (650) 499-3000
-                        </span>
-                        <span class="desc-item">
-                            <b>Fax:</b> (650) 963-3204
-                        </span>
+                        <a href="<?= get_site_url(); ?>/locations/california/mountain-view/">
+                            <h2 class="sec-title">NowRx - Mountain View, CA</h2>
+                            <span class="desc-item">
+                                <b>ePrescribe:</b> NowRx MtnV (NCPDP: 56565559)
+                            </span>
+                            <span class="desc-item">
+                                <b>Phone:</b> (650) 499-3000
+                            </span>
+                            <span class="desc-item">
+                                <b>Fax:</b> (650) 963-3204
+                            </span>
                         </a>
                     </div>
                     <!-- item -->
                     <div class="location-item">
-                    <a href="<?= get_site_url(); ?>/locations/california/irvine/">
-                        <h2 class="sec-title">NowRx - Irvine, CA</h2>
-                        <span class="desc-item">
-                            <b>ePrescribe:</b> NowRx IRVN (NCPDP: 5670220)
-                        </span>
-                        <span class="desc-item">
-                            <b>Phone:</b> (949) 619-3000
-                        </span>
-                        <span class="desc-item">
-                            <b>Fax:</b> (949) 418-9013
-                        </span>
+                        <a href="<?= get_site_url(); ?>/locations/california/irvine/">
+                            <h2 class="sec-title">NowRx - Irvine, CA</h2>
+                            <span class="desc-item">
+                                <b>ePrescribe:</b> NowRx IRVN (NCPDP: 5670220)
+                            </span>
+                            <span class="desc-item">
+                                <b>Phone:</b> (949) 619-6000
+                            </span>
+                            <span class="desc-item">
+                                <b>Fax:</b> (949) 418-9013
+                            </span>
                         </a>
                     </div>
                     <!-- item -->
                     <div class="location-item">
-                    <a href="<?= get_site_url(); ?>/locations/california/burlingame/">
-                        <h2 class="sec-title">NowRx - Burlingame, CA</h2>
-                        <span class="desc-item">
-                            <b>ePrescribe:</b> NowRx BURL (NCPDP: 5669948)
-                        </span>
-                        <span class="desc-item">
-                            <b>Phone:</b> (650) 499-3000
-                        </span>
-                        <span class="desc-item">
-                            <b>Fax:</b> (650) 931-4304
-                        </span>
+                        <a href="<?= get_site_url(); ?>/locations/california/burlingame/">
+                            <h2 class="sec-title">NowRx - Burlingame, CA</h2>
+                            <span class="desc-item">
+                                <b>ePrescribe:</b> NowRx BURL (NCPDP: 5669948)
+                            </span>
+                            <span class="desc-item">
+                                <b>Phone:</b> (650) 499-3000
+                            </span>
+                            <span class="desc-item">
+                                <b>Fax:</b> (650) 931-4304
+                            </span>
                         </a>
                     </div>
                     <!-- item -->
                     <div class="location-item">
-                    <a href="<?= get_site_url(); ?>/locations/california/mesa/">
-                        <h2 class="sec-title">NowRx - Mesa, AZ</h2>
-                        <span class="desc-item">
-                            <b>ePrescribe:</b> NowRx MESA (NCPDP: 0364252)
-                        </span>
-                        <span class="desc-item">
-                            <b>Phone:</b> (480) 400-3000
-                        </span>
-                        <span class="desc-item">
-                            <b>Fax:</b> (480) 597-3274
-                        </span>
+                        <a href="<?= get_site_url(); ?>/locations/california/mesa/">
+                            <h2 class="sec-title">NowRx - Mesa, AZ</h2>
+                            <span class="desc-item">
+                                <b>ePrescribe:</b> NowRx MESA (NCPDP: 0364252)
+                            </span>
+                            <span class="desc-item">
+                                <b>Phone:</b> (480) 400-3000
+                            </span>
+                            <span class="desc-item">
+                                <b>Fax:</b> (480) 597-3274
+                            </span>
                         </a>
                     </div>
                     <!-- item -->
                     <div class="location-item">
-                    <a href="<?= get_site_url(); ?>/locations/california/san-jose/">
-                        <h2 class="sec-title">NowRx - San Jose, CA</h2>
-                        <span class="desc-item">
-                            <b>ePrescribe:</b> NowRx SJCE (NCPDP: 5667843)
-                        </span>
-                        <span class="desc-item">
-                            <b>Phone:</b> (650) 499-3000
-                        </span>
-                        <span class="desc-item">
-                            <b>Fax:</b> (408) 645-5039
-                        </span>
+                        <a href="<?= get_site_url(); ?>/locations/california/san-jose/">
+                            <h2 class="sec-title">NowRx - San Jose, CA</h2>
+                            <span class="desc-item">
+                                <b>ePrescribe:</b> NowRx SJCE (NCPDP: 5667843)
+                            </span>
+                            <span class="desc-item">
+                                <b>Phone:</b> (650) 499-3000
+                            </span>
+                            <span class="desc-item">
+                                <b>Fax:</b> (408) 645-5039
+                            </span>
+                        </a>
+                    </div>
+                    <!-- item -->
+                    <div class="location-item">
+                        <a href="<?= get_site_url(); ?>/locations/california/pleasanton/">
+                            <h2 class="sec-title">NowRx - Pleasanton, CA</h2>
+                            <span class="desc-item">
+                                <b>ePrescribe:</b> NowRx Plnt (NCPDP : 5670751)
+                            </span>
+                            <span class="desc-item">
+                                <b>Phone:</b> (925) 701-9424
+                            </span>
+                            <span class="desc-item">
+                                <b>Fax:</b> (925) 701-9525
+                            </span>
                         </a>
                     </div>
 
@@ -243,7 +422,7 @@ well as our award-winning menu of triple chocolate goodies."
                     <div class="location-item">
                         <h2 class="sec-title disclaimer">Don't see a NowRx near you? Suggest a location!</h2>
                         <span class="desc-item">
-                        <a class="rx-btn" data-toggle="suggestalocation" aria-controls="suggestalocation" aria-haspopup="true" tabindex="0">Suggest a Location</a>
+                            <a class="rx-btn" data-toggle="suggestalocation" aria-controls="suggestalocation" aria-haspopup="true" tabindex="0">Suggest a Location</a>
                         </span>
                     </div>
 
@@ -259,12 +438,12 @@ well as our award-winning menu of triple chocolate goodies."
 
 
     <!-- faq -->
-    <?php 
-    get_template_part( 'components/faq-block' ); ?>
+    <?php
+    get_template_part('components/faq-block'); ?>
 
     <!-- visit faq -->
-    <?php 
-    get_template_part( 'components/visit-our-faq' ); ?>
+    <?php
+    get_template_part('components/visit-our-faq'); ?>
 
 
 
@@ -473,6 +652,18 @@ well as our award-winning menu of triple chocolate goodies."
                 fillOpacity: 0.35
             });
 
+            polygonplntCoordsd = new google.maps.Polygon({
+                path: plntCoordsd,
+                geodesic: true,
+                strokeColor: '#038ed8',
+                strokeOpacity: 1.0,
+                strokeWeight: 4,
+                fillColor: '#038ed8',
+                fillOpacity: 0.35
+            });
+
+            
+
 
 
 
@@ -481,6 +672,7 @@ well as our award-winning menu of triple chocolate goodies."
             polygon3.setMap(map);
             polygonoc.setMap(map);
             polygonMesa.setMap(map);
+            polygonplntCoordsd.setMap(map);
 
 
             var input = /** @type {!HTMLInputElement} */ (
@@ -537,7 +729,11 @@ well as our award-winning menu of triple chocolate goodies."
                     map.fitBounds(newBounds);
                     if (google.maps.geometry.poly.containsLocation(results[0].geometry.location, polygon) ||
                         google.maps.geometry.poly.containsLocation(results[0].geometry.location, polygon2) ||
-                        google.maps.geometry.poly.containsLocation(results[0].geometry.location, polygon3) || google.maps.geometry.poly.containsLocation(results[0].geometry.location, polygonoc) || google.maps.geometry.poly.containsLocation(results[0].geometry.location, polygonMesa)) {
+                        google.maps.geometry.poly.containsLocation(results[0].geometry.location, polygon3) || 
+                        google.maps.geometry.poly.containsLocation(results[0].geometry.location, polygonoc) || 
+                        google.maps.geometry.poly.containsLocation(results[0].geometry.location, polygonMesa) ||
+                        google.maps.geometry.poly.containsLocation(results[0].geometry.location, polygonplntCoordsd)
+                        ) {
                         console.log('The area contains the address');
                         $('.results-map').html('NowRx delivers to this address. <a class="rx-btn mrb" href="<?= get_site_url(); ?>/get-started/">Get Started</a>');
                         $('.results-map').removeClass('notfound');
@@ -756,155 +952,114 @@ well as our award-winning menu of triple chocolate goodies."
 
         ];
 
-        var mesaCoords = [
-    {lat:33.457978, lng:-112.333381},   // I10 and Agua Fria
-    {lat:33.538324, lng:-112.302920},   //Glendale Landfill
-    {lat:33.669915, lng:-112.320130},
-    {lat:33.692420, lng:-112.176308},   //Arrowhead Point
-    {lat:33.710040, lng:-111.960085},
-    {lat:33.647086, lng:-111.893084},   //101 and Pima
-    {lat:33.625379, lng:-111.869130},   //N Thompson Peak Pkwy
-    {lat:33.605021, lng:-111.851949},
-    {lat:33.593955, lng:-111.833349},
-    {lat:33.566222, lng:-111.828254},
-    {lat:33.485470, lng:-111.752808},
-    {lat:33.474591, lng:-111.683928},   //202 and N. Power
-    {lat:33.451580, lng:-111.669892},
-    {lat:33.425921, lng:-111.632895},
-    {lat:33.296867, lng:-111.643973},   //Phoenix-Mesa Gateway Airport 
-    {lat:33.200262, lng:-111.755451},
-    {lat:33.203518, lng:-111.900382},
-    {lat:33.291610, lng:-111.989648},
-    {lat:33.289047, lng:-112.132352},
-    {lat:33.457978, lng:-112.333381}
+        var mesaCoords = [{
+                lat: 33.457978,
+                lng: -112.333381
+            }, // I10 and Agua Fria
+            {
+                lat: 33.538324,
+                lng: -112.302920
+            }, //Glendale Landfill
+            {
+                lat: 33.669915,
+                lng: -112.320130
+            },
+            {
+                lat: 33.692420,
+                lng: -112.176308
+            }, //Arrowhead Point
+            {
+                lat: 33.710040,
+                lng: -111.960085
+            },
+            {
+                lat: 33.647086,
+                lng: -111.893084
+            }, //101 and Pima
+            {
+                lat: 33.625379,
+                lng: -111.869130
+            }, //N Thompson Peak Pkwy
+            {
+                lat: 33.605021,
+                lng: -111.851949
+            },
+            {
+                lat: 33.593955,
+                lng: -111.833349
+            },
+            {
+                lat: 33.566222,
+                lng: -111.828254
+            },
+            {
+                lat: 33.485470,
+                lng: -111.752808
+            },
+            {
+                lat: 33.474591,
+                lng: -111.683928
+            }, //202 and N. Power
+            {
+                lat: 33.451580,
+                lng: -111.669892
+            },
+            {
+                lat: 33.425921,
+                lng: -111.632895
+            },
+            {
+                lat: 33.296867,
+                lng: -111.643973
+            }, //Phoenix-Mesa Gateway Airport 
+            {
+                lat: 33.200262,
+                lng: -111.755451
+            },
+            {
+                lat: 33.203518,
+                lng: -111.900382
+            },
+            {
+                lat: 33.291610,
+                lng: -111.989648
+            },
+            {
+                lat: 33.289047,
+                lng: -112.132352
+            },
+            {
+                lat: 33.457978,
+                lng: -112.333381
+            }
+        ];
+        var plntCoordsd = [
+    {lat:37.718984, lng:-121.696681},   //Altamont Pass Rd
+    {lat:37.665259, lng:-121.696628},   //Greenville Rd
+    {lat:37.646371, lng:-121.754199},   //Holdener Park
+    {lat:37.626547, lng:-121.804920},   //CA-84
+    {lat:37.622889, lng:-121.880342},   //Verona
+    {lat:37.628665, lng:-121.895776},   //Castlewood Country Club
+    {lat:37.647128, lng:-121.914731},   //Longview Ln
+    {lat:37.681444, lng:-121.937066},   //Moller Ranch Bench
+    {lat:37.699922, lng:-121.987665},   //580-Castro Valley
+    {lat:37.754333, lng:-122.004854},   //Norris Canyon Rd
+    {lat:37.771550, lng:-122.001759},   //Crow Canyon Rd
+    {lat:37.828422, lng:-122.026914},   //Danville NW
+    {lat:37.846605, lng:-122.015809},   //Danville N
+    {lat:37.821902, lng:-121.921483},   //Blackhawk Rd
+    {lat:37.799766, lng:-121.896387},   //Danville E
+    {lat:37.749441, lng:-121.871704},   //Camino Tassajara
+    {lat:37.745313, lng:-121.850462},   //Tassajara Hills
+    {lat:37.740961, lng:-121.723154},   //N. Vasco Rd
+	{lat:37.718984, lng: -121.696681}
   ];
-
 
     }
     sanFranMap();
 
 
-    function oCMap() {
-
-        window.onload = initMap2;
-
-        function initMap2() {
-
-            // map2 = new google.maps.Map(document.getElementById('mapoc'), {
-            //     center: center,
-            //     zoom: 10,
-            //     scaleControl: true
-            // });
-
-            // geocoder = new google.maps.Geocoder(); //Added on 27/09/2016
-            // bounds = new google.maps.LatLngBounds();
-
-            // google.maps.event.addListenerOnce(map2, 'tilesloaded', function(evt) {
-            //     bounds = map2.getBounds();
-            // });
-
-            // marker = new google.maps.Marker({
-            //     position: center
-            // });
-
-            // polygon = new google.maps.Polygon({
-            //     path: area,
-            //     geodesic: true,
-            //     strokeColor: '#038ed8',
-            //     strokeOpacity: 1.0,
-            //     strokeWeight: 4,
-            //     fillColor: '#038ed8',
-            //     fillOpacity: 0.35
-            // });
-
-            // polygon.setMap(map);
-
-            // var input = /** @type {!HTMLInputElement} */ (
-            //     document.getElementById('pac-input'));
-
-            // var types = document.getElementById('type-selector');
-            // // map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
-            // // map.controls[google.maps.ControlPosition.TOP_LEFT].push(types);
-
-            // var autocomplete = new google.maps.places.Autocomplete(input);
-
-            // autocomplete.addListener('place_changed', function() {
-            //     marker.setMap(null);
-
-            //     var place = autocomplete.getPlace();
-            //     var newBounds = new google.maps.LatLngBounds(bounds.getSouthWest(), bounds.getNorthEast()); //Changed
-
-            //     // removed newBounds = bounds;
-            //     // if (!place.geometry) {
-            //     geocodeAddress(input.value); //Added on 27/09/2016 
-            //     //window.alert("Autocomplete's returned place contains no geometry");
-            //     // return;
-            //     // };
-
-            //     marker.setPosition(place.geometry.location);
-            //     marker.setMap(map);
-
-            //     newBounds.extend(place.geometry.location);
-
-            //     map.fitBounds(newBounds);
-
-
-            //     // if (google.maps.geometry.poly.containsLocation(place.geometry.location, polygon)) {
-            //     //     console.log('The area contains the address');
-
-            //     // } else {
-            //     //     console.log('The address is outside of the area.');
-            //     // };
-
-            // });
-        }
-
-        //*************************
-        // function geocodeAddress(addr) {
-        //     geocoder.geocode({
-        //         'address': addr
-        //     }, function(results, status) {
-        //         if (status === 'OK') {
-        //             var newBounds = new google.maps.LatLngBounds(bounds.getSouthWest(), bounds.getNorthEast());
-        //             marker.setPosition(results[0].geometry.location);
-        //             marker.setMap(map);
-        //             newBounds.extend(results[0].geometry.location);
-        //             map.fitBounds(newBounds);
-        //             if ( google.maps.geometry.poly.containsLocation(results[0].geometry.location, polygon)  ) {
-        //                 console.log('The area contains the address');
-        //                 $('.results-map').html('The area contains the address');
-        //                 $('.results-map').removeClass('notfound');
-        //             } else {
-        //                 console.log('The address is outside of the area.');
-        //                 $('.results-map').html('The address is outside of the area.');
-        //                 $('.results-map').addClass('notfound');
-
-        //             };
-        //         } else {
-        //             console.log('Geocode was not successful for the following reason: ' + status);
-        //         }
-        //     });
-        // };
-        //*************************
-
-        // var center = new google.maps.LatLng(37.482888671316196, -122.22151462601505);
-
-        // var area = [
-        //     {lat:33.3874460, lng:-117.595877},    //San Onofre State Beach
-        //     {lat:33.711440, lng:-118.145128},   //Seal Beach
-        //     {lat:33.948184, lng:-117.977292},   //La Habra
-        //     {lat:33.946136, lng:-117.781795},   //Sleepy Hollow
-        //     {lat:33.868799, lng:-117.674384},   // 91
-        //     {lat:33.684729, lng:-117.556649},   //Trabuco Canyon
-        //     {lat:33.607207, lng:-117.527900},   //Coto De Caza
-        //     {lat:33.455898, lng:-117.571570},   //San Clemente
-        //     {lat:33.3874460, lng:-117.595877}
-
-        // ];
-
-
-    }
-    // oCMap();
+ 
 </script>
 
 

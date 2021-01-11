@@ -44,7 +44,8 @@
     <?php wp_head(); ?>
 
     <!-- tracking code -->
-    <?php get_template_part('analytics-head'); ?>
+    <?php 
+    get_template_part('analytics-head'); ?>
 
     <!-- <link rel="stylesheet" rel="dns-prefetch" href="https://use.typekit.net/nng5acr.css"> -->
 
@@ -59,27 +60,11 @@
 
 </head>
 
-<body <?php body_class(); ?> itemscope itemtype="http://schema.org/WebPage" style="opacity:0;">
+<body <?php body_class(); ?> itemscope itemtype="http://schema.org/WebPage">
 
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5LWZKR7" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-
-    <!-- if no js body opacity 1 -->
-    <noscript>
-        <style>
-            body {
-                opacity: 1 !important;
-            }
-        </style>
-    </noscript>
-
-    <!-- splash screen -->
-    <section class="splash">
-        <div class="image">
-            <img class="main-nav-logo " style="margin: 0px auto; display: inline-block;" src="<?php echo get_template_directory_uri(); ?>/library/images/NowRx-Logo-Pharmacy.png" alt="NowRx" height="47px" width="400px">
-        </div>
-    </section>
 
     <!-- promobar -->
         <div class="promo-bar">
@@ -127,10 +112,11 @@
 
                             <!-- <img data-src="<?php echo get_template_directory_uri(); ?>/library/images/NowRx-Logo-Pharmacy.png" data-toggle-class="active" class="lozad" alt="NowRx"> -->
 
-                            <picture class="lozad" data-iesrc="<?php echo get_template_directory_uri(); ?>/library/images/NowRx-Logo-Pharmacy.png" data-alt="NowRx" data-toggle-class="active">
+                            <!-- <picture class="lozad" data-iesrc="<?php echo get_template_directory_uri(); ?>/library/images/NowRx-Logo-Pharmacy.png" data-alt="NowRx" data-toggle-class="active">
                                 <source type="image/png" srcset="<?php echo get_template_directory_uri(); ?>/library/images/NowRx-Logo-Pharmacy.png">
                                 <img src="<?php echo get_template_directory_uri(); ?>/library/images/NowRx-Logo-Pharmacylowrez.jpg" class="orbit-image" height="60px" width="150px">
-                            </picture>
+                            </picture> -->
+                            <img src="<?php echo get_template_directory_uri(); ?>/library/images/NowRx-Logo-Pharmacy.png" class="orbit-image" height="60px" width="150px">
 
                         </a>
                     </div>

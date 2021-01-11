@@ -20,10 +20,11 @@
                 <img class="imageblock lozad" data-toggle-class="active" data-src="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020.png" alt="prescription being delivered to mother" height="100px" width="450px">
             </picture> -->
 
-                    <picture class="lozad" data-iesrc="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020.png" data-alt="prescription being delivered to mother" data-toggle-class="active">
+                    <!-- <picture class="lozad" data-iesrc="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020.png" data-alt="prescription being delivered to mother" data-toggle-class="active">
                         <source type="image/png" srcset="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020.png">
                         <img src="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020lowrez.jpg" class="imageblock" height="100px" width="450px">
-                    </picture>
+                    </picture> -->
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020.png" class="imageblock" height="100px" width="450px">
 
         </div>
 
@@ -68,11 +69,12 @@
                 <!-- image -->
                 <div class="column-half image-col">
 
-                    <picture class="lozad" data-iesrc="<?php echo get_template_directory_uri(); ?>/images/AdobeStock_91568410.webp" data-alt="Free Prescription Delivery in Hours" data-toggle-class="active">
+                    <!-- <picture class="lozad" data-iesrc="<?php echo get_template_directory_uri(); ?>/images/AdobeStock_91568410.webp" data-alt="Free Prescription Delivery in Hours" data-toggle-class="active">
                         <source type="image/webp" srcset="<?php echo get_template_directory_uri(); ?>/images/AdobeStock_91568410.webp">
                         <source type="image/jpeg" srcset="<?php echo get_template_directory_uri(); ?>/images/AdobeStock_91568410.jpeg">
                         <img src="<?php echo get_template_directory_uri(); ?>/images/AdobeStock_91568410lowres.jpg" class="orbit-image" height="500px" width="650px">
-                    </picture>
+                    </picture> -->
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/AdobeStock_91568410.jpeg" class="orbit-image" height="500px" width="650px">
                 </div>
 
             </div>
@@ -126,7 +128,7 @@
                         <p>
                             <strong>New Prescription: </strong>Tell your doctor to fax or ePrescribe to NowRx. <br>
                             <strong>Existing Prescription: </strong>Text <a href="tel:844-466-6979" class="tellink">(844)
-                                466-6979</a> or <a href="https://nowrx.com/get-started/" style="color:#fff;">Transfer Online
+                                466-6979</a> or <a href="<?= get_site_url(); ?>/get-started/" style="color:#fff;">Transfer Online
                                 Here</a>.
                         </p>
                     </div>
@@ -315,7 +317,7 @@
                         </div>
 
                         <div class="rvl">
-                            <a href="https://nowrx.com/get-started/" class="button">Transfer My Prescriptions</a>
+                            <a href="<?= get_site_url(); ?>/get-started/" class="button">Transfer My Prescriptions</a>
                         </div>
 
                     </div>

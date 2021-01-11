@@ -87,7 +87,7 @@ get_template_part('footer-modals');
 
 </div> <!-- closes off canvas content -->
 
-<script src="<?php echo get_template_directory_uri(); ?>/public/frontend-bundle.js?v=<?php echo time(); ?>" defer></script>
+<script src="<?php echo get_template_directory_uri(); ?>/public/frontend-bundle.js?v=<?php echo time(); ?>" defer async></script>
 
 <!-- tracking code -->
 <script type="text/javascript">

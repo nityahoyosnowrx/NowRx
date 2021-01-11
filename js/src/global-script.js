@@ -1,40 +1,40 @@
-import { Foundation } from 'foundation-sites';
+// import { Foundation } from 'foundation-sites';
 import jquery, { ready } from 'jquery';
 
 window.jQuery = jquery;
 window.$ = jquery;
 
-Foundation.addToJquery($);
+// Foundation.addToJquery($);
 
-jQuery(document).ready($ => $(document).foundation());
+// jQuery(document).ready($ => $(document).foundation());
 
 // import './app.js';
 
 import lozad from 'lozad';
 
 // import Swiper bundle with all modules installed
-import swiper from '../../node_modules/swiper/swiper-bundle.js';
+// import swiper from '../../node_modules/swiper/swiper-bundle.js';
 // import Swiper styles
-import '../../node_modules/swiper/swiper-bundle.css';
+// import '../../node_modules/swiper/swiper-bundle.css';
 // init Swiper:
 
-$(document).foundation();
+// $(document).foundation();
 
-var mySwiper = new swiper('.swiper-container', {
-  // Optional parameters
-  loop: true,
+// var mySwiper = new swiper('.swiper-container', {
+//   // Optional parameters
+//   loop: true,
 
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination'
-  },
+//   // If we need pagination
+//   pagination: {
+//     el: '.swiper-pagination'
+//   },
 
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev'
-  }
-});
+//   // Navigation arrows
+//   navigation: {
+//     nextEl: '.swiper-button-next',
+//     prevEl: '.swiper-button-prev'
+//   }
+// });
 
 const observer = lozad(); // lazy loads elements with default selector as '.lozad'
 observer.observe();
@@ -99,6 +99,24 @@ $('a[href*="#"]').on('click', function(e) {
   );
   e.preventDefault();
 });
+
+
+// modals
+$('[data-toggle]').on('click', function(e) {
+  e.preventDefault();
+  let toggleId = $(this).data('toggle');
+  console.log(toggleId);
+  let stI = '#'+toggleId;
+  $(stI).addClass('active');
+  $('.reveal-overlay').addClass('active');
+});
+
+$('button.close-button, .reveal-overlay').on('click', function(e) {
+  e.preventDefault();
+  $('.reveal').removeClass('active');
+  $('.reveal-overlay').removeClass('active');
+});
+// modals
 
 // $('a.menu-icon-toggle').on('click', function(e) {
 //   e.preventDefault();

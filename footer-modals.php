@@ -1,7 +1,7 @@
 <?php if (!is_front_page()) : ?>
 
 
-    
+
 <div class="reveal" id="submitaquestion" data-reveal data-close-on-click="true" data-animation-in="slide-in-down"
     data-animation-out="slide-out-up" style="padding: 60px;">
 
@@ -9,20 +9,20 @@
         Submit a Question
     </h3>
     <div class="subheading">
-   <p class="center">
-   Please enter your question below and a NowRx Pharmacy Team member will respond as soon as possible.
-   </p>
+        <p class="center">
+            Please enter your question below and a NowRx Pharmacy Team member will respond as soon as possible.
+        </p>
     </div>
-<!--[if lte IE 8]>
+    <!--[if lte IE 8]>
 <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
 <![endif]-->
-<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-<script>
-hbspt.forms.create({
-portalId: "5952677",
-formId: "aa3d3838-6464-4e9f-911f-d2096f43433c"
-});
-</script>
+    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+    <script>
+    hbspt.forms.create({
+        portalId: "5952677",
+        formId: "aa3d3838-6464-4e9f-911f-d2096f43433c"
+    });
+    </script>
 
 
     <p class="text-center show-for-small-only"><a href="tel:844-466-6979" class="button rounded shadow">Click to
@@ -188,10 +188,11 @@ formId: "aa3d3838-6464-4e9f-911f-d2096f43433c"
 <div class="reveal" id="modal-example" data-reveal data-close-on-click="true" data-animation-in="slide-in-down"
     data-animation-out="slide-out-up" style="padding: 60px;">
     <p class="text-center">
-        <img style="width: 60px; margin-bottom: 2rem; border-radius: 0 15px; margin: 0px 3px;" class=""
-            src="<?php echo get_template_directory_uri(); ?>/library/images/chat-with-pharmacists-1.jpg" alt="">
-        <img style="width: 60px; margin-bottom: 2rem; border-radius: 0 15px; margin: 0px 3px;" class=""
-            src="<?php echo get_template_directory_uri(); ?>/library/images/chat-with-pharmacists-2.jpg" alt="">
+
+    <!-- <img data-toggle-class="active" data-src="<?php echo get_template_directory_uri(); ?>/library/images/Prescription-Icon.png" alt="end Us Your Prescription" class="pic lozad"> -->
+
+        <img style="width: 60px; margin-bottom: 2rem; border-radius: 0 15px; margin: 0px 3px;" class="lozad" data-src="<?php echo get_template_directory_uri(); ?>/library/images/chat-with-pharmacists-1.jpg" alt="">
+        <img style="width: 60px; margin-bottom: 2rem; border-radius: 0 15px; margin: 0px 3px;" class="lozad" data-src="<?php echo get_template_directory_uri(); ?>/library/images/chat-with-pharmacists-2.jpg" alt="">
     </p>
     <h3 class="text-center">Chat With One Of Our NowRx Pharmacists</h3>
     <p class="text-center">Do you have questions about your prescription? No Problem. Our Local Pharmacists are here
@@ -206,3 +207,6 @@ formId: "aa3d3838-6464-4e9f-911f-d2096f43433c"
         <span aria-hidden="true">&times;</span>
     </button>
 </div>
+
+
+<div class="reveal-overlay"></div>

@@ -12,7 +12,10 @@
  * For more info: http://codex.wordpress.org/Page_Templates
 */
 ?>
-
+<!-- Add the slick-theme.css if you want default styling -->
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
+<!-- Add the slick-theme.css if you want default styling -->
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
 <?php get_header(); ?>
 
 <?php if (has_post_thumbnail($post->ID)) : ?>
@@ -529,7 +532,7 @@ span.testi-small {
 			<div class="large-6 cell get-started-form">
 				<div class="sign-up-form-heading text-center">
 					<h2 class="h2-box text-center">Try NowRx Pharmacy<br/></h2>
-					<h5 class="get-started-form-sub text-center">*Sign up in seconds by filling out the form below and have prescriptions delivered in hours for FREE.</h5>
+					<h5 class="get-started-form-sub text-center">*Get started in seconds by filling out the form below and have prescriptions delivered in hours for FREE.</h5>
 					<!--[if lte IE 8]>
 					<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
 					<![endif]-->
@@ -546,7 +549,7 @@ span.testi-small {
 			<div class="large-5 large-offset-1 cell text-center">
 				<div class="get-started-testi">
 					<div class="get-started-car">
-						<img src="/wp-content/uploads/2020/08/5e7ff1ff0c4ef44e93fa96e4_car-3-min.png" srcset="/wp-content/uploads/2020/08/5e7ff1ff0c4ef44e93fa96e4_car-3-min-p-500.png 500w, /wp-content/uploads/2020/08/5e7ff1ff0c4ef44e93fa96e4_car-3-min.png" sizes="(max-width: 479px) 88vw, (max-width: 991px) 90vw, 50vw" alt="" class="image-2">
+						<img src="https://nowrx.com/wp-content/uploads/2020/08/5e7ff1ff0c4ef44e93fa96e4_car-3-min.png" srcset="/wp-content/uploads/2020/08/5e7ff1ff0c4ef44e93fa96e4_car-3-min-p-500.png 500w, https://nowrx.com/wp-content/uploads/2020/08/5e7ff1ff0c4ef44e93fa96e4_car-3-min.png" sizes="(max-width: 479px) 88vw, (max-width: 991px) 90vw, 50vw" alt="" class="image-2">
 					</div>					
 					<div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
 					  <div class="orbit-wrapper">
@@ -568,7 +571,7 @@ span.testi-small {
 						          <p><strong>Christene M.</strong> <em><span class="testi-small">Real NowRx Customer</span></em></p>
 					          </div>
 					          <div class="yelp-rating">
-						          <img src="/wp-content/uploads/2020/08/yelp-rating.png" />
+						          <img src="https://nowrx.com/wp-content/uploads/2020/08/yelp-rating.png" />
 					          </div>					          					          					          
 					        </figure>
 					      </li>
@@ -583,7 +586,7 @@ span.testi-small {
 						          <p><strong>Mark C.</strong> <em><span class="testi-small">Real NowRx Customer</span></em></p>
 					          </div>
 					          <div class="yelp-rating">
-						          <img src="/wp-content/uploads/2020/08/yelp-rating.png" />
+						          <img src="https://nowrx.com/wp-content/uploads/2020/08/yelp-rating.png" />
 					          </div>					          					          
 					        </figure>
 					      </li>
@@ -599,7 +602,7 @@ span.testi-small {
 						          <p><strong>Lina W.</strong> <em><span class="testi-small">Real NowRx Customer</span></em></p>
 					          </div>
 					          <div class="yelp-rating">
-						          <img src="/wp-content/uploads/2020/08/yelp-rating.png" />
+						          <img src="https://nowrx.com/wp-content/uploads/2020/08/yelp-rating.png" />
 					          </div>					          					          
 					        </figure>
 					      </li>
@@ -615,7 +618,7 @@ span.testi-small {
 						          <p><strong>Larry H.</strong> <em><span class="testi-small">Real NowRx Customer</span></em></p>
 					          </div>
 					          <div class="yelp-rating">
-						          <img src="/wp-content/uploads/2020/08/yelp-rating.png" />
+						          <img src="https://nowrx.com/wp-content/uploads/2020/08/yelp-rating.png" />
 					          </div>					          					          
 					        </figure>
 					      </li>
@@ -631,7 +634,7 @@ span.testi-small {
 						          <p><strong>Meg M.</strong> <em><span class="testi-small">Real NowRx Customer</span></em></p>
 					          </div>
 					          <div class="yelp-rating">
-						          <img src="/wp-content/uploads/2020/08/yelp-rating.png" />
+						          <img src="https://nowrx.com/wp-content/uploads/2020/08/yelp-rating.png" />
 					          </div>					          					          
 					        </figure>
 					      </li>
@@ -647,7 +650,7 @@ span.testi-small {
 						          <p><strong>Melissa A.</strong> <em><span class="testi-small">Real NowRx Customer</span></em></p>
 					          </div>	
 					          <div class="yelp-rating">
-						          <img src="/wp-content/uploads/2020/08/yelp-rating.png" />
+						          <img src="https://nowrx.com/wp-content/uploads/2020/08/yelp-rating.png" />
 					          </div>					          				          
 					        </figure>
 					      </li>					      
@@ -857,5 +860,14 @@ span.testi-small {
 </section>
 <?php endwhile;
 endif; ?>
-
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+<script>
+	$(document).ready(function () {
+		$('.orbit-container').slick({
+			autoplay: true,
+  autoplaySpeed: 3000,
+		});
+	});
+</script>
 <?php get_footer(); ?>

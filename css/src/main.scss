@@ -1,6 +1,8 @@
-@import '~foundation-sites/scss/foundation.scss';
+// @import '~foundation-sites/scss/foundation.scss';
 
-@import 'currentfoundation.scss';
+// @import 'currentfoundation.scss';
+
+// @import '~foundation-sites/scss/foundation';
 
 // topbar
 .promo-bar {
@@ -26,7 +28,12 @@
 		display: none;
 	}
 }
-
+img {
+	display: inline-block;
+	vertical-align: middle;
+	max-width: 100%;
+	height: auto;
+}
 .promo-bar span.phone.hide-for-small-only {
 }
 
@@ -53,6 +60,7 @@ header.main {
 		position: relative;
 		@media screen and (max-width: 992px) {
 			padding: 20px 0;
+			flex-direction: row-reverse;
 		}
 	}
 
@@ -61,10 +69,9 @@ header.main {
 		display: none;
 		@media screen and (max-width: 992px) {
 			display: block;
-			position: absolute;
-			top: 50%;
-			left: 20px;
-			transform: translate(0px, -50%);
+			position: relative;
+			margin-left: auto;
+			margin-right: 20px;
 		}
 		a.menu-icon-toggle {
 			position: relative;
@@ -72,7 +79,11 @@ header.main {
 			left: 0;
 		}
 	}
-
+	.logo-block {
+		@media screen and (max-width:992px) {
+			margin-left: 20px;
+		}
+	}
 	a.main-nav-logo {
 		max-width: 158px;
 		position: relative;
@@ -264,7 +275,8 @@ section.hero-home {
 				}
 				@media screen and (max-width: 992px) {
 					width: 100%;
-					padding: 30px 0 0;
+					padding: 30px 0 60px;
+					
 					text-align: center;
 					// max-width: 500px;
 					margin: 0 auto;
@@ -349,6 +361,24 @@ section.hero-home {
 ================================================== */
 section.how-it-works {
 	padding: 90px 0;
+
+
+	 .image.quatroimg {
+		background: #fff;
+		border-radius: 50%;
+		width: 120px;
+		height: 120px;
+		display: flex;
+		padding: 30PX;
+		margin: 20px auto;
+		align-items: center;
+	}
+	
+	 .image.quatroimg img {
+		max-height: 110px;
+		max-width: 70px;
+	}
+
 	.tellink {
 		color: #fff;
 	}
@@ -368,6 +398,20 @@ section.how-it-works .hiw-cell {
 	max-width: 500px;
 	margin: 0 auto;
 }
+
+section.how-it-works.panel--primary.quatro {
+	.hiw-cell {
+		padding: 30px 30px 0;
+	}
+	
+	h3.padding-bottom-3 {
+		font-size: 16px;
+	}
+}
+
+
+
+
 section.how-it-works .pre-headline {
 	font-size: 1.125rem;
 	color: #ffffff;
@@ -408,13 +452,13 @@ section.how-it-works.panel--primary p {
 	}
 }
 section.how-it-works.panel--primary.panel--cta {
-	background: #0088ce url('../images/cta-background-dots.svg') no-repeat;
+	// background: #0088ce url('../images/cta-background-dots.svg') no-repeat;
 	background-position: center bottom;
 	background-size: 410px;
 	padding-bottom: 0;
 }
 section.how-it-works.panel--primary.panel--cta--doctors {
-	background: #0088ce url('../images/cta-background-dots.svg') no-repeat;
+	// background: #0088ce url('../images/cta-background-dots.svg') no-repeat;
 	background-position: center bottom;
 	background-size: 410px;
 }
@@ -1320,8 +1364,8 @@ section.faq-section {
 		display: block;
 		width: 45px;
 		font-size: 2.5rem;
-		font-weight: 100;padding: 10px 0 0;
-		
+		font-weight: 100;
+		padding: 10px 0 0;
 	}
 
 	.container {
@@ -1698,14 +1742,16 @@ section.faq-blocks {
 	.content.botcot {
 		display: flex;
 		@media screen and (max-width: 992px) {
-			flex-direction: column-reverse;
+			flex-direction: column;
 		}
 		.faq-image {
 			max-width: 45%;
 			width: 100%;
 			margin-left: 5%;
 			padding: 30px 0 0 60px;
-
+			display: flex;
+			flex-direction: column-reverse;
+			align-items: flex-end;
 			@media screen and (max-width: 992px) {
 				max-width: 500px;
 				margin: 0 auto 40px;
@@ -1829,7 +1875,7 @@ section.locations-item {
 		margin: 60px 0 0;
 		flex-wrap: wrap;
 		max-width: 1300px;
-    	margin: 60px auto 0;
+		margin: 60px auto 0;
 	}
 
 	.content {
@@ -1872,4 +1918,3 @@ section.locations-item {
 		}
 	}
 }
-
