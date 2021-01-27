@@ -15,9 +15,9 @@ gtag('event', 'conversion', {'send_to': 'AW-875503484/Bj1NCMmPzboBEPy-vKED'});
     <img class="imageblock lozad" data-toggle-class="active" data-src="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020.png" alt="prescription being delivered to mother" height="100px" width="450px">
 </picture> -->
 
-        <picture class="lozad" data-iesrc="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020.png" data-alt="prescription being delivered to mother" data-toggle-class="active">
+        <picture class="lozad" data-iesrc="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020.png" data-alt="NowRx Pharmacy Surescripts 2020 White Coat Award Finalist (Highest Accuracy) " data-toggle-class="active">
             <source type="image/png" srcset="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020.png">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020lowrez.jpg" class="imageblock" height="100px" width="450px">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020lowrez.jpg" class="imageblock" height="100px" width="450px" alt="NowRx Pharmacy Surescripts 2020 White Coat Award Finalist (Highest Accuracy) ">
         </picture>
 
 </div>
@@ -28,7 +28,7 @@ gtag('event', 'conversion', {'send_to': 'AW-875503484/Bj1NCMmPzboBEPy-vKED'});
                 <header class="article-header tynk">
 
                     <div class="imageblock">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/AdobeStock_91568410.webp" alt="Thank you for Choosing NowRx Pharmacy" width="300px" height="300px" class="pic">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/AdobeStock_91568410.webp" alt="NowRx Pharmacy Pharmacist on desk" width="300px" height="300px" class="pic">
                     </div>
 
                     <div class="content">
@@ -44,11 +44,11 @@ gtag('event', 'conversion', {'send_to': 'AW-875503484/Bj1NCMmPzboBEPy-vKED'});
                         </div>
                         <div class="rvl">
                             <p>
-                                *Delivery at all locations availble M-F 9am-5pm (Saturday available in SF Bay Area)
+                                *Delivery at all locations available M-F 9am-5pm (Saturday available in SF Bay Area)
                             </p>
                         </div>
                         <div class="rvl">
-                            <p>Live pharmacy support avaiable 7 days/week 8:30am-8pm at <a href="" class="li">(844) 466-6979</a>.</p>
+                            <p>Live pharmacy support available 7 days/week 8:30am-8pm at <a href="" class="li">(844) 466-6979</a>.</p>
                         </div>
                         <div class="rvl">
                             <span class="follow-links">
@@ -75,13 +75,11 @@ gtag('event', 'conversion', {'send_to': 'AW-875503484/Bj1NCMmPzboBEPy-vKED'});
                             <!-- block -->
                             <div class="block">
                                 <div class="imageblock">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/images/message.png" alt="" class="pic">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/images/message.png" alt="pharmacy phone with messages icon" class="pic">
                                 </div>
                                 <div class="rvl">
                                     <p class="span">
-                                        Your local NowRx Pharmcy will reach out to you by call and text at the number you provided.
-                                        Please have your insurance and prescription information ready so that we may better assists
-                                        you.
+                                    Your local NowRx Pharmacy will reach out to you by call and text at the number you provided. Please have your insurance and prescription information ready so that we may better assist you.
                                     </p>
                                 </div>
                             </div>
@@ -89,11 +87,11 @@ gtag('event', 'conversion', {'send_to': 'AW-875503484/Bj1NCMmPzboBEPy-vKED'});
                             <!-- block -->
                             <div class="block">
                                 <div class="imageblock">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/images/files.png" alt="" class="pic">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/images/files.png" alt="folder of prescription and health files icon" class="pic">
                                 </div>
                                 <div class="rvl">
                                     <p class="span">
-                                        If transferring a prescription from another pharmacy, we will call you once the tranfer is received to confirm your copay. If you hae any questions about a prescription's status, call us at anytime :)
+                                    If you are transferring a prescription from another pharmacy, we will call you once the transfer is received to confirm your copay. If you have any questions about the status of a prescription, please text us :)
                                     </p>
                                 </div>
                             </div>
@@ -101,11 +99,11 @@ gtag('event', 'conversion', {'send_to': 'AW-875503484/Bj1NCMmPzboBEPy-vKED'});
                             <!-- block -->
                             <div class="block">
                                 <div class="imageblock">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/images/time.png" alt="" class="pic">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/images/time.png" alt="man sitting down waiting for prescription delivery icon" class="pic">
                                 </div>
                                 <div class="rvl">
                                     <p class="span">
-                                        Once payment has been aproved just sit back relax and a NowRx Pharmacy employee will deliver your medication to you in under 5 hours or as request. (1hr. delivery available for 5$)
+                                    Once payment has been approved just sit back, relax, and a NowRx Pharmacy team member will deliver your medication to you in under 5 hours or as requested. We also offer a 1-hour delivery option for a $5 fee.
                                     </p>
                                 </div>
                             </div>
@@ -129,7 +127,7 @@ gtag('event', 'conversion', {'send_to': 'AW-875503484/Bj1NCMmPzboBEPy-vKED'});
                     <div class="container">
                         <div class="content-block">
                             <div class="imageblock">
-                                <img src="<?php echo get_template_directory_uri(); ?>/images/Pills.png" alt="Want All Your Prescriptions Delivered?" class="pic">
+                                <img src="<?php echo get_template_directory_uri(); ?>/images/Pills.png" alt="NowRx pharmacy prescription bottle and medication spilled" class="pic">
                             </div>
                             <div class="cntx">
                                 <div class="rvl">
@@ -144,7 +142,7 @@ gtag('event', 'conversion', {'send_to': 'AW-875503484/Bj1NCMmPzboBEPy-vKED'});
                                 </div>
                                 <div class="rvl">
                                     <p>
-                                        NowRx Pharmacy can be found in all docotr office electronic prescribing systems. If your docotr has trouble finding us or needs more information, please give us a call at <a href="" class="li">(844) 466-6979</a> and a live pharmacy team member will be happy to assist you.
+                                        NowRx Pharmacy can be found in all doctor office electronic prescribing systems. If your doctor has trouble finding us or needs more information, please give us a call at <a href="" class="li">(844) 466-6979</a> and a live pharmacy team member will be happy to assist you.
                                     </p>
                                 </div>
                             </div>
@@ -232,7 +230,7 @@ gtag('event', 'conversion', {'send_to': 'AW-875503484/Bj1NCMmPzboBEPy-vKED'});
                             <div class="a-item">
                                 <div class="title">A.</div>
                                 <span class="cntx">
-                                    Proprietary tech inside our pharmacy increases efficiency and reduces our cost to about
+                                    The proprietary tech inside our pharmacy increases efficiency and reduces our cost to about
                                     1/100th that of a traditional pharmacy like CVS. This enables free same-day delivery.
                                 </span>
                             </div>
@@ -378,7 +376,7 @@ gtag('event', 'conversion', {'send_to': 'AW-875503484/Bj1NCMmPzboBEPy-vKED'});
                             <div class="q-item">
                                 <div class="title">Q.</div>
                                 <span class="cntx">
-                                    How long does does delivery take?
+                                    How long does delivery take?
                                 </span>
                             </div>
                         </div>
@@ -419,7 +417,7 @@ gtag('event', 'conversion', {'send_to': 'AW-875503484/Bj1NCMmPzboBEPy-vKED'});
                 </div>
                 <div class="rvl">
                     <div class="btn-container">
-                        <a href="<?= get_site_url(); ?>/faqs/" class="rx-btn rx-dg">
+                        <a href="<?= get_site_url(); ?>/faqs/#faqblock" class="rx-btn rx-dg">
                             Frequently Asked Questions
                         </a>
                     </div>

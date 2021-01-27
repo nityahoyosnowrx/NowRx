@@ -100,13 +100,12 @@ $('a[href*="#"]').on('click', function(e) {
   e.preventDefault();
 });
 
-
 // modals
 $('[data-toggle]').on('click', function(e) {
   e.preventDefault();
   let toggleId = $(this).data('toggle');
   console.log(toggleId);
-  let stI = '#'+toggleId;
+  let stI = '#' + toggleId;
   $(stI).addClass('active');
   $('.reveal-overlay').addClass('active');
 });
@@ -134,26 +133,36 @@ $(document).ready(function() {
     e.stopPropagation();
     e.preventDefault();
 
-    opeD =  $(this).attr('data-opentab');
+    opeD = $(this).attr('data-opentab');
     console.log(opeD);
 
-    $('.click').parent('.faq-block').siblings().find('.click').removeClass('active-faq');
-    $('.click').parent('.faq-block').siblings().find('.block-content').removeClass('active-faq');
+    $('.click')
+      .parent('.faq-block')
+      .siblings()
+      .find('.click')
+      .removeClass('active-faq');
+    $('.click')
+      .parent('.faq-block')
+      .siblings()
+      .find('.block-content')
+      .removeClass('active-faq');
 
     if (opeD == '0') {
       $('.click').attr('data-opentab', '0');
 
       $(this).addClass('active-faq');
-      $(this).siblings('.block-content').addClass('active-faq');
+      $(this)
+        .siblings('.block-content')
+        .addClass('active-faq');
 
       $(this).attr('data-opentab', '1');
-
     } else {
       $(this).removeClass('active-faq');
-      $(this).siblings('.block-content').removeClass('active-faq');
-        
-      $(this).attr('data-opentab', '0');
+      $(this)
+        .siblings('.block-content')
+        .removeClass('active-faq');
 
+      $(this).attr('data-opentab', '0');
     }
   });
 
@@ -167,29 +176,42 @@ $(document).ready(function() {
     $('.title').removeClass('active-faq');
     $('.item-block').removeClass('active-faq');
 
-    
-     openSubModal =  $(this).closest('.item').attr('data-opentab');
-    
+    openSubModal = $(this)
+      .closest('.item')
+      .attr('data-opentab');
+
     //  console.log(openSubModal);
 
     if (openSubModal == 'false') {
-      $('.item').attr('data-opentab','false');
+      $('.item').attr('data-opentab', 'false');
 
-      $(this).closest('.item').addClass('active-faq');
+      $(this)
+        .closest('.item')
+        .addClass('active-faq');
       $(this).addClass('active-faq');
-      $(this).closest('.item').find('.item-block').addClass('active-faq');
+      $(this)
+        .closest('.item')
+        .find('.item-block')
+        .addClass('active-faq');
 
-      $(this).closest('.item').attr('data-opentab','true');
-
-    }  
+      $(this)
+        .closest('.item')
+        .attr('data-opentab', 'true');
+    }
     if (openSubModal == 'true') {
-      
       $(this).removeClass('active-faq');
-      $(this).closest('.item').find('.title').removeClass('active-faq');
-      $(this).closest('.item').find('.item-block').removeClass('active-faq');
+      $(this)
+        .closest('.item')
+        .find('.title')
+        .removeClass('active-faq');
+      $(this)
+        .closest('.item')
+        .find('.item-block')
+        .removeClass('active-faq');
 
-      $(this).closest('.item').attr('data-opentab','false');
-
+      $(this)
+        .closest('.item')
+        .attr('data-opentab', 'false');
     }
   });
 
@@ -198,7 +220,7 @@ $(document).ready(function() {
     console.log('clicked');
     $('.active-faq.item-block, .active-faq.title, .active-faq.item').removeClass('active-faq');
 
-    $('.item').attr('data-opentab','false');
+    $('.item').attr('data-opentab', 'false');
     // $(this).toggleClass('active-faq');
     // $(this).find('.title').toggleClass('active-faq');
     // $(this).find('.item-block').toggleClass('active-faq');
@@ -214,11 +236,45 @@ $(document).ready(function() {
   //       $('.item').removeClass('active-faq');
   //       $('.item').find('.title').removeClass('active-faq');
   //       $('.item').find('.item-block').removeClass('active-faq');
-         
+
   //       $('.item').attr('data-opentab','false');
 
   //     }
   //   // }
   // });
+});
 
+// referral form
+$(document).ready(function() {
+  $('.item-referrals .grid-x.grid-padding-x').hide(0);
+  $('.item-referrals .grid-x.grid-padding-x:nth-child(' + 1 + ')').slideDown();
+
+  let refCount = 1;
+
+  $('.addtional-people .text').on('click', function() {
+    refCount++;
+    console.log(refCount);
+
+    if (refCount >= 5) {
+      $('.addtional-people').fadeOut();
+    }
+
+    $('.item-referrals .grid-x.grid-padding-x:nth-child(' + refCount + ')').slideDown();
+  });
+
+  $( "form#referralForm input, .form-content input,.form-content textarea" ).focus(function() {
+    console.log( "Handler for .focus() called." );
+    $(this).siblings('span').addClass('hasstext');
+  });
+
+  $('form#referralForm input, .form-content input,.form-content textarea').on( "blur", function(){
+    if( $(this).val() ) {
+      $(this).siblings('span').addClass('hasstext');
+    } else {
+      $(this).siblings('span').removeClass('hasstext');
+    }
+  });
+
+  
+  // ready
 });

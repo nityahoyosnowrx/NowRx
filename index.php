@@ -59,11 +59,11 @@
                                         <?php if (has_post_thumbnail($post->ID)) : ?>
                                             <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'single-post-thumbnail'); ?>
                                             <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
-                                                <img class="border-styled" style="" src="<?php echo $image[0]; ?>" alt="">
+                                                <img class="border-styled" style="" src="<?php echo $image[0]; ?>" alt="<?php echo get_post_meta( get_post_thumbnail_id(), '_wp_attachment_image_alt', true ); ?>">
                                             </a>
                                         <?php else : ?>
                                             <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
-                                                <img class="border-styled" style="" src="<?php echo get_site_url(); ?>/wp-content/uploads/2020/09/IMG_3714-1024x683.jpg" alt="<?php the_title_attribute(); ?>">
+                                                <img class="border-styled" style="" src="<?php echo get_site_url(); ?>/wp-content/uploads/2020/09/IMG_3714-1024x683.jpg" alt="<?php echo get_post_meta( get_post_thumbnail_id(), '_wp_attachment_image_alt', true ); ?>">
                                             </a>
                                         <?php endif; ?>
                                     </div>
@@ -103,11 +103,11 @@
                             <?php if (has_post_thumbnail($post->ID)) : ?>
                                 <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'single-post-thumbnail'); ?>
                                 <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
-                                    <img class="border-styled" style="" src="<?php echo $image[0]; ?>" alt="<?php echo wp_trim_words(get_the_title(), 8, '...'); ?>">
+                                    <img class="border-styled" style="" src="<?php echo $image[0]; ?>" alt="<?php echo get_post_meta( get_post_thumbnail_id(), '_wp_attachment_image_alt', true ); ?>">
                                 </a>
                             <?php else : ?>
                                 <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
-                                    <img class="border-styled" style="" src="<?php echo get_site_url(); ?>/wp-content/uploads/2020/09/IMG_3714-1024x683.jpg" alt="<?php the_title_attribute(); ?>">
+                                    <img class="border-styled" style="" src="<?php echo get_site_url(); ?>/wp-content/uploads/2020/09/IMG_3714-1024x683.jpg" alt="<?php echo get_post_meta( get_post_thumbnail_id(), '_wp_attachment_image_alt', true ); ?>">
                                 </a>
                             <?php endif; ?>
                         </div>

@@ -80,7 +80,7 @@ header.main {
 		}
 	}
 	.logo-block {
-		@media screen and (max-width:992px) {
+		@media screen and (max-width: 992px) {
 			margin-left: 20px;
 		}
 	}
@@ -210,6 +210,39 @@ section.hero-home {
 	@media screen and (max-width: 992px) {
 		padding: 80px 0 60px;
 	}
+	
+	&.refillstation .content {
+		span.sub-headline {
+			@media screen and (max-width:992px){
+				font-size: 10px;
+
+			}
+		}
+		@media screen and (max-width:992px){
+			flex-direction: column;
+		}
+		.column-half.content-col{
+			padding-right: 50px;
+			@media screen and (max-width:992px){
+				padding: 30px 0 60px;
+				
+			}
+			
+		}
+
+		.column-half.image-col{
+			.imageblock{
+				@media screen and (max-width:992px){
+					display: none;
+
+					
+				}
+			}
+		}
+		
+	}
+	
+	
 	img.imageblock {
 		margin: 0;
 		max-width: 450px;
@@ -235,12 +268,15 @@ section.hero-home {
 
 		span.sub-headline {
 			font-weight: 600;
-			letter-spacing: 1px;
+			letter-spacing: 0px;
 			text-transform: uppercase;
 			color: #038ed8;
 			display: block;
 			margin: 0 0 10px;
 			font-family: proxima-soft, sans-serif;
+			@media screen and (max-width: 992px) {
+				font-size: 14px;
+			}
 		}
 
 		.column-half {
@@ -276,7 +312,7 @@ section.hero-home {
 				@media screen and (max-width: 992px) {
 					width: 100%;
 					padding: 30px 0 60px;
-					
+
 					text-align: center;
 					// max-width: 500px;
 					margin: 0 auto;
@@ -299,7 +335,7 @@ section.hero-home {
 			&.hiw-title {
 				font-size: 4.1rem;
 				@media screen and (max-width: 992px) {
-					font-size: 3rem;
+					font-size: 2.7rem;
 					margin: 0 0 20px;
 				}
 			}
@@ -362,19 +398,18 @@ section.hero-home {
 section.how-it-works {
 	padding: 90px 0;
 
-
-	 .image.quatroimg {
+	.image.quatroimg {
 		background: #fff;
 		border-radius: 50%;
 		width: 120px;
 		height: 120px;
 		display: flex;
-		padding: 30PX;
+		padding: 30px;
 		margin: 20px auto;
 		align-items: center;
 	}
-	
-	 .image.quatroimg img {
+
+	.image.quatroimg img {
 		max-height: 110px;
 		max-width: 70px;
 	}
@@ -401,16 +436,13 @@ section.how-it-works .hiw-cell {
 
 section.how-it-works.panel--primary.quatro {
 	.hiw-cell {
-		padding: 30px 30px 0;
+		padding: 30px 20px 0;
 	}
-	
+
 	h3.padding-bottom-3 {
-		font-size: 16px;
+		font-size: 22px;
 	}
 }
-
-
-
 
 section.how-it-works .pre-headline {
 	font-size: 1.125rem;
@@ -610,10 +642,11 @@ section.hero--sub-page h1 {
 .footer .disclaimer hr {
 	border-bottom: 1px solid #e5e5e5;
 }
-.footer h6 {
+.footer h4 {
 	font-family: 'proxima-soft', sans-serif;
 	font-weight: 800;
 	color: #254e89;
+	font-size: 1rem;
 }
 
 /* # Testimonials
@@ -928,6 +961,8 @@ label.hs-error-msg {
 	-webkit-box-shadow: 0px 20px 40px 1px rgba(0, 0, 0, 0.25);
 	box-shadow: 0px 20px 40px 1px rgba(0, 0, 0, 0.25);
 	border-radius: 0 30px;
+	max-height: 90vh;
+    overflow-y: scroll;
 }
 
 .reveal-overlay {
@@ -939,6 +974,16 @@ label.hs-error-msg {
 	-webkit-transition-duration: 100ms;
 	transition-duration: 100ms;
 }
+
+
+
+
+
+
+
+
+
+
 
 /* # NowRx In The News
 ================================================== */
@@ -961,8 +1006,9 @@ section.in-the-news img {
 section.in-the-news a {
 	color: inherit;
 }
-section.in-the-news h5 {
+section.in-the-news h3 {
 	font-weight: 600;
+	font-size: 1.25rem;
 }
 section.in-the-news {
 	text-align: center;
@@ -1010,6 +1056,28 @@ h2 {
 	font-size: 44px;
 	font-weight: 800;
 }
+
+
+.h6, h6 {
+    font-size: 1rem;
+}
+.h5, h5 {
+    font-size: 1.25rem;
+}
+.h4, h4 {
+    font-size: calc(1.275rem + .3vw);
+}
+.h3, h3 {
+    font-size: calc(1.3rem + .6vw);
+}
+.h2, h2 {
+    font-size: 2rem;
+}
+.h1, h1 {
+    font-size: 2.5rem;
+    line-height: 1em;
+}
+
 
 .about-us--team-member-title {
 	font-size: 1.125rem;
@@ -1429,7 +1497,43 @@ section.faq-section {
 section.visit-faq {
 	background: #038ed8;
 	padding: 120px 20px 60px;
+	&.refillfaq{
 
+		@media screen and (max-width: 992px) {
+		padding: 60px 20px 60px;
+		}
+
+		span.sub-headline {
+			@media screen and (max-width: 992px) {
+				font-size: 11px;
+
+			}
+		}
+		h2.sec-title {
+			@media screen and (max-width: 992px) {
+				line-height: 3rem;
+			font-size: 3rem;
+			margin-bottom: 30px;
+
+			}
+		
+		}
+		.small-block {
+			
+			@media screen and (max-width: 992px) {
+				font-size: 13px;
+				color: #fff;
+				margin: 30px 0 0;
+				font-weight: 600;
+				letter-spacing: -1px;
+
+			}
+		}
+	}
+	p {
+		color: #fff;
+		margin: 0 0 30px;
+	}
 	.container {
 		max-width: 75rem;
 		margin: 0 auto;
@@ -1446,7 +1550,8 @@ section.visit-faq {
 		font-weight: 800;
 		line-height: 4.4rem;
 		color: #fff;
-		margin: 0 0 30px;
+		margin: 0 0;
+
 		@media screen and (max-width: 992px) {
 			line-height: 3rem;
 			font-size: 3rem;
@@ -1460,6 +1565,9 @@ section.visit-faq {
 		color: #fff;
 		font-weight: 600;
 		font-family: proxima-soft, sans-serif;
+		@media screen and (max-width: 992px) {
+			font-size: 14px;
+		}
 	}
 
 	.small-block {
@@ -1566,13 +1674,16 @@ section.faq-blocks {
 
 	span.sub-headline {
 		font-weight: 600;
-		letter-spacing: 1px;
+		letter-spacing: 0;
 		text-transform: uppercase;
 		color: #038ed8;
 		display: block;
 		margin: 0 0 10px;
 		font-family: proxima-soft, sans-serif;
 		text-align: center;
+		@media screen and (max-width: 992px) {
+			font-size: 14px;
+		}
 	}
 
 	.topcontent.content h2.sec-title {
@@ -1916,5 +2027,580 @@ section.locations-item {
 			width: 100%;
 			margin: 10px 0 0;
 		}
+	}
+}
+
+// get started page
+
+body.page-template.page-template-page-get-started {
+	.title-bar {
+		display: none;
+		padding: 1.5em 1.5em 0 1.5em;
+		position: relative;
+		background: transparent;
+	}
+	.bg-white {
+		background: #ffffff;
+		position: relative;
+	}
+	.get-started-intro {
+		margin-top: 1rem;
+	}
+	.get-started-hero-2 {
+		background: #448bc8;
+		color: #ffffff;
+		margin-bottom: 2rem;
+	}
+	.get-started-headline-2 {
+		color: #ffffff;
+	}
+	.get-started-post-headline-2 {
+		color: #ffffff;
+	}
+	.get-started-form {
+		border-radius: 9px;
+		background-color: #fafafa;
+		padding-top: 30px;
+		padding-bottom: 24px;
+	}
+	.get-started-form-sub {
+		color: #458bc9;
+	}
+	h2.get-started-form-sub.text-center {
+		margin-bottom: 2rem;
+		font-size: 1.25rem;
+	}
+	h1.h1-box.text-center {
+		line-height: 1em;
+		font-size: 44px;
+	}
+	.image-2 {
+		width: 100%;
+		margin-bottom: -1px;
+	}
+	.get-started-car {
+		/*     margin-top: -50px; */
+		margin-bottom: 20px;
+	}
+	.text-block-27 {
+		width: 100%;
+		margin-right: auto;
+		margin-bottom: 10px;
+		margin-left: auto;
+		margin-top: 10px;
+		color: #d0103a;
+		font-size: 36px;
+		line-height: 36px;
+		font-weight: 800;
+	}
+	.btn-img {
+		max-width: 55px;
+		display: inline-block;
+		float: left;
+		width: 14%;
+		padding-right: 0px;
+	}
+	.btn-text {
+		width: 86%;
+		float: right;
+	}
+	.center {
+		margin-bottom: 15px;
+		font-size: 20px;
+	}
+	.blue {
+		color: #458bc9;
+	}
+	.below-btn {
+		margin-top: 0;
+	}
+	.get-started-how-works {
+		padding: 100px 40px 50px;
+		border-radius: 9px;
+		background-color: #eef7ff;
+		color: #192d3e;
+		margin-top: 4rem;
+		//   background-image: url("https://assets.website-files.com/5e7e6b8…/5e7e6b8…_pills.svg");
+	}
+	.pad-hw {
+		padding: 49px 26px;
+	}
+	.number {
+		position: absolute;
+		left: 82.97px;
+		top: 62px;
+		padding: 0px 17px;
+		border-radius: 9px;
+		background-color: rgba(68, 139, 200, 0.24);
+		color: #fff;
+		font-size: 32px;
+		font-weight: 700;
+	}
+	.ph-icon {
+		position: relative;
+		width: 120px;
+		height: 108px;
+		margin-bottom: 54px;
+		//   background-image: url(https://assets.website-files.com/5e7e6b8…/5e7fb31…_shield%20(1).svg);
+		background-size: 48%;
+	}
+	.ph-icon.icon-2,
+	.ph-icon.icon-3 {
+		background-position: 0 50%;
+		background-size: contain;
+	}
+	.ph-icon.icon-2.icon-2-test {
+		height: 46px;
+		background-image: none;
+	}
+	.bl {
+		top: auto;
+		right: -60%;
+		bottom: -36%;
+		width: 64px;
+		height: 64px;
+		border-radius: 14px;
+		background-color: rgba(69, 139, 201, 0.06);
+		position: absolute;
+	}
+	.bl.rd {
+		right: -25%;
+		bottom: 29%;
+		width: 48px;
+		height: 48px;
+		background-color: rgba(255, 1, 27, 0.05) !important;
+		position: absolute;
+	}
+	.ph-ico-position {
+		top: auto;
+		right: -55%;
+		bottom: -20%;
+		width: 50px;
+		height: 50px;
+		border-radius: 14px;
+		position: absolute;
+	}
+	.rows-new {
+		padding-bottom: 61px;
+	}
+	.slider1 {
+		position: relative;
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		margin: 1px 1px 10px;
+		padding: 112px 70px 24px;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		-webkit-box-pack: center;
+		-webkit-justify-content: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+		-webkit-box-align: center;
+		-webkit-align-items: center;
+		-ms-flex-align: center;
+		align-items: center;
+		background-color: #fff;
+		background-image: url('https://www.nowrx.com/wp-content/themes/nowrx/library/images/5e7e6b89b39e21595385dcb3_quote.svg');
+		background-repeat: no-repeat;
+		background-position: 36px 106px;
+		background-size: 125px;
+		box-shadow: 1px 1px 40px 0 rgba(0, 0, 0, 0.05);
+		-webkit-transition: all 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+		transition: all 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+		font-size: 14px;
+		line-height: 24px;
+		cursor: -webkit-grab;
+		cursor: grab;
+	}
+	.p-sub.p-short.last-word {
+		font-size: 28px;
+	}
+	.p-light.left-al.center-text {
+		margin-bottom: -6px;
+		font-size: 21px;
+		line-height: 35px;
+		text-align: center;
+		font-weight: 400;
+	}
+	.divider {
+		width: 50px;
+		height: 1px;
+		margin: 25px auto;
+		background-color: #e2e2e2;
+		color: #458bc9;
+	}
+	.text-block-30 {
+		margin-bottom: 38px;
+	}
+	.review {
+		position: absolute;
+		left: 0;
+		top: -9%;
+		right: 0;
+		bottom: 0;
+		margin-right: auto;
+		margin-left: auto;
+		border-style: solid;
+		border-width: 6px;
+		border-color: #fff;
+		border-radius: 143px;
+	}
+	.section.section-opportunity.red {
+		padding-top: 99px;
+		padding-bottom: 99px;
+		background-color: #d0103a;
+		background-image: url('https://www.nowrx.com/wp-content/themes/nowrx/library/images/5e7e6b89b39e219a3985dca6_par-2.svg');
+		background-position: 100% 0;
+		background-size: cover;
+		font-size: 28px;
+		color: #ffffff;
+	}
+	.get-started-covered {
+		display: block;
+		width: 100%;
+		margin-bottom: 50px;
+		padding: 50px 40px 50px;
+		background-image: none;
+		background-position: 0 0;
+		background-size: auto;
+		background-repeat: repeat;
+		background-attachment: scroll;
+		background-color: #fafafa;
+	}
+	.get-started-covered-box {
+		margin-top: 0;
+		margin-bottom: 0;
+		padding: 77px 41px;
+	}
+	.image-3 {
+		height: 100%;
+		margin-right: 26px;
+		padding-right: 0;
+		background-image: url('https://www.nowrx.com/wp-content/themes/nowrx/library/images/5ea729fc1d9f69ada542b845_now-new-img.jpg');
+		background-size: cover;
+		border-radius: 4px;
+		width: 100%;
+	}
+	.p-sub.p-short.p-margin {
+		width: auto;
+		margin-bottom: 25px;
+		padding-bottom: 7px;
+		padding-left: 5px;
+		background-image: url('https://www.nowrx.com/wp-content/themes/nowrx/library/images/5e7e6b89b39e219e0385dca2_dot.svg');
+		background-position: 0 0;
+		background-repeat: no-repeat;
+		background-size: 32px;
+		font-size: 24px;
+		line-height: 30px;
+	}
+	.list-red {
+		margin-bottom: 20px;
+		padding-top: 0px;
+		padding-bottom: 2px;
+		padding-left: 29px;
+		border-bottom-style: none;
+		background-image: url('https://www.nowrx.com/wp-content/themes/nowrx/library/images/5e7fbe2b0c4ef4df15f98133_tick.svg');
+		background-position: 0 50%;
+		background-size: 12px;
+		background-repeat: no-repeat;
+		color: #000;
+		font-size: 16px;
+		line-height: 22px;
+		text-align: left;
+		list-style-type: none;
+	}
+	.orbit-figure {
+		margin: 0;
+		height: 100%;
+		min-height: 270px;
+	}
+	.get-started-speak {
+		display: block;
+		clear: both;
+	}
+	.testi-text p {
+		font-size: 0.9em;
+		margin-bottom: 0.5rem;
+	}
+	span.testi-small {
+		font-size: 0.7em;
+	}
+	.list-dots {
+		display: block;
+		margin-bottom: 25px;
+		padding-left: 57px;
+	}
+	.w-list-unstyled {
+		padding-left: 0;
+		list-style: none;
+	}
+	.orbit-previous:hover,
+	.orbit-next:hover,
+	.orbit-previous:active,
+	.orbit-next:active,
+	.orbit-previous:focus,
+	.orbit-next:focus {
+		display: none;
+	}
+	[data-whatinput='mouse'] .orbit-previous,
+	[data-whatinput='mouse'] .orbit-next {
+		display: none;
+	}
+	.orbit-previous,
+	.orbit-next {
+		display: none;
+	}
+	.testi-name p {
+		margin-bottom: 0;
+	}
+	.yelp-rating img {
+		max-width: 100px;
+		margin-bottom: 1rem;
+		margin-top: 0.7rem;
+	}
+	.section-bussiness {
+		padding: 100px 40px 50px;
+		border-radius: 9px;
+		background-color: #eef7ff;
+		color: #192d3e;
+		//   background-image: url('https://assets.website-files.com/5e7e6b8…/5e7e6b8…_pills.svg');
+	}
+	.section-bussiness .ph-icon.icon-2 {
+		margin-bottom: 20px;
+	}
+	.section-bussiness img {
+		position: absolute;
+		left: 100%;
+		top: 22%;
+	}
+	.section-bussiness img.car-larger {
+		position: absolute;
+		left: 85%;
+		top: 35%;
+		max-width: 100px;
+	}
+
+	.section-bussiness img.bt-row {
+		position: absolute;
+		left: 108%;
+		top: 35%;
+		max-width: 100px;
+	}
+	.section-business-header {
+		padding-bottom: 50px;
+	}
+	.works-head {
+		margin-bottom: 10px;
+		color: #333131;
+		line-height: 22px;
+		font-weight: 700;
+	}
+	.bl-2 {
+		top: auto;
+		right: -60%;
+		bottom: 0;
+		width: 64px;
+		height: 64px;
+		border-radius: 14px;
+		background-color: rgba(69, 139, 201, 0.06);
+		position: absolute;
+	}
+	.bl-2.rd-2 {
+		right: -25%;
+		bottom: 29%;
+		width: 48px;
+		height: 48px;
+		background-color: rgba(255, 1, 27, 0.05) !important;
+		position: absolute;
+	}
+	@media screen and (max-width: 991px) {
+		.text-block-27 {
+			margin-top: 1rem;
+			margin-bottom: 1rem;
+		}
+		.below-btn {
+			margin-top: 1rem;
+		}
+		.image-2 {
+			display: block;
+			margin-bottom: 8px;
+			padding-right: 1px;
+			padding-left: 1px;
+		}
+		.get-started-how-works {
+			margin-top: 25px;
+			padding: 50px 10px 25px;
+		}
+		.bl {
+			bottom: -60%;
+		}
+		.ph-ico-position {
+			bottom: -40%;
+		}
+		.bg-white {
+			margin-bottom: 15px;
+		}
+		.number {
+			left: 46%;
+			top: 5%;
+			right: auto;
+			bottom: auto;
+			display: -webkit-box;
+			display: -webkit-flex;
+			display: -ms-flexbox;
+			display: flex;
+			margin-right: auto;
+			margin-left: auto;
+		}
+		.slider1 {
+			margin-top: 70px;
+			padding-bottom: 44px;
+		}
+		.section.section-opportunity.red {
+			padding-left: 5%;
+			padding-right: 5%;
+		}
+		.section-bussiness {
+			padding-top: 35px;
+		}
+		.section-business-header {
+			padding-top: 10px;
+			padding-bottom: 1rem;
+		}
+		.ph-icon {
+			margin: 0 auto 4rem auto;
+		}
+		.bl {
+			right: 20%;
+		}
+		.ph-ico-position {
+			right: 20%;
+		}
+		.h2-op {
+			font-size: 50px;
+		}
+		.bl.rd {
+			right: 65%;
+		}
+		.rows-new {
+			padding-bottom: 0px;
+		}
+		.bl-2 {
+			right: 10%;
+		}
+		.bl-2.rd-2 {
+			right: 50%;
+		}
+		.section-bussiness img.car-larger {
+			left: 10%;
+		}
+		.section-bussiness img {
+			left: 20%;
+		}
+		.section-bussiness img.bt-row {
+			left: 30%;
+		}
+		.get-started-covered-box {
+			padding-top: 0px;
+			padding-bottom: 0px;
+		}
+		.get-started-covered {
+			margin-bottom: 0px;
+			padding-bottom: 50px;
+		}
+		.p-sub.p-short.p-margin {
+			padding-left: 42px;
+			font-size: 29px;
+		}
+	}
+	@media screen and (max-width: 767px) {
+		.h2-box,
+		.h2-box.h2-op {
+			font-size: 32px;
+		}
+		.slider1 {
+			margin-top: 102px;
+			padding: 123px 20px 53px;
+		}
+		.get-started-covered-box {
+			padding-top: 50px;
+			padding-bottom: 0px;
+		}
+		.h2-op {
+			font-size: 32px;
+		}
+		.number {
+			left: 40%;
+		}
+		.ph-ico-position {
+			right: 25%;
+		}
+		.orbit-figure {
+			min-height: 230px;
+		}
+	}
+	/*
+  @media screen and (max-width: 569px) {
+	  .orbit-figure {
+		  min-height: 400px;
+	  }		
+  }
+  */
+}
+
+// get started page
+
+.testimonial-block {
+	@media screen and (min-width: 992px) {
+	margin-top: -110px;
+
+	}
+	img.pic.lozad {
+		max-width: 410px;
+		margin: 0 auto;
+		display: block;
+	}
+
+	img.pic.lozad {
+	}
+
+	.yelpo {
+	}
+
+	.yelpo img.pic.lozad {
+		max-width: 130px;
+	}
+
+	figure {
+	}
+
+	figure figcaption {
+		display: flex;
+		align-items: flex-end;
+		justify-content: center;
+		font-weight: 800;
+
+		@media screen and (max-width:992px){
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		}
+	}
+
+	figure cite {
+		font-size: 14px;
+		font-weight: 400;
+		margin-left: 15px;
+		display: block;
+		padding: 4px 0;
+	}
+
+	figure span.c {
+		display: block;
+		text-align: center;
+		margin: 0 0 15px;
 	}
 }

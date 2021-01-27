@@ -24,11 +24,11 @@
 
         <picture class="lozad"
             data-iesrc="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020.png"
-            data-alt="prescription being delivered to mother" data-toggle-class="active">
+            data-alt="NowRx Pharmacy Surescripts 2020 White Coat Award Finalist (Highest Accuracy)" data-toggle-class="active">
             <source type="image/png"
                 srcset="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020.png">
             <img src="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020lowrez.jpg"
-                class="imageblock" height="100px" width="450px">
+                class="imageblock" height="100px" width="450px" alt="NowRx Pharmacy Surescripts 2020 White Coat Award Finalist (Highest Accuracy) ">
         </picture>
 
     </div>
@@ -77,12 +77,12 @@
 
                 <picture class="lozad"
                     data-iesrc="<?php echo get_template_directory_uri(); ?>/library/images/hero-home-slider-3.jpg"
-                    data-alt="Free Prescription Delivery in Hours" data-toggle-class="active">
+                    data-alt="NowRx Pharmacy Car Delivering Medication" data-toggle-class="active">
                  
                     <source type="image/jpeg"
                         srcset="<?php echo get_template_directory_uri(); ?>/library/images/hero-home-slider-3.jpg">
                     <img src="<?php echo get_template_directory_uri(); ?>/library/images/hero-home-slider-3.jpg"
-                        class="orbit-image" height="500px" width="650px">
+                        class="orbit-image" height="500px" width="650px" alt="NowRx Pharmacy Car Delivering Medication">
                 </picture>
             </div>
 
@@ -145,7 +145,7 @@
                     <div class="image">
                         <img data-toggle-class="active"
                             data-src="<?php echo get_template_directory_uri(); ?>/library/images/Prescription-Icon.png"
-                            alt="end Us Your Prescription" class="pic lozad">
+                            alt="Prescription Icon" class="pic lozad">
                     </div>
 
                     <p>
@@ -165,7 +165,7 @@
                     <div class="image">
                         <img data-toggle-class="active"
                             data-src="<?php echo get_template_directory_uri(); ?>/library/images/Confirmation-Icon.png"
-                            alt="We Confirm Delivery" class="pic lozad ">
+                            alt="prescription delivery confirmation check mark icon" class="pic lozad ">
                     </div>
 
                     <p>We will reach out to you via phone to collect your insurance copay confirm your address and set
@@ -182,7 +182,7 @@
                     <div class="image">
                         <img data-toggle-class="active"
                             data-src="<?php echo get_template_directory_uri(); ?>/library/images/Car-Icon.png"
-                            alt="Medication is Delivered" class="pic lozad">
+                            alt="Prescription Delivery Car Icon" class="pic lozad">
                     </div>
 
                     <p>A NowRx employee will deliver your medication in hours from your local NowRx Pharmacy for free.
@@ -271,7 +271,7 @@
                         <div class="a-item">
                             <div class="title">A.</div>
                             <span class="cntx">
-                                Proprietary tech inside our pharmacy increases efficiency and reduces our cost to about
+                                The proprietary tech inside our pharmacy increases efficiency and reduces our cost to about
                                 1/100th that of a traditional pharmacy like CVS. This enables free same-day delivery.
                             </span>
                         </div>
@@ -417,7 +417,7 @@
                         <div class="q-item">
                             <div class="title">Q.</div>
                             <span class="cntx">
-                                How long does does delivery take?
+                                How long does delivery take?
                             </span>
                         </div>
                     </div>
@@ -461,7 +461,7 @@
             </div>
             <div class="rvl">
                 <div class="btn-container">
-                    <a href="<?= get_site_url(); ?>/faqs/" class="rx-btn rx-dg">
+                    <a href="<?= get_site_url(); ?>/faqs/#faqblock" class="rx-btn rx-dg">
                         Frequently Asked Questions
                     </a>
                 </div>
@@ -482,7 +482,7 @@
 
 <section class="split-image">
   <div class="imagefull">
-    <img src="<?php echo get_template_directory_uri(); ?>/images/whypeoplelovenowrx.jpg" alt="" class="pic">
+    <img src="<?php echo get_template_directory_uri(); ?>/images/whypeoplelovenowrx.jpg" alt="NowRx Pharmacist Delivering Medication" class="pic">
   </div>
     <div class="container">
         <div class="content">
@@ -504,7 +504,7 @@
                   <h3 class="title">Free Prescription Delivery in Hours</h3>
                 </div>
                 <div class="rvl">
-                  <p>You only pay your normal insurance copay. 1 hour rush delivery is available for a $5 fee.</p>
+                  <p>You only pay your normal insurance copay. 1-hour rush delivery is available for a $5 fee.</p>
                 </div>
               </div>
               <!-- item -->

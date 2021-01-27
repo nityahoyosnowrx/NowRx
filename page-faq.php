@@ -28,11 +28,11 @@
     <div class="rvl">
         <picture class="lozad"
             data-iesrc="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020.png"
-            data-alt="prescription being delivered to mother" data-toggle-class="active">
+            data-alt="Surescripts 2020 White Coat Award Finalist (Highest Accuracy) " data-toggle-class="active">
             <source type="image/png"
                 srcset="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020.png">
             <img src="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020lowrez.jpg"
-                class="imageblock" height="100px" width="450px">
+                class="imageblock" height="100px" width="450px" alt="Surescripts 2020 White Coat Award Finalist (Highest Accuracy) ">
         </picture>
     </div>
 
@@ -73,13 +73,13 @@
 
                 <picture class="lozad"
                     data-iesrc="<?php echo get_template_directory_uri(); ?>/images/AdobeStock_91568410.webp"
-                    data-alt="Free Prescription Delivery in Hours" data-toggle-class="active">
+                    data-alt=""NowRx Pharmacist Ready to Provide Service" data-toggle-class="active">
                     <source type="image/webp"
                         srcset="<?php echo get_template_directory_uri(); ?>/images/AdobeStock_91568410.webp">
                     <source type="image/jpeg"
                         srcset="<?php echo get_template_directory_uri(); ?>/images/AdobeStock_91568410.jpeg">
                     <img src="<?php echo get_template_directory_uri(); ?>/images/AdobeStock_91568410lowres.jpg"
-                        class="orbit-image" height="500px" width="650px">
+                        class="orbit-image" height="500px" width="650px" alt="NowRx Pharmacist Ready to Provide Service">
                 </picture>
             </div>
 
@@ -181,7 +181,7 @@
                                     <div class="q-item">
                                         <span class="close-itcon">
                                             <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="">
+                                                alt="close icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -227,7 +227,7 @@
                                     <div class="q-item">
                                         <span class="close-itcon">
                                             <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="">
+                                                alt="close icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -264,7 +264,7 @@
                         <!-- item -->
                         <div class="item" data-opentab="false">
                             <span class="title">
-                                How is NowRx different than a mail order pharmacy?
+                                How is NowRx different than a mail-order pharmacy?
                                 <span class="question-svg">
                                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                         version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 490.661 490.661"
@@ -282,11 +282,11 @@
                                     <div class="q-item">
                                         <span class="close-itcon">
                                             <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="">
+                                                alt="close icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
-                                            How is NowRx different than a mail order pharmacy?
+                                            How is NowRx different than a mail-order pharmacy?
                                         </span>
                                     </div>
                                     <div class="a-item">
@@ -347,7 +347,7 @@
                                     <div class="q-item">
                                         <span class="close-itcon">
                                             <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="">
+                                                alt="close icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -387,7 +387,7 @@
                                     <div class="q-item">
                                         <span class="close-itcon">
                                             <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="">
+                                                alt="close icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -447,7 +447,7 @@
                                     <div class="q-item">
                                         <span class="close-itcon">
                                             <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="">
+                                                alt="close icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -497,7 +497,7 @@
                                     <div class="q-item">
                                         <span class="close-itcon">
                                             <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="">
+                                                alt="close icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -540,7 +540,7 @@
                                     <div class="q-item">
                                         <span class="close-itcon">
                                             <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="">
+                                                alt="close icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -558,7 +558,7 @@
                                             </p>
 
                                             <p>
-                                                Customer and doctors are also more than welcome to stop by these
+                                                Customers and doctors are also more than welcome to stop by these
                                                 physical
                                                 locations to fill a prescription or ask our pharmacist a question.
                                             </p>
@@ -593,7 +593,7 @@
                                     <div class="q-item">
                                         <span class="close-itcon">
                                             <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="">
+                                                alt="close icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -641,7 +641,7 @@
                                     <div class="q-item">
                                         <span class="close-itcon">
                                             <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="">
+                                                alt="close icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -711,7 +711,7 @@
                                     <div class="q-item">
                                         <span class="close-itcon">
                                             <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="">
+                                                alt="close icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -754,7 +754,7 @@
                                     <div class="q-item">
                                         <span class="close-itcon">
                                             <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="">
+                                                alt="close icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -803,7 +803,7 @@
                                     <div class="q-item">
                                         <span class="close-itcon">
                                             <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="">
+                                                alt="close icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -841,7 +841,7 @@
                                     <div class="q-item">
                                         <span class="close-itcon">
                                             <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="">
+                                                alt="close icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -879,7 +879,7 @@
                                     <div class="q-item">
                                         <span class="close-itcon">
                                             <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="">
+                                                alt="close icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -925,7 +925,7 @@
                                     <div class="q-item">
                                         <span class="close-itcon">
                                             <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="">
+                                                alt="close icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -969,7 +969,7 @@
                                     <div class="q-item">
                                         <span class="close-itcon">
                                             <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="">
+                                                alt="close icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -1000,7 +1000,7 @@
                         <!-- item -->
                         <div class="item" data-opentab="false">
                             <span class="title">
-                                How does NowRx ensure safe delivery of my medication?
+                                How does NowRx ensure the safe delivery of my medication?
                                 <span class="question-svg">
                                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                         version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 490.661 490.661"
@@ -1018,11 +1018,11 @@
                                     <div class="q-item">
                                         <span class="close-itcon">
                                             <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="">
+                                                alt="close icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
-                                            How does NowRx ensure safe delivery of my medication?
+                                            How does NowRx ensure the safe delivery of my medication?
                                         </span>
                                     </div>
                                     <div class="a-item">
@@ -1030,7 +1030,7 @@
                                         <span class="cntx">
                                             <p>All NowRx deliveries are made by HIPAA certified NowRx employees. These
                                                 pharmacy employees have undergone extensive background checks and
-                                                training to ensure a safe medication delivery.</p>
+                                                training to ensure safe medication delivery.</p>
                                         </span>
                                     </div>
                                 </div>
@@ -1057,7 +1057,7 @@
                                     <div class="q-item">
                                         <span class="close-itcon">
                                             <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="">
+                                                alt="close icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -1069,7 +1069,7 @@
                                         <div class="title">A.</div>
                                         <span class="cntx">
                                             <p>
-                                                Yes. For controlled substance or refrigerated medication delivery, NowRx
+                                                Yes. For a controlled substance or refrigerated medication delivery, NowRx
                                                 will need proof of identification and a signature at the time of
                                                 delivery.
                                             </p>
@@ -1099,7 +1099,7 @@
                                     <div class="q-item">
                                         <span class="close-itcon">
                                             <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="">
+                                                alt="close icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -1140,7 +1140,7 @@
                                     <div class="q-item">
                                         <span class="close-itcon">
                                             <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="">
+                                                alt="close icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -1187,7 +1187,7 @@
                                     <div class="q-item">
                                         <span class="close-itcon">
                                             <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="">
+                                                alt="close icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -1229,7 +1229,7 @@
                                     <div class="q-item">
                                         <span class="close-itcon">
                                             <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="">
+                                                alt="close icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -1296,7 +1296,7 @@
                                     <div class="q-item">
                                         <span class="close-itcon">
                                             <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="">
+                                                alt="close icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -1328,7 +1328,7 @@
                         <!-- item -->
                         <div class="item" data-opentab="false">
                             <span class="title">
-                                How is NowRx different than a mail order pharmacy?
+                                How is NowRx different than a mail-order pharmacy?
                                 <span class="question-svg">
                                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                         version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 490.661 490.661"
@@ -1346,11 +1346,11 @@
                                     <div class="q-item">
                                         <span class="close-itcon">
                                             <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="">
+                                                alt="close icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
-                                            How is NowRx different than a mail order pharmacy?
+                                            How is NowRx different than a mail-order pharmacy?
                                         </span>
                                     </div>
                                     <div class="a-item">
@@ -1373,7 +1373,7 @@
 
                                                 </li>
                                                 <li>
-                                                     NowRx delivers in hours opposed to mail services which can take
+                                                     NowRx delivers in hours as opposed to mail services which can take
                                                     3-14 days.
 
                                                 </li>
@@ -1422,7 +1422,7 @@
                                     <div class="q-item">
                                         <span class="close-itcon">
                                             <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="">
+                                                alt="close icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -1498,7 +1498,7 @@
                                     <div class="q-item">
                                         <span class="close-itcon">
                                             <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="">
+                                                alt="close icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -1551,7 +1551,7 @@
                                     <div class="q-item">
                                         <span class="close-itcon">
                                             <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="">
+                                                alt="close icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -1609,7 +1609,7 @@
                                     <div class="q-item">
                                         <span class="close-itcon">
                                             <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="">
+                                                alt="close icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -1651,7 +1651,7 @@
                                     <div class="q-item">
                                         <span class="close-itcon">
                                             <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="">
+                                                alt="close icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -1694,7 +1694,7 @@
                                     <div class="q-item">
                                         <span class="close-itcon">
                                             <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="">
+                                                alt="close icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -1752,7 +1752,7 @@
                                     <div class="q-item">
                                         <span class="close-itcon">
                                             <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="">
+                                                alt="close icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -1794,7 +1794,7 @@
                                     <div class="q-item">
                                         <span class="close-itcon">
                                             <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="">
+                                                alt="close icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -1858,7 +1858,7 @@
                                     <div class="q-item">
                                         <span class="close-itcon">
                                             <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="">
+                                                alt="close icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -1901,7 +1901,7 @@
                                     <div class="q-item">
                                         <span class="close-itcon">
                                             <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="">
+                                                alt="close icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -1955,7 +1955,7 @@
                                     <div class="q-item">
                                         <span class="close-itcon">
                                             <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="">
+                                                alt="close icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -2022,7 +2022,7 @@
                                     <div class="q-item">
                                         <span class="close-itcon">
                                             <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="">
+                                                alt="close icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -2068,7 +2068,7 @@
                                     <div class="q-item">
                                         <span class="close-itcon">
                                             <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="">
+                                                alt="close icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -2133,7 +2133,7 @@
                                     <div class="q-item">
                                         <span class="close-itcon">
                                             <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="">
+                                                alt="close icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -2184,7 +2184,7 @@
                                     <div class="q-item">
                                         <span class="close-itcon">
                                             <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="">
+                                                alt="close icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -2225,7 +2225,7 @@
                                     <div class="q-item">
                                         <span class="close-itcon">
                                             <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="">
+                                                alt="close icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -2240,7 +2240,7 @@
                                                 a
                                                 number of safeguards to ensure the security of the data we collect
                                                 including
-                                                but not limited to maintaining all health related data offline on a
+                                                but not limited to maintaining all health-related data offline on a
                                                 secure
                                                 HIPAA compliant server.
                                             </p>
@@ -2291,7 +2291,7 @@
 
             </div>
             <div class="faq-image">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/Prescription-Bottles-White-BG.jpeg" alt=""
+                <img src="<?php echo get_template_directory_uri(); ?>/images/Prescription-Bottles-White-BG.jpeg" alt="Prescription Bottles on White table"
                     class="pic">
             </div>
         </div>

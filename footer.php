@@ -9,7 +9,7 @@ get_template_part('footer-modals');
             <div class="large-2 cell small-order-2 medium-order-1">
                 <p><a href="<?= get_site_url(); ?>/"><img class="logo"
                             src="<?php echo get_template_directory_uri(); ?>/library/images/NowRx-Logo-Pharmacy.png"
-                            alt="NowRx"></a></p>
+                            alt="NowRx Pharmacy Logo"></a></p>
                 <p class="text-small">&copy; 2019 NowRx.com  <br>All rights reserved. <br><a
                         href="<?= get_site_url(); ?>/privacy-policy/">Privacy Policy</a><br><a href="<?= get_site_url(); ?>/hipaa-privacy/">HIPAA Privacy</a>
                 </p>
@@ -17,9 +17,9 @@ get_template_part('footer-modals');
             <div class="large-10 cell small-order-1 medium-order-2">
                 <div class="grid-x grid-padding-x">
                     <div class="large-3 small-6 cell">
-                        <h6>COMPANY</h6>
+                        <h4>COMPANY</h4>
                         <ul class="footer-menu-col vertical menu text-small">
-                            <li><a href="<?= get_site_url(); ?>/how-it-works/">How It Works</a></li>
+                            <li><a href="<?= get_site_url(); ?>/nowprep/">NowPrEP</a></li>
                             <li><a href="<?= get_site_url(); ?>/faqs/">FAQs</a></li>
                             <li><a href="<?= get_site_url(); ?>/about-us/">About NowRx</a></li>
                             <li><a href="<?= get_site_url(); ?>/locations/">Locations</a></li>
@@ -28,16 +28,16 @@ get_template_part('footer-modals');
                         </ul>
                     </div>
                     <div class="large-3 small-6 cell">
-                        <h6>CONTACT US</h6>
+                        <h4>CONTACT US</h4>
                         <ul class="footer-menu-col vertical menu text-small">
                             <li><a data-toggle="modal-example">Chat With A Pharmacist</a></li>
-                            <li><a href="https://try.nowrxpharmacy.com">Transfer Your Prescription</a></li>
+                            <li><a href="<?= get_site_url(); ?>/get-started/">Transfer Your Prescription</a></li>
                             <li><a href="<?= get_site_url(); ?>/for-doctors/">For Doctors</a></li>
                             <li><a href="<?= get_site_url(); ?>/contact-us/">Contact Us</a></li>
                         </ul>
                     </div>
                     <div class="large-3 small-6 cell">
-                        <h6>FOLLOW US</h6>
+                        <h4>FOLLOW US</h4>
                         <ul class="footer-menu-col vertical menu text-small">
                             <li><a target="_blank" href="http://facebook.com/nowrx">Facebook</a></li>
                             <li><a target="_blank" href="https://twitter.com/nowrx">Twitter</a></li>
@@ -47,18 +47,18 @@ get_template_part('footer-modals');
                         </ul>
                     </div>
                     <div class="large-3 small-6 cell">
-                        <h6>DOWNLOAD APP</h6>
+                        <h4>DOWNLOAD APP</h4>
                         <ul class="footer-menu-col vertical menu text-small">
                             <li><a target="_blank"
                                     href="https://itunes.apple.com/us//app/nowrx-pharmacy-on-demand/id1066924988"><img
                                         style="max-width: 140px;"
                                         src="<?php echo get_template_directory_uri(); ?>/library/images/app-apple-store-button.png"
-                                        alt=""></a></li>
+                                        alt="Download NowRx Pharmacy on the App Store"></a></li>
                             <li><a target="_blank"
                                     href="https://play.google.com/store/apps/details?id=com.nowrx.client"><img
                                         style="max-width: 140px;"
                                         src="<?php echo get_template_directory_uri(); ?>/library/images/app-google-store-button.png"
-                                        alt=""></a></li>
+                                        alt="Get the NowRx Pharmacy app on Google Play"></a></li>
                     </div>
                 </div>
             </div>

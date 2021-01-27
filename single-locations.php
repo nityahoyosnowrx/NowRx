@@ -94,11 +94,11 @@ $mapd = get_field('address');
 
         <picture class="lozad"
             data-iesrc="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020.png"
-            data-alt="prescription being delivered to mother" data-toggle-class="active">
+            data-alt="NowRx Pharmacy Surescripts 2020 White Coat Award Finalist (Highest Accuracy)" data-toggle-class="active">
             <source type="image/png"
                 srcset="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020.png">
             <img src="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020lowrez.jpg"
-                class="imageblock" height="100px" width="450px">
+                class="imageblock" alt="NowRx Pharmacy Surescripts 2020 White Coat Award Finalist (Highest Accuracy)" height="100px" width="450px">
         </picture>
 
     </div>
@@ -462,7 +462,7 @@ if ( function_exists('yoast_breadcrumb') ) {
                 </div>
                 <div class="rvl">
                     <div class="btn-container">
-                        <a href="<?= get_site_url(); ?>/faqs/" class="rx-btn rx-dg">
+                        <a href="<?= get_site_url(); ?>/faqs/#faqblock" class="rx-btn rx-dg">
                             Frequently Asked Questions
                         </a>
                     </div>

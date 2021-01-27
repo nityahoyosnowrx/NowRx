@@ -9,9 +9,9 @@
 			<div class="main-content">
 				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-				<?php
-					get_template_part( 'post-formats/format', get_post_format() );
-				?>
+					<?php
+						get_template_part( 'post-formats/format', get_post_format() );
+					?>
 
 				<?php endwhile; ?>
 
@@ -64,7 +64,7 @@
 
 											<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
 
-												<img class="MostPopular-thumbnail transition-fade-appear-active" src="<?php echo $image[0]; ?>" alt="<?php the_title(); ?>" />
+												<img class="MostPopular-thumbnail transition-fade-appear-active" src="<?php echo $image[0]; ?>" alt="<?php echo get_post_meta( get_post_thumbnail_id($post->ID), '_wp_attachment_image_alt', true ); ?>" />
 
 										<?php else: ?>
 
@@ -124,7 +124,7 @@ if ( has_post_format( 'quote' )) {
 					<div class="grid-x grid-padding-x">
 					<div class="large-12 cell">
 						<div class="newsletter-title">
-						<h2>More from NowRX Pharmacy</h2>
+						<h2>More from NowRx Pharmacy</h2>
 						</div>
 						<div class="grid-x grid-padding-x">
 
@@ -143,7 +143,7 @@ if ( has_post_format( 'quote' )) {
 								<?php if (has_post_thumbnail( $post->ID )): ?>
 									<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
 									<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
-										<img class="border-styled" style="margin-bottom: 1rem;" src="<?php echo $image[0]; ?>" alt="">
+										<img class="border-styled" style="margin-bottom: 1rem;" src="<?php echo $image[0]; ?>" alt="<?php echo get_post_meta( get_post_thumbnail_id($post->ID), '_wp_attachment_image_alt', true ); ?>">
 									</a>
 								<?php else: ?>
 									<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">

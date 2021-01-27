@@ -231,9 +231,9 @@
 <main id="main" class="main-class">
     <div class="rvl">
 
-        <picture class="lozad" data-iesrc="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020.png" data-alt="prescription being delivered to mother" data-toggle-class="active">
+        <picture class="lozad" data-iesrc="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020.png" data-alt="NowRx Pharmacy Surescripts 2020 White Coat Award Finalist (Highest Accuracy) " data-toggle-class="active">
             <source type="image/png" srcset="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020.png">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020lowrez.jpg" class="imageblock" height="100px" width="450px">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020lowrez.jpg" class="imageblock" height="100px" width="450px" alt="NowRx Pharmacy Surescripts 2020 White Coat Award Finalist (Highest Accuracy) ">
         </picture>
 
     </div>
@@ -269,7 +269,7 @@
 
                     </div>
                     <div class="imageblock">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/NowRx-National-Map-Big.png" alt="Thank you for Choosing NowRx Pharmacy" width="300px" height="300px" class="pic">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/NowRx-National-Map-Big.png" alt="NowRx Pharmacy locations map" width="300px" height="300px" class="pic">
                     </div>
                 </header>
             </div>

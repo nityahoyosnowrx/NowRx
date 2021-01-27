@@ -887,7 +887,7 @@
             </div>
             <div class="rvl">
                 <div class="btn-container">
-                    <a href="<?= get_site_url(); ?>/faqs/" class="rx-btn rx-dg">
+                    <a href="<?= get_site_url(); ?>/faqs/#faqblock" class="rx-btn rx-dg">
                         Frequently Asked Questions
                     </a>
                 </div>

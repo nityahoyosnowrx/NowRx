@@ -24,11 +24,11 @@
 
         <picture class="lozad"
             data-iesrc="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020.png"
-            data-alt="prescription being delivered to mother" data-toggle-class="active">
+            data-alt="Surescripts 2020 White Coat Award Finalist (Highest Accuracy)" data-toggle-class="active">
             <source type="image/png"
                 srcset="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020.png">
             <img src="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020lowrez.jpg"
-                class="imageblock" height="100px" width="450px">
+                class="imageblock" height="100px" width="450px" alt="Surescripts 2020 White Coat Award Finalist (Highest Accuracy)">
         </picture>
 
     </div>
@@ -43,8 +43,7 @@
 
                 <div class="rvls">
                     <span class="sub-headline">
-                        HIV Prevention Telehealth & Medication Delivery
-
+                    HIV PREVENTION TELEHEALTH FROM NOWRX
                     </span>
                 </div>
 
@@ -63,7 +62,7 @@
                 <div class="rvls">
                     <div class="btn-container">
                         <!-- <a class="rx-btn" href="<?= get_site_url(); ?>/get-started/">Join Watilist</a> -->
-                        <a class="rx-btn " data-toggle="submitaquestion" aria-controls="submitaquestion"
+                        <a class="rx-btn " data-toggle="waitlist" aria-controls="waitlist"
                             aria-haspopup="true" tabindex="0">Join Waitlist</a>
                         <a class="rx-btn mrb" href="#howitwork">How It Works</a>
                     </div>
@@ -79,12 +78,12 @@
 
                 <picture class="lozad"
                     data-iesrc="<?php echo get_template_directory_uri(); ?>/images/HIV-Prep-Banner-Image.jpeg"
-                    data-alt="Free Prescription Delivery in Hours" data-toggle-class="active">
+                    data-alt="couple on couch looking at camera" data-toggle-class="active">
 
                     <source type="image/jpeg"
                         srcset="<?php echo get_template_directory_uri(); ?>/images/HIV-Prep-Banner-Image.jpeg">
                     <img src="<?php echo get_template_directory_uri(); ?>/images/HIV-Prep-Banner-Image.jpeg"
-                        class="orbit-image" height="500px" width="650px">
+                        class="orbit-image" height="500px" width="650px" alt="couple on couch looking at camera">
                 </picture>
             </div>
 
@@ -209,7 +208,7 @@
                 <h2 class="headline">Why Choose NowPrep</h2>
             </div>
             <div class="imageblock">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/prepimage.jpeg" alt="" class="pic">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/prepimage.jpeg" alt="couple reading information about nowprep on laptop" class="pic">
             </div>
         </div>
         <div class="pills">
@@ -257,7 +256,7 @@
 
 
 <!-- visit faq -->
-<section class="visit-faq">
+<section class="visit-faq nwprepviti">
     <div class="container">
         <div class="content">
             <div class="rvl">
@@ -267,13 +266,15 @@
             </div>
             <div class="rvl">
                 <h2 class="sec-title">
-                    Join the Waitlist Below
+                Join the NowPrep Waitlist Below
+
                 </h2>
+                 
             </div>
             <div class="rvl">
                 <div class="btn-container">
 
-                    <a class="rx-btn rx-dg" data-toggle="submitaquestion" aria-controls="submitaquestion"
+                    <a class="rx-btn rx-dg" data-toggle="waitlist" aria-controls="waitlist"
                         aria-haspopup="true" tabindex="0">Join Waitlist</a>
                 </div>
             </div>
@@ -317,6 +318,7 @@
                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                     version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 256 256"
                                     style="enable-background:new 0 0 256 256;" xml:space="preserve">
+                                    <title>Close icon</title>
                                     <g>
                                         <g>
                                             <polygon
@@ -350,8 +352,7 @@
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg" alt="cancel icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -400,8 +401,7 @@
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg" alt="cancel icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -448,8 +448,7 @@
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg" alt="cancel icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -503,8 +502,7 @@
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg" alt="cancel icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -567,8 +565,7 @@
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg" alt="cancel icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -621,8 +618,7 @@
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg" alt="cancel icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -663,8 +659,7 @@
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg" alt="cancel icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -711,8 +706,7 @@
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg" alt="cancel icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -757,8 +751,7 @@
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg" alt="cancel icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -815,8 +808,7 @@
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg" alt="cancel icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -866,8 +858,7 @@
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg" alt="cancel icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -907,8 +898,7 @@
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg" alt="cancel icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -962,8 +952,7 @@
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg" alt="cancel icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -998,6 +987,7 @@
                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                     version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 256 256"
                                     style="enable-background:new 0 0 256 256;" xml:space="preserve">
+                                    <title>Close icon</title>
                                     <g>
                                         <g>
                                             <polygon
@@ -1031,8 +1021,7 @@
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg" alt="cancel icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -1096,8 +1085,7 @@
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg" alt="cancel icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -1159,8 +1147,7 @@
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg" alt="cancel icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -1215,8 +1202,7 @@
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg" alt="cancel icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -1255,8 +1241,7 @@
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg" alt="cancel icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -1313,8 +1298,7 @@
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg" alt="cancel icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -1353,8 +1337,7 @@
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg" alt="cancel icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -1410,8 +1393,7 @@
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg" alt="cancel icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -1451,8 +1433,7 @@
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg" alt="cancel icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -1499,8 +1480,7 @@
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg" alt="cancel icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -1540,6 +1520,7 @@
                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                     version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 256 256"
                                     style="enable-background:new 0 0 256 256;" xml:space="preserve">
+                                    <title>Close icon</title>
                                     <g>
                                         <g>
                                             <polygon
@@ -1574,8 +1555,7 @@
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg" alt="cancel icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -1618,8 +1598,7 @@ Source: hiv.gov
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg" alt="cancel icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -1668,8 +1647,7 @@ Source: hiv.gov
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg" alt="cancel icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -1707,8 +1685,7 @@ Source: hiv.gov
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg" alt="cancel icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -1751,8 +1728,7 @@ These symptoms may can last anywhere from a few days to a few weeks. If you thin
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg" alt="cancel icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -1795,8 +1771,7 @@ These symptoms may can last anywhere from a few days to a few weeks. If you thin
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg" alt="cancel icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -1834,8 +1809,7 @@ These symptoms may can last anywhere from a few days to a few weeks. If you thin
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg" alt="cancel icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -1873,8 +1847,7 @@ These symptoms may can last anywhere from a few days to a few weeks. If you thin
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg" alt="cancel icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -1912,8 +1885,7 @@ These symptoms may can last anywhere from a few days to a few weeks. If you thin
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg" alt="cancel icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -1947,6 +1919,7 @@ These symptoms may can last anywhere from a few days to a few weeks. If you thin
                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                     version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 256 256"
                                     style="enable-background:new 0 0 256 256;" xml:space="preserve">
+                                    <title>Close icon</title>
                                     <g>
                                         <g>
                                             <polygon
@@ -1980,8 +1953,7 @@ These symptoms may can last anywhere from a few days to a few weeks. If you thin
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg" alt="cancel icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -2024,8 +1996,7 @@ These symptoms may can last anywhere from a few days to a few weeks. If you thin
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg" alt="cancel icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -2082,8 +2053,7 @@ These symptoms may can last anywhere from a few days to a few weeks. If you thin
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg" alt="cancel icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -2149,8 +2119,7 @@ These symptoms may can last anywhere from a few days to a few weeks. If you thin
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg" alt="cancel icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -2190,8 +2159,7 @@ These symptoms may can last anywhere from a few days to a few weeks. If you thin
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg" alt="cancel icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -2253,8 +2221,7 @@ These symptoms may can last anywhere from a few days to a few weeks. If you thin
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg" alt="cancel icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -2303,8 +2270,7 @@ These symptoms may can last anywhere from a few days to a few weeks. If you thin
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg" alt="cancel icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -2347,8 +2313,7 @@ These symptoms may can last anywhere from a few days to a few weeks. If you thin
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg" alt="cancel icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -2403,8 +2368,7 @@ These symptoms may can last anywhere from a few days to a few weeks. If you thin
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg" alt="cancel icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -2448,8 +2412,7 @@ These symptoms may can last anywhere from a few days to a few weeks. If you thin
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg" alt="cancel icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -2491,6 +2454,7 @@ These symptoms may can last anywhere from a few days to a few weeks. If you thin
                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                     version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 256 256"
                                     style="enable-background:new 0 0 256 256;" xml:space="preserve">
+                                    <title>Close icon</title>
                                     <g>
                                         <g>
                                             <polygon
@@ -2507,7 +2471,7 @@ These symptoms may can last anywhere from a few days to a few weeks. If you thin
 
             </div>
             <div class="faq-image">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/HIV-PrEP-FAQ-Image.jpeg" alt=""
+                <img src="<?php echo get_template_directory_uri(); ?>/images/HIV-PrEP-FAQ-Image.jpeg" alt=" transgender woman looking up"
                     class="pic">
             </div>
         </div>

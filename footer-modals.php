@@ -2,6 +2,38 @@
 
 
 
+<div class="reveal" id="waitlist" data-reveal data-close-on-click="true" data-animation-in="slide-in-down"
+    data-animation-out="slide-out-up" style="padding: 60px;">
+
+    <h3 class="text-center">
+        Join the Waitlist
+    </h3>
+    <div class="subheading">
+        <p class="center">
+            Fill out the form below and NowRx will contact you when the NowPrEP telehealth platform is live!
+        </p>
+    </div>
+    <!--[if lte IE 8]>
+<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+<![endif]-->
+    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+    <script>
+    hbspt.forms.create({
+        portalId: "5952677",
+        formId: "6aad96c0-e50f-4ced-9300-703e26e917cf"
+    });
+    </script>
+
+
+
+
+    <button class="close-button text-center" data-close aria-label="Close reveal" type="button">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+
+
+
 <div class="reveal" id="submitaquestion" data-reveal data-close-on-click="true" data-animation-in="slide-in-down"
     data-animation-out="slide-out-up" style="padding: 60px;">
 
@@ -25,10 +57,7 @@
     </script>
 
 
-    <p class="text-center show-for-small-only"><a href="tel:844-466-6979" class="button rounded shadow">Click to
-            Call (844) 466-6979</a></p>
-    <p class="text-center show-for-medium"><strong>Call Toll Free <br> <span style="font-size: 2rem;">(844)
-                466-6979</span></strong></p>
+
 
     <button class="close-button text-center" data-close aria-label="Close reveal" type="button">
         <span aria-hidden="true">&times;</span>
@@ -55,28 +84,31 @@
     </script>
 
 
-    <p class="text-center show-for-small-only"><a href="tel:844-466-6979" class="button rounded shadow">Click to
-            Call (844) 466-6979</a></p>
-    <p class="text-center show-for-medium"><strong>Call Toll Free <br> <span style="font-size: 2rem;">(844)
-                466-6979</span></strong></p>
+
 
     <button class="close-button text-center" data-close aria-label="Close reveal" type="button">
         <span aria-hidden="true">&times;</span>
     </button>
 </div>
 
-<div class="reveal" id="for-doctors-learnmore" data-reveal data-close-on-click="true" data-animation-in="slide-in-down"
-    data-animation-out="slide-out-up" style="padding: 60px;">
 
-    <h3 class="text-center">Learn More About NowRx Pharmacy
 
-    </h3>
-    <p class="text-center">
-        Fill out the form below and a member of our pharmacy team will reach out to you within 24 hours. Alternatively
-        you can check out our Frequently Asked Questions page or send us an email at info@nowrx.com.
-    </p>
 
-    <!--[if lte IE 8]>
+<div class="reveal twentyone" id="for-doctors-learnmore" data-reveal data-close-on-click="true" data-animation-in="slide-in-down" data-animation-out="slide-out-up">
+
+    <div class="imagblock">
+        <img src="<?php echo get_template_directory_uri(); ?>/library/images/prescription-transfer-or-refill-desktop-left-form-image copy.png" alt="" class="pic">
+    </div>
+
+    <div class="content">
+        <h2 class="title">Learn More About NowRx Pharmacy</h2>
+        <div class="description">
+            <p>
+        Fill out the form below and a member of our pharmacy team will reach out to you within 24 hours.
+            </p>
+        </div>
+        <div class="form-content">
+         <!--[if lte IE 8]>
 <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
 <![endif]-->
     <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
@@ -86,17 +118,38 @@
         formId: "134ddd71-adf4-414b-a537-24f71e87f48e"
     });
     </script>
-
-
-    <p class="text-center show-for-small-only"><a href="tel:844-466-6979" class="button rounded shadow">Click to
-            Call (844) 466-6979</a></p>
-    <p class="text-center show-for-medium"><strong>Call Toll Free <br> <span style="font-size: 2rem;">(844)
-                466-6979</span></strong></p>
+        </div>
+        <div class="descbot">
+            <p>*Upon receiving your prescription transfer request, NowRx will need to contact you to set up a delivery. To avoid any delay, please ensure the information you have provided is correct.</p>
+        </div>
+    </div>
 
     <button class="close-button text-center" data-close aria-label="Close reveal" type="button">
         <span aria-hidden="true">&times;</span>
     </button>
 </div>
+
+<!-- 
+
+<div class="reveal" id="for-doctors-learnmore" data-reveal data-close-on-click="true" data-animation-in="slide-in-down"
+    data-animation-out="slide-out-up" style="padding: 60px;">
+
+    <h3 class="text-center">
+
+    </h3>
+    <p class="text-center">
+    </p>
+
+ 
+
+
+
+
+
+    <button class="close-button text-center" data-close aria-label="Close reveal" type="button">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div> -->
 
 <div class="reveal" id="for-doctors-learnmore-second" data-reveal data-close-on-click="true"
     data-animation-in="slide-in-down" data-animation-out="slide-out-up" style="padding: 60px;">
@@ -121,10 +174,7 @@
     </script>
 
 
-    <p class="text-center show-for-small-only"><a href="tel:844-466-6979" class="button rounded shadow">Click to
-            Call (844) 466-6979</a></p>
-    <p class="text-center show-for-medium"><strong>Call Toll Free <br> <span style="font-size: 2rem;">(844)
-                466-6979</span></strong></p>
+
 
     <button class="close-button text-center" data-close aria-label="Close reveal" type="button">
         <span aria-hidden="true">&times;</span>
@@ -189,24 +239,101 @@
     data-animation-out="slide-out-up" style="padding: 60px;">
     <p class="text-center">
 
-    <!-- <img data-toggle-class="active" data-src="<?php echo get_template_directory_uri(); ?>/library/images/Prescription-Icon.png" alt="end Us Your Prescription" class="pic lozad"> -->
+        <!-- <img data-toggle-class="active" data-src="<?php echo get_template_directory_uri(); ?>/library/images/Prescription-Icon.png" alt="end Us Your Prescription" class="pic lozad"> -->
 
-        <img style="width: 60px; margin-bottom: 2rem; border-radius: 0 15px; margin: 0px 3px;" class="lozad" data-src="<?php echo get_template_directory_uri(); ?>/library/images/chat-with-pharmacists-1.jpg" alt="">
-        <img style="width: 60px; margin-bottom: 2rem; border-radius: 0 15px; margin: 0px 3px;" class="lozad" data-src="<?php echo get_template_directory_uri(); ?>/library/images/chat-with-pharmacists-2.jpg" alt="">
+        <img style="width: 60px; margin-bottom: 2rem; border-radius: 0 15px; margin: 0px 3px;" class="lozad"
+            data-src="<?php echo get_template_directory_uri(); ?>/library/images/chat-with-pharmacists-1.jpg"
+            alt="melissa bostock director of pharmacy for nowrx pharmacy facing camera smiling prepared to help">
+        <img style="width: 60px; margin-bottom: 2rem; border-radius: 0 15px; margin: 0px 3px;" class="lozad"
+            data-src="<?php echo get_template_directory_uri(); ?>/library/images/chat-with-pharmacists-2.jpg"
+            alt="laemsing root pharmacist in charge for nowrx pharmacy facing camera smiling prepared to help">
     </p>
     <h3 class="text-center">Chat With One Of Our NowRx Pharmacists</h3>
     <p class="text-center">Do you have questions about your prescription? No Problem. Our Local Pharmacists are here
         to help!</p>
 
-    <p class="text-center show-for-small-only"><a href="tel:844-466-6979" class="button rounded shadow">Click to
-            Call (844) 466-6979</a></p>
-    <p class="text-center show-for-medium"><strong>Call Toll Free <br> <span style="font-size: 2rem;">(844)
-                466-6979</span></strong></p>
+
 
     <button class="close-button text-center" data-close aria-label="Close reveal" type="button">
         <span aria-hidden="true">&times;</span>
     </button>
 </div>
+
+
+
+<!-- refill and precsribe -->
+
+
+<div class="reveal twentyone" id="for-transferprescribe" data-reveal data-close-on-click="true" data-animation-in="slide-in-down" data-animation-out="slide-out-up">
+
+    <div class="imagblock">
+        <img src="<?php echo get_template_directory_uri(); ?>/library/images/prescription-transfer-or-refill-desktop-left-form-image copy.png" alt="" class="pic">
+    </div>
+
+    <div class="content">
+        <h2 class="title">NowRx Pharmacy <br> Transfer Prescriptions </h2>
+        <div class="description">
+            <p>*Complete this form to transfer a prescription from another pharmacy.</p>
+        </div>
+        <div class="form-content">
+        <!-- Transfer Prescriptions CTA should lead to this pop up form -->
+        <!--[if lte IE 8]>
+        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+        <![endif]-->
+        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+        <script>
+        hbspt.forms.create({
+        portalId: "5952677",
+        formId: "c1b49e9c-0497-4c0b-9de4-026eacd71e29"
+        });
+        </script>
+        </div>
+        <div class="descbot">
+            <p>*Upon receiving your prescription transfer request, NowRx will need to contact you to set up a delivery. To avoid any delay, please ensure the information you have provided is correct.</p>
+        </div>
+    </div>
+
+    <button class="close-button text-center" data-close aria-label="Close reveal" type="button">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+
+<div class="reveal twentyone" id="for-refillpresc" data-reveal data-close-on-click="true" data-animation-in="slide-in-down" data-animation-out="slide-out-up">
+
+    <div class="imagblock">
+        <img src="<?php echo get_template_directory_uri(); ?>/library/images/prescription-transfer-or-refill-desktop-left-form-image copy.png" alt="" class="pic">
+    </div>
+
+    <div class="content">
+        <h2 class="title">NowRx Pharmacy <br> Refill Prescription</h2>
+        <div class="description">
+            <p>*Complete this form to transfer a prescription from another pharmacy.</p>
+        </div>
+        <div class="form-content">
+        <!-- Refill Prescription CTA should lead to this pop up form -->
+        <!--[if lte IE 8]>
+        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+        <![endif]-->
+        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+        <script>
+        hbspt.forms.create({
+        portalId: "5952677",
+        formId: "4d211752-d94b-4d4f-bbee-428159995176"
+        });
+        </script>
+        </div>
+        <div class="descbot">
+            <p>*Upon receiving your prescription transfer request, NowRx will need to contact you to set up a delivery. To avoid any delay, please ensure the information you have provided is correct.</p>
+        </div>
+    </div>
+
+    <button class="close-button text-center" data-close aria-label="Close reveal" type="button">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+
+
+
 
 
 <div class="reveal-overlay"></div>

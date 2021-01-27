@@ -24,11 +24,11 @@
 
         <picture class="lozad"
             data-iesrc="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020.png"
-            data-alt="prescription being delivered to mother" data-toggle-class="active">
+            data-alt="NowRx Pharmacy Surescripts 2020 White Coat Award Finalist (Highest Accuracy) " data-toggle-class="active">
             <source type="image/png"
                 srcset="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020.png">
             <img src="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020lowrez.jpg"
-                class="imageblock" height="100px" width="450px">
+                class="imageblock" height="100px" width="450px" alt="NowRx Pharmacy Surescripts 2020 White Coat Award Finalist (Highest Accuracy) ">
         </picture>
 
     </div>
@@ -70,13 +70,13 @@
 
                 <picture class="lozad"
                     data-iesrc="<?php echo get_template_directory_uri(); ?>/images/For-Doctors.webp"
-                    data-alt="Free Prescription Delivery in Hours" data-toggle-class="active">
+                    data-alt="doctor considering a local nowrx pharmacy for prescription delivery" data-toggle-class="active">
                     <source type="image/jpeg"
                         srcset="<?php echo get_template_directory_uri(); ?>/images/Pharmacist.jpeg">
                     <source type="image/webp"
                         srcset="<?php echo get_template_directory_uri(); ?>/images/For-Doctors.webp">
                     <img src="<?php echo get_template_directory_uri(); ?>/images/For-Doctors.webp"
-                        class="orbit-image " height="500px" width="650px">
+                        class="orbit-image " height="500px" width="650px" alt="doctor considering a local nowrx pharmacy for prescription delivery">
                 </picture>
 
 
@@ -454,7 +454,7 @@ formId: "c3096955-bd03-4e37-a266-c4fc4cc523a7"
             </div>
             <div class="rvl">
                 <div class="btn-container">
-                    <a href="<?= get_site_url(); ?>/faqs/" class="rx-btn rx-dg">
+                    <a href="<?= get_site_url(); ?>/faqs/#faqblock" class="rx-btn rx-dg">
                         Frequently Asked Questions
                     </a>
                 </div>

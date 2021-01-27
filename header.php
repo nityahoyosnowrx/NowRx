@@ -57,7 +57,7 @@
     <meta name="p:domain_verify" content="3f36cac4340da88df6ca76c1a431cd53" />
 
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/public/frontend.css?v=<?php echo time(); ?>">
-
+     <meta name="facebook-domain-verification" content="51y4k3ncdot6d21810cxa2yfje7xzg" />
 </head>
 
 <body <?php body_class(); ?> itemscope itemtype="http://schema.org/WebPage">
@@ -69,7 +69,7 @@
     <!-- promobar -->
         <div class="promo-bar">
             <div class="item-container">
-                <a href="https://try.nowrxpharmacy.com/prescription-delivery">
+                <a href="<?= get_site_url(); ?>/get-started/">
                     <span class="hide-for-small-only">
                         Receive up to a $100 bonus with your prescription delivery!*
                         <span class="button hollow small">Let's Go</span>
@@ -116,7 +116,7 @@
                                 <source type="image/png" srcset="<?php echo get_template_directory_uri(); ?>/library/images/NowRx-Logo-Pharmacy.png">
                                 <img src="<?php echo get_template_directory_uri(); ?>/library/images/NowRx-Logo-Pharmacylowrez.jpg" class="orbit-image" height="60px" width="150px">
                             </picture> -->
-                            <img src="<?php echo get_template_directory_uri(); ?>/library/images/NowRx-Logo-Pharmacy.png" class="orbit-image" height="60px" width="150px">
+                            <img src="<?php echo get_template_directory_uri(); ?>/library/images/NowRx-Logo-Pharmacy.png" class="orbit-image" alt="NowRx Pharmacy Logo" height="60px" width="150px">
 
                         </a>
                     </div>
@@ -128,7 +128,7 @@
                             <li><a href="<?php echo get_site_url(); ?>/for-doctors/">For Doctors</a></li>
                             <!-- 		<li><a href="/referral/">Refer a Friend</a></li> -->
                             <li><a href="<?php echo get_site_url(); ?>/faqs/">FAQs</a></li>
-                            <li><a class="button secondary rounded shadow" style="background-color:#008ed8;" href="https://try.nowrxpharmacy.com/prescription-delivery">Fill My Prescriptions</a>
+                            <li><a class="button secondary rounded shadow" style="background-color:#008ed8;" href="<?= get_site_url(); ?>/get-started/">Fill My Prescriptions</a>
                             </li>
                         </ul>
                     </nav>

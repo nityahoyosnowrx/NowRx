@@ -44,7 +44,7 @@
     </div>
     <div class="grid-x grid-padding-x padded-section switch-back">
       <div class="large-4 large-offset-1 small-3 cell switch-back-image">
-        <img class="border-styled small" src="<?php echo get_template_directory_uri(); ?>/library/images/cary-breese.jpg" alt="">
+        <img class="border-styled small" src="<?php echo get_template_directory_uri(); ?>/library/images/cary-breese.jpg" alt="cary breese ceo of nowrx pharmacy facing camera smiling">
       </div>
       <div class="large-5 large-offset-1 small-9 cell">
         <?php the_field('cary_breese'); ?>
@@ -53,21 +53,15 @@
 
     <div class="grid-x grid-padding-x padded-section switch-back">
       <div class="large-4 large-offset-1 small-3 small-order-1 medium-order-2 cell switch-back-image">
-        <img class="border-styled small" src="<?php echo get_template_directory_uri(); ?>/library/images/sumeet-sheokand.jpg" alt="">
+        <img class="border-styled small" src="<?php echo get_template_directory_uri(); ?>/library/images/sumeet-sheokand.jpg" alt="sumeet sheokand cto of nowrx pharmacy facing camera smiling">
       </div>
       <div class="large-5 large-offset-1 small-9 small-order-2 medium-order-1 cell">
         <?php the_field('sumeet_sheokand'); ?>
       </div>
     </div>
 
-    <div class="grid-x grid-padding-x padded-section switch-back">
-      <div class="large-4 large-offset-1 small-3 cell switch-back-image">
-        <img class="border-styled small" src="<?php echo get_template_directory_uri(); ?>/library/images/michael-rosenberg.jpg" alt="">
-      </div>
-      <div class="large-5 large-offset-1 small-9 cell">
-        <?php the_field('michael_rosenberg'); ?>
-      </div>
-    </div>
+    
+
   </div>
 </section>
 
@@ -93,7 +87,7 @@
     </div>
     <div class="grid-x grid-padding-x padded-section switch-back">
       <div class="large-2 large-offset-1 small-3 cell switch-back-image">
-        <img class="border-styled small" src="<?php echo get_template_directory_uri(); ?>/library/images/melissa-bostock.jpg" alt="">
+        <img class="border-styled small" src="<?php echo get_template_directory_uri(); ?>/library/images/melissa-bostock.jpg" alt="melissa bostock director of pharmacy for nowrx pharmacy facing camera smiling">
       </div>
       <div class="large-6 large-offset-1 small-9 cell">
         <?php the_field('melissa_bostock'); ?>
@@ -101,7 +95,7 @@
     </div>
     <div class="grid-x grid-padding-x padded-section switch-back">
       <div class="large-2 large-offset-1 small-3 cell switch-back-image">
-        <img class="border-styled small" src="<?php echo get_template_directory_uri(); ?>/library/images/laemsing-root.jpg" alt="">
+        <img class="border-styled small" src="<?php echo get_template_directory_uri(); ?>/library/images/laemsing-root.jpg" alt="laemsing root pharmacist in charge of nowrx pharmacy facing camera smiling">
       </div>
       <div class="large-6 large-offset-1 small-9 cell">
         <?php the_field('laemsing_root'); ?>
