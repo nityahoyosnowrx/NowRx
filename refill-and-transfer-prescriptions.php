@@ -16,7 +16,6 @@
 <?php get_header(); ?>
 
 
-
 <!-- hero -->
 <section class="hero-home refillstation" id="home">
     <div class="rvl">
@@ -76,19 +75,142 @@
             <div class="column-half image-col">
                 <div class="testimonial-block">
                     <div class="imageblock">
-                        <img data-src="<?php echo get_template_directory_uri(); ?>/library/images/5e7ff1ff0c4ef44e93fa96e4_car-3-min-1.png" alt="" class="pic lozad">
+                        <img src="<?php echo get_template_directory_uri(); ?>/library/images/5e7ff1ff0c4ef44e93fa96e4_car-3-min-1.png" alt="nowrx pharmacy delivery car" class="pic ">
                     </div>
-                    <figure>
-                        <blockquote>
-                            <span class="c">"I cannot say strongly enough how much better it is to have prescriptions
-                                delivered to my door, as opposed to endlessly waiting at my local drug store. I would
-                                never go back. NowRx is the best.</span>
-                        </blockquote>
-                        <figcaption>Christene M. <cite>Real NowRx Customer</cite></figcaption>
-                    </figure>
-                    <div class="yelpo">
-                        <img data-src="<?php echo get_template_directory_uri(); ?>/library/images/yelp-rating.png" alt="" class="pic lozad">
+                    
+                    <div class="get-started-testi">
+                    
+                    <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+                        <div class="orbit-wrapper">
+                            
+                            <ul class="orbit-container">
+                                <li class="is-active orbit-slide">
+                                    <div class="st">
+                                        <?php include('components/stars.php'); ?>
+                                    </div>
+                                    <figure class="orbit-figure">
+                                        <div class="testi-img">
+                                            <!-- 						          <img src="/wp-content/uploads/2020/08/5e7fb6b0dad44de8a82812b6_testimonial-christene-m-1.jpg" width="130" alt="" class="review"><p class="p-light left-al center-text"> -->
+                                        </div>
+
+                                        <div class="testi-text">
+                                            <p>“I cannot say strongly enough how much better it is to have prescriptions
+                                                delivered to my door, as opposed to endlessly waiting at my local drug
+                                                store. I would never go back. NowRx is the best.”</p>
+                                        </div>
+                                        <div class="testi-name">
+                                            <p><strong>Christene M.</strong> <em><span class="testi-small">Real NowRx
+                                                        Customer</span></em></p>
+                                        </div>
+                                        
+                                    </figure>
+                                </li>
+                                <li class="orbit-slide">
+                                <div class="st">
+                                        <?php include('components/stars.php'); ?>
+                                    </div>
+                                    <div class="testi-img">
+                                        <!-- 						          <img src="/wp-content/uploads/2020/08/5e7fb6b0dad44de8a82812b6_testimonial-christene-m-1.jpg" width="130" alt="" class="review"><p class="p-light left-al center-text"> -->
+                                    </div>
+                                    <div class="testi-text">
+                                        <p>"Best Pharmacy experience EVER! These guys are like going to your old
+                                            neighborhood pharmacy, you know the one, where they deliver your medications
+                                            to you and actually care about the customer?"</p>
+                                    </div>
+                                    <div class="testi-name">
+                                        <p><strong>Mark C.</strong> <em><span class="testi-small">Real NowRx
+                                                    Customer</span></em></p>
+                                    </div>
+                                    </figure>
+                                </li>
+                                <li class="orbit-slide">
+                                <div class="st">
+                                        <?php include('components/stars.php'); ?>
+                                    </div>
+                                    <figure class="orbit-figure">
+                                        <div class="testi-img">
+                                            <!-- 						          <img src="/wp-content/uploads/2020/08/5e7fb6b0dad44de8a82812b6_testimonial-christene-m-1.jpg" width="130" alt="" class="review"><p class="p-light left-al center-text"> -->
+                                        </div>
+                                        <div class="testi-text">
+                                            <p>"There's a reason every single review is five stars - This pharmacy is
+                                                AMAZING! Lightning fast response times by pleasant professional staff
+                                                and customer service like nothing I have ever encountered."</p>
+                                        </div>
+                                        <div class="testi-name">
+                                            <p><strong>Lina W.</strong> <em><span class="testi-small">Real NowRx
+                                                        Customer</span></em></p>
+                                        </div>
+                                        
+                                    </figure>
+                                </li>
+                                <li class="orbit-slide">
+                                <div class="st">
+                                        <?php include('components/stars.php'); ?>
+                                    </div>
+                                    <figure class="orbit-figure">
+                                        <div class="testi-img">
+                                            <!-- 						          <img src="/wp-content/uploads/2020/08/5e7fb6b0dad44de8a82812b6_testimonial-christene-m-1.jpg" width="130" alt="" class="review"><p class="p-light left-al center-text"> -->
+                                        </div>
+                                        <div class="testi-text">
+                                            <p>“These people, this service is as Good as it Gets. NowRx sets a new
+                                                standard that I have never seen anyone get close to. I really can't say
+                                                enough good things on this service.”</p>
+                                        </div>
+                                        <div class="testi-name">
+                                            <p><strong>Larry H.</strong> <em><span class="testi-small">Real NowRx
+                                                        Customer</span></em></p>
+                                        </div>
+                                        
+                                    </figure>
+                                </li>
+                                <li class="orbit-slide">
+                                <div class="st">
+                                        <?php include('components/stars.php'); ?>
+                                    </div>
+                                    <figure class="orbit-figure">
+                                        <div class="testi-img">
+                                            <!-- 						          <img src="/wp-content/uploads/2020/08/5e7fb6b0dad44de8a82812b6_testimonial-christene-m-1.jpg" width="130" alt="" class="review"><p class="p-light left-al center-text"> -->
+                                        </div>
+                                        <div class="testi-text">
+                                            <p>“This place, these people, are really incredible. Have never had luck
+                                                dealing with pharmacies before and as a type one diabetic I have dealt
+                                                with many for the last 30 years. I feel very lucky to have found them.”
+                                            </p>
+                                        </div>
+                                        <div class="testi-name">
+                                            <p><strong>Meg M.</strong> <em><span class="testi-small">Real NowRx
+                                                        Customer</span></em></p>
+                                        </div>
+                                        
+                                    </figure>
+                                </li>
+                                <li class="orbit-slide">
+                                <div class="st">
+                                        <?php include('components/stars.php'); ?>
+                                    </div>
+                                    <figure class="orbit-figure">
+                                        <div class="testi-img">
+                                            <!-- 						          <img src="/wp-content/uploads/2020/08/5e7fb6b0dad44de8a82812b6_testimonial-christene-m-1.jpg" width="130" alt="" class="review"><p class="p-light left-al center-text"> -->
+                                        </div>
+                                        <div class="testi-text">
+                                            <p>“Hands down best pharmacy you could ask for! I no longer have to wait in
+                                                line to fill my grandmother's medications, and the customer service is
+                                                amazing. Try them out and you won't regret it!”</p>
+                                        </div>
+                                        <div class="testi-name">
+                                            <p><strong>Melissa A.</strong> <em><span class="testi-small">Real NowRx
+                                                        Customer</span></em></p>
+                                        </div>
+                                      
+                                    </figure>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
+                </div>
+                    <!-- <div class="yelpo"> -->
+                        <!-- <img data-src="<?php echo get_template_directory_uri(); ?>/library/images/yelp-rating.png" alt="yelp logo" class="pic lozad"> -->
+                    <!-- </div> -->
                 </div>
             </div>
 
@@ -97,35 +219,7 @@
 </section>
 
 
-<!-- companies -->
-<section class="featured-in-section">
-    <div class="grid-container">
-        <div class="grid-x grid-padding-x">
-            <div class="large-12 cell text-center">
-                <p>
-                    <img height="100px" width="200px" data-toggle-class="active" class="lozad  featured-in-section-logo"
-                        data-src="<?php echo get_template_directory_uri(); ?>/library/images/brands-image-cnbc.svg"
-                        alt="CNBC logo">
-                    <img height="100px" width="200px" data-toggle-class="active" class="lozad  featured-in-section-logo"
-                        data-src="<?php echo get_template_directory_uri(); ?>/library/images/brands-image-fortune.svg"
-                        alt="Fortune logo">
-                    <img height="100px" width="200px" data-toggle-class="active" class="lozad  featured-in-section-logo"
-                        data-src="<?php echo get_template_directory_uri(); ?>/library/images/brands-image-forbes.svg"
-                        alt="Forbes logo">
-                    <img height="100px" width="200px" data-toggle-class="active" class="lozad  featured-in-section-logo"
-                        data-src="<?php echo get_template_directory_uri(); ?>/library/images/brands-image-abc-7.svg"
-                        alt="ABC 7 logo">
-                    <img height="100px" width="200px" data-toggle-class="active" class="lozad  featured-in-section-logo"
-                        data-src="<?php echo get_template_directory_uri(); ?>/library/images/brands-image-business-insider.svg"
-                        alt="Business Insider logo">
-                    <img height="100px" width="200px" data-toggle-class="active" class="lozad  featured-in-section-logo"
-                        data-src="<?php echo get_template_directory_uri(); ?>/library/images/brands-image-sfc2.svg"
-                        alt="San Francisco Chronicle logo">
-                </p>
-            </div>
-        </div>
-    </div>
-</section>
+<?php include('section-companies.php'); ?>
 
 
 
@@ -603,6 +697,19 @@
     </div>
 </section>
 
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+
+<script>
+	$(document).ready(function() {
+		$('.orbit-container').slick({
+			autoplay: true,
+            autoplaySpeed: 3000,
+            fade:true,
+		});
+	});
+</script>
 
 
 

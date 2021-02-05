@@ -7,8 +7,8 @@ get_template_part('footer-modals');
     <div class="grid-container">
         <div class="grid-x grid-padding-x">
             <div class="large-2 cell small-order-2 medium-order-1">
-                <p><a href="<?= get_site_url(); ?>/"><img class="logo"
-                            src="<?php echo get_template_directory_uri(); ?>/library/images/NowRx-Logo-Pharmacy.png"
+                <p><a href="<?= get_site_url(); ?>/"><img class="logo lozad"
+                            data-src="<?php echo get_template_directory_uri(); ?>/library/images/NowRx-Logo-Pharmacy.png"
                             alt="NowRx Pharmacy Logo"></a></p>
                 <p class="text-small">&copy; 2019 NowRx.com  <br>All rights reserved. <br><a
                         href="<?= get_site_url(); ?>/privacy-policy/">Privacy Policy</a><br><a href="<?= get_site_url(); ?>/hipaa-privacy/">HIPAA Privacy</a>
@@ -51,13 +51,15 @@ get_template_part('footer-modals');
                         <ul class="footer-menu-col vertical menu text-small">
                             <li><a target="_blank"
                                     href="https://itunes.apple.com/us//app/nowrx-pharmacy-on-demand/id1066924988"><img
-                                        style="max-width: 140px;"
-                                        src="<?php echo get_template_directory_uri(); ?>/library/images/app-apple-store-button.png"
+                                        class="lozad"    
+                                    style="max-width: 140px;"
+                                        data-src="<?php echo get_template_directory_uri(); ?>/library/images/app-apple-store-button.png"
                                         alt="Download NowRx Pharmacy on the App Store"></a></li>
                             <li><a target="_blank"
                                     href="https://play.google.com/store/apps/details?id=com.nowrx.client"><img
-                                        style="max-width: 140px;"
-                                        src="<?php echo get_template_directory_uri(); ?>/library/images/app-google-store-button.png"
+                                        class="lozad"    
+                                    style="max-width: 140px;"
+                                        data-src="<?php echo get_template_directory_uri(); ?>/library/images/app-google-store-button.png"
                                         alt="Get the NowRx Pharmacy app on Google Play"></a></li>
                     </div>
                 </div>
@@ -87,7 +89,15 @@ get_template_part('footer-modals');
 
 </div> <!-- closes off canvas content -->
 
-<script src="<?php echo get_template_directory_uri(); ?>/public/frontend-bundle.js?v=<?php echo time(); ?>" defer async></script>
+<!-- <script src="<?php echo get_template_directory_uri(); ?>/public/frontend-bundle.js?v=<?php echo time(); ?>" async></script> -->
+
+
+<script async >
+    var script = document.createElement('script');
+    script.src = "<?php echo get_template_directory_uri(); ?>/public/frontend-bundle.js";
+    document.getElementsByTagName('head')[0].appendChild(script); 
+
+</script>
 
 <!-- tracking code -->
 <script type="text/javascript">

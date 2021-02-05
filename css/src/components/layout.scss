@@ -17,6 +17,27 @@
 	flex-flow: row wrap;
 }
 
+body.error404.logged-in.class-name main#main {
+    margin: 140px 0 0;
+}
+body.page-template > .grid-container {
+	padding: 30px 0 0;
+	margin: 120px auto 0;
+}
+
+body.single-locations main#main {
+	padding: 30px 0 0;
+	margin: 120px auto 0;
+}
+
+body.page-template-default section#content {
+	margin: 0 auto;
+	padding: 0;
+}
+body.page-template-default main#main,
+body.page-template.page-template-page-thank-you-doctor main#main {
+	margin: 140px auto 0;
+}
 
 @media print, screen and (min-width: 64em) {
 	.grid-x > .large-4 {
@@ -45,10 +66,10 @@
 	.grid-padding-x > .cell {
 		padding-right: 0.9375rem;
 		padding-left: 0.9375rem;
-    }
-.grid-x>.medium-4 {
-    width: 33.33333%;
-}
+	}
+	.grid-x > .medium-4 {
+		width: 33.33333%;
+	}
 }
 
 @media print, screen and (min-width: 64em) {

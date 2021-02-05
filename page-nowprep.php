@@ -93,34 +93,7 @@
 
 
 <!-- companies -->
-<section class="featured-in-section">
-    <div class="grid-container">
-        <div class="grid-x grid-padding-x">
-            <div class="large-12 cell text-center">
-                <p>
-                    <img height="100px" width="200px" data-toggle-class="active" class="lozad  featured-in-section-logo"
-                        data-src="<?php echo get_template_directory_uri(); ?>/library/images/brands-image-cnbc.svg"
-                        alt="CNBC logo">
-                    <img height="100px" width="200px" data-toggle-class="active" class="lozad  featured-in-section-logo"
-                        data-src="<?php echo get_template_directory_uri(); ?>/library/images/brands-image-fortune.svg"
-                        alt="Fortune logo">
-                    <img height="100px" width="200px" data-toggle-class="active" class="lozad  featured-in-section-logo"
-                        data-src="<?php echo get_template_directory_uri(); ?>/library/images/brands-image-forbes.svg"
-                        alt="Forbes logo">
-                    <img height="100px" width="200px" data-toggle-class="active" class="lozad  featured-in-section-logo"
-                        data-src="<?php echo get_template_directory_uri(); ?>/library/images/brands-image-abc-7.svg"
-                        alt="ABC 7 logo">
-                    <img height="100px" width="200px" data-toggle-class="active" class="lozad  featured-in-section-logo"
-                        data-src="<?php echo get_template_directory_uri(); ?>/library/images/brands-image-business-insider.svg"
-                        alt="Business Insider logo">
-                    <img height="100px" width="200px" data-toggle-class="active" class="lozad  featured-in-section-logo"
-                        data-src="<?php echo get_template_directory_uri(); ?>/library/images/brands-image-sfc2.svg"
-                        alt="San Francisco Chronicle logo">
-                </p>
-            </div>
-        </div>
-    </div>
-</section>
+<?php include('section-companies.php'); ?>
 
 
 

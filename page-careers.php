@@ -61,23 +61,7 @@
   </div>
 </section>
 
-<section class="featured-in-section">
-  <div class="grid-container">
-    <div class="grid-x grid-padding-x">
-      <div class="large-12 cell text-center">
-        <p class="text-small" style="margin-bottom: 30px;">NowRx Has Been Featured In:</p>
-        <p>
-          <img class="featured-in-section-logo" src="<?php echo get_template_directory_uri(); ?>/library/images/brands-image-cnbc.svg" alt="">
-          <img class="featured-in-section-logo" src="<?php echo get_template_directory_uri(); ?>/library/images/brands-image-fortune.svg" alt="">
-          <img class="featured-in-section-logo" src="<?php echo get_template_directory_uri(); ?>/library/images/brands-image-forbes.svg" alt="">
-          <img class="featured-in-section-logo" src="<?php echo get_template_directory_uri(); ?>/library/images/brands-image-abc-7.svg" alt="">
-          <img class="featured-in-section-logo" src="<?php echo get_template_directory_uri(); ?>/library/images/brands-image-business-insider.svg" alt="">
-          <img class="featured-in-section-logo" src="<?php echo get_template_directory_uri(); ?>/library/images/brands-image-sfc2.svg" alt="">
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
+<?php include('section-companies.php'); ?>
 
 <section class="testimonials-section-2">
   <div class="grid-container">

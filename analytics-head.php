@@ -14,18 +14,6 @@
     gtag('js', new Date());
 
     gtag('config', 'UA-117353738-1');
-  </script>
-
-  <!-- Global site tag (gtag.js) - Google Ads: 875503484 -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-875503484"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-
     gtag('config', 'AW-875503484');
   </script>
 

@@ -25,8 +25,8 @@
                         <source type="image/png" srcset="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020.png">
                         <img src="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020lowrez.jpg" class="imageblock" height="100px" width="450px">
                     </picture> -->
-        <img src="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020.png"
-            alt="NowRx Pharmacy Surescripts 2020 White Coat Award Finalist (Highest Accuracy) " class="imageblock"
+        <img data-src="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020.png"
+            alt="NowRx Pharmacy Surescripts 2020 White Coat Award Finalist (Highest Accuracy) " class="imageblock lozad"
             height="100px" width="450px">
 
     </div>
@@ -72,13 +72,12 @@
             <!-- image -->
             <div class="column-half image-col">
 
-                <!-- <picture class="lozad" data-iesrc="<?php echo get_template_directory_uri(); ?>/images/AdobeStock_91568410.webp" data-alt="Free Prescription Delivery in Hours" data-toggle-class="active">
+                <picture data-toggle-class="active" class="">
                         <source type="image/webp" srcset="<?php echo get_template_directory_uri(); ?>/images/AdobeStock_91568410.webp">
                         <source type="image/jpeg" srcset="<?php echo get_template_directory_uri(); ?>/images/AdobeStock_91568410.jpeg">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/AdobeStock_91568410lowres.jpg" class="orbit-image" height="500px" width="650px">
-                    </picture> -->
-                <img src="<?php echo get_template_directory_uri(); ?>/images/AdobeStock_91568410.jpeg"
-                    alt="Pharmacist Ready to Provide Medication" class="orbit-image" height="500px" width="650px">
+                        <!-- <img src="<?php echo get_template_directory_uri(); ?>/images/AdobeStock_91568410lowres.jpg" class="orbit-image" height="500px" width="650px"> -->
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/AdobeStock_91568410.jpeg" alt="Pharmacist Ready to Provide Medication" class="orbit-image " height="500px" width="650px">
+                    </picture>
             </div>
 
         </div>
@@ -86,35 +85,7 @@
 </section>
 
 
-<!-- companies -->
-<section class="featured-in-section">
-    <div class="grid-container">
-        <div class="grid-x grid-padding-x">
-            <div class="large-12 cell text-center">
-                <p>
-                    <img height="100px" width="200px" data-toggle-class="active" class="lozad  featured-in-section-logo"
-                        data-src="<?php echo get_template_directory_uri(); ?>/library/images/brands-image-cnbc.svg"
-                        alt="CNBC logo">
-                    <img height="100px" width="200px" data-toggle-class="active" class="lozad  featured-in-section-logo"
-                        data-src="<?php echo get_template_directory_uri(); ?>/library/images/brands-image-fortune.svg"
-                        alt="Fortune logo">
-                    <img height="100px" width="200px" data-toggle-class="active" class="lozad  featured-in-section-logo"
-                        data-src="<?php echo get_template_directory_uri(); ?>/library/images/brands-image-forbes.svg"
-                        alt="Forbes logo">
-                    <img height="100px" width="200px" data-toggle-class="active" class="lozad  featured-in-section-logo"
-                        data-src="<?php echo get_template_directory_uri(); ?>/library/images/brands-image-abc-7.svg"
-                        alt="ABC 7 logo">
-                    <img height="100px" width="200px" data-toggle-class="active" class="lozad  featured-in-section-logo"
-                        data-src="<?php echo get_template_directory_uri(); ?>/library/images/brands-image-business-insider.svg"
-                        alt="Business Insider logo">
-                    <img height="100px" width="200px" data-toggle-class="active" class="lozad  featured-in-section-logo"
-                        data-src="<?php echo get_template_directory_uri(); ?>/library/images/brands-image-sfc2.svg"
-                        alt="San Francisco Chronicle logo">
-                </p>
-            </div>
-        </div>
-    </div>
-</section>
+<?php include('section-companies.php'); ?>
 
 
 
@@ -663,7 +634,7 @@
                             <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), ''); ?>
                             <a href="<?php the_permalink() ?>" rel="bookmark"
                                 title="<?php the_title_attribute(); ?>"><img class="border-styled lozad"
-                                    style="margin-bottom: 1rem;" data-src="<?php echo $image[0]; ?>" alt=""></a>
+                                    style="margin-bottom: 1rem;" data-src="<?php echo $image[0]; ?>" alt="<?php the_title_attribute(); ?>"></a>
                             <?php endif; ?>
                             <h3><a href="<?php the_permalink() ?>" rel="bookmark"
                                     title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>

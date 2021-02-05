@@ -6,9 +6,9 @@
         <p class="pre-headline" style="padding-bottom: .2em;">A Better Pharmacy Delivered</p>
         <h1 style="padding-bottom: .2em;">Free Prescription Delivery in Hours</h1>
         <div class="benefits">
-          	<p><img class="icon-right-arrow" src="<?php echo get_template_directory_uri(); ?>/library/images/icon-right-arrow.svg" alt=""> Free Medication Delivery – Same Copay</p>
-		<p><img class="icon-right-arrow" src="<?php echo get_template_directory_uri(); ?>/library/images/icon-right-arrow.svg" alt=""> Streamlined Insurance Approval Process</p>
-          	<p><img class="icon-right-arrow" src="<?php echo get_template_directory_uri(); ?>/library/images/icon-right-arrow.svg" alt=""> Deliver Controlled & Refrigerated Medications</a></p>
+          	<p><img class="icon-right-arrow" src="<?php echo get_template_directory_uri(); ?>/library/images/icon-right-arrow.svg" alt="arrow icon"> Free Medication Delivery – Same Copay</p>
+		<p><img class="icon-right-arrow" src="<?php echo get_template_directory_uri(); ?>/library/images/icon-right-arrow.svg" alt="arrow icon"> Streamlined Insurance Approval Process</p>
+          	<p><img class="icon-right-arrow" src="<?php echo get_template_directory_uri(); ?>/library/images/icon-right-arrow.svg" alt="arrow icon"> Deliver Controlled & Refrigerated Medications</a></p>
 	</div>
 
         <p><a class="button shadow" style="background-color:#33a532;" href="https://try.nowrxpharmacy.com/prescription-delivery">Get Started</a></p>
@@ -23,23 +23,7 @@
 
 
 
-<section class="featured-in-section">
-  <div class="grid-container">
-    <div class="grid-x grid-padding-x">
-      <div class="large-12 cell text-center">
-        
-        <p>
-          <img class="featured-in-section-logo" src="<?php echo get_template_directory_uri(); ?>/library/images/brands-image-cnbc.svg" alt="CNBC logo">
-          <img class="featured-in-section-logo" src="<?php echo get_template_directory_uri(); ?>/library/images/brands-image-fortune.svg" alt="Fortune logo">
-          <img class="featured-in-section-logo" src="<?php echo get_template_directory_uri(); ?>/library/images/brands-image-forbes.svg" alt="Forbes logo">
-          <img class="featured-in-section-logo" src="<?php echo get_template_directory_uri(); ?>/library/images/brands-image-abc-7.svg" alt="ABC 7 logo">
-          <img class="featured-in-section-logo" src="<?php echo get_template_directory_uri(); ?>/library/images/brands-image-business-insider.svg" alt="Business Insider logo">
-          <img class="featured-in-section-logo" src="<?php echo get_template_directory_uri(); ?>/library/images/brands-image-sfc2.svg" alt="San Francisco Chronicle logo">
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
+<?php include('section-companies.php'); ?>
 
 
 
@@ -263,7 +247,7 @@
           <div class="large-4 cell">
             <?php if (has_post_thumbnail( $post->ID ) ): ?>
             <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID),''); ?>
-              <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><img class="border-styled" style="margin-bottom: 1rem;" src="<?php echo $image[0]; ?>" alt=""></a>
+              <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><img class="border-styled" style="margin-bottom: 1rem;" src="<?php echo $image[0]; ?>" alt="<?php the_title(); ?>"></a>
             <?php endif; ?>
             <h5><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h5>
           </div>
@@ -282,9 +266,9 @@
         <p class="pre-headline" style="padding-bottom: .2em;">A Better Pharmacy Delivered</p>
         <h1 style="padding-bottom: .2em;">Free Prescription Delivery in Hours</h1>
         <div class="benefits">
-          	<p><img class="icon-right-arrow" src="<?php echo get_template_directory_uri(); ?>/library/images/icon-right-arrow.svg" alt=""> Free Medication Delivery – Same Copay</p>
-		<p><img class="icon-right-arrow" src="<?php echo get_template_directory_uri(); ?>/library/images/icon-right-arrow.svg" alt=""> Streamlined Insurance Approval Process</p>
-          	<p><img class="icon-right-arrow" src="<?php echo get_template_directory_uri(); ?>/library/images/icon-right-arrow.svg" alt=""> Deliver Controlled & Refrigerated Medications</a></p>
+          	<p><img class="icon-right-arrow" src="<?php echo get_template_directory_uri(); ?>/library/images/icon-right-arrow.svg" alt="arrow icon"> Free Medication Delivery – Same Copay</p>
+		<p><img class="icon-right-arrow" src="<?php echo get_template_directory_uri(); ?>/library/images/icon-right-arrow.svg" alt="arrow icon"> Streamlined Insurance Approval Process</p>
+          	<p><img class="icon-right-arrow" src="<?php echo get_template_directory_uri(); ?>/library/images/icon-right-arrow.svg" alt="arrow icon"> Deliver Controlled & Refrigerated Medications</a></p>
 	</div>
 
         <p><a class="button shadow" style="background-color:#33a532;" href="https://try.nowrxpharmacy.com/prescription-delivery">Get Started</a></p>
@@ -357,23 +341,7 @@
   </div>
 </section>
 
-<section class="featured-in-section">
-  <div class="grid-container">
-    <div class="grid-x grid-padding-x">
-      <div class="large-12 cell text-center">
-        
-        <p>
-          <img class="featured-in-section-logo" src="<?php echo get_template_directory_uri(); ?>/library/images/brands-image-cnbc.svg" alt="CNBC logo">
-          <img class="featured-in-section-logo" src="<?php echo get_template_directory_uri(); ?>/library/images/brands-image-fortune.svg" alt="Fortune logo">
-          <img class="featured-in-section-logo" src="<?php echo get_template_directory_uri(); ?>/library/images/brands-image-forbes.svg" alt="Forbes logo">
-          <img class="featured-in-section-logo" src="<?php echo get_template_directory_uri(); ?>/library/images/brands-image-abc-7.svg" alt="ABC 7 logo">
-          <img class="featured-in-section-logo" src="<?php echo get_template_directory_uri(); ?>/library/images/brands-image-business-insider.svg" alt="Business Insider logo">
-          <img class="featured-in-section-logo" src="<?php echo get_template_directory_uri(); ?>/library/images/brands-image-sfc2.svg" alt="San Francisco Chronicle logo">
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
+<?php include('section-companies.php'); ?>
 <!--
 <section class="testimonials-section">
   <div class="grid-container">
@@ -522,7 +490,7 @@
           <div class="large-4 cell">
             <?php if (has_post_thumbnail( $post->ID ) ): ?>
             <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID),''); ?>
-              <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><img class="border-styled" style="margin-bottom: 1rem;" src="<?php echo $image[0]; ?>" alt=""></a>
+              <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><img class="border-styled" style="margin-bottom: 1rem;" src="<?php echo $image[0]; ?>" alt="<?php the_title_attribute(); ?>"></a>
             <?php endif; ?>
             <h5><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h5>
           </div>

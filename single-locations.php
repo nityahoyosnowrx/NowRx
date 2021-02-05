@@ -88,7 +88,7 @@ $mapd = get_field('address');
 
 
 
-<main id="main" class="main-class">
+<main id="main" class="main-class singleloc">
 
     <div class="rvl">
 
@@ -682,9 +682,29 @@ function initMap() {
         fillOpacity: 0.35
     });
 
+    polygonvnysCoords = new google.maps.Polygon({
+        path: vnysCoords,
+        geodesic: true,
+        strokeColor: '#038ed8',
+        strokeOpacity: 1.0,
+        strokeWeight: 4,
+        fillColor: '#038ed8',
+        fillOpacity: 0.35
+    });
+
+    polygonhwrdCoords = new google.maps.Polygon({
+        path: hwrdCoords,
+        geodesic: true,
+        strokeColor: '#038ed8',
+        strokeOpacity: 1.0,
+        strokeWeight: 4,
+        fillColor: '#038ed8',
+        fillOpacity: 0.35
+    });
+
+
     
-
-
+    
 
 
     // polygon.setMap(map);
@@ -751,9 +771,11 @@ function geocodeAddress(addr) {
                 google.maps.geometry.poly.containsLocation(results[0].geometry.location, polygon2) ||
                 google.maps.geometry.poly.containsLocation(results[0].geometry.location, polygon3) || 
                 google.maps.geometry.poly.containsLocation(results[0].geometry.location, polygonoc) || 
-                google.maps.geometry.poly.containsLocation(results[0].geometry.location, polygonMesa) || 
+                google.maps.geometry.poly.containsLocation(results[0].geometry.location, polygonMesa) ||
+                google.maps.geometry.poly.containsLocation(results[0].geometry.location, polygonhwrdCoords) || 
+                google.maps.geometry.poly.containsLocation(results[0].geometry.location, polygonvnysCoords) || 
                 google.maps.geometry.poly.containsLocation(results[0].geometry.location, polygonplntCoordsd)) {
-
+                    
                     
                 console.log('The area contains the address');
                 $('.results-map').html(
@@ -792,6 +814,13 @@ if(is_single('irvine')){
 } 
 if(is_single('pleasanton')){
     $coord = '37.69897832554893, -121.91677365323146';
+} 
+
+if(is_single('van-nuys')){
+    $coord = '34.2150729, -118.4950994';
+} 
+if(is_single('hayward')){
+    $coord = '37.629392782800444, -122.05598271544449';
 } 
 
 ?>
@@ -1101,6 +1130,45 @@ var plntCoordsd = [
     {lat:37.745313, lng:-121.850462},   //Tassajara Hills
     {lat:37.740961, lng:-121.723154},   //N. Vasco Rd
 	{lat:37.718984, lng: -121.696681}
+  ];
+
+
+  var vnysCoords = [
+    {lat:34.278744, lng:-118.630395},   // Indian Springs
+    {lat:34.304726, lng:-118.585203},   // Porter Ranch
+    {lat:34.324734, lng:-118.502170},   // I5 Sylmar
+    {lat:34.337815, lng:-118.400452},   // San Fernando Valley East
+    {lat:34.274613, lng:-118.331774},   // Sunland-Tujunga
+    {lat:34.219675, lng:-118.326811},   // Verdugo Mountain Park
+    {lat:34.185278, lng:-118.257726},   // Las Flores Mtwy
+    {lat:34.154781, lng:-118.282457},   // John Ferraro Fields
+    {lat:34.1186458, lng:-118.3486866}, // Jerome Daniel Overlook
+    {lat:34.1205728,lng:-118.364706},   // Runyon Canyon
+    {lat:34.1233107,lng:-118.3744618},  // Fitzpatrick Leland House
+    {lat:34.1229152,lng:-118.3952553},  // Barbara Fine Overlook
+    {lat:34.127134, lng:-118.417854},   // Mrca Open Space
+    {lat:34.1287722,lng:-118.4327943},  // Charles Lotte Overlook
+    {lat:34.126340, lng:-118.475647},   // Mulholland and 405
+    {lat:34.1305408,lng:-118.5442992},  // Mulholland Gateway Park
+    {lat:34.1302433,lng:-118.6125792},  // Summit Valley Park
+    {lat:34.1253714,lng:-118.6579469},  // Mountain Park Calabasas
+    {lat:34.125206, lng:-118.691430},   // Calabasas South
+    {lat:34.278744, lng:-118.630395}
+  ];
+
+
+  var hwrdCoords = [
+    {lat: 37.726379, lng: -122.201422},  //San Leandro North
+    {lat:37.612943, lng:-122.173916},   // San Mateo Bridge
+    {lat:37.526175, lng:-122.098461},   //Dumbarton Bridge 
+    {lat:37.460650, lng:-121.924623},   //W. Milpitas
+    {lat:37.467054, lng:-121.902307},   //N. Milpitas
+    {lat:37.530674, lng:-121.909613},    //Ohlone College
+    {lat:37.587940, lng:-121.959870},   //Niles Canyon
+    {lat:37.723137, lng:-122.017688},   //Castro Valley E
+    {lat:37.737617, lng:-122.060895},   //Columbia Trail
+    {lat:37.743026, lng:-122.145975},   //580, San Leandro NE
+    {lat: 37.726379, lng: -122.201422}  //San Leandro North
   ];
 
 </script>

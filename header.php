@@ -26,6 +26,15 @@
     <?php // icons & favicons (for more: http://www.jonathantneal.com/blog/understand-the-favicon/) 
     ?>
 
+        <?php if(is_front_page()): ?>
+             <link rel="preload" as="image" type="image/jpeg" href="<?php echo get_template_directory_uri(); ?>/images/AdobeStock_91568410.webp" >
+             <link rel="preload" as="image" type="image/jpeg" href="<?php echo get_template_directory_uri(); ?>/images/AdobeStock_91568410.jpeg" >
+        <?php endif; ?>
+        <link rel="preload" href="<?php echo get_template_directory_uri(); ?>/public/frontend.css" as="style">
+        <!-- <link rel="preload" href="<?php echo get_template_directory_uri(); ?>/public/frontend-bundle.js" as="script"> -->
+
+
+
     <link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
     <link rel="icon" type="image/x-icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
 
@@ -55,9 +64,11 @@
     </noscript>
 
     <meta name="p:domain_verify" content="3f36cac4340da88df6ca76c1a431cd53" />
-
+    <!-- ?v=<?php echo time(); ?> -->
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/public/frontend.css?v=<?php echo time(); ?>">
+
      <meta name="facebook-domain-verification" content="51y4k3ncdot6d21810cxa2yfje7xzg" />
+
 </head>
 
 <body <?php body_class(); ?> itemscope itemtype="http://schema.org/WebPage">
@@ -67,7 +78,7 @@
     <!-- End Google Tag Manager (noscript) -->
 
     <!-- promobar -->
-        <div class="promo-bar">
+        <!-- <div class="promo-bar">
             <div class="item-container">
                 <a href="<?= get_site_url(); ?>/get-started/">
                     <span class="hide-for-small-only">
@@ -82,7 +93,7 @@
                     <a href="tel:844-466-6979">(844) 466-6979</a>
                 </span>
             </div>
-        </div>
+        </div> -->
 
 <!-- main menu -->
 
@@ -128,8 +139,8 @@
                             <li><a href="<?php echo get_site_url(); ?>/for-doctors/">For Doctors</a></li>
                             <!-- 		<li><a href="/referral/">Refer a Friend</a></li> -->
                             <li><a href="<?php echo get_site_url(); ?>/faqs/">FAQs</a></li>
-                            <li><a class="button secondary rounded shadow" style="background-color:#008ed8;" href="<?= get_site_url(); ?>/get-started/">Fill My Prescriptions</a>
-                            </li>
+                            <li class="buttonfill"><a class="button secondary rounded shadow" href="<?= get_site_url(); ?>/get-started/">Transfer or Refill Prescriptions</a></li>
+                            <!-- <li class=""><a class="button secondary rounded shadow" style="background-color:#008ed8;" href="<?= get_site_url(); ?>/get-started/">Transfer Prescriptions</a></li> -->
                         </ul>
                     </nav>
                 </div>
