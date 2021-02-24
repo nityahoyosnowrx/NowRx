@@ -48,7 +48,7 @@ gtag('event', 'conversion', {
                         <div class="rvls">
                             <div class="btn-container">
                                 <a class="rx-btn" href="<?= get_site_url(); ?>/get-started/">Get Suggest a Location</a>
-                                <a class="rx-btn mrb" href="<?= get_site_url(); ?>/how-it-works/">Get Started</a>
+                                <a class="rx-btn rx-green mrb" href="<?= get_site_url(); ?>/how-it-works/">Get Started</a>
                             </div>
                         </div>
 
@@ -365,7 +365,7 @@ gtag('event', 'conversion', {
                 </div>
                 <div class="rvl">
                     <div class="small-block">
-                        Still have questions about how to get startd with NowRx Pharmacy? Email us at info@nowr.com an dwe will be happy to help.
+                        Still have questions about how to get startd with NowRx Pharmacy? Email us at info@nowrx.com an dwe will be happy to help.
                     </div>
                 </div>
             </div>

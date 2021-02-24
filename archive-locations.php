@@ -270,7 +270,7 @@ gtag('event', 'conversion', {
                         <div class="rvls">
                             <div class="btn-container">
                                 <a class="rx-btn" href="#locations-item" tabindex="0">View Locations</a>
-                                <a class="rx-btn mrb" href="<?= get_site_url(); ?>/get-started/">Get Started</a>
+                                <a class="rx-btn rx-green mrb" href="<?= get_site_url(); ?>/get-started/">Get Started</a>
                             </div>
                         </div>
 

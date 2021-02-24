@@ -91,6 +91,11 @@ get_template_part('footer-modals');
 
 <!-- <script src="<?php echo get_template_directory_uri(); ?>/public/frontend-bundle.js?v=<?php echo time(); ?>" async></script> -->
 
+<!-- <link rel="preload" href="https://use.typekit.net/nng5acr.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://use.typekit.net/nng5acr.css">
+    </noscript> -->
 
 <script async >
     var script = document.createElement('script');
@@ -109,6 +114,28 @@ get_template_part('footer-modals');
     t ? t.appendChild(e, t) : (t = document.getElementsByTagName("script")[0]).parentNode.insertBefore(e, t)
 }();
 </script>
+<!-- <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&family=Noto+Sans+HK:wght@100;300;400;500;700;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Varela+Round&display=swap" rel="stylesheet"> -->
+
+<!-- <script type="text/javascript">
+    WebFontConfig = {
+        google: { families: [ 
+            'Mulish:wght@200,300,400,500,600,700,800,900&display=swap',
+            'Noto+Sans+HK:wght@100,300,400,500,700,900&display=swap',
+            'Raleway:wght@100,200,300,400,500,600,700,800,900&display=swap',
+            'Varela+Round&display=swap' 
+        ] }
+    };
+    (function() {
+        var wf = document.createElement('script');
+        wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+    })();
+</script> -->
+
 
 </body>
 

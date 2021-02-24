@@ -8,61 +8,51 @@
 
 </section>
 
-
 <!-- hero -->
 <section class="hero-home">
-    <div class="rvl">
 
-        <!-- <img class="imageblock lozad" data-toggle-class="active" data-src="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020.png" alt="prescription being delivered to mother" height="100px" width="450px"> -->
-
-        <!-- <picture class="lozad imageblock" data-iesrc="<?php echo get_template_directory_uri(); ?>/images/AdobeStock_91568410.webp" data-alt="prescription being delivered to mother" data-toggle-class="active">
-                <source type="<?php echo get_template_directory_uri(); ?>/images/AdobeStock_91568410.webp" srcset="AdobeStock_91568410.webp">
-                <source type="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020.png" srcset="AdobeStock_91568410.jpeg">
-                <img class="imageblock lozad" data-toggle-class="active" data-src="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020.png" alt="prescription being delivered to mother" height="100px" width="450px">
-            </picture> -->
-
-        <!-- <picture class="lozad" data-iesrc="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020.png" data-alt="prescription being delivered to mother" data-toggle-class="active">
-                        <source type="image/png" srcset="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020.png">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020lowrez.jpg" class="imageblock" height="100px" width="450px">
-                    </picture> -->
-        <img data-src="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020.png"
-            alt="NowRx Pharmacy Surescripts 2020 White Coat Award Finalist (Highest Accuracy) " class="imageblock lozad"
-            height="100px" width="450px">
-
+    <div class="">
+        <img data-src="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020.png" alt="NowRx Pharmacy Surescripts 2020 White Coat Award Finalist (Highest Accuracy)" class="imageblock lozad" height="100px" width="450px">
     </div>
 
     <div class="container">
         <div class="content">
-
             <!-- content -->
             <div class="column-half content-col">
 
-
-
-                <div class="rvls">
-                    <span class="sub-headline">
-                        A Better Local Pharmacy Delivered
+                    <span class="sub-headline ">
+                            <strong>A Better Local Pharmacy Delivered</strong>
                     </span>
-                </div>
 
-                <div class="rvls">
-                    <h1>
-                        Free Prescription
-                        Delivery in Hours
+                    <h1 class="">
+                            Free Prescription Delivery in Hours
                     </h1>
-                </div>
 
-                <div class="rvls">
-                    <p>NowRx is a new kind of local pharmacy that uses modern technology to provide a better pharmacy
-                        experience.</p>
-                </div>
+                    <p class="">
+                            NowRx is a new kind of local pharmacy that uses modern technology to provide a better pharmacy experience.
+                    </p>
 
-                <div class="rvls">
                     <div class="btn-container">
-                        <a class="rx-btn" href="<?= get_site_url(); ?>/get-started/">Get Started</a>
-                        <a class="rx-btn mrb" href="<?= get_site_url(); ?>/how-it-works/">How it Works</a>
+                        <a class="rx-btn" href="<?= get_site_url(); ?>/get-started/">
+                            <span class="arrow">
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas"
+                                        data-icon="file-prescription" role="img" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 384 512" class="svg-inline--fa fa-file-prescription fa-w-12 fa-2x">
+                                        <path fill="currentColor"
+                                            d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm68.53 179.48l11.31 11.31c6.25 6.25 6.25 16.38 0 22.63l-29.9 29.9L304 409.38c6.25 6.25 6.25 16.38 0 22.63l-11.31 11.31c-6.25 6.25-16.38 6.25-22.63 0L240 413.25l-30.06 30.06c-6.25 6.25-16.38 6.25-22.63 0L176 432c-6.25-6.25-6.25-16.38 0-22.63l30.06-30.06L146.74 320H128v48c0 8.84-7.16 16-16 16H96c-8.84 0-16-7.16-16-16V208c0-8.84 7.16-16 16-16h80c35.35 0 64 28.65 64 64 0 24.22-13.62 45.05-33.46 55.92L240 345.38l29.9-29.9c6.25-6.25 16.38-6.25 22.63 0zM176 272h-48v-32h48c8.82 0 16 7.18 16 16s-7.18 16-16 16zm208-150.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+                                            class=""></path>
+                                    </svg>
+                            </span>
+                            Get Started
+                        </a>
+                        <a class="rx-btn rx-green mrb" href="<?= get_site_url(); ?>/how-it-works/">
+                            <span class="arrow">
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="question-circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-question-circle fa-w-16 fa-2x"><path fill="currentColor" d="M504 256c0 136.997-111.043 248-248 248S8 392.997 8 256C8 119.083 119.043 8 256 8s248 111.083 248 248zM262.655 90c-54.497 0-89.255 22.957-116.549 63.758-3.536 5.286-2.353 12.415 2.715 16.258l34.699 26.31c5.205 3.947 12.621 3.008 16.665-2.122 17.864-22.658 30.113-35.797 57.303-35.797 20.429 0 45.698 13.148 45.698 32.958 0 14.976-12.363 22.667-32.534 33.976C247.128 238.528 216 254.941 216 296v4c0 6.627 5.373 12 12 12h56c6.627 0 12-5.373 12-12v-1.333c0-28.462 83.186-29.647 83.186-106.667 0-58.002-60.165-102-116.531-102zM256 338c-25.365 0-46 20.635-46 46 0 25.364 20.635 46 46 46s46-20.636 46-46c0-25.365-20.635-46-46-46z" class=""></path></svg>
+                            </span>
+                            How it Works
+                        </a>
+
                     </div>
-                </div>
 
 
 
@@ -72,12 +62,14 @@
             <!-- image -->
             <div class="column-half image-col">
 
-                <picture data-toggle-class="active" class="">
-                        <source type="image/webp" srcset="<?php echo get_template_directory_uri(); ?>/images/AdobeStock_91568410.webp">
-                        <source type="image/jpeg" srcset="<?php echo get_template_directory_uri(); ?>/images/AdobeStock_91568410.jpeg">
-                        <!-- <img src="<?php echo get_template_directory_uri(); ?>/images/AdobeStock_91568410lowres.jpg" class="orbit-image" height="500px" width="650px"> -->
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/AdobeStock_91568410.jpeg" alt="Pharmacist Ready to Provide Medication" class="orbit-image " height="500px" width="650px">
-                    </picture>
+                <picture data-toggle-class="active" class="lozad">
+                    <source type="image/webp" srcset="<?php echo get_template_directory_uri(); ?>/images/AdobeStock_91568410.webp" media="(min-width: 100px)">
+                    <!-- <source type="image/jpeg" srcset="<?php echo get_template_directory_uri(); ?>/images/AdobeStock_91568410.jpeg"> -->
+
+                    <img data-src="<?php echo get_template_directory_uri(); ?>/images/AdobeStock_91568410mobile.jpeg" alt="Pharmacist Ready to Provide Medication" class="orbit-image lozad" height="500px" width="620px">
+
+                </picture>
+                
             </div>
 
         </div>
@@ -179,12 +171,13 @@
                 <div class="rvl">
                     <div class="block" itemscope itemtype="http://schema.org/Review">
 
-                    <div itemprop="itemReviewed" itemscope itemtype="http://schema.org/LocalBusiness">
-                                <meta itemprop="name" content="NowRx Pharmacy">
-                                <meta itemprop="image" content="<?php echo get_template_directory_uri(); ?>/library/images/NowRx-Logo-Pharmacy.png">
-                                <meta itemprop="priceRange" content="$">
-                                <meta itemprop="telephone" content="(844) 466-6979">
-                            </div>
+                        <div itemprop="itemReviewed" itemscope itemtype="http://schema.org/LocalBusiness">
+                            <meta itemprop="name" content="NowRx Pharmacy">
+                            <meta itemprop="image"
+                                content="<?php echo get_template_directory_uri(); ?>/library/images/NowRx-Logo-Pharmacy.png">
+                            <meta itemprop="priceRange" content="$">
+                            <meta itemprop="telephone" content="(844) 466-6979">
+                        </div>
 
                         <h2 class="title">Better Pricing</h2>
 
@@ -221,12 +214,13 @@
                 <div class="rvl">
                     <div class="block" itemscope itemtype="http://schema.org/Review">
 
-                    <div itemprop="itemReviewed" itemscope itemtype="http://schema.org/LocalBusiness">
-                                <meta itemprop="name" content="NowRx Pharmacy">
-                                <meta itemprop="image" content="<?php echo get_template_directory_uri(); ?>/library/images/NowRx-Logo-Pharmacy.png">
-                                <meta itemprop="priceRange" content="$">
-                                <meta itemprop="telephone" content="(844) 466-6979">
-                            </div>
+                        <div itemprop="itemReviewed" itemscope itemtype="http://schema.org/LocalBusiness">
+                            <meta itemprop="name" content="NowRx Pharmacy">
+                            <meta itemprop="image"
+                                content="<?php echo get_template_directory_uri(); ?>/library/images/NowRx-Logo-Pharmacy.png">
+                            <meta itemprop="priceRange" content="$">
+                            <meta itemprop="telephone" content="(844) 466-6979">
+                        </div>
 
                         <h2 class="title">Better Service</h2>
 
@@ -263,12 +257,13 @@
                 <div class="rvl">
                     <div class="block" itemscope itemtype="http://schema.org/Review">
 
-                    <div itemprop="itemReviewed" itemscope itemtype="http://schema.org/LocalBusiness">
-                                <meta itemprop="name" content="NowRx Pharmacy">
-                                <meta itemprop="image" content="<?php echo get_template_directory_uri(); ?>/library/images/NowRx-Logo-Pharmacy.png">
-                                <meta itemprop="priceRange" content="$">
-                                <meta itemprop="telephone" content="(844) 466-6979">
-                            </div>
+                        <div itemprop="itemReviewed" itemscope itemtype="http://schema.org/LocalBusiness">
+                            <meta itemprop="name" content="NowRx Pharmacy">
+                            <meta itemprop="image"
+                                content="<?php echo get_template_directory_uri(); ?>/library/images/NowRx-Logo-Pharmacy.png">
+                            <meta itemprop="priceRange" content="$">
+                            <meta itemprop="telephone" content="(844) 466-6979">
+                        </div>
 
                         <h2 class="title">Better Convenience</h2>
                         <blockquote>
@@ -305,39 +300,36 @@
     </div>
 </section>
 
-<div style="background: #e5f3fa; border-radius: 0 0 80px 0;">
-    <section class="how-it-works panel--primary panel--cta">
-        <div class="grid-container">
-            <div class="grid-x grid-padding-x">
-                <div class="large-12 cell text-center prescription">
-                    <div class="rvl">
-                        <p class="pre-headline">Transfer Prescription to NowRX</p>
-                    </div>
-                    <div class="rvl">
-                        <h2 class="headline">
-                            <div>$20 Visa Card with</div> Prescription Delivery
-                        </h2>
-                    </div>
 
-                    <div class="rvl">
-                        <a href="<?= get_site_url(); ?>/get-started/" class="button">Transfer My Prescriptions</a>
-                    </div>
-
+<!-- visit faq -->
+<section class="visit-faq">
+    <div class="container">
+        <div class="content">
+            <div class="rvl">
+                <span class="sub-headline">
+                    No Signup Required. No Hidden Fees.
+                </span>
+            </div>
+            <div class="rvl">
+                <h2 class="sec-title">
+                    Just A Better Pharmacy
+                </h2>
+            </div>
+            <div class="rvl">
+                <div class="btn-container">
+                    <a href="<?= get_site_url(); ?>/get-started/" class="rx-btn rx-dg">
+                        Get Started
+                    </a>
                 </div>
-                <div class="large-12 cell text-center ">
-                    <p>
-                    <div class="rvl">
-                        <small>
-                            *Valid while supplies last, limit $100 per customer. Offer not valid under Medicare,
-                            Medicaid, or medication previously filled by NowRx.
-                        </small>
-                    </div>
-                    </p>
+            </div>
+            <div class="rvl">
+                <div class="small-block">
+                    Still have questions about how to get started with NowRx Pharmacy? Email us at <a href="mailto:info@nowrx.com" class="alink">info@nowrx.com</a> and we will be happy to help.
                 </div>
             </div>
         </div>
-    </section>
-</div>
+    </div>
+</section>
 
 <!-- faq -->
 <section class="faq-section">
@@ -414,7 +406,8 @@
                         <div class="a-item">
                             <div class="title">A.</div>
                             <span class="cntx">
-                                The proprietary tech inside our pharmacy increases efficiency and reduces our cost to about
+                                The proprietary tech inside our pharmacy increases efficiency and reduces our cost to
+                                about
                                 1/100th that of a traditional pharmacy like CVS. This enables free same-day delivery.
                             </span>
                         </div>
@@ -634,7 +627,8 @@
                             <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), ''); ?>
                             <a href="<?php the_permalink() ?>" rel="bookmark"
                                 title="<?php the_title_attribute(); ?>"><img class="border-styled lozad"
-                                    style="margin-bottom: 1rem;" data-src="<?php echo $image[0]; ?>" alt="<?php the_title_attribute(); ?>"></a>
+                                    style="margin-bottom: 1rem;" data-src="<?php echo $image[0]; ?>"
+                                    alt="<?php the_title_attribute(); ?>"></a>
                             <?php endif; ?>
                             <h3><a href="<?php the_permalink() ?>" rel="bookmark"
                                     title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>

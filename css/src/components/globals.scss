@@ -1,17 +1,13 @@
-blockquote, dd, div, dl, dt, form, h1, h2, h3, h4, h5, h6, li, ol, p, pre, td, th, ul {
-    margin: 0;
-    padding: 0;
-}
-
-blockquote{
-    margin: 0;
-}
 
 .text-center {
     text-align: center;
 }
-
-
+.search-bar {
+    margin: 20px 0 0;
+}
+.marginzero{
+    margin: 0;
+}
 .button {
     display: inline-block;
     vertical-align: middle;
@@ -27,6 +23,9 @@ blockquote{
     cursor: pointer;
     background-color: #0088ce;
     color: #fff;
+    background-image: linear-gradient( 
+        -180deg
+         ,hsla(0,0%,100%,.1),rgba(0,0,0,.1));
     &.small {
         font-size: .75rem;
     }

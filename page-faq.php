@@ -60,9 +60,13 @@
 
                 <div class="rvls">
                     <div class="btn-container">
-                        <a class="rx-btn" href="#faqblock">View FAQs</a>
-                        <a class="rx-btn mrb" data-toggle="submitaquestion" aria-controls="submitaquestion"
-                            aria-haspopup="true" tabindex="0">Submit a Question</a>
+                        <a class="rx-btn" href="#faqblock">
+                        <?php include('reg-arrow.php'); ?>
+                        View FAQs</a>
+                        <a class="rx-btn rx-green mrb" data-toggle="submitaquestion" aria-controls="submitaquestion"
+                            aria-haspopup="true" tabindex="0">
+                            <?php include('grn-arrow.php'); ?>
+                            Submit a Question</a>
                     </div>
                 </div>
 
@@ -278,7 +282,7 @@
                                                     USPS)
                                                 </li>
                                                 <li>
-                                                    NowRx deliveries arrive within hours opposed to mail services
+                                                    NowRx deliveries arrive within hours as opposed to mail services
                                                     which can
                                                     take 3-14 days.
                                                 </li>
@@ -1001,7 +1005,7 @@
                                     <div class="a-item">
                                         <div class="title">A.</div>
                                         <span class="cntx">
-                                            <p>All NowRx deliveries are made by HIPAA certified NowRx employees. These
+                                            <p>All NowRx deliveries are made by HIPAA-certified NowRx employees. These
                                                 pharmacy employees have undergone extensive background checks and
                                                 training to ensure safe medication delivery.</p>
                                         </span>
@@ -1173,7 +1177,7 @@
                                             <p>
                                                 NowRx Pharmacy offers delivery of over 250 prescriptions including
                                                 controlled and refrigerated medications. We also offer delivery of
-                                                common over the counter medications and supplements like Tylenol,
+                                                common over-the-counter medications and supplements like Tylenol,
                                                 Vitamin D, etc. We do not offer compounding at this time.
                                             </p>
                                         </span>
@@ -1435,7 +1439,7 @@
                                                     price/copay
                                                 </li>
                                                 <li>
-                                                    Automatically apply available drug coupons to lower out of pocket
+                                                    Automatically apply available drug coupons to lower out-of-pocket
                                                     costs
                                                 </li>
                                                 <li>
@@ -1535,7 +1539,7 @@
                                         <div class="title">A.</div>
                                         <span class="cntx">
                                             <p>
-                                                NowRx can help your office safe significant time by handling prior
+                                                NowRx can help your office save significant time by handling prior
                                                 authorizations.
                                             </p>
 
@@ -1552,7 +1556,7 @@
                                                 In some cases, if your office has a lot of prior auths and is looking
                                                 for even more support, NowRx Pharmacy can take full responsibility for
                                                 the entire process via a Collaborative Practice Agreement which
-                                                authorizes us to speak to the insurance plan on behalf of your office.To
+                                                authorizes us to speak to the insurance plan on behalf of your office. To
                                                 learn more about this, please email us at info@nowrx.com.
                                             </p>
                                         </span>
@@ -1693,7 +1697,7 @@
                                                 deliver it the following business day.
                                             </p>
                                             <p>
-                                                In rare cases, delivery may not be same-day e.g. if a prior
+                                                In rare cases, the delivery may not be same-day e.g. if a prior
                                                 authorization is required and is taking longer than usual. In these
                                                 situations, we will notify the patient as soon as possible and do
                                                 everything we can to find a solution!
@@ -1844,7 +1848,7 @@
                                             <p>
                                                 NowRx Pharmacy offers delivery of over 250 prescriptions including
                                                 controlled and refrigerated medications. We also offer delivery of
-                                                common over the counter medications and supplements like Tylenol,
+                                                common over-the-counter medications and supplements like Tylenol,
                                                 Vitamin D, etc. We do not offer compounding at this time.
                                             </p>
                                         </span>
@@ -2060,7 +2064,7 @@
                                                 <li> NowRx employees deliver all medications (opposed to using 3rd
                                                     parties like
                                                     USPS)</li>
-                                                <li> NowRx deliveries arrive within hours opposed to mail services
+                                                <li> NowRx deliveries arrive within hours as opposed to to mail services
                                                     which can
                                                     take 3-14 days.</li>
                                                 <li>
@@ -2295,8 +2299,7 @@
             <div class="rvl">
                 <div class="small-block">
                     <p>
-                        Still have questions about how to get started with NowRx Pharmacy? Email us at info@nowr.com an
-                        agent will be happy to help.
+                        Still have questions about how to get started with NowRx Pharmacy? Email us at <a href="mailto:info@nowrx.com">info@nowrx.com</a> and we will be happy to help.
                     </p>
                 </div>
             </div>

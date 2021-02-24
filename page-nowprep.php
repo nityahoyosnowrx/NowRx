@@ -43,7 +43,7 @@
 
                 <div class="rvls">
                     <span class="sub-headline">
-                    HIV PREVENTION TELEHEALTH FROM NOWRX
+                    HIV PREVENTION TELEHEALTH
                     </span>
                 </div>
 
@@ -63,8 +63,8 @@
                     <div class="btn-container">
                         <!-- <a class="rx-btn" href="<?= get_site_url(); ?>/get-started/">Join Watilist</a> -->
                         <a class="rx-btn " data-toggle="waitlist" aria-controls="waitlist"
-                            aria-haspopup="true" tabindex="0">Join Waitlist</a>
-                        <a class="rx-btn mrb" href="#howitwork">How It Works</a>
+                            aria-haspopup="true" tabindex="0"> <?php include('reg-arrow.php'); ?> Join Waitlist</a>
+                        <a class="rx-btn rx-green mrb" href="#howitwork"> <?php include('grn-arrow.php'); ?> How It Works</a>
                     </div>
                 </div>
 
@@ -140,7 +140,7 @@
                     </div>
 
                     <p>
-                    We will send you a HIV test kit, or if you prefer, we will set up an in-person test appointment at a lab near you.
+                    We will order a full lab test and help you set up an appointment with one of our partner labs near you.
                     </p>
                 </div>
             </div>
@@ -180,13 +180,13 @@
             <div class="rvl">
                 <h2 class="headline">Why Choose NowPrep</h2>
             </div>
-            <div class="imageblock">
+            <div class="imageblock imgslide">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/prepimage.jpeg" alt="couple reading information about nowprep on laptop" class="pic">
             </div>
         </div>
         <div class="pills">
             <!-- pill -->
-            <div class="pill">
+            <div class="pill reganim">
                 <div class="title">
                     Convenient & Easy to Use
                 </div>
@@ -195,7 +195,7 @@
                 </div>
             </div>
             <!-- pill -->
-            <div class="pill">
+            <div class="pill reganim">
                 <div class="title">
                     Free Prescription Delivery
                 </div>
@@ -204,7 +204,7 @@
                 </div>
             </div>
             <!-- pill -->
-            <div class="pill">
+            <div class="pill reganim">
                 <div class="title">
                     Insurance Approval Assistance
                 </div>
@@ -213,7 +213,7 @@
                 </div>
             </div>
             <!-- pill -->
-            <div class="pill">
+            <div class="pill reganim">
                 <div class="title">
                     5 Star Rated Customer Service
                 </div>
@@ -254,7 +254,7 @@
             <div class="rvl">
                 <div class="small-block">
                     *Join the NowPrep waitlist and we will notify you by email when the NowPrep telemedicine platform has
-                    officially launched. Early sign ups receive a special gift at launch!
+                    officially launched. Early sign-ups receive a special gift at launch!
                 </div>
             </div>
         </div>
@@ -264,20 +264,15 @@
 
 
 
-<section class="faq-blocks" id="faqblock">
+<section class="faq-blocks prep" id="faqblock">
     <div class="container">
         <div class="topcontent content">
-            <div class="rvl">
                 <span class="sub-headline">
                     A better local pharmacy delivered
                 </span>
-            </div>
-
-            <div class="rvl">
                 <h2 class="sec-title">
                     How can we help you today?
                 </h2>
-            </div>
         </div>
         <div class="content botcot">
             <div class="faq-blocks">
@@ -342,11 +337,10 @@
 
                                             </p>
                                             <p>
-                                                Get a free consultation, complete the NowPrEP test kit, and have
-                                                medication delivered right to your door for no additional charge.
+                                            Receive a free doctor consultation, get your PrEP prescription, and have medication delivered right to your door for no additional charge.
 
                                             </p>
-                                            NowPrEP is the easiest option for HIV PrEP.
+                                            NowPrEP is your one-stop-shop for HIV PrEP.
                                             <p></p>
                                         </span>
                                     </div>
@@ -389,11 +383,7 @@
                                                 lower the chances of getting HIV through sex.
 
                                             </p>
-                                            <p>
-                                                It is not for people who are living with HIV or for anyone assigned
-                                                female at birth.
-
-                                            </p>
+                                           
 
 
                                         </span>
@@ -432,21 +422,18 @@
                                         <div class="title">A.</div>
                                         <span class="cntx">
                                             <p>
-                                                The NowPrEP process is simple and takes seconds to get started.
+                                            The NowPrEP process is simple and takes seconds to get started.
                                             </p>
                                             <p>
-                                                First, sign up for the NowPrEP service and fill out our health
-                                                questionnaire to assess whether HIV PrEP is right for you.
+                                            First, sign up for the NowPrEP service and fill out our health questionnaire to assess whether HIV PrEP is right for you.
 
                                             </p>
                                             <p>
-                                                Next, NowPrEP will send you a home test kit or, if you prefer, we will
-                                                set up an in-person HIV test appointment near you.
+                                            Next, NowPrEP will order a full lab test and help you set up an appointment with one of our partner labs near you.
 
                                             </p>
                                             <p>
-                                                Finally, if a NowPrEP physician decides a prescription is right for you,
-                                                we will deliver your medication in hours for free.
+                                            Finally, if a NowPrEP physician decides a prescription is right for you, we will deliver your medication in hours for free.
 
                                             </p>
 
@@ -486,7 +473,7 @@
                                         <div class="title">A.</div>
                                         <span class="cntx">
                                             <p>
-                                                NowPrep and NowRx pride itself on price transparency. Below is a
+                                                NowPrep and NowRx pride themselves on price transparency. Below is a
                                                 breakdown of the costs that you can expect while using NowPrEP:
 
 
@@ -496,8 +483,8 @@
 
                                             </p>
                                             <p>
-                                                Test Kit: $119 (some insurances may reimburse you)
-
+                                                
+                                                Lab Test: $119 (most health insurance will cover)
                                             </p>
                                             <p>
                                                 Medication: Free
@@ -555,14 +542,14 @@
 
                                             </p>
                                             <p>
-                                                All of our physicians are licensed, heavily vetted and highly qualified.
+                                                All of our physicians are licensed, heavily vetted, and highly qualified.
                                                 We will only prescribe medication when it is safe to do so based on your
                                                 test results and the information you provide to us in your health
                                                 questionnaire - so be as truthful and honest as possible!
 
                                             </p>
                                             <p>
-                                                Additionally, all payment and health related data is kept private and
+                                                Additionally, all payment and health-related data are kept private and
                                                 confidential offline on a secure HIPAA compliant server.
 
                                             </p>
@@ -602,10 +589,7 @@
                                         <div class="title">A.</div>
                                         <span class="cntx">
                                             <p>
-                                                In order to use NowPrEP you must sign up and complete our online health
-                                                questionnaire as well take an HIV test so we can determine whether prep
-                                                medication is safe for you. Additionally, a test is not required if you
-                                                can provide a HIV negative test taken in the last 3 months.
+                                            In order to use NowPrEP, you must sign up and complete our online health questionnaire as well as take a lab test for PrEP to determine whether it is safe to use. Additionally, a test may not be required if you can provide test results for PrEP taken in the last 3 months.
                                             </p>
                                         </span>
                                     </div>
@@ -645,7 +629,7 @@
                                             <p>
                                                 NowPrEP takes our customer information extremely seriously. We employ a
                                                 number of safeguards to ensure the security of the data we collect
-                                                including but not limited to maintaining all health related data offline
+                                                including but not limited to maintaining all health-related data offline
                                                 on a secure HIPAA compliant server.
 
                                             </p>
@@ -690,7 +674,7 @@
                                         <div class="title">A.</div>
                                         <span class="cntx">
                                             <p>
-                                                Yes. If you already have a HIV PrEP prescription, NowPrEP can still
+                                                Yes. If you already have an HIV PrEP prescription, NowPrEP can still
                                                 help.
 
                                             </p>
@@ -814,7 +798,7 @@
                         <!-- item -->
                         <div class="item" data-opentab="false">
                             <span class="title">
-                                Is at home testing my only option?
+                                Is at-home testing my only option?
                                 <span class="question-svg">
                                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                         version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 490.661 490.661"
@@ -835,15 +819,14 @@
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
-                                            Is at home testing my only option?
+                                            Is at-home testing my only option?
                                         </span>
                                     </div>
                                     <div class="a-item">
                                         <div class="title">A.</div>
                                         <span class="cntx">
                                             <p>
-                                                No. If you prefer, NowPrEP can schedule and provide instructions for an
-                                                in-person HIV test at a lab near you.
+                                            No. If you prefer, NowPrEP can schedule and provide instructions for an in-person lab test at a lab near you.
                                             </p>
                                         </span>
                                     </div>
@@ -1377,7 +1360,7 @@
                                         <div class="title">A.</div>
                                         <span class="cntx">
                                             <p>
-                                                When starting PrEP and taking daily, it takes at least seven days to
+                                                When starting PrEP and taking it daily, it takes at least seven days to
                                                 reach high levels of protection against HIV.
                                             </p>
                                         </span>
@@ -1466,7 +1449,7 @@
                                         <span class="cntx">
 
                                             <p>
-                                                PrEP is generally safe to take with most other medicine.
+                                                PrEP is generally safe to take with most other medications.
 
                                             </p>
                                             <p>
@@ -1591,7 +1574,7 @@ Source: hiv.gov
 
                                                 </li>
                                                 <li>
- Sharing injection drug equipment, for example needles, with someone who has HIV
+ Sharing injection drug equipment, for example, needles, with someone who has HIV
 
                                                 </li>
                                             </ul>
@@ -1673,7 +1656,7 @@ Source: hiv.gov
 
                                             </p>
                                             <p>
-These symptoms may can last anywhere from a few days to a few weeks. If you think you may have been exposed to HIV you should get tested immediately.
+These symptoms may last anywhere from a few days to a few weeks. If you think you may have been exposed to HIV you should get tested immediately.
 
                                             </p>
                                         </span>
@@ -1716,7 +1699,7 @@ These symptoms may can last anywhere from a few days to a few weeks. If you thin
 
                                             </p>
                                             <p>
-These symptoms may can last anywhere from a few days to a few weeks. If you think you may have been exposed to HIV you should get tested immediately.
+These symptoms may last anywhere from a few days to a few weeks. If you think you may have been exposed to HIV you should get tested immediately.
 
                                             </p>
                                         </span>
@@ -1755,7 +1738,7 @@ These symptoms may can last anywhere from a few days to a few weeks. If you thin
                                         <div class="title">A.</div>
                                         <span class="cntx">
                                             <p>
-                                            Typically, there is little to no risk of getting or transmitting HIV from oral sex although it is possible if an HIV positive man ejaculates in his partner's mouth during oral sex.
+                                            Typically, there is little to no risk of getting or transmitting HIV from oral sex although it is possible if an HIV-positive man ejaculates in his partner's mouth during oral sex.
                                             </p>
                                         </span>
                                     </div>
@@ -1793,7 +1776,7 @@ These symptoms may can last anywhere from a few days to a few weeks. If you thin
                                         <div class="title">A.</div>
                                         <span class="cntx">
                                             <p>
-                                            According to the CDC, there is no effective cure for HIV but with proper medical care the condition can be managed. If you have been diagnosed with HIV, talk with your healthcare professional to discuss your options.
+                                            According to the CDC, there is no effective cure for HIV but with proper medical care, the condition can be managed. If you have been diagnosed with HIV, talk with your healthcare professional to discuss your options.
                                             </p>
                                         </span>
                                     </div>
@@ -2009,7 +1992,7 @@ These symptoms may can last anywhere from a few days to a few weeks. If you thin
                         <!-- item -->
                         <div class="item" data-opentab="false">
                             <span class="title">
-                                How is NowRx different than a mail order pharmacy?
+                                How is NowRx different than a mail-order pharmacy?
                                 <span class="question-svg">
                                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                         version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 490.661 490.661"
@@ -2030,14 +2013,14 @@ These symptoms may can last anywhere from a few days to a few weeks. If you thin
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
-                                            How is NowRx different than a mail order pharmacy?
+                                            How is NowRx different than a mail-order pharmacy?
                                         </span>
                                     </div>
                                     <div class="a-item">
                                         <div class="title">A.</div>
                                         <span class="cntx">
                                             <p>
-                                                Unlike mail order pharmacies:
+                                                Unlike mail-order pharmacies:
                                             </p>
 
                                             <ul>
@@ -2051,7 +2034,7 @@ These symptoms may can last anywhere from a few days to a few weeks. If you thin
 
                                                 </li>
                                                 <li>
-                                                     NowRx deliveries arrive within hours opposed to mail services
+                                                     NowRx deliveries arrive within hours as opposed to mail services
                                                     which can take 3-14 days.
 
                                                 </li>
@@ -2305,7 +2288,7 @@ These symptoms may can last anywhere from a few days to a few weeks. If you thin
                                             </p>
 
                                             <p>
-                                                Customer and doctors are also more than welcome to stop by these
+                                                Customers and doctors are also more than welcome to stop by these
                                                 physical locations to fill a prescription or ask our pharmacist a
                                                 question.
 
@@ -2443,12 +2426,14 @@ These symptoms may can last anywhere from a few days to a few weeks. If you thin
                 </div>
 
             </div>
-            <div class="faq-image">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/HIV-PrEP-FAQ-Image.jpeg" alt=" transgender woman looking up"
+            
+        </div>
+    <div class="faq-image">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/HIV-PrEP-Doctor-Image.png" alt=" transgender woman looking up"
                     class="pic">
             </div>
-        </div>
     </div>
+
 </section>
 
 

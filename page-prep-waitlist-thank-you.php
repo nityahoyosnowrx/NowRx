@@ -1,0 +1,74 @@
+<?php get_header(); 
+// Template Name: prep/waitlist/thank-you
+?>
+<!-- Event snippet for Form Completion conversion page -->
+<script>
+gtag('event', 'conversion', {'send_to': 'AW-875503484/Bj1NCMmPzboBEPy-vKED'});
+</script>
+
+<style>
+    main#main {
+    margin: 140px auto 0;
+}
+</style>
+<main id="main" class="main-class" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
+<div class="rvl">
+
+<!-- <img class="imageblock lozad" data-toggle-class="active" data-src="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020.png" alt="prescription being delivered to mother" height="100px" width="450px"> -->
+
+<!-- <picture class="lozad imageblock" data-iesrc="<?php echo get_template_directory_uri(); ?>/images/AdobeStock_91568410.webp" data-alt="prescription being delivered to mother" data-toggle-class="active">
+    <source type="<?php echo get_template_directory_uri(); ?>/images/AdobeStock_91568410.webp" srcset="AdobeStock_91568410.webp">
+    <source type="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020.png" srcset="AdobeStock_91568410.jpeg">
+    <img class="imageblock lozad" data-toggle-class="active" data-src="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020.png" alt="prescription being delivered to mother" height="100px" width="450px">
+</picture> -->
+
+        <picture class="lozad" data-iesrc="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020.png" data-alt="NowRx Pharmacy Surescripts 2020 White Coat Award Finalist (Highest Accuracy) " data-toggle-class="active">
+            <source type="image/png" srcset="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020.png">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020lowrez.jpg" class="imageblock" height="100px" width="450px" alt="NowRx Pharmacy Surescripts 2020 White Coat Award Finalist (Highest Accuracy) ">
+        </picture>
+
+</div>
+    <section class="article">
+        <article id="post-<?php the_ID(); ?>" role="article" itemscope itemtype="http://schema.org/BlogPosting">
+            <div class="container">
+
+                <header class="article-header tynk">
+
+                    <div class="imageblock">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/AdobeStock_91568410.webp" alt="NowRx Pharmacy Pharmacist on desk" width="300px" height="300px" class="pic">
+                    </div>
+
+                    <div class="content">
+                        <div class="rvl">
+                            <span class="subheading">
+                            Thank you for your interest in NowPrEP Telehealth
+
+                            </span>
+                        </div>
+                        <div class="rvl">
+                            <h1 class="page-title" itemprop="headline">
+                            You have successfully joined the NowPrEP waitlist!
+                            </h1>
+                        </div>
+                        <div class="rvl">
+                            <p>
+                            We will send updates to the email you have provided once a launch date has been set. If you would like to participate in our beta testing groups and offer feedback/advice please contact us at <a href="mailto:info@nowrx.com">info@nowrx.com</a>
+                            </p>
+                        </div>
+                        <div class="rvl">
+                            <span class="follow-links">
+                                <div class="txt">
+                                    Follow NowPrEP On Social Media: 
+                                    <a href="https://www.facebook.com/NowPrEPTelehealth" class="li" target="_blank">Facebook</a> 
+                                    <a href="https://www.instagram.com/now_prep/" class="li" target="_blank">Instagram</a> 
+                                </div>
+                            </span>
+                        </div>
+                    </div>
+                </header>
+            </div>
+
+
+</main>
+
+<?php get_footer(); ?>

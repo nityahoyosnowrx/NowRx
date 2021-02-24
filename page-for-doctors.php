@@ -43,7 +43,7 @@
 
             <div class="rvls">
                     <span class="sub-headline">
-                        A Better Local Pharmacy for Your Office Staff
+                        A Better Local Pharmacy for doctors Staff
                     </span>
                 </div>
 
@@ -60,8 +60,12 @@
 
                 <div class="rvls">
                     <div class="btn-container">
-                        <a  class="rx-btn" data-toggle="for-doctors-learnmore" aria-controls="for-doctors-learnmore" aria-haspopup="true" tabindex="0">Learn More</a>
-                        <a class="rx-btn mrb" href="#howitworks-doctors">How it Works</a>
+                        <a  class="rx-btn" data-toggle="for-doctors-learnmore" aria-controls="for-doctors-learnmore" aria-haspopup="true" tabindex="0">
+                        <?php include('reg-arrow.php'); ?>
+                        Learn More</a>
+                        <a class="rx-btn rx-green mrb" href="#howitworks-doctors">
+                        <?php include('grn-arrow.php'); ?>
+                        How it Works</a>
                     </div>
                 </div>
 
@@ -80,8 +84,8 @@
                         srcset="<?php echo get_template_directory_uri(); ?>/images/For-Doctors.jpeg">
                     <source type="image/webp"
                         srcset="<?php echo get_template_directory_uri(); ?>/images/For-Doctors.webp">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/For-Doctors.webp"
-                        class="orbit-image " height="500px" width="650px" alt="Pharmacist Ready to Provide Medication"> 
+                    <img data-src="<?php echo get_template_directory_uri(); ?>/images/For-Doctors.webp"
+                        class="orbit-image lozad" height="500px" width="650px" alt="Pharmacist Ready to Provide Medication"> 
                 </picture>
 
 

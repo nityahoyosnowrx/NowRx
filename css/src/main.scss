@@ -115,6 +115,9 @@ header.main {
 		max-width: 158px;
 		position: relative;
 		display: block;
+		figure.sk {
+			margin: 0;
+		}
 	}
 
 	nav.top {
@@ -134,6 +137,7 @@ header.main {
 			background: #1f4f8b;
 			margin-top: 10px;
 			border-radius: 10px;
+			padding: 0;
 		}
 		&.active-menu {
 			visibility: visible;
@@ -156,32 +160,51 @@ header.main {
 		justify-content: center;
 		@media screen and (max-width: 992px) {
 			flex-direction: column;
-			padding: 30px 0;
+			padding: 20px 0 40px;
 		}
 	}
 
-	ul.nav a {
-		padding: 0.7rem;
-		color: #192d3e;
-		font-size: 1rem;
-		font-family: proxima-soft, sans-serif;
-		// border-radius: 5px;
-		display: block;
-		margin: 0;
-		border-bottom: 1px solid transparent;
-		padding-bottom: 8px;
-		cursor: pointer;
-
-		&:hover {
-			background: transparent;
-			border-bottom: 2px solid #048eda;
-			padding-bottom: 8px;
-			@media screen and (max-width: 992px) {
-				color: #1f4f8b;
+	ul.nav {
+		a {
+			padding: 0.8rem 0.8rem 0;
+			color: #192d3e;
+			font-size: 0.9rem;
+			// border-radius: 5px;
+			display: block;
+			margin: 0;
+			border-bottom: 1px solid transparent;
+			cursor: pointer;
+			position: relative;
+			font-family: $fontround;
+			transition: all 0.3s;
+			&:after {
+				content: close-quote;
+				position: absolute;
+				top: 100%;
+				left: 0;
+				right: 0;
+				background: #1f88ca;
+				height: 2px;
+				width: 0%;
+				transition: all 0.3s;
+				margin: 0 auto;
 			}
-		}
-		@media screen and (max-width: 992px) {
-			color: #fff;
+
+			&:hover:after {
+				width: 100%;
+			}
+
+			&:hover {
+				background: transparent;
+				// border-bottom: 2px solid #048eda;
+				// padding-bottom: 8px;
+				@media screen and (max-width: 992px) {
+					// color: #1f4f8b;
+				}
+			}
+			@media screen and (max-width: 992px) {
+				color: #fff;
+			}
 		}
 	}
 
@@ -197,14 +220,80 @@ header.main {
 		background-color: #008eda;
 		color: #fff;
 		padding: 15px 35px;
-		display: block;
-		box-shadow: 0 5px 10px -1px rgba(31, 136, 202, 0.34);
+		display: flex;
 		border: none;
+		background-color: transparent;
+		position: relative;
+		overflow: hidden;
 		border: 1px solid rgba(31, 136, 202, 0.75);
+		z-index: 123;
+		font-size: 12px;
 
+		@media screen and (max-width: 992px) {
+			margin: 20px 0 0;
+			padding: 15px 25px;
+			font-size: 11px;
+		}
+
+		&::before {
+			content: close-quote;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(31, 136, 202, 1);
+			background-image: linear-gradient(-180deg, hsla(0, 0%, 100%, 0.1), rgba(0, 0, 0, 0.1));
+			z-index: -1;
+			transition: all 0.6s cubic-bezier(0.83, 0, 0.17, 1);
+		}
+
+		&::after {
+			content: close-quote;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 0%;
+			height: 100%;
+			background-color: rgba($color: #fff, $alpha: 0.5);
+			background: linear-gradient(
+				90deg,
+				rgba(255, 255, 255, 0) 0%,
+				rgba(255, 255, 255, 0.5172443977591037) 20%,
+				rgba(255, 255, 255, 1) 50%,
+				rgba(255, 255, 255, 0.5144432773109244) 79%,
+				rgba(255, 255, 255, 0) 100%
+			);
+
+			background-image: linear-gradient(-180deg, hsla(0, 0%, 100%, 0.1), rgba(0, 0, 0, 0.1));
+			z-index: -1;
+			transition: all 0.6s cubic-bezier(0.83, 0, 0.17, 1);
+			transform: translateX(-100%);
+		}
+
+		&.active {
+			// color: #008ed8;
+			box-shadow: 0 5px 10px -1px rgba(31, 136, 202, 0.34);
+			border: 1px solid rgba(#33a532, 0.75);
+			&::after {
+				width: 150%;
+				transform: translateX(100%);
+			}
+			&::before {
+				background-color: #33a532;
+			}
+		}
 		&:hover {
-			color: #008ed8;
-			background: #fff;
+			// color: #008ed8;
+			box-shadow: 0 5px 10px -1px rgba(31, 136, 202, 0.34);
+			border: 1px solid rgba(#008eda, 0.75);
+			&::after {
+				width: 150%;
+				transform: translateX(100%);
+			}
+			&::before {
+				background-color: darken($color: #008eda, $amount: 20);
+			}
 		}
 	}
 }
@@ -220,7 +309,7 @@ h2 {
 ================================================== */
 .top-bar {
 	font-size: 1.125rem;
-	font-family: 'proxima-soft', sans-serif;
+	font-family: $fontround;
 	padding: 30px 20px;
 }
 .top-bar .main-nav-logo {
@@ -259,6 +348,33 @@ h2 {
 
 /* # Home Hero
 ================================================== */
+body.page-template.page-template-refill-and-transfer-prescriptions section.hero-home {
+	.content h1.hiw-title {
+		font-size: 2.1rem;
+		text-align: center;
+		@media screen and (max-width: 992px) {
+			font-size: 1.3rem;
+		}
+	}
+	.testimonial-block {
+		margin-top: -470px;
+		@media screen and (max-width: 992px) {
+			margin-top: -0;
+		}
+	}
+	.pageform iframe {
+		max-width: 100%;
+	}
+	.content span.sub-headline {
+		white-space: normal;
+		font-size: 13px;
+		text-align: center;
+		text-transform: initial;
+		@media screen and (max-width: 992px) {
+			font-size: 10px;
+		}
+	}
+}
 
 section.hero-home {
 	padding: 58px 0 0px;
@@ -267,6 +383,7 @@ section.hero-home {
 
 	@media screen and (max-width: 992px) {
 		padding: 80px 0 60px;
+		margin: 130px 0 0;
 	}
 
 	&.refillstation .content {
@@ -301,6 +418,10 @@ section.hero-home {
 		top: 0;
 		left: 0;
 
+		@media screen and (min-width: 992px) {
+			border-radius: 0 5px 5px 0;
+		}
+
 		@media screen and (max-width: 992px) {
 			margin: 0 0 30px;
 		}
@@ -318,24 +439,29 @@ section.hero-home {
 		}
 
 		span.sub-headline {
-			font-weight: 600;
+			font-weight: 900;
 			letter-spacing: 0px;
-			text-transform: uppercase;
 			color: #038ed8;
 			display: block;
 			margin: 0 0 10px;
-			font-family: proxima-soft, sans-serif;
 			white-space: nowrap;
+			text-transform: uppercase;
+			font-family: $fontround;
+			font-size: 1.1rem;
 			@media screen and (max-width: 992px) {
-				font-size: 14px;
+				font-size: 12px;
+				font-size: 3.2vw;
 			}
 		}
 
 		.column-half {
 			&.content-col {
 				width: 60%;
-
+				max-width: 52vw;
 				padding: 40px 80px 40px 0;
+				@media screen and (max-width: 992px) {
+					max-width: 100%;
+				}
 			}
 
 			&.image-col {
@@ -380,19 +506,21 @@ section.hero-home {
 		}
 		h1 {
 			margin: 0 0 20px;
-			font-size: 4.3rem;
-			letter-spacing: -1px;
+			font-size: 3.3rem;
+			// letter-spacing: -1px;
 			font-weight: 800;
-			line-height: 1em;
+			line-height: 1.15;
+			letter-spacing: -0.1rem;
+
 			&.hiw-title {
-				font-size: 4.1rem;
+				// font-size: 3.6rem;
 				@media screen and (max-width: 992px) {
-					font-size: 2.7rem;
+					font-size: 9vw;
 					margin: 0 0 20px;
 				}
 			}
 			@media screen and (max-width: 992px) {
-				font-size: 3rem;
+				font-size: 9.5vw;
 				margin: 0 0 20px;
 			}
 		}
@@ -434,6 +562,7 @@ section.hero-home {
 			transform: none;
 			max-width: 100%;
 			width: 100%;
+			display: none;
 		}
 	}
 
@@ -442,6 +571,9 @@ section.hero-home {
 		margin-left: auto;
 		margin-right: auto;
 		padding: 0 20px;
+		@media screen and (max-width: 992px) {
+			padding: 0 10px;
+		}
 	}
 }
 
@@ -489,6 +621,9 @@ section.how-it-works .hiw-cell {
 section.how-it-works.panel--primary.quatro {
 	.hiw-cell {
 		padding: 30px 20px 0;
+		@media screen and (max-width: 992px) {
+			padding: 30px 0 0;
+		}
 	}
 
 	h3.padding-bottom-3 {
@@ -502,15 +637,19 @@ section.how-it-works .pre-headline {
 }
 section.how-it-works .headline {
 	text-align: center;
-	font-size: 3.75rem;
+	font-size: 3.3rem;
 	letter-spacing: -1px;
 	font-weight: 800;
 	line-height: 4.4rem;
 }
 section.how-it-works h3 {
-	font-size: 1.375rem;
+	font-size: 1.275rem;
 	font-weight: 700;
 	position: relative;
+	@media screen and (max-width: 992px) {
+		text-align: center;
+		font-size: 1rem;
+	}
 }
 section.how-it-works .steps {
 	text-align: center;
@@ -530,7 +669,11 @@ section.how-it-works.panel--primary {
 	// border-radius: 80px 0;
 }
 section.how-it-works.panel--primary p {
-	font-size: 1.1875rem;
+	// font-size: 1.1875rem;
+	@media screen and (max-width: 992px) {
+		text-align: center;
+		font-size: 0.9rem;
+	}
 	a {
 		text-decoration: underline;
 	}
@@ -547,11 +690,16 @@ section.how-it-works.panel--primary.panel--cta--doctors {
 	background-size: 410px;
 }
 section.how-it-works.panel--primary .button {
-	background: #254e89;
+	background-color: #254e89;
 	margin: 10px 0 80px;
-	text-transform: uppercase;
+	// text-transform: uppercase;
 	font-size: 1rem;
-	padding: 20px 30px;
+	// padding: 20px 30px;
+	padding: 15px 30px;
+	min-width: 240px;
+	&:hover {
+		background-color: #33a532;
+	}
 	@media screen and (max-width: 992px) {
 		margin: 10px 0 90px;
 	}
@@ -562,7 +710,7 @@ section.how-it-works.panel--primary {
 		margin: 0 auto;
 	}
 	small {
-		font-weight: 600;
+		font-weight: 100;
 		line-height: 14px;
 		display: block;
 		font-size: 12px;
@@ -696,7 +844,7 @@ section.hero--sub-page h1 {
 	border-bottom: 1px solid #e5e5e5;
 }
 .footer h4 {
-	font-family: 'proxima-soft', sans-serif;
+	font-family: $fontround;
 	font-weight: 800;
 	color: #254e89;
 	font-size: 1rem;
@@ -1016,7 +1164,9 @@ label.hs-error-msg {
 	max-width: 220px;
 	max-height: 100px;
 	margin: 0 1.7%;
-
+	@media screen and (max-width: 1200px) {
+		margin: 10px 0;
+	}
 	@media screen and (max-width: 992px) {
 		margin: 10px 20px;
 	}
@@ -1070,7 +1220,7 @@ section.in-the-news h3 {
 }
 section.in-the-news {
 	text-align: center;
-	font-size: 3.75rem;
+	font-size: 3.3rem;
 	letter-spacing: -1px;
 	font-weight: 800;
 	line-height: 4.4rem;
@@ -1089,7 +1239,7 @@ section.in-the-news {
 
 .pre-headline,
 .button {
-	font-family: 'proxima-soft', sans-serif;
+	font-family: $fontround;
 }
 
 .pre-headline {
@@ -1134,6 +1284,9 @@ h3 {
 .h2,
 h2 {
 	font-size: 2rem;
+	@media screen and (max-width: 992px) {
+		font-size: 1.5rem;
+	}
 }
 .h1,
 h1 {
@@ -1144,7 +1297,7 @@ h1 {
 .about-us--team-member-title {
 	font-size: 1.125rem;
 	font-weight: 800;
-	font-family: 'proxima-soft', sans-serif;
+	font-family: $fontround;
 	color: #254e89;
 }
 
@@ -1161,7 +1314,7 @@ h1 {
 }
 
 .headline {
-	font-size: 4.5rem;
+	font-size: 3.3rem;
 	font-weight: 800;
 	line-height: 1em;
 	letter-spacing: -1px;
@@ -1258,16 +1411,16 @@ h1 {
 ================================================== */
 
 .single-post .single-title {
-	font-size: 54px;
+	font-size: 2.5rem;
 	margin-right: 30px;
 	font-weight: 700;
-	line-height: 1.1;
+	line-height: 1.2;
 	margin-top: 0;
 	width: 100%;
 	margin-bottom: 15px;
 	color: #000;
 	@media screen and (max-width: 992px) {
-		font-size: 35px;
+		font-size: 1.5rem;
 	}
 }
 
@@ -1340,6 +1493,10 @@ a.post-link-title {
 		.hiw-cell.hiw-cell {
 			max-width: 350px;
 			margin: 0 auto;
+			@media screen and (max-width: 992px) {
+				max-width: 100%;
+				padding: 20px 0;
+			}
 		}
 	}
 	section.how-it-works .steps {
@@ -1353,7 +1510,7 @@ a.post-link-title {
 		text-shadow: none;
 	}
 	h2 {
-		font-size: 2rem;
+		// font-size: 2rem;
 	}
 	.about-us--team-member-title {
 		font-size: 1rem;
@@ -1386,17 +1543,15 @@ a.post-link-title {
 	.pre-headline {
 		letter-spacing: 0 !important;
 		text-align: center;
-		font-size: 1rem !important;
+		// font-size: 1rem !important;
 	}
 	.headline {
 		font-size: 3rem;
 	}
 	section.how-it-works .headline {
 		letter-spacing: 0;
-		line-height: 3rem;
-		font-size: 3rem;
 		line-height: 2rem;
-		font-size: 2rem;
+		font-size: 1.7rem;
 	}
 	br {
 	}
@@ -1448,19 +1603,18 @@ section.faq-section {
 		margin: 0 0 10px;
 		color: #038ed8;
 		font-weight: 600;
-		font-family: proxima-soft, sans-serif;
 		margin-bottom: 20px;
 	}
 
 	h2.sec-title {
 		text-align: center;
-		font-size: 3.75rem;
+		font-size: 3.45rem;
 		letter-spacing: -1px;
 		font-weight: 800;
 		line-height: 4.4rem;
 		@media screen and (max-width: 992px) {
 			line-height: 3rem;
-			font-size: 3rem;
+			font-size: 2.2rem;
 		}
 	}
 
@@ -1494,9 +1648,12 @@ section.faq-section {
 		font-weight: bold;
 		display: block;
 		width: 48px;
-		font-size: 2.5rem;
+		font-size: 2.2rem;
 		font-weight: 100;
 		padding: 10px 0 0;
+		@media screen and (max-width: 992px) {
+			font-size: 1.9rem;
+		}
 	}
 
 	.container {
@@ -1516,10 +1673,8 @@ section.faq-section {
 	}
 
 	.block .q-item span.cntx {
-		font-family: proxima-soft, sans-serif;
-		font-size: 18px;
-		font-size: 20px;
-		line-height: 22px;
+		font-size: 1.3rem;
+		line-height: 1.3;
 		font-weight: 700;
 		padding: 10px 20px;
 	}
@@ -1605,7 +1760,7 @@ section.visit-faq {
 
 	h2.sec-title {
 		text-align: center;
-		font-size: 3.75rem;
+		font-size: 3.3rem;
 		letter-spacing: -1px;
 		font-weight: 800;
 		line-height: 4.4rem;
@@ -1613,8 +1768,8 @@ section.visit-faq {
 		margin: 0 0;
 
 		@media screen and (max-width: 992px) {
-			line-height: 3rem;
-			font-size: 3rem;
+			line-height: 2.3rem;
+			font-size: 2rem;
 		}
 	}
 
@@ -1624,9 +1779,9 @@ section.visit-faq {
 		margin: 0 0 10px;
 		color: #fff;
 		font-weight: 600;
-		font-family: proxima-soft, sans-serif;
 		@media screen and (max-width: 992px) {
-			font-size: 14px;
+			font-size: 11px;
+			font-size: 9px;
 		}
 	}
 
@@ -1634,7 +1789,6 @@ section.visit-faq {
 		font-size: 12px;
 		color: #fff;
 		margin: 60px 0 0;
-		font-weight: 600;
 		letter-spacing: -1px;
 	}
 
@@ -1684,12 +1838,16 @@ section.faq-blocks {
 			color: $m;
 			display: flex;
 
-			font-size: 26px;
+			font-size: 24px;
 			line-height: 28px;
 			font-weight: 600;
 			margin: 0;
 			font-weight: 600;
 			margin: 0;
+
+			@media screen and (max-width: 992px) {
+				font-size: 20px;
+			}
 
 			span.chevron-arrow {
 				margin-left: auto;
@@ -1733,13 +1891,12 @@ section.faq-blocks {
 	}
 
 	span.sub-headline {
-		font-weight: 600;
+		font-weight: bold;
 		letter-spacing: 0;
 		text-transform: uppercase;
 		color: #038ed8;
 		display: block;
 		margin: 0 0 10px;
-		font-family: proxima-soft, sans-serif;
 		text-align: center;
 		@media screen and (max-width: 992px) {
 			font-size: 14px;
@@ -1748,13 +1905,13 @@ section.faq-blocks {
 
 	.topcontent.content h2.sec-title {
 		margin: 0 0 20px;
-		font-size: 4.3rem;
+		font-size: 3.3rem;
 		letter-spacing: -1px;
 		font-weight: 800;
 		line-height: 1em;
 		text-align: center;
 		@media screen and (max-width: 992px) {
-			font-size: 2.7rem;
+			font-size: 2.3rem;
 		}
 	}
 
@@ -1866,10 +2023,17 @@ section.faq-blocks {
 		display: block;
 		font-size: 2.5rem;
 		line-height: 2rem;
+		@media screen and (max-width: 992px) {
+			font-size: 2rem;
+		}
 	}
 
 	.faq-blocks .item-block span.cntx {
 		width: 100%;
+		@media screen and (max-width: 992px) {
+			font-size: 1rem;
+			line-height: 1.4rem;
+		}
 	}
 	span.title:hover {
 		background: #eee;
@@ -1879,10 +2043,15 @@ section.faq-blocks {
 		display: flex;
 		cursor: pointer;
 		color: $m;
-		font-family: proxima-soft, sans-serif;
 		font-size: 22px;
 		line-height: 26px;
 		font-weight: 700;
+		font-size: 1.1rem;
+    line-height: 26px;
+
+		@media screen and (max-width: 992px) {
+			font-size: 1.3rem;
+		}
 
 		span.question-svg {
 			margin-left: auto;
@@ -1982,7 +2151,6 @@ section.faq-blocks {
 	}
 
 	.q-item span.cntx {
-		font-family: proxima-soft, sans-serif;
 		font-size: 24px;
 		line-height: 28px;
 		font-weight: 700;
@@ -2018,23 +2186,21 @@ section.locations-item {
 		text-align: center;
 		text-transform: uppercase;
 		margin: 0 0 10px;
-		font-weight: 600;
-		font-family: proxima-soft, sans-serif;
+		font-weight: bold;
 		color: #038ed8;
 		display: block;
 	}
 
 	h2.sec-title {
 		text-align: center;
-		font-size: 3.75rem;
+		font-size: 3.3rem;
 		letter-spacing: -1px;
 		font-weight: 800;
 		line-height: 4.4rem;
 		margin: 0 0 30px;
 		@media screen and (max-width: 992px) {
 			text-align: center;
-			font-size: 2.75rem;
-			letter-spacing: -1px;
+			font-size: 2.3rem;
 			font-weight: 800;
 			line-height: 3.4rem;
 			margin: 0 0 30px;
@@ -2063,10 +2229,10 @@ section.locations-item {
 		text-align: center;
 		transition: all 0.3s;
 		display: flex;
-    flex-direction: column;
-    align-items: center;
-	justify-content: flex-end;
-	padding: 30px 0;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-end;
+		padding: 30px 0;
 		&.signup {
 			display: flex;
 			justify-content: center;
@@ -2083,12 +2249,15 @@ section.locations-item {
 		h2.sec-title {
 			text-align: left;
 
-			font-size: 2.4rem;
+			font-size: 1.8rem;
 			line-height: 2.7rem;
-		
+
 			margin: 0 0 15px;
 			font-weight: 600;
 			text-align: center;
+			@media screen and (max-width: 992px) {
+				font-size: 1.8rem;
+			}
 			&.disclaimer {
 				color: #444;
 				font-size: 18px;
@@ -2151,6 +2320,8 @@ body.page-template.page-template-page-get-started {
 	h2.get-started-form-sub.text-center {
 		margin-bottom: 2rem;
 		font-size: 1.25rem;
+		font-weight: 500;
+		line-height: 1.5;
 	}
 	h1.h1-box.text-center {
 		line-height: 1em;
@@ -2729,4 +2900,69 @@ body.page-template.page-template-page-get-started {
 	float: left;
 	height: 100%;
 	min-height: 1px;
+}
+
+section.faq-blocks.prep {
+	position: relative;
+	padding: 60px 0 60px;
+	min-height: 100vh;
+	.topcontent.content {
+		justify-content: flex-end;
+		width: 100%;
+		align-items: center;
+		@media screen and (min-width: 992px) {
+			margin-left: 5%;
+
+			max-width: 50%;
+			align-items: flex-start;
+		}
+		h2.sec-title {
+			@media screen and (min-width: 992px) {
+				text-align: left;
+			}
+		}
+		span.sub-headline {
+			text-align: center;
+			@media screen and (min-width: 992px) {
+				text-align: left;
+			}
+		}
+	}
+	.faq-image {
+		position: absolute;
+		right: 0;
+		top: 0;
+		z-index: -1;
+		width: 100%;
+		display: flex;
+		justify-content: flex-end;
+		align-items: flex-start;
+		min-height: 100vh;
+		@media screen and (max-width: 992px) {
+			position: relative;
+			
+			display: none;
+		}
+	}
+
+	.faq-image img.pic {
+		object-fit: cover;
+		// object-position: 10vw;
+		min-height: 100vh;
+		
+	}
+
+	.faq-image:after {
+		content: close-quote;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: -webkit-gradient(linear, right top, left top, from(hsla(0, 0%, 100%, 0)), color-stop(50%, #fff));
+		background: linear-gradient(-90deg, hsla(0, 0%, 100%, 0), #ffffff 50%);
+		@media screen and (max-width: 992px) {
+			display: none;
+		}
+	}
 }

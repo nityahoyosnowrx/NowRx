@@ -13,6 +13,8 @@ observer.observe();
 $(document).ready(function() {
   let fixmeTop = $('.calltoaction').offset().top; // get initial position of the element
 
+
+
   $(window).scroll(function() {
     // assign scroll event listener
 
@@ -25,22 +27,28 @@ $(document).ready(function() {
       // apply position: static
       $('.calltoaction').removeClass('fixed');
     }
+
   });
 });
 
 // scroll fix
 // ----------------------------------------------------------------------------------------------------
-$(window).scroll(function() {
-  var scroll = $(window).scrollTop();
+$(document).ready(function() {
+  $(window).scroll(function() {
+    var scroll = $(window).scrollTop();
 
-  //>=, not <=
-  if (scroll >= 10) {
+    //>=, not <=
+    if (scroll >= 10) {
+      $('.main').addClass('fixedmain');
+    } else {
+      $('.main').removeClass('fixedmain');
+    }
+    
+  });
+  if ($(window).scrollTop() >= 100) {
     $('.main').addClass('fixedmain');
-  } else {
-    $('.main').removeClass('fixedmain');
   }
 });
-
 // menuclick
 // ----------------------------------------------------------------------------------------------------
 
@@ -67,8 +75,8 @@ $('a[href*="#"]').on('click', function(e) {
 // ----------------------------------------------------------------------------------------------------
 $(document).ready(function() {
   // reveal if object is already in view port
-  if ($('.rvl').length) {
-    $('.rvl').each(function(i) {
+  if ($('.rvl,.reganim,.imgslide').length) {
+    $('.rvl,.reganim,.imgslide').each(function(i) {
       var top_of_object = $(this).offset().top;
       var bottom_of_window = $(window).scrollTop() + $(window).height();
 
@@ -78,7 +86,7 @@ $(document).ready(function() {
       } else {
         // reveal object reaches the in view port
         $(window).scroll(function() {
-          $('.rvl').each(function(i) {
+          $('.rvl,.reganim,.imgslide').each(function(i) {
             var top_of_object = $(this).offset().top;
             var bottom_of_window = $(window).scrollTop() + $(window).height();
 
@@ -92,6 +100,7 @@ $(document).ready(function() {
       }
     });
   }
+
 });
 
 // modals
@@ -265,3 +274,83 @@ $(document).ready(function() {
 
   // ready
 });
+
+
+
+import anime from 'animejs/lib/anime.es.js';
+
+anime.timeline({loop: 0,direction:'normal'})
+  .add({
+    targets: '.ml5 .line',
+    opacity: [0.5,1],
+    scaleX: [0, 1],
+    easing: "easeInOutExpo",
+    duration: 700
+  }).add({
+    targets: '.ml5 .line',
+    duration: 600,
+    easing: "easeOutExpo",
+    translateY: (el, i) => (-0.625 + 0.625*2*i) + "em"
+  }).add({
+    targets: '.ml5 .ampersand',
+    opacity: [0,1],
+    scaleY: [0.5, 1],
+    easing: "easeOutExpo",
+    duration: 600,
+    offset: '-=600'
+  }).add({
+    targets: '.ml5 .letters-left',
+    opacity: [0,1],
+    translateX: ["0.5em", 0],
+    easing: "easeOutExpo",
+    duration: 600,
+    offset: '-=300'
+  }).add({
+    targets: '.ml5 .letters-right',
+    opacity: [0,1],
+    translateX: ["-0.5em", 0],
+    easing: "easeOutExpo",
+    duration: 600,
+    offset: '-=600'
+  });
+
+
+  // Wrap every letter in a span
+// var textWrapper = document.querySelector('.ml3');
+// textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+// anime.timeline({loop: false})
+//   .add({
+//     targets: '.ml3 .letter',
+//     opacity: [0,1],
+//     easing: "easeInOutQuad",
+//     duration: 111,
+//     delay: (el, i) => 150 * (i+1)
+//   });
+
+
+  $(document).ready(function() {
+    $('.has-animation').each(function(index) {
+      $(this).delay($(this).data('delay')).queue(function(){
+        $(this).addClass('animate-in');
+      });
+    });
+  });
+
+
+  $(document).ready(function() {
+
+
+    setInterval(() => {
+      
+        setTimeout(() => {
+          $('a.button.secondary.rounded.shadow').addClass('active');
+        }, 0);
+
+        setTimeout(() => {
+          $('a.button.secondary.rounded.shadow').removeClass('active');
+        }, 600);
+        
+    }, 4000);
+
+  });

@@ -1,36 +1,64 @@
-<?php if (!is_front_page()) : ?>
+<?php if ( !is_front_page() ): 
+    
+    ?>
 
 
 
-<div class="reveal" id="waitlist" data-reveal data-close-on-click="true" data-animation-in="slide-in-down"
-    data-animation-out="slide-out-up" style="padding: 60px;">
 
-    <h3 class="text-center">
-        Join the Waitlist
-    </h3>
-    <div class="subheading">
-        <p class="center">
-            Fill out the form below and NowRx will contact you when the NowPrEP telehealth platform is live!
-        </p>
+<div class="reveal twentyone" id="waitlist" data-reveal data-close-on-click="true" data-animation-in="slide-in-down"
+    data-animation-out="slide-out-up">
+
+    <div class="imagblock">
+        <img data-src="<?php echo get_template_directory_uri(); ?>/images/doctorwithclipboard.jpeg"
+            alt="prescription-transfer-or-refill" class="pic lozad">
     </div>
-    <!--[if lte IE 8]>
-<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
-<![endif]-->
-    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-    <script>
-    hbspt.forms.create({
-        portalId: "5952677",
-        formId: "6aad96c0-e50f-4ced-9300-703e26e917cf"
-    });
-    </script>
 
+    <div class="content">
+        <h2 class="title">Join the NowPrEP Waitlist</h2>
+        <div class="description">
+            <p class="marginzero">
+                <span class="ick">
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check-circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-check-circle fa-w-16 fa-2x"><path fill="currentColor" d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z" class=""></path></svg>
+                </span>
+            Opportunity to be a beta tester for NowPrEP & receive FREE PrEP.
+            </p>
+            <p class="marginzero">
+            <span class="ick">
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check-circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-check-circle fa-w-16 fa-2x"><path fill="currentColor" d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z" class=""></path></svg>
+                </span>
+            Get early & exclusive access to NowPrEP updates and promotions.
+            </p>
+            <p class="marginzero">
+            <span class="ick">
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check-circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-check-circle fa-w-16 fa-2x"><path fill="currentColor" d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z" class=""></path></svg>
+                </span>
+            Get a $20 Visa Gift Card with your first PrEP Prescription Delivery.
+            </p>
+        </div>
+        <div class="form-content">
 
+            <!--[if lte IE 8]>
+            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+            <![endif]-->
+            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+            <script>
+            hbspt.forms.create({
+                portalId: "5952677",
+                formId: "6aad96c0-e50f-4ced-9300-703e26e917cf"
+            });
+            </script>
+        </div>
+        <p class=""><small>*Some restrictions may apply.</small></p>
 
+    </div>
 
     <button class="close-button text-center" data-close aria-label="Close reveal" type="button">
         <span aria-hidden="true">&times;</span>
     </button>
 </div>
+
+
+
 
 
 
@@ -315,7 +343,6 @@
         <span aria-hidden="true">&times;</span>
     </button>
 </div>
-
 
 
 

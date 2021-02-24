@@ -68,13 +68,20 @@
                                         <?php endif; ?>
                                     </div>
                                    <div class="cnt">
-                                   <h2><?php echo wp_trim_words(get_the_title(), 8, '...'); ?></h2>
-                                    <div class="data">by <?php echo get_the_author_meta('nickname', $author_id); ?>,
-                                        <?php echo get_the_date('D, M n Y - h:i a'); ?></div>
+                                   <h2><?php 
+                                   
+                                   echo mb_strimwidth(get_the_title(), 0, 70, '...');
+
+                                //    echo wp_trim_words(get_the_title(), 8, '...'); 
+                                   ?></h2>
+                                    <div class="data">
+                                        <?php echo get_the_date('F j Y - h:i a'); ?></div>
                                     <div class="content">
                                         <?php 
                                         // echo wp_trim_words(get_the_content(), 50, '...');  
-                                        echo get_the_excerpt();
+                                        // echo get_the_excerpt();
+                                        echo get_post_meta(get_the_ID(), '_yoast_wpseo_metadesc', true); 
+
                                         ?>
                                         <div class="wd">
                                             <a href="<?php the_permalink(); ?>" class="readmore">Read More</a>

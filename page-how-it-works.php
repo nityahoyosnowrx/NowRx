@@ -62,8 +62,12 @@
 
                 <div class="rvls">
                     <div class="btn-container">
-                        <a class="rx-btn" href="<?= get_site_url(); ?>/get-started/">Get Started</a>
-                        <a class="rx-btn mrb" href="#howitwork">How it Works</a>
+                        <a class="rx-btn" href="<?= get_site_url(); ?>/get-started/">
+                        <?php include('reg-arrow.php'); ?>
+                            Get Started</a>
+                        <a class="rx-btn rx-green mrb" href="#howitwork">
+                            <?php include('grn-arrow.php'); ?>
+                            How it Works</a>
                     </div>
                 </div>
 
@@ -81,8 +85,8 @@
                  
                     <source type="image/jpeg"
                         srcset="<?php echo get_template_directory_uri(); ?>/images/car.webp">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/car.webp"
-                        class="orbit-image" height="500px" width="650px" alt="NowRx Pharmacy Car Delivering Medication">
+                    <img data-src="<?php echo get_template_directory_uri(); ?>/images/car.webp"
+                        class="orbit-image lozad" height="500px" width="650px" alt="NowRx Pharmacy Car Delivering Medication">
                 </picture>
             </div>
 
@@ -539,7 +543,6 @@
         </div>
     </div>
 </section>
-
 <!-- visit faq -->
 <section class="visit-faq">
     <div class="container">
@@ -557,13 +560,13 @@
             <div class="rvl">
                 <div class="btn-container">
                     <a href="<?= get_site_url(); ?>/get-started/" class="rx-btn rx-dg">
-                        Gets Started
+                        Get Started
                     </a>
                 </div>
             </div>
             <div class="rvl">
                 <div class="small-block">
-                    Still have questions about how to get started with NowRx Pharmacy? Email us at <a href="" class="alink">info@nowrx.com</a> and we will be happy to help.
+                    Still have questions about how to get started with NowRx Pharmacy? Email us at <a href="mailto:info@nowrx.com" class="alink">info@nowrx.com</a> and we will be happy to help.
                 </div>
             </div>
         </div>

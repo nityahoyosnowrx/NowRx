@@ -190,7 +190,7 @@
             <source srcset="<?php echo $image[0]; ?>" media="(min-width: 1340px)">
             <source srcset="<?php echo $image[0]; ?>" media="(min-width: 1020px)">
             <source srcset="<?php echo $image[0]; ?>" media="(min-width: 760px)">
-            <img src="<?php echo $image[0]; ?>" alt="<?php echo get_post_meta( get_post_thumbnail_id(), '_wp_attachment_image_alt', true ); ?>" class="" itemprop="image">
+            <img data-src="<?php echo $image[0]; ?>" alt="<?php echo get_post_meta( get_post_thumbnail_id(), '_wp_attachment_image_alt', true ); ?>" class="lozad" itemprop="image">
           </picture>
 
           <figcaption>
