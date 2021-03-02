@@ -170,7 +170,7 @@
 
 
 
-<section class="split-bubbles">
+<section class="split-bubbles" >
     <div class="container">
         <div class="content">
             <div class="rvl">
@@ -229,7 +229,7 @@
 
 
 <!-- visit faq -->
-<section class="visit-faq nwprepviti">
+<section class="visit-faq nwprepviti" >
     <div class="container">
         <div class="content">
             <div class="rvl">
@@ -264,7 +264,7 @@
 
 
 
-<section class="faq-blocks prep" id="faqblock">
+<section class="faq-blocks prep"  id="faq">
     <div class="container">
         <div class="topcontent content">
                 <span class="sub-headline">

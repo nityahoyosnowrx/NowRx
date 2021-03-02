@@ -157,7 +157,7 @@ if ( has_post_format( 'quote' )) {
 									<?php echo wp_trim_words(get_the_title(), 7, '...'); ?>
 
 										<span class="dateitem">
-											<?php echo get_the_date( 'D, M n Y - h:i a' ); ?>
+											<?php echo get_the_date('F Y - h:i a');  ?>
 										</span>
 									</a>
 								</h5>

@@ -20,7 +20,7 @@ $(document).ready(function() {
 
     let currentScroll = $(window).scrollTop(); // get current position
 
-    if (currentScroll >= fixmeTop) {
+    if (currentScroll >= 1) {
       // apply position: fixed if you
       $('.calltoaction').addClass('fixed');
     } else {
@@ -38,14 +38,14 @@ $(document).ready(function() {
     var scroll = $(window).scrollTop();
 
     //>=, not <=
-    if (scroll >= 10) {
+    if (scroll >= 1) {
       $('.main').addClass('fixedmain');
     } else {
       $('.main').removeClass('fixedmain');
     }
     
   });
-  if ($(window).scrollTop() >= 100) {
+  if ($(window).scrollTop() >= 1) {
     $('.main').addClass('fixedmain');
   }
 });

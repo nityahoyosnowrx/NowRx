@@ -68,7 +68,8 @@ module.exports = {
     }),
     new BrowserSyncPlugin({
       files: '**/*.php',
-      proxy: 'http://localhost:8888/dev'
+      proxy: 'http://localhost:8888/dev',
+      
     })
   ],
   optimization: {

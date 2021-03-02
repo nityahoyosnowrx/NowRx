@@ -98,7 +98,7 @@
             <div class="form-item">
 <div class="containerform">
     <h2 class="sec-title">Get in Touch</h2>
-    <p>For medication refills, transfers, or new prescriptions please use our online transfer form at <a href="https://nowrx.com/get-started/">nowrx.com/get-started</a></p>
+    <p>For medication refills, transfers, or new prescriptions please use our online transfer form at <a href="https://nowrx.com/refill-and-transfer-prescriptions/">nowrx.com/get-started</a></p>
     <!--[if lte IE 8]>
 <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
 <![endif]-->

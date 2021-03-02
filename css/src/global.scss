@@ -109,6 +109,11 @@ a.ArticleHeader-eyebrow {
 		width: 100%;
 		white-space: normal;
 		font-size: 12px;
+		margin-bottom: 17px;
+
+		@media screen and (max-width: 992px) {
+			font-size: 2.5vw;
+		}
 	}
 }
 
@@ -263,6 +268,7 @@ a.ArticleHeader-eyebrow {
 
 	@media screen and (max-width: 992px) {
 		max-width: 100%;
+		padding: 10px 10px;
 	}
 }
 
@@ -294,6 +300,7 @@ li.MostPopular-addIndex {
 	@media screen and (max-width: 700px) {
 		max-width: 100%;
 		padding: 0 20px 20px;
+		padding: 0 0px 0px;
 	}
 }
 
@@ -320,10 +327,18 @@ li.MostPopular-addIndex a.MostPopular-link {
 		line-height: 30px;
 		font-size: 26px;
 		margin: 20px 0 0;
+
+		width: 100%;
+		font-size: 1.5rem;
+		margin: 20px 0 0;
+		line-height: 2rem;
+		padding: 0;
+		font-size: 4vw;
+		line-height: 5vw;
 	}
 }
-a.MostPopular-link.title {
-	padding-left: 20px;
+li.MostPopular-addIndex a.MostPopular-link.title {
+	padding: 0 20px;
 }
 
 li.MostPopular-addIndex a.MostPopular-link {
@@ -373,6 +388,7 @@ li.MostPopular-addIndex a.MostPopular-link {
 	width: 100%;
 	@media screen and (max-width: 992px) {
 		text-align: center;
+		padding-top: 20px;
 	}
 }
 
@@ -389,6 +405,10 @@ section#blog {
 	margin: 60px 0 0;
 	@media screen and (max-width: 992px) {
 		margin: 0 0;
+		.grid-padding-x > .cell {
+			padding: 0;
+			flex-direction: column;
+		}
 	}
 }
 
@@ -431,8 +451,17 @@ section.in-the-news.padded-section {
 			padding: 0;
 		}
 	}
-	.h2, h2 {
-		font-size: 2rem;
+	.h2,
+	h2 {
+		font-size: 3rem;
+		line-height: 4rem;
+		@media screen and (max-width: 992px) {
+			font-size: 8.8vw;
+			line-height: 11vw;
+		}
+	}
+	> .grid-container {
+		padding: 0;
 	}
 }
 
@@ -462,12 +491,12 @@ section.in-the-news.padded-section {
 }
 
 .morefrom h5 a {
-	font-size: 16px;
-	line-height: 22px;
+	font-size: 13px;
+	line-height: 17px;
 	display: block;
 	@media screen and (max-width: 992px) {
-		font-size: 14px;
-		line-height: 20px;
+		font-size: 4vw;
+		line-height: 5vw;
 	}
 }
 
@@ -476,6 +505,7 @@ section.in-the-news.padded-section {
 	padding-left: 20px;
 	margin: 0;
 	display: flex;
+	text-align: left;
 	align-items: flex-start;
 	@media screen and (max-width: 992px) {
 		width: 100%;
@@ -485,7 +515,7 @@ section.in-the-news.padded-section {
 
 span.dateitem {
 	display: block;
-	font-size: 12px;
+	font-size: 10px;
 	line-height: 16px;
 	margin: 10px 0 0;
 	color: #a5a5a5;
@@ -552,7 +582,7 @@ header.page {
 		margin-bottom: 15px;
 		color: #000;
 		@media screen and (max-width: 992px) {
-			font-size: 28px;
+			font-size: 7.5vw;
 		}
 	}
 }
@@ -594,6 +624,7 @@ header.page {
 			padding-bottom: 0px;
 		}
 	}
+
 	article.section {
 		&.firsttwo {
 			width: 100%;
@@ -601,7 +632,7 @@ header.page {
 				font-size: 16px;
 				margin: 0 0 5px;
 				@media screen and (max-width: 992px) {
-					font-size: 24px;
+					font-size: 4vw;
 				}
 			}
 
@@ -621,6 +652,9 @@ header.page {
 			line-height: 1.4;
 			font-weight: 900;
 			letter-spacing: -1px;
+			@media screen and (max-width: 992px) {
+				font-size: 4vw;
+			}
 		}
 	}
 	.data {
@@ -720,18 +754,21 @@ header.page {
 		padding-bottom: 60px;
 		@media screen and (max-width: 992px) {
 			width: 100%;
-			padding: 30px 10px;
+			padding: 30px 0px;
 		}
 		.cnt {
 			box-shadow: 0 30px 60px #0000000d;
 			border-radius: 30px;
 			padding: 30px 30px;
 			background: #fff9;
+			@media screen and (max-width: 992px) {
+				padding: 20px 20px;
+			}
 		}
 		h2 {
 			font-size: 2rem;
 			@media screen and (max-width: 992px) {
-				font-size: 1.1rem;
+				font-size: 5vw;
 			}
 		}
 		.image {
@@ -849,8 +886,8 @@ section.testimonials-block {
 		margin: 0;
 		line-height: 4.4rem;
 		@media screen and (max-width: 992px) {
-			font-size: 2.15rem;
-			line-height: 2.9rem;
+			line-height: 11vw;
+			font-size: 10vw;
 		}
 	}
 
@@ -1085,7 +1122,7 @@ section.split-image {
 		font-weight: 800;
 		line-height: 4.4rem;
 		@media screen and (max-width: 992px) {
-			font-size: 2.95rem;
+			font-size: 2.75rem;
 			line-height: 2.9rem;
 		}
 	}
@@ -1096,6 +1133,11 @@ section.split-image {
 		font-weight: bold;
 
 		margin: 0 0 20px;
+		@media screen and (max-width: 992px) {
+			font-size: 3.1vw;
+			margin: 0 0 20px;
+			display: block;
+		}
 	}
 
 	h3.title {
@@ -1105,6 +1147,9 @@ section.split-image {
 		font-weight: 700;
 		padding: 10px 0px 0;
 		color: #0388cd;
+		@media screen and (max-width: 992px) {
+			padding: 30px 0 0;
+		}
 	}
 
 	p {
@@ -1731,8 +1776,8 @@ main#main {
 			font-size: 4.5rem;
 			line-height: 4.5rem;
 			@media screen and (max-width: 992px) {
-				font-size: 2.2rem;
-				line-height: 2.6rem;
+				font-size: 11.5vw;
+				line-height: 12.5vw;
 			}
 		}
 		p {
@@ -3039,7 +3084,7 @@ div#for-doctors-learnmore h2.title {
 			width: 20px;
 		}
 	}
-	
+
 	p.marginzero {
 		display: flex;
 		color: #008ed8;
@@ -3051,7 +3096,7 @@ div#for-doctors-learnmore h2.title {
 		text-align: left;
 		width: 100%;
 	}
-	
+
 	.description {
 		margin: 10px 0;
 		// width: 100%;
