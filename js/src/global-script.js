@@ -3,17 +3,27 @@ import jquery, { ready } from 'jquery';
 window.jQuery = jquery;
 window.$ = jquery;
 
+import 'slick-carousel';
+
 import lozad from 'lozad';
 
 const observer = lozad(); // lazy loads elements with default selector as '.lozad'
 observer.observe();
 
+jQuery(document).ready(function() {
+  if (jQuery('.orbit-container').length) {
+    jQuery('.orbit-container').slick({
+      autoplay: true,
+      autoplaySpeed: 3000,
+      fade: true
+    });
+  }
+});
+
 // mobilebar
 // ----------------------------------------------------------------------------------------------------
 $(document).ready(function() {
   let fixmeTop = $('.calltoaction').offset().top; // get initial position of the element
-
-
 
   $(window).scroll(function() {
     // assign scroll event listener
@@ -27,7 +37,6 @@ $(document).ready(function() {
       // apply position: static
       $('.calltoaction').removeClass('fixed');
     }
-
   });
 });
 
@@ -43,7 +52,6 @@ $(document).ready(function() {
     } else {
       $('.main').removeClass('fixedmain');
     }
-    
   });
   if ($(window).scrollTop() >= 1) {
     $('.main').addClass('fixedmain');
@@ -100,7 +108,6 @@ $(document).ready(function() {
       }
     });
   }
-
 });
 
 // modals
@@ -275,47 +282,49 @@ $(document).ready(function() {
   // ready
 });
 
-
-
 import anime from 'animejs/lib/anime.es.js';
 
-anime.timeline({loop: 0,direction:'normal'})
+anime
+  .timeline({ loop: 0, direction: 'normal' })
   .add({
     targets: '.ml5 .line',
-    opacity: [0.5,1],
+    opacity: [0.5, 1],
     scaleX: [0, 1],
-    easing: "easeInOutExpo",
+    easing: 'easeInOutExpo',
     duration: 700
-  }).add({
+  })
+  .add({
     targets: '.ml5 .line',
     duration: 600,
-    easing: "easeOutExpo",
-    translateY: (el, i) => (-0.625 + 0.625*2*i) + "em"
-  }).add({
+    easing: 'easeOutExpo',
+    translateY: (el, i) => -0.625 + 0.625 * 2 * i + 'em'
+  })
+  .add({
     targets: '.ml5 .ampersand',
-    opacity: [0,1],
+    opacity: [0, 1],
     scaleY: [0.5, 1],
-    easing: "easeOutExpo",
+    easing: 'easeOutExpo',
     duration: 600,
     offset: '-=600'
-  }).add({
+  })
+  .add({
     targets: '.ml5 .letters-left',
-    opacity: [0,1],
-    translateX: ["0.5em", 0],
-    easing: "easeOutExpo",
+    opacity: [0, 1],
+    translateX: ['0.5em', 0],
+    easing: 'easeOutExpo',
     duration: 600,
     offset: '-=300'
-  }).add({
+  })
+  .add({
     targets: '.ml5 .letters-right',
-    opacity: [0,1],
-    translateX: ["-0.5em", 0],
-    easing: "easeOutExpo",
+    opacity: [0, 1],
+    translateX: ['-0.5em', 0],
+    easing: 'easeOutExpo',
     duration: 600,
     offset: '-=600'
   });
 
-
-  // Wrap every letter in a span
+// Wrap every letter in a span
 // var textWrapper = document.querySelector('.ml3');
 // textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
@@ -328,29 +337,24 @@ anime.timeline({loop: 0,direction:'normal'})
 //     delay: (el, i) => 150 * (i+1)
 //   });
 
-
-  $(document).ready(function() {
-    $('.has-animation').each(function(index) {
-      $(this).delay($(this).data('delay')).queue(function(){
+$(document).ready(function() {
+  $('.has-animation').each(function(index) {
+    $(this)
+      .delay($(this).data('delay'))
+      .queue(function() {
         $(this).addClass('animate-in');
       });
-    });
   });
+});
 
+$(document).ready(function() {
+  setInterval(() => {
+    setTimeout(() => {
+      $('a.button.secondary.rounded.shadow').addClass('active');
+    }, 0);
 
-  $(document).ready(function() {
-
-
-    setInterval(() => {
-      
-        setTimeout(() => {
-          $('a.button.secondary.rounded.shadow').addClass('active');
-        }, 0);
-
-        setTimeout(() => {
-          $('a.button.secondary.rounded.shadow').removeClass('active');
-        }, 600);
-        
-    }, 4000);
-
-  });
+    setTimeout(() => {
+      $('a.button.secondary.rounded.shadow').removeClass('active');
+    }, 600);
+  }, 4000);
+});

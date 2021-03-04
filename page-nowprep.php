@@ -63,7 +63,7 @@
                     <div class="btn-container">
                         <!-- <a class="rx-btn" href="<?= get_site_url(); ?>/get-started/">Join Watilist</a> -->
                         <a class="rx-btn " data-toggle="waitlist" aria-controls="waitlist"
-                            aria-haspopup="true" tabindex="0"> <?php include('reg-arrow.php'); ?> Join Waitlist</a>
+                            aria-haspopup="true" tabindex="0"> <?php include('reg-arrow.php'); ?> Get Started</a>
                         <a class="rx-btn rx-green mrb" href="#howitwork"> <?php include('grn-arrow.php'); ?> How It Works</a>
                     </div>
                 </div>
@@ -239,7 +239,7 @@
             </div>
             <div class="rvl">
                 <h2 class="sec-title">
-                Join the NowPrep Waitlist Below
+                Get Started With NowPrEP
 
                 </h2>
                  
@@ -248,15 +248,10 @@
                 <div class="btn-container">
 
                     <a class="rx-btn rx-dg" data-toggle="waitlist" aria-controls="waitlist"
-                        aria-haspopup="true" tabindex="0">Join Waitlist</a>
+                        aria-haspopup="true" tabindex="0">Get Started</a>
                 </div>
             </div>
-            <div class="rvl">
-                <div class="small-block">
-                    *Join the NowPrep waitlist and we will notify you by email when the NowPrep telemedicine platform has
-                    officially launched. Early sign-ups receive a special gift at launch!
-                </div>
-            </div>
+           
         </div>
     </div>
 </section>
@@ -745,95 +740,7 @@
                             </div>
                         </div>
 
-                        <!-- item -->
-                        <div class="item" data-opentab="false">
-                            <span class="title">
-                                How does the NowPrEP test kit work?
-                                <span class="question-svg">
-                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                        version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 490.661 490.661"
-                                        style="enable-background:new 0 0 490.661 490.661;" xml:space="preserve">
-                                        <g>
-                                            <path
-                                                d="M453.352,236.091L48.019,1.424c-3.285-1.899-7.36-1.899-10.688,0c-3.285,1.899-5.333,5.419-5.333,9.237v469.333    c0,3.819,2.048,7.339,5.333,9.237c1.643,0.939,3.499,1.429,5.333,1.429c1.856,0,3.691-0.469,5.355-1.429l405.333-234.667    c3.285-1.92,5.312-5.44,5.312-9.237S456.637,237.989,453.352,236.091z" />
-                                        </g>
-
-                                    </svg>
-                                </span>
-                            </span>
-                            <div class="item-block">
-                                <div class="block">
-                                    <div class="q-item">
-                                        <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg" alt="cancel icon">
-                                        </span>
-                                        <div class="title">Q.</div>
-                                        <span class="cntx">
-                                            How does the NowPrEP test kit work?
-                                        </span>
-                                    </div>
-                                    <div class="a-item">
-                                        <div class="title">A.</div>
-                                        <span class="cntx">
-                                            <p>
-                                                Following the completion of your health questionnaire, NowPrEP will
-                                                deliver a test kit to you free of charge.
-                                            </p>
-                                            <p>
-                                                All you need to do is follow the instructions and return the test with
-                                                the prepaid postage we provide inside every test kit.
-
-                                            </p>
-                                            <p>
-                                                Once we have received your results, we will follow up and decide whether
-                                                or not HIV PrEP medication is right for you.
-
-                                            </p>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- item -->
-                        <div class="item" data-opentab="false">
-                            <span class="title">
-                                Is at-home testing my only option?
-                                <span class="question-svg">
-                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                        version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 490.661 490.661"
-                                        style="enable-background:new 0 0 490.661 490.661;" xml:space="preserve">
-                                        <g>
-                                            <path
-                                                d="M453.352,236.091L48.019,1.424c-3.285-1.899-7.36-1.899-10.688,0c-3.285,1.899-5.333,5.419-5.333,9.237v469.333    c0,3.819,2.048,7.339,5.333,9.237c1.643,0.939,3.499,1.429,5.333,1.429c1.856,0,3.691-0.469,5.355-1.429l405.333-234.667    c3.285-1.92,5.312-5.44,5.312-9.237S456.637,237.989,453.352,236.091z" />
-                                        </g>
-
-                                    </svg>
-                                </span>
-                            </span>
-                            <div class="item-block">
-                                <div class="block">
-                                    <div class="q-item">
-                                        <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg" alt="cancel icon">
-                                        </span>
-                                        <div class="title">Q.</div>
-                                        <span class="cntx">
-                                            Is at-home testing my only option?
-                                        </span>
-                                    </div>
-                                    <div class="a-item">
-                                        <div class="title">A.</div>
-                                        <span class="cntx">
-                                            <p>
-                                            No. If you prefer, NowPrEP can schedule and provide instructions for an in-person lab test at a lab near you.
-                                            </p>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
+                        
                         <!-- item -->
                         <div class="item" data-opentab="false">
                             <span class="title">

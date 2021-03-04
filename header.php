@@ -35,7 +35,7 @@
     <?php endif; ?>
     
     <!-- preload main css -->
-    <link rel="preload" href="<?php echo get_template_directory_uri(); ?>/public/frontend.css" as="style">
+    <link rel="preload" href="<?php echo get_template_directory_uri(); ?>/public/frontend.css?vs=<?php echo mktime(); ?>" as="style">
 
     <link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
     <link rel="icon" type="image/x-icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
@@ -54,7 +54,7 @@
 
     <!-- mainc css -->
     <!-- ?v=<?php echo time(); ?> -->
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/public/frontend.css?v=1111111111">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/public/frontend.css?vs=<?php echo mktime(); ?>">
 
     <!-- WP HEAD -->
     <?php wp_head(); ?>

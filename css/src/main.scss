@@ -1661,7 +1661,7 @@ section.faq-section {
 
 	.faq-content .a-item {
 		display: flex;
-		align-items: center;
+		align-items: flex-start;
 		border-left: 3px solid #eee;
 		padding: 0 0 0 20px;
 	}
@@ -1704,7 +1704,7 @@ section.faq-section {
 		font-size: 1.3rem;
 		line-height: 1.3;
 		font-weight: 700;
-		padding: 10px 20px;
+		padding: 20px 20px;
 		@media screen and (max-width: 992px) {
 			font-size: 1rem;
 		}
@@ -1739,7 +1739,7 @@ section.faq-section {
 	}
 
 	span.cntx {
-		padding: 5px 20px;
+		padding: 15px 20px;
 	}
 }
 

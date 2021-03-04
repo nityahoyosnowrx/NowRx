@@ -100,6 +100,26 @@
 				</div>
 
 				</div>
+
+				<?php 
+				// GET TAGS BY POST_ID
+ $tags = get_the_tags($post->ID);  ?>
+ 
+ <ul class="cloudTags">
+	 <li>
+		 <span class="title">Tags</span>
+	 </li>
+ 
+      <?php foreach($tags as $tag) :  ?>
+ 
+     <li>
+        <a class="btn btn-warning"
+            href="<?php bloginfo('url');?>/tag/<?php print_r($tag->slug);?>">
+                  <?php print_r($tag->name); ?>
+         </a>   
+      </li>
+      <?php endforeach; ?>
+</ul>
 			</div>
 
 

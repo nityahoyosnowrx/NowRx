@@ -75,10 +75,13 @@ get_template_part('footer-modals');
     </div>
 </section>
 
+
+<?php if(!is_page('nowprep')): ?>
+
 <div class="calltoaction">
     <div class="container">
         <div class="content">
-            <a href="<?= get_site_url(); ?>/get-started/" class="rx-btn">
+            <a href="<?= get_site_url(); ?>/get-started/" class="rx-btn" id="firstbutton">
             <span class="arrow">
                             <svg aria-hidden="true" focusable="false" data-prefix="fas"
                                         data-icon="file-prescription" role="img" xmlns="http://www.w3.org/2000/svg"
@@ -91,7 +94,7 @@ get_template_part('footer-modals');
             Get Started                   
 
         </a>
-            <a href="sms:844-466-6979" class="rx-btn rx-green ml">
+            <a href="sms:844-466-6979" class="rx-btn rx-green ml" id="secondbutton">
           <span class="arrow">
           <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="comment" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-comment fa-w-16 fa-2x"><path fill="currentColor" d="M256 32C114.6 32 0 125.1 0 240c0 49.6 21.4 95 57 130.7C44.5 421.1 2.7 466 2.2 466.5c-2.2 2.3-2.8 5.7-1.5 8.7S4.8 480 8 480c66.3 0 116-31.8 140.6-51.4 32.7 12.3 69 19.4 107.4 19.4 141.4 0 256-93.1 256-208S397.4 32 256 32z" class=""></path></svg>
           </span>
@@ -101,19 +104,13 @@ get_template_part('footer-modals');
         </div>
     </div>
 </div>
+<?php endif; ?>
 
 
 <?php wp_footer(); ?>
 
 </div> <!-- closes off canvas content -->
-
-<!-- <script src="<?php echo get_template_directory_uri(); ?>/public/frontend-bundle.js?v=<?php echo time(); ?>" async></script> -->
-
-<!-- <link rel="preload" href="https://use.typekit.net/nng5acr.css" as="style"
-        onload="this.onload=null;this.rel='stylesheet'">
-    <noscript>
-        <link rel="stylesheet" href="https://use.typekit.net/nng5acr.css">
-    </noscript> -->
+ 
 
 <script async >
     var script = document.createElement('script');
@@ -132,27 +129,7 @@ get_template_part('footer-modals');
     t ? t.appendChild(e, t) : (t = document.getElementsByTagName("script")[0]).parentNode.insertBefore(e, t)
 }();
 </script>
-<!-- <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&family=Noto+Sans+HK:wght@100;300;400;500;700;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Varela+Round&display=swap" rel="stylesheet"> -->
-
-<!-- <script type="text/javascript">
-    WebFontConfig = {
-        google: { families: [ 
-            'Mulish:wght@200,300,400,500,600,700,800,900&display=swap',
-            'Noto+Sans+HK:wght@100,300,400,500,700,900&display=swap',
-            'Raleway:wght@100,200,300,400,500,600,700,800,900&display=swap',
-            'Varela+Round&display=swap' 
-        ] }
-    };
-    (function() {
-        var wf = document.createElement('script');
-        wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-        wf.type = 'text/javascript';
-        wf.async = 'true';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(wf, s);
-    })();
-</script> -->
+ 
 
 
 </body>

@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<section class="blog" id="blog" style="padding-top: 2rem;">
+<section class="blog" id="blog" style="padding-top: 4rem;">
   <div class="grid-container container-featured-posts">
     <div class="grid-x grid-padding-x headline-container">
       <div class="large-8 large-offset-2 cell text-center">

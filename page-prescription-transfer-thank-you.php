@@ -39,7 +39,7 @@ gtag('event', 'conversion', {'send_to': 'AW-875503484/Bj1NCMmPzboBEPy-vKED'});
                         </div>
                         <div class="rvl">
                             <h1 class="page-title" itemprop="headline">
-                                Our local pharmacy team will be reaching out to you shortly.
+                            Our Local Pharmacy Will Reach Out to You Shortly
                             </h1>
                         </div>
                         <div class="rvl">
@@ -48,7 +48,7 @@ gtag('event', 'conversion', {'send_to': 'AW-875503484/Bj1NCMmPzboBEPy-vKED'});
                             </p>
                         </div>
                         <div class="rvl">
-                            <p>Live pharmacy support available 7 days/week 8:30am-8pm at <a href="" class="li">(844) 466-6979</a>.</p>
+                            <p>Live pharmacy support available Mon-Sat: 9am-8pm, Sun: 9am-5:30pm at <a href="" class="c">(844) 466-6979</a>.</p>
                         </div>
                         <div class="rvl">
                             <span class="follow-links">
