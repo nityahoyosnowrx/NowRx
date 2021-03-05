@@ -170,6 +170,9 @@ a.ArticleHeader-eyebrow {
 	padding: 30px 0 10px;
 	border-bottom: 1px dotted #9b9b9b;
 	margin: 0 0 30px;
+	@media screen and (max-width: 992px) {
+		display: none;
+	}
 	img {
 		border-radius: 0 15px;
 	}
@@ -1003,12 +1006,44 @@ section.testimonials-block.doctorquotes {
 	}
 
 	.quote blockquote {
-		padding: 0;
-		border: none;
-		text-align: center;
 		color: #192e3d;
+		border: none;
 		border-bottom: 2px solid #eee;
-		padding-bottom: 30px;
+		padding: 0 0 30px;
+		position: relative;
+		border-radius: 0.5rem;
+		background-color: #f3f4f4;
+		padding: 2em;
+		margin: 0 0 1rem;
+		transition: box-shadow 0.2s ease-in-out, -webkit-box-shadow 0.2s ease-in-out;
+		position: relative;
+		text-align: left;
+	}
+
+	.quote blockquote:after {
+	    content: "“";
+    position: absolute;
+    color: #ea4c89;
+    font-weight: 600;
+    left: -.5em;
+    top: -.25em;
+    line-height: 1;
+    color: #989898;
+    font-size: 3em;
+    left: 10px;
+    top: 40px;
+    font-size: 21px;
+	}
+	
+	.quote blockquote:before {
+		content: '';
+		background-color: inherit;
+		-webkit-mask: url(https://cdn.dribbble.com/assets/blockquote-beak-2582ef73992ff5ba633691f52b337f529d24e5633ab9b54299b4fda37a705965.svg) center top contain no-repeat;
+		position: absolute;
+		width: 4rem;
+		height: 1rem;
+		bottom: -1rem;
+		left: 2rem;
 	}
 
 	.quote blockquote span.title {
@@ -1018,7 +1053,9 @@ section.testimonials-block.doctorquotes {
 	}
 
 	span.fullquote {
-		font-weight: 600;
+	    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
 	}
 
 	blockquote {
@@ -1680,6 +1717,7 @@ article.article-block.location-item {
 		font-weight: 900;
 		font-size: 1.5rem;
 		line-height: 1.5rem;
+		margin-bottom: 10px;
 	}
 
 	span.time {
@@ -1693,6 +1731,7 @@ article.article-block.location-item {
 	}
 	h1.entry-title {
 		font-size: 3.5rem;
+		font-size: 2.5rem;
 		letter-spacing: -1px;
 		font-weight: 800;
 		line-height: 1em;

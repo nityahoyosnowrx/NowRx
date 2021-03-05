@@ -322,12 +322,12 @@
                 <div class="main-slider">
                     <div class="slide">
                         <!-- Slider main container -->
-                        <div class="swiper-container">
+                        <div class="quote-container">
                             <!-- Additional required wrapper -->
-                            <div class="swiper-wrapper">
+                            <div class="de">
                              
                                 <!-- Slides -->
-                                <div class="swiper-slide">
+                                <div class="quoteitem">
                                     <div class="content">
                                         <div class="info">
                                             <!-- profile -->
@@ -344,7 +344,6 @@
                                         </div>
                                         <div class="quote">
                                             <blockquote>
-                                                <span class="title">"Instrumental for my practice.</span>
                                                 <span class="fullquote">
                                                  I highly recommend NowRx Pharmacy. I use them professionally as well as personally for my own prescriptions and they really are as good as advertised. They accept standing orders which has saved my office staff significant time and energy in addition to accurately applying drug coupons to lower out of pocket costs for my patients. I could not be happier with NowRx!  You can use this as a reference point.
                                                 </span>
@@ -354,7 +353,7 @@
                                 </div>
 
                                 <!-- Slides -->
-                                <div class="swiper-slide">
+                                <div class="quoteitem">
                                     <div class="content">
                                         <div class="info">
                                             <!-- profile -->
@@ -371,7 +370,7 @@
                                         </div>
                                         <div class="quote">
                                             <blockquote>
-                                                <span class="title">"Instrumental for my practice.</span>
+                                                <!-- <span class="title">"Instrumental for my practice.</span> -->
                                                 <span class="fullquote">
                                                  I highly recommend NowRx Pharmacy. I use them professionally as well as personally for my own prescriptions and they really are as good as advertised. They accept standing orders which has saved my office staff significant time and energy in addition to accurately applying drug coupons to lower out of pocket costs for my patients. I could not be happier with NowRx!  You can use this as a reference point.
                                                 </span>
@@ -381,7 +380,7 @@
                                 </div>
 
                                 <!-- Slides -->
-                                <div class="swiper-slide">
+                                <div class="quoteitem">
                                     <div class="content">
                                         <div class="info">
                                             <!-- profile -->
@@ -398,7 +397,7 @@
                                         </div>
                                         <div class="quote">
                                             <blockquote>
-                                                <span class="title">"Instrumental for my practice.</span>
+                                                <!-- <span class="title">"Instrumental for my practice.</span> -->
                                                 <span class="fullquote">
                                                  I highly recommend NowRx Pharmacy. I use them professionally as well as personally for my own prescriptions and they really are as good as advertised. They accept standing orders which has saved my office staff significant time and energy in addition to accurately applying drug coupons to lower out of pocket costs for my patients. I could not be happier with NowRx!  You can use this as a reference point.
                                                 </span>
@@ -408,7 +407,7 @@
                                 </div>
 
                                 <!-- Slides -->
-                                <div class="swiper-slide">
+                                <div class="quoteitem">
                                     <div class="content">
                                         <div class="info">
                                             <!-- profile -->
@@ -425,7 +424,7 @@
                                         </div>
                                         <div class="quote">
                                             <blockquote>
-                                                <span class="title">"Instrumental for my practice.</span>
+                                                <!-- <span class="title">"Instrumental for my practice.</span> -->
                                                 <span class="fullquote">
                                                  I highly recommend NowRx Pharmacy. I use them professionally as well as personally for my own prescriptions and they really are as good as advertised. They accept standing orders which has saved my office staff significant time and energy in addition to accurately applying drug coupons to lower out of pocket costs for my patients. I could not be happier with NowRx!  You can use this as a reference point.
                                                 </span>
@@ -436,7 +435,7 @@
 
 
                                 <!-- Slides -->
-                                <div class="swiper-slide">
+                                <div class="quoteitem">
                                     <div class="content">
                                         <div class="info">
                                             <!-- profile -->
@@ -453,7 +452,7 @@
                                         </div>
                                         <div class="quote">
                                             <blockquote>
-                                                <span class="title">"Instrumental for my practice.</span>
+                                                <!-- <span class="title">"Instrumental for my practice.</span> -->
                                                 <span class="fullquote">
                                                  I highly recommend NowRx Pharmacy. I use them professionally as well as personally for my own prescriptions and they really are as good as advertised. They accept standing orders which has saved my office staff significant time and energy in addition to accurately applying drug coupons to lower out of pocket costs for my patients. I could not be happier with NowRx!  You can use this as a reference point.
                                                 </span>
@@ -464,7 +463,7 @@
 
 
                                 <!-- Slides -->
-                                <div class="swiper-slide">
+                                <div class="quoteitem">
                                     <div class="content">
                                         <div class="info">
                                             <!-- profile -->
@@ -481,7 +480,7 @@
                                         </div>
                                         <div class="quote">
                                             <blockquote>
-                                                <span class="title">"Instrumental for my practice.</span>
+                                                <!-- <span class="title">"Instrumental for my practice.</span> -->
                                                 <span class="fullquote">
                                                  I highly recommend NowRx Pharmacy. I use them professionally as well as personally for my own prescriptions and they really are as good as advertised. They accept standing orders which has saved my office staff significant time and energy in addition to accurately applying drug coupons to lower out of pocket costs for my patients. I could not be happier with NowRx!  You can use this as a reference point.
                                                 </span>
@@ -491,7 +490,7 @@
                                 </div>
 
                                 <!-- Slides -->
-                                <div class="swiper-slide">
+                                <div class="quoteitem">
                                     <div class="content">
                                         <div class="info">
                                             <!-- profile -->
@@ -508,7 +507,7 @@
                                         </div>
                                         <div class="quote">
                                             <blockquote>
-                                                <span class="title">"Instrumental for my practice.</span>
+                                                <!-- <span class="title">"Instrumental for my practice.</span> -->
                                                 <span class="fullquote">
                                                  I highly recommend NowRx Pharmacy. I use them professionally as well as personally for my own prescriptions and they really are as good as advertised. They accept standing orders which has saved my office staff significant time and energy in addition to accurately applying drug coupons to lower out of pocket costs for my patients. I could not be happier with NowRx!  You can use this as a reference point.
                                                 </span>
@@ -518,7 +517,7 @@
                                 </div>
 
                                 <!-- Slides -->
-                                <div class="swiper-slide">
+                                <div class="quoteitem">
                                     <div class="content">
                                         <div class="info">
                                             <!-- profile -->
@@ -535,7 +534,7 @@
                                         </div>
                                         <div class="quote">
                                             <blockquote>
-                                                <span class="title">"Instrumental for my practice.</span>
+                                                <!-- <span class="title">"Instrumental for my practice.</span> -->
                                                 <span class="fullquote">
                                                  I highly recommend NowRx Pharmacy. I use them professionally as well as personally for my own prescriptions and they really are as good as advertised. They accept standing orders which has saved my office staff significant time and energy in addition to accurately applying drug coupons to lower out of pocket costs for my patients. I could not be happier with NowRx!  You can use this as a reference point.
                                                 </span>

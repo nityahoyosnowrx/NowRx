@@ -1,9 +1,6 @@
-<?php if ( !is_front_page() ): 
-    
+<?php if ( !is_front_page() ):  
+        if ( !is_singular( 'post' ) ): 
     ?>
-
-
-
 
 <div class="reveal twentyone" id="waitlist" data-reveal data-close-on-click="true" data-animation-in="slide-in-down"
     data-animation-out="slide-out-up">
@@ -366,7 +363,7 @@
 
 
 
-
+<?php endif; ?>
 <?php endif; ?>
 
 

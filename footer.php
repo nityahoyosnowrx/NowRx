@@ -30,10 +30,10 @@ get_template_part('footer-modals');
                     <div class="large-3 small-6 cell">
                         <h4>CONTACT US</h4>
                         <ul class="footer-menu-col vertical menu text-small">
-                            <li><a data-toggle="modal-example">Chat With A Pharmacist</a></li>
+                            <!-- <li><a data-toggle="modal-example">Chat With A Pharmacist</a></li> -->
                             <li><a href="<?= get_site_url(); ?>/get-started/">Transfer Your Prescription</a></li>
                             <li><a href="<?= get_site_url(); ?>/for-doctors/">For Doctors</a></li>
-                            <li><a href="<?= get_site_url(); ?>/contact-us/">Contact Us</a></li>
+                            <li><a href="<?= get_site_url(); ?>/contact-us/">Chat With A Pharmacist</a></li>
                         </ul>
                     </div>
                     <div class="large-3 small-6 cell">
@@ -94,7 +94,7 @@ get_template_part('footer-modals');
             Get Started                   
 
         </a>
-            <a href="sms:844-466-6979" class="rx-btn rx-green ml" id="secondbutton">
+            <a href="sms:213-263-4391" class="rx-btn rx-green ml" id="secondbutton">
           <span class="arrow">
           <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="comment" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-comment fa-w-16 fa-2x"><path fill="currentColor" d="M256 32C114.6 32 0 125.1 0 240c0 49.6 21.4 95 57 130.7C44.5 421.1 2.7 466 2.2 466.5c-2.2 2.3-2.8 5.7-1.5 8.7S4.8 480 8 480c66.3 0 116-31.8 140.6-51.4 32.7 12.3 69 19.4 107.4 19.4 141.4 0 256-93.1 256-208S397.4 32 256 32z" class=""></path></svg>
           </span>
