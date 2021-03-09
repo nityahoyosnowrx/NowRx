@@ -813,14 +813,6 @@ header.page {
 
 section.testimonials-block {
 	.imageblock {
-		max-width: 120px;
-		margin: 0px auto 20px;
-		border-radius: 50%;
-		align-items: center;
-		display: flex;
-		justify-content: center;
-		position: relative;
-		padding: 20px 0 0;
 	}
 
 	.blocks {
@@ -831,6 +823,7 @@ section.testimonials-block {
 	}
 	.subtitle {
 		font-size: 1.1875rem;
+		font-size: 1rem;
 		@media screen and (max-width: 992px) {
 			// font-size: 0.9rem;
 			font-size: 0.8rem;
@@ -851,23 +844,10 @@ section.testimonials-block {
 		text-transform: uppercase;
 		font-size: 0.8rem;
 	}
-
-	.imageblock img {
-		box-shadow: 0 10px 20px rgba(0, 0, 0, 0.18);
-		border-radius: 50%;
-		object-fit: cover;
+	figure {
+		margin: 0;
 	}
-
-	.imageblock:after {
-		content: close-quote;
-		position: absolute;
-		bottom: 100%;
-		left: 0;
-		right: 0;
-		width: 100%;
-		height: 2px;
-		background: #0388cd;
-		margin: 0 auto;
+	.imageblock img {
 	}
 
 	.subtitle {
@@ -876,21 +856,24 @@ section.testimonials-block {
 		margin: 0 0 10px;
 		color: #038ed8;
 		font-weight: 600;
+		font-style: normal;
+		font-size: 1.3rem;
 		@media screen and (max-width: 992px) {
 			// font-size: 11px;
+			font-size: 0.8rem;
 		}
 	}
 
-	h2.main-title {
-		text-align: center;
-		font-size: 3.3rem;
-		letter-spacing: -1px;
+	.main-title {
+		margin: 0 0 20px;
+		font-size: 2.8rem;
 		font-weight: 800;
-		margin: 0;
-		line-height: 4.4rem;
+		line-height: 1.15;
+		letter-spacing: -0.1rem;
+		text-align: center;
 		@media screen and (max-width: 992px) {
-			line-height: 11vw;
-			font-size: 10vw;
+			line-height: 9vw;
+			font-size: 7vw;
 		}
 	}
 
@@ -901,7 +884,7 @@ section.testimonials-block {
 	}
 
 	.content {
-		padding: 4rem 20px;
+		padding: 20px;
 	}
 
 	.container {
@@ -947,6 +930,10 @@ section.testimonials-block {
 }
 
 section.testimonials-block.doctorquotes {
+	padding: 160px 0 0;
+	@media screen and (max-width: 992px) {
+		padding: 110px 0 0;
+	}
 	.swiper-slide .content {
 		display: flex;
 		padding: 30px 100px;
@@ -966,14 +953,56 @@ section.testimonials-block.doctorquotes {
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		padding: 0 0 0 100px;
 		@media screen and (max-width: 992px) {
-			padding: 30px 0 0;
+		}
+		img {
+			border-radius: 0.5rem 0.5rem 0px 0px;
+			display: block;
+		}
+	}
+	.de {
+		column-count: 3;
+		-webkit-column-fill: balance;
+		column-fill: balance;
+		-webkit-column-gap: 2rem;
+		column-gap: 2rem;
+		-webkit-transform: translateX(0);
+		-ms-transform: translateX(0);
+		transform: translateX(0);
+		margin: 1rem 0;
+		padding: 0 20px;
+		@media screen and (max-width: 992px) {
+			column-gap: 2rem;
+			column-count: 1;
 		}
 	}
 
+	.quoteitem {
+		overflow: visible;
+		-webkit-column-break-inside: avoid;
+		break-inside: avoid;
+		display: inline-block;
+	}
+	/* Re-order items into rows */
+	// .quoteitem:nth-child(3n + 1) {
+	// 	order: 1;
+	// }
+	// .quoteitem:nth-child(3n + 2) {
+	// 	order: 1;
+	// }
+	// .quoteitem:nth-child(3n)   { order: 3; }
+
+	/* Force new columns */
+	// .de::before,
+	// .de::after {
+	// 	content: '';
+	// 	flex-basis: 100%;
+	// 	width: 0;
+	// 	order: 2;
+	// }
+
 	.info .img {
-		display: flex;
+		display: none;
 		align-items: center;
 		justify-content: center;
 	}
@@ -988,78 +1017,132 @@ section.testimonials-block.doctorquotes {
 		text-align: center;
 		margin: 0 0 5px;
 	}
+	.name {
+	}
 
+	.name h2.sec-title {
+		font-size: 14px;
+		line-height: 20px;
+		margin: 0;
+
+		color: #1f88ca;
+	}
+
+	blockquote {
+	}
+
+	blockquote cite {
+		display: flex;
+		// padding: 0 20px;
+		@media screen and (max-width: 992px) {
+			flex-direction: column;
+			align-items: flex-start;
+		}
+	}
+
+	.title {
+		@media screen and (min-width: 992px) {
+			padding-left: 20px;
+		}
+	}
 	.title .li {
-		color: #0388cd;
-		font-weight: 600;
-		text-transform: uppercase;
-		font-size: 15px;
+		text-transform: capitalize;
+		font-size: 10px;
 		text-align: center;
 		display: block;
+		font-style: normal;
+		line-height: 20px;
+		color: #6d6d6d8c;
+		font-weight: 300;
 	}
 
 	.info .img img.pic {
-		margin: 0 auto;
-		margin: 0 0 30px;
-		box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.15);
-		border-radius: 50%;
 	}
 
 	.quote blockquote {
-		color: #192e3d;
-		border: none;
-		border-bottom: 2px solid #eee;
-		padding: 0 0 30px;
-		position: relative;
-		border-radius: 0.5rem;
-		background-color: #f3f4f4;
-		padding: 2em;
-		margin: 0 0 1rem;
-		transition: box-shadow 0.2s ease-in-out, -webkit-box-shadow 0.2s ease-in-out;
-		position: relative;
-		text-align: left;
 	}
 
-	.quote blockquote:after {
-	    content: "“";
-    position: absolute;
-    color: #ea4c89;
-    font-weight: 600;
-    left: -.5em;
-    top: -.25em;
-    line-height: 1;
-    color: #989898;
-    font-size: 3em;
-    left: 10px;
-    top: 40px;
-    font-size: 21px;
-	}
-	
-	.quote blockquote:before {
-		content: '';
-		background-color: inherit;
-		-webkit-mask: url(https://cdn.dribbble.com/assets/blockquote-beak-2582ef73992ff5ba633691f52b337f529d24e5633ab9b54299b4fda37a705965.svg) center top contain no-repeat;
-		position: absolute;
-		width: 4rem;
-		height: 1rem;
-		bottom: -1rem;
-		left: 2rem;
-	}
+	// .quote blockquote:before {
+	// 	content: '';
+	// 	background-color: inherit;
+	// 	-webkit-mask: url(https://cdn.dribbble.com/assets/blockquote-beak-2582ef73992ff5ba633691f52b337f529d24e5633ab9b54299b4fda37a705965.svg) center top contain no-repeat;
+	// 	position: absolute;
+	// 	width: 4rem;
+	// 	height: 1rem;
+	// 	bottom: -1rem;
+	// 	left: 2rem;
+	// }
 
 	.quote blockquote span.title {
 		display: block;
 		font-size: 2.5rem;
 		font-weight: 600;
 	}
+	.quoteitem.bigblockquote {
+		background: #fff;
+		box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.1%);
+		// margin: 40px 20px;
+
+		span.fullquote {
+			background: #fff;
+			font-size: 1.3rem;
+			line-height: 2.1rem;
+			padding: 10px 0;
+		}
+		blockquote {
+			background-color: #fff;
+		}
+		.imageblock {
+			margin: -32px -32px 20px;
+		}
+	}
+
+	.quoteitem {
+		transition: all 0.3s;
+		background-color: #fff;
+
+		transform-origin: center;
+		transition: all 0.2s ease-in-out;
+		border-radius: 0.5rem;
+		position: relative;
+		margin: 0 0 40px;
+		padding: 30px 30px;
+		box-shadow: 5px 5px 20px 0px rgba(25, 45, 62, 0.2);
+
+		&:hover {
+			transform: scale(1.05);
+			box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.1);
+		}
+		&:after {
+			content: '“';
+			position: absolute;
+			font-weight: 600;
+			line-height: 1;
+			left: 15px;
+			top: 2px;
+			color: Rgb(31 136 202 / 9%);
+			font-size: 7rem;
+		}
+		.content {
+			padding: 0;
+		}
+	}
 
 	span.fullquote {
-	    font-weight: 300;
-    font-size: 14px;
-    line-height: 20px;
+		font-weight: 300;
+		margin: 0 0 1rem;
+		display: block;
+
+		background: #fff;
+		font-size: 1rem;
+		line-height: 1.9rem;
+		padding: 10px 0;
 	}
 
 	blockquote {
-		padding-bottom: 30px;
+		position: relative;
+		border-radius: 0.5rem;
+		background-color: #fff;
 	}
 
 	.swiper-button-next:after,
@@ -1086,6 +1169,10 @@ section.testimonials-block.doctorquotes {
 
 	.swiper-container {
 		padding-bottom: 60px;
+	}
+	.content {
+		display: flex;
+		flex-direction: column-reverse;
 	}
 }
 
@@ -3133,7 +3220,7 @@ div#for-doctors-learnmore h2.title {
 		position: absolute;
 		top: 5px;
 		left: 0;
-		svg{
+		svg {
 			width: 20px;
 			height: 20px;
 		}
@@ -3624,20 +3711,17 @@ section.calloutbuttons ul li a span.arr {
 	margin-left: auto;
 }
 
-
-
-
 // post tags
 
 ul.cloudTags {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 30px 20px 0;
-    text-align: center;
-    align-items: center;
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 30px 20px 0;
+	text-align: center;
+	align-items: center;
 	justify-content: center;
-	
+
 	@media screen and (min-width: 992px) {
 		max-width: 70%;
 	}

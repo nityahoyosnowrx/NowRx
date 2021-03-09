@@ -1,5 +1,6 @@
 <?php if ( !is_front_page() ):  
         if ( !is_singular( 'post' ) ): 
+            if ( !is_page( 'testimonials' ) ): 
     ?>
 
 <div class="reveal twentyone" id="waitlist" data-reveal data-close-on-click="true" data-animation-in="slide-in-down"
@@ -361,7 +362,7 @@
 
 
 
-
+<?php endif; ?>
 
 <?php endif; ?>
 <?php endif; ?>

@@ -673,7 +673,7 @@ li {
                         <div class="a-item">
                             <div class="title">A.</div>
                             <span class="cntx">
-                                You can view our locations and service areas at www.nowr.com/locations.
+                                You can view our locations and service areas at <a href="https://nowrx.com/locations/">nowrx.com/locations/</a>.
                             </span>
                         </div>
                     </div>

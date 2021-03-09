@@ -30,12 +30,12 @@
     <link rel="preload" as="image" type="image/jpeg" href="<?php echo get_template_directory_uri(); ?>/images/AdobeStock_91568410.webp">
     <!-- <link rel="preload" as="image" type="image/jpeg" href="<?php echo get_template_directory_uri(); ?>/images/AdobeStock_91568410.jpeg"> -->
 
-    <link rel="preload" as="image" type="image/jpeg" href="<?php echo get_template_directory_uri(); ?>/images/AdobeStock_91568410mobile.jpeg">
+    <!-- <link rel="preload" as="image" type="image/jpeg" href="<?php echo get_template_directory_uri(); ?>/images/AdobeStock_91568410mobile.jpeg"> -->
 
     <?php endif; ?>
     
     <!-- preload main css -->
-    <link rel="preload" href="<?php echo get_template_directory_uri(); ?>/public/frontend.css" as="style">
+    <!-- <link rel="preload" href="<?php echo get_template_directory_uri(); ?>/public/frontend.css" as="style"> -->
 
     <link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
     <link rel="icon" type="image/x-icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
@@ -55,7 +55,7 @@
     <!-- mainc css -->
     <!-- ?v=<?php echo time(); ?> -->
     <!-- <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/public/frontend.css?vs=<?php echo mktime(); ?>"> -->
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/public/frontend.css?">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/public/frontend.css">
 
     <!-- WP HEAD -->
     <?php wp_head(); ?>
@@ -144,7 +144,7 @@
                     <ul class="nav" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
                         <li itemprop="name"><a itemprop="url" href="<?php echo get_site_url(); ?>/how-it-works/">How It Works</a></li>
                         <li itemprop="name"><a itemprop="url" href="<?php echo get_site_url(); ?>/blog">Blog</a></li>
-                        <li itemprop="name"><a itemprop="url" href="<?php echo get_site_url(); ?>/for-doctors/">For Doctors</a></li>
+                        <li itemprop="name"><a itemprop="url" href="<?php echo get_site_url(); ?>/testimonials/">Testimonials</a></li>
                         <!-- 		<li itemprop="name"><a itemprop="url" href="/referral/">Refer a Friend</a></li> -->
                         <li itemprop="name"><a itemprop="url" href="<?php echo get_site_url(); ?>/faqs/">FAQs</a></li>
                         <li itemprop="name" class="buttonfill buttonglimmer">

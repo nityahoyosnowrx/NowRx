@@ -305,7 +305,7 @@
 
 
 
-    <section class="testimonials-block">
+    <section class="testimonials-block triples">
 
         <div class="container">
             <div class="content">

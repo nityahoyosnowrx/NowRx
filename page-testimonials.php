@@ -17,863 +17,604 @@
 
 
 
-<!-- hero -->
-<section class="hero-home">
-    <div class="rvl">
-
-
-        <picture class="lozad"
-            data-iesrc="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020.png"
-            data-alt="prescription being delivered to mother" data-toggle-class="active">
-            <source type="image/png"
-                srcset="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020.png">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020lowrez.jpg"
-                class="imageblock" height="100px" width="450px">
-        </picture>
-
-    </div>
-
-    <div class="container">
-        <div class="content">
-
-            <!-- content -->
-            <div class="column-half content-col">
-
-
-
-                <div class="rvls">
-                    <span class="sub-headline">
-                        A Better Pharmacy for Your Office Staff
-                    </span>
-                </div>
-
-                <div class="rvls">
-                    <h1 class="hiw-title">
-                         Join 4,500 Doctors Using NowRx
-                    </h1>
-                </div>
-
-                <div class="rvls">
-                    <p>
-                        We help your staff save time and energy by reducing callbacks and working with your insurance to get your patients covered.
-                    </p>
-                </div>
-
-                <div class="rvls">
-                    <div class="btn-container">
-                        <a class="rx-btn" href="<?= get_site_url(); ?>/get-started/">Learn More</a>
-                        <a data-toggle="for-doctors" class="rx-btn mrb" aria-controls="for-doctors" aria-haspopup="true" tabindex="0">How It Works</a>
-                    </div>
-                </div>
-
-
-
-
-            </div>
-
-            <!-- image -->
-            <div class="column-half image-col">
-
-                <picture class="lozad"
-                    data-iesrc="<?php echo get_template_directory_uri(); ?>/images/For-Doctors.webp"
-                    data-alt="Free Prescription Delivery in Hours" data-toggle-class="active">
-                    <source type="image/jpeg"
-                        srcset="<?php echo get_template_directory_uri(); ?>/images/For-Doctors.jpeg">
-                    <source type="image/webp"
-                        srcset="<?php echo get_template_directory_uri(); ?>/images/For-Doctors.webp">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/For-Doctors.webp"
-                        class="orbit-image " height="500px" width="650px">
-                </picture>
-
-
-            </div>
-
-        </div>
-    </div>
-</section>
-
-
-<!-- companies -->
-<?php include('section-companies.php'); ?>
-
-
-
-<section class="how-it-works panel--primary">
-    <div class="grid-container">
-        <div class="grid-x grid-padding-x text-center">
-            <div class="large-12 cell">
-                <div class="rvl">
-                    <p class="pre-headline">Using NowRx Pharmacy is Simple</p>
-                </div>
-
-                <div class="rvl">
-                    <h2 class="headline">Here’s How It Works</h2>
-                </div>
-            </div>
-        </div>
-        <div class="grid-x grid-padding-x steps">
-
-            <div class="hiw-cell cell large-4 text-center">
-                <div class="rvl">
-
-                    <h3 class="padding-bottom-3">1. Send Us Your Prescription</h3>
-                    <div class="image">
-                        <img data-toggle-class="active"
-                            data-src="<?php echo get_template_directory_uri(); ?>/library/images/Prescription-Icon.png"
-                            alt="end Us Your Prescription" class="pic lozad">
-                    </div>
-
-                    <p>
-                        <strong>New Prescription: </strong>Tell your doctor to fax or ePrescribe to NowRx. <br>
-                        <strong>Existing Prescription: </strong>Text <a href="tel:844-466-6979" class="tellink">(844)
-                            466-6979</a> or <a href="https://nowrx.com/get-started/" style="color:#fff;">Transfer Online
-                            Here</a>.
-                    </p>
-                </div>
-            </div>
-
-
-            <div class="hiw-cell cell large-4 text-center">
-                <div class="rvl">
-
-                    <h3 class="padding-bottom-3">2. We Confirm Delivery</h3>
-                    <div class="image">
-                        <img data-toggle-class="active"
-                            data-src="<?php echo get_template_directory_uri(); ?>/library/images/Confirmation-Icon.png"
-                            alt="We Confirm Delivery" class="pic lozad ">
-                    </div>
-
-                    <p>We will reach out to you via phone to collect your insurance copay confirm your address and set
-                        up a
-                        delivery time.</p>
-                </div>
-            </div>
-
-
-            <div class="hiw-cell cell large-4 text-center">
-                <div class="rvl">
-
-                    <h3 class="padding-bottom-3">3. Medication is Delivered</h3>
-                    <div class="image">
-                        <img data-toggle-class="active"
-                            data-src="<?php echo get_template_directory_uri(); ?>/library/images/Car-Icon.png"
-                            alt="Medication is Delivered" class="pic lozad">
-                    </div>
-
-                    <p>A NowRx employee will deliver your medication in hours from your local NowRx Pharmacy for free.
-                        All you pay is your normal copay.</p>
-                </div>
-            </div>
-
-
-        </div>
-    </div>
-</section>
-
-
-
-
-<section class="split-image">
-  <div class="imagefull">
-    <!-- <img src="<?php echo get_template_directory_uri(); ?>/images/Why-Doctors-Love-NowRx.webp" alt="" class="pic"> -->
-
-    <picture class="lozad" data-iesrc="<?php echo get_template_directory_uri(); ?>/images/Why-Doctors-Love-NowRx.webp" data-alt="Why Doctors Love NowRx!" data-toggle-class="active">
-            <source type="image/webp" srcset="<?php echo get_template_directory_uri(); ?>/images/Why-Doctors-Love-NowRx.webp">
-            <source type="image/jpeg" srcset="<?php echo get_template_directory_uri(); ?>/images/Why-Doctors-Love-NowRx.jpeg">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/Why-Doctors-Love-NowRx.webp" class="pic doctorspage" height="100px" width="450px">
-        </picture>
-
-  </div>
-    <div class="container">
-        <div class="content">
-            <div class="rvl">
-                <span class="sub-headline">
-                    Going Above and Beyond For Our Customers
-                </span>
-            </div>
-            <div class="rvl">
-                <h2 class="sec-title">
-                   Why Doctors Love NowRx!
-                </h2>
-            </div>
-
-            <div class="itemlist">
-              <!-- item -->
-              <div class="item">
-                <div class="rvl">
-                  <h3 class="title">Free Prescription Delivery for Patients.</h3>
-                </div>
-                <div class="rvl">
-                  <p>
-                      Increases prescription medication adherence and accessiblity.
-                  </p>
-                </div>
-              </div>
-              <!-- item -->
-              <div class="item">
-                <div class="rvl">
-                  <h3 class="title">Insurance Approval & Prior Authorization Assitance</h3>
-                </div>
-                <div class="rvl">
-                  <p>Helps explain the process and get medications covered.</p>
-                </div>
-              </div>
-              <!-- item -->
-              <div class="item">
-                <div class="rvl">
-                  <h3 class="title">Industry Leading Accuracy (SureScripts Finalist 2020)</h3>
-                </div>
-                <div class="rvl">
-                  <p>Minimizes medication errors and improves patient safety.</p>
-                </div>
-              </div>
-              <!-- item -->
-              <div class="item">
-                <div class="rvl">
-                  <h3 class="title">Automatic Coupon Search & Application</h3>
-                </div>
-                <div class="rvl">
-                  <p>Fields savings to lower patient out of pocket costs.</p>
-                </div>
-              </div>
-              <!-- item -->
-              <div class="item">
-                <div class="rvl">
-                  <h3 class="title">Out of Pocket Price Match Guarantee</h3>
-                </div>
-                <div class="rvl">
-                  <p>Ensures you do not pay more for medication being delivered.</p>
-                </div>
-              </div>
-              <!-- item -->
-              <div class="item">
-                <div class="rvl">
-                  <h3 class="title">Refrigeredted & Controlled Medication Delivery</h3>
-                </div>
-                <div class="rvl">
-                  <p>We will even pick up triplicate forms from your office.</p>
-                </div>
-              </div>
-
-            </div>
-
-            <div class="rvl">
-                <div class="btn-container">
-                    <a href="<?= get_site_url(); ?>/get-started/" class="rx-btn rx-dg">
-                        Get Started
-                    </a>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-
-
-<!-- visit faq -->
-<section class="visit-faq">
-    <div class="container">
-        <div class="content">
-            <div class="rvl">
-                <span class="sub-headline">
-                    No Signup Required. No Hidden Fees
-                </span>
-            </div>
-            <div class="rvl">
-                <h2 class="sec-title">
-                    Just a Better Pharmacy
-                </h2>
-            </div>
-            <div class="rvl">
-                <div class="btn-container">
-                    <a href="<?= get_site_url(); ?>/faqs/" class="rx-btn rx-dg">
-                        Request a NowRx Doctor Kit
-                    </a>
-                </div>
-            </div>
-            <div class="rvl">
-                <div class="small-block">
-                    Still have questions about how to get started with NowRx Pharmacy? Email us at <a href="maito:info@nowrx.com" class="alink">info@nowrx.com </a>and we will be happy to help.
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
 <!-- what doctor saying -->
 
 
-    <section class="testimonials-block doctorquotes">
+<section class="testimonials-block doctorquotes">
 
-        <div class="container">
-            <div class="content">
-                <div class="rvl">
-                    <div class="subtitle">A BETTER LOCAL PHARMACY FOR YOUR OFFICE STAFF</div>
+    <div class="container">
+        <div class="content">
+            <div class="rvl">
+                <div class="subtitle">
+                    See What Customers Are Saying About NowRx Pharmacy Delivery
                 </div>
-                <div class="rvl">
-                    <h2 class="main-title">See Why 4,500+ Docs Use NowRx</h2>
-                </div>
-                
             </div>
-            <!-- end content -->
-            <div class="content sliderfordoctors">
-                <div class="main-slider">
-                    <div class="slide">
-                        <!-- Slider main container -->
-                        <div class="quote-container">
-                            <!-- Additional required wrapper -->
-                            <div class="de">
-                             
-                                <!-- Slides -->
-                                <div class="quoteitem">
-                                    <div class="content">
-                                        <div class="info">
-                                            <!-- profile -->
-                                            <div class="img">
-                                                <img src="<?php echo get_template_directory_uri(); ?>/images/Dr.-Ann-Jayaram-1604618219345.png" alt="Dr.-Ann-Jayaram" class="pic">
-                                            </div>
-                                            <div class="name">
-                                                <h2 class="sec-title">Dr. Inna Yaskin</h2>
-                                            </div>
-                                            <div class="title">
-                                                <span class="li">NowRx Customer</span>
-                                            </div>
+            <div class="rvl">
+                <h1 class="main-title">
+                    "Best Prescription Delivery Service for Northern California and Orange County Residents" (CNET)
+                </h1>
+            </div>
+        </div>
+        <!-- end content -->
+        <div class="content sliderfordoctors">
+            <div class="main-slider">
+                <div class="slide">
+                    <!-- Slider main container -->
+                    <div class="quote-container">
+                        <!-- Additional required wrapper -->
+                        <div class="de">
 
-                                        </div>
-                                        <div class="quote">
-                                            <blockquote>
-                                                <span class="fullquote">
-                                                 I highly recommend NowRx Pharmacy. I use them professionally as well as personally for my own prescriptions and they really are as good as advertised. They accept standing orders which has saved my office staff significant time and energy in addition to accurately applying drug coupons to lower out of pocket costs for my patients. I could not be happier with NowRx!  You can use this as a reference point.
-                                                </span>
-                                            </blockquote>
-                                        </div>
+
+                            <!-- Slides -->
+                            <div class="quoteitem ">
+                                <div class="content">
+
+                                    <div class="quote">
+                                        <blockquote>
+                                           
+                                            <span class="fullquote">
+                                                "Companies that <b>ACTUALLY PROVIDE CUSTOMER SERVICE</b> are so rare in this day and age. These guys are awesome!"
+
+                                            </span>
+                                            <cite>
+                                                <div class="name">
+                                                    <h2 class="sec-title">-Tanya S.</h2>
+                                                </div>
+                                                <div class="title">
+                                                    <span class="li">NowRx Pharmacy Customer</span>
+                                                </div>
+                                            </cite>
+                                        </blockquote>
                                     </div>
                                 </div>
-
-                                <!-- Slides -->
-                                <div class="quoteitem">
-                                    <div class="content">
-                                        <div class="info">
-                                            <!-- profile -->
-                                            <div class="img">
-                                                <img src="<?php echo get_template_directory_uri(); ?>/images/Dr.-Daniel-Quon.png" alt="Dr.-Daniel-Quon" class="pic">
-                                            </div>
-                                            <div class="name">
-                                                <h2 class="sec-title">Dr. Inna Yaskin</h2>
-                                            </div>
-                                            <div class="title">
-                                                <span class="li">NowRx Customer</span>
-                                            </div>
-
-                                        </div>
-                                        <div class="quote">
-                                            <blockquote>
-                                                <!-- <span class="title">"Instrumental for my practice.</span> -->
-                                                <span class="fullquote">
-                                                 I highly recommend NowRx Pharmacy. I use them professionally as well as personally for my own prescriptions and they really are as good as advertised. They accept standing orders which has saved my office staff significant time and energy in addition to accurately applying drug coupons to lower out of pocket costs for my patients. I could not be happier with NowRx!  You can use this as a reference point.
-                                                </span>
-                                            </blockquote>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Slides -->
-                                <div class="quoteitem">
-                                    <div class="content">
-                                        <div class="info">
-                                            <!-- profile -->
-                                            <div class="img">
-                                                <img src="<?php echo get_template_directory_uri(); ?>/images/Dr.-Inna-Yaskin.JPG" alt="Dr.-Inna-Yaskin" class="pic">
-                                            </div>
-                                            <div class="name">
-                                                <h2 class="sec-title">Dr. Inna Yaskin</h2>
-                                            </div>
-                                            <div class="title">
-                                                <span class="li">NowRx Customer</span>
-                                            </div>
-
-                                        </div>
-                                        <div class="quote">
-                                            <blockquote>
-                                                <!-- <span class="title">"Instrumental for my practice.</span> -->
-                                                <span class="fullquote">
-                                                 I highly recommend NowRx Pharmacy. I use them professionally as well as personally for my own prescriptions and they really are as good as advertised. They accept standing orders which has saved my office staff significant time and energy in addition to accurately applying drug coupons to lower out of pocket costs for my patients. I could not be happier with NowRx!  You can use this as a reference point.
-                                                </span>
-                                            </blockquote>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Slides -->
-                                <div class="quoteitem">
-                                    <div class="content">
-                                        <div class="info">
-                                            <!-- profile -->
-                                            <div class="img">
-                                                <img src="<?php echo get_template_directory_uri(); ?>/images/Dr.-James-Tearse.png" alt="Dr.-James-Tearse" class="pic">
-                                            </div>
-                                            <div class="name">
-                                                <h2 class="sec-title">Dr. Inna Yaskin</h2>
-                                            </div>
-                                            <div class="title">
-                                                <span class="li">NowRx Customer</span>
-                                            </div>
-
-                                        </div>
-                                        <div class="quote">
-                                            <blockquote>
-                                                <!-- <span class="title">"Instrumental for my practice.</span> -->
-                                                <span class="fullquote">
-                                                 I highly recommend NowRx Pharmacy. I use them professionally as well as personally for my own prescriptions and they really are as good as advertised. They accept standing orders which has saved my office staff significant time and energy in addition to accurately applying drug coupons to lower out of pocket costs for my patients. I could not be happier with NowRx!  You can use this as a reference point.
-                                                </span>
-                                            </blockquote>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                                <!-- Slides -->
-                                <div class="quoteitem">
-                                    <div class="content">
-                                        <div class="info">
-                                            <!-- profile -->
-                                            <div class="img">
-                                                <img src="<?php echo get_template_directory_uri(); ?>/images/Dr.-Jerry-Manoukian.png" alt="Dr.-Jerry-Manoukian" class="pic">
-                                            </div>
-                                            <div class="name">
-                                                <h2 class="sec-title">Dr. Inna Yaskin</h2>
-                                            </div>
-                                            <div class="title">
-                                                <span class="li">NowRx Customer</span>
-                                            </div>
-
-                                        </div>
-                                        <div class="quote">
-                                            <blockquote>
-                                                <!-- <span class="title">"Instrumental for my practice.</span> -->
-                                                <span class="fullquote">
-                                                 I highly recommend NowRx Pharmacy. I use them professionally as well as personally for my own prescriptions and they really are as good as advertised. They accept standing orders which has saved my office staff significant time and energy in addition to accurately applying drug coupons to lower out of pocket costs for my patients. I could not be happier with NowRx!  You can use this as a reference point.
-                                                </span>
-                                            </blockquote>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                                <!-- Slides -->
-                                <div class="quoteitem">
-                                    <div class="content">
-                                        <div class="info">
-                                            <!-- profile -->
-                                            <div class="img">
-                                                <img src="<?php echo get_template_directory_uri(); ?>/images/Dr.-Peter-Bullock.png" alt="Dr.-Peter-Bullock" class="pic">
-                                            </div>
-                                            <div class="name">
-                                                <h2 class="sec-title">Dr. Inna Yaskin</h2>
-                                            </div>
-                                            <div class="title">
-                                                <span class="li">NowRx Customer</span>
-                                            </div>
-
-                                        </div>
-                                        <div class="quote">
-                                            <blockquote>
-                                                <!-- <span class="title">"Instrumental for my practice.</span> -->
-                                                <span class="fullquote">
-                                                 I highly recommend NowRx Pharmacy. I use them professionally as well as personally for my own prescriptions and they really are as good as advertised. They accept standing orders which has saved my office staff significant time and energy in addition to accurately applying drug coupons to lower out of pocket costs for my patients. I could not be happier with NowRx!  You can use this as a reference point.
-                                                </span>
-                                            </blockquote>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Slides -->
-                                <div class="quoteitem">
-                                    <div class="content">
-                                        <div class="info">
-                                            <!-- profile -->
-                                            <div class="img">
-                                                <img src="<?php echo get_template_directory_uri(); ?>/images/Dr.-Sherna-Madan.png" alt="Dr.-Sherna-Madan" class="pic">
-                                            </div>
-                                            <div class="name">
-                                                <h2 class="sec-title">Dr. Inna Yaskin</h2>
-                                            </div>
-                                            <div class="title">
-                                                <span class="li">NowRx Customer</span>
-                                            </div>
-
-                                        </div>
-                                        <div class="quote">
-                                            <blockquote>
-                                                <!-- <span class="title">"Instrumental for my practice.</span> -->
-                                                <span class="fullquote">
-                                                 I highly recommend NowRx Pharmacy. I use them professionally as well as personally for my own prescriptions and they really are as good as advertised. They accept standing orders which has saved my office staff significant time and energy in addition to accurately applying drug coupons to lower out of pocket costs for my patients. I could not be happier with NowRx!  You can use this as a reference point.
-                                                </span>
-                                            </blockquote>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Slides -->
-                                <div class="quoteitem">
-                                    <div class="content">
-                                        <div class="info">
-                                            <!-- profile -->
-                                            <div class="img">
-                                                <img src="<?php echo get_template_directory_uri(); ?>/images/Vicki-Lin.jpg" alt="Vicki-Lin" class="pic">
-                                            </div>
-                                            <div class="name">
-                                                <h2 class="sec-title">Dr. Inna Yaskin</h2>
-                                            </div>
-                                            <div class="title">
-                                                <span class="li">NowRx Customer</span>
-                                            </div>
-
-                                        </div>
-                                        <div class="quote">
-                                            <blockquote>
-                                                <!-- <span class="title">"Instrumental for my practice.</span> -->
-                                                <span class="fullquote">
-                                                 I highly recommend NowRx Pharmacy. I use them professionally as well as personally for my own prescriptions and they really are as good as advertised. They accept standing orders which has saved my office staff significant time and energy in addition to accurately applying drug coupons to lower out of pocket costs for my patients. I could not be happier with NowRx!  You can use this as a reference point.
-                                                </span>
-                                            </blockquote>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-
                             </div>
-                            <!-- If we need pagination -->
-                            <div class="swiper-pagination"></div>
 
-                            <!-- If we need navigation buttons -->
-                            <div class="swiper-button-prev"></div>
-                            <div class="swiper-button-next"></div>
+                            <!-- Slides -->
+                            <div class="quoteitem">
+                                <div class="content">
+
+                                    <div class="quote">
+                                        <blockquote>
+                                            <span class="fullquote">
+                                            "<b>Best Pharmacy experience EVER</b>! These guys are like going to your old neighborhood pharmacy, you know the one, where they deliver your medications to you and actually care about the customer? You don't get better service than this."
+
+                                            </span>
+                                            <cite>
+                                                <div class="name">
+                                                    <h2 class="sec-title">-Mark C.
+                                                    </h2>
+                                                </div>
+                                                <div class="title">
+                                                    <span class="li">NowRx Pharmacy Customer</span>
+                                                </div>
+                                            </cite>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Slides -->
+                            <div class="quoteitem">
+                                <div class="content">
+
+                                    <div class="quote">
+                                        <blockquote>
+                                            <span class="fullquote">
+                                            "<b>FANTASTIC! Still waiting to know what the catch is!</b> This has been a phenomenal service that has made filling and receiving prescriptions so easy. I'm still blown away that delivery is free and same day."
+
+
+                                            </span>
+                                            <cite>
+                                                <div class="name">
+                                                    <h2 class="sec-title">-Elizabeth P.
+                                                    </h2>
+                                                </div>
+                                                <div class="title">
+                                                    <span class="li">NowRx Pharmacy Customer</span>
+                                                </div>
+                                            </cite>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <!-- Slides -->
+                            <div class="quoteitem">
+                                <div class="content">
+
+                                    <div class="quote">
+                                        <blockquote>
+                                            <span class="fullquote">
+                                                "Super easy to use. <b>Fast and WAY cheaper</b> than Costco or any other place I've ever checked."
+
+                                            </span>
+                                            <cite>
+                                                <div class="name">
+                                                    <h2 class="sec-title">-Bruce B.
+                                                    </h2>
+                                                </div>
+                                                <div class="title">
+                                                    <span class="li">NowRx Pharmacy Customer</span>
+                                                </div>
+                                            </cite>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- Slides -->
+                            <div class="quoteitem">
+                                <div class="content">
+
+                                    <div class="quote">
+                                        <blockquote>
+                                            <span class="fullquote">
+                                            "<b>There's a reason every single review is five stars - This pharmacy is AMAZING</b>! Lightning fast response times by pleasant professional staff and customer service like nothing I have ever encountered. Give NowRx a try - you won't regret it!"
+
+                                            </span>
+                                            <cite>
+                                                <div class="name">
+                                                    <h2 class="sec-title">-Lina W.
+                                                    </h2>
+                                                </div>
+                                                <div class="title">
+                                                    <span class="li">NowRx Pharmacy Customer</span>
+                                                </div>
+                                            </cite>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Slides -->
+                            <div class="quoteitem">
+                                <div class="content">
+
+                                    <div class="quote">
+                                        <blockquote>
+                                            <span class="fullquote">
+                                            "<b>This pharmacy is the absolute best</b>! They are friendly, efficient and they know their stuff! I can't say enough good things about the staff. Professional, courteous, knowledgeable service equals five stars."
+
+                                            </span>
+                                            <cite>
+                                                <div class="name">
+                                                    <h2 class="sec-title">-Victoria V.
+                                                    </h2>
+                                                </div>
+                                                <div class="title">
+                                                    <span class="li">NowRx Pharmacy Customer</span>
+                                                </div>
+                                            </cite>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Slides -->
+                            <div class="quoteitem">
+                                <div class="content">
+
+                                    <div class="quote">
+                                        <blockquote>
+                                            <span class="fullquote">
+                                            "<b>Hands down best pharmacy you could ask for!</b> I no longer have to wait in line to fill my grandmother's medications, and the customer service is amazing. Try them out and you won't regret it!"
+
+                                            </span>
+                                            <cite>
+                                                <div class="name">
+                                                    <h2 class="sec-title">-Melissa A.
+                                                    </h2>
+                                                </div>
+                                                <div class="title">
+                                                    <span class="li">NowRx Pharmacy Customer</span>
+                                                </div>
+                                            </cite>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Slides -->
+                            <div class="quoteitem">
+                                <div class="content">
+
+                                    <div class="quote">
+                                        <blockquote>
+                                            <span class="fullquote">
+                                            "These people, this service is as Good as it Gets. <b>NowRx sets a new standard that I have never seen anyone get close to.</b> I really can't say enough good things on this service."
+                                            </span>
+                                            <cite>
+                                                <div class="name">
+                                                    <h2 class="sec-title">-Larry H.
+                                                    </h2>
+                                                </div>
+                                                <div class="title">
+                                                    <span class="li">NowRx Pharmacy Customer</span>
+                                                </div>
+                                            </cite>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Slides -->
+                            <div class="quoteitem">
+                                <div class="content">
+
+                                    <div class="quote">
+                                        <blockquote>
+                                            <span class="fullquote">
+                                            "We have been using NowRx for the last year and the service is great as well as all the staff we have talked to in getting our prescriptions filled. <b>They go the extra mile in customer service!</b>"
+
+                                            </span>
+                                            <cite>
+                                                <div class="name">
+                                                    <h2 class="sec-title">-Neil C.
+                                                    </h2>
+                                                </div>
+                                                <div class="title">
+                                                    <span class="li">NowRx Pharmacy Customer</span>
+                                                </div>
+                                            </cite>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Slides -->
+                            <div class="quoteitem">
+                                <div class="content">
+
+                                    <div class="quote">
+                                        <blockquote>
+                                            <span class="fullquote">
+                                            "<b>I don't know what I'd do without these folks.</b> They are unfailingly knowledgeable, courteous and helpful. When they say your order will be delivered by a certain time you can count on it and they work to your schedule."
+
+                                            </span>
+                                            <cite>
+                                                <div class="name">
+                                                    <h2 class="sec-title">-David H
+                                                    </h2>
+                                                </div>
+                                                <div class="title">
+                                                    <span class="li">NowRx Pharmacy Customer</span>
+                                                </div>
+                                            </cite>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Slides -->
+                            <div class="quoteitem">
+                                <div class="content">
+
+                                    <div class="quote">
+                                        <blockquote>
+                                            <span class="fullquote">
+                                            "<b>This place, these people, are really incredible.</b> I can't say enough about the service at NowRx. I feel very lucky to have found them."
+
+                                            </span>
+                                            <cite>
+                                                <div class="name">
+                                                    <h2 class="sec-title">-Meg M.
+                                                    </h2>
+                                                </div>
+                                                <div class="title">
+                                                    <span class="li">NowRx Pharmacy Customer</span>
+                                                </div>
+                                            </cite>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Slides -->
+                            <div class="quoteitem">
+                                <div class="content">
+
+                                    <div class="quote">
+                                        <blockquote>
+                                            <span class="fullquote">
+                                            "I have nothing but great things to say! <b>They have impeccable customer service and never had any issues filling my prescriptions.</b> Highly recommend NowRx!"
+
+                                            </span>
+                                            <cite>
+                                                <div class="name">
+                                                    <h2 class="sec-title">-Jenn S.
+                                                    </h2>
+                                                </div>
+                                                <div class="title">
+                                                    <span class="li">NowRx Pharmacy Customer</span>
+                                                </div>
+                                            </cite>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Slides -->
+                            <div class="quoteitem">
+                                <div class="content">
+
+                                    <div class="quote">
+                                        <blockquote>
+                                            <span class="fullquote">
+                                            "<b>You couldn't ask for better pharmacy service.</b> These people check prices for coupons for me, take scripts by phone picture or contact my doctor's office and deliver within a hour to my work or home!"
+                                            </span>
+                                            <cite>
+                                                <div class="name">
+                                                    <h2 class="sec-title">-Alexis B.
+                                                    </h2>
+                                                </div>
+                                                <div class="title">
+                                                    <span class="li">NowRx Pharmacy Customer</span>
+                                                </div>
+                                            </cite>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Slides -->
+                            <div class="quoteitem">
+                                <div class="content">
+
+                                    <div class="quote">
+                                        <blockquote>
+                                            <span class="fullquote">
+                                            "I honestly cannot thank NowRx enough. <b>Every time I need them, there is someone quickly available, always friendly and knowledgeable, and always helpful.</b> I'm so grateful for the convenience/support offered by the team!"
+                                            </span>
+                                            <cite>
+                                                <div class="name">
+                                                    <h2 class="sec-title">-Nina K
+                                                    </h2>
+                                                </div>
+                                                <div class="title">
+                                                    <span class="li">NowRx Pharmacy Customer</span>
+                                                </div>
+                                            </cite>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Slides -->
+                            <div class="quoteitem">
+                                <div class="content">
+
+                                    <div class="quote">
+                                        <blockquote>
+                                            <span class="fullquote">
+                                            "<b>Convenient and saved money on all the prescriptions!</b> It's a no-brainer to sign up for this fabulous service!"
+                                            </span>
+                                            <cite>
+                                                <div class="name">
+                                                    <h2 class="sec-title">-Rob S.
+                                                    </h2>
+                                                </div>
+                                                <div class="title">
+                                                    <span class="li">NowRx Pharmacy Customer</span>
+                                                </div>
+                                            </cite>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Slides -->
+                            <div class="quoteitem">
+                                <div class="content">
+
+                                    <div class="quote">
+                                        <blockquote>
+                                            <span class="fullquote">
+                                            "I ordered a renewal at 5:30PM, and it was delivered at my door by 7:30PM. I expected it the next day. <b>All I can say is WOW.</b> "
+                                            </span>
+                                            <cite>
+                                                <div class="name">
+                                                    <h2 class="sec-title">-Steve R.
+                                                    </h2>
+                                                </div>
+                                                <div class="title">
+                                                    <span class="li">NowRx Pharmacy Customer</span>
+                                                </div>
+                                            </cite>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Slides -->
+                            <div class="quoteitem">
+                                <div class="content">
+
+                                    <div class="quote">
+                                        <blockquote>
+                                            <span class="fullquote">
+                                            "Spectacular! So easy to use! Always a live person to talk to! Just made my life so simple! Love them!"
+                                            </span>
+                                            <cite>
+                                                <div class="name">
+                                                    <h2 class="sec-title">-Alex B
+                                                    </h2>
+                                                </div>
+                                                <div class="title">
+                                                    <span class="li">NowRx Pharmacy Customer</span>
+                                                </div>
+                                            </cite>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Slides -->
+                            <div class="quoteitem">
+                                <div class="content">
+
+                                    <div class="quote">
+                                        <blockquote>
+                                            <span class="fullquote">
+                                            "The best! Easy to work with, professional, and efficient and fast! No need to go to pharmacy, <b>NowRx is the best option for prescription delivery.</b> "
+                                            </span>
+                                            <cite>
+                                                <div class="name">
+                                                    <h2 class="sec-title">Alex F.
+                                                    </h2>
+                                                </div>
+                                                <div class="title">
+                                                    <span class="li">NowRx Pharmacy Customer</span>
+                                                </div>
+                                            </cite>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Slides -->
+                            <div class="quoteitem">
+                                <div class="content">
+
+                                    <div class="quote">
+                                        <blockquote>
+                                            <span class="fullquote">
+                                            "The staff are so knowledgable and friendly and the service is absolutely 5 stars and so much better than all those big chain pharmacies. <b>They really go above and beyond to help you.</b> "
+                                            </span>
+                                            <cite>
+                                                <div class="name">
+                                                    <h2 class="sec-title">-Jenny C.
+                                                    </h2>
+                                                </div>
+                                                <div class="title">
+                                                    <span class="li">NowRx Pharmacy Customer</span>
+                                                </div>
+                                            </cite>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Slides -->
+                            <div class="quoteitem">
+                                <div class="content">
+
+                                    <div class="quote">
+                                        <blockquote>
+                                            <span class="fullquote">
+                                            "This pharmacy is the best around. <b>They are fantastic at quick deliveries and the customer service is absolutely amazing.</b> I highly recommend NowRx and would refer anyone I know to them."
+                                            </span>
+                                            <cite>
+                                                <div class="name">
+                                                    <h2 class="sec-title">-Lisa W.
+                                                    </h2>
+                                                </div>
+                                                <div class="title">
+                                                    <span class="li">NowRx Pharmacy Customer</span>
+                                                </div>
+                                            </cite>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Slides -->
+                            <div class="quoteitem">
+                                <div class="content">
+
+                                    <div class="quote">
+                                        <blockquote>
+                                            <span class="fullquote">
+                                            " <b>It's changed our lives!</b> They do all the work; reminders, calls to the docs or nurses, on time DELIVERIES TO YOUR DOOR with absolutely no hassle. We highly recommend this company!"
+                                            </span>
+                                            <cite>
+                                                <div class="name">
+                                                    <h2 class="sec-title">-Cheri H.
+                                                    </h2>
+                                                </div>
+                                                <div class="title">
+                                                    <span class="li">NowRx Pharmacy Customer</span>
+                                                </div>
+                                            </cite>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Slides -->
+                            <div class="quoteitem">
+                                <div class="content">
+
+                                    <div class="quote">
+                                        <blockquote>
+                                            <span class="fullquote">
+                                            "The best move I've ever made! Besides being friendly and helpful, <b>I always have the feeling they are trying to make my life better</b>, always willing to work with me not against me as it felt in all the pharmacies I'd used before."
+                                            </span>
+                                            <cite>
+                                                <div class="name">
+                                                    <h2 class="sec-title">-Carolyn K.
+                                                    </h2>
+                                                </div>
+                                                <div class="title">
+                                                    <span class="li">NowRx Pharmacy Customer</span>
+                                                </div>
+                                            </cite>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Slides -->
+                            <div class="quoteitem">
+                                <div class="content">
+
+                                    <div class="quote">
+                                        <blockquote>
+                                            <span class="fullquote">
+                                            "They are the best. I have been using them for about 1 year after being frustrated with Walgreens incompetence. <b> NowRx is a refreshing change.</b> They act like they actually appreciate the business. I can't say enough positive things about this business."
+                                            </span>
+                                            <cite>
+                                                <div class="name">
+                                                    <h2 class="sec-title">-Craig S.
+                                                    </h2>
+                                                </div>
+                                                <div class="title">
+                                                    <span class="li">NowRx Pharmacy Customer</span>
+                                                </div>
+                                            </cite>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Slides -->
+                            <div class="quoteitem">
+                                <div class="content">
+
+                                    <div class="quote">
+                                        <blockquote>
+                                            <span class="fullquote">
+                                            "Was with my previous online pharmacy for years because of copay savings on a three month supply. But was delighted and satisfied with switching to NowRx. <b>Outstanding customer service and even more savings on my co-pays. Instant communication via phone call or text, with same day delivery options. Couldn't ask for more!</b> "
+                                            </span>
+                                            <cite>
+                                                <div class="name">
+                                                    <h2 class="sec-title">-Willy S.
+                                                    </h2>
+                                                </div>
+                                                <div class="title">
+                                                    <span class="li">NowRx Pharmacy Customer</span>
+                                                </div>
+                                            </cite>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+
+
 
                         </div>
+
+
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-
-
-<!-- visit faq -->
-<section class="visit-faq">
-    <div class="container">
-        <div class="content">
-            <div class="rvl">
-                <span class="sub-headline">
-                    Join the NowRx Pharmacy Doctor Feedback Program
-                </span>
-            </div>
-            <div class="rvl">
-                <h2 class="sec-title">
-                    Take Our Survery - Recieve $40
-                </h2>
-            </div>
-            <div class="rvl">
-                <div class="btn-container">
-                    <a href="<?= get_site_url(); ?>/get-started/" class="rx-btn rx-dg">
-                        Learn More
-                    </a>
-                </div>
-            </div>
-            <div class="rvl">
-                <div class="small-block">
-                    *Some restrictions may apply. Must be employed by a licensed and approved medical office.
                 </div>
             </div>
         </div>
     </div>
 </section>
-
-
-
-
-
-<!-- faq -->
-<section class="faq-section">
-    <div class="container">
-        <div class="content">
-            <div class="titleblock">
-                <div class="rvl">
-                    <span class="sub-headline">
-                        Top Doctor Questions about NowRx
-                    </span>
-                </div>
-
-                <div class="rvl">
-                    <h2 class="sec-title">
-                        Your Questions Answered
-                    </h2>
-                </div>
-            </div>
-            <div class="faq-content">
-
-                <!-- item -->
-                <div class="block">
-                    <div class="rvl">
-                        <div class="q-item">
-                            <div class="title">Q.</div>
-                            <span class="cntx">
-                                What is NowRx?
-                            </span>
-                        </div>
-                    </div>
-                    <div class="rvl">
-                        <div class="a-item">
-                            <div class="title">A.</div>
-                            <span class="cntx">
-                                NowRx is a pharmacy just like your CVS or Walgreens, except instead of you coming in to
-                                pick up medication, we bring them to you.
-                            </span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- item -->
-                <div class="block">
-                    <div class="rvl">
-                        <div class="q-item">
-                            <div class="title">Q.</div>
-                            <span class="cntx">
-                                Is NowRx a mail-order pharmacy?
-                            </span>
-                        </div>
-                    </div>
-                    <div class="rvl">
-                        <div class="a-item">
-                            <div class="title">A.</div>
-                            <span class="cntx">
-                                NO. NowRx Pharmacy has physical locations in all of our service areas. We accept
-                                walk-ins and our pharmacists are always available to chat in person or over the phone.
-                            </span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- item -->
-                <div class="block">
-                    <div class="rvl">
-                        <div class="q-item">
-                            <div class="title">Q.</div>
-                            <span class="cntx">
-                                How can you afford to provide free same-day delivery?
-                            </span>
-                        </div>
-                    </div>
-                    <div class="rvl">
-                        <div class="a-item">
-                            <div class="title">A.</div>
-                            <span class="cntx">
-                                Proprietary tech inside our pharmacy increases efficiency and reduces our cost to about
-                                1/100th that of a traditional pharmacy like CVS. This enables free same-day delivery.
-                            </span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- item -->
-                <div class="block">
-                    <div class="rvl">
-                        <div class="q-item">
-                            <div class="title">Q.</div>
-                            <span class="cntx">
-                                How do you make money?
-                            </span>
-                        </div>
-                    </div>
-                    <div class="rvl">
-                        <div class="a-item">
-                            <div class="title">A.</div>
-                            <span class="cntx">
-                                We make money like every pharmacy or healthcare service – reimbursement from insurance
-                                and copays from the patient.
-                            </span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- item -->
-                <div class="block">
-                    <div class="rvl">
-                        <div class="q-item">
-                            <div class="title">Q.</div>
-                            <span class="cntx">
-                                Do you charge more to offset the cost of delivery?
-                            </span>
-                        </div>
-                    </div>
-                    <div class="rvl">
-                        <div class="a-item">
-                            <div class="title">A.</div>
-                            <span class="cntx">
-                                NO. Prices are lower than or competitive with all pharmacies. We also automatically
-                                search for and apply available coupons to offer the lowest price possible (over $1M
-                                saved!).
-                            </span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- item -->
-                <div class="block">
-                    <div class="rvl">
-                        <div class="q-item">
-                            <div class="title">Q.</div>
-                            <span class="cntx">
-                                How do you handle special requests?
-                            </span>
-                        </div>
-                    </div>
-                    <div class="rvl">
-                        <div class="a-item">
-                            <div class="title">A.</div>
-                            <span class="cntx">
-                                Special requests (e.g. blister packs, medication sorting, etc.) are available upon
-                                request. Just let our pharmacist know when they reach out to schedule your delivery!
-
-
-                            </span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- item -->
-                <div class="block">
-                    <div class="rvl">
-                        <div class="q-item">
-                            <div class="title">Q.</div>
-                            <span class="cntx">
-                                Can I manage prescriptions for a family member?
-                            </span>
-                        </div>
-                    </div>
-                    <div class="rvl">
-                        <div class="a-item">
-                            <div class="title">A.</div>
-                            <span class="cntx">
-                                Yes. You can set a head of household if a single person will be managing a family member
-                                or loved one’s prescriptions.
-                            </span>
-                        </div>
-                    </div>
-                </div>
-
-
-                <!-- item -->
-                <div class="block">
-                    <div class="rvl">
-                        <div class="q-item">
-                            <div class="title">Q.</div>
-                            <span class="cntx">
-                                Do you deliver controlled & refrigerated medication?
-                            </span>
-                        </div>
-                    </div>
-                    <div class="rvl">
-                        <div class="a-item">
-                            <div class="title">A.</div>
-                            <span class="cntx">
-                                YES. If you have a paper copy, a NowRx driver will pick it up from you or your doctor
-                                before delivery. These meds also require a signature & proper ID.
-                            </span>
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-                <!-- item -->
-                <div class="block">
-                    <div class="rvl">
-                        <div class="q-item">
-                            <div class="title">Q.</div>
-                            <span class="cntx">
-                                What insurance plans do you take?
-                            </span>
-                        </div>
-                    </div>
-                    <div class="rvl">
-                        <div class="a-item">
-                            <div class="title">A.</div>
-                            <span class="cntx">
-                                NowRx Pharmacy accepts all major insurance plans except Kaiser. We also offer some of
-                                the lowest out of pocket prices in the areas we serve.
-                            </span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- item -->
-                <div class="block">
-                    <div class="rvl">
-                        <div class="q-item">
-                            <div class="title">Q.</div>
-                            <span class="cntx">
-                                How long does does delivery take?
-                            </span>
-                        </div>
-                    </div>
-                    <div class="rvl">
-                        <div class="a-item">
-                            <div class="title">A.</div>
-                            <span class="cntx">
-                                Typically, your prescription will arrive 2-4 hours after we have confirmed your
-                                prescription. We also offer 1hr delivery option for a $5 fee.
-                            </span>
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<!-- visit faq -->
-<section class="visit-faq">
-    <div class="container">
-        <div class="content">
-            <div class="rvl">
-                <span class="sub-headline">
-                    Have additional questions about NowRx Pharmacy
-                </span>
-            </div>
-            <div class="rvl">
-                <h2 class="sec-title">
-                    Visit our FAQ Page
-                </h2>
-            </div>
-            <div class="rvl">
-                <div class="btn-container">
-                    <a href="<?= get_site_url(); ?>/faqs/#faqblock" class="rx-btn rx-dg">
-                        Frequently Asked Questions
-                    </a>
-                </div>
-            </div>
-            <div class="rvl">
-                <div class="small-block">
-                    You can also text us at (844) 466-6979 or send an email to info@nowrx.com and we will get back to
-                    you as soon as possible.
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
 
 
 

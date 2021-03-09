@@ -115,3 +115,135 @@ a img, hr {
     border-radius: 0;
     color: #192d3e;
 }
+
+
+
+section.testimonials-block.triples{
+	.imageblock {
+		max-width: 120px;
+		margin: 0px auto 20px;
+		border-radius: 50%;
+		align-items: center;
+		display: flex;
+		justify-content: center;
+		position: relative;
+		padding: 20px 0 0;
+	}
+ 
+	.blocks {
+		display: flex;
+		@media screen and (max-width: 992px) {
+			flex-direction: column;
+		}
+	}
+	.subtitle {
+		font-size: 1.1875rem;
+	}
+
+	h3.name {
+		font-size: 21px;
+		color: #1a2d3d;
+		font-weight: 600;
+		line-height: 25px;
+		margin: 0 0 5px;
+	}
+
+	.usertitle {
+		color: #0388cd;
+		font-weight: 600;
+		text-transform: uppercase;
+		font-size: 15px;
+	}
+
+	.imageblock img {
+		box-shadow: 0 10px 20px rgba(0, 0, 0, 0.18);
+		border-radius: 50%;
+		object-fit: cover;
+	}
+
+	.imageblock:after {
+		content: close-quote;
+		position: absolute;
+		bottom: 100%;
+		left: 0;
+		right: 0;
+		width: 100%;
+		height: 2px;
+		background: #0388cd;
+		margin: 0 auto;
+	}
+
+	.subtitle {
+		text-align: center;
+		text-transform: uppercase;
+		margin: 0 0 10px;
+		color: #038ed8;
+		font-weight: 600;
+		@media screen and (max-width: 992px) {
+			// font-size: 11px;
+		}
+	}
+
+	h2.main-title {
+		text-align: center;
+		font-size: 3.75rem;
+		letter-spacing: -1px;
+		font-weight: 800;
+		margin: 0;
+		line-height: 4.4rem;
+		@media screen and (max-width: 992px) {
+			font-size: 2.95rem;
+			line-height: 2.9rem;
+		}
+	}
+
+	.blocks {
+		align-items: center;
+		margin: 40px 0 0;
+		justify-content: center;
+	}
+
+	.content {
+		padding: 4rem 10px;
+	}
+
+	.container {
+		max-width: 75rem;
+		margin: 0 auto;
+	}
+
+	.block {
+		text-align: center;
+		text-align: center;
+		margin: 0 40px;
+		max-width: 340px;
+		align-items: flex-start;
+		@media screen and (max-width: 992px) {
+			max-width: 400px;
+			margin: 0 auto 60px;
+		}
+	}
+
+	.block h2.title {
+		text-align: center;
+		font-size: 30px;
+		margin: 0 0 10px;
+	}
+
+	p {
+		font-size: 18px;
+		color: #1a2d3d;
+		font-weight: 500;
+		min-height: 120px;
+		display: block;
+	}
+
+	blockquote,
+	blockquote {
+		padding: 0;
+	}
+
+	.block blockquote {
+		border: none;
+	}
+}
