@@ -2008,7 +2008,9 @@ main#main {
 		}
 	}
 }
-
+.standardpadding {
+    padding: 0 20px;
+}
 main#main header.article-header.tynk.locations-header.page404 {
 	@media screen and (max-width: 992px) {
 		flex-direction: column;
@@ -2917,7 +2919,7 @@ input#Submit {
 
 .custom-shape-divider-top-1610578846 {
 	position: absolute;
-	top: 0;
+	top: -1px;
 	left: 0;
 	width: 100%;
 	overflow: hidden;

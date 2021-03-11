@@ -12,7 +12,7 @@ get_template_part('footer-modals');
                             alt="NowRx Pharmacy Logo"></a></p>
                 <p class="text-small">&copy; 2019 NowRx.com  <br>All rights reserved. <br><a
                         href="<?= get_site_url(); ?>/privacy-policy/">Privacy Policy</a><br><a
-                        href="<?= get_site_url(); ?>/hipaa-privacy/">HIPAA Privacy</a>
+                        href="<?= get_site_url(); ?>/hipaa-privacy/">HIPAA Privacy</a><br>
                         <a href="<?= get_site_url(); ?>/telehealth/terms-and-conditions/">Telehealth T&C</a>
                 </p>
             </div>

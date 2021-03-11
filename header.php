@@ -143,9 +143,12 @@
                 <nav class="top">
                     <ul class="nav" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
                         <li itemprop="name"><a itemprop="url" href="<?php echo get_site_url(); ?>/how-it-works/">How It Works</a></li>
-                        <li itemprop="name"><a itemprop="url" href="<?php echo get_site_url(); ?>/blog">Blog</a></li>
                         <li itemprop="name"><a itemprop="url" href="<?php echo get_site_url(); ?>/testimonials/">Testimonials</a></li>
+                        <li itemprop="name"><a itemprop="url" href="<?php echo get_site_url(); ?>/pricing/">Pricing</a></li>
+
+                        <li itemprop="name"><a itemprop="url" href="<?php echo get_site_url(); ?>/blog">Blog</a></li>
                         <!-- 		<li itemprop="name"><a itemprop="url" href="/referral/">Refer a Friend</a></li> -->
+
                         <li itemprop="name"><a itemprop="url" href="<?php echo get_site_url(); ?>/faqs/">FAQs</a></li>
                         <li itemprop="name" class="buttonfill buttonglimmer">
                             <a class="button secondary rounded shadow rx-btn"
