@@ -61,7 +61,7 @@
 
                 <div class="rvls">
                     <div class="btn-container">
-                        <!-- <a class="rx-btn" href="<?= get_site_url(); ?>/get-started/">Join Watilist</a> -->
+                        <!-- <a class="rx-btn" href="<?= get_site_url(); ?>/refill-and-transfer-prescriptions/">Join Watilist</a> -->
                         <a class="rx-btn " data-toggle="waitlist" aria-controls="waitlist"
                             aria-haspopup="true" tabindex="0"> <?php include('reg-arrow.php'); ?> Get Started</a>
                         <a class="rx-btn rx-green mrb" href="#howitwork"> <?php include('grn-arrow.php'); ?> How It Works</a>

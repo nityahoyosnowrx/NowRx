@@ -45,7 +45,7 @@
       
       <p>
       <strong>New Prescription: </strong>Tell your doctor to fax or ePrescribe to NowRx. <br>
-      <strong>Existing Prescription: </strong>Text us at <a href="tel:844-466-6979" class="tellink">(844) 466-6979</a> or submit our online transfer form (<a href="https://nowrx.com/get-started/" style="color:#fff;">Click Here</a>)</p>
+      <strong>Existing Prescription: </strong>Text us at <a href="tel:844-466-6979" class="tellink">(844) 466-6979</a> or submit our online transfer form (<a href="https://nowrx.com/refill-and-transfer-prescriptions/" style="color:#fff;">Click Here</a>)</p>
 		</div>
 
 
@@ -219,7 +219,7 @@
 	        <p class="pre-headline">Transfer Prescription to NowRX Pharmacy</p>
 	        <h2 class="headline"><div>Get a $20 Visa Card with</div> Your First Prescription Delivery</h2>
 	        
-          <a href="https://nowrx.com/get-started/" class="button">Transfer  My Prescriptions</a>
+          <a href="https://nowrx.com/refill-and-transfer-prescriptions/" class="button">Transfer  My Prescriptions</a>
           
         </div>
         <div class="large-12 cell text-center ">

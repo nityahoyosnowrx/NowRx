@@ -396,7 +396,7 @@ li {
                     <p>
                         <strong>New Prescription: </strong>Tell your doctor to fax or ePrescribe to NowRx. <br>
                         <strong>Existing Prescription: </strong>Text <a href="tel:844-466-6979" class="tellink">(844)
-                            466-6979</a> or <a href="<?= get_site_url(); ?>/get-started/" style="color:#fff;">Transfer
+                            466-6979</a> or <a href="<?= get_site_url(); ?>/refill-and-transfer-prescriptions/" style="color:#fff;">Transfer
                             Online
                             Here</a>.
                     </p>
@@ -803,7 +803,7 @@ li {
 
             <div class="rvl">
                 <div class="btn-container">
-                    <a href="<?= get_site_url(); ?>/get-started/" class="rx-btn rx-dg">
+                    <a href="<?= get_site_url(); ?>/refill-and-transfer-prescriptions/" class="rx-btn rx-dg">
                         Get Started
                     </a>
                 </div>

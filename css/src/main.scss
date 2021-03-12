@@ -69,7 +69,7 @@ header.main {
 	top: 0;
 	transition: all 0.3s;
 	@media screen and (max-width: 992px) {
-		padding: 10px 10px;
+		padding: 0;
 	}
 	.content {
 		display: flex;
@@ -86,8 +86,19 @@ header.main {
 		padding: 20px 30px;
 
 		@media screen and (max-width: 992px) {
-			padding: 20px 0;
+			padding:  0;
 			flex-direction: row-reverse;
+		}
+		.rlcontainer {
+			@media screen and (max-width: 992px) {
+				width: 100%;
+			display: flex;
+			flex-direction: row-reverse;
+			position: relative;
+			background: #fff;
+			padding: 30px 10px;
+			z-index: 123;
+			}
 		}
 	}
 
@@ -104,9 +115,18 @@ header.main {
 			position: relative;
 			top: 0;
 			left: 0;
+			font-weight: 700;
+			color: #192d3e;
+			font-size: 1.3rem;
+			padding-right: 5px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: row;
 			svg {
-				width: 25px;
-				height: 25px;
+				width: 20px;
+				height: 20px;
+				margin-right: 15px;
 			}
 		}
 	}
@@ -126,9 +146,10 @@ header.main {
 
 	nav.top {
 		margin-left: auto;
-		transition: all 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+		transition: all 0.7s cubic-bezier(0.22, 1, 0.36, 1);
 		width: 100%;
 		padding-left: 30px;
+		
 
 		@media screen and (max-width: 992px) {
 			position: absolute;
@@ -144,10 +165,16 @@ header.main {
 			padding: 0;
 			margin: 0 -10px;
 			width: auto;
+
+			max-height: 0px;
+			transform: translate(0px, -20px);
+			overflow: hidden;
 		}
 		&.active-menu {
 			visibility: visible;
 			opacity: 1;
+			max-height: 100vh;
+			transform: translate(0px, 0px);
 		}
 		li.buttonfill {
 			margin-left: auto;
@@ -168,7 +195,7 @@ header.main {
 		justify-content: center;
 		@media screen and (max-width: 992px) {
 			flex-direction: column;
-			padding: 20px 0 40px;
+			padding: 20px 10px 40px;
 		}
 	}
 
@@ -213,7 +240,7 @@ header.main {
 			@media screen and (max-width: 992px) {
 				color: #fff;
 				font-size: 1.5rem;
-				padding: 15px 20px;
+				padding: 10px 20px;
 			}
 		}
 	}
@@ -373,7 +400,6 @@ body.page-template.page-template-refill-and-transfer-prescriptions section.hero-
 			margin-top: -0;
 			display: none;
 		}
-
 	}
 	.pageform iframe {
 		max-width: 100%;
@@ -3090,7 +3116,6 @@ section.pp-section.pp-section--payments {
 		@media screen and (max-width: 992px) {
 			font-size: 9px;
 			text-align: center;
-
 		}
 	}
 
@@ -3104,18 +3129,16 @@ section.pp-section.pp-section--payments {
 		letter-spacing: -0.1rem;
 		@media screen and (max-width: 992px) {
 			padding-right: 0;
-		    line-height: 12vw;
-    font-size: 9.4vw;
+			line-height: 12vw;
+			font-size: 9.4vw;
 
 			text-align: center;
-
-			 
 		}
 	}
 
 	h3.note-h {
 		font-size: 1.625rem;
-		letter-spacing: .01em;
+		letter-spacing: 0.01em;
 		line-height: 1.3em;
 		color: #00334d;
 		display: block;
@@ -3125,7 +3148,6 @@ section.pp-section.pp-section--payments {
 			line-height: 7vw;
 
 			text-align: center;
-
 		}
 	}
 	.section-inner.pp-inner--split {

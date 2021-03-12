@@ -61,9 +61,20 @@ $(document).ready(function() {
 // ----------------------------------------------------------------------------------------------------
 
 $(document).ready(function() {
+  let activeMenu  = false;
   $('a.menu-icon-toggle').on('click', function(e) {
     e.preventDefault();
-    $('nav.top').toggleClass('active-menu');
+    if(activeMenu == false){
+      $('nav.top').toggleClass('active-menu');
+      $("a.menu-icon-toggle .txt").text("Close");
+      activeMenu = true;
+
+    } else {
+      $('nav.top').toggleClass('active-menu');
+      $("a.menu-icon-toggle .txt").text("Menu");
+      activeMenu = false;
+    }
+    
   });
 });
 

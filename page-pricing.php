@@ -62,7 +62,7 @@
                 <div class="rvls">
 
                     <div class="btn-container">
-                        <a class="rx-btn" href="<?= get_site_url(); ?>/get-started/">
+                        <a class="rx-btn" href="<?= get_site_url(); ?>/refill-and-transfer-prescriptions/">
                             <span class="arrow">
                                 <svg aria-hidden="true" focusable="false" data-prefix="fas"
                                     data-icon="file-prescription" role="img" xmlns="http://www.w3.org/2000/svg"
@@ -139,7 +139,7 @@
             </div>
             <div class="rvl">
                 <div class="btn-container">
-                    <a href="<?= get_site_url(); ?>/get-started/" class="rx-btn rx-dg">
+                    <a href="<?= get_site_url(); ?>/refill-and-transfer-prescriptions/" class="rx-btn rx-dg">
                         Get Started
                     </a>
                 </div>

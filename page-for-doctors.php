@@ -257,7 +257,7 @@
 
             <div class="rvl">
                 <div class="btn-container">
-                    <a href="<?= get_site_url(); ?>/get-started/" class="rx-btn rx-dg">
+                    <a href="<?= get_site_url(); ?>/refill-and-transfer-prescriptions/" class="rx-btn rx-dg">
                         Get Started
                     </a>
                 </div>

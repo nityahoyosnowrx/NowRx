@@ -52,10 +52,9 @@
 
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 
-    <!-- mainc css -->
     <!-- ?v=<?php echo time(); ?> -->
-    <!-- <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/public/frontend.css?vs=<?php echo mktime(); ?>"> -->
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/public/frontend.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/public/frontend.css?vs=<?php echo mktime(); ?>">
+    <!-- <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/public/frontend.css"> -->
 
     <!-- WP HEAD -->
     <?php wp_head(); ?>
@@ -63,8 +62,7 @@
     <meta name="p:domain_verify" content="3f36cac4340da88df6ca76c1a431cd53" />
 
     <meta name="facebook-domain-verification" content="51y4k3ncdot6d21810cxa2yfje7xzg" />
-<!-- <link rel="dns-prefetch" href="//fonts.googleapis.com"> -->
-<!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+
     <!-- tracking code -->
     <?php get_template_part('analytics-head'); ?>
 
@@ -73,86 +71,62 @@
 <body <?php body_class(); ?> itemscope itemtype="http://schema.org/WebPage">
 
 
-
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5LWZKR7" height="0" width="0"
             style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
-    <!-- promobar -->
-    <!-- <div class="promo-bar">
-            <div class="item-container">
-                <a href="<?= get_site_url(); ?>/get-started/">
-                    <span class="hide-for-small-only">
-                        Receive up to a $100 bonus with your prescription delivery!*
-                        <span class="button hollow small">Let's Go</span>
-                    </span>
-                    <span class="show-for-small-only">
-                        Get up to $100 to Try NowRx Risk-Free*
-                    </span>
-                </a>
-                <span class="phone hide-for-small-only">
-                    <a href="tel:844-466-6979">(844) 466-6979</a>
-                </span>
-            </div>
-        </div> -->
-
-    <!-- main menu -->
 
     <header class="main" role="banner" itemscope itemtype="http://schema.org/WPHeader">
         <div class="container">
             <div class="content">
 
-                <div class="responsive-bar">
-                    <a class="menu-icon-toggle">
-                        <svg version="1.1" viewBox="0 0 16 16" xml:space="preserve" width="16" height="16">
-                            <title>Menu</title>
-                            <g fill="#1c172c">
-                                <path fill="#1c172c"
-                                    d="M1,3h14c0.552,0,1-0.447,1-1s-0.448-1-1-1H1C0.448,1,0,1.447,0,2C0,2.553,0.448,3,1,3z">
-                                </path>
-                                <path data-color="color-2"
-                                    d="M1,9h14c0.552,0,1-0.447,1-1s-0.448-1-1-1H1C0.448,7,0,7.447,0,8C0,8.553,0.448,9,1,9z">
-                                </path>
-                                <path fill="#1c172c"
-                                    d="M1,15h8c0.552,0,1-0.447,1-1s-0.448-1-1-1H1c-0.552,0-1,0.447-1,1C0,14.553,0.448,15,1,15z">
-                                </path>
-                            </g>
-                        </svg>
-                    </a>
+                <div class="rlcontainer">
+                    <div class="responsive-bar">
+                        <a class="menu-icon-toggle">
+                            <svg version="1.1" viewBox="0 0 16 16" xml:space="preserve" width="16" height="16">
+                                <title>Menu</title>
+                                <g fill="#1c172c">
+                                    <path fill="#1c172c"
+                                        d="M1,3h14c0.552,0,1-0.447,1-1s-0.448-1-1-1H1C0.448,1,0,1.447,0,2C0,2.553,0.448,3,1,3z">
+                                    </path>
+                                    <path data-color="color-2"
+                                        d="M1,9h14c0.552,0,1-0.447,1-1s-0.448-1-1-1H1C0.448,7,0,7.447,0,8C0,8.553,0.448,9,1,9z">
+                                    </path>
+                                    <path fill="#1c172c"
+                                        d="M1,15h8c0.552,0,1-0.447,1-1s-0.448-1-1-1H1c-0.552,0-1,0.447-1,1C0,14.553,0.448,15,1,15z">
+                                    </path>
+                                </g>
+                            </svg>
+                            <div class="txt">Menu</div>
+                        </a>
+                    </div>
+
+                    <!-- logo -->
+                    <div class="logo-block">
+                        <a class="main-nav-logo" href="<?php echo get_site_url(); ?>" title="Pharmacy delivery in hours. Just pay your normal copay.">
+
+                            <figure class="sk">
+                                <img src="<?php echo get_template_directory_uri(); ?>/library/images/NowRx-Logo-Pharmacy.png"
+                                    class="orbit-image" alt="NowRx Pharmacy Logo" height="60px" width="150px">
+                            </figure>
+
+                        </a>
+                    </div>
+
                 </div>
 
-                <!-- logo -->
-                <div class="logo-block">
-                    <a class="main-nav-logo" href="<?php echo get_site_url(); ?>">
-
-                        <!-- <img data-src="<?php echo get_template_directory_uri(); ?>/library/images/NowRx-Logo-Pharmacy.png" data-toggle-class="active" class="lozad" alt="NowRx"> -->
-
-                        <!-- <picture class="lozad" data-iesrc="<?php echo get_template_directory_uri(); ?>/library/images/NowRx-Logo-Pharmacy.png" data-alt="NowRx" data-toggle-class="active">
-                                <source type="image/png" srcset="<?php echo get_template_directory_uri(); ?>/library/images/NowRx-Logo-Pharmacy.png">
-                                <img src="<?php echo get_template_directory_uri(); ?>/library/images/NowRx-Logo-Pharmacylowrez.jpg" class="orbit-image" height="60px" width="150px">
-                            </picture> -->
-                        <figure class="sk">
-                            <img src="<?php echo get_template_directory_uri(); ?>/library/images/NowRx-Logo-Pharmacy.png"
-                                class="orbit-image" alt="NowRx Pharmacy Logo" height="60px" width="150px">
-                        </figure>
-
-                    </a>
-                </div>
                 <!-- nav -->
                 <nav class="top">
                     <ul class="nav" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
-                        <li itemprop="name"><a itemprop="url" href="<?php echo get_site_url(); ?>/how-it-works/">How It Works</a></li>
-                        <li itemprop="name"><a itemprop="url" href="<?php echo get_site_url(); ?>/testimonials/">Testimonials</a></li>
+                        <li itemprop="name"><a itemprop="url" href="<?php echo get_site_url(); ?>/how-it-works/" title="A simple, hassle free pharmacy experience.">How It Works</a></li>
+                        <li itemprop="name"><a itemprop="url" href="<?php echo get_site_url(); ?>/testimonials/" title="See what customers are saying about NowRx Pharmacy.">Testimonials</a></li>
                         <li itemprop="name"><a itemprop="url" href="<?php echo get_site_url(); ?>/pricing/">Pricing</a></li>
-
                         <li itemprop="name"><a itemprop="url" href="<?php echo get_site_url(); ?>/blog">Blog</a></li>
-                        <!-- 		<li itemprop="name"><a itemprop="url" href="/referral/">Refer a Friend</a></li> -->
-
-                        <li itemprop="name"><a itemprop="url" href="<?php echo get_site_url(); ?>/faqs/">FAQs</a></li>
+                        <li itemprop="name"><a itemprop="url" href="<?php echo get_site_url(); ?>/faqs/" title="Have questions about NowRx Pharmacy? Check out our FAQs.">FAQs</a></li>
                         <li itemprop="name" class="buttonfill buttonglimmer">
-                            <a class="button secondary rounded shadow rx-btn"
-                                itemprop="url" href="<?= get_site_url(); ?>/get-started/">
+                            <a class="button secondary rounded shadow rx-btn" itemprop="url" href="<?= get_site_url(); ?>/refill-and-transfer-prescriptions/">
+
                                 <span class="arrow">
                                     <svg aria-hidden="true" focusable="false" data-prefix="fas"
                                         data-icon="file-prescription" role="img" xmlns="http://www.w3.org/2000/svg"
@@ -162,8 +136,9 @@
                                             class=""></path>
                                     </svg>
                                 </span>
-                                Transfer or Refill Prescriptions</a>
 
+                                Transfer or Refill Prescriptions
+                            </a>
                         </li>
                     </ul>
                 </nav>

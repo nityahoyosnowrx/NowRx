@@ -872,7 +872,7 @@
                                             <p>Just text us at <a href="tel:844-466-6979">(844) 466-6979</a> a picture
                                                 of the empty prescription bottle you would like us to refill/transfer or
                                                 go to <a
-                                                    href="<?= get_site_url(); ?>/get-started">https://nowrx.com/get-started</a>
+                                                    href="<?= get_site_url(); ?>/refill-and-transfer-prescriptions/">https://nowrx.com/refill-and-transfer-prescriptions/</a>
                                                 and fill out our transfer/refill request form.</p>
 
                                             <p>We will take care of the rest!</p>
@@ -2293,7 +2293,7 @@
             </div>
             <div class="rvl">
                 <div class="btn-container">
-                    <a class="rx-btn rx-dg" href="<?= get_site_url(); ?>/get-started/">Get Started</a>
+                    <a class="rx-btn rx-dg" href="<?= get_site_url(); ?>/refill-and-transfer-prescriptions/">Get Started</a>
                 </div>
             </div>
             <div class="rvl">

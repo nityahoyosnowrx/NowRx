@@ -47,7 +47,7 @@ gtag('event', 'conversion', {
 
                         <div class="rvls">
                             <div class="btn-container">
-                                <a class="rx-btn" href="<?= get_site_url(); ?>/get-started/">Get Suggest a Location</a>
+                                <a class="rx-btn" href="<?= get_site_url(); ?>/refill-and-transfer-prescriptions/">Get Suggest a Location</a>
                                 <a class="rx-btn rx-green mrb" href="<?= get_site_url(); ?>/how-it-works/">Get Started</a>
                             </div>
                         </div>

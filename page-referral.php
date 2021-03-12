@@ -64,7 +64,7 @@
 
                 <div class="rvls">
                     <div class="btn-container">
-                        <!-- <a class="rx-btn" href="<?= get_site_url(); ?>/get-started/">Join Watilist</a> -->
+                        <!-- <a class="rx-btn" href="<?= get_site_url(); ?>/refill-and-transfer-prescriptions/">Join Watilist</a> -->
                         <a class="rx-btn " href="#howitwork">How It Works</a>
                         <a class="rx-btn mrb" href="#faq-section">Referral FAQs</a>
                     </div>

@@ -10,10 +10,12 @@ get_template_part('footer-modals');
                 <p><a href="<?= get_site_url(); ?>/"><img class="logo lozad"
                             data-src="<?php echo get_template_directory_uri(); ?>/library/images/NowRx-Logo-Pharmacy.png"
                             alt="NowRx Pharmacy Logo"></a></p>
-                <p class="text-small">&copy; 2019 NowRx.com  <br>All rights reserved. <br><a
-                        href="<?= get_site_url(); ?>/privacy-policy/">Privacy Policy</a><br><a
-                        href="<?= get_site_url(); ?>/hipaa-privacy/">HIPAA Privacy</a><br>
-                        <a href="<?= get_site_url(); ?>/telehealth/terms-and-conditions/">Telehealth T&C</a>
+                <p class="text-small">&copy; <?= date('Y'); ?> NowRx.com  <br>
+                All rights reserved. <br>
+                <a href="<?= get_site_url(); ?>/about-us/">About Us</a><br>
+                <a href="<?= get_site_url(); ?>/privacy-policy/">Privacy Policy</a><br>
+                <a href="<?= get_site_url(); ?>/hipaa-privacy/">HIPAA Privacy</a><br>
+                <a href="<?= get_site_url(); ?>/telehealth/terms-and-conditions/">Telehealth T&C</a>
                 </p>
             </div>
             <div class="large-10 cell small-order-1 medium-order-2">
@@ -23,7 +25,6 @@ get_template_part('footer-modals');
                         <ul class="footer-menu-col vertical menu text-small">
                             <li><a href="<?= get_site_url(); ?>/nowprep/">NowPrEP</a></li>
                             <li><a href="<?= get_site_url(); ?>/faqs/">FAQs</a></li>
-                            <li><a href="<?= get_site_url(); ?>/about-us/">About NowRx</a></li>
                             <li><a href="<?= get_site_url(); ?>/locations/">Locations</a></li>
                             <li><a href="https://www.indeed.com/cmp/Nowrx" target="_blank">Careers</a></li>
                             <li><a href="<?= get_site_url(); ?>/blog/">Blog</a></li>
@@ -33,7 +34,7 @@ get_template_part('footer-modals');
                         <h4>CONTACT US</h4>
                         <ul class="footer-menu-col vertical menu text-small">
                             <!-- <li><a data-toggle="modal-example">Chat With A Pharmacist</a></li> -->
-                            <li><a href="<?= get_site_url(); ?>/get-started/">Transfer Your Prescription</a></li>
+                            <li><a href="<?= get_site_url(); ?>/refill-and-transfer-prescriptions/">Transfer Your Prescription</a></li>
                             <li><a href="<?= get_site_url(); ?>/for-doctors/">For Doctors</a></li>
                             <li><a href="<?= get_site_url(); ?>/contact-us/">Chat With A Pharmacist</a></li>
                         </ul>
@@ -81,7 +82,7 @@ get_template_part('footer-modals');
 <div class="calltoaction">
     <div class="container">
         <div class="content">
-            <a href="<?= get_site_url(); ?>/get-started/" class="rx-btn" id="firstbutton">
+            <a href="<?= get_site_url(); ?>/refill-and-transfer-prescriptions/" class="rx-btn" id="firstbutton">
                 <span class="arrow">
                     <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="file-prescription" role="img"
                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"

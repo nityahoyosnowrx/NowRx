@@ -56,13 +56,13 @@
 
                 <div class="rvls">
                     <p>
-                    Text <a href="tel:844-466-6979" class="alink">(844) 466-6979</a> or fill out our <a href="<?= get_site_url(); ?>/get-started/" target="_blank" class="alink">online prescription form</a>. We will call you to confirm and deliver in hours. It’s that easy!
+                    Text <a href="tel:844-466-6979" class="alink">(844) 466-6979</a> or fill out our <a href="<?= get_site_url(); ?>/refill-and-transfer-prescriptions/" target="_blank" class="alink">online prescription form</a>. We will call you to confirm and deliver in hours. It’s that easy!
                     </p>
                 </div>
 
                 <div class="rvls">
                     <div class="btn-container">
-                        <a class="rx-btn" href="<?= get_site_url(); ?>/get-started/">
+                        <a class="rx-btn" href="<?= get_site_url(); ?>/refill-and-transfer-prescriptions/">
                         <?php include('reg-arrow.php'); ?>
                             Get Started</a>
                         <a class="rx-btn rx-green mrb" href="#howitwork">
@@ -128,7 +128,7 @@
                     <p>
                         <strong>New Prescription: </strong>Tell your doctor to fax or ePrescribe to NowRx. <br>
                         <strong>Existing Prescription: </strong>Text <a href="tel:844-466-6979" class="tellink">(844)
-                            466-6979</a> or <a href="https://nowrx.com/get-started/" style="color:#fff;">Transfer Online
+                            466-6979</a> or <a href="https://nowrx.com/refill-and-transfer-prescriptions/" style="color:#fff;">Transfer Online
                             Here</a>.
                     </p>
                 </div>
@@ -534,7 +534,7 @@
 
             <div class="rvl">
                 <div class="btn-container">
-                    <a href="<?= get_site_url(); ?>/get-started/" class="rx-btn rx-dg">
+                    <a href="<?= get_site_url(); ?>/refill-and-transfer-prescriptions/" class="rx-btn rx-dg">
                         Get Started
                     </a>
                 </div>
@@ -559,7 +559,7 @@
             </div>
             <div class="rvl">
                 <div class="btn-container">
-                    <a href="<?= get_site_url(); ?>/get-started/" class="rx-btn rx-dg">
+                    <a href="<?= get_site_url(); ?>/refill-and-transfer-prescriptions/" class="rx-btn rx-dg">
                         Get Started
                     </a>
                 </div>

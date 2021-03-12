@@ -72,7 +72,7 @@
         <p class="pre-headline">Switch Today & Save</p>
         <h2 class="headline">Get a $20 Visa <br>Gift Card</h2>
         <p>For a limited time only, get a $20 Visa Gift Card for <br>every prescription you transfer to NowRx.*</p>
-        <a href="/get-started/" class="button">Switch to a Better Pharmacy Today</a>
+        <a href="/refill-and-transfer-prescriptions/" class="button">Switch to a Better Pharmacy Today</a>
       </div>
     </div>
   </div>
@@ -111,7 +111,7 @@
         <p class="pre-headline">Switch Today & Save</p>
         <h2 class="headline">Get a $20 Visa <br>Gift Card</h2>
         <p>For a limited time only, get a $20 Visa Gift Card for <br>every prescription you transfer to NowRx.*</p>
-        <a href="/get-started/" class="button">Switch to a Better Pharmacy Today</a>
+        <a href="/refill-and-transfer-prescriptions/" class="button">Switch to a Better Pharmacy Today</a>
       </div>
     </div>
   </div>
