@@ -1,6 +1,94 @@
 <?php get_header(); ?>
 
 
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "What is NowRx?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "NowRx is a pharmacy just like your CVS or Walgreens, except instead of you coming in to pick up medication, we bring them to you."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is NowRx a mail-order pharmacy?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "NO. NowRx Pharmacy has physical locations in all of our service areas. We accept walk-ins and our pharmacists are always available to chat in person or over the phone."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How can you afford to provide free same-day delivery?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Proprietary tech inside our pharmacy increases efficiency and reduces our cost to about 1/100th that of a traditional pharmacy like CVS. This enables free same-day delivery."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do you make money?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We make money like every pharmacy or healthcare service – reimbursement from insurance and copays from the patient."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you charge more to offset the cost of delivery?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "NO. Prices are lower than or competitive with all pharmacies. We also automatically search for and apply available coupons to offer the lowest price possible (over $1M saved!)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do you handle special requests?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Special requests (e.g. blister packs, medication sorting, etc.) are available upon request. Just let our pharmacist know when they reach out to schedule your delivery!"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I manage prescriptions for a family member?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. You can set a head of household if a single person will be managing a family member or loved one’s prescriptions."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you deliver controlled & refrigerated medication?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "YES. If you have a paper copy, a NowRx driver will pick it up from you or your doctor before delivery. These meds also require a signature & proper ID."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What insurance plans do you take?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "NowRx Pharmacy accepts all major insurance plans except Kaiser. We also offer some of the lowest out of pocket prices in the areas we serve."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does does delivery take?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Typically, your prescription will arrive 2-4 hours after we have confirmed your prescription. We also offer 1hr delivery option for a $5 fee."
+        }
+      }
+        ]
+    }
+    </script>
+
 
 <main id="main" class="main-class" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
     <div class="rvl">
@@ -21,7 +109,7 @@
 
                 <header class="article-header tynk locations-header page404">
 				<div class="imageblock">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/map.jpeg"
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/NowRx-National-Map-Small.png"
                             alt="Thank you for Choosing NowRx Pharmacy" width="300px" height="300px" class="pic">
                     </div>
                     <div class="content">

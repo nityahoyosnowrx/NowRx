@@ -66,6 +66,7 @@
     <!-- tracking code -->
     <?php get_template_part('analytics-head'); ?>
 
+
 </head>
 
 <body <?php body_class(); ?> itemscope itemtype="http://schema.org/WebPage">

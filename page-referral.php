@@ -16,6 +16,95 @@
 <?php get_header(); ?>
 
 
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [{
+            "@type": "Question",
+            "name": "What is the NowRx Pharmacy Refer a Friend Program?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The NowRx Pharmacy Refer a Friend Program is a referral program that allows existing NowRx customers to receive a $20 Visa Gift card for every qualifying referral."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How does the Refer a Friend Program work?  ",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Just submit your referrals using our Refer a Friend form and when your referral receives their first prescription from NowRx, we will mail you a $20 Visa Gift card."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "What is a qualifying referral?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Qualifying referrals are referrals that receive their first prescription delivery from NowRx Pharmacy following the date on which they were referred."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Who can I refer to NowRx Pharmacy?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "You can refer any individual (friend, family, relative, etc.) that is not already a customer of NowRx Pharmacy."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Is there a limit to the number of people I can refer?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "There is no limit to the number of people you can refer to NowRx Pharmacy or to the amount of money you can earn referring new customers but NowRx reserves the right to nulligy rewards, bonuses, or perks if we suspect abuse or fraud."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "What happens when I submit a referral?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "When you submit a referral, NowRx Pharmacy will send your referrals a welcome email letting them know you have referred them and telling them how to get started.. We suggest you follow up with all of your referrals to tell them about your experience with NowRx and why you are referring them."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "When will NowRx pay me my referral bonus?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Once your referral has received their first prescription delivery from NowRx, we will mail you a $20 Visa gift card in 5-7 business days."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How will NowRx pay me my referral bonus?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "NowRx pays all referral bonuses in $20 Visa Gift Card denominations. These Gift Cards can be used nearly anywhere in the domestic US."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "What if two people refer the same person?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "If two people refer the same person, the individual that provided the first referral will be the one that receives a $20 Visa Gift Card."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "What else do I need to know?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The email addresses you enter for yourself and your referrals must match the email address used with NowRx. If we do not have an email address for you, please contact us at info@nowrx.com so we can update your customer profile."
+            }
+        }
+    ]
+}
+</script>
+
+
 
 
 

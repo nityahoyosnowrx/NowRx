@@ -65,11 +65,12 @@ header.main {
 	position: fixed;
 	left: 0;
 	right: 0;
-	z-index: 123;
+	z-index: 123123123;
 	top: 0;
 	transition: all 0.3s;
 	@media screen and (max-width: 992px) {
 		padding: 0;
+		background-color: #fff;
 	}
 	.content {
 		display: flex;

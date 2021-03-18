@@ -16,6 +16,334 @@
 <?php get_header(); ?>
 
 
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [{
+            "@type": "Question",
+            "name": "What is NowPrEP?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "NowPrEP is a telehealth platform that allows you to prep for HIV from the comfort and privacy of your own home. Receive a free doctor consultation, get your PrEP prescription, and have medication delivered right to your door for no additional charge. NowPrEP is your one-stop-shop for HIV PrEP."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Who is NowPrEP for?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "NowPrEP is for HIV negative adults who want to protect themselves and lower the chances of getting HIV through sex."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How does the NowPrEP process work?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The NowPrEP process is simple and takes seconds to get started. First, sign up for the NowPrEP service and fill out our health questionnaire to assess whether HIV PrEP is right for you. Next, NowPrEP will order a full lab test and help you set up an appointment with one of our partner labs near you. Finally, if a NowPrEP physician decides a prescription is right for you, we will deliver your medication in hours for free."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Does NowPrEP cost anything?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "NowPrep and NowRx pride themselves on price transparency. Below is a breakdown of the costs that you can expect while using NowPrEP: Signup and Health Questionnaire: Free Lab Test: $119 (most health insurance will cover) Medication: Free Same-Day Prescription Delivery: Free Same-day delivery typically takes 2-3 hours from the time the prescription is written. We also offer a 1 hour expedited delivery for a $5 fee."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Is NowPrEP safe?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. NowPrEP is held to the same rules and standards that any other medical facility or physician is held to in the United States. All of our physicians are licensed, heavily vetted, and highly qualified. We will only prescribe medication when it is safe to do so based on your test results and the information you provide to us in your health questionnaire - so be as truthful and honest as possible! Additionally, all payment and health-related data are kept private and confidential offline on a secure HIPAA compliant server."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "What is required to use NowPrEP?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "In order to use NowPrEP, you must sign up and complete our online health questionnaire as well as take a lab test for PrEP to determine whether it is safe to use. Additionally, a test may not be required if you can provide test results for PrEP taken in the last 3 months."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How does NowPrEP protect my information?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "NowPrEP takes our customer information extremely seriously. We employ a number of safeguards to ensure the security of the data we collect including but not limited to maintaining all health-related data offline on a secure HIPAA compliant server. To learn more, please take a look at our Privacy Policy and Privacy Practices."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Can NowPrEP help me if I already have a prescription?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. If you already have an HIV PrEP prescription, NowPrEP can still help. We offer free same-day medication delivery for existing prescriptions, automatic refills, and much more for all of our customers!"
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How long does it take for me to receive a PrEP prescription?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The average timetable for receiving a NowPrEP prescription using NowPrEP is: Signup and Online Health Questionnaire: 30 min Test Kit Delivery and Lab Results: 3-10 business days Prescription and Medication Delivery: 2-4 hours Time table may vary depending on location and results."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "What is the difference between NowPrEP and NowRx Pharmacy?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "NowPrEP and NowRx Pharmacy are both owned and run by the same company - NowRx, Inc. NowPrEP is a telehealth platform that specializes in HIV prevention. NowRx Pharmacy is a retail pharmacy that specializes in free same-day delivery of ALL prescription medications including Pre Exposure Prophylaxis (PrEP)."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Can NowPrEP share information with my primary care physician?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. If you want us to share information with your primary care physician, just let us know through your NowPrEP portal and we will be happy to do so. We will not share any information without your approval."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "What is Pre Exposure Prophylaxis (PrEP)?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Pre-exposure prophylaxis (or PrEP) is a once-daily pill for people who do not have HIV but who are at very high risk of getting HIV to prevent HIV infection. You may be at high risk for HIV if: Don't always use condoms Had or currently have an STI Have sexual partner(s) who don't know their HIV status Have sex in a geographic area or sexual network where HIV is prevalent"
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Is Pre Exposure Prophylaxis (PrEP) safe?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No significant adverse health effects have been seen in people using PrEP who are HIV negative for up to 5 years. Some side effects have occurred in people taking PrEP, like nausea, but these side effects are usually not serious and will go away over time. Tell your NowPrEP physician if you are having any side effects that bother you or do not go away. Source: hiv.gov"
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Is Pre Exposure Prophylaxis (PrEP) right for me?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "HIV PrEP is for HIV negative adults who want to protect themselves and lower the chances of getting HIV through sex. HIV PrEP is NOT for everyone including but not limited to anyone who is living with HIV or people who were assigned female at birth because its effectiveness has not been studied. Talk with a NowPrEP healthcare professional to find out if PrEP is right for you."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How does Pre Exposure Prophylaxis (PrEP) work?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "PrEP works by blocking an enzyme called HIV reverse transcriptase. By blocking this enzyme, HIV is prevented from replicating itself inside the body."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How do I get Pre Exposure Prophylaxis (PrEP) through NowPrEP?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Getting HIV PrEP medication through NowPrEP is simple. First, sign up for the NowPrEP service and fill out our health questionnaire to assess whether HIV PrEP is right for you. Next, NowPrEP will send you a home test kit or, if you prefer, we will set up an in-person HIV test appointment near you. Finally, if a NowPrEP physician decides a prescription is right for you, we will deliver your medication in hours for free."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How much does Pre Exposure Prophylaxis (PrEP) cost?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "PrEP is free for most through the NowPrEP platform."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How effective is Pre Exposure Prophylaxis (PrEP)?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "When taken daily, PrEP is highly effective for preventing HIV. Studies have shown that PrEP reduces the risk of getting HIV from sex by about 99% when taken daily. Among people who inject drugs, PrEP reduces the risk of getting HIV by at least 74% when taken daily. As PrEP only protects against HIV, condoms are important for the protection against other STDs. Source: cdc.gov"
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How quickly does Pre Exposure Prophylaxis (PrEP) work?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "When starting PrEP and taking it daily, it takes at least seven days to reach high levels of protection against HIV."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Does Pre Exposure Prophylaxis (PrEP) prevent other STDs?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. Although PrEP protects you against HIV, it does not protect against other sexually transmitted infections (STIs) or other types of infections. Combining PrEP with condoms will help reduce your risk of getting other STIs."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Is Pre Exposure Prophylaxis (PrEP) safe to take with other prescription drugs?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "PrEP is generally safe to take with most other medications. However, if you are taking other medications, ALWAYS consult with your doctor, NowPrep physician, or NowRx pharmacist first to make sure it is safe to do so. This includes over the counter medication."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How common is HIV?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "There were approximately 38 million people across the globe with HIV/AIDS in 2019. Of these, 36.2 million were adults and 1.8 million were children (< 15 years old). Source: hiv.gov"
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How is HIV transmitted?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "HIV can only be spread through specific activities, the most common of which are: Having vaginal or anal sex with someone who has HIV without using a condom or taking medicines to prevent or treat HIV Sharing injection drug equipment, for example, needles, with someone who has HIV"
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Do condoms prevent HIV?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Studies suggest that when used correctly, condoms are highly effective at preventing HIV."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "What is usually the first sign of HIV?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The first signs of HIV are usually flu-like symptoms including but not limited to fever, chills, rash, night sweats, muscle aches, sore throat, fatigue, swollen lymph nodes, and mouth ulcers. These symptoms may last anywhere from a few days to a few weeks. If you think you may have been exposed to HIV you should get tested immediately."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How long does it take to show symptoms of HIV?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "According to the CDC, flu-like symptoms may begin to show up 2-4 weeks after initial exposure. These symptoms may last anywhere from a few days to a few weeks. If you think you may have been exposed to HIV you should get tested immediately."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Can you get HIV from oral sex?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Typically, there is little to no risk of getting or transmitting HIV from oral sex although it is possible if an HIV-positive man ejaculates in his partner's mouth during oral sex."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Is HIV curable?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "According to the CDC, there is no effective cure for HIV but with proper medical care, the condition can be managed. If you have been diagnosed with HIV, talk with your healthcare professional to discuss your options."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How can I reduce my risk of getting HIV?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "One of the most effective ways to reduce your risk of getting HIV through sex is by using Pre Exposure Prophylaxis (PrEP). Studies have shown that PrEP reduces the risk of getting HIV from sex by about 99% when taken daily. Other ways to reduce the risk of contracting HIV include using proper safe sex practices like wearing a condom and not sharing injection drug equipment."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How often should I be tested for HIV and other STIs?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "According to the CDC, sexually active adults and adolescents should be tested at least once a year for HIV and other STIs. Those who have multiple or anonymous partners should be tested more frequently (i.e. at 3-6 month intervals)."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "What is NowRx Pharmacy?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "NowRx Pharmacy is a retail pharmacy just like any CVS or Walgreens, except instead of customers coming into the store to pick up their medications, we deliver it in hours free of charge. We have physical locations local to every area we service and offer the same services as a traditional retail pharmacy."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How does NowRx prescription delivery work?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The prescription delivery process is simple with NowRx Pharmacy. You or your doctor sends a prescription to NowRx (we accept ePrescribe, fax, or calls) We call you to confirm the prescription, collect your copay, and set up a delivery time. A pharmacy employee delivers the prescription in a few hours free of charge."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How is NowRx different than a mail-order pharmacy?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Unlike mail-order pharmacies: NowRx has physical pharmacies local to every area we service. NowRx employees deliver all medications (opposed to using 3rd parties like USPS) NowRx deliveries arrive within hours as opposed to mail services which can take 3-14 days. NowRx delivers both controlled and refrigerated medications for no additional charge NowRx always has a live pharmacy team member available to answer your questions."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How does NowRx make money?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "NowRx makes money like all pharmacies and healthcare services – reimbursement from insurance and copays from the patient."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Does NowRx charge more to cover delivery costs?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No, NowRx never raises the cost of your medication to offset delivery costs. For prescriptions paid for through insurance, your copay is set by the insurance company and will generally be the same regardless of the pharmacy you use. For prescriptions paid for without insurance, our cash pricing is competitive with or lower than competing pharmacies. Additionally, anytime we receive a prescription our software automatically searches for drug coupons and applies them if it will lower your out of pocket costs, which has saved NowRx customers over $1.5M in the past year."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How can NowRx afford to deliver in hours for free?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "NowRx has proprietary software and technology inside each pharmacy which increases efficiency and reduces costs considerably. This allows nowrx to operate at about 1/100th the cost of a traditional retail pharmacy like CVS or Walgreens. We then use these savings to provide customer benefits like free delivery in hours, better customer service, and better cash pricing."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "What insurance plans does NowRx accept?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "NowRx Pharmacy accepts all major insurance plans except Kaiser Permanente. We also offer non-insurance pricing that is competitive with or lower than even leading discount drug cards like GoodRx."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Where does NowRx Pharmacy offer prescription delivery?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "NowRx Pharmacy has physical pharmacy locations throughout California and Arizona. We offer free prescription delivery in hours to these cities and surrounding areas. Customers and doctors are also more than welcome to stop by these physical locations to fill a prescription or ask our pharmacist a question. To view our locations and service area maps please visit https://nowrx.com/locations"
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "What medications does NowRx Pharmacy deliver?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "NowRx Pharmacy offers delivery of over 250 prescriptions including controlled and refrigerated medications. We also offer delivery of common over the counter medications and supplements like Tylenol, Vitamin D, etc. We do not offer compounding at this time."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Can I manage a family member or loved one’s prescriptions?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "NowRx allows you to set a head of household or caregiver if one person will be managing a family member or loved one's prescriptions. Just give us a call at (844) 466-6979 or email us at info@nowrx.com and we will be happy to get you set up."
+            }
+        }
+
+    ]
+}
+</script>
 
 <!-- hero -->
 <section class="hero-home">
@@ -28,7 +356,8 @@
             <source type="image/png"
                 srcset="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020.png">
             <img src="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020lowrez.jpg"
-                class="imageblock" height="100px" width="450px" alt="Surescripts 2020 White Coat Award Finalist (Highest Accuracy)">
+                class="imageblock" height="100px" width="450px"
+                alt="Surescripts 2020 White Coat Award Finalist (Highest Accuracy)">
         </picture>
 
     </div>
@@ -43,7 +372,7 @@
 
                 <div class="rvls">
                     <span class="sub-headline">
-                    HIV PREVENTION TELEHEALTH
+                        HIV PREVENTION TELEHEALTH
                     </span>
                 </div>
 
@@ -55,16 +384,18 @@
 
                 <div class="rvls">
                     <p>
-                    NowPrEP is a telehealth service that connects you with doctors and delivers HIV prevention medication in hours for free!
+                        NowPrEP is a telehealth service that connects you with doctors and delivers HIV prevention
+                        medication in hours for free!
                     </p>
                 </div>
 
                 <div class="rvls">
                     <div class="btn-container">
                         <!-- <a class="rx-btn" href="<?= get_site_url(); ?>/refill-and-transfer-prescriptions/">Join Watilist</a> -->
-                        <a class="rx-btn " data-toggle="waitlist" aria-controls="waitlist"
-                            aria-haspopup="true" tabindex="0"> <?php include('reg-arrow.php'); ?> Get Started</a>
-                        <a class="rx-btn rx-green mrb" href="#howitwork"> <?php include('grn-arrow.php'); ?> How It Works</a>
+                        <a class="rx-btn " data-toggle="waitlist" aria-controls="waitlist" aria-haspopup="true"
+                            tabindex="0"> <?php include('reg-arrow.php'); ?> Get Started</a>
+                        <a class="rx-btn rx-green mrb" href="#howitwork"> <?php include('grn-arrow.php'); ?> How It
+                            Works</a>
                     </div>
                 </div>
 
@@ -123,7 +454,8 @@
                     </div>
 
                     <p>
-                    Sign up in seconds and fill out our health questionnaire to assess whether NowPrEP is right for you.
+                        Sign up in seconds and fill out our health questionnaire to assess whether NowPrEP is right for
+                        you.
                     </p>
                 </div>
             </div>
@@ -140,7 +472,8 @@
                     </div>
 
                     <p>
-                    We will order a full lab test and help you set up an appointment with one of our partner labs near you.
+                        We will order a full lab test and help you set up an appointment with one of our partner labs
+                        near you.
                     </p>
                 </div>
             </div>
@@ -157,11 +490,12 @@
                     </div>
 
                     <p>
-                    If a NowPrEP physician decides a prescription is right for you, we will deliver your medication in hours for free.
+                        If a NowPrEP physician decides a prescription is right for you, we will deliver your medication
+                        in hours for free.
                     </p>
                 </div>
             </div>
-         
+
 
 
         </div>
@@ -170,7 +504,7 @@
 
 
 
-<section class="split-bubbles" >
+<section class="split-bubbles">
     <div class="container">
         <div class="content">
             <div class="rvl">
@@ -181,7 +515,8 @@
                 <h2 class="headline">Why Choose NowPrep</h2>
             </div>
             <div class="imageblock imgslide">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/prepimage.jpeg" alt="couple reading information about nowprep on laptop" class="pic">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/prepimage.jpeg"
+                    alt="couple reading information about nowprep on laptop" class="pic">
             </div>
         </div>
         <div class="pills">
@@ -229,29 +564,29 @@
 
 
 <!-- visit faq -->
-<section class="visit-faq nwprepviti" >
+<section class="visit-faq nwprepviti">
     <div class="container">
         <div class="content">
             <div class="rvl">
                 <span class="sub-headline">
-                HIV PrEP from the Comfort of Your Home
+                    HIV PrEP from the Comfort of Your Home
                 </span>
             </div>
             <div class="rvl">
                 <h2 class="sec-title">
-                Get Started With NowPrEP
+                    Get Started With NowPrEP
 
                 </h2>
-                 
+
             </div>
             <div class="rvl">
                 <div class="btn-container">
 
-                    <a class="rx-btn rx-dg" data-toggle="waitlist" aria-controls="waitlist"
-                        aria-haspopup="true" tabindex="0">Get Started</a>
+                    <a class="rx-btn rx-dg" data-toggle="waitlist" aria-controls="waitlist" aria-haspopup="true"
+                        tabindex="0">Get Started</a>
                 </div>
             </div>
-           
+
         </div>
     </div>
 </section>
@@ -259,15 +594,15 @@
 
 
 
-<section class="faq-blocks prep"  id="faq">
+<section class="faq-blocks prep" id="faq">
     <div class="container">
         <div class="topcontent content">
-                <span class="sub-headline">
-                    A better local pharmacy delivered
-                </span>
-                <h2 class="sec-title">
-                    How can we help you today?
-                </h2>
+            <span class="sub-headline">
+                A better local pharmacy delivered
+            </span>
+            <h2 class="sec-title">
+                How can we help you today?
+            </h2>
         </div>
         <div class="content botcot">
             <div class="faq-blocks">
@@ -315,7 +650,8 @@
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg" alt="cancel icon">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="cancel icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -332,7 +668,8 @@
 
                                             </p>
                                             <p>
-                                            Receive a free doctor consultation, get your PrEP prescription, and have medication delivered right to your door for no additional charge.
+                                                Receive a free doctor consultation, get your PrEP prescription, and have
+                                                medication delivered right to your door for no additional charge.
 
                                             </p>
                                             NowPrEP is your one-stop-shop for HIV PrEP.
@@ -363,7 +700,8 @@
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg" alt="cancel icon">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="cancel icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -378,7 +716,7 @@
                                                 lower the chances of getting HIV through sex.
 
                                             </p>
-                                           
+
 
 
                                         </span>
@@ -406,7 +744,8 @@
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg" alt="cancel icon">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="cancel icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -417,18 +756,21 @@
                                         <div class="title">A.</div>
                                         <span class="cntx">
                                             <p>
-                                            The NowPrEP process is simple and takes seconds to get started.
+                                                The NowPrEP process is simple and takes seconds to get started.
                                             </p>
                                             <p>
-                                            First, sign up for the NowPrEP service and fill out our health questionnaire to assess whether HIV PrEP is right for you.
+                                                First, sign up for the NowPrEP service and fill out our health
+                                                questionnaire to assess whether HIV PrEP is right for you.
 
                                             </p>
                                             <p>
-                                            Next, NowPrEP will order a full lab test and help you set up an appointment with one of our partner labs near you.
+                                                Next, NowPrEP will order a full lab test and help you set up an
+                                                appointment with one of our partner labs near you.
 
                                             </p>
                                             <p>
-                                            Finally, if a NowPrEP physician decides a prescription is right for you, we will deliver your medication in hours for free.
+                                                Finally, if a NowPrEP physician decides a prescription is right for you,
+                                                we will deliver your medication in hours for free.
 
                                             </p>
 
@@ -457,7 +799,8 @@
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg" alt="cancel icon">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="cancel icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -478,7 +821,7 @@
 
                                             </p>
                                             <p>
-                                                
+
                                                 Lab Test: $119 (most health insurance will cover)
                                             </p>
                                             <p>
@@ -520,7 +863,8 @@
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg" alt="cancel icon">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="cancel icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -537,7 +881,8 @@
 
                                             </p>
                                             <p>
-                                                All of our physicians are licensed, heavily vetted, and highly qualified.
+                                                All of our physicians are licensed, heavily vetted, and highly
+                                                qualified.
                                                 We will only prescribe medication when it is safe to do so based on your
                                                 test results and the information you provide to us in your health
                                                 questionnaire - so be as truthful and honest as possible!
@@ -573,7 +918,8 @@
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg" alt="cancel icon">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="cancel icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -584,7 +930,10 @@
                                         <div class="title">A.</div>
                                         <span class="cntx">
                                             <p>
-                                            In order to use NowPrEP, you must sign up and complete our online health questionnaire as well as take a lab test for PrEP to determine whether it is safe to use. Additionally, a test may not be required if you can provide test results for PrEP taken in the last 3 months.
+                                                In order to use NowPrEP, you must sign up and complete our online health
+                                                questionnaire as well as take a lab test for PrEP to determine whether
+                                                it is safe to use. Additionally, a test may not be required if you can
+                                                provide test results for PrEP taken in the last 3 months.
                                             </p>
                                         </span>
                                     </div>
@@ -611,7 +960,8 @@
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg" alt="cancel icon">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="cancel icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -658,7 +1008,8 @@
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg" alt="cancel icon">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="cancel icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -703,7 +1054,8 @@
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg" alt="cancel icon">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="cancel icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -740,7 +1092,7 @@
                             </div>
                         </div>
 
-                        
+
                         <!-- item -->
                         <div class="item" data-opentab="false">
                             <span class="title">
@@ -761,7 +1113,8 @@
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg" alt="cancel icon">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="cancel icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -815,7 +1168,8 @@
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg" alt="cancel icon">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="cancel icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -884,7 +1238,8 @@
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg" alt="cancel icon">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="cancel icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -906,18 +1261,18 @@
                                             </p>
                                             <ul>
                                                 <li>
-                                                     Don't always use condoms
+                                                    Don't always use condoms
 
                                                 </li>
                                                 <li>
-                                                     Had or currently have an STI
+                                                    Had or currently have an STI
                                                 </li>
                                                 <li>
-                                                     Have sexual partner(s) who don't know their HIV status
+                                                    Have sexual partner(s) who don't know their HIV status
 
                                                 </li>
                                                 <li>
-                                                     Have sex in a geographic area or sexual network where HIV is
+                                                    Have sex in a geographic area or sexual network where HIV is
                                                     prevalent
 
                                                 </li>
@@ -948,7 +1303,8 @@
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg" alt="cancel icon">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="cancel icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -1010,7 +1366,8 @@
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg" alt="cancel icon">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="cancel icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -1065,7 +1422,8 @@
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg" alt="cancel icon">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="cancel icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -1076,7 +1434,9 @@
                                         <div class="title">A.</div>
                                         <span class="cntx">
                                             <p>
-                                            PrEP works by blocking an enzyme called HIV reverse transcriptase. By blocking this enzyme, HIV is prevented from replicating itself inside the body.
+                                                PrEP works by blocking an enzyme called HIV reverse transcriptase. By
+                                                blocking this enzyme, HIV is prevented from replicating itself inside
+                                                the body.
                                             </p>
                                         </span>
                                     </div>
@@ -1104,7 +1464,8 @@
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg" alt="cancel icon">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="cancel icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -1161,7 +1522,8 @@
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg" alt="cancel icon">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="cancel icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -1200,7 +1562,8 @@
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg" alt="cancel icon">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="cancel icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -1256,7 +1619,8 @@
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg" alt="cancel icon">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="cancel icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -1296,7 +1660,8 @@
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg" alt="cancel icon">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="cancel icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -1343,7 +1708,8 @@
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg" alt="cancel icon">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="cancel icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -1397,7 +1763,7 @@
                         </h2>
                     </div>
                     <div class="block-content">
-                       
+
                         <!-- item -->
                         <div class="item" data-opentab="false">
                             <span class="title">
@@ -1418,7 +1784,8 @@
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg" alt="cancel icon">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="cancel icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -1429,12 +1796,13 @@
                                         <div class="title">A.</div>
                                         <span class="cntx">
                                             <p>
-                                            There were approximately 38 million people across the globe with HIV/AIDS in 2019. Of these, 36.2 million were adults and 1.8 million were children (< 15 years old).
-                                            </p>
-                                            <p>
-Source: hiv.gov
+                                                There were approximately 38 million people across the globe with
+                                                HIV/AIDS in 2019. Of these, 36.2 million were adults and 1.8 million
+                                                were children (< 15 years old). </p>
+                                                    <p>
+                                                        Source: hiv.gov
 
-                                            </p>
+                                                    </p>
 
                                         </span>
                                     </div>
@@ -1461,7 +1829,8 @@ Source: hiv.gov
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg" alt="cancel icon">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="cancel icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -1472,16 +1841,19 @@ Source: hiv.gov
                                         <div class="title">A.</div>
                                         <span class="cntx">
                                             <p>
-                                            HIV can only be spread through specific activities, the most common of which are:
+                                                HIV can only be spread through specific activities, the most common of
+                                                which are:
 
                                             </p>
                                             <ul>
                                                 <li>
- Having vaginal or anal sex with someone who has HIV without using a condom or taking medicines to prevent or treat HIV
+                                                    Having vaginal or anal sex with someone who has HIV without using a
+                                                    condom or taking medicines to prevent or treat HIV
 
                                                 </li>
                                                 <li>
- Sharing injection drug equipment, for example, needles, with someone who has HIV
+                                                    Sharing injection drug equipment, for example, needles, with someone
+                                                    who has HIV
 
                                                 </li>
                                             </ul>
@@ -1510,7 +1882,8 @@ Source: hiv.gov
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg" alt="cancel icon">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="cancel icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -1521,7 +1894,8 @@ Source: hiv.gov
                                         <div class="title">A.</div>
                                         <span class="cntx">
                                             <p>
-                                            Studies suggest that when used correctly, condoms are highly effective at preventing HIV.
+                                                Studies suggest that when used correctly, condoms are highly effective
+                                                at preventing HIV.
                                             </p>
                                         </span>
                                     </div>
@@ -1548,7 +1922,8 @@ Source: hiv.gov
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg" alt="cancel icon">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="cancel icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -1559,11 +1934,15 @@ Source: hiv.gov
                                         <div class="title">A.</div>
                                         <span class="cntx">
                                             <p>
-                                            The first signs of HIV are usually flu-like symptoms including but not limited to fever, chills, rash, night sweats, muscle aches, sore throat, fatigue, swollen lymph nodes, and mouth ulcers.
+                                                The first signs of HIV are usually flu-like symptoms including but not
+                                                limited to fever, chills, rash, night sweats, muscle aches, sore throat,
+                                                fatigue, swollen lymph nodes, and mouth ulcers.
 
                                             </p>
                                             <p>
-These symptoms may last anywhere from a few days to a few weeks. If you think you may have been exposed to HIV you should get tested immediately.
+                                                These symptoms may last anywhere from a few days to a few weeks. If you
+                                                think you may have been exposed to HIV you should get tested
+                                                immediately.
 
                                             </p>
                                         </span>
@@ -1591,7 +1970,8 @@ These symptoms may last anywhere from a few days to a few weeks. If you think yo
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg" alt="cancel icon">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="cancel icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -1602,11 +1982,14 @@ These symptoms may last anywhere from a few days to a few weeks. If you think yo
                                         <div class="title">A.</div>
                                         <span class="cntx">
                                             <p>
-                                            According to the CDC, flu-like symptoms may begin to show up 2-4 weeks after initial exposure.
+                                                According to the CDC, flu-like symptoms may begin to show up 2-4 weeks
+                                                after initial exposure.
 
                                             </p>
                                             <p>
-These symptoms may last anywhere from a few days to a few weeks. If you think you may have been exposed to HIV you should get tested immediately.
+                                                These symptoms may last anywhere from a few days to a few weeks. If you
+                                                think you may have been exposed to HIV you should get tested
+                                                immediately.
 
                                             </p>
                                         </span>
@@ -1634,7 +2017,8 @@ These symptoms may last anywhere from a few days to a few weeks. If you think yo
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg" alt="cancel icon">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="cancel icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -1645,7 +2029,9 @@ These symptoms may last anywhere from a few days to a few weeks. If you think yo
                                         <div class="title">A.</div>
                                         <span class="cntx">
                                             <p>
-                                            Typically, there is little to no risk of getting or transmitting HIV from oral sex although it is possible if an HIV-positive man ejaculates in his partner's mouth during oral sex.
+                                                Typically, there is little to no risk of getting or transmitting HIV
+                                                from oral sex although it is possible if an HIV-positive man ejaculates
+                                                in his partner's mouth during oral sex.
                                             </p>
                                         </span>
                                     </div>
@@ -1672,7 +2058,8 @@ These symptoms may last anywhere from a few days to a few weeks. If you think yo
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg" alt="cancel icon">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="cancel icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -1683,7 +2070,10 @@ These symptoms may last anywhere from a few days to a few weeks. If you think yo
                                         <div class="title">A.</div>
                                         <span class="cntx">
                                             <p>
-                                            According to the CDC, there is no effective cure for HIV but with proper medical care, the condition can be managed. If you have been diagnosed with HIV, talk with your healthcare professional to discuss your options.
+                                                According to the CDC, there is no effective cure for HIV but with proper
+                                                medical care, the condition can be managed. If you have been diagnosed
+                                                with HIV, talk with your healthcare professional to discuss your
+                                                options.
                                             </p>
                                         </span>
                                     </div>
@@ -1710,7 +2100,8 @@ These symptoms may last anywhere from a few days to a few weeks. If you think yo
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg" alt="cancel icon">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="cancel icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -1721,7 +2112,12 @@ These symptoms may last anywhere from a few days to a few weeks. If you think yo
                                         <div class="title">A.</div>
                                         <span class="cntx">
                                             <p>
-                                            One of the most effective ways to reduce your risk of getting HIV through sex is by using Pre Exposure Prophylaxis (PrEP). Studies have shown that PrEP reduces the risk of getting HIV from sex by about 99% when taken daily. Other ways to reduce the risk of contracting HIV include using proper safe sex practices like wearing a condom and not sharing injection drug equipment.
+                                                One of the most effective ways to reduce your risk of getting HIV
+                                                through sex is by using Pre Exposure Prophylaxis (PrEP). Studies have
+                                                shown that PrEP reduces the risk of getting HIV from sex by about 99%
+                                                when taken daily. Other ways to reduce the risk of contracting HIV
+                                                include using proper safe sex practices like wearing a condom and not
+                                                sharing injection drug equipment.
                                             </p>
                                         </span>
                                     </div>
@@ -1748,7 +2144,8 @@ These symptoms may last anywhere from a few days to a few weeks. If you think yo
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg" alt="cancel icon">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="cancel icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -1759,7 +2156,10 @@ These symptoms may last anywhere from a few days to a few weeks. If you think yo
                                         <div class="title">A.</div>
                                         <span class="cntx">
                                             <p>
-                                            According to the CDC, sexually active adults and adolescents should be tested at least once a year for HIV and other STIs. Those who have multiple or anonymous partners should be tested more frequently (i.e. at 3-6 month intervals).
+                                                According to the CDC, sexually active adults and adolescents should be
+                                                tested at least once a year for HIV and other STIs. Those who have
+                                                multiple or anonymous partners should be tested more frequently (i.e. at
+                                                3-6 month intervals).
                                             </p>
                                         </span>
                                     </div>
@@ -1816,7 +2216,8 @@ These symptoms may last anywhere from a few days to a few weeks. If you think yo
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg" alt="cancel icon">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="cancel icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -1859,7 +2260,8 @@ These symptoms may last anywhere from a few days to a few weeks. If you think yo
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg" alt="cancel icon">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="cancel icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -1916,7 +2318,8 @@ These symptoms may last anywhere from a few days to a few weeks. If you think yo
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg" alt="cancel icon">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="cancel icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -1932,16 +2335,16 @@ These symptoms may last anywhere from a few days to a few weeks. If you think yo
 
                                             <ul>
                                                 <li>
-                                                     NowRx has physical pharmacies local to every area we service.
+                                                    NowRx has physical pharmacies local to every area we service.
 
                                                 </li>
                                                 <li>
-                                                     NowRx employees deliver all medications (opposed to using 3rd
+                                                    NowRx employees deliver all medications (opposed to using 3rd
                                                     parties like USPS)
 
                                                 </li>
                                                 <li>
-                                                     NowRx deliveries arrive within hours as opposed to mail services
+                                                    NowRx deliveries arrive within hours as opposed to mail services
                                                     which can take 3-14 days.
 
                                                 </li>
@@ -1951,7 +2354,7 @@ These symptoms may last anywhere from a few days to a few weeks. If you think yo
 
                                                 </li>
                                                 <li>
-                                                     NowRx always has a live pharmacy team member available to answer
+                                                    NowRx always has a live pharmacy team member available to answer
                                                     your questions."
 
                                                 </li>
@@ -1982,7 +2385,8 @@ These symptoms may last anywhere from a few days to a few weeks. If you think yo
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg" alt="cancel icon">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="cancel icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -2022,7 +2426,8 @@ These symptoms may last anywhere from a few days to a few weeks. If you think yo
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg" alt="cancel icon">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="cancel icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -2084,7 +2489,8 @@ These symptoms may last anywhere from a few days to a few weeks. If you think yo
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg" alt="cancel icon">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="cancel icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -2133,7 +2539,8 @@ These symptoms may last anywhere from a few days to a few weeks. If you think yo
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg" alt="cancel icon">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="cancel icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -2176,7 +2583,8 @@ These symptoms may last anywhere from a few days to a few weeks. If you think yo
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg" alt="cancel icon">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="cancel icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -2231,7 +2639,8 @@ These symptoms may last anywhere from a few days to a few weeks. If you think yo
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg" alt="cancel icon">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="cancel icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -2275,7 +2684,8 @@ These symptoms may last anywhere from a few days to a few weeks. If you think yo
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg" alt="cancel icon">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="cancel icon">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -2333,12 +2743,12 @@ These symptoms may last anywhere from a few days to a few weeks. If you think yo
                 </div>
 
             </div>
-            
+
         </div>
-    <div class="faq-image">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/HIV-PrEP-Doctor-Image.png" alt=" transgender woman looking up"
-                    class="pic">
-            </div>
+        <div class="faq-image">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/HIV-PrEP-Doctor-Image.png"
+                alt=" transgender woman looking up" class="pic">
+        </div>
     </div>
 
 </section>

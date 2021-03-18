@@ -361,11 +361,11 @@ $(document).ready(function() {
 $(document).ready(function() {
   setInterval(() => {
     setTimeout(() => {
-      $('a.button.secondary.rounded.shadow').addClass('active');
+      $('a.button.secondary.rounded.shadow, .calltoaction .content .rx-btn').addClass('active');
     }, 0);
 
     setTimeout(() => {
-      $('a.button.secondary.rounded.shadow').removeClass('active');
+      $('a.button.secondary.rounded.shadow, .calltoaction .content .rx-btn').removeClass('active');
     }, 600);
   }, 4000);
 });

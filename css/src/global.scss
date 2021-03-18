@@ -2673,6 +2673,8 @@ section.split-bubbles {
 		font-weight: bold;
 
 		line-height: 1em;
+		position: relative;
+    z-index: 123;
 		@media screen and (max-width: 992px) {
 			text-align: center;
 			font-size: 2.3rem;

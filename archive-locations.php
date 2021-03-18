@@ -73,8 +73,8 @@
                 "@type": "Place",
                 "geo": {
                     "@type": "GeoCoordinates",
-                    "latitude": "37.415216701214526",
-                    "longitude": "-122.09510250883349"
+                    "latitude": "37.41506757633653",
+                    "longitude": "-122.09510787333173"
                 }
             }
 
@@ -101,8 +101,8 @@
                 "@type": "Place",
                 "geo": {
                     "@type": "GeoCoordinates",
-                    "latitude": "37.596418685860804",
-                    "longitude": "-122.36602182417356"
+                    "latitude": "37.59640168435328",
+                    "longitude": "-122.3660057307532"
                 }
             }
         },
@@ -128,8 +128,8 @@
                 "@type": "Place",
                 "geo": {
                     "@type": "GeoCoordinates",
-                    "latitude": "37.31633033505249",
-                    "longitude": "121.83342937814587"
+                    "latitude": "37.31621941051127",
+                    "longitude": "-121.83352057308733"
                 }
             }
         },
@@ -155,8 +155,8 @@
                 "@type": "Place",
                 "geo": {
                     "@type": "GeoCoordinates",
-                    "latitude": "33.695316202996324",
-                    "longitude": "-117.85031817824478"
+                    "latitude": "33.69528942383872",
+                    "longitude": "-117.85037718665065"
                 }
             }
         },
@@ -182,8 +182,8 @@
                 "@type": "Place",
                 "geo": {
                     "@type": "GeoCoordinates",
-                    "latitude": "33.40968333673354",
-                    "longitude": "-111.8845563089426"
+                    "latitude": "33.40975440455737",
+                    "longitude": "-111.8846782308355"
                 }
             }
 
@@ -210,8 +210,64 @@
                 "@type": "Place",
                 "geo": {
                     "@type": "GeoCoordinates",
-                    "latitude": "33.40968333673354",
-                    "longitude": "-111.8845563089426"
+                    "latitude": "37.69908108092993",
+                    "longitude": "-121.91699751725876"
+                }
+            }
+
+        },
+        {
+            "@type": "Pharmacy",
+            "name": "NowRx – van nuys",
+            "description": "NowRx is a local retail pharmacy based out of van nuys California that provides free prescription delivery in 3-5 hours",
+            "url": "<?= site_url(); ?>/locations/california/van-nuys/",
+            "@id": "<?= site_url(); ?>/locations/california/van-nuys/#Pharmacy",
+            "image": "<?= site_url(); ?>/wp-content/themes/nowrx-optimize/library/images/NowRx-Logo-Pharmacy.png",
+            "telephone": "213-263-4391",
+            "priceRange": "$",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "16517 Arminta St.",
+                "addressLocality": "van nuys",
+                "addressRegion": "CA",
+                "postalCode": "91406",
+                "addressCountry": "USA"
+            },
+
+            "location": {
+                "@type": "Place",
+                "geo": {
+                    "@type": "GeoCoordinates",
+                    "latitude": "34.215095096637924",
+                    "longitude": "-118.49289467314873"
+                }
+            }
+
+        },
+        {
+            "@type": "Pharmacy",
+            "name": "NowRx – hayward",
+            "description": "NowRx is a local retail pharmacy based out of hayward california that provides free prescription delivery in 3-5 hours",
+            "url": "<?= site_url(); ?>/locations/california/hayward/",
+            "@id": "<?= site_url(); ?>/locations/california/hayward/#Pharmacy",
+            "image": "<?= site_url(); ?>/wp-content/themes/nowrx-optimize/library/images/NowRx-Logo-Pharmacy.png",
+            "telephone": "510-892-2665",
+            "priceRange": "$",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "29233 Pacific St.",
+                "addressLocality": "hayward",
+                "addressRegion": "CA",
+                "postalCode": "94544",
+                "addressCountry": "USA"
+            },
+
+            "location": {
+                "@type": "Place",
+                "geo": {
+                    "@type": "GeoCoordinates",
+                    "latitude": "37.62946075866285",
+                    "longitude": "-122.0560470884243"
                 }
             }
 
@@ -220,6 +276,102 @@
     ]
 }
 </script>
+
+
+
+
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "What is NowRx?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "NowRx is a pharmacy just like your CVS or Walgreens, except instead of you coming in to pick up medication, we bring them to you."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Is NowRx a mail-order pharmacy?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "NO. NowRx Pharmacy has physical locations in all of our service areas. We accept walk-ins and our pharmacists are always available to chat in person or over the phone."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How can you afford to provide free same-day delivery?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Proprietary tech inside our pharmacy increases efficiency and reduces our cost to about 1/100th that of a traditional pharmacy like CVS. This enables free same-day delivery."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How do you make money?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We make money like every pharmacy or healthcare service – reimbursement from insurance and copays from the patient."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Do you charge more to offset the cost of delivery?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "NO. Prices are lower than or competitive with all pharmacies. We also automatically search for and apply available coupons to offer the lowest price possible (over $1M saved!)."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How do you handle special requests?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Special requests (e.g. blister packs, medication sorting, etc.) are available upon request. Just let our pharmacist know when they reach out to schedule your delivery!"
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Can I manage prescriptions for a family member?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. You can set a head of household if a single person will be managing a family member or loved one’s prescriptions."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Do you deliver controlled & refrigerated medication?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "YES. If you have a paper copy, a NowRx driver will pick it up from you or your doctor before delivery. These meds also require a signature & proper ID."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "What insurance plans do you take?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "NowRx Pharmacy accepts all major insurance plans except Kaiser. We also offer some of the lowest out of pocket prices in the areas we serve."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How long does does delivery take?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Typically, your prescription will arrive 2-4 hours after we have confirmed your prescription. We also offer 1hr delivery option for a $5 fee."
+            }
+        }
+              
+        
+    ]
+}
+</script>
+
 
 <!-- Event snippet for Form Completion conversion page -->
 <script>

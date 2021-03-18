@@ -16,6 +16,161 @@
 <?php get_header(); ?>
 
 
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.5",
+        "reviewCount": "11"
+    },
+    "description": "Free Prescription Delivery in Hours",
+    "name": "NowRx Pharmacy",
+    "image": "<?= IMG; ?>/library/images/NowRx-Logo-Pharmacy.png",
+
+    "review": [{
+            "@type": "Review",
+            "author": "Dr. Ann Jayaram",
+            "datePublished": "2021-04-01",
+            "reviewBody": " NowRx Pharmacy is great for my staff. Their prices are the lowest around and they deliver for free. Try them out, your patients and staff will thank you.",
+            "name": "Better Pricing",
+            "reviewRating": {
+                "@type": "Rating",
+                "bestRating": "5",
+                "ratingValue": "5",
+                "worstRating": "1"
+            }
+        },
+        {
+            "@type": "Review",
+            "author": "Lucas",
+            "datePublished": "2020-04-25",
+            "reviewBody": "NowRx Pharmacy has been instrumental for my practice in providing timely medication delivery, transparent pricing, and excellent customer service.",
+            "name": "Dr. Inna Yaskin",
+            "reviewRating": {
+                "@type": "Rating",
+                "bestRating": "5",
+                "ratingValue": "4.5",
+                "worstRating": "1"
+            }
+        },
+        {
+            "@type": "Review",
+            "author": "Tony M.",
+            "datePublished": "2015-09-23",
+            "reviewBody": "They really are as good as advertised. They accept standing orders which has saved my office staff significant time and energy. I could not be happier with NowRx!",
+            "name": "Dr. James Tearse",
+            "reviewRating": {
+                "@type": "Rating",
+                "bestRating": "5",
+                "ratingValue": "4",
+                "worstRating": "1"
+            }
+        }
+    ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "What is NowRx?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "NowRx is a pharmacy just like your CVS or Walgreens, except instead of you coming in to pick up medication, we bring them to you."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Is NowRx a mail-order pharmacy?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "NO. NowRx Pharmacy has physical locations in all of our service areas. We accept walk-ins and our pharmacists are always available to chat in person or over the phone."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How can you afford to provide free same-day delivery?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The proprietary tech inside our pharmacy increases efficiency and reduces our cost to about 1/100th that of a traditional pharmacy like CVS. This enables free same-day delivery."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How do you make money?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We make money like every pharmacy or healthcare service – reimbursement from insurance and copays from the patient."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Do you charge more to offset the cost of delivery?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "NO. Prices are lower than or competitive with all pharmacies. We also automatically search for and apply available coupons to offer the lowest price possible (over $1M saved!)."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How do you handle special requests?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Special requests (e.g. blister packs, medication sorting, etc.) are available upon request. Just let our pharmacist know when they reach out to schedule your delivery!"
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Can I manage prescriptions for a family member?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. You can set a head of household if a single person will be managing a family member or loved one’s prescriptions."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Do you deliver controlled & refrigerated medication?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "YES. If you have a paper copy, a NowRx driver will pick it up from you or your doctor before delivery. These meds also require a signature & proper ID."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "What insurance plans do you take?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "NowRx Pharmacy accepts all major insurance plans except Kaiser. We also offer some of the lowest out of pocket prices in the areas we serve."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How long does delivery take?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "asadasdadasdasd"
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "aaaa",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Typically, your prescription will arrive 2-4 hours after we have confirmed your prescription. We also offer 1hr delivery option for a $5 fee."
+            }
+        }
+            
+        
+    ]
+}
+</script>
+
 
 <!-- hero -->
 <section class="hero-home">

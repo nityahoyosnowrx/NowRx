@@ -16,6 +16,99 @@
 <?php get_header(); ?>
 
 
+
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [{
+            "@type": "Question",
+            "name": "How can you afford to provide free same-day delivery?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The proprietary tech inside our pharmacy increases efficiency and reduces our cost to about 1/100th that of a traditional pharmacy like CVS. This enables free same-day delivery."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How do you make money?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We make money like every pharmacy or healthcare service – reimbursement from insurance and copays from the patient."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How can you afford to provide free same-day delivery?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The proprietary tech inside our pharmacy increases efficiency and reduces our cost to about 1/100th that of a traditional pharmacy like CVS. This enables free same-day delivery."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How do you handle special requests?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Special requests (e.g. blister packs, medication sorting, etc.) are available upon request. Just let our pharmacist know when they reach out to schedule your delivery!"
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Do you take all insurance?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We accept all major insurance except Kaiser Permanente."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Do you deliver controlled & refrigerated medication?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "YES. If you have a paper copy, a NowRx driver will pick it up from you or your doctor before delivery. These meds also require a signature & proper ID."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Do you deliver controlled & refrigerated medication?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "YES. If you have a paper copy, a NowRx driver will pick it up from you or your doctor before delivery. These meds also require a signature & proper ID."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Do your meds cost more?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "NO. Pricing is competitive with and typically lower than even GoodRx coupons."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Can I manage prescriptions for a family member?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. You can set a head of household if a single person will be managing a family member or loved one's prescriptions."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Where is NowRx Available?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "You can view our locations and service areas at nowrx.com/locations/."
+            }
+        }
+
+
+    ]
+}
+</script>
+
+
 <!-- hero -->
 <section class="hero-home refillstation" id="home">
     <div class="rvl">
@@ -47,7 +140,8 @@
                 </div>
                 <div class="rvls">
                     <span class="sub-headline">
-                    Please complete the form below to refill or transfer prescription(s). To avoid delays, make sure all information is accurate and up to date.
+                        Please complete the form below to refill or transfer prescription(s). To avoid delays, make sure
+                        all information is accurate and up to date.
                     </span>
                 </div>
 
@@ -150,52 +244,61 @@
                             margin: 30px 0 0;
                             justify-content: flex-start;
                         }
+
                         .hs_switch_to_nowrx_pharmacy input[type=checkbox]:after {
-    background: transparent;
-    border-radius: 50%;
-    width: 13px;
-    height: 13px;
-    /* color: transparent; */
-    /* border: 2px solid #ffffff8c; */
-    /* background: transparent; */
-    content:'✓';
-    line-height: 13px;
-}
-ul.inputs-list.multi-container li.hs-form-checkbox input {
-    margin-right: 10px;
-    min-width: 0%;
-    border: none;
-    width: 27px;
-    height: 27px;
+                            background: transparent;
+                            border-radius: 50%;
+                            width: 13px;
+                            height: 13px;
+                            /* color: transparent; */
+                            /* border: 2px solid #ffffff8c; */
+                            /* background: transparent; */
+                            content: '✓';
+                            line-height: 13px;
+                        }
+
+                        ul.inputs-list.multi-container li.hs-form-checkbox input {
+                            margin-right: 10px;
+                            min-width: 0%;
+                            border: none;
+                            width: 27px;
+                            height: 27px;
 
 
-}
-.hs_message_to_nowrx>label, .hs_switch_to_nowrx_pharmacy>label {
-    color: inherit;
-    font-weight: 100;
-    font-family: helvetica;
-    font-size: 13px;
-}
+                        }
 
-.hs_message_to_nowrx>label, .hs_switch_to_nowrx_pharmacy>label strong {
-    font-weight: 500;
-    font-family: helvetica;
-    font-size: 13px;
-}
+                        .hs_message_to_nowrx>label,
+                        .hs_switch_to_nowrx_pharmacy>label {
+                            color: inherit;
+                            font-weight: 100;
+                            font-family: helvetica;
+                            font-size: 13px;
+                        }
 
-.hs_message_to_nowrx>label, .hs_switch_to_nowrx_pharmacy>label em {
-    font-size: 13px;
-}
-.hbspt-form{
-    text-align: left;
-}
-.pageform li {
-    list-style: none;
-    margin-bottom: 10px;
-}
-li {
-    list-style: none;
-}
+                        .hs_message_to_nowrx>label,
+                        .hs_switch_to_nowrx_pharmacy>label strong {
+                            font-weight: 500;
+                            font-family: helvetica;
+                            font-size: 13px;
+                        }
+
+                        .hs_message_to_nowrx>label,
+                        .hs_switch_to_nowrx_pharmacy>label em {
+                            font-size: 13px;
+                        }
+
+                        .hbspt-form {
+                            text-align: left;
+                        }
+
+                        .pageform li {
+                            list-style: none;
+                            margin-bottom: 10px;
+                        }
+
+                        li {
+                            list-style: none;
+                        }
                         </style>
                     </div>
                 </div>
@@ -396,7 +499,8 @@ li {
                     <p>
                         <strong>New Prescription: </strong>Tell your doctor to fax or ePrescribe to NowRx. <br>
                         <strong>Existing Prescription: </strong>Text <a href="tel:844-466-6979" class="tellink">(844)
-                            466-6979</a> or <a href="<?= get_site_url(); ?>/refill-and-transfer-prescriptions/" style="color:#fff;">Transfer
+                            466-6979</a> or <a href="<?= get_site_url(); ?>/refill-and-transfer-prescriptions/"
+                            style="color:#fff;">Transfer
                             Online
                             Here</a>.
                     </p>
@@ -673,7 +777,8 @@ li {
                         <div class="a-item">
                             <div class="title">A.</div>
                             <span class="cntx">
-                                You can view our locations and service areas at <a href="https://nowrx.com/locations/">nowrx.com/locations/</a>.
+                                You can view our locations and service areas at <a
+                                    href="https://nowrx.com/locations/">nowrx.com/locations/</a>.
                             </span>
                         </div>
                     </div>
