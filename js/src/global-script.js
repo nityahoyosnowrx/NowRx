@@ -369,3 +369,32 @@ $(document).ready(function() {
     }, 600);
   }, 4000);
 });
+
+
+
+
+$(document).ready(function() {
+  $('.closeicon').on('click', function(e) {
+    e.preventDefault();
+    $('section.popblog').fadeOut();
+  });
+});
+
+
+
+
+var dialogShown = localStorage.getItem('popUp');
+
+if (!dialogShown) {
+  $(document).ready(function() {
+
+      setTimeout(function(){
+        $('section.popblog').css("display", "flex").hide().fadeIn();
+      },30000);
+
+        localStorage.setItem('popUp', 1);
+    });
+}
+else {
+    $("#dialog1").hide();
+}

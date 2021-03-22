@@ -405,7 +405,7 @@ ol.MostPopular-list {
 }
 
 section#blog {
-	margin: 60px 0 0;
+	margin: 160px 0 0;
 	@media screen and (max-width: 992px) {
 		margin: 0 0;
 		.grid-padding-x > .cell {
@@ -3721,7 +3721,7 @@ ul.cloudTags {
 	list-style: none;
 	display: flex;
 	flex-wrap: wrap;
-	padding: 30px 20px 0;
+	padding: 30px 20px ;
 	text-align: center;
 	align-items: center;
 	justify-content: center;
@@ -3735,3 +3735,107 @@ ul.cloudTags {
 		font-size: 12px;
 	}
 }
+
+
+
+
+section.popblog {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9123;
+    background: Rgb(0 0 0 / 34%);
+    z-index: 1234123123;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	display: none;
+
+	.btn-container {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+section.popblog .container {
+    max-width: 600px;
+	width: 410px;
+	padding: 20px;
+    margin: 0 auto;
+	max-width: 90%;
+}
+
+section.popblog .point {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
+section.popblog .content {
+}
+
+section.popblog .title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+	flex-direction: column;
+}
+
+section.popblog .logo {
+	max-width: 180px;
+    margin-right: 10px;
+    margin: 5px 0 10px;
+}
+
+section.popblog .points {
+    margin: 0 auto;
+	padding: 20px 00px 10px;
+	max-width: 270px;
+}
+
+section.popblog .icon {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+section.popblog .title .txt {
+	font-size: 11px;
+    color: #1f88ca;
+    line-height: 15px;
+}
+
+section.popblog .point .txt {
+    color: #1f88ca;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+section.popblog .icon svg {
+    fill: #1f4f8b;
+}
+
+
+section.popblog .container {
+    position: relative;
+    background: #fff;
+    border-radius: 20px;
+	border-radius: 20px;
+    border: 2px solid #1f88ca;
+    padding: 15px 10px;
+    max-width: 98%;
+}
+
+section.popblog .closeicon {
+    position: absolute;
+    top: -35px;
+    right: 0px;
+    width: 10px;
+    height: 10px;
+}
+
+section.popblog .closeicon svg {fill: #fff;}

@@ -54,7 +54,7 @@ header.main.fixedmain {
 	background-color: #fff;
 	box-shadow: 0 0.5rem 2rem -0.5rem rgba(0, 0, 0, 0.07), 0 0.25rem 2rem 0 rgba(0, 0, 0, 0.07);
 	box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
-	padding: 0px 10px 0;
+	padding: 0px  0;
 	.content {
 		background: #fff;
 		padding: 15px ​30px;
@@ -565,7 +565,8 @@ section.hero-home {
 			@media screen and (max-width: 992px) {
 				font-size: 10.2vw;
 				margin: 0 0 20px;
-				font-size: calc(38px + 6 * ((100vw - 320px) / 680));
+				font-size: calc(34px + 6 * ((100vw - 320px) / 680));
+				padding: 0 5px;
 			}
 		}
 		a.alink {

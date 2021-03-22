@@ -53,8 +53,8 @@
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 
     <!-- ?v=<?php echo time(); ?> -->
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/public/frontend.css?vs=<?php echo mktime(); ?>">
-    <!-- <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/public/frontend.css"> -->
+    <!-- <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/public/frontend.css?vs=<?php echo mktime(); ?>"> -->
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/public/frontend.css">
 
     <!-- WP HEAD -->
     <?php wp_head(); ?>

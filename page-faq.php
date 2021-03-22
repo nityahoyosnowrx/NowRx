@@ -20,62 +20,6 @@
 <script type="application/ld+json">
 {
     "@context": "https://schema.org",
-    "@type": "Product",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.5",
-        "reviewCount": "11"
-    },
-    "description": "Free Prescription Delivery in Hours",
-    "name": "NowRx Pharmacy",
-    "image": "<?= IMG; ?>/library/images/NowRx-Logo-Pharmacy.png",
-
-    "review": [{
-            "@type": "Review",
-            "author": "Lina W.",
-            "datePublished": "2011-04-01",
-            "reviewBody": "There's a reason every single review is five stars - This pharmacy is AMAZING! They actually look for discounts and coupons to offer the best rate possible.",
-            "name": "Better Pricing",
-            "reviewRating": {
-                "@type": "Rating",
-                "bestRating": "5",
-                "ratingValue": "5",
-                "worstRating": "1"
-            }
-        },
-        {
-            "@type": "Review",
-            "author": "Lucas",
-            "datePublished": "2011-03-25",
-            "reviewBody": "I am just gilding the lily with my 5-star review but companies that ACTUALLY PROVIDE CUSTOMER SERVICE are so rare in this day and age. These guys are awesome!",
-            "name": "Tanya S.",
-            "reviewRating": {
-                "@type": "Rating",
-                "bestRating": "5",
-                "ratingValue": "4.5",
-                "worstRating": "1"
-            }
-        },
-        {
-            "@type": "Review",
-            "author": "Tony M.",
-            "datePublished": "2013-09-25",
-            "reviewBody": "Huge time saver. They deliver the prescription to your address within a 3 hour time window. No more standing in line or sitting in your idling car waiting.",
-            "name": "Better Convenience",
-            "reviewRating": {
-                "@type": "Rating",
-                "bestRating": "5",
-                "ratingValue": "4",
-                "worstRating": "1"
-            }
-        }
-    ]
-}
-</script>
-
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [{
             "@type": "Question",

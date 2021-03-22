@@ -16,61 +16,6 @@
 <?php get_header(); ?>
 
 
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "Product",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.5",
-        "reviewCount": "11"
-    },
-    "description": "Free Prescription Delivery in Hours",
-    "name": "NowRx Pharmacy",
-    "image": "<?= IMG; ?>/library/images/NowRx-Logo-Pharmacy.png",
-
-    "review": [{
-            "@type": "Review",
-            "author": "Dr. Ann Jayaram",
-            "datePublished": "2021-04-01",
-            "reviewBody": " NowRx Pharmacy is great for my staff. Their prices are the lowest around and they deliver for free. Try them out, your patients and staff will thank you.",
-            "name": "Better Pricing",
-            "reviewRating": {
-                "@type": "Rating",
-                "bestRating": "5",
-                "ratingValue": "5",
-                "worstRating": "1"
-            }
-        },
-        {
-            "@type": "Review",
-            "author": "Lucas",
-            "datePublished": "2020-04-25",
-            "reviewBody": "NowRx Pharmacy has been instrumental for my practice in providing timely medication delivery, transparent pricing, and excellent customer service.",
-            "name": "Dr. Inna Yaskin",
-            "reviewRating": {
-                "@type": "Rating",
-                "bestRating": "5",
-                "ratingValue": "4.5",
-                "worstRating": "1"
-            }
-        },
-        {
-            "@type": "Review",
-            "author": "Tony M.",
-            "datePublished": "2015-09-23",
-            "reviewBody": "They really are as good as advertised. They accept standing orders which has saved my office staff significant time and energy. I could not be happier with NowRx!",
-            "name": "Dr. James Tearse",
-            "reviewRating": {
-                "@type": "Rating",
-                "bestRating": "5",
-                "ratingValue": "4",
-                "worstRating": "1"
-            }
-        }
-    ]
-}
-</script>
 
 <script type="application/ld+json">
 {

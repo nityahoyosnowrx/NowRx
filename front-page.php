@@ -4,61 +4,6 @@
 <script type="application/ld+json">
 {
     "@context": "https://schema.org",
-    "@type": "Product",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.5",
-        "reviewCount": "11"
-    },
-    "description": "Free Prescription Delivery in Hours",
-    "name": "NowRx Pharmacy",
-    "image": "<?= IMG; ?>/library/images/NowRx-Logo-Pharmacy.png",
-
-    "review": [{
-            "@type": "Review",
-            "author": "Lina W.",
-            "datePublished": "2011-04-01",
-            "reviewBody": "There's a reason every single review is five stars - This pharmacy is AMAZING! They actually look for discounts and coupons to offer the best rate possible.",
-            "name": "Better Pricing",
-            "reviewRating": {
-                "@type": "Rating",
-                "bestRating": "5",
-                "ratingValue": "5",
-                "worstRating": "1"
-            }
-        },
-        {
-            "@type": "Review",
-            "author": "Lucas",
-            "datePublished": "2011-03-25",
-            "reviewBody": "I am just gilding the lily with my 5-star review but companies that ACTUALLY PROVIDE CUSTOMER SERVICE are so rare in this day and age. These guys are awesome!",
-            "name": "Tanya S.",
-            "reviewRating": {
-                "@type": "Rating",
-                "bestRating": "5",
-                "ratingValue": "4.5",
-                "worstRating": "1"
-            }
-        },
-        {
-            "@type": "Review",
-            "author": "Tony M.",
-            "datePublished": "2013-09-25",
-            "reviewBody": "Huge time saver. They deliver the prescription to your address within a 3 hour time window. No more standing in line or sitting in your idling car waiting.",
-            "name": "Better Convenience",
-            "reviewRating": {
-                "@type": "Rating",
-                "bestRating": "5",
-                "ratingValue": "4",
-                "worstRating": "1"
-            }
-        }
-    ]
-}
-</script>
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [{
             "@type": "Question",
@@ -162,11 +107,11 @@
             <div class="column-half content-col">
 
                 <span class="sub-headline ">
-                    <strong>A Better Local Pharmacy Delivered</strong>
+                    <strong>A BETTER LOCAL PHARMACY</strong>
                 </span>
 
                 <h1 class="">
-                    Free Prescription Delivery in Hours
+                    Free Same-Day Pharmacy Delivery
                 </h1>
 
                 <p class="">
@@ -210,17 +155,23 @@
             <!-- image -->
             <div class="column-half image-col">
 
-                <picture data-toggle-class="active" class="lozad">
+                <!-- <picture data-toggle-class="active" class="lozad">
                     <source type="image/webp"
                         srcset="<?php echo get_template_directory_uri(); ?>/images/AdobeStock_91568410.webp"
                         media="(min-width: 100px)">
-                    <!-- <source type="image/jpeg" srcset="<?php echo get_template_directory_uri(); ?>/images/AdobeStock_91568410.jpeg"> -->
+                   <source type="image/jpeg" srcset="<?php echo get_template_directory_uri(); ?>/images/AdobeStock_91568410.jpeg">
 
                     <img data-src="<?php echo get_template_directory_uri(); ?>/images/AdobeStock_91568410mobile.jpeg"
                         alt="Pharmacist Ready to Provide Medication" class="orbit-image lozad" height="500px"
                         width="620px">
 
-                </picture>
+                </picture> -->
+
+
+                <video class=" orbit-image" muted="" loop="true" autoplay="true"
+                    poster="<?php echo get_template_directory_uri(); ?>/images/AdobeStock_91568410.jpeg" preload="none">
+                    <source type="video/mp4" src="<?php echo get_template_directory_uri(); ?>/images/Free Same-Day Pharmacy Delivery.mp4">
+                </video>
 
             </div>
 
@@ -738,38 +689,6 @@
     </div>
 </section>
 
-<section class="in-the-news padded-section">
-    <div class="grid-container">
-        <div class="grid-x grid-padding-x cellblock">
-            <div class="large-12 cell">
-                <div class="text-center">
-                    <div class="rvl">
-                        <h2>NowRx Pharmacy Delivery Blog</h2>
-                    </div>
-                </div>
-                <div class="rvl">
-                    <div class="grid-x grid-padding-x">
-                        <?php query_posts($query_string . '&posts_per_page=3&order=DESC'); ?>
-                        <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-                        <div class="large-4 cell">
-                            <?php if (has_post_thumbnail($post->ID)) : ?>
-                            <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), ''); ?>
-                            <a href="<?php the_permalink() ?>" rel="bookmark"
-                                title="<?php the_title_attribute(); ?>"><img class="border-styled lozad"
-                                    style="margin-bottom: 1rem;" data-src="<?php echo $image[0]; ?>"
-                                    alt="<?php the_title_attribute(); ?>"></a>
-                            <?php endif; ?>
-                            <h3><a href="<?php the_permalink() ?>" rel="bookmark"
-                                    title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
-                        </div>
-                        <?php endwhile;
-                            endif; ?>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
 <?php wp_reset_query(); ?>
 
