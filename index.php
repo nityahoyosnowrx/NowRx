@@ -57,9 +57,22 @@
                                         <span class="featuredtext">featured</span>
 
                                         <?php if (has_post_thumbnail($post->ID)) : ?>
-                                            <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'single-post-thumbnail'); ?>
+                                            <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'large'); ?>
+                                            <?php $imageThumbnail = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'thumbnail'); ?>
                                             <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
-                                                <img class="border-styled" style="" src="<?php echo $image[0]; ?>" alt="<?php echo get_post_meta( get_post_thumbnail_id(), '_wp_attachment_image_alt', true ); ?>">
+                                          
+                                                <!-- <img class="border-styled lozad" data-src="<?php echo $image[0]; ?>" alt=""> -->
+
+
+                                                <!-- For an element to be caught, add a block type that is different from the inline and some min-height for correct caught into view -->
+                                                <picture class="border-styled lozad" style="display: block; min-height: 1rem" data-iesrc="<?php echo $imageThumbnail[0]; ?>" data-alt="<?php echo get_post_meta( get_post_thumbnail_id(), '_wp_attachment_image_alt', true ); ?>">
+                                                    <source srcset="<?php echo $image[0]; ?>" media="(min-width: 992px)">
+                                                    <source srcset="<?php echo $imageThumbnail[0]; ?>" media="(min-width: 10px)">
+                                                    <!-- NO img element -->
+                                                    <!-- instead of img element, there will be the last source with the minimum dimensions -->
+                                                    <!-- for disabled JS you can set <noscript><img src="images/thumbs/04.jpg" alt=""></noscript> -->
+                                                </picture>
+
                                             </a>
                                         <?php else : ?>
                                             <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
@@ -113,9 +126,9 @@
 
                         <div class="image">
                             <?php if (has_post_thumbnail($post->ID)) : ?>
-                                <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'single-post-thumbnail'); ?>
+                                <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'medium'); ?>
                                 <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
-                                    <img class="border-styled" style="" src="<?php echo $image[0]; ?>" alt="<?php echo get_post_meta( get_post_thumbnail_id(), '_wp_attachment_image_alt', true ); ?>">
+                                    <img class="border-styled lozad" style="" data-src="<?php echo $image[0]; ?>" alt="<?php echo get_post_meta( get_post_thumbnail_id(), '_wp_attachment_image_alt', true ); ?>">
                                 </a>
                             <?php else : ?>
                                 <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">

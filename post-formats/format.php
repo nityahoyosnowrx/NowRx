@@ -105,7 +105,9 @@
 
 
                     <!-- twitter -->
-                    <a href="https://twitter.com/intent/tweet?status=<?php echo get_the_title(); ?>+<?php echo get_permalink(); ?>"
+                    
+
+                    <a target="_blank" href="http://twitter.com/share?text=Check out this post <?php echo get_the_title(); ?>&url=<?php echo get_permalink(); ?>&hashtags=nowrx,pharmacy,blog"
                         class="social-a">
                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
                             id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
@@ -142,6 +144,19 @@
                             <path
                                 d="m2.882 0c-1.591 0-2.882 1.291-2.882 2.882s1.291 2.909 2.882 2.909 2.882-1.318 2.882-2.909c-.001-1.591-1.292-2.882-2.882-2.882z">
                             </path>
+                        </svg>
+                    </a>
+
+                    <!-- email -->
+                    <a href="mailto:?subject=I wanted you to see this post <?php echo get_the_title(); ?> &amp;body=Find at it at <?php echo get_permalink(); ?>." title="Share by Email" class="social-a">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 230.17 230.17" style="enable-background:new 0 0 230.17 230.17;" xml:space="preserve">
+                        <g>
+                            <path d="M230,49.585c0-0.263,0.181-0.519,0.169-0.779l-70.24,67.68l70.156,65.518c0.041-0.468-0.085-0.94-0.085-1.418V49.585z"/>
+                            <path d="M149.207,126.901l-28.674,27.588c-1.451,1.396-3.325,2.096-5.2,2.096c-1.836,0-3.672-0.67-5.113-2.013l-28.596-26.647   L11.01,195.989c1.717,0.617,3.56,1.096,5.49,1.096h197.667c2.866,0,5.554-0.873,7.891-2.175L149.207,126.901z"/>
+                            <path d="M115.251,138.757L222.447,35.496c-2.427-1.443-5.252-2.411-8.28-2.411H16.5c-3.943,0-7.556,1.531-10.37,3.866   L115.251,138.757z"/>
+                            <path d="M0,52.1v128.484c0,1.475,0.339,2.897,0.707,4.256l69.738-67.156L0,52.1z"/>
+                        </g>
+
                         </svg>
                     </a>
 
@@ -201,18 +216,31 @@
         <?php if (has_post_thumbnail( $post->ID ) ): ?>
 
         <?php 
-          $image = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID),''); 
+        //   $image = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID),''); 
           ?>
 
 
         <figure class="article-featured-image">
 
-            <picture data-test="picture" itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+            <!-- <picture data-test="picture" itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
                 <source srcset="<?php echo $image[0]; ?>" media="(min-width: 1340px)">
                 <source srcset="<?php echo $image[0]; ?>" media="(min-width: 1020px)">
                 <source srcset="<?php echo $image[0]; ?>" media="(min-width: 760px)">
                 <img itemprop="url" src="<?php echo $image[0]; ?>" alt="<?php echo get_post_meta( get_post_thumbnail_id(), '_wp_attachment_image_alt', true ); ?>" class="lozad">
+            </picture> -->
+
+            <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'large'); ?>
+            <?php $imageThumbnail = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'thumbnail'); ?>
+                                          
+            <!-- For an element to be caught, add a block type that is different from the inline and some min-height for correct caught into view -->
+            <picture class="border-styled lozad" data-test="picture" itemprop="image" itemscope itemtype="http://schema.org/ImageObject" style="display: block; min-height: 1rem" data-iesrc="<?php echo $imageThumbnail[0]; ?>" data-alt="<?php echo get_post_meta( get_post_thumbnail_id(), '_wp_attachment_image_alt', true ); ?>">
+                <source srcset="<?php echo $image[0]; ?>" media="(min-width: 992px)">
+                <source srcset="<?php echo $imageThumbnail[0]; ?>" media="(min-width: 10px)">
+                <!-- NO img element -->
+                <!-- instead of img element, there will be the last source with the minimum dimensions -->
+                <!-- for disabled JS you can set <noscript><img src="images/thumbs/04.jpg" alt=""></noscript> -->
             </picture>
+
 
             <figcaption>
 

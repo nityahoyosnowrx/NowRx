@@ -343,14 +343,14 @@
 <!-- hero -->
 <section class="hero-home">
 
-    <div class="rvl">
+    <div class="rvls">
         <picture class="lozad"
             data-iesrc="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020.png"
             data-alt="Surescripts 2020 White Coat Award Finalist (Highest Accuracy) " data-toggle-class="active">
             <source type="image/png"
                 srcset="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020.png">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020lowrez.jpg"
-                class="imageblock" height="100px" width="450px"
+            <img data-src="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020lowrez.jpg"
+                class="imageblock lozad" height="100px" width="450px"
                 alt="Surescripts 2020 White Coat Award Finalist (Highest Accuracy) ">
         </picture>
     </div>
@@ -369,7 +369,8 @@
 
                 <div class="rvls">
                     <h1>
-                        Frequently Asked Questions
+                        <span class="k">Frequently Asked</span>
+                         <span class="k">Questions</span>
                     </h1>
                 </div>
 

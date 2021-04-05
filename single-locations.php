@@ -172,15 +172,15 @@ $mapd = get_field('address');
 
 <main id="main" class="main-class singleloc">
 
-    <div class="rvl">
+    <div class="rvls">
 
         <picture class="lozad"
             data-iesrc="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020.png"
             data-alt="NowRx Pharmacy Surescripts 2020 White Coat Award Finalist (Highest Accuracy)" data-toggle-class="active">
             <source type="image/png"
                 srcset="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020.png">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020lowrez.jpg"
-                class="imageblock" alt="NowRx Pharmacy Surescripts 2020 White Coat Award Finalist (Highest Accuracy)" height="100px" width="450px">
+            <img data-src="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020lowrez.jpg"
+                class="imageblock lozad" alt="NowRx Pharmacy Surescripts 2020 White Coat Award Finalist (Highest Accuracy)" height="100px" width="450px">
         </picture>
 
     </div>
@@ -192,10 +192,10 @@ $mapd = get_field('address');
             <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
             <div class="breadcrumb">
         <?php
-if ( function_exists('yoast_breadcrumb') ) {
-  yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
-}
-?>
+        if ( function_exists('yoast_breadcrumb') ) {
+        yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
+        }
+        ?>
         </div>
         </header><!-- .entry-header -->
 
@@ -1205,13 +1205,26 @@ var plntCoordsd = [
     {lat:37.754333, lng:-122.004854},   //Norris Canyon Rd
     {lat:37.771550, lng:-122.001759},   //Crow Canyon Rd
     {lat:37.828422, lng:-122.026914},   //Danville NW
-    {lat:37.846605, lng:-122.015809},   //Danville N
+    {lat:37.806274, lng:-122.113567},   //Rancho Laguna Park
+    {lat:37.822317, lng:-122.137824},   //Valle Vista Staging Area
+    {lat:37.867345, lng:-122.201177},   //Knickerbocker, Orinda
+    {lat:37.883935, lng:-122.220545},   //Seaview Trail, Orinda
+    {lat:37.8995667,lng:-122.2151531},  //Orinda Connector Staging Area
+    {lat:37.924711, lng:-122.197338},   //Black Hill
+    {lat:37.910014, lng:-122.141103},   //Mariposa Trail
+    {lat:37.916613, lng:-122.120943},   //Briones Trail Head
+    {lat:37.972927, lng:-122.149856},   //Alhambra Valley
+    {lat:38.035870, lng:-122.150062},   //Carquinez Strait
+    {lat:38.068054, lng:-122.034360},   //Suisun Bay
+    {lat:37.967214, lng:-121.926879},   //Kirker Pass
+    {lat:37.948636, lng:-121.906645},   //Black Diamond Trail
+    {lat:37.919543, lng:-121.897617},   //Marsh Creek Rd
     {lat:37.821902, lng:-121.921483},   //Blackhawk Rd
     {lat:37.799766, lng:-121.896387},   //Danville E
     {lat:37.749441, lng:-121.871704},   //Camino Tassajara
     {lat:37.745313, lng:-121.850462},   //Tassajara Hills
     {lat:37.740961, lng:-121.723154},   //N. Vasco Rd
-	{lat:37.718984, lng: -121.696681}
+		{lat:37.718984, lng: -121.696681}
   ];
 
 

@@ -50,7 +50,8 @@
 
                 <div class="rvls">
                     <h1 class="hiw-title">
-                        All You Pay is Your Normal Copay
+                        <span class="k">All You Pay is</span>
+                         <span class="k">Your Normal Copay</span>
                     </h1>
                 </div>
                 <div class="rvls">
@@ -101,13 +102,10 @@
             <!-- image -->
             <div class="column-half image-col">
 
-                <picture class="lozad" data-iesrc="<?php echo get_template_directory_uri(); ?>/images/pricing.jpeg"
-                    data-alt="Pharmacist Ready to Provide Medication" data-toggle-class="active">
-                    <source type="image/jpeg" srcset="<?php echo get_template_directory_uri(); ?>/images/pricing.jpeg">
-                    <source type="image/webp" srcset="<?php echo get_template_directory_uri(); ?>/images/pricing.jpeg">
-                    <img data-src="<?php echo get_template_directory_uri(); ?>/images/pricing.jpeg"
-                        class="orbit-image lozad" height="500px" width="650px"
-                        alt="Pharmacist Ready to Provide Medication">
+                <picture class="lozad" data-src="<?php echo get_template_directory_uri(); ?>/images/pricing.webp" data-alt="Couple happy about Provided Medication service" data-toggle-class="active">
+                    <source type="image/jpeg" data-srcset="<?php echo get_template_directory_uri(); ?>/images/pricing.jpeg">
+                    <source type="image/webp" data-srcset="<?php echo get_template_directory_uri(); ?>/images/pricing.webp">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/pricing.webp" class="orbit-image lozad" height="500px" width="650px" alt="Couple happy about Provided Medication service">
                 </picture>
 
 
@@ -213,10 +211,6 @@
 
 
 
-
-
-
-
 <!-- visit faq -->
 <section class="form-faq" id="form-faq">
     <div class="custom-shape-divider-top-1610578846">
@@ -241,15 +235,20 @@
                 <div class="rvl">
                     <div class="form-content">
                         <!--[if lte IE 8]>
-                        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+                        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js" defer></script>
                         <![endif]-->
-                        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-                        <script>
-                        hbspt.forms.create({
-                            portalId: "5952677",
-                            formId: "e1e60aa0-0007-4875-a14d-edef6831c133"
-                        });
+                        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js" defer></script>
+                        <script defer>
+                            window.addEventListener('load', function() {
+                                setTimeout(function(){  
+                                    hbspt.forms.create({
+                                        portalId: "5952677",
+                                        formId: "e1e60aa0-0007-4875-a14d-edef6831c133"
+                                    });
+                                },2000)
+                            });
                         </script>
+                        
                     </div>
                 </div>
 

@@ -60,6 +60,8 @@ header.article-header.entry-header {
 	}
 	.social-icons {
 		display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
 
 		a.social-a {
 			margin: 0 10px 0 0;
@@ -468,7 +470,7 @@ section.in-the-news.padded-section {
 	}
 }
 
-.morefrom img.border-styled {
+.morefrom .border-styled {
 	border-radius: 5px;
 	border-radius: 0 15px;
 	margin: 0;
@@ -565,7 +567,7 @@ span.arrow-in {
 .grid-container.pageblock {
 	margin: 140px auto 0;
 	@media screen and (max-width: 992px) {
-		// margin: 0 auto 0;
+		margin: 110px auto 0;
 	}
 }
 header.page {
@@ -574,7 +576,9 @@ header.page {
 	@media screen and (min-width: 992px) {
 		max-width: 70%;
 	}
-
+@media screen and (max-width: 992px) {
+	margin: 0;
+}
 	h1 {
 		font-size: 2.6rem;
 		margin-right: 30px;
@@ -642,7 +646,7 @@ header.page {
 			.content {
 				font-size: 16px;
 			}
-			.image a img.border-styled {
+			.image a .border-styled {
 			}
 		}
 		h2 {
@@ -680,7 +684,7 @@ header.page {
 			display: block;
 			border-radius: 0 15px;
 			overflow: hidden;
-			img.border-styled {
+			.border-styled {
 				width: 100%;
 				border-radius: 0;
 				height: 100%;
@@ -693,6 +697,9 @@ header.page {
 				object-position: center;
 				z-index: 123123;
 				top: 0px;
+				img {
+					width: 100%;
+				}
 			}
 		}
 	}
@@ -780,7 +787,7 @@ header.page {
 		.image {
 			position: relative;
 		}
-		img.border-styled {
+		.border-styled {
 			@media screen and (max-width: 992px) {
 			}
 		}
@@ -1706,6 +1713,12 @@ article.article-block.location-item {
 		padding: 0 20px;
 	}
 
+	header.entry-header {
+		@media screen and (max-width: 992px) {
+			margin: 0 0 90px;
+		}
+	}
+
 	.entry-content.mapplace {
 		// padding-top: 60px;
 		display: flex;
@@ -1952,6 +1965,7 @@ main#main {
 				width: 100%;
 				position: relative;
 				margin: 0;
+				display: none;
 			}
 		}
 
@@ -2057,6 +2071,9 @@ p#breadcrumbs {
 	/* color: #038ed8; */
 	margin: 0px 0 30px;
 	display: block;
+	@media screen and (max-width: 992px) {
+		text-align: center;
+	}
 }
 
 .reveal-overlay {
@@ -2117,6 +2134,7 @@ p#breadcrumbs {
 	left: 50%;
 	right: 0;
 	transform: translate(-50%, -50%);
+	z-index: 12341231231;
 
 	overflow: hidden;
 	border-radius: 30px 0;
@@ -2125,6 +2143,7 @@ p#breadcrumbs {
 .reveal-overlay {
 	display: none;
 	overflow-y: auto;
+	
 }
 @media print, screen and (min-width: 40em) {
 	.reveal,
@@ -2160,6 +2179,7 @@ p#breadcrumbs {
 	left: 0;
 	z-index: 1005;
 	background-color: rgba(25, 45, 62, 0.45);
+	z-index: 1234123123;
 }
 
 .close-button,
@@ -2453,9 +2473,9 @@ section.hero-home.contactpage {
 		}
 	}
 	.content .column-half.content-col {
-		padding: 0 80px 0px 0;
+		// padding: 0 80px 0px 0;
 		@media screen and (max-width: 992px) {
-			padding: 30px 0px 0px;
+			// padding: 30px 0px 0px;
 		}
 	}
 }
@@ -2481,6 +2501,31 @@ section.hero-home.referralpage {
 			}
 		}
 	}
+
+	.content{
+		.column-half.content-col {
+			box-shadow:  none;
+			background: transparent;
+			max-width: none;
+			padding: 0;
+			position: relative;
+			top: 0%;
+			left: 0;
+			transform: none;
+
+			z-index: 123;
+			border-radius: 0;
+			width: 60%;
+			@media screen and (min-width: 992px) {
+				padding-right: 30px;
+			}
+			@media screen and (max-width: 992px) {
+				width: 100%;
+				margin-bottom: 60px;
+			}
+		}
+	}
+	
 }
 
 section.split-bubbles {
@@ -3839,3 +3884,28 @@ section.popblog .closeicon {
 }
 
 section.popblog .closeicon svg {fill: #fff;}
+
+
+.donl {
+    margin: 30px 0 0;
+
+
+@media screen and (max-width: 992px) {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+}
+
+	a.download {
+		margin-right: 50px;
+		@media screen and (max-width: 992px) {
+			margin:0 auto;
+			margin-bottom: 20px;
+		}
+	}
+	
+	a.download img {
+		max-width: 210px;
+	}
+}

@@ -27,7 +27,7 @@
     ?>
 
     <?php if (is_front_page()) : ?>
-    <link rel="preload" as="image" type="image/jpeg" href="<?php echo get_template_directory_uri(); ?>/images/AdobeStock_91568410.webp">
+        <link rel="preload" as="image" type="image/jpeg" href="<?php echo get_template_directory_uri(); ?>/images/AdobeStock_91568410.webp">
     <!-- <link rel="preload" as="image" type="image/jpeg" href="<?php echo get_template_directory_uri(); ?>/images/AdobeStock_91568410.jpeg"> -->
 
     <!-- <link rel="preload" as="image" type="image/jpeg" href="<?php echo get_template_directory_uri(); ?>/images/AdobeStock_91568410mobile.jpeg"> -->
@@ -146,3 +146,12 @@
             </div>
         </div>
     </header>
+
+<?php  
+if ( 'post' == get_post_type()  || is_archive('post')  ): 
+else:
+?>
+  
+            <main>
+        <article>
+<?php endif; ?>

@@ -367,12 +367,12 @@
 
     <div class="container">
         <div class="content">
-            <div class="rvl">
+            <div class="rvla">
                 <div class="subtitle">
                     See What Customers Are Saying About NowRx Pharmacy Delivery
                 </div>
             </div>
-            <div class="rvl">
+            <div class="rvla">
                 <h1 class="main-title">
                     "Best Prescription Delivery Service for Northern California and Orange County Residents" (CNET)
                 </h1>
@@ -386,7 +386,6 @@
                     <div class="quote-container">
                         <!-- Additional required wrapper -->
                         <div class="de">
-
 
                             <!-- Slides -->
                             <div class="quoteitem">
@@ -471,7 +470,6 @@
                                         <blockquote>
                                             <span class="fullquote">
                                                 "Super easy to use. <b>Fast and WAY cheaper</b> than Costco or any other place I've ever checked."
-
                                             </span>
                                             <cite>
                                                 <div class="name">

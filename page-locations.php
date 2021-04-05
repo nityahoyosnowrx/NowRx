@@ -25,8 +25,6 @@ gtag('event', 'conversion', {
 
                 <header class="article-header tynk">
 
-
-
                     <div class="content">
                         <div class="rvl">
                             <span class="subheading">
@@ -51,9 +49,6 @@ gtag('event', 'conversion', {
                                 <a class="rx-btn rx-green mrb" href="<?= get_site_url(); ?>/how-it-works/">Get Started</a>
                             </div>
                         </div>
-
-
-
 
                     </div>
                     <div class="imageblock">

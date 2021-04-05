@@ -130,18 +130,16 @@
             <!-- content -->
             <div class="column-half content-col">
 
-
-
                 <div class="rvls">
                     <span class="sub-headline">
-                    Delivering Pharmacy in 3 Easy Steps
-
+                        Delivering Pharmacy in 3 Easy Steps
                     </span>
                 </div>
 
                 <div class="rvls">
                     <h1 class="hiw-title">
-                    Pharmacy Delivery Made Easy
+                        <span class="k">Pharmacy Delivery </span>
+                        <span class="k">Made Easy</span>
                     </h1>
                 </div>
 
@@ -161,9 +159,6 @@
                             How it Works</a>
                     </div>
                 </div>
-
-
-
 
             </div>
 

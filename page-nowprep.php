@@ -347,7 +347,7 @@
 
 <!-- hero -->
 <section class="hero-home">
-    <div class="rvl">
+    <div class="rvls">
 
 
         <picture class="lozad"
@@ -355,8 +355,8 @@
             data-alt="Surescripts 2020 White Coat Award Finalist (Highest Accuracy)" data-toggle-class="active">
             <source type="image/png"
                 srcset="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020.png">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020lowrez.jpg"
-                class="imageblock" height="100px" width="450px"
+            <img data-src="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020lowrez.jpg"
+                class="imageblock lozad" height="100px" width="450px"
                 alt="Surescripts 2020 White Coat Award Finalist (Highest Accuracy)">
         </picture>
 
@@ -378,7 +378,8 @@
 
                 <div class="rvls">
                     <h1 class="hiw-title">
-                        HIV PrEP is Easy with NowPrEP
+                        <span class="k">HIV PrEP is Easy </span>
+                        <span class="k">with NowPrEP</span>
                     </h1>
                 </div>
 
@@ -412,9 +413,10 @@
                     data-alt="couple on couch looking at camera" data-toggle-class="active">
 
                     <source type="image/jpeg"
-                        srcset="<?php echo get_template_directory_uri(); ?>/images/HIV-Prep-Banner-Image.jpeg">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/HIV-Prep-Banner-Image.jpeg"
-                        class="orbit-image" height="500px" width="650px" alt="couple on couch looking at camera">
+                        data-srcset="<?php echo get_template_directory_uri(); ?>/images/HIV-Prep-Banner-Image.jpeg">
+                    <img data-src="<?php echo get_template_directory_uri(); ?>/images/HIV-Prep-Banner-Image.jpeg"
+
+                        class="orbit-image lozad" height="500px" width="650px" alt="couple on couch looking at camera">
                 </picture>
             </div>
 
@@ -424,7 +426,8 @@
 
 
 <!-- companies -->
-<?php include('section-companies.php'); ?>
+<?php 
+include('section-companies.php'); ?>
 
 
 
@@ -515,8 +518,8 @@
                 <h2 class="headline">Why Choose NowPrep</h2>
             </div>
             <div class="imageblock imgslide">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/prepimage.jpeg"
-                    alt="couple reading information about nowprep on laptop" class="pic">
+                <img data-src="<?php echo get_template_directory_uri(); ?>/images/prepimage.jpeg"
+                    alt="couple reading information about nowprep on laptop" class="pic lozad">
             </div>
         </div>
         <div class="pills">
@@ -650,8 +653,8 @@
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="cancel icon">
+                                            <img data-src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="cancel icon" class="lozad">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -700,8 +703,8 @@
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="cancel icon">
+                                            <img data-src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="cancel icon" class="lozad">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -744,8 +747,8 @@
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="cancel icon">
+                                            <img data-src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="cancel icon" class="lozad">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -799,8 +802,8 @@
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="cancel icon">
+                                            <img data-src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="cancel icon" class="lozad">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -863,8 +866,8 @@
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="cancel icon">
+                                            <img data-src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="cancel icon" class="lozad">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -918,8 +921,8 @@
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="cancel icon">
+                                            <img data-src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="cancel icon" class="lozad">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -960,8 +963,8 @@
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="cancel icon">
+                                            <img data-src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="cancel icon" class="lozad">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -1008,8 +1011,8 @@
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="cancel icon">
+                                            <img data-src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="cancel icon" class="lozad">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -1054,8 +1057,8 @@
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="cancel icon">
+                                            <img data-src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="cancel icon" class="lozad">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -1113,8 +1116,8 @@
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="cancel icon">
+                                            <img data-src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="cancel icon" class="lozad">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -1168,8 +1171,8 @@
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="cancel icon">
+                                            <img data-src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="cancel icon" class="lozad">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -1238,8 +1241,8 @@
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="cancel icon">
+                                            <img data-src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="cancel icon" class="lozad">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -1303,8 +1306,8 @@
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="cancel icon">
+                                            <img data-src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="cancel icon" class="lozad">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -1366,8 +1369,8 @@
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="cancel icon">
+                                            <img data-src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="cancel icon" class="lozad">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -1422,8 +1425,8 @@
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="cancel icon">
+                                            <img data-src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="cancel icon" class="lozad">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -1464,8 +1467,8 @@
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="cancel icon">
+                                            <img data-src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="cancel icon" class="lozad">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -1522,8 +1525,8 @@
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="cancel icon">
+                                            <img data-src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="cancel icon" class="lozad">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -1562,8 +1565,8 @@
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="cancel icon">
+                                            <img data-src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="cancel icon" class="lozad">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -1619,8 +1622,8 @@
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="cancel icon">
+                                            <img data-src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="cancel icon" class="lozad">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -1660,8 +1663,8 @@
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="cancel icon">
+                                            <img data-src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="cancel icon" class="lozad">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -1708,8 +1711,8 @@
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="cancel icon">
+                                            <img data-src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="cancel icon" class="lozad">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -1784,8 +1787,8 @@
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="cancel icon">
+                                            <img data-src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="cancel icon" class="lozad">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -1829,8 +1832,8 @@
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="cancel icon">
+                                            <img data-src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="cancel icon" class="lozad">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -1882,8 +1885,8 @@
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="cancel icon">
+                                            <img data-src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="cancel icon" class="lozad">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -1922,8 +1925,8 @@
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="cancel icon">
+                                            <img data-src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="cancel icon" class="lozad">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -1970,8 +1973,8 @@
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="cancel icon">
+                                            <img data-src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="cancel icon" class="lozad">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -2017,8 +2020,8 @@
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="cancel icon">
+                                            <img data-src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="cancel icon" class="lozad">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -2058,8 +2061,8 @@
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="cancel icon">
+                                            <img data-src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="cancel icon" class="lozad">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -2100,8 +2103,8 @@
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="cancel icon">
+                                            <img data-src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="cancel icon" class="lozad">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -2144,8 +2147,8 @@
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="cancel icon">
+                                            <img data-src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="cancel icon" class="lozad">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -2216,8 +2219,8 @@
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="cancel icon">
+                                            <img data-src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="cancel icon" class="lozad">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -2260,8 +2263,8 @@
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="cancel icon">
+                                            <img data-src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="cancel icon" class="lozad">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -2318,8 +2321,8 @@
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="cancel icon">
+                                            <img data-src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="cancel icon" class="lozad">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -2385,8 +2388,8 @@
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="cancel icon">
+                                            <img data-src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="cancel icon" class="lozad">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -2426,8 +2429,8 @@
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="cancel icon">
+                                            <img data-src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="cancel icon" class="lozad">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -2489,8 +2492,8 @@
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="cancel icon">
+                                            <img data-src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="cancel icon" class="lozad">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -2539,8 +2542,8 @@
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="cancel icon">
+                                            <img data-src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="cancel icon" class="lozad">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -2583,8 +2586,8 @@
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="cancel icon">
+                                            <img data-src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="cancel icon" class="lozad">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -2639,8 +2642,8 @@
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="cancel icon">
+                                            <img data-src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="cancel icon" class="lozad">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -2684,8 +2687,8 @@
                                 <div class="block">
                                     <div class="q-item">
                                         <span class="close-itcon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
-                                                alt="cancel icon">
+                                            <img data-src="<?php echo get_template_directory_uri(); ?>/images/cancel.svg"
+                                                alt="cancel icon" class="lozad">
                                         </span>
                                         <div class="title">Q.</div>
                                         <span class="cntx">
@@ -2746,8 +2749,8 @@
 
         </div>
         <div class="faq-image">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/HIV-PrEP-Doctor-Image.png"
-                alt=" transgender woman looking up" class="pic">
+            <img data-src="<?php echo get_template_directory_uri(); ?>/images/HIV-PrEP-Doctor-Image.png"
+                alt=" transgender woman looking up" class="pic lozad">
         </div>
     </div>
 

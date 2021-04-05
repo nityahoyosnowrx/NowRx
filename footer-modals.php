@@ -1,10 +1,19 @@
-<?php if ( !is_front_page() ):  
-        if ( !is_singular( 'post' ) ): 
-            if ( !is_page( 'testimonials' ) ): 
+<?php 
+    if ( is_page( 'faqs' ) || is_page('nowprep') || is_archive('locations') ): 
     ?>
 
-<div class="reveal twentyone" id="waitlist" data-reveal data-close-on-click="true" data-animation-in="slide-in-down"
-    data-animation-out="slide-out-up">
+ <!--[if lte IE 8]>
+<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js" defer></script>
+<![endif]-->
+
+<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js" defer></script>
+
+<!-- <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js" rel="dns-prefetch"></script> -->
+
+
+<!-- nowprep -->
+
+<div class="reveal twentyone" id="waitlist" data-reveal data-close-on-click="true" data-animation-in="slide-in-down"data-animation-out="slide-out-up">
 
     <div class="imagblock">
         <img data-src="<?php echo get_template_directory_uri(); ?>/images/doctorwithclipboard.jpeg"
@@ -52,15 +61,14 @@
             </p>
         </div>
         <div class="form-content">
-
-            <!--[if lte IE 8]>
-<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
-<![endif]-->
-            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-            <script>
-            hbspt.forms.create({
-                portalId: "5952677",
-                formId: "ded00596-ad7a-46b6-9069-bb3552b72735"
+            <script >
+            window.addEventListener('load', function() {
+                setTimeout(function(){                
+                    hbspt.forms.create({
+                        portalId: "5952677",
+                        formId: "ded00596-ad7a-46b6-9069-bb3552b72735"
+                    });
+                },2000)
             });
             </script>
         </div>
@@ -77,7 +85,8 @@
 
 
 
-
+<!-- faq -->
+<!-- nowprep -->
 <div class="reveal" id="submitaquestion" data-reveal data-close-on-click="true" data-animation-in="slide-in-down"
     data-animation-out="slide-out-up" style="padding: 60px;">
 
@@ -89,14 +98,16 @@
             Please enter your question below and a NowRx Pharmacy Team member will respond as soon as possible.
         </p>
     </div>
-    <!--[if lte IE 8]>
-<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
-<![endif]-->
-    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-    <script>
-    hbspt.forms.create({
-        portalId: "5952677",
-        formId: "aa3d3838-6464-4e9f-911f-d2096f43433c"
+    
+    
+    <script >
+    window.addEventListener('load', function() {
+                setTimeout(function(){        
+            hbspt.forms.create({
+                portalId: "5952677",
+                formId: "aa3d3838-6464-4e9f-911f-d2096f43433c"
+            });
+        },2000)
     });
     </script>
 
@@ -116,14 +127,16 @@
     </h3>
     <p>NowRx Pharmacy will notify you when we expand our free prescription delivery services to your area</p>
 
-    <!--[if lte IE 8]>
-<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
-<![endif]-->
-    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-    <script>
-    hbspt.forms.create({
-        portalId: "5952677",
-        formId: "9085621c-0203-44d5-b7e4-f97da3d5cea3"
+    
+    
+    <script >
+    window.addEventListener('load', function() {
+                setTimeout(function(){        
+            hbspt.forms.create({
+                portalId: "5952677",
+                formId: "9085621c-0203-44d5-b7e4-f97da3d5cea3"
+            });
+        },2000)
     });
     </script>
 
@@ -137,7 +150,9 @@
 
 
 
-
+<!-- for-doctors -->
+<!-- archive locations -->
+<!-- contact-us -->
 <div class="reveal twentyone" id="for-doctors-learnmore" data-reveal data-close-on-click="true"
     data-animation-in="slide-in-down" data-animation-out="slide-out-up">
 
@@ -154,14 +169,14 @@
             </p>
         </div>
         <div class="form-content">
-            <!--[if lte IE 8]>
-<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
-<![endif]-->
-            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-            <script>
-            hbspt.forms.create({
-                portalId: "5952677",
-                formId: "134ddd71-adf4-414b-a537-24f71e87f48e"
+            <script >
+            window.addEventListener('load', function() {
+                setTimeout(function(){                
+                    hbspt.forms.create({
+                        portalId: "5952677",
+                        formId: "134ddd71-adf4-414b-a537-24f71e87f48e"
+                    });
+                },2000)
             });
             </script>
         </div>
@@ -176,73 +191,44 @@
     </button>
 </div>
 
-<!-- 
 
-<div class="reveal" id="for-doctors-learnmore" data-reveal data-close-on-click="true" data-animation-in="slide-in-down"
-    data-animation-out="slide-out-up" style="padding: 60px;">
+<!-- for-doctors -->
 
-    <h3 class="text-center">
-
-    </h3>
-    <p class="text-center">
-    </p>
-
- 
-
-
-
-
-
-    <button class="close-button text-center" data-close aria-label="Close reveal" type="button">
-        <span aria-hidden="true">&times;</span>
-    </button>
-</div> -->
-
-<div class="reveal" id="for-doctors-learnmore-second" data-reveal data-close-on-click="true"
-    data-animation-in="slide-in-down" data-animation-out="slide-out-up" style="padding: 60px;">
-
-    <h3 class="text-center">NowRx Doctor Feedback Program
-
-
-    </h3>
+<div class="reveal" id="for-doctors-learnmore-second" data-reveal data-close-on-click="true" data-animation-in="slide-in-down" data-animation-out="slide-out-up" style="padding: 60px;">
+    <h3 class="text-center">NowRx Doctor Feedback Program</h3>
     <p class="text-center">
         Fill out the form below and a member of our pharmacy team will reach out to you within 24 hours to provide
         details on how to get started.
     </p>
-
-    <!--[if lte IE 8]>
-<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
-<![endif]-->
-    <script>
-    hbspt.forms.create({
-        portalId: "5952677",
-        formId: "134ddd71-adf4-414b-a537-24f71e87f48e"
+    <script >
+    window.addEventListener('load', function() {
+                setTimeout(function(){        
+            hbspt.forms.create({
+                portalId: "5952677",
+                formId: "134ddd71-adf4-414b-a537-24f71e87f48e"
+            });
+        },2000)
     });
     </script>
-
-
-
-
     <button class="close-button text-center" data-close aria-label="Close reveal" type="button">
         <span aria-hidden="true">&times;</span>
     </button>
 </div>
 
 
-
+<!--for-doctors -->
 <div class="reveal" id="for-doctors" data-reveal data-close-on-click="true" data-animation-in="slide-in-down"
     data-animation-out="slide-out-up" style="padding: 40px;">
     <h3 class="text-center">Building A Better Pharmacy for<br>Our Doctors & Patients</h3>
     <p class="text-center">Learn Why More Than 4,500 Physicians Trust NowRx!</p>
-
-
-    <!--[if lte IE 8]>
-<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
-<![endif]-->
-    <script>
-    hbspt.forms.create({
-        portalId: "5952677",
-        formId: "e7d24a50-ae52-4ec2-a184-a6bbd3eb1382"
+    <script >
+    window.addEventListener('load', function() {
+                setTimeout(function(){        
+            hbspt.forms.create({
+                portalId: "5952677",
+                formId: "e7d24a50-ae52-4ec2-a184-a6bbd3eb1382"
+            });
+        },2000)
     });
     </script>
 
@@ -258,13 +244,15 @@
     <p class="text-center">Fill out the form and we'll let your Doctor know to fill your next prescription with
         NowRx.</p>
 
-    <!--[if lte IE 8]>
-<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
-<![endif]-->
-    <script>
-    hbspt.forms.create({
-        portalId: "5952677",
-        formId: "e7d24a50-ae52-4ec2-a184-a6bbd3eb1382"
+    
+    <script >
+    window.addEventListener('load', function() {
+                setTimeout(function(){        
+            hbspt.forms.create({
+                portalId: "5952677",
+                formId: "e7d24a50-ae52-4ec2-a184-a6bbd3eb1382"
+            });
+        },2000)
     });
     </script>
 
@@ -276,7 +264,6 @@
 </div>
 
 
-<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js" rel="dns-prefetch"></script>
 
 
 
@@ -284,9 +271,7 @@
 
 
 <!-- refill and precsribe -->
-
-
-<div class="reveal twentyone" id="for-transferprescribe" data-reveal data-close-on-click="true"
+<!-- <div class="reveal twentyone" id="for-transferprescribe" data-reveal data-close-on-click="true"
     data-animation-in="slide-in-down" data-animation-out="slide-out-up">
 
     <div class="imagblock">
@@ -299,16 +284,20 @@
         <div class="description">
             <p>*Complete this form to transfer a prescription from another pharmacy.</p>
         </div>
-        <div class="form-content">
+        <div class="form-content"> -->
             <!-- Transfer Prescriptions CTA should lead to this pop up form -->
             <!--[if lte IE 8]>
         <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
         <![endif]-->
-            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-            <script>
-            hbspt.forms.create({
-                portalId: "5952677",
-                formId: "c1b49e9c-0497-4c0b-9de4-026eacd71e29"
+            
+            <!-- <script >
+            window.addEventListener('load', function() {
+                setTimeout(function(){                
+                    hbspt.forms.create({
+                        portalId: "5952677",
+                        formId: "c1b49e9c-0497-4c0b-9de4-026eacd71e29"
+                    });
+                },2000)
             });
             </script>
         </div>
@@ -321,9 +310,9 @@
     <button class="close-button text-center" data-close aria-label="Close reveal" type="button">
         <span aria-hidden="true">&times;</span>
     </button>
-</div>
+</div> -->
 
-<div class="reveal twentyone" id="for-refillpresc" data-reveal data-close-on-click="true"
+<!-- <div class="reveal twentyone" id="for-refillpresc" data-reveal data-close-on-click="true"
     data-animation-in="slide-in-down" data-animation-out="slide-out-up">
 
     <div class="imagblock">
@@ -336,16 +325,20 @@
         <div class="description">
             <p>*Complete this form to transfer a prescription from another pharmacy.</p>
         </div>
-        <div class="form-content">
+        <div class="form-content"> -->
             <!-- Refill Prescription CTA should lead to this pop up form -->
             <!--[if lte IE 8]>
         <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
         <![endif]-->
-            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-            <script>
-            hbspt.forms.create({
-                portalId: "5952677",
-                formId: "4d211752-d94b-4d4f-bbee-428159995176"
+            
+            <!-- <script >
+            window.addEventListener('load', function() {
+                setTimeout(function(){                
+                    hbspt.forms.create({
+                        portalId: "5952677",
+                        formId: "4d211752-d94b-4d4f-bbee-428159995176"
+                    });
+                },2000)
             });
             </script>
         </div>
@@ -358,25 +351,22 @@
     <button class="close-button text-center" data-close aria-label="Close reveal" type="button">
         <span aria-hidden="true">&times;</span>
     </button>
-</div>
+</div> -->
 
 
-
-<?php endif; ?>
-
-<?php endif; ?>
-<?php endif; ?>
-
+<?php 
+endif; ?>
 
 <!-- hubspot slow -->
+
 <!-- after this loads on homepage -->
 
 
+
+<!-- footer -->
 <div class="reveal" id="modal-example" data-reveal data-close-on-click="true" data-animation-in="slide-in-down"
     data-animation-out="slide-out-up" style="padding: 60px;">
     <p class="text-center">
-
-        <!-- <img data-toggle-class="active" data-src="<?php echo get_template_directory_uri(); ?>/library/images/Prescription-Icon.png" alt="end Us Your Prescription" class="pic lozad"> -->
 
         <img style="width: 60px; margin-bottom: 2rem; border-radius: 0 15px; margin: 0px 3px;" class="lozad"
             data-src="<?php echo get_template_directory_uri(); ?>/library/images/chat-with-pharmacists-1.jpg"
@@ -396,6 +386,5 @@
     </button>
 </div>
 
-
-
+<!-- reveal overlay -->
 <div class="reveal-overlay"></div>

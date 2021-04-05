@@ -90,7 +90,29 @@
 </script>
 
 
-
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "VideoObject",
+"name": "Pharmacy Delivery Online Video for NowRx Website",
+"description": "NowRx is a new kind of local pharmacy that uses modern technology to provide a better pharmacy experience. This better pharmacy experiences includes things like free same-day prescription delivery, discounted or otherwise low drug prices, and unrivaled customer service. Rated best prescription delivery service in 2021 for Orange County and Northern California by CNET, NowRx delivers a better local pharmacy experience.",
+"thumbnailUrl": [
+"<?= get_site_url(); ?>/NowRx-Pharmacist.png",
+"<?= get_site_url(); ?>/NowRx-Pharmacy-Driver-Delivering-Pharmacy-Bag-to-Customer.png",
+"<?= get_site_url(); ?>/NowRx-Pharmacy-Delivery-Car.png"
+],
+"uploadDate": "2021-03-24T08:00:00+08:00",
+"duration": "PT15S",
+"contentUrl": "<?= get_site_url(); ?>/Pharmacy-Delivery-Online-Video-for-NowRx-Website.mp4",
+"embedUrl": "<?= get_site_url(); ?>",
+"interactionStatistic": {
+"@type": "InteractionCounter",
+"interactionType": { "@type": "http://schema.org/WatchAction" },
+"userInteractionCount": 5647018
+},
+"regionsAllowed": "US,NL"
+}
+</script>
 
 <!-- hero -->
 <section class="hero-home">
@@ -107,16 +129,16 @@
             <div class="column-half content-col">
 
                 <span class="sub-headline ">
-                    <strong>A BETTER LOCAL PHARMACY</strong>
+                    <strong>DELIVERING A BETTER PHARMACY ONLINE</strong>
                 </span>
 
                 <h1 class="">
-                    Free Same-Day Pharmacy Delivery
+                    <span class="k">Free Same-Day</span>
+                     <span class="k">Pharmacy Delivery</span>
                 </h1>
 
-                <p class="">
-                    NowRx is a new kind of local pharmacy that uses modern technology to provide a better pharmacy
-                    experience.
+                <p>
+                NowRx provides a better pharmacy experience. Get started below and request a prescription transfer or refill in seconds.
                 </p>
 
                 <div class="btn-container">
@@ -168,10 +190,12 @@
                 </picture> -->
 
 
-                <video class=" orbit-image" muted="" loop="true" autoplay="true"
-                    poster="<?php echo get_template_directory_uri(); ?>/images/AdobeStock_91568410.jpeg" preload="none">
-                    <source type="video/mp4" src="<?php echo get_template_directory_uri(); ?>/images/Free Same-Day Pharmacy Delivery.mp4">
+                <video class="lazy orbit-image" muted loop playsinline poster="<?php echo get_template_directory_uri(); ?>/images/NowRx-Pharmacist.webp">
+                <!-- 1 -->
+                    <source type="video/mp4" data-src="<?php echo get_template_directory_uri(); ?>/images/Free Same-Day Pharmacy Delivery.mp4" type="video/mp4">
                 </video>
+
+                 
 
             </div>
 
@@ -259,156 +283,6 @@
 </section>
 
 
-<section class="testimonials-block triples">
-
-    <div class="container">
-        <div class="content">
-            <div class="rvl">
-                <div class="subtitle">A Better Local Pharmacy Delivered</div>
-            </div>
-            <div class="rvl">
-                <h2 class="main-title">What Customers are Saying</h2>
-            </div>
-            <div class="blocks">
-
-                <!-- block -->
-                <div class="rvl">
-                    <div class="block">
-
-                        <h2 class="title">Better Pricing</h2>
-
-                        <blockquote>
-
-                            <div class="review">
-                                <p>
-                                    "There's a reason every single review is five stars - This pharmacy is AMAZING! They
-                                    actually look for discounts and coupons to offer the best rate possible."
-                                </p>
-
-                            </div>
-
-                            <div class="imageblock">
-                                <img data-toggle-class="active"
-                                    data-src="<?php echo get_template_directory_uri(); ?>/library/images/3.png"
-                                    class="lozad" alt="Photo of NowRx Pharmacy customer Lina W. smiling">
-                            </div>
-
-                            <span>
-                                <h3 class="name">Lina W.</h3>
-                                <div class="usertitle">
-                                    NowRX Customer
-                                </div>
-                            </span>
-
-                        </blockquote>
-                    </div>
-                </div>
-
-                <!-- block -->
-                <div class="rvl">
-                    <div class="block">
-
-
-
-                        <h2 class="title">Better Service</h2>
-
-                        <blockquote>
-
-                            <div class="review">
-                                <p>
-                                    "I am just gilding the lily with my 5-star review but companies that ACTUALLY
-                                    PROVIDE
-                                    CUSTOMER SERVICE are so rare in this day and age. These guys are awesome!"
-                                </p>
-
-                            </div>
-
-                            <div class="imageblock">
-                                <img data-toggle-class="active"
-                                    data-src="<?php echo get_template_directory_uri(); ?>/library/images/2.png"
-                                    class="lozad" alt="Photo of NowRx Pharmacy customer Tanya S. smiling">
-                            </div>
-
-                            <span>
-                                <h3 class="name">Tanya S.</h3>
-                                <div class="usertitle">
-                                    NowRX Customer
-                                </div>
-                            </span>
-                        </blockquote>
-                    </div>
-                </div>
-
-                <!-- block -->
-                <div class="rvl">
-                    <div class="block">
-
-
-
-                        <h2 class="title">Better Convenience</h2>
-                        <blockquote>
-
-                            <div class="review">
-                                <p>
-                                    "Huge time saver. They deliver the prescription to your address within a 3 hour time
-                                    window. No more standing in line or sitting in your idling car waiting."
-                                </p>
-
-                            </div>
-
-                            <div class="imageblock">
-                                <img data-toggle-class="active"
-                                    data-src="<?php echo get_template_directory_uri(); ?>/library/images/1.png"
-                                    class="lozad" alt="Photo of NowRx Pharmacy customer Tony M. smiling">
-                            </div>
-
-                            <span>
-                                <h3 class="name">Tony M.</h3>
-                                <div class="usertitle">
-                                    NowRX Customer
-                                </div>
-                            </span>
-
-                        </blockquote>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<!-- visit faq -->
-<section class="visit-faq">
-    <div class="container">
-        <div class="content">
-            <div class="rvl">
-                <span class="sub-headline">
-                    No Signup Required. No Hidden Fees.
-                </span>
-            </div>
-            <div class="rvl">
-                <h2 class="sec-title">
-                    Just A Better Pharmacy
-                </h2>
-            </div>
-            <div class="rvl">
-                <div class="btn-container">
-                    <a href="<?= get_site_url(); ?>/refill-and-transfer-prescriptions/" class="rx-btn rx-dg">
-                        Get Started
-                    </a>
-                </div>
-            </div>
-            <div class="rvl">
-                <div class="small-block">
-                    Still have questions about how to get started with NowRx Pharmacy? Email us at <a
-                        href="mailto:info@nowrx.com" class="alink">info@nowrx.com</a> and we will be happy to help.
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
 <!-- faq -->
 <section class="faq-section">

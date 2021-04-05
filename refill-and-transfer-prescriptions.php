@@ -150,15 +150,17 @@
 
                 <div class="rvls">
                     <div class="pageform">
-                        <!--[if lte IE 8]>
-                    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
-                    <![endif]-->
-                        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+                       <!--[if lte IE 8]>
+                        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js" defer></script>
+                        <![endif]-->
+                        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js" defer></script>
                         <script>
-                        hbspt.forms.create({
-                            portalId: "5952677",
-                            formId: "bfc2a11c-c87f-4d3b-ad5e-9fc5878ede37"
-                        });
+                            window.addEventListener('load', function() {
+                                    hbspt.forms.create({
+                                    portalId: "5952677",
+                                    formId: "bfc2a11c-c87f-4d3b-ad5e-9fc5878ede37",
+                                });
+                            });
                         </script>
 
                         <style>
