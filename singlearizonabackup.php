@@ -32,7 +32,7 @@ get_header();
         </header><!-- .entry-header -->
 
         <div class="entry-content">
-            <?php 
+            <?php
             // the_content(); ?>
             <div class="map-searchbar">
                 <div class="box">
@@ -63,7 +63,7 @@ get_header();
                         </span>
                     </div>
 
-                  
+
                 </div>
             </div>
 
@@ -474,8 +474,6 @@ label.enter {
 .map-searchbar.secondbar {
     margin: 60px 0 0;
 }
-#pac-input::placeholder {
-}
 
 #pac-input:focus {
     border-color: #4d90fe;
@@ -556,7 +554,7 @@ function initMap() {
 
         // removed newBounds = bounds;
         // if (!place.geometry) {
-        geocodeAddress(input.value); //Added on 27/09/2016 
+        geocodeAddress(input.value); //Added on 27/09/2016
         //window.alert("Autocomplete's returned place contains no geometry");
         // return;
         // };
@@ -579,7 +577,7 @@ function initMap() {
     });
 }
 
-//*************************
+
 function geocodeAddress(addr) {
     geocoder.geocode({
         'address': addr
@@ -605,7 +603,7 @@ function geocodeAddress(addr) {
         }
     });
 };
-//*************************
+
 
 var center = new google.maps.LatLng(33.410481, -111.884589);
 var area = [
@@ -623,7 +621,7 @@ var area = [
     {lat:33.474591, lng:-111.683928},   //202 and N. Power
     {lat:33.451580, lng:-111.669892},
     {lat:33.425921, lng:-111.632895},
-    {lat:33.296867, lng:-111.643973},   //Phoenix-Mesa Gateway Airport 
+    {lat:33.296867, lng:-111.643973},   //Phoenix-Mesa Gateway Airport
     {lat:33.200262, lng:-111.755451},
     {lat:33.203518, lng:-111.900382},
     {lat:33.291610, lng:-111.989648},

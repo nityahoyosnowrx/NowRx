@@ -5,83 +5,57 @@
 <!--[if gt IE 8]><!-->
 <html <?php language_attributes(); ?> class="no-js">
 <!--<![endif]-->
-
 <head>
     <meta charset="utf-8">
-    <?php // force Internet Explorer to use the latest rendering engine available 
+    <?php // force Internet Explorer to use the latest rendering engine available
     ?>
-
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-
     <title><?php wp_title(''); ?></title>
-
-    <?php // mobile meta (hooray!) 
+    <?php // mobile meta (hooray!)
     ?>
-
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Cache-control" content="public">
-
-    <?php // icons & favicons (for more: http://www.jonathantneal.com/blog/understand-the-favicon/) 
+    <?php // icons & favicons (for more: http://www.jonathantneal.com/blog/understand-the-favicon/)
     ?>
-
     <?php if (is_front_page()) : ?>
-        <link rel="preload" as="image" type="image/jpeg" href="<?php echo get_template_directory_uri(); ?>/images/AdobeStock_91568410.webp">
+    <link rel="preload" as="image" type="image/jpeg"
+        href="<?php echo get_template_directory_uri(); ?>/images/AdobeStock_91568410.webp">
     <!-- <link rel="preload" as="image" type="image/jpeg" href="<?php echo get_template_directory_uri(); ?>/images/AdobeStock_91568410.jpeg"> -->
-
     <!-- <link rel="preload" as="image" type="image/jpeg" href="<?php echo get_template_directory_uri(); ?>/images/AdobeStock_91568410mobile.jpeg"> -->
-
     <?php endif; ?>
-    
     <!-- preload main css -->
     <!-- <link rel="preload" href="<?php echo get_template_directory_uri(); ?>/public/frontend.css" as="style"> -->
-
     <link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
     <link rel="icon" type="image/x-icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
-
     <!--[if IE]>
 			<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
 		<![endif]-->
-    <?php // or, set /favicon.ico for IE10 win 
+    <?php // or, set /favicon.ico for IE10 win
     ?>
-
     <meta name="msapplication-TileColor" content="#f01d4f">
     <meta name="msapplication-TileImage" content="<?php echo get_template_directory_uri(); ?>/favicon.ico">
     <meta name="theme-color" content="#121212">
-
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
-
     <!-- ?v=<?php echo time(); ?> -->
-    <!-- <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/public/frontend.css?vs=<?php echo mktime(); ?>"> -->
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/public/frontend.css">
-
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/public/frontend.css?vs=<?php echo mktime(); ?>">
+    <!-- <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/public/frontend.css"> -->
     <!-- WP HEAD -->
     <?php wp_head(); ?>
-
     <meta name="p:domain_verify" content="3f36cac4340da88df6ca76c1a431cd53" />
-
     <meta name="facebook-domain-verification" content="51y4k3ncdot6d21810cxa2yfje7xzg" />
-
     <!-- tracking code -->
     <?php get_template_part('analytics-head'); ?>
-
-
 </head>
-
-<body <?php body_class(); ?> itemscope itemtype="http://schema.org/WebPage">
-
-
+<body <?php body_class(); ?> >
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5LWZKR7" height="0" width="0"
             style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-
-
     <header class="main" role="banner" itemscope itemtype="http://schema.org/WPHeader">
         <div class="container">
             <div class="content">
-
                 <div class="rlcontainer">
                     <div class="responsive-bar">
                         <a class="menu-icon-toggle">
@@ -102,32 +76,32 @@
                             <div class="txt">Menu</div>
                         </a>
                     </div>
-
                     <!-- logo -->
                     <div class="logo-block">
-                        <a class="main-nav-logo" href="<?php echo get_site_url(); ?>" title="Pharmacy delivery in hours. Just pay your normal copay.">
-
+                        <a class="main-nav-logo" href="<?php echo get_site_url(); ?>"
+                            title="Pharmacy delivery in hours. Just pay your normal copay.">
                             <figure class="sk">
                                 <img src="<?php echo get_template_directory_uri(); ?>/library/images/NowRx-Logo-Pharmacy.png"
                                     class="orbit-image" alt="NowRx Pharmacy Logo" height="60px" width="150px">
                             </figure>
-
                         </a>
                     </div>
-
                 </div>
-
                 <!-- nav -->
                 <nav class="top">
                     <ul class="nav" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
-                        <li itemprop="name"><a itemprop="url" href="<?php echo get_site_url(); ?>/how-it-works/" title="A simple, hassle free pharmacy experience.">How It Works</a></li>
-                        <li itemprop="name"><a itemprop="url" href="<?php echo get_site_url(); ?>/testimonials/" title="See what customers are saying about NowRx Pharmacy.">Testimonials</a></li>
-                        <li itemprop="name"><a itemprop="url" href="<?php echo get_site_url(); ?>/pricing/">Pricing</a></li>
+                        <li itemprop="name"><a itemprop="url" href="<?php echo get_site_url(); ?>/how-it-works/"
+                                title="A simple, hassle free pharmacy experience.">How It Works</a></li>
+                        <li itemprop="name"><a itemprop="url" href="<?php echo get_site_url(); ?>/testimonials/"
+                                title="See what customers are saying about NowRx Pharmacy.">Testimonials</a></li>
+                        <li itemprop="name"><a itemprop="url" href="<?php echo get_site_url(); ?>/pricing/">Pricing</a>
+                        </li>
                         <li itemprop="name"><a itemprop="url" href="<?php echo get_site_url(); ?>/blog">Blog</a></li>
-                        <li itemprop="name"><a itemprop="url" href="<?php echo get_site_url(); ?>/faqs/" title="Have questions about NowRx Pharmacy? Check out our FAQs.">FAQs</a></li>
+                        <li itemprop="name"><a itemprop="url" href="<?php echo get_site_url(); ?>/faqs/"
+                                title="Have questions about NowRx Pharmacy? Check out our FAQs.">FAQs</a></li>
                         <li itemprop="name" class="buttonfill buttonglimmer">
-                            <a class="button secondary rounded shadow rx-btn" itemprop="url" href="<?= get_site_url(); ?>/refill-and-transfer-prescriptions/">
-
+                            <a class="button secondary rounded shadow rx-btn" itemprop="url"
+                                href="<?= get_site_url(); ?>/refill-and-transfer-prescriptions/">
                                 <span class="arrow">
                                     <svg aria-hidden="true" focusable="false" data-prefix="fas"
                                         data-icon="file-prescription" role="img" xmlns="http://www.w3.org/2000/svg"
@@ -137,7 +111,6 @@
                                             class=""></path>
                                     </svg>
                                 </span>
-
                                 Transfer or Refill Prescriptions
                             </a>
                         </li>
@@ -146,12 +119,10 @@
             </div>
         </div>
     </header>
-
-<?php  
-if ( 'post' == get_post_type()  || is_archive('post')  ): 
+    <?php
+if ( 'post' == get_post_type()  || is_archive('post') ||  'locations' == get_post_type() ):
 else:
 ?>
-  
-            <main>
+    <main>
         <article>
-<?php endif; ?>
+            <?php endif; ?>

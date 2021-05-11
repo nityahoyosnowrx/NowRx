@@ -121,19 +121,19 @@ $(document).ready(function() {
 
 // modals
 // ----------------------------------------------------------------------------------------------------
-$('[data-toggle]').on('click', function(e) {
+$(document).on('click','[data-toggle]', function(e) {
   e.preventDefault();
   let toggleId = $(this).data('toggle');
   console.log(toggleId);
   let stI = '#' + toggleId;
   $(stI).addClass('active');
-  
+
 
   $('.reveal-overlay').addClass('active');
   // $("html, body").animate({ scrollTop: "1" });
 });
 
-$('button.close-button, .reveal-overlay').on('click', function(e) {
+$(document).on('click','button.close-button, .reveal-overlay', function(e) {
   e.preventDefault();
   $('.reveal').removeClass('active');
   $('.reveal-overlay').removeClass('active');
@@ -394,4 +394,86 @@ if (!dialogShown) {
 } else {
   $('#dialog1').hide();
 }
+
+
+
+$(document).ready(function() {
+
+
+
+
+  let itemC = $('.quoteitems .quoteitem').length;
+
+  let countItem = 1;
+
+  $('.quoteitems .quoteitem:nth-child('+1+')').addClass('fadeactive');
+
+  let isPaused = false;
+  let time = 0;
+  var t = window.setInterval(function() {
+    if(!isPaused) {
+      time++;
+      $('.quoteitems .quoteitem').removeClass('fadeactive');
+
+      if(countItem == itemC){
+        countItem = 0;
+      }
+
+      countItem++;
+
+      setTimeout(function(){
+        $('.quoteitems .quoteitem:nth-child('+countItem+')').addClass('fadeactive');
+      },300)
+
+      console.log(itemC, countItem)
+
+    }
+  }, 6000);
+
+
+  $('.quoteitems').on('click', function(e) {
+    e.preventDefault();
+    if(isPaused == false){
+      isPaused = true;
+    } else {
+      isPaused = false;
+    }
+  });
+
+
+
+  var maxHeight = 0;
+
+$(".quoteitem").each(function(){
+   if ($(this).height() > maxHeight) { maxHeight = $(this).height(); }
+});
+
+$(".quoteitem").css("min-height",maxHeight)
+$(".quoteitems").css("min-height",maxHeight+30)
+
+
+});
+
+
+
+// $(document).ready(function(){
+
+
+//   $('form > input').keyup(function() {
+
+//     var empty = false;
+//     $('form > input').each(function() {
+//         if ($(this).val() == '') {
+//             empty = true;
+//         }
+//     });
+
+//     if (empty) {
+//         $('#register').attr('disabled', 'disabled'); // updated according to http://stackoverflow.com/questions/7637790/how-to-remove-disabled-attribute-with-jquery-ie
+//     } else {
+//         $('#register').removeAttr('disabled'); // updated according to http://stackoverflow.com/questions/7637790/how-to-remove-disabled-attribute-with-jquery-ie
+//     }
+// });
+
+// });
 

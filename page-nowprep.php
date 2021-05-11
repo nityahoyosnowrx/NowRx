@@ -385,8 +385,7 @@
 
                 <div class="rvls">
                     <p>
-                        NowPrEP is a telehealth service that connects you with doctors and delivers HIV prevention
-                        medication in hours for free!
+                        PrEP from the comfort & privacy of your home. 99% of patients pay $0 for medication and delivery. Sign up to see if you qualify!
                     </p>
                 </div>
 
@@ -426,7 +425,7 @@
 
 
 <!-- companies -->
-<?php 
+<?php
 include('section-companies.php'); ?>
 
 

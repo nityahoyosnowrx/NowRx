@@ -251,10 +251,10 @@
             </div>
         </div>
         <div id="m_-6970139296897588365section_1612224421789" class="m_-6970139296897588365hse-section"
-            style="">
+            >
 
             <div class="m_-6970139296897588365hse-column-container slkol"
-                style="">
+                >
 
                 <p>
                 <ol style="    font-size: 15px;line-height:175%;    margin: 0 0 20px 30px;">
@@ -300,7 +300,7 @@
                                         <p style="line-height:175%;text-align:center" align="center"><span
                                                 style="color:#23496d">
                                                 <span><a href="https://email.nowrxpharmacy.com/e2t/tc/MW4gSPzN1D-W4ZKZvF8g9dbvVyCbyQ4mzVw2N5wYXRk3lGmQV1-WJV7CgW12W3D4q1M2HT-CpW29x7QW2qWcjNW8dDLFw8qqjdFW6ZNJgj5-DqqkW7TMd4Z8H_3ysW87SRpY3s9-MGW3m7NPW2g-2GsVh7F_l3LypBjW8Zl6N07KSDKCW83tQBh95J_KkW1Z7-GR1Vb5lTW4zZPrP2f_fgSN1WqKn3Tc4twW5Wf4YX1WMrbvW2w6c-f7cPDgdV-HFL_8GTY99W6wYKvl4vz5TdW5g_XSF87GlySW1hbPhF4QdnCGW7T4ZnM5rc6r9W7-bgjd8mNQldW2Hbq-C2Fdw-S32qK1"
-                                                        style="" rel="noopener" target="_blank"
+                                                         rel="noopener" target="_blank"
                                                         data-saferedirecturl="https://www.google.com/url?q=https://email.nowrxpharmacy.com/e2t/tc/MW4gSPzN1D-W4ZKZvF8g9dbvVyCbyQ4mzVw2N5wYXRk3lGmQV1-WJV7CgW12W3D4q1M2HT-CpW29x7QW2qWcjNW8dDLFw8qqjdFW6ZNJgj5-DqqkW7TMd4Z8H_3ysW87SRpY3s9-MGW3m7NPW2g-2GsVh7F_l3LypBjW8Zl6N07KSDKCW83tQBh95J_KkW1Z7-GR1Vb5lTW4zZPrP2f_fgSN1WqKn3Tc4twW5Wf4YX1WMrbvW2w6c-f7cPDgdV-HFL_8GTY99W6wYKvl4vz5TdW5g_XSF87GlySW1hbPhF4QdnCGW7T4ZnM5rc6r9W7-bgjd8mNQldW2Hbq-C2Fdw-S32qK1&amp;source=gmail&amp;ust=1612386662946000&amp;usg=AFQjCNFBV5VPn3W4RsWwz3hJnTFWkn53FA">Medicare
                                                         Plan Comparison</a></span>
                                             </span></p>

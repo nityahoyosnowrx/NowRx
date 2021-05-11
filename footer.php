@@ -1,14 +1,10 @@
-<?php  
-if ( 'post' == get_post_type()  || is_archive('post')  ): 
+<?php
+if ( 'post' == get_post_type()  || is_archive('post') ||  'locations' == get_post_type() ):
 else:
 ?>
-
-            </article>
-        </main>
-
+</article>
+</main>
 <?php endif; ?>
-
-
 <footer class="footer">
     <div class="grid-container">
         <div class="grid-x grid-padding-x">
@@ -82,21 +78,20 @@ else:
         </div>
     </div>
 </footer>
-
-
-
 <?php if(is_single()): ?>
 <section class="popblog">
     <div class="container">
         <div class="closeicon">
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 492 492" style="enable-background:new 0 0 492 492;" xml:space="preserve">
-<g>
-	<g>
-		<path d="M300.188,246L484.14,62.04c5.06-5.064,7.852-11.82,7.86-19.024c0-7.208-2.792-13.972-7.86-19.028L468.02,7.872    c-5.068-5.076-11.824-7.856-19.036-7.856c-7.2,0-13.956,2.78-19.024,7.856L246.008,191.82L62.048,7.872    c-5.06-5.076-11.82-7.856-19.028-7.856c-7.2,0-13.96,2.78-19.02,7.856L7.872,23.988c-10.496,10.496-10.496,27.568,0,38.052    L191.828,246L7.872,429.952c-5.064,5.072-7.852,11.828-7.852,19.032c0,7.204,2.788,13.96,7.852,19.028l16.124,16.116    c5.06,5.072,11.824,7.856,19.02,7.856c7.208,0,13.968-2.784,19.028-7.856l183.96-183.952l183.952,183.952    c5.068,5.072,11.824,7.856,19.024,7.856h0.008c7.204,0,13.96-2.784,19.028-7.856l16.12-16.116    c5.06-5.064,7.852-11.824,7.852-19.028c0-7.204-2.792-13.96-7.852-19.028L300.188,246z"/>
-	</g>
-</g>
-
-</svg>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                id="Layer_1" x="0px" y="0px" viewBox="0 0 492 492" style="enable-background:new 0 0 492 492;"
+                xml:space="preserve">
+                <g>
+                    <g>
+                        <path
+                            d="M300.188,246L484.14,62.04c5.06-5.064,7.852-11.82,7.86-19.024c0-7.208-2.792-13.972-7.86-19.028L468.02,7.872    c-5.068-5.076-11.824-7.856-19.036-7.856c-7.2,0-13.956,2.78-19.024,7.856L246.008,191.82L62.048,7.872    c-5.06-5.076-11.82-7.856-19.028-7.856c-7.2,0-13.96,2.78-19.02,7.856L7.872,23.988c-10.496,10.496-10.496,27.568,0,38.052    L191.828,246L7.872,429.952c-5.064,5.072-7.852,11.828-7.852,19.032c0,7.204,2.788,13.96,7.852,19.028l16.124,16.116    c5.06,5.072,11.824,7.856,19.02,7.856c7.208,0,13.968-2.784,19.028-7.856l183.96-183.952l183.952,183.952    c5.068,5.072,11.824,7.856,19.024,7.856h0.008c7.204,0,13.96-2.784,19.028-7.856l16.12-16.116    c5.06-5.064,7.852-11.824,7.852-19.028c0-7.204-2.792-13.96-7.852-19.028L300.188,246z" />
+                    </g>
+                </g>
+            </svg>
         </div>
         <div class="content">
             <div class="title">
@@ -135,7 +130,6 @@ else:
                                 <path
                                     d="M25.839,4.958c0,3.927-1.712,6.78-1.784,6.899c-0.145,0.237-0.396,0.367-0.655,0.367   c-0.136,0-0.273-0.036-0.397-0.111c-0.362-0.22-0.478-0.691-0.259-1.053c0.016-0.026,1.561-2.623,1.561-6.102   c0-1.984-1.29-3.424-3.068-3.424c-1.692,0-3.068,1.376-3.068,3.069c0,0.721,0.349,2.553,0.483,3.198   c0.087,0.415-0.18,0.821-0.595,0.908c-0.415,0.085-0.821-0.18-0.907-0.594c-0.053-0.253-0.517-2.502-0.517-3.512   C16.633,2.065,18.698,0,21.237,0C23.86,0,25.839,2.131,25.839,4.958z M21.367,6.165c0.305,2.549,0.747,7.516,0.239,8.022   L10.46,25.334c-0.685,0.686-1.798,0.686-2.484-0.001l-7.453-7.452c-0.686-0.685-0.686-1.798,0-2.484L11.67,4.251   c0.177-0.177,2.105-0.185,4.273-0.072C15.931,4.322,15.9,4.457,15.9,4.603c0,0.556,0.123,1.418,0.252,2.176   c-0.227,0.337-0.36,0.742-0.36,1.179c0,1.164,0.944,2.108,2.108,2.108s2.108-0.944,2.108-2.108c0-0.717-0.359-1.349-0.906-1.729   C18.99,5.562,18.9,4.918,18.9,4.603c0-0.068,0.014-0.131,0.02-0.198c0.267,0.028,0.53,0.057,0.779,0.088   C21.172,4.674,21.187,4.671,21.367,6.165z M15.426,14.507c-0.173-0.481-0.461-1.058-1.086-1.722l0.846-0.847l-0.942-0.941   l-0.913,0.914c-1.222-0.837-2.482-0.769-3.337,0.086c-0.932,0.932-0.712,2.115-0.028,3.49c0.47,0.952,0.556,1.5,0.191,1.865   c-0.375,0.375-0.98,0.212-1.529-0.336c-0.624-0.624-0.99-1.395-1.172-2.02l-1.414,0.838c0.164,0.566,0.606,1.373,1.23,2.037   L6.35,18.794l0.941,0.942l0.991-0.99c1.307,0.922,2.625,0.798,3.48-0.057c0.875-0.877,0.952-1.857,0.202-3.414   c-0.52-1.116-0.645-1.664-0.337-1.971c0.27-0.27,0.75-0.347,1.375,0.278c0.693,0.693,0.923,1.366,1.048,1.722L15.426,14.507z" />
                             </g>
-                       
                         </svg>
                     </div>
                     <div class="txt">
@@ -172,7 +166,6 @@ else:
                                         d="M71,188.527H34.334c-4.143,0-7.5,3.358-7.5,7.5c0,4.142,3.357,7.5,7.5,7.5H71c4.143,0,7.5-3.358,7.5-7.5    C78.5,191.885,75.143,188.527,71,188.527z" />
                                 </g>
                             </g>
-                           
                         </svg>
                     </div>
                     <div class="txt">
@@ -181,15 +174,13 @@ else:
                 </div>
             </div>
             <div class="btn-container">
-                <a href="" class="btn rx-btn">Learn More</a>
+                <a href="/refill-and-transfer-prescriptions/" class="btn rx-btn">Learn More</a>
             </div>
         </div>
     </div>
 </section>
 <?php endif; ?>
-
 <?php if(!is_page('nowprep')): ?>
-
 <div class="calltoaction">
     <div class="container">
         <div class="content">
@@ -205,48 +196,18 @@ else:
                     </svg>
                 </span>
                 Transfer or Refill Prescriptions
-
             </a>
-            <!-- <a href="sms:213-263-4391" class="rx-btn rx-green ml" id="secondbutton">
-                <span class="arrow">
-                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="comment" role="img"
-                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
-                        class="svg-inline--fa fa-comment fa-w-16 fa-2x">
-                        <path fill="currentColor"
-                            d="M256 32C114.6 32 0 125.1 0 240c0 49.6 21.4 95 57 130.7C44.5 421.1 2.7 466 2.2 466.5c-2.2 2.3-2.8 5.7-1.5 8.7S4.8 480 8 480c66.3 0 116-31.8 140.6-51.4 32.7 12.3 69 19.4 107.4 19.4 141.4 0 256-93.1 256-208S397.4 32 256 32z"
-                            class=""></path>
-                    </svg>
-                </span>
-                Text NowRx
-
-            </a>  -->
-            <!-- <a class="button secondary rounded shadow rx-btn" itemprop="url" href="http://localhost:8888/dev/refill-and-transfer-prescriptions/">
-
-                                <span class="arrow">
-                                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="file-prescription" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-file-prescription fa-w-12 fa-2x">
-                                        <path fill="currentColor" d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm68.53 179.48l11.31 11.31c6.25 6.25 6.25 16.38 0 22.63l-29.9 29.9L304 409.38c6.25 6.25 6.25 16.38 0 22.63l-11.31 11.31c-6.25 6.25-16.38 6.25-22.63 0L240 413.25l-30.06 30.06c-6.25 6.25-16.38 6.25-22.63 0L176 432c-6.25-6.25-6.25-16.38 0-22.63l30.06-30.06L146.74 320H128v48c0 8.84-7.16 16-16 16H96c-8.84 0-16-7.16-16-16V208c0-8.84 7.16-16 16-16h80c35.35 0 64 28.65 64 64 0 24.22-13.62 45.05-33.46 55.92L240 345.38l29.9-29.9c6.25-6.25 16.38-6.25 22.63 0zM176 272h-48v-32h48c8.82 0 16 7.18 16 16s-7.18 16-16 16zm208-150.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z" class=""></path>
-                                    </svg>
-                                </span>
-
-                                Transfer or Refill Prescriptions
-                            </a> -->
         </div>
     </div>
 </div>
 <?php endif; ?>
-
-
 <?php wp_footer(); ?>
-
 </div> <!-- closes off canvas content -->
-
-
 <script async>
 var script = document.createElement('script');
 script.src = "<?php echo get_template_directory_uri(); ?>/public/frontend-bundle.js";
 document.getElementsByTagName('head')[0].appendChild(script);
 </script>
-
 <!-- tracking code -->
 <script type="text/javascript">
 ! function() {
@@ -257,52 +218,45 @@ document.getElementsByTagName('head')[0].appendChild(script);
     t ? t.appendChild(e, t) : (t = document.getElementsByTagName("script")[0]).parentNode.insertBefore(e, t)
 }();
 </script>
-
-
-<?php 
-
+<?php
 if(is_front_page()):
 ?>
 <script async>
-    console.log(window.innerWidth);
+console.log(window.innerWidth);
 let windowW = window.innerWidth;
 if (windowW > 992) {
-  document.addEventListener('DOMContentLoaded', function() {
-    var lazyVideos = [].slice.call(document.querySelectorAll('video.lazy'));
-
-    if ('IntersectionObserver' in window) {
-      var lazyVideoObserver = new IntersectionObserver(function(entries, observer) {
-        entries.forEach(function(video) {
-          if (video.isIntersecting) {
-            for (var source in video.target.children) {
-              var videoSource = video.target.children[source];
-              if (typeof videoSource.tagName === 'string' && videoSource.tagName === 'SOURCE') {
-                videoSource.src = videoSource.dataset.src;
-              }
-            }
-
-            video.target.load();
-            video.target.classList.remove('lazy');
-            video.target.play();
-            lazyVideoObserver.unobserve(video.target);
-          }
-        });
-      });
-
-      lazyVideos.forEach(function(lazyVideo) {
-          lazyVideoObserver.observe(lazyVideo);
-      });
-    }
-  });
+    document.addEventListener('DOMContentLoaded', function() {
+        var lazyVideos = [].slice.call(document.querySelectorAll('video.lazy'));
+        if ('IntersectionObserver' in window) {
+            var lazyVideoObserver = new IntersectionObserver(function(entries, observer) {
+                entries.forEach(function(video) {
+                    if (video.isIntersecting) {
+                        for (var source in video.target.children) {
+                            var videoSource = video.target.children[source];
+                            if (typeof videoSource.tagName === 'string' && videoSource
+                                .tagName === 'SOURCE') {
+                                videoSource.src = videoSource.dataset.src;
+                            }
+                        }
+                        video.target.load();
+                        video.target.classList.remove('lazy');
+                        video.target.play();
+                        lazyVideoObserver.unobserve(video.target);
+                    }
+                });
+            });
+            lazyVideos.forEach(function(lazyVideo) {
+                lazyVideoObserver.observe(lazyVideo);
+            });
+        }
+    });
 }
 </script>
 <?php endif; ?>
-
-<?php   
+<?php
 // include modals
 get_template_part('footer-modals');
 ?>
-
 </body>
 
 </html> <!-- end of site. what a ride! -->

@@ -1,146 +1,54 @@
 <?php get_header(); ?>
 
 
+
 <script type="application/ld+json">
 {
     "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [{
-            "@type": "Question",
-            "name": "What is NowRx?",
-            "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "NowRx is a pharmacy just like your CVS or Walgreens, except instead of you coming in to pick up medication, we bring them to you."
-            }
+    "@type": "VideoObject",
+    "name": "Pharmacy Delivery Online Video for NowRx Website",
+    "description": "NowRx is a new kind of local pharmacy that uses modern technology to provide a better pharmacy experience. This better pharmacy experiences includes things like free same-day prescription delivery, discounted or otherwise low drug prices, and unrivaled customer service. Rated best prescription delivery service in 2021 for Orange County and Northern California by CNET, NowRx delivers a better local pharmacy experience.",
+    "thumbnailUrl": [
+        "<?= get_site_url(); ?>/NowRx-Pharmacist.png",
+        "<?= get_site_url(); ?>/NowRx-Pharmacy-Driver-Delivering-Pharmacy-Bag-to-Customer.png",
+        "<?= get_site_url(); ?>/NowRx-Pharmacy-Delivery-Car.png"
+    ],
+    "uploadDate": "2021-03-24T08:00:00+08:00",
+    "duration": "PT15S",
+    "contentUrl": "<?= get_site_url(); ?>/Pharmacy-Delivery-Online-Video-for-NowRx-Website.mp4",
+    "embedUrl": "<?= get_site_url(); ?>",
+    "interactionStatistic": {
+        "@type": "InteractionCounter",
+        "interactionType": {
+            "@type": "http://schema.org/WatchAction"
         },
-        {
-            "@type": "Question",
-            "name": "Is NowRx a mail-order pharmacy?",
-            "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "NO. NowRx Pharmacy has physical locations in all of our service areas. We accept walk-ins and our pharmacists are always available to chat in person or over the phone."
-            }
-        },
-        {
-            "@type": "Question",
-            "name": "How can you afford to provide free same-day delivery?",
-            "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "The proprietary tech inside our pharmacy increases efficiency and reduces our cost to about 1/100th that of a traditional pharmacy like CVS. This enables free same-day delivery."
-            }
-        },
-        {
-            "@type": "Question",
-            "name": "How do you make money?",
-            "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "We make money like every pharmacy or healthcare service – reimbursement from insurance and copays from the patient."
-            }
-        },
-        {
-            "@type": "Question",
-            "name": "Do you charge more to offset the cost of delivery?",
-            "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "NO. Prices are lower than or competitive with all pharmacies. We also automatically search for and apply available coupons to offer the lowest price possible (over $1M saved!)."
-            }
-        },
-        {
-            "@type": "Question",
-            "name": "How do you handle special requests?",
-            "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Special requests (e.g. blister packs, medication sorting, etc.) are available upon request. Just let our pharmacist know when they reach out to schedule your delivery!"
-            }
-        },
-        {
-            "@type": "Question",
-            "name": "Can I manage prescriptions for a family member?",
-            "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Yes. You can set a head of household if a single person will be managing a family member or loved one’s prescriptions."
-            }
-        },
-        {
-            "@type": "Question",
-            "name": "Do you deliver controlled & refrigerated medication?",
-            "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "YES. If you have a paper copy, a NowRx driver will pick it up from you or your doctor before delivery. These meds also require a signature & proper ID."
-            }
-        },
-        {
-            "@type": "Question",
-            "name": "What insurance plans do you take?",
-            "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "NowRx Pharmacy accepts all major insurance plans except Kaiser. We also offer some of the lowest out of pocket prices in the areas we serve."
-            }
-        },
-        {
-            "@type": "Question",
-            "name": "How long does delivery take?",
-            "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Typically, your prescription will arrive 2-4 hours after we have confirmed your prescription. We also offer 1hr delivery option for a $5 fee."
-            }
-        }
-    ]
+        "userInteractionCount": 5647018
+    },
+    "regionsAllowed": "US,NL"
 }
 </script>
-
-
-<script type="application/ld+json">
-{
-"@context": "https://schema.org",
-"@type": "VideoObject",
-"name": "Pharmacy Delivery Online Video for NowRx Website",
-"description": "NowRx is a new kind of local pharmacy that uses modern technology to provide a better pharmacy experience. This better pharmacy experiences includes things like free same-day prescription delivery, discounted or otherwise low drug prices, and unrivaled customer service. Rated best prescription delivery service in 2021 for Orange County and Northern California by CNET, NowRx delivers a better local pharmacy experience.",
-"thumbnailUrl": [
-"<?= get_site_url(); ?>/NowRx-Pharmacist.png",
-"<?= get_site_url(); ?>/NowRx-Pharmacy-Driver-Delivering-Pharmacy-Bag-to-Customer.png",
-"<?= get_site_url(); ?>/NowRx-Pharmacy-Delivery-Car.png"
-],
-"uploadDate": "2021-03-24T08:00:00+08:00",
-"duration": "PT15S",
-"contentUrl": "<?= get_site_url(); ?>/Pharmacy-Delivery-Online-Video-for-NowRx-Website.mp4",
-"embedUrl": "<?= get_site_url(); ?>",
-"interactionStatistic": {
-"@type": "InteractionCounter",
-"interactionType": { "@type": "http://schema.org/WatchAction" },
-"userInteractionCount": 5647018
-},
-"regionsAllowed": "US,NL"
-}
-</script>
-
 <!-- hero -->
 <section class="hero-home">
-
     <div class="">
         <img data-src="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020.png"
             alt="NowRx Pharmacy Surescripts 2020 White Coat Award Finalist (Highest Accuracy)" class="imageblock lozad"
             height="100px" width="450px">
     </div>
-
     <div class="container">
         <div class="content">
             <!-- content -->
             <div class="column-half content-col">
-
                 <span class="sub-headline ">
                     <strong>DELIVERING A BETTER PHARMACY ONLINE</strong>
                 </span>
-
-                <h1 class="">
-                    <span class="k">Free Same-Day</span>
-                     <span class="k">Pharmacy Delivery</span>
+                <h1>
+                    <span class="k">Free Same Day</span>
+                    <span class="k">Pharmacy Delivery</span>
                 </h1>
-
                 <p>
-                NowRx provides a better pharmacy experience. Get started below and request a prescription transfer or refill in seconds.
+                    NowRx provides a better pharmacy experience. Get started below and request a prescription transfer
+                    or refill in seconds.
                 </p>
-
                 <div class="btn-container">
                     <a class="rx-btn" href="<?= get_site_url(); ?>/refill-and-transfer-prescriptions/">
                         <span class="arrow">
@@ -166,47 +74,23 @@
                         </span>
                         How it Works
                     </a>
-
                 </div>
-
-
-
-
             </div>
-
             <!-- image -->
             <div class="column-half image-col">
-
-                <!-- <picture data-toggle-class="active" class="lozad">
-                    <source type="image/webp"
-                        srcset="<?php echo get_template_directory_uri(); ?>/images/AdobeStock_91568410.webp"
-                        media="(min-width: 100px)">
-                   <source type="image/jpeg" srcset="<?php echo get_template_directory_uri(); ?>/images/AdobeStock_91568410.jpeg">
-
-                    <img data-src="<?php echo get_template_directory_uri(); ?>/images/AdobeStock_91568410mobile.jpeg"
-                        alt="Pharmacist Ready to Provide Medication" class="orbit-image lozad" height="500px"
-                        width="620px">
-
-                </picture> -->
-
-
-                <video class="lazy orbit-image" muted loop playsinline poster="<?php echo get_template_directory_uri(); ?>/images/NowRx-Pharmacist.webp">
-                <!-- 1 -->
-                    <source type="video/mp4" data-src="<?php echo get_template_directory_uri(); ?>/images/Free Same-Day Pharmacy Delivery.mp4" type="video/mp4">
+                <video class="lazy orbit-image" muted loop playsinline
+                    poster="<?php echo get_template_directory_uri(); ?>/images/NowRx-Pharmacist.webp">
+                    <!-- 1 -->
+                    <source type="video/mp4"
+                        data-src="<?php echo get_template_directory_uri(); ?>/images/Free Same-Day Pharmacy Delivery.mp4"
+                        type="video/mp4">
                 </video>
-
-                 
-
             </div>
-
         </div>
     </div>
 </section>
 
-
 <?php include('section-companies.php'); ?>
-
-
 
 <section class="how-it-works panel--primary">
     <div class="grid-container">
@@ -215,24 +99,20 @@
                 <div class="rvl">
                     <p class="pre-headline">Using NowRx Pharmacy is Simple</p>
                 </div>
-
                 <div class="rvl">
                     <h2 class="headline">Here’s How It Works</h2>
                 </div>
             </div>
         </div>
         <div class="grid-x grid-padding-x steps">
-
             <div class="hiw-cell cell large-4 text-center">
                 <div class="rvl">
-
                     <h3 class="padding-bottom-3">1. Send Us Your Prescription</h3>
                     <div class="image">
                         <img data-toggle-class="active"
                             data-src="<?php echo get_template_directory_uri(); ?>/library/images/Prescription-Icon.png"
                             alt="Prescription Icon" class="pic lozad">
                     </div>
-
                     <p>
                         <strong>New Prescription: </strong>Tell your doctor to fax or ePrescribe to NowRx. <br>
                         <strong>Existing Prescription: </strong>Text <a href="tel:844-466-6979" class="tellink">(844)
@@ -243,47 +123,34 @@
                     </p>
                 </div>
             </div>
-
-
             <div class="hiw-cell cell large-4 text-center">
                 <div class="rvl">
-
                     <h3 class="padding-bottom-3">2. We Confirm Delivery</h3>
                     <div class="image">
                         <img data-toggle-class="active"
                             data-src="<?php echo get_template_directory_uri(); ?>/library/images/Confirmation-Icon.png"
                             alt="prescription delivery confirmation check mark icon" class="pic lozad ">
                     </div>
-
                     <p>We will reach out to you via phone to collect your insurance copay confirm your address and set
                         up a
                         delivery time.</p>
                 </div>
             </div>
-
-
             <div class="hiw-cell cell large-4 text-center">
                 <div class="rvl">
-
                     <h3 class="padding-bottom-3">3. Medication is Delivered</h3>
                     <div class="image">
                         <img data-toggle-class="active"
                             data-src="<?php echo get_template_directory_uri(); ?>/library/images/Car-Icon.png"
                             alt="Prescription Delivery Car Icon" class="pic lozad">
                     </div>
-
                     <p>A NowRx employee will deliver your medication in hours from your local NowRx Pharmacy for free.
                         All you pay is your normal copay.</p>
                 </div>
             </div>
-
-
         </div>
     </div>
 </section>
-
-
-
 <!-- faq -->
 <section class="faq-section">
     <div class="container">
@@ -294,7 +161,6 @@
                         Pharmacy Delivery from NowRx
                     </span>
                 </div>
-
                 <div class="rvl">
                     <h2 class="sec-title">
                         Frequently Asked Questions
@@ -302,7 +168,6 @@
                 </div>
             </div>
             <div class="faq-content">
-
                 <!-- item -->
                 <div class="block">
                     <div class="rvl">
@@ -323,7 +188,6 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- item -->
                 <div class="block">
                     <div class="rvl">
@@ -344,7 +208,6 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- item -->
                 <div class="block">
                     <div class="rvl">
@@ -366,7 +229,6 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- item -->
                 <div class="block">
                     <div class="rvl">
@@ -387,7 +249,6 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- item -->
                 <div class="block">
                     <div class="rvl">
@@ -409,7 +270,6 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- item -->
                 <div class="block">
                     <div class="rvl">
@@ -426,13 +286,10 @@
                             <span class="cntx">
                                 Special requests (e.g. blister packs, medication sorting, etc.) are available upon
                                 request. Just let our pharmacist know when they reach out to schedule your delivery!
-
-
                             </span>
                         </div>
                     </div>
                 </div>
-
                 <!-- item -->
                 <div class="block">
                     <div class="rvl">
@@ -453,8 +310,6 @@
                         </div>
                     </div>
                 </div>
-
-
                 <!-- item -->
                 <div class="block">
                     <div class="rvl">
@@ -475,10 +330,6 @@
                         </div>
                     </div>
                 </div>
-
-
-
-
                 <!-- item -->
                 <div class="block">
                     <div class="rvl">
@@ -499,7 +350,6 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- item -->
                 <div class="block">
                     <div class="rvl">
@@ -520,24 +370,16 @@
                         </div>
                     </div>
                 </div>
-
-
-
-
             </div>
-
         </div>
     </div>
 </section>
-
-
 <!-- visit faq -->
 <section class="visit-faq">
     <div class="container">
         <div class="content">
             <div class="rvl">
                 <span class="sub-headline">
-
                     Have additional questions about NowRx?
                 </span>
             </div>
@@ -562,8 +404,4 @@
         </div>
     </div>
 </section>
-
-
-<?php wp_reset_query(); ?>
-
 <?php get_footer(); ?>

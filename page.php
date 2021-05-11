@@ -11,7 +11,7 @@
 
 <section id="content" class="grid-container">
 
-    <div class="grid-x grid-margin-x" style="padding: 5rem 0px;">
+    <div class="grid-xx" style="padding: 5rem 0px;">
 
         <div class="">
 
@@ -55,9 +55,7 @@
                 <?php endwhile; endif; ?>
             </main>
         </div>
-        <div class="cell large-4 large-offset-1">
-            <?php get_sidebar('sidebar2'); ?>
-        </div>
+
     </div>
     </div>
 </section>

@@ -247,7 +247,7 @@ $GLOBALS['comment'] = $comment; ?>
           echo get_avatar($comment,$size='32',$default='<path_to_url>' );
         */
         ?>
-            <?php // custom gravatar call 
+            <?php // custom gravatar call
         ?>
             <?php
         // create variable
@@ -256,7 +256,7 @@ $GLOBALS['comment'] = $comment; ?>
             <img data-gravatar="http://www.gravatar.com/avatar/<?php echo md5($bgauthemail); ?>?s=40"
                 class="load-gravatar avatar avatar-48 photo" height="40" width="40"
                 src="<?php echo get_template_directory_uri(); ?>/library/images/nothing.gif" />
-            <?php // end custom gravatar call 
+            <?php // end custom gravatar call
         ?>
             <?php printf(__('<cite class="fn">%1$s</cite> %2$s', 'bonestheme'), get_comment_author_link(), edit_comment_link(__('(Edit)', 'bonestheme'), '  ', '')) ?>
             <time datetime="<?php echo comment_time('Y-m-j'); ?>"><a
@@ -274,7 +274,7 @@ $GLOBALS['comment'] = $comment; ?>
         </section>
         <?php comment_reply_link(array_merge($args, array('depth' => $depth, 'max_depth' => $args['max_depth']))) ?>
     </article>
-    <?php // </li> is added by WordPress automatically 
+    <?php // </li> is added by WordPress automatically
     ?>
     <?php
 } // don't remove this bracket!
@@ -406,7 +406,7 @@ function custom_post_type()
     'labels'              => $labels,
     // Features this CPT supports in Post Editor
     'supports'            => array('title', 'editor', 'excerpt', 'author', 'thumbnail', 'comments', 'revisions', 'custom-fields','page-attributes'),
-    // You can associate this CPT with a taxonomy or custom taxonomy. 
+    // You can associate this CPT with a taxonomy or custom taxonomy.
     'taxonomies'          => array('genres'),
     /* A hierarchical CPT is like Pages and can have
           * Parent and child items. A non-hierarchical CPT
@@ -433,8 +433,8 @@ function custom_post_type()
 }
 
 /* Hook into the 'init' action so that the function
-  * Containing our post type registration is not 
-  * unnecessarily executed. 
+  * Containing our post type registration is not
+  * unnecessarily executed.
   */
 
 add_action('init', 'custom_post_type', 0);
@@ -501,12 +501,251 @@ add_filter( 'single_template', 'add_posttype_slug_template', 10, 1 );
 
 
 function my_acf_google_map_api( $api ){
-	
+
 	$api['key'] = 'AIzaSyAmMty5MmMXegrIhIhMHDWOqIu6RQ6m9vg';
-	
+
 	return $api;
-	
+
 }
 
 add_filter('acf/fields/google_map/api', 'my_acf_google_map_api');
 
+
+/**
+* Remove hentry from post_class
+*/
+function isa_remove_hentry_class( $classes ) {
+  if(is_single()){
+    $classes = array_diff( $classes, array( 'hentry' ) );
+  }
+  return $classes;
+}
+add_filter( 'post_class', 'isa_remove_hentry_class' );
+
+
+
+
+
+
+add_filter( 'wpseo_json_ld_output', 'yoast_seo_json_remove_partial' );
+function yoast_seo_json_remove_partial() {
+  // if ( is_front_page () || is_page() || is_archive()  || is_home()  ) {
+    return false;
+    // }
+}
+
+
+
+
+
+
+// // functions.php
+// add_filter( 'wpseo_schema_graph_pieces', 'remove_breadcrumbs_from_schema', 11, 2 );
+
+// function remove_breadcrumbs_from_schema( $pieces, $context ) {
+//   if ( is_singular ('locations')  ) {
+//     return \array_filter( $pieces, function( $piece ) {
+//         return ! $piece instanceof \Yoast\WP\SEO\Generators\Schema\Organization;
+//     } );
+//   }
+// }
+
+// // functions.php
+// add_filter( 'wpseo_schema_graph_pieces', 'remove_breadcrumbs_from_schemawebsite', 11, 2 );
+
+// function remove_breadcrumbs_from_schemawebsite( $pieces, $context ) {
+//   if ( is_singular ('locations')  ) {
+//     return \array_filter( $pieces, function( $piece ) {
+//         return ! $piece instanceof \Yoast\WP\SEO\Generators\Schema\Website;
+//     } );
+//   }
+// }
+
+// // functions.php
+// add_filter( 'wpseo_schema_graph_pieces', 'remove_breadcrumbs_from_schemawebpage', 11, 2 );
+
+// function remove_breadcrumbs_from_schemawebpage( $pieces, $context ) {
+//   if ( is_singular ('locations')  ) {
+//     return \array_filter( $pieces, function( $piece ) {
+//         return ! $piece instanceof \Yoast\WP\SEO\Generators\Schema\WebPage;
+//     } );
+//   }
+// }
+
+
+add_action('wp_footer','clicknathan_schema_breadcrumbs');
+function clicknathan_schema_breadcrumbs() {
+
+
+	$post_id = get_option('page_for_posts');
+	$post = get_post($post_id);
+	$slug = $post->post_name;
+	$blog_posts_page_slug = '/'.$slug;
+	$site_name = get_bloginfo('blogname');
+
+
+	if (!is_search()) { ?>
+	<script type="application/ld+json">
+	{
+	 "@context": "http://schema.org",
+	 "@type": "BreadcrumbList",
+	 "itemListElement":
+	 [<?php if (is_singular()) { // if on a single blog post ?>
+	  {
+	   "@type": "ListItem",
+	   "position": 1,
+	   "item":
+	   {
+	    "@id": "<?php echo get_site_url('url').$blog_posts_page_slug; ?>",
+	    "name": "<?php echo $site_name; ?>"
+	    }
+	  },
+	  {
+	  "@type": "ListItem",
+	  "position": 2,
+	  "item":
+	   {
+	     "@id": "<?php echo get_permalink(); ?>",
+	     "name": "<?php echo get_the_title(); ?>"
+	   }
+	  }
+	 <?php } elseif (is_singular('product')) { // if on a single product page
+	 		 global $post;
+		 	 $terms = wp_get_object_terms($post->ID, 'product_cat');
+			 if(!is_wp_error($terms)) {
+			 	$product_category_slug = $terms[0]->slug;
+			 	$product_category_name = $terms[0]->name;
+			 }
+	 ?>
+	  {
+	   "@type": "ListItem",
+	   "position": 1,
+	   "item":
+	   {
+	    "@id": "<?php echo get_bloginfo('url'); ?>/products/<?php echo $product_category_slug; ?>/",
+	    "name": "<?php echo $product_category_name; ?>"
+	    }
+	  },
+	  {
+	  "@type": "ListItem",
+	  "position": 2,
+	  "item":
+	   {
+	     "@id": "<?php echo get_permalink(); ?>",
+	     "name": "<?php echo get_the_title(); ?>"
+	   }
+	  }
+	 <?php } elseif (is_page() && !is_front_page()) { // if on a regular WP Page
+	 		 global $post;
+			 if ( is_page() && $post->post_parent ) { // if is a child page
+			     $post_data = get_post($post->post_parent);
+			     $parent_page_slug = $post_data->post_name;
+			     $parent_page_url = get_bloginfo('url').'/'.$parent_page_slug.'/';
+			     $parent_page_title = ucfirst($parent_page_slug);
+			     $position_number = '2';
+			 } else {
+			     $page_url = get_permalink();
+			     $page_title = '';
+			     $position_number = '1';
+			 } ?>
+	  <?php if ( is_page() && $post->post_parent ) { ?>{
+	   "@type": "ListItem",
+	   "position": 1,
+	   "item":
+	   {
+	    "@id": "<?php echo $parent_page_url; ?>",
+	    "name": "<?php echo $parent_page_title; ?>"
+	    }
+	  },<?php } ?>
+	  {
+	   "@type": "ListItem",
+	  "position": <?php echo $position_number; ?>,
+	  "item":
+	   {
+	     "@id": "<?php echo get_permalink(); ?>",
+	     "name": "<?php echo get_the_title(); ?>"
+	   }
+	  }
+	 <?php } elseif (is_home()) { // if on the blog page ?>
+	  {
+	   "@type": "ListItem",
+	   "position": 1,
+	   "item":
+	   {
+	    "@id": "<?php echo get_site_url('url').$blog_posts_page_slug; ?>",
+	    "name": "<?php echo $site_name; ?>"
+	    }
+	  }
+	 <?php } elseif (is_category() || is_tag()) { ?>
+	  {
+	   "@type": "ListItem",
+	   "position": 1,
+	   "item":
+	   {
+	    "@id": "<?php echo get_site_url('url').$blog_posts_page_slug; ?>",
+	    "name": "<?php echo $site_name; ?>"
+	    }
+	  },
+	  {
+	   "@type": "ListItem",
+	  "position": 2,
+	  "item":
+	   {
+	     "@id": "<?php echo 'https://'.$_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"]; ?>",
+	     "name": "<?php if (is_category()) { echo single_cat_title('', false); } else { echo single_tag_title('', false); } ?>"
+	   }
+	  }
+	 <?php } elseif (is_tax('product_cat') || is_tax('product_tag')) { // product category and taxonomy pages
+	 	     global $post; $termname = get_query_var( 'term' ); $termname = ucfirst($termname); ?>
+	  {
+	   "@type": "ListItem",
+	   "position": 1,
+	   "item":
+	   {
+	    "@id": "<?php echo get_bloginfo('url'); ?>",
+	    "name": "Store"
+	    }
+	  },
+	  {
+	   "@type": "ListItem",
+	  "position": 2,
+	  "item":
+	   {
+	     "@id": "<?php echo 'https://'.$_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"]; ?>",
+	     "name": "<?php echo $termname; ?>"
+	   }
+	  }
+	 <?php } elseif (is_archive()) { // date based archives and a catch all for the rest ?>
+	  {
+	   "@type": "ListItem",
+	   "position": 1,
+	   "item":
+	   {
+	    "@id": "<?php echo get_site_url('url').$blog_posts_page_slug; ?>",
+	    "name": "<?php echo $site_name; ?>"
+	    }
+	  },
+	  {
+	   "@type": "ListItem",
+	  "position": 2,
+	  "item":
+	   {
+	     "@id": "<?php echo 'https://'.$_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"]; ?>",
+	     "name": "Archives"
+	   }
+	  }
+	 <?php } else { ?>
+	  {
+	   "@type": "ListItem",
+	  "position": 1,
+	  "item":
+	   {
+	     "@id": "<?php echo 'https://'.$_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"]; ?>",
+	     "name": "Page"
+	   }
+	  }
+	 <?php } ?>]
+	}
+	</script>
+	<?php }
+}

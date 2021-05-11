@@ -1,32 +1,24 @@
-<?php get_header(); 
+<?php get_header();
 // Template Name: /prep/register-for-NowPrEP/thank-you/
 ?>
-<!-- Event snippet for Form Completion conversion page -->
+
+<!-- Event snippet for NowPrEP Contact Form Submission (Thank You Page) conversion page -->
 <script>
-gtag('event', 'conversion', {
-    'send_to': 'AW-875503484/Bj1NCMmPzboBEPy-vKED'
-});
+gtag('event', 'conversion', {'send_to': 'AW-875503484/PrfHCJq2m40CEPy-vKED'});
 </script>
 
 <style>
 main#main {
     margin: 140px auto 0;
 }
+@media screen and (max-width:992px){
+    main#main {
+    margin: 90px auto 0;
+}
+}
 </style>
 <main id="main" class="main-class" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
-    <div class="rvl">
-        <picture class="lozad"
-            data-iesrc="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020.png"
-            data-alt="NowRx Pharmacy Surescripts 2020 White Coat Award Finalist (Highest Accuracy) "
-            data-toggle-class="active">
-            <source type="image/png"
-                srcset="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020.png">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020lowrez.jpg"
-                class="imageblock" height="100px" width="450px"
-                alt="NowRx Pharmacy Surescripts 2020 White Coat Award Finalist (Highest Accuracy) ">
-        </picture>
 
-    </div>
     <section class="article">
         <article id="post-<?php the_ID(); ?>" role="article" itemscope itemtype="http://schema.org/BlogPosting">
             <div class="container">

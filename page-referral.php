@@ -1,413 +1,56 @@
 <?php
 /*
  Template Name: Referral
- *
- * This is your custom page template. You can create as many of these as you need.
- * Simply name is "page-whatever.php" and in add the "Template Name" title at the
- * top, the same way it is here.
- *
- * When you create your page, you can just select the template and viola, you have
- * a custom page template to call your very own. Your mother would be so proud.
- *
- * For more info: http://codex.wordpress.org/Page_Templates
 */
 ?>
 
 <?php get_header(); ?>
 
-
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [{
-            "@type": "Question",
-            "name": "What is the NowRx Pharmacy Refer a Friend Program?",
-            "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "The NowRx Pharmacy Refer a Friend Program is a referral program that allows existing NowRx customers to receive a $20 Visa Gift card for every qualifying referral."
-            }
-        },
-        {
-            "@type": "Question",
-            "name": "How does the Refer a Friend Program work?  ",
-            "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Just submit your referrals using our Refer a Friend form and when your referral receives their first prescription from NowRx, we will mail you a $20 Visa Gift card."
-            }
-        },
-        {
-            "@type": "Question",
-            "name": "What is a qualifying referral?",
-            "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Qualifying referrals are referrals that receive their first prescription delivery from NowRx Pharmacy following the date on which they were referred."
-            }
-        },
-        {
-            "@type": "Question",
-            "name": "Who can I refer to NowRx Pharmacy?",
-            "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "You can refer any individual (friend, family, relative, etc.) that is not already a customer of NowRx Pharmacy."
-            }
-        },
-        {
-            "@type": "Question",
-            "name": "Is there a limit to the number of people I can refer?",
-            "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "There is no limit to the number of people you can refer to NowRx Pharmacy or to the amount of money you can earn referring new customers but NowRx reserves the right to nulligy rewards, bonuses, or perks if we suspect abuse or fraud."
-            }
-        },
-        {
-            "@type": "Question",
-            "name": "What happens when I submit a referral?",
-            "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "When you submit a referral, NowRx Pharmacy will send your referrals a welcome email letting them know you have referred them and telling them how to get started.. We suggest you follow up with all of your referrals to tell them about your experience with NowRx and why you are referring them."
-            }
-        },
-        {
-            "@type": "Question",
-            "name": "When will NowRx pay me my referral bonus?",
-            "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Once your referral has received their first prescription delivery from NowRx, we will mail you a $20 Visa gift card in 5-7 business days."
-            }
-        },
-        {
-            "@type": "Question",
-            "name": "How will NowRx pay me my referral bonus?",
-            "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "NowRx pays all referral bonuses in $20 Visa Gift Card denominations. These Gift Cards can be used nearly anywhere in the domestic US."
-            }
-        },
-        {
-            "@type": "Question",
-            "name": "What if two people refer the same person?",
-            "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "If two people refer the same person, the individual that provided the first referral will be the one that receives a $20 Visa Gift Card."
-            }
-        },
-        {
-            "@type": "Question",
-            "name": "What else do I need to know?",
-            "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "The email addresses you enter for yourself and your referrals must match the email address used with NowRx. If we do not have an email address for you, please contact us at info@nowrx.com so we can update your customer profile."
-            }
-        }
-    ]
-}
-</script>
-
-
-
-
-
 <!-- hero -->
-<section class="hero-home referralpage">
-    <div class="rvl">
-
-
-        <picture class="lozad"
-            data-iesrc="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020.png"
-            data-alt="prescription being delivered to mother" data-toggle-class="active">
-            <source type="image/png"
-                srcset="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020.png">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020lowrez.jpg"
-                class="imageblock" height="100px" width="450px">
-        </picture>
-
-    </div>
-
+<section class="hero-home referralform">
     <div class="container">
         <div class="content">
-
             <!-- content -->
             <div class="column-half content-col">
-
-
-
                 <div class="rvls">
                     <span class="sub-headline">
                         Earn $20 For Every Qualifying Referral
                     </span>
                 </div>
-
                 <div class="rvls">
                     <h1 class="hiw-title">
-                        NowRx Pharmacy Refer a Friend
+                        NowRx Pharmacy <br> Refer a Friend
                     </h1>
                 </div>
-
                 <div class="rvls">
                     <p>
                         Refer your friends to NowRx Pharmacy and receive a $20 Visa Gift Card for each referral that
                         becomes a customer.
                     </p>
                 </div>
-
                 <div class="rvls">
                     <div class="btn-container">
                         <!-- <a class="rx-btn" href="<?= get_site_url(); ?>/refill-and-transfer-prescriptions/">Join Watilist</a> -->
-                        <a class="rx-btn " href="#howitwork">How It Works</a>
-                        <a class="rx-btn mrb" href="#faq-section">Referral FAQs</a>
+                        <a class="rx-btn " href="#referralform">Refer a Friend</a>
+                        <a class="rx-btn rx-green mrb" href="#howitwork">How It Works</a>
+
                     </div>
                 </div>
-
             </div>
 
             <!-- image -->
-            <div class="column-half form-col">
+            <div class="column-half image-col">
 
-                <div class="form-component">
-                    <h2 class="form-title"> Refer a Friend</h2>
-                    <p>Earn $20 for every referral that gets a prescription delivered by NowRx Pharmacy</p>
-                    <form id="referralForm" name="referralForm" novalidate method="post" action="/hubspot-post-2.php">
-                        <div class="grid-container">
-                            <div id="referral-error"
-                                style="color:#f00;background-color:#ffdede;padding:5px;border-radius:10px;display:none;">
-                                Please enter the email address registered with NowRx.com
-                            </div>
-                            <div class="desc">
-                                <p>Enter your name and email address</p>
-                            </div>
-                            <div class="grid-x grid-padding-x">
-                                <div class="medium-6 cell">
-                                    <label>
-                                        <span>Your Name</span>
-                                        <input type="text" data-placeholder="Customer Name" name="referring_name"
-                                            required>
-
-                                    </label>
-
-                                </div>
-                                <div class="medium-6 cell">
-                                    <label>
-                                        <span>Your Email Address</span>
-                                        <input type="email" data-placeholder="Customer Email" name="referring_email"
-                                            required>
-
-                                    </label>
-
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="grid-container fillform">
-                            <div class="desc">
-                                <p>Enter your referral's name and email address.</p>
-                            </div>
-
-                            <div class="item-referrals">
-
-                                <!-- item -->
-                                <div class="grid-x grid-padding-x">
-                                    <div class="medium-6 cell">
-                                        <label>
-                                            <span>Referral Name</span>
-                                            <input type="text" data-placeholder="Customer Name" name="referral_name_1"
-                                                required>
-
-                                        </label>
-
-                                    </div>
-                                    <div class="medium-6 cell">
-                                        <label>
-                                            <span>Referral Email Address</span>
-                                            <input type="email" data-placeholder="Customer Email"
-                                                name="referral_email_1" required>
-
-                                        </label>
-                                    </div>
-                                </div>
-
-                                <!-- item -->
-                                <div class="grid-x grid-padding-x">
-                                    <div class="medium-6 cell">
-                                        <label>
-                                            <span>Referral Name</span>
-                                            <input type="text" data-placeholder="Customer Name" name="referral_name_2"
-                                                required>
-
-                                        </label>
-
-                                    </div>
-                                    <div class="medium-6 cell">
-                                        <label>
-                                            <span>Referral Email Address</span>
-                                            <input type="email" data-placeholder="Customer Email"
-                                                name="referral_email_2" required>
-
-                                        </label>
-                                    </div>
-                                </div>
-
-                                <!-- item -->
-                                <div class="grid-x grid-padding-x">
-                                    <div class="medium-6 cell">
-                                        <label>
-                                            <span>Referral Name</span>
-                                            <input type="text" data-placeholder="Customer Name" name="referral_name_3"
-                                                required>
-
-                                        </label>
-
-                                    </div>
-                                    <div class="medium-6 cell">
-                                        <label>
-                                            <span>Referral Email Address</span>
-                                            <input type="email" data-placeholder="Customer Email"
-                                                name="referral_email_3" required>
-
-                                        </label>
-                                    </div>
-                                </div>
-
-                                <!-- item -->
-                                <div class="grid-x grid-padding-x">
-                                    <div class="medium-6 cell">
-                                        <label>
-                                            <span>Referral Name</span>
-                                            <input type="text" data-placeholder="Customer Name" name="referral_name_4"
-                                                required>
-
-                                        </label>
-
-                                    </div>
-                                    <div class="medium-6 cell">
-                                        <label>
-                                            <span>Referral Email Address</span>
-                                            <input type="email" data-placeholder="Customer Email"
-                                                name="referral_email_4" required>
-
-                                        </label>
-                                    </div>
-                                </div>
-
-                                <!-- item -->
-                                <div class="grid-x grid-padding-x">
-                                    <div class="medium-6 cell">
-                                        <label>
-                                            <span>Referral Name</span>
-                                            <input type="text" data-placeholder="Customer Name" name="referral_name_5"
-                                                required>
-
-                                        </label>
-
-                                    </div>
-                                    <div class="medium-6 cell">
-                                        <label>
-                                            <span>Referral Email Address</span>
-                                            <input type="email" data-placeholder="Customer Email"
-                                                name="referral_email_5" required>
-
-                                        </label>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                            <!-- additional people -->
-
-                            <div class="addtional-people">
-                                <span class="text">
-                                    <div class="icon">
-                                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="plus"
-                                            role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
-                                            class="svg-inline--fa fa-plus fa-w-14 fa-3x">
-                                            <path fill="currentColor"
-                                                d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"
-                                                class=""></path>
-                                        </svg>
-                                    </div>
-                                    <div class="en">
-                                        Enter another referral
-                                    </div>
-                                </span>
-                            </div>
-
-                            <!-- item -->
-                            <!-- <div class="grid-x grid-padding-x">
-                                <div class="medium-6 cell">
-                                    <label>
-                                        <strong>Referral Name 2</strong>
-                                        <input type="text" placeholder="Eg. John Smith Referral 2"
-                                            name="referral_name_2">
-                                    </label>
-                                </div>
-                                <div class="medium-6 cell">
-                                    <label>
-                                        <strong>Referral Email Address 2</strong>
-                                        <input type="email" placeholder="E.g. johnsmithreferral2@aol.com"
-                                            name="referral_email_2">
-                                    </label>
-                                </div>
-                            </div> -->
-                            <!-- item -->
-                            <!-- <div class="grid-x grid-padding-x">
-                                <div class="medium-6 cell">
-                                    <label>
-                                        <strong>Referral Name 3</strong>
-                                        <input type="text" placeholder="Eg. John Smith Referral 3"
-                                            name="referral_name_3">
-                                    </label>
-                                </div>
-                                <div class="medium-6 cell">
-                                    <label>
-                                        <strong>Referral Email Address 3</strong>
-                                        <input type="email" placeholder="E.g. johnsmithreferral3@aol.com"
-                                            name="referral_email_3">
-                                    </label>
-                                </div>
-                            </div> -->
-                            <!-- item -->
-                            <!-- <div class="grid-x grid-padding-x">
-                                <div class="medium-6 cell">
-                                    <label>
-                                        <strong>Referral Name 4</strong>
-                                        <input type="text" placeholder="Eg. John Smith Referral 4"
-                                            name="referral_name_4">
-                                    </label>
-                                </div>
-                                <div class="medium-6 cell">
-                                    <label>
-                                        <strong>Referral Email Address 4</strong>
-                                        <input type="email" placeholder="E.g. johnsmithreferral4@aol.com"
-                                            name="referral_email_4">
-                                    </label>
-                                </div>
-                            </div> -->
-                            <!-- item -->
-                            <!-- <div class="grid-x grid-padding-x">
-                                <div class="medium-6 cell">
-                                    <label>
-                                        <strong>Referral Name 5</strong>
-                                        <input type="text" placeholder="Eg. John Smith Referral 5"
-                                            name="referral_name_5">
-                                    </label>
-                                </div>
-                                <div class="medium-6 cell">
-                                    <label>
-                                        <strong>Referral Email Address 5</strong>
-                                        <input type="email" placeholder="E.g. johnsmithreferral5@aol.com"
-                                            name="referral_email_5">
-                                    </label>
-                                </div>
-                            </div> -->
-
-                            <div class="gridd">
-                                <div class="mediumcl">
-                                    <input type="submit" class="rx-btn" type="button" value="Submit" id="Submit">
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
+                <picture class="lozad" data-iesrc="<?php echo get_template_directory_uri(); ?>/images/For-Doctors.webp"
+                    data-alt="Pharmacist Ready to Provide Medication" data-toggle-class="active">
+                    <source type="image/jpeg"
+                        srcset="https://images.pexels.com/photos/3768131/pexels-photo-3768131.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+                    <source type="image/webp"
+                        srcset="<?php echo get_template_directory_uri(); ?>/images/For-Doctors.webp">
+                    <img data-src="<?php echo get_template_directory_uri(); ?>/images/For-Doctors.webp"
+                        class="orbit-image lozad" height="500px" width="650px"
+                        alt="Pharmacist Ready to Provide Medication">
+                </picture>
 
 
             </div>
@@ -416,10 +59,201 @@
     </div>
 </section>
 
-
 <!-- companies -->
 <?php include('section-companies.php'); ?>
 
+<section class="referralform" id="referralform">
+    <div class="container">
+        <div class="svgicon">
+            <picture class="lozad" data-iesrc="<?php echo get_template_directory_uri(); ?>/images/For-Doctors.webp"
+                data-alt="Pharmacist Ready to Provide Medication" data-toggle-class="active">
+                <source type="image/jpeg"
+                    srcset="https://images.pexels.com/photos/4353618/pexels-photo-4353618.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+                <source type="image/webp" srcset="<?php echo get_template_directory_uri(); ?>/images/For-Doctors.webp">
+                <img data-src="<?php echo get_template_directory_uri(); ?>/images/For-Doctors.webp"
+                    class="orbit-image lozad" height="500px" width="650px" alt="Pharmacist Ready to Provide Medication">
+            </picture>
+        </div>
+        <div class="content">
+            <div class="sectitle">
+                <h2 class="title">Refer a Friend</h2>
+                <p>Earn $20 For Every Qualifying Referral</p>
+            </div>
+            <form id="referralForm" name="referralForm" novalidate method="post" action="/hubspot-post-2.php">
+                <div class="grid-container">
+                    <div id="referral-error"
+                        style="color:#f00;background-color:#ffdede;padding:5px;border-radius:10px;display:none;">
+                        Please enter the email address registered with NowRx.com
+                    </div>
+                    <div class="desc">
+                        <p>Enter your name and email address</p>
+                    </div>
+                    <div class="grid-x grid-padding-x">
+                        <div class="medium-6 cell">
+                            <label>
+                                <span>Your Name</span>
+                                <input type="text" data-placeholder="Customer Name" placeholder="Your Name"
+                                    name="referring_name" required>
+
+                            </label>
+
+                        </div>
+                        <div class="medium-6 cell">
+                            <label>
+                                <span>Your Email Address</span>
+                                <input type="email" data-placeholder="Customer Email" placeholder="Your Email Address"
+                                    name="referring_email" required>
+
+                            </label>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="grid-container fillform">
+                    <div class="desc">
+                        <p>Enter your referral's name and email address.</p>
+                    </div>
+
+                    <div class="item-referrals">
+
+                        <!-- item -->
+                        <div class="grid-x grid-padding-x">
+                            <div class="medium-6 cell">
+                                <label>
+                                    <span>Referral Name</span>
+                                    <input type="text" data-placeholder="Customer Name" placeholder="Referral Name"
+                                        name="referral_name_1" required>
+
+                                </label>
+
+                            </div>
+                            <div class="medium-6 cell">
+                                <label>
+                                    <span>Referral Email Address</span>
+                                    <input type="email" data-placeholder="Customer Email"
+                                        placeholder="Referral Email Address" name="referral_email_1" required>
+
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- item -->
+                        <div class="grid-x grid-padding-x">
+                            <div class="medium-6 cell">
+                                <label>
+                                    <span>Referral Name</span>
+                                    <input type="text" data-placeholder="Customer Name" placeholder="Referral Name"
+                                        name="referral_name_2" required>
+
+                                </label>
+
+                            </div>
+                            <div class="medium-6 cell">
+                                <label>
+                                    <span>Referral Email Address</span>
+                                    <input type="email" data-placeholder="Customer Email"
+                                        placeholder="Referral Email Address" name="referral_email_2" required>
+
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- item -->
+                        <div class="grid-x grid-padding-x">
+                            <div class="medium-6 cell">
+                                <label>
+                                    <span>Referral Name</span>
+                                    <input type="text" data-placeholder="Customer Name" laceholder="Referral Name"
+                                        name="referral_name_3" required>
+
+                                </label>
+
+                            </div>
+                            <div class="medium-6 cell">
+                                <label>
+                                    <span>Referral Email Address</span>
+                                    <input type="email" data-placeholder="Customer Email"
+                                        placeholder="Referral Email Address" name="referral_email_3" required>
+
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- item -->
+                        <div class="grid-x grid-padding-x">
+                            <div class="medium-6 cell">
+                                <label>
+                                    <span>Referral Name</span>
+                                    <input type="text" data-placeholder="Customer Name" laceholder="Referral Name"
+                                        name="referral_name_4" required>
+
+                                </label>
+
+                            </div>
+                            <div class="medium-6 cell">
+                                <label>
+                                    <span>Referral Email Address</span>
+                                    <input type="email" data-placeholder="Customer Email"
+                                        placeholder="Referral Email Address" name="referral_email_4" required>
+
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- item -->
+                        <div class="grid-x grid-padding-x">
+                            <div class="medium-6 cell">
+                                <label>
+                                    <span>Referral Name</span>
+                                    <input type="text" data-placeholder="Customer Name" laceholder="Referral Name"
+                                        name="referral_name_5" required>
+
+                                </label>
+
+                            </div>
+                            <div class="medium-6 cell">
+                                <label>
+                                    <span>Referral Email Address</span>
+                                    <input type="email" data-placeholder="Customer Email"
+                                        placeholder="Referral Email Address" name="referral_email_5" required>
+
+                                </label>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- additional people -->
+
+                    <div class="addtional-people">
+                        <span class="text">
+                            <div class="icon">
+                                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="plus" role="img"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                                    class="svg-inline--fa fa-plus fa-w-14 fa-3x">
+                                    <path fill="currentColor"
+                                        d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"
+                                        class=""></path>
+                                </svg>
+                            </div>
+                            <div class="en">
+                                Enter another referral
+                            </div>
+                        </span>
+                    </div>
+
+                    <div class="gridd">
+                        <div class="mediumcl">
+                            <input type="submit" class="button secondary rounded shadow rx-btn" disabled type="button" value="Submit" id="Submit">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
 
 
 <section class="how-it-works panel--primary" id="howitwork">
@@ -536,15 +370,16 @@
                             <div class="title">A.</div>
                             <span class="cntx">
                                 <p>
-                                The NowRx Pharmacy Refer a Friend Program is a referral program that allows existing NowRx customers to receive a $20 Visa Gift card for every qualifying referral.
+                                    The NowRx Pharmacy Refer a Friend Program is a referral program that allows existing
+                                    NowRx customers to receive a $20 Visa Gift card for every qualifying referral.
                                 </p>
                             </span>
                         </div>
                     </div>
                 </div>
 
-                  <!-- item -->
-                  <div class="block">
+                <!-- item -->
+                <div class="block">
                     <div class="rvl">
                         <div class="q-item">
                             <div class="title">Q.</div>
@@ -558,10 +393,11 @@
                             <div class="title">A.</div>
                             <span class="cntx">
                                 <p>
-                                Just submit your referrals using our Refer a Friend form and when your referral receives their first prescription from NowRx, we will mail you a $20 Visa Gift card.
+                                    Just submit your referrals using our Refer a Friend form and when your referral
+                                    receives their first prescription from NowRx, we will mail you a $20 Visa Gift card.
                                 </p>
-                             
- 
+
+
 
 
                             </span>
@@ -575,7 +411,7 @@
                         <div class="q-item">
                             <div class="title">Q.</div>
                             <span class="cntx">
-                            What is a qualifying referral?
+                                What is a qualifying referral?
                             </span>
                         </div>
                     </div>
@@ -584,9 +420,10 @@
                             <div class="title">A.</div>
                             <span class="cntx">
                                 <p>
-                                Qualifying referrals are referrals that receive their first prescription delivery from NowRx Pharmacy following the date on which they were referred.                                </p>
-                             
- 
+                                    Qualifying referrals are referrals that receive their first prescription delivery
+                                    from NowRx Pharmacy following the date on which they were referred. </p>
+
+
 
 
                             </span>
@@ -594,7 +431,7 @@
                     </div>
                 </div>
 
-              
+
 
                 <!-- item -->
                 <div class="block">
@@ -602,7 +439,7 @@
                         <div class="q-item">
                             <div class="title">Q.</div>
                             <span class="cntx">
-                            Who can I refer to NowRx Pharmacy?
+                                Who can I refer to NowRx Pharmacy?
                             </span>
                         </div>
                     </div>
@@ -611,16 +448,17 @@
                             <div class="title">A.</div>
                             <span class="cntx">
                                 <p>
-                                You can refer any individual (friend, family, relative, etc.) that is not already a customer of NowRx Pharmacy.
+                                    You can refer any individual (friend, family, relative, etc.) that is not already a
+                                    customer of NowRx Pharmacy.
                                 </p>
                             </span>
                         </div>
                     </div>
                 </div>
 
-                
-<!-- item -->
-<div class="block">
+
+                <!-- item -->
+                <div class="block">
                     <div class="rvl">
                         <div class="q-item">
                             <div class="title">Q.</div>
@@ -634,7 +472,9 @@
                             <div class="title">A.</div>
                             <span class="cntx">
                                 <p>
-                                There is no limit to the number of people you can refer to NowRx Pharmacy or to the amount of money you can earn referring new customers but NowRx reserves the right to nulligy rewards, bonuses, or perks if we suspect abuse or fraud.
+                                    There is no limit to the number of people you can refer to NowRx Pharmacy or to the
+                                    amount of money you can earn referring new customers but NowRx reserves the right to
+                                    nulligy rewards, bonuses, or perks if we suspect abuse or fraud.
                                 </p>
                             </span>
                         </div>
@@ -656,10 +496,13 @@
                             <div class="title">A.</div>
                             <span class="cntx">
                                 <p>
-                                When you submit a referral, NowRx Pharmacy will send your referrals a welcome email letting them know you have referred them and telling them how to get started.. We suggest you follow up with all of your referrals to tell them about your experience with NowRx and why you are referring them.
+                                    When you submit a referral, NowRx Pharmacy will send your referrals a welcome email
+                                    letting them know you have referred them and telling them how to get started.. We
+                                    suggest you follow up with all of your referrals to tell them about your experience
+                                    with NowRx and why you are referring them.
 
                                 </p>
-                                
+
                             </span>
                         </div>
                     </div>
@@ -679,13 +522,14 @@
                         <div class="a-item">
                             <div class="title">A.</div>
                             <span class="cntx">
-                            Once your referral has received their first prescription delivery from NowRx, we will mail you a $20 Visa gift card in 5-7 business days. 
+                                Once your referral has received their first prescription delivery from NowRx, we will
+                                mail you a $20 Visa gift card in 5-7 business days.
                             </span>
                         </div>
                     </div>
                 </div>
 
-              
+
 
                 <!-- item -->
                 <div class="block">
@@ -702,7 +546,8 @@
                             <div class="title">A.</div>
                             <span class="cntx">
                                 <p>
-                                NowRx pays all referral bonuses in $20 Visa Gift Card denominations. These Gift Cards can be used nearly anywhere in the domestic US.
+                                    NowRx pays all referral bonuses in $20 Visa Gift Card denominations. These Gift
+                                    Cards can be used nearly anywhere in the domestic US.
                                 </p>
                             </span>
                         </div>
@@ -716,7 +561,7 @@
                         <div class="q-item">
                             <div class="title">Q.</div>
                             <span class="cntx">
-                            What if two people refer the same person?
+                                What if two people refer the same person?
                             </span>
                         </div>
                     </div>
@@ -736,11 +581,11 @@
 
 
 
-                
 
-               
-               
-                
+
+
+
+
 
 
                 <!-- item -->
@@ -749,7 +594,7 @@
                         <div class="q-item">
                             <div class="title">Q.</div>
                             <span class="cntx">
-                            What else do I need to know?
+                                What else do I need to know?
                             </span>
                         </div>
                     </div>
@@ -758,7 +603,9 @@
                             <div class="title">A.</div>
                             <span class="cntx">
                                 <p>
-                                The email addresses you enter for yourself and your referrals must match the email address used with NowRx. If we do not have an email address for you, please contact us at info@nowrx.com so we can update your customer profile.
+                                    The email addresses you enter for yourself and your referrals must match the email
+                                    address used with NowRx. If we do not have an email address for you, please contact
+                                    us at info@nowrx.com so we can update your customer profile.
                                 </p>
                             </span>
                         </div>
@@ -790,7 +637,7 @@
             <div class="formloop">
                 <div class="rvl">
                     <span class="sub-headline">
-                    Have additional questions about the Refer a Friend program?
+                        Have additional questions about the Refer a Friend program?
                     </span>
                 </div>
                 <div class="rvl">
@@ -801,23 +648,23 @@
                 <div class="rvl">
                     <div class="form-content">
 
-<!--[if lte IE 8]>
+                        <!--[if lte IE 8]>
 <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
 <![endif]-->
-<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-<script>
-hbspt.forms.create({
-portalId: "5952677",
-formId: "79574438-8e30-404e-a02f-4424317036e4"
-});
-</script>
+                        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+                        <script>
+                        hbspt.forms.create({
+                            portalId: "5952677",
+                            formId: "79574438-8e30-404e-a02f-4424317036e4"
+                        });
+                        </script>
 
-                        
+
+                    </div>
                 </div>
-            </div>
 
+            </div>
         </div>
-    </div>
     </div>
 
 </section>

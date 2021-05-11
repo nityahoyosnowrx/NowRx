@@ -97,7 +97,7 @@ gtag('event', 'conversion', {
 });
 </script>
 
-<main id="main" class="main-class" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
+<main id="main" class="main-class" style="margin: 120px 0 0;" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
     <div class="rvl">
 
         <picture class="lozad"
@@ -130,7 +130,7 @@ gtag('event', 'conversion', {
                                 Suggest a location below and we will be there before you know it.
                             </h1>
                         </div>
-                       
+
 
                         <div class="rvls">
                             <div class="btn-container">
@@ -138,8 +138,8 @@ gtag('event', 'conversion', {
                                 <a class="rx-btn rx-txt mrb" href="<?= get_site_url(); ?>/locations/">Return to Locations Page</a>
                             </div>
 						</div>
-						
-                        
+
+
                         <div class="rvl">
                             <span class="follow-links">
                                 <div class="txt">
@@ -156,7 +156,7 @@ gtag('event', 'conversion', {
                 </header>
             </div>
 
-          
+
         </article>
 
     </section>

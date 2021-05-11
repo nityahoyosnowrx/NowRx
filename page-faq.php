@@ -381,13 +381,12 @@
 
                 <div class="rvls">
                     <div class="btn-container">
-                        <a class="rx-btn" href="#faqblock">
+                        <a class="rx-btn" href="<?= get_site_url(); ?>/refill-and-transfer-prescriptions/">
                             <?php include('reg-arrow.php'); ?>
-                            View FAQs</a>
-                        <a class="rx-btn rx-green mrb" data-toggle="submitaquestion" aria-controls="submitaquestion"
-                            aria-haspopup="true" tabindex="0">
+                            get started</a>
+                        <a class="rx-btn rx-green mrb" href="#faqblock">
                             <?php include('grn-arrow.php'); ?>
-                            Submit a Question</a>
+                            View FAQs</a>
                     </div>
                 </div>
 
