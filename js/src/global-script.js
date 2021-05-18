@@ -249,50 +249,7 @@ $(document).ready(function() {
   }
 });
 
-// referral form
-// ----------------------------------------------------------------------------------------------------
-$(document).ready(function() {
-  if ($('.item-referrals').length) {
-    // it exists
 
-    $('.item-referrals .grid-x.grid-padding-x').hide(0);
-    $('.item-referrals .grid-x.grid-padding-x:nth-child(' + 1 + ')').slideDown();
-
-    let refCount = 1;
-
-    $('.addtional-people .text').on('click', function() {
-      refCount++;
-      console.log(refCount);
-
-      if (refCount >= 5) {
-        $('.addtional-people').fadeOut();
-      }
-
-      $('.item-referrals .grid-x.grid-padding-x:nth-child(' + refCount + ')').slideDown();
-    });
-
-    $('form#referralForm input, .form-content input,.form-content textarea').focus(function() {
-      console.log('Handler for .focus() called.');
-      $(this)
-        .siblings('span')
-        .addClass('hasstext');
-    });
-
-    $('form#referralForm input, .form-content input,.form-content textarea').on('blur', function() {
-      if ($(this).val()) {
-        $(this)
-          .siblings('span')
-          .addClass('hasstext');
-      } else {
-        $(this)
-          .siblings('span')
-          .removeClass('hasstext');
-      }
-    });
-  }
-
-  // ready
-});
 
 import anime from 'animejs/lib/anime.es.js';
 
@@ -399,9 +356,6 @@ if (!dialogShown) {
 
 $(document).ready(function() {
 
-
-
-
   let itemC = $('.quoteitems .quoteitem').length;
 
   let countItem = 1;
@@ -442,38 +396,128 @@ $(document).ready(function() {
 
 
 
-  var maxHeight = 0;
+  var maxHeight = 200;
 
-$(".quoteitem").each(function(){
-   if ($(this).height() > maxHeight) { maxHeight = $(this).height(); }
+  $(".quoteitems .quoteitem").each(function(){
+    if ($(this).height() > maxHeight) {
+      maxHeight = $(this).height();
+    }
+  });
+
+  $(".quoteitems .quoteitem").css("min-height", maxHeight)
+  $(".quoteitems .quoteitems").css("min-height", maxHeight+30)
+
+
 });
 
-$(".quoteitem").css("min-height",maxHeight)
-$(".quoteitems").css("min-height",maxHeight+30)
+// referral form
+// ----------------------------------------------------------------------------------------------------
 
 
+$(document).ready(function(){
+
+    $('input.referralinput').keyup(function() {
+      $('input.referralinput').each(function() {
+          if ($(this).val() == '') {
+            $(this).removeClass('hasval');
+          } else {
+            $(this).addClass('hasval');
+          }
+      });
+    });
+
+    let empty = true;
+
+    $(document).on('keyup','input.hasval',function() {
+
+      $('input.hasval').each(function() {
+
+        if($(this).val() != ''){
+
+          let sib = $(this).closest('.medium-6').siblings('.medium-6').find('input.referralinput');
+
+          if($(sib).val() != ''){
+            empty = false;
+            console.log(empty,'falsesb');
+          } else {
+            empty = true;
+          }
+
+        } else {
+          empty = true;
+        }
+
+      });
+
+      // on key up
+      if (empty == true) {
+          $('input#Submit').attr('disabled', 'disabled');
+          $('.addtional-people').removeClass('addcontact');
+      } else {
+          $('input#Submit').removeAttr('disabled');
+          $('.addtional-people').addClass('addcontact');
+      }
+
+    });
+
+
+    if ($('.item-referrals').length) {
+        // it exists
+
+        $('.item-referrals .grid-x.grid-padding-x').hide(0);
+        $('.item-referrals .grid-x.grid-padding-x:nth-child(' + 1 + ')').slideDown();
+
+        let refCount = 1;
+
+        $('.addtional-people .text').on('click', function() {
+          if(empty == false){
+            refCount++;
+
+            empty= true;
+            $('input#Submit').attr('disabled', 'disabled');
+            $('.addtional-people').removeClass('addcontact');
+
+
+            if (refCount >= 5) {
+              $('.addtional-people').fadeOut();
+            }
+
+            $('.item-referrals .grid-x.grid-padding-x:nth-child(' + refCount + ')').slideDown();
+          }
+
+        });
+
+        $('form#referralForm input, .form-content input,.form-content textarea').focus(function() {
+          console.log('Handler for .focus() called.');
+          $(this)
+            .siblings('span')
+            .addClass('hasstext');
+        });
+
+        $('form#referralForm input, .form-content input,.form-content textarea').on('blur', function() {
+          if ($(this).val()) {
+            $(this)
+              .siblings('span')
+              .addClass('hasstext');
+          } else {
+            $(this)
+              .siblings('span')
+              .removeClass('hasstext');
+          }
+        });
+
+      }
+
+  // ready
 });
 
 
 
 // $(document).ready(function(){
-
-
-//   $('form > input').keyup(function() {
-
-//     var empty = false;
-//     $('form > input').each(function() {
-//         if ($(this).val() == '') {
-//             empty = true;
-//         }
-//     });
-
-//     if (empty) {
-//         $('#register').attr('disabled', 'disabled'); // updated according to http://stackoverflow.com/questions/7637790/how-to-remove-disabled-attribute-with-jquery-ie
-//     } else {
-//         $('#register').removeAttr('disabled'); // updated according to http://stackoverflow.com/questions/7637790/how-to-remove-disabled-attribute-with-jquery-ie
-//     }
+//   if($('.limg').length){
+//     setTimeout(()=>{
+//       let srcD = $('.limg').attr('data-lsrc');
+//       $('.limg').attr('src',srcD);
+//     },0)
+//   }
 // });
-
-// });
-

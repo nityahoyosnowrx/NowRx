@@ -39,8 +39,8 @@
     <meta name="theme-color" content="#121212">
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
     <!-- ?v=<?php echo time(); ?> -->
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/public/frontend.css?vs=<?php echo mktime(); ?>">
-    <!-- <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/public/frontend.css"> -->
+    <!-- <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/public/frontend.css?vs=<?php echo mktime(); ?>"> -->
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/public/frontend.css?v=12">
     <!-- WP HEAD -->
     <?php wp_head(); ?>
     <meta name="p:domain_verify" content="3f36cac4340da88df6ca76c1a431cd53" />
@@ -81,7 +81,7 @@
                         <a class="main-nav-logo" href="<?php echo get_site_url(); ?>"
                             title="Pharmacy delivery in hours. Just pay your normal copay.">
                             <figure class="sk">
-                                <img src="<?php echo get_template_directory_uri(); ?>/library/images/NowRx-Logo-Pharmacy.png"
+                                <img src="<?php echo get_template_directory_uri(); ?>/images/NowRx-Pharmacy-Delivery-Logo.webp"
                                     class="orbit-image" alt="NowRx Pharmacy Logo" height="60px" width="150px">
                             </figure>
                         </a>

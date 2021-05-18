@@ -55,12 +55,10 @@
         <div class="form-content">
             <script >
             window.addEventListener('load', function() {
-                setTimeout(function(){
                     hbspt.forms.create({
                         portalId: "5952677",
                         formId: "ded00596-ad7a-46b6-9069-bb3552b72735"
                     });
-                },2000)
             });
             </script>
         </div>

@@ -77,12 +77,11 @@
         <div class="content">
             <div class="sectitle">
                 <h2 class="title">Refer a Friend</h2>
-                <p>Earn $20 For Every Qualifying Referral</p>
             </div>
             <form id="referralForm" name="referralForm" novalidate method="post" action="/hubspot-post-2.php">
                 <div class="grid-container">
                     <div id="referral-error"
-                        style="color:#f00;background-color:#ffdede;padding:5px;border-radius:10px;display:none;">
+                        style="text-align: center;font-size: 14px;color:#f00;background-color:#ffdede;padding: 5px 020px;border-radius: 20px;display:none;">
                         Please enter the email address registered with NowRx.com
                     </div>
                     <div class="desc">
@@ -92,23 +91,18 @@
                         <div class="medium-6 cell">
                             <label>
                                 <span>Your Name</span>
-                                <input type="text" data-placeholder="Customer Name" placeholder="Your Name"
-                                    name="referring_name" required>
-
+                                <input type="text" data-placeholder="Customer Name" placeholder="Your Name" name="referring_name" required>
                             </label>
 
                         </div>
                         <div class="medium-6 cell">
                             <label>
                                 <span>Your Email Address</span>
-                                <input type="email" data-placeholder="Customer Email" placeholder="Your Email Address"
-                                    name="referring_email" required>
-
+                                <input type="email" data-placeholder="Customer Email" placeholder="Your Email Address" name="referring_email" required>
                             </label>
 
                         </div>
                     </div>
-
                 </div>
 
                 <div class="grid-container fillform">
@@ -123,18 +117,13 @@
                             <div class="medium-6 cell">
                                 <label>
                                     <span>Referral Name</span>
-                                    <input type="text" data-placeholder="Customer Name" placeholder="Referral Name"
-                                        name="referral_name_1" required>
-
+                                    <input class="referralinput" type="text" data-placeholder="Customer Name" placeholder="Referral Name" name="referral_name_1" required>
                                 </label>
-
                             </div>
                             <div class="medium-6 cell">
                                 <label>
                                     <span>Referral Email Address</span>
-                                    <input type="email" data-placeholder="Customer Email"
-                                        placeholder="Referral Email Address" name="referral_email_1" required>
-
+                                    <input class="referralinput" type="email" class="" data-placeholder="Customer Email" placeholder="Referral Email Address" name="referral_email_1" required>
                                 </label>
                             </div>
                         </div>
@@ -144,18 +133,14 @@
                             <div class="medium-6 cell">
                                 <label>
                                     <span>Referral Name</span>
-                                    <input type="text" data-placeholder="Customer Name" placeholder="Referral Name"
-                                        name="referral_name_2" required>
-
+                                    <input type="text" class="referralinput" data-placeholder="Customer Name" placeholder="Referral Name" name="referral_name_2" required>
                                 </label>
 
                             </div>
                             <div class="medium-6 cell">
                                 <label>
                                     <span>Referral Email Address</span>
-                                    <input type="email" data-placeholder="Customer Email"
-                                        placeholder="Referral Email Address" name="referral_email_2" required>
-
+                                    <input class="referralinput" type="email" class="" data-placeholder="Customer Email" placeholder="Referral Email Address" name="referral_email_2" required>
                                 </label>
                             </div>
                         </div>
@@ -165,18 +150,14 @@
                             <div class="medium-6 cell">
                                 <label>
                                     <span>Referral Name</span>
-                                    <input type="text" data-placeholder="Customer Name" laceholder="Referral Name"
-                                        name="referral_name_3" required>
-
+                                    <input type="text" class="referralinput" data-placeholder="Customer Name" placeholder="Referral Name" name="referral_name_3" required>
                                 </label>
 
                             </div>
                             <div class="medium-6 cell">
                                 <label>
                                     <span>Referral Email Address</span>
-                                    <input type="email" data-placeholder="Customer Email"
-                                        placeholder="Referral Email Address" name="referral_email_3" required>
-
+                                    <input type="email" class="referralinput" data-placeholder="Customer Email" placeholder="Referral Email Address" name="referral_email_3" required>
                                 </label>
                             </div>
                         </div>
@@ -186,18 +167,14 @@
                             <div class="medium-6 cell">
                                 <label>
                                     <span>Referral Name</span>
-                                    <input type="text" data-placeholder="Customer Name" laceholder="Referral Name"
-                                        name="referral_name_4" required>
-
+                                    <input type="text" class="referralinput" data-placeholder="Customer Name" placeholder="Referral Name" name="referral_name_4" required>
                                 </label>
 
                             </div>
                             <div class="medium-6 cell">
                                 <label>
                                     <span>Referral Email Address</span>
-                                    <input type="email" data-placeholder="Customer Email"
-                                        placeholder="Referral Email Address" name="referral_email_4" required>
-
+                                    <input type="email" class="referralinput" data-placeholder="Customer Email" placeholder="Referral Email Address" name="referral_email_4" required>
                                 </label>
                             </div>
                         </div>
@@ -207,18 +184,14 @@
                             <div class="medium-6 cell">
                                 <label>
                                     <span>Referral Name</span>
-                                    <input type="text" data-placeholder="Customer Name" laceholder="Referral Name"
-                                        name="referral_name_5" required>
-
+                                    <input type="text" class="referralinput" data-placeholder="Customer Name" placeholder="Referral Name" name="referral_name_5" required>
                                 </label>
 
                             </div>
                             <div class="medium-6 cell">
                                 <label>
                                     <span>Referral Email Address</span>
-                                    <input type="email" data-placeholder="Customer Email"
-                                        placeholder="Referral Email Address" name="referral_email_5" required>
-
+                                    <input type="email" class="referralinput" data-placeholder="Customer Email" placeholder="Referral Email Address" name="referral_email_5" required>
                                 </label>
                             </div>
                         </div>
@@ -284,8 +257,6 @@
                     <p>
                         Submit your referrals using our Refer a Friend form. Make sure you use the same email address
                         NowRx has on file.
-
-
                     </p>
                 </div>
             </div>
@@ -301,12 +272,8 @@
                             data-src="<?php echo get_template_directory_uri(); ?>/library/images/Confirmation-Icon.png"
                             alt="We Confirm Delivery" class="pic lozad ">
                     </div>
-
                     <p>
-                        We will send your referrals an email letting them know you have referred them and telling them
-                        how to get started.
-
-
+                        We will send your referrals an email letting them know and telling them how to get started.
                     </p>
                 </div>
             </div>
@@ -324,8 +291,7 @@
                     </div>
 
                     <p>
-                        Once your referral gets their first delivery from NowRx, we will mail you a $20 Gift Card. (No
-                        Delivery = No Gift Card)
+                    Once your referral has received their first delivery from NowRx, we will mail you a $20 Gift Card.
                     </p>
                 </div>
             </div>
@@ -676,7 +642,8 @@
 
 <script type="text/javascript">
 jQuery(document).ready(function() {
-    jQuery('#Submit').click(function() {
+    jQuery('#Submit').click(function(e) {
+        e.preventDefault();
         //validating form fields
         jQuery("#referral-error").hide(500);
 
@@ -690,7 +657,6 @@ jQuery(document).ready(function() {
             jQuery("#referral-error").html("Please enter your Name");
             jQuery("#referral-error").show(500);
             jQuery('input[name="referring_name"]').css("background-color", "#ffdede");
-            window.scrollTo(0, 0);
             return false;
         }
 
@@ -698,7 +664,6 @@ jQuery(document).ready(function() {
             jQuery("#referral-error").html("Please enter your Email Address");
             jQuery("#referral-error").show(500);
             jQuery('input[name="referring_email"]').css("background-color", "#ffdede");
-            window.scrollTo(0, 0);
             return false;
         }
 
@@ -706,7 +671,6 @@ jQuery(document).ready(function() {
             jQuery("#referral-error").html("Please enter a valid email address");
             jQuery("#referral-error").show(500);
             jQuery('input[name="referring_email"]').css("background-color", "#ffdede");
-            window.scrollTo(0, 0);
             return false;
         }
 
@@ -714,7 +678,6 @@ jQuery(document).ready(function() {
             jQuery("#referral-error").html("Please enter at least one referral");
             jQuery("#referral-error").show(500);
             jQuery('input[name="referral_name_1"]').css("background-color", "#ffdede");
-            window.scrollTo(0, 0);
             return false;
         }
 
@@ -732,7 +695,6 @@ jQuery(document).ready(function() {
                 }
                 jQuery("#referral-error").html("Please enter all fields for the referrral");
                 jQuery("#referral-error").show(500);
-                window.scrollTo(0, 0);
                 return false;
             }
 
@@ -745,7 +707,6 @@ jQuery(document).ready(function() {
                     jQuery("#referral-error").html("Please enter a valid email address");
                     jQuery("#referral-error").show(500);
                     jQuery('input[name="referral_email_' + i + '"]').css("background-color", "#ffdede");
-                    window.scrollTo(0, 0);
                     return false;
                 }
             }
@@ -764,7 +725,6 @@ jQuery(document).ready(function() {
                     jQuery("#referral-error").show(500);
                     jQuery('input[name="referring_email"]').css("background-color",
                         "#ffdede");
-                    window.scrollTo(0, 0);
                     console.log('email not found');
                     return false;
                 } else {

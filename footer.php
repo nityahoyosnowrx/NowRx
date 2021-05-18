@@ -180,7 +180,11 @@ else:
     </div>
 </section>
 <?php endif; ?>
-<?php if(!is_page('nowprep')): ?>
+
+<?php if(!is_page('nowprep')):
+    if(!is_page('referral')){
+
+    ?>
 <div class="calltoaction">
     <div class="container">
         <div class="content">
@@ -200,7 +204,11 @@ else:
         </div>
     </div>
 </div>
-<?php endif; ?>
+<?php
+    }
+
+endif; ?>
+
 <?php wp_footer(); ?>
 </div> <!-- closes off canvas content -->
 <script async>

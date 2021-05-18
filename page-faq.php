@@ -15,8 +15,6 @@
 
 <?php get_header(); ?>
 
-
-
 <script type="application/ld+json">
 {
     "@context": "https://schema.org",

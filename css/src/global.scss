@@ -1728,7 +1728,7 @@ article.article-block.location-item {
 		width: 100%;
 		max-width: 60%;
 		margin-left: 10%;
-		margin-top: -140px;
+		margin-top: -90px;
 		@media screen and (max-width: 992px) {
 			padding: 0;
 			max-width: 100%;
@@ -1876,9 +1876,13 @@ article.article-block.location-item {
 			margin: 0 0 10px;
 		}
 	}
+	header.entry-header {
+		@media screen and (min-width: 992px) {
+			max-width: 50%;
+		}
+	}
 	h1.entry-title {
-		font-size: 3.5rem;
-		font-size: 2.5rem;
+		font-size: 2.3rem;
 		letter-spacing: -1px;
 		font-weight: 800;
 		line-height: 1em;
@@ -2118,14 +2122,11 @@ main#main header.article-header.tynk.locations-header.page404 .content {
 }
 
 p#breadcrumbs {
-	text-transform: capitalize;
 	font-weight: 600;
-	font-weight: 600;
-	letter-spacing: 1px;
+	letter-spacing: 0;
 	text-transform: uppercase;
 	font-size: 14px;
 	line-height: 30px;
-	/* color: #038ed8; */
 	margin: 0px 0 30px;
 	display: block;
 	@media screen and (max-width: 992px) {
@@ -2532,27 +2533,41 @@ section.hero-home.contactpage {
 
 section.referralform {
 	padding: 20px 0;
+
 	.content {
 		.column-half.content-col {
 			max-width: 600px;
 			left: 60px;
 			padding: 40px 40px;
+			@media screen and (max-width: 992px) {
+				left: 0;
+				padding: 40px 0;
+			}
+			h1.hiw-title {
+				@media screen and (max-width: 992px) {
+					font-size: 8.8vw;
+				}
+			}
 		}
 	}
 }
 section#referralform {
 	padding: 20px 0;
+	max-width: 1430px;
+	margin: 0 auto;
+	width: 100%;
 
 	.grid-container {
 		margin: 0 auto;
 	}
+
 	input {
 		margin: 0 0 7px;
 		display: inline-block;
 		width: 90%;
 		max-width: 500px;
 		font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-		font-size: 16px;
+		font-size: 14px;
 		font-weight: 400;
 		line-height: 22px;
 		color: #33475b;
@@ -2566,22 +2581,32 @@ section#referralform {
 		min-height: 27px;
 		min-width: 100%;
 
+		@media screen and (max-width: 992px) {
+			font-size: 16px;
+		}
+
+
+		&:hover,
+		&:focus{
+
+			background: #fff;
+			box-shadow: none;
+
+		}
 	}
 
 	p {
 		color: #717171;
-		text-align: left;
-		font-size: 12px;
+		font-size: 10px;
 		margin: 0 0 10px;
+		text-align: center;
 	}
-
-
 
 	input#Submit {
 		min-width: 0;
 		border-radius: 30px;
 		width: auto;
-		margin: 0 ;
+		margin: 0;
 		min-width: 210px;
 		padding: 15px 20px;
 		background-image: -webkit-gradient(
@@ -2599,17 +2624,22 @@ section#referralform {
 		background-color: #32a531;
 		color: #fff;
 		&[disabled] {
-			opacity: .5;
+			opacity: 0.5;
 		}
 	}
 
 	.mediumcl {
 		display: flex;
+		justify-content: center;
 		margin: 30px 0 0;
 	}
 
 	.sectitle h2.title {
 		font-size: 3rem;
+		text-align: center;
+		@media screen and (max-width: 992px) {
+			font-size: 2rem;
+		}
 	}
 
 	span {
@@ -2617,6 +2647,12 @@ section#referralform {
 		display: block;
 		text-align: center;
 		margin: 0 0 5px;
+		border: 2px solid #eee;
+		border-radius: 20px;
+		padding: 8px 15px;
+		width: 100%;
+		align-items: center;
+		justify-content: center;
 	}
 	.grid-container {
 		padding: 0;
@@ -2628,8 +2664,6 @@ section#referralform {
 			width: 100%;
 		}
 	}
-
-
 
 	.addtional-people .en {
 		color: inherit;
@@ -2649,7 +2683,7 @@ section#referralform {
 		align-items: flex-start;
 		justify-content: flex-start;
 		position: relative;
-    	width: 100%;
+		width: 100%;
 
 		@media screen and (max-width: 992px) {
 			flex-direction: column;
@@ -2677,6 +2711,7 @@ section#referralform {
 			z-index: 123;
 			border-radius: 0 30px;
 			max-width: 610px;
+			width: 100%;
 			padding: 60px 60px;
 
 			@media screen and (max-width: 992px) {
@@ -2691,24 +2726,24 @@ section#referralform {
 
 			.sectitle {
 				text-align: left;
-				margin: 0 0 ;
-				 p{
+				margin: 0 0;
+				p {
 					margin-bottom: 1rem;
 					font-size: inherit;
 					line-height: 1.6;
 					text-rendering: optimizeLegibility;
-				 }
+				}
 			}
-			.desc{
+			.desc {
 				padding-top: 10px;
 			}
-			.addtional-people{
+			.addtional-people {
 				span {
 					display: flex;
 				}
 			}
 
-			 .addtional-people .en {
+			.addtional-people .en {
 				color: #a7a7a7ee;
 			}
 
@@ -2720,6 +2755,16 @@ section#referralform {
 				color: #afafaf;
 			}
 
+			.addtional-people.addcontact .en {
+				color: #1f88ca;
+			}
+
+			.addtional-people.addcontact .icon {
+				color: #1f88ca;
+			}
+			.addtional-people.addcontact .icon svg {
+				color: #1f88ca;
+			}
 
 			label {
 				font-size: 12px;
@@ -2727,7 +2772,7 @@ section#referralform {
 				font-weight: 700;
 				padding-right: 10px;
 				display: block;
-				span{
+				span {
 					position: absolute;
 					top: 0;
 					left: -9999px;
@@ -2745,7 +2790,7 @@ section#referralform {
 				max-width: 500px;
 				padding: 0 20px;
 				font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-				font-size: 16px;
+				// font-size: 16px;
 				font-weight: 400;
 				line-height: 22px;
 				color: #33475b;
@@ -2759,11 +2804,10 @@ section#referralform {
 				border-radius: 20px;
 				min-height: 27px;
 
-				&::placeholder{
+				&::placeholder {
 					font-style: 16px;
 				}
 			}
-
 		}
 	}
 
@@ -2775,9 +2819,9 @@ section#referralform {
 
 		@media screen and (max-width: 992px) {
 			width: auto;
-    		margin: 0 auto;
-    		max-width: 100%;
-			padding:0 10px;
+			margin: 0 auto;
+			max-width: 100%;
+			padding: 0 10px;
 		}
 		picture {
 			max-width: 100%;
@@ -2785,7 +2829,14 @@ section#referralform {
 			overflow: hidden;
 			max-height: 700px;
 			@media screen and (max-width: 992px) {
-				max-height: 70vh;
+				max-height: 320px;
+			}
+			img{
+				@media screen and (max-width: 992px) {
+						max-height: 320px;
+						object-fit: cover;
+						object-position: center;
+				}
 			}
 		}
 	}
@@ -3669,8 +3720,6 @@ div#for-doctors-learnmore h2.title {
 			padding: 30px 10px 60px;
 		}
 	}
-
-
 
 	.descbot p {
 		margin: 0;
