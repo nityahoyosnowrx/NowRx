@@ -1,4 +1,4 @@
-<?php get_header(); 
+<?php get_header();
 // Template Name: prep/waitlist/thank-you
 ?>
 <!-- Event snippet for Form Completion conversion page -->
@@ -12,22 +12,7 @@ gtag('event', 'conversion', {'send_to': 'AW-875503484/Bj1NCMmPzboBEPy-vKED'});
 }
 </style>
 <main id="main" class="main-class" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
-<div class="rvl">
 
-<!-- <img class="imageblock lozad" data-toggle-class="active" data-src="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020.png" alt="prescription being delivered to mother" height="100px" width="450px"> -->
-
-<!-- <picture class="lozad imageblock" data-iesrc="<?php echo get_template_directory_uri(); ?>/images/AdobeStock_91568410.webp" data-alt="prescription being delivered to mother" data-toggle-class="active">
-    <source type="<?php echo get_template_directory_uri(); ?>/images/AdobeStock_91568410.webp" srcset="AdobeStock_91568410.webp">
-    <source type="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020.png" srcset="AdobeStock_91568410.jpeg">
-    <img class="imageblock lozad" data-toggle-class="active" data-src="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020.png" alt="prescription being delivered to mother" height="100px" width="450px">
-</picture> -->
-
-        <picture class="lozad" data-iesrc="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020.png" data-alt="NowRx Pharmacy Surescripts 2020 White Coat Award Finalist (Highest Accuracy) " data-toggle-class="active">
-            <source type="image/png" srcset="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020.png">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020lowrez.jpg" class="imageblock" height="100px" width="450px" alt="NowRx Pharmacy Surescripts 2020 White Coat Award Finalist (Highest Accuracy) ">
-        </picture>
-
-</div>
     <section class="article">
         <article id="post-<?php the_ID(); ?>" role="article" itemscope itemtype="http://schema.org/BlogPosting">
             <div class="container">
@@ -58,9 +43,9 @@ gtag('event', 'conversion', {'send_to': 'AW-875503484/Bj1NCMmPzboBEPy-vKED'});
                         <div class="rvl">
                             <span class="follow-links">
                                 <div class="txt">
-                                    Follow NowPrEP On Social Media: 
-                                    <a href="https://www.facebook.com/NowPrEPTelehealth" class="li" target="_blank">Facebook</a> 
-                                    <a href="https://www.instagram.com/now_prep/" class="li" target="_blank">Instagram</a> 
+                                    Follow NowPrEP On Social Media:
+                                    <a href="https://www.facebook.com/NowPrEPTelehealth" class="li" target="_blank">Facebook</a>
+                                    <a href="https://www.instagram.com/now_prep/" class="li" target="_blank">Instagram</a>
                                 </div>
                             </span>
                         </div>

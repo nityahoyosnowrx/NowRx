@@ -13,20 +13,7 @@ get_header();
 <main id="main" class="main-class mainlocation" role="main" itemscope itemprop="mainContentOfPage"
     itemtype="http://schema.org/Blog">
 
-    <div class="rvl">
 
-        <picture class="lozad"
-            data-iesrc="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020.png"
-            data-alt="NowRx Pharmacy Surescripts 2020 White Coat Award Finalist (Highest Accuracy)"
-            data-toggle-class="active">
-            <source type="image/png"
-                srcset="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020.png">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020lowrez.jpg"
-                class="imageblock" alt="NowRx Pharmacy Surescripts 2020 White Coat Award Finalist (Highest Accuracy)"
-                height="100px" width="450px">
-        </picture>
-
-    </div>
 
 
     <article class="article-block location-item statelocation">
@@ -75,37 +62,7 @@ get_header();
 
 
 
-    <!-- visit faq -->
-    <section class="visit-faq">
-        <div class="container">
-            <div class="content">
-                <div class="rvl">
-                    <span class="sub-headline">
-                        Have additional questions about NowRx Pharmacy
-                    </span>
-                </div>
-                <div class="rvl">
-                    <h2 class="sec-title">
-                        Visit our FAQ
-                    </h2>
-                </div>
-                <div class="rvl">
-                    <div class="btn-container">
-                        <a href="<?= get_site_url(); ?>/faqs/#faqblock" class="rx-btn rx-dg">
-                            Frequently Asked Questions
-                        </a>
-                    </div>
-                </div>
-                <div class="rvl">
-                    <div class="small-block">
-                        You can also text us at (844) 466-6979 or send an email to info@nowrx.com and we will get back
-                        to
-                        you as soon as possible.
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <?php include('section-visitfaq.php'); ?>
 
 
 

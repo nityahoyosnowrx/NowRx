@@ -63,7 +63,7 @@ header.main {
 	z-index: 1123;
 	top: 0;
 	transition: all 0.3s;
-	@media screen and (max-width: 992px) {
+	@media screen and (max-width: 1280px) {
 		padding: 0;
 		background-color: #fff;
 	}
@@ -81,19 +81,53 @@ header.main {
 		// background-color: #FFFFFF;
 		padding: 20px 30px;
 
-		@media screen and (max-width: 992px) {
+		@media screen and (max-width: 1280px) {
 			padding: 0;
 			flex-direction: row-reverse;
 		}
 		.rlcontainer {
-			@media screen and (max-width: 992px) {
+			@media screen and (max-width: 1280px) {
 				width: 100%;
 				display: flex;
 				flex-direction: row-reverse;
 				position: relative;
 				background: #fff;
-				padding: 20px 15px;
+				padding: 20px 35px 10px;
 				z-index: 123;
+				flex-wrap: wrap;
+				@media screen and (max-width: 700px) {
+					padding: 5px 20px;
+				}
+			}
+		}
+	}
+
+	.linksmsall {
+		margin-right: 40px;
+		display: none;
+
+		@media screen and (max-width: 1280px) {
+			display: flex;
+			margin: 0 40px 0 auto;
+			align-items: center;
+			justify-content: center;
+		}
+		@media screen and (max-width: 700px) {
+			margin: 0;
+			width: 100%;
+			order: 2;
+			border-top: 1px solid #eee;
+			margin-top: 10px;
+			display: none;
+		}
+		a.linksmal {
+			color: #1a2c3d;
+			font-size: 1rem;
+			padding: 0 10px;
+			@media screen and (max-width: 700px) {
+				margin: 0 auto;
+				font-size: 12px;
+				padding: 5px;
 			}
 		}
 	}
@@ -101,14 +135,15 @@ header.main {
 	.responsive-bar {
 		position: relative;
 		display: none;
-		@media screen and (max-width: 992px) {
+		@media screen and (max-width: 1280px) {
 			display: block;
 			position: relative;
-			margin-left: auto;
+			margin-left: 0;
 			margin-right: 0;
 			align-items: center;
 			display: flex;
 		}
+
 		a.menu-icon-toggle {
 			position: relative;
 			top: 0;
@@ -116,7 +151,7 @@ header.main {
 			font-weight: 700;
 			color: #192d3e;
 			font-size: 1.1rem;
-			padding-right: 5px;
+			padding-right: 0;
 			display: flex;
 			align-items: center;
 			justify-content: center;
@@ -129,8 +164,8 @@ header.main {
 		}
 	}
 	.logo-block {
-		@media screen and (max-width: 992px) {
-			// margin-left: 20px;
+		@media screen and (max-width: 1280px) {
+			margin-right: auto;
 		}
 	}
 	a.main-nav-logo {
@@ -148,7 +183,7 @@ header.main {
 		width: 100%;
 		padding-left: 30px;
 
-		@media screen and (max-width: 992px) {
+		@media screen and (max-width: 1280px) {
 			position: absolute;
 			top: 100%;
 			left: 0;
@@ -175,7 +210,7 @@ header.main {
 		}
 		li.buttonfill {
 			margin-left: auto;
-			@media screen and (max-width: 992px) {
+			@media screen and (max-width: 1280px) {
 				margin: 0;
 				padding: 0 10px;
 				min-width: 100%;
@@ -190,7 +225,7 @@ header.main {
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		@media screen and (max-width: 992px) {
+		@media screen and (max-width: 1280px) {
 			flex-direction: column;
 			padding: 20px 10px 40px;
 		}
@@ -210,7 +245,7 @@ header.main {
 			font-family: $fontround;
 			transition: all 0.3s;
 			@media screen and (max-width: 1040px) {
-				padding: .8rem 8.8px 0;
+				padding: 0.8rem 8.8px 0;
 			}
 			&:after {
 				content: close-quote;
@@ -233,11 +268,11 @@ header.main {
 				background: transparent;
 				// border-bottom: 2px solid #048eda;
 				// padding-bottom: 8px;
-				@media screen and (max-width: 992px) {
+				@media screen and (max-width: 1280px) {
 					// color: #1f4f8b;
 				}
 			}
-			@media screen and (max-width: 992px) {
+			@media screen and (max-width: 1280px) {
 				color: #fff;
 				font-size: 1.5rem;
 				padding: 10px 20px;
@@ -266,7 +301,7 @@ header.main {
 		z-index: 123;
 		font-size: 12px;
 
-		@media screen and (max-width: 992px) {
+		@media screen and (max-width: 1280px) {
 			margin: 20px 0 0;
 			padding: 15px 25px;
 			font-size: 3.5vw;
@@ -387,7 +422,7 @@ h2 {
 body.page-template.page-template-refill-and-transfer-prescriptions {
 	section.hero-home {
 		@media screen and (max-width: 992px) {
-			margin: 78px 0 0;
+			margin: 100px 0 0;
 		}
 		.titlecolumn {
 			display: none;
@@ -446,7 +481,7 @@ body.page-template.page-template-refill-and-transfer-prescriptions {
 		margin: 0 40px;
 
 		@media screen and (max-width: 992px) {
-			min-height: 22vh;
+			min-height: 230px;
 			margin: 10px 0 20px;
 		}
 
@@ -605,11 +640,11 @@ section.quotes {
 	.quoteitems {
 		position: relative;
 		width: 100%;
-		min-height: 50vh;
+		min-height: 400px;
 		margin: 0 40px;
 
 		@media screen and (max-width: 992px) {
-			min-height: 22vh;
+			min-height: 230px;
 			margin: 10px 0 20px;
 		}
 
@@ -761,19 +796,64 @@ section.hero-home {
 	position: relative;
 	margin: 110px 0 0;
 
+	// 404 page
+	&.page404 {
+		margin: 90px 0 0;
+		@media screen and (max-width: 1280px) {
+			margin: 20px 0 0;
+		}
+
+		.content {
+			max-width: 1400px;
+			margin: 0 auto;
+			position: relative;
+
+			.column-half.content-col {
+				box-shadow: none;
+				left: 0;
+				max-width: 710px;
+
+				@media screen and (max-width: 1280px) {
+					max-width: 100%;
+				}
+
+				span.k {
+					@media screen and (min-width: 1280px) {
+						display: block;
+					}
+				}
+			}
+			.column-half.image-col {
+				margin-left: 45vw;
+
+				@media screen and (max-width: 1280px) {
+					margin-left: 0;
+				}
+
+				.orbit-image {
+					@media screen and (max-width: 1280px) {
+						object-fit: contain;
+						background-color: $f;
+					}
+				}
+			}
+		}
+	}
+
+	// frontpage
 	&.videodev {
-		@media screen and (min-width: 992px) {
+		@media screen and (min-width: 1280px) {
 			.content {
 				max-width: 1400px;
-    			margin: 0 auto;
-    			position: relative;
+				margin: 0 auto;
+				position: relative;
 
 				.column-half.content-col {
 					-webkit-box-shadow: 0 5px 30px -25px Rgb(0 0 0/72%);
 					box-shadow: 0 5px 30px -25px Rgb(0 0 0/72%);
 					background: #fff;
-				    max-width: 50vw;
-    				padding: 4vw 40px;
+					// max-width: 50vw;
+					// padding: 4vw 40px;
 					position: absolute;
 					top: 50%;
 					left: 10px;
@@ -781,21 +861,18 @@ section.hero-home {
 					transform: translateY(-50%);
 					z-index: 123;
 					border-radius: 0 30px;
-					display: flex;
-					align-items: center;
-					justify-content: center;
 					@media screen and (min-width: 1450px) {
-						width: 50vw;
-						max-width: 700px;
+						// width: 50vw;
+						// max-width: 700px;
 					}
 					.contentblock {
-						max-width: 530px;
+						// max-width: 530px;
 					}
 				}
 				.column-half.image-col {
-					margin-left: 45vw;
+					// margin-left: 45vw;
 					@media screen and (min-width: 1450px) {
-						margin-left: 35vw;
+						// margin-left: 35vw;
 					}
 					figure.image {
 						margin: 0;
@@ -821,9 +898,12 @@ section.hero-home {
 			}
 		}
 
-		@media screen and (max-width: 992px) {
+		@media screen and (max-width: 1280px) {
 			padding: 0;
-			margin: 75px 0 0;
+			margin: 105px 0 0;
+			@media screen and (max-width: 700px) {
+				margin: 75px 0 0;
+			}
 			.content .column-half.image-col {
 				margin: 0;
 			}
@@ -858,7 +938,7 @@ section.hero-home {
 				padding: 0;
 				border-radius: 15px 0;
 				overflow: hidden;
-				video.orbit-image{
+				video.orbit-image {
 					display: none;
 				}
 				figure.image {
@@ -866,6 +946,12 @@ section.hero-home {
 					width: 100%;
 					img.pic.limg {
 						width: 100%;
+						height: 51vh;
+						object-fit: cover;
+						object-position: center;
+						@media screen and (max-width: 700px) {
+							height: 36vh;
+						}
 					}
 				}
 			}
@@ -880,8 +966,8 @@ section.hero-home {
 
 	&.refillstation {
 		padding: 40px 0 0;
-		@media screen and (max-width: 992px) {
-			padding: 20px 0 0;
+		@media screen and (max-width: 1280px) {
+			padding: 40px 0 0;
 		}
 	}
 
@@ -889,35 +975,38 @@ section.hero-home {
 		padding: 90px 0 50px;
 	}
 
-	@media screen and (min-width: 992px) and (max-width: 1100px) {
+	@media screen and (min-width: 1280px) and (max-width: 1100px) {
 		padding: 90px 0;
 	}
 
-	@media screen and (max-width: 992px) {
-		padding: 90px 0 90px;
-		margin: 95px 0 0;
+	@media screen and (max-width: 1280px) {
+		padding: 83px 0 20px;
+		margin: 20px 0 0;
+		@media screen and (max-width: 700px) {
+			padding: 55px 0 20px;
+		}
 	}
 
 	&.refillstation {
 		.content {
 			span.sub-headline {
-				@media screen and (max-width: 992px) {
+				@media screen and (max-width: 1280px) {
 					font-size: 10px;
 				}
 			}
-			@media screen and (max-width: 992px) {
+			@media screen and (max-width: 1280px) {
 				flex-direction: column-reverse;
 			}
 			.column-half {
 				.content-col {
 					padding-right: 50px;
-					@media screen and (max-width: 992px) {
+					@media screen and (max-width: 1280px) {
 						padding: 30px 0 60px;
 					}
 				}
 				.image-col {
 					.imageblock {
-						@media screen and (max-width: 992px) {
+						@media screen and (max-width: 1280px) {
 							display: none;
 						}
 					}
@@ -933,7 +1022,7 @@ section.hero-home {
 					width: 100%;
 					padding: 0;
 
-					@media screen and (min-width: 992px) {
+					@media screen and (min-width: 1280px) {
 						box-shadow: none;
 						background: transparent;
 						max-width: 100%;
@@ -953,7 +1042,7 @@ section.hero-home {
 						// padding: 30px 20px;
 					}
 
-					@media screen and (max-width: 992px) {
+					@media screen and (max-width: 1280px) {
 						max-width: 100%;
 					}
 				}
@@ -969,7 +1058,7 @@ section.hero-home {
 					@media screen and (max-width: 1200px) {
 					}
 
-					@media screen and (max-width: 992px) {
+					@media screen and (max-width: 1280px) {
 						width: 100%;
 						max-width: 100%;
 					}
@@ -978,7 +1067,7 @@ section.hero-home {
 				&.content-col {
 					@media screen and (max-width: 1200px) {
 					}
-					@media screen and (max-width: 992px) {
+					@media screen and (max-width: 1280px) {
 						width: 100%;
 						// padding: 30px 0 60px;
 						padding: 0;
@@ -1000,11 +1089,11 @@ section.hero-home {
 		left: 0;
 		z-index: 1;
 
-		@media screen and (min-width: 992px) {
+		@media screen and (min-width: 1280px) {
 			border-radius: 0 5px 5px 0;
 		}
 
-		@media screen and (max-width: 992px) {
+		@media screen and (max-width: 1280px) {
 			margin: 0 0 30px;
 		}
 		@media screen and (max-width: 700px) {
@@ -1016,7 +1105,12 @@ section.hero-home {
 	.content {
 		display: flex;
 		align-items: center;
-		@media screen and (max-width: 992px) {
+
+		max-width: 1400px;
+		margin: 0 auto;
+		position: relative;
+
+		@media screen and (max-width: 1280px) {
 			flex-direction: column-reverse;
 		}
 
@@ -1030,7 +1124,7 @@ section.hero-home {
 			text-transform: uppercase;
 			font-family: $fontround;
 			font-size: 1.1rem;
-			@media screen and (max-width: 992px) {
+			@media screen and (max-width: 1280px) {
 				font-size: 12px;
 				font-size: 3.2vw;
 			}
@@ -1040,24 +1134,26 @@ section.hero-home {
 			&.content-col {
 				width: 100%;
 
-				@media screen and (min-width: 992px) {
+				@media screen and (min-width: 1280px) {
 					box-shadow: 0 5px 30px -25px Rgb(0 0 0 / 72%);
 					background: #fff;
 					max-width: 710px;
+					max-width: 50%;
 					padding: 40px 30px 40px 60px;
 					position: absolute;
 					top: 50%;
-					left: 100px;
+					left: 10px;
 					transform: translateY(-50%);
 					z-index: 123;
 					border-radius: 0 30px;
 				}
 
 				@media screen and (max-width: 1200px) {
-					max-width: 55vw;
-					padding: 30px 20px 30px 60px;
+					max-width: 50vw;
+					padding: 40px 30px;
+					// padding: 30px 20px 30px 60px;
 				}
-				@media screen and (max-width: 992px) {
+				@media screen and (max-width: 1280px) {
 					max-width: 100%;
 				}
 				padding: 0;
@@ -1072,12 +1168,15 @@ section.hero-home {
 				align-items: center;
 				justify-content: center;
 				position: relative;
-				margin-left: 43vw;
+
+				margin-left: auto;
+				max-width: 55%;
 
 				@media screen and (max-width: 1200px) {
 				}
-				@media screen and (max-width: 992px) {
+				@media screen and (max-width: 1280px) {
 					width: 100%;
+					margin: 0;
 					max-width: 100%;
 				}
 				picture {
@@ -1088,7 +1187,7 @@ section.hero-home {
 			&.content-col {
 				@media screen and (max-width: 1200px) {
 				}
-				@media screen and (max-width: 992px) {
+				@media screen and (max-width: 1280px) {
 					width: 100%;
 					// padding: 30px 0 60px;
 					padding: 0;
@@ -1096,6 +1195,16 @@ section.hero-home {
 					text-align: center;
 					// max-width: 500px;
 					margin: 0 auto;
+
+					background: #fff;
+					box-shadow: 0 0 20px -25px Rgb(0 0 0/72%);
+					margin: -90px 0 0;
+					padding: 20px;
+					position: relative;
+					z-index: 21;
+					width: auto;
+					border-radius: 0 15px;
+					width: 95%;
 				}
 			}
 		}
@@ -1104,6 +1213,10 @@ section.hero-home {
 
 			@media screen and (max-width: 700px) {
 				margin: 30px 0 0;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				flex-direction: column;
 			}
 		}
 		h1 {
@@ -1114,7 +1227,7 @@ section.hero-home {
 			line-height: 1.15;
 			letter-spacing: -0.1rem;
 
-			@media screen and (min-width: 992px) and (max-width: 1100px) {
+			@media screen and (min-width: 1280px) and (max-width: 1100px) {
 				font-size: 2.5rem;
 			}
 
@@ -1130,13 +1243,14 @@ section.hero-home {
 
 			&.hiw-title {
 				// font-size: 3.6rem;
-				@media screen and (max-width: 992px) {
-					font-size: 9.4vw;
+				@media screen and (max-width: 1280px) {
 					margin: 0 0 20px;
+					font-size: calc(26.97647px + 0.88235vw);
+					padding: 0 5px;
 				}
 			}
 
-			@media screen and (max-width: 992px) {
+			@media screen and (max-width: 1280px) {
 				font-size: 10.2vw;
 				margin: 0 0 20px;
 				font-size: calc(34px + 6 * ((100vw - 320px) / 680));
@@ -1147,7 +1261,7 @@ section.hero-home {
 			color: #008ed8;
 		}
 		p {
-			@media screen and (max-width: 992px) {
+			@media screen and (max-width: 1280px) {
 				max-width: 700px;
 				margin: 0 auto;
 			}
@@ -1170,9 +1284,11 @@ section.hero-home {
 
 		max-height: 470px;
 
-		@media screen and (max-width: 1200px) {
+		@media screen and (min-width: 1280px) and (max-width: 1200px) {
+			height: 60vh;
 		}
-		@media screen and (max-width: 992px) {
+		@media screen and (max-width: 1280px) {
+			border-radius: 15px 0;
 			min-height: 0px;
 			// max-height: 480px;
 			position: relative;
@@ -1180,7 +1296,13 @@ section.hero-home {
 			transform: none;
 			max-width: 100%;
 			width: 100%;
-			display: none;
+			// display: none;
+			max-height: 200px;
+			min-height: 260px;
+			min-height: 51vh;
+			@media screen and (max-width: 700px) {
+				min-height: 36vh;
+			}
 		}
 	}
 
@@ -1189,8 +1311,8 @@ section.hero-home {
 		margin-left: auto;
 		margin-right: auto;
 		padding: 0 20px;
-		@media screen and (max-width: 992px) {
-			padding: 0 10px;
+		@media screen and (max-width: 1280px) {
+			padding: 0 5px;
 		}
 	}
 }
@@ -3387,6 +3509,7 @@ section.pp-section.pp-section--payments {
 		fill: #038ed8;
 		@media screen and (max-width: 992px) {
 			max-height: 70px;
+			min-width: 70px;
 		}
 	}
 
@@ -3462,7 +3585,7 @@ section.pp-section.pp-section--payments {
 		margin: 0 0 5px;
 	}
 	.btn-container {
-		margin: 60px 0 0;
+		margin: 10px 0 0;
 	}
 }
 

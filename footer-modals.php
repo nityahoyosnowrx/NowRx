@@ -13,7 +13,7 @@
             alt="prescription-transfer-or-refill" class="pic lozad">
     </div>
     <div class="content">
-        <h2 class="title">Get Started With NowPrEP</h2>
+        <h2 class="title">Get Started</h2>
         <div class="description">
             <p class="marginzero">
                 <span class="ick">
@@ -25,7 +25,7 @@
                             class=""></path>
                     </svg>
                 </span>
-                PrEP online from the comfort and convenience of your home
+                PrEP online from the comfort of your home
             </p>
             <p class="marginzero">
                 <span class="ick">
@@ -37,7 +37,7 @@
                             class=""></path>
                     </svg>
                 </span>
-                99% of patients pay $0 for consultation and PrEP medication.
+                99% of patients pay $0 for PrEP medication
             </p>
             <p class="marginzero">
                 <span class="ick">
@@ -62,7 +62,6 @@
             });
             </script>
         </div>
-        <p class=""><small>*Some restrictions may apply.</small></p>
     </div>
     <button class="close-button text-center" data-close aria-label="Close reveal" type="button">
         <span aria-hidden="true">&times;</span>

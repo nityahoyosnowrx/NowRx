@@ -42,7 +42,7 @@
       <div class="image">
         <img src="<?php echo get_template_directory_uri(); ?>/library/images/Prescription-Icon.png" alt="end Us Your Prescription" class="pic">
       </div>
-      
+
       <p>
       <strong>New Prescription: </strong>Tell your doctor to fax or ePrescribe to NowRx. <br>
       <strong>Existing Prescription: </strong>Text us at <a href="tel:844-466-6979" class="tellink">(844) 466-6979</a> or submit our online transfer form (<a href="https://nowrx.com/refill-and-transfer-prescriptions/" style="color:#fff;">Click Here</a>)</p>
@@ -54,7 +54,7 @@
     <div class="image">
         <img src="<?php echo get_template_directory_uri(); ?>/library/images/Confirmation-Icon.png" alt="We Confirm Delivery" class="pic">
       </div>
-      
+
 			<p>We will reach out to you via phone to collect your insurance copay confirm your address and set up a delivery time.</p>
 		</div>
 
@@ -64,7 +64,7 @@
       <div class="image">
         <img src="<?php echo get_template_directory_uri(); ?>/library/images/Car-Icon.png" alt="Medication is Delivered" class="pic">
       </div>
-      
+
 			<p>At NowRX Pharmacy employee will deliver your medication in hours or as requested completely free. Just pay your normal copay.</p>
 		</div>
 
@@ -73,7 +73,7 @@
   </div>
 </section>
 
-<!-- 
+<!--
 <div itemscope itemtype="http://schema.org/Review">
     <div itemprop="itemReviewed" itemscope itemtype="http://schema.org/LocalBusiness">
         <span itemprop="name">23d2qwe3d</span><br>
@@ -83,7 +83,7 @@
     </div>
 
     on <time itemprop="datePublished" datetime="32d23d"></time><br>
-    
+
     <div itemprop="reviewRating" itemscope="" itemtype="http://schema.org/Rating">
         <span itemprop="description">323e3dd23</span><br>
         Rating: <span itemprop="ratingValue">5</span><img itemprop="image" src="https://example.com/photos/1x1/seafood-restaurant.jpg" alt="Legal Seafood"/>
@@ -124,7 +124,7 @@
               </p>
               <meta itemprop="ratingValue" content="5"></meta>
             </div>
-           
+
             <div class="imageblock">
               <img itemprop="image" src="<?php echo get_template_directory_uri(); ?>/library/images/3.png" alt="Lina W.">
             </div>
@@ -135,13 +135,13 @@
                   NowRX Customer
                 </div>
               </span>
-            
+
           </blockquote>
         </div>
 
         <!-- block -->
         <div class="block" itemscope itemtype="http://schema.org/Review">
-          
+
           <div itemprop="itemReviewed" itemscope itemtype="http://schema.org/LocalBusiness">
             <meta itemprop="name" content="NowRx Pharmacy">
             <meta itemprop="image" content="<?php echo get_template_directory_uri(); ?>/library/images/NowRx-Logo-Pharmacy.png">
@@ -191,7 +191,7 @@
                 “Huge time saver. They deliver the prescription to your address within a 3 hour time window. No more standing in line or sitting in your idling car waiting.""
               </p>
               <meta itemprop="ratingValue" content="5"></meta>
-            </div>    
+            </div>
 
             <div class="imageblock">
               <img itemprop="image" src="<?php echo get_template_directory_uri(); ?>/library/images/1.png" alt="Tony M.">
@@ -203,7 +203,7 @@
                 NowRX Customer
               </div>
             </span>
-            
+
           </blockquote>
         </div>
       </div>
@@ -218,9 +218,9 @@
 	      <div class="large-12 cell text-center prescription">
 	        <p class="pre-headline">Transfer Prescription to NowRX Pharmacy</p>
 	        <h2 class="headline"><div>Get a $20 Visa Card with</div> Your First Prescription Delivery</h2>
-	        
+
           <a href="https://nowrx.com/refill-and-transfer-prescriptions/" class="button">Transfer  My Prescriptions</a>
-          
+
         </div>
         <div class="large-12 cell text-center ">
         <p>

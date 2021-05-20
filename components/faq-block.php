@@ -6,7 +6,7 @@
                 <div class="titleblock">
                     <div class="rvl">
                         <span class="sub-headline">
-                            Pharmacy Delivery from NowRx
+                        NowRx Pharmacy Delivery
                         </span>
                     </div>
 

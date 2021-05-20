@@ -441,7 +441,7 @@ and be up and running in seconds.
 
 
   // redirect 404 page for custom post type
-  add_action('template_redirect', 'unlisted_jobs_redirect');
+  // add_action('template_redirect', 'unlisted_jobs_redirect');
   function unlisted_jobs_redirect()
   {
     //check for 404

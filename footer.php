@@ -11,7 +11,7 @@ else:
             <div class="large-2 cell small-order-2 medium-order-1">
                 <p><a href="<?= get_site_url(); ?>/"><img class="logo lozad"
                             data-src="<?php echo get_template_directory_uri(); ?>/library/images/NowRx-Logo-Pharmacy.png"
-                            alt="NowRx Pharmacy Logo"></a></p>
+                            alt="NowRx Pharmacy Logo" height="28px" width="122px"></a></p>
                 <p class="text-small">&copy; <?= date('Y'); ?> NowRx.com  <br>
                     All rights reserved. <br>
                     <a href="<?= get_site_url(); ?>/about-us/">About Us</a><br>
@@ -59,12 +59,12 @@ else:
                                     href="https://itunes.apple.com/us//app/nowrx-pharmacy-on-demand/id1066924988"><img
                                         class="lozad" style="max-width: 140px;"
                                         data-src="<?php echo get_template_directory_uri(); ?>/library/images/app-apple-store-button.png"
-                                        alt="Download NowRx Pharmacy on the App Store"></a></li>
+                                        alt="Download NowRx Pharmacy on the App Store" width="499px" height="167px"></a></li>
                             <li><a target="_blank"
                                     href="https://play.google.com/store/apps/details?id=com.nowrx.client"><img
                                         class="lozad" style="max-width: 140px;"
                                         data-src="<?php echo get_template_directory_uri(); ?>/library/images/app-google-store-button.png"
-                                        alt="Get the NowRx Pharmacy app on Google Play"></a></li>
+                                        alt="Get the NowRx Pharmacy app on Google Play" width="499px" height="167px"></a></li>
                     </div>
                 </div>
             </div>
@@ -97,8 +97,8 @@ else:
             <div class="title">
                 <div class="logo">
                     <img class="logo lozad"
-                        data-src="<?php echo get_template_directory_uri(); ?>/library/images/NowRx-Logo-Pharmacy.png"
-                        alt="NowRx Pharmacy Logo">
+                        data-src="<?php echo get_template_directory_uri(); ?>/library/images/NowRx-Pharmacy-Delivery-Logo.webp"
+                        alt="NowRx Pharmacy Logo" width="122px" height="28px">
                 </div>
                 <div class="txt">
                     <b>"Best prescription delivery services in 2021" (CNET)</b>

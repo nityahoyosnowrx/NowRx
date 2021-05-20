@@ -22,20 +22,7 @@
 
 <!-- hero -->
 <section class="hero-home refillstation" id="home">
-    <div class="rvl">
 
-
-        <!-- <picture class="lozad"
-            data-iesrc="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020.png"
-            data-alt="Surescripts 2020 White Coat Award Finalist (Highest Accuracy) " data-toggle-class="active">
-            <source type="image/png"
-                srcset="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020.png">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020lowrez.jpg"
-                class="imageblock" height="100px" width="450px"
-                alt="Surescripts 2020 White Coat Award Finalist (Highest Accuracy) ">
-        </picture> -->
-
-    </div>
 
     <div class="container">
 
@@ -875,80 +862,7 @@
 
 
 
-<section class="how-it-works panel--primary" id="howitworks-doctors">
-    <div class="grid-container">
-        <div class="grid-x grid-padding-x text-center">
-            <div class="large-12 cell">
-                <div class="rvl">
-                    <p class="pre-headline">Using NowRx Pharmacy is Simple</p>
-                </div>
-
-                <div class="rvl">
-                    <h2 class="headline">Here’s How It Works</h2>
-                </div>
-            </div>
-        </div>
-        <div class="grid-x grid-padding-x steps">
-
-            <div class="hiw-cell cell large-4 text-center">
-                <div class="rvl">
-
-                    <h3 class="padding-bottom-3">1. Send Us Your Prescription</h3>
-                    <div class="image">
-                        <img data-toggle-class="active"
-                            data-src="<?php echo get_template_directory_uri(); ?>/library/images/Prescription-Icon.png"
-                            alt="Prescription Icon" class="pic lozad">
-                    </div>
-
-                    <p>
-                        <strong>New Prescription: </strong>Tell your doctor to fax or ePrescribe to NowRx. <br>
-                        <strong>Existing Prescription: </strong>Text <a href="tel:844-466-6979" class="tellink">(844)
-                            466-6979</a> or <a href="<?= get_site_url(); ?>/refill-and-transfer-prescriptions/"
-                            style="color:#fff;">Transfer
-                            Online
-                            Here</a>.
-                    </p>
-                </div>
-            </div>
-
-
-            <div class="hiw-cell cell large-4 text-center">
-                <div class="rvl">
-
-                    <h3 class="padding-bottom-3">2. We Confirm Delivery</h3>
-                    <div class="image">
-                        <img data-toggle-class="active"
-                            data-src="<?php echo get_template_directory_uri(); ?>/library/images/Confirmation-Icon.png"
-                            alt="prescription delivery confirmation check mark icon" class="pic lozad ">
-                    </div>
-
-                    <p>We will reach out to you via phone to collect your insurance copay confirm your address and set
-                        up a
-                        delivery time.</p>
-                </div>
-            </div>
-
-
-            <div class="hiw-cell cell large-4 text-center">
-                <div class="rvl">
-
-                    <h3 class="padding-bottom-3">3. Medication is Delivered</h3>
-                    <div class="image">
-                        <img data-toggle-class="active"
-                            data-src="<?php echo get_template_directory_uri(); ?>/library/images/Car-Icon.png"
-                            alt="Prescription Delivery Car Icon" class="pic lozad">
-                    </div>
-
-                    <p>A NowRx employee will deliver your medication in hours from your local NowRx Pharmacy for free.
-                        All you pay is your normal copay.</p>
-                </div>
-            </div>
-
-
-        </div>
-    </div>
-</section>
-
+<?php include('section-how-it-works.php'); ?>
 
 
 <!-- faq -->
@@ -958,7 +872,7 @@
             <div class="titleblock">
                 <div class="rvl">
                     <span class="sub-headline">
-                        Pharmacy Delivery from NowRx
+                    NowRx Pharmacy Delivery
                     </span>
                 </div>
 
@@ -1198,36 +1112,7 @@
 
 
 
-<!-- visit faq -->
-<section class="visit-faq refillfaq">
-    <div class="container">
-        <div class="content">
-            <div class="rvl">
-                <span class="sub-headline">
-                    Have additional questions about NowRx Pharmacy
-                </span>
-            </div>
-            <div class="rvl">
-                <h2 class="sec-title">
-                    Visit our FAQ Page
-                </h2>
-            </div>
-            <div class="rvl">
-                <div class="btn-container">
-                    <a href="<?= get_site_url(); ?>/faqs/#faqblock" class="rx-btn rx-dg">
-                        Frequently Asked Questions
-                    </a>
-                </div>
-            </div>
-            <div class="rvl">
-                <div class="small-block">
-                    You can also text us at (844) 466-6979 or send an email to info@nowrx.com and we will get back to
-                    you as soon as possible.
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+<?php include('section-visitfaq.php'); ?>
 
 
 

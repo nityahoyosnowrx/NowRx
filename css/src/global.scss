@@ -2931,10 +2931,15 @@ section.split-bubbles {
 			object-position: center;
 			will-change: auto;
 			transition: all 1.2s cubic-bezier(0.83, 0, 0.17, 1);
-			transition: all 3.2s cubic-bezier(0.83, 0, 0.17, 1);
+			transition: all 2.2s cubic-bezier(0.83, 0, 0.17, 1);
 			// transition-delay: .6s;
 
 			width: 0;
+
+			@media screen and (max-width: 992px) {
+				max-height: 300px;
+				min-height: 0;
+			}
 		}
 	}
 
@@ -2974,7 +2979,7 @@ section.split-bubbles {
 			&.animatein {
 				&:nth-child(even) {
 					position: relative;
-					animation-duration: 4s;
+					animation-duration: 2.5s;
 					animation-timing-function: cubic-bezier(0.85, 0, 0.15, 1);
 
 					animation-name: slidein;
@@ -2984,7 +2989,7 @@ section.split-bubbles {
 			&.animatein {
 				&:nth-child(odd) {
 					position: relative;
-					animation-duration: 4s;
+					animation-duration: 2.5s;
 					animation-timing-function: cubic-bezier(0.85, 0, 0.15, 1);
 
 					animation-name: slideinodd;

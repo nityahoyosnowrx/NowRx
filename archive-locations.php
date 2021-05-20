@@ -290,20 +290,7 @@ gtag('event', 'conversion', {
 <main id="main" class="main-class">
 
     <section class="article archive">
-        <div class="rvls">
 
-            <picture class="lozad"
-                data-iesrc="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020.png"
-                data-alt="NowRx Pharmacy Surescripts 2020 White Coat Award Finalist (Highest Accuracy) "
-                data-toggle-class="active">
-                <source type="image/png"
-                    srcset="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020.png">
-                <img data-src="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020lowrez.jpg"
-                    class="imageblock lozad" height="100px" width="450px"
-                    alt="NowRx Pharmacy Surescripts 2020 White Coat Award Finalist (Highest Accuracy) ">
-            </picture>
-
-        </div>
         <article id="post-<?php the_ID(); ?>">
             <div class="container">
 

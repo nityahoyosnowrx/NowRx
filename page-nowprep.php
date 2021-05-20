@@ -19,20 +19,7 @@
 
 <!-- hero -->
 <section class="hero-home">
-    <div class="rvls">
 
-
-        <picture class="lozad"
-            data-iesrc="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020.png"
-            data-alt="Surescripts 2020 White Coat Award Finalist (Highest Accuracy)" data-toggle-class="active">
-            <source type="image/png"
-                srcset="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020.png">
-            <img data-src="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020lowrez.jpg"
-                class="imageblock lozad" height="100px" width="450px"
-                alt="Surescripts 2020 White Coat Award Finalist (Highest Accuracy)">
-        </picture>
-
-    </div>
 
     <div class="container">
         <div class="content">
@@ -80,14 +67,11 @@
             <div class="column-half image-col">
 
                 <picture class="lozad"
-                    data-iesrc="<?php echo get_template_directory_uri(); ?>/images/HIV-Prep-Banner-Image.jpeg"
-                    data-alt="couple on couch looking at camera" data-toggle-class="active">
+                     data-toggle-class="active">
 
-                    <source type="image/jpeg"
-                        data-srcset="<?php echo get_template_directory_uri(); ?>/images/HIV-Prep-Banner-Image.jpeg">
-                    <img data-src="<?php echo get_template_directory_uri(); ?>/images/HIV-Prep-Banner-Image.jpeg"
-
-                        class="orbit-image lozad" height="500px" width="650px" alt="couple on couch looking at camera">
+                    <source media="(max-width: 1px)" srcset="<?php echo get_template_directory_uri(); ?>/images/HIV-PrEP-medication-mobile.webp">
+                    <source media="(min-width: 2px)" srcset="<?php echo get_template_directory_uri(); ?>/images/HIV-PrEP-medication.webp">
+                    <img data-src="<?php echo get_template_directory_uri(); ?>/images/HIV-PrEP-medication.webp" class="orbit-image lozad" height="500px" width="650px" alt="HIV PrEP medication">
                 </picture>
             </div>
 
@@ -107,7 +91,7 @@ include('section-companies.php'); ?>
         <div class="grid-x grid-padding-x text-center">
             <div class="large-12 cell">
                 <div class="rvl">
-                    <p class="pre-headline">Using NowPrep is Simple</p>
+                    <p class="pre-headline">Simple HIV PrEP Online</p>
                 </div>
 
                 <div class="rvl">
@@ -272,10 +256,10 @@ include('section-companies.php'); ?>
     <div class="container">
         <div class="topcontent content">
             <span class="sub-headline">
-                A better local pharmacy delivered
+            Have Questions?
             </span>
             <h2 class="sec-title">
-                How can we help you today?
+            NowPrEP HIV PrEP FAQs
             </h2>
         </div>
         <div class="content botcot">

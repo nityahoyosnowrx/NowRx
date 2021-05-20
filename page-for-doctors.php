@@ -15,24 +15,9 @@
 
 <?php get_header(); ?>
 
-
-
-
 <!-- hero -->
 <section class="hero-home">
-    <div class="rvl">
 
-
-        <picture class="lozad"
-            data-iesrc="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020.png"
-            data-alt="Surescripts 2020 White Coat Award Finalist (Highest Accuracy) " data-toggle-class="active">
-            <source type="image/png"
-                srcset="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020.png">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020lowrez.jpg"
-                class="imageblock" height="100px" width="450px" alt="Surescripts 2020 White Coat Award Finalist (Highest Accuracy) ">
-        </picture>
-
-    </div>
 
     <div class="container">
         <div class="content">
@@ -79,14 +64,11 @@
             <div class="column-half image-col">
 
                 <picture class="lozad"
-                    data-iesrc="<?php echo get_template_directory_uri(); ?>/images/For-Doctors.webp"
-                    data-alt="Pharmacist Ready to Provide Medication" data-toggle-class="active">
-                    <source type="image/jpeg"
-                        srcset="<?php echo get_template_directory_uri(); ?>/images/For-Doctors.jpeg">
-                    <source type="image/webp"
-                        srcset="<?php echo get_template_directory_uri(); ?>/images/For-Doctors.webp">
-                    <img data-src="<?php echo get_template_directory_uri(); ?>/images/For-Doctors.webp"
-                        class="orbit-image lozad" height="500px" width="650px" alt="Pharmacist Ready to Provide Medication">
+                    data-toggle-class="active">
+                    <source media="(max-width: 1px)" srcset="<?php echo get_template_directory_uri(); ?>/images/doctor-looking-at-nowrx-pharmacy-delivery-for-their-patients-mobile.webp">
+                    <source media="(min-width: 2px)" srcset="<?php echo get_template_directory_uri(); ?>/images/doctor-looking-at-nowrx-pharmacy-delivery-for-their-patients.webp">
+                    <img data-src="<?php echo get_template_directory_uri(); ?>/images/doctor-looking-at-nowrx-pharmacy-delivery-for-their-patients.webp"
+                        class="orbit-image lozad" height="500px" width="650px" alt="doctor looking at nowrx pharmacy delivery for their patients">
                 </picture>
 
 
@@ -722,36 +704,7 @@
     </div>
 </section>
 
-<!-- visit faq -->
-<section class="visit-faq">
-    <div class="container">
-        <div class="content">
-            <div class="rvl">
-                <span class="sub-headline">
-                    Have additional questions about NowRx Pharmacy
-                </span>
-            </div>
-            <div class="rvl">
-                <h2 class="sec-title">
-                    Visit our FAQ Page
-                </h2>
-            </div>
-            <div class="rvl">
-                <div class="btn-container">
-                    <a href="<?= get_site_url(); ?>/faqs/#faqblock" class="rx-btn rx-dg">
-                        Frequently Asked Questions
-                    </a>
-                </div>
-            </div>
-            <div class="rvl">
-                <div class="small-block">
-                    You can also text us at (844) 466-6979 or send an email to info@nowrx.com and we will get back to
-                    you as soon as possible.
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+<?php include('section-visitfaq.php'); ?>
 
 
 

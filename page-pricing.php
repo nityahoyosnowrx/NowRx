@@ -19,20 +19,6 @@
 
 <!-- hero -->
 <section class="hero-home">
-    <div class="rvl">
-
-
-        <picture class="lozad"
-            data-iesrc="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020.png"
-            data-alt="Surescripts 2020 White Coat Award Finalist (Highest Accuracy) " data-toggle-class="active">
-            <source type="image/png"
-                srcset="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020.png">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/White-Coat-Awards-2020lowrez.jpg"
-                class="imageblock" height="100px" width="450px"
-                alt="Surescripts 2020 White Coat Award Finalist (Highest Accuracy) ">
-        </picture>
-
-    </div>
 
     <div class="container">
         <div class="content">
@@ -85,10 +71,10 @@
                                         class=""></path>
                                 </svg>
                             </span>
-                          
 
-                Check Medication Price
-            
+
+                Check Price
+
                         </a>
 
                     </div>
@@ -102,10 +88,10 @@
             <!-- image -->
             <div class="column-half image-col">
 
-                <picture class="lozad" data-src="<?php echo get_template_directory_uri(); ?>/images/pricing.webp" data-alt="Couple happy about Provided Medication service" data-toggle-class="active">
-                    <source type="image/jpeg" data-srcset="<?php echo get_template_directory_uri(); ?>/images/pricing.jpeg">
-                    <source type="image/webp" data-srcset="<?php echo get_template_directory_uri(); ?>/images/pricing.webp">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/pricing.webp" class="orbit-image lozad" height="500px" width="650px" alt="Couple happy about Provided Medication service">
+                <picture class="lozad" data-src="<?php echo get_template_directory_uri(); ?>/images/nowrx-pharmacy-delivery-happy-customers-celebrating-low-drug-prices.webp" data-toggle-class="active">
+                    <source media="(max-width: 1px)" srcset="<?php echo get_template_directory_uri(); ?>/images/nowrx-pharmacy-delivery-happy-customers-celebrating-low-drug-pricess-mobile.webp">
+                    <source media="(min-width: 2px)" srcset="<?php echo get_template_directory_uri(); ?>/images/nowrx-pharmacy-delivery-happy-customers-celebrating-low-drug-prices.webp">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/nowrx-pharmacy-delivery-happy-customers-celebrating-low-drug-prices.webp" class="orbit-image lozad" height="500px" width="650px" alt="nowrx pharmacy delivery happy customers celebrating low drug prices">
                 </picture>
 
 
@@ -199,13 +185,14 @@
                     our cost to about 1/100th that of a traditional pharmacy, which means better prices and service for
                     you!</p>
             </div>
-        </div>
-        <div class="btn-container">
+            <div class="btn-container">
             <a class="rx-btn rx-dg" href="#form-faq">
 
-                Check Medication Price
+                Check Price
             </a>
         </div>
+        </div>
+
     </div>
 </section>
 
@@ -240,7 +227,7 @@
                         <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js" defer></script>
                         <script defer>
                             window.addEventListener('load', function() {
-                                setTimeout(function(){  
+                                setTimeout(function(){
                                     hbspt.forms.create({
                                         portalId: "5952677",
                                         formId: "e1e60aa0-0007-4875-a14d-edef6831c133"
@@ -248,7 +235,7 @@
                                 },2000)
                             });
                         </script>
-                        
+
                     </div>
                 </div>
 
