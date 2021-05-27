@@ -6,7 +6,72 @@ gtag('event', 'conversion', {
 });
 </script>
 
+
+
+
+
 <main id="main" class="main-class" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
+
+
+
+
+<!-- hero -->
+<section class="hero-home">
+
+    <div class="container">
+        <div class="content">
+
+            <!-- content -->
+            <div class="column-half content-col">
+
+
+
+            <div class="rvl">
+                            <span class="subheading">
+                                NowRx Pharmacy - Comping to a City Near You
+                            </span>
+                        </div>
+                        <div class="rvl">
+                            <h1 class="page-title" itemprop="headline">
+                                A Better Local Pharmacy
+                            </h1>
+                        </div>
+                        <div class="rvl">
+                            <p>
+                                Don't see a NowRx location near you? Don't worry! Suggest a location and you could be
+                                our next expanion city.
+                            </p>
+                        </div>
+
+                        <div class="rvls">
+                            <div class="btn-container">
+                                <a class="rx-btn" href="<?= get_site_url(); ?>/refill-and-transfer-prescriptions/">Get Suggest a Location</a>
+                                <a class="rx-btn rx-green mrb" href="<?= get_site_url(); ?>/how-it-works/">Get Started</a>
+                            </div>
+                        </div>
+
+
+
+
+            </div>
+
+            <!-- image -->
+            <div class="column-half image-col">
+
+                <picture class="lozad" data-src="<?php echo get_template_directory_uri(); ?>/images/map.jpeg" data-toggle-class="active">
+                    <source media="(max-width: 1px)" srcset="<?php echo get_template_directory_uri(); ?>/images/map.jpeg">
+                    <source media="(min-width: 2px)" srcset="<?php echo get_template_directory_uri(); ?>/images/map.jpeg">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/map.jpeg" class="orbit-image lozad" height="500px" width="650px" alt="nowrx pharmacy delivery happy customers celebrating low drug prices">
+                </picture>
+
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
 
     <section class="article">
         <article id="post-<?php the_ID(); ?>" role="article" itemscope itemtype="http://schema.org/BlogPosting">
@@ -326,35 +391,7 @@ gtag('event', 'conversion', {
 
 
 
-    <section class="visit-faq">
-        <div class="container">
-            <div class="content">
-            <div class="rvl">
-                        <span class="sub-headline">
-                            No Signup Required. No Hidden Fees.
-                        </span>
-                    </div>
-
-                    <div class="rvl">
-                        <h2 class="sec-title">
-                            Just a Better Pharmacy
-                        </h2>
-                    </div>
-                <div class="rvl">
-                    <div class="btn-container">
-                        <a href="<?= get_site_url(); ?>/faqs/#faqblock" class="rx-btn rx-dg">
-                            Request a Location
-                        </a>
-                    </div>
-                </div>
-                <div class="rvl">
-                    <div class="small-block">
-                        Still have questions about how to get startd with NowRx Pharmacy? Email us at info@nowrx.com an dwe will be happy to help.
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <?php include('section-visitblock.php'); ?>
 
 
     <!-- faq -->

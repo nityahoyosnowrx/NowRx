@@ -422,7 +422,7 @@ h2 {
 body.page-template.page-template-refill-and-transfer-prescriptions {
 	section.hero-home {
 		@media screen and (max-width: 992px) {
-			margin: 100px 0 0;
+			margin: 50px 0 0;
 		}
 		.titlecolumn {
 			display: none;
@@ -971,6 +971,16 @@ section.hero-home {
 		}
 	}
 
+	&.mapblock {
+		.orbit-image {
+			@media screen and (max-width: 1280px) {
+				max-width: 80%;
+				margin: 0 0 0 auto;
+				object-fit: contain;
+			}
+		}
+	}
+
 	&.contactpage {
 		padding: 90px 0 50px;
 	}
@@ -1159,6 +1169,9 @@ section.hero-home {
 				padding: 0;
 				p {
 					max-width: 540px;
+					@media screen and (max-width: 700px) {
+						font-size: 14px;
+					}
 				}
 			}
 
@@ -1245,7 +1258,7 @@ section.hero-home {
 				// font-size: 3.6rem;
 				@media screen and (max-width: 1280px) {
 					margin: 0 0 20px;
-					font-size: calc(26.97647px + 0.88235vw);
+					font-size: calc(28px + 6 * ((100vw - 320px) / 680));
 					padding: 0 5px;
 				}
 			}
@@ -1253,7 +1266,7 @@ section.hero-home {
 			@media screen and (max-width: 1280px) {
 				font-size: 10.2vw;
 				margin: 0 0 20px;
-				font-size: calc(34px + 6 * ((100vw - 320px) / 680));
+				font-size: calc(28px + 6 * ((100vw - 320px) / 680));
 				padding: 0 5px;
 			}
 		}
@@ -2078,6 +2091,9 @@ section.faq-section {
 		margin: 0 auto;
 		text-align: center;
 		padding: 90px 20px 60px;
+		@media screen and (max-width: 700px) {
+			padding: 90px 20px 0px;
+		}
 	}
 
 	span.sub-headline {
@@ -2087,6 +2103,9 @@ section.faq-section {
 		color: #038ed8;
 		font-weight: 600;
 		margin-bottom: 20px;
+		@media screen and (max-width: 700px) {
+			font-size: 3vw;
+		}
 	}
 
 	h2.sec-title {
@@ -2269,6 +2288,11 @@ section.visit-faq {
 			line-height: 11vw;
 			font-size: 10vw;
 			margin: 20px 0;
+		}
+		@media screen and (max-width: 700px) {
+			line-height: 10vw;
+			font-size: 8vw;
+			margin: 0 0 10px;
 		}
 	}
 
@@ -3740,6 +3764,103 @@ section#contactus {
 		}
 		.location-item.signup {
 			width: 100%;
+		}
+	}
+}
+
+section.resource-sections {
+	padding: 60px 0;
+
+	&.hrline {
+		border-bottom: 2px solid #eee;
+	}
+
+	.context {
+		text-align: center;
+		.title {
+			font-size: 3.5rem;
+			line-height: 1.07;
+		}
+		p {
+			font-size: 1.0625rem;
+			line-height: 1.41;
+		}
+	}
+
+	.container {
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 1100px;
+
+		.splitcol {
+			display: flex;
+			.colde {
+				width: 50%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+
+			.colde .cntx {
+				padding: 0 0 0 60px;
+			}
+		}
+
+		.blocks {
+			display: flex;
+			flex-wrap: wrap;
+
+			.block {
+				padding: 0 20px;
+				margin: 30px 0;
+				width: 33%;
+
+				.contentblock figure {
+					margin: 0;
+					width: 100%;
+				}
+
+
+				.contentblock img {
+					border-radius: 10px;
+				}
+
+				.contentblock {
+					background-color: white;
+					border: 1px solid #eeeeee;
+					box-shadow: 0 5px 13px 0 Rgb(0 0 0 / 3%), 0 4px 10px 0 Rgb(0 0 0 / 3%);
+					padding-top: 25px;
+					border-top-left-radius: 10px;
+					border-bottom-left-radius: 10px;
+					border-top-right-radius: 10px;
+					border-bottom-right-radius: 10px;
+					padding: 20px;
+
+					svg {
+						max-width: 60px;
+						max-height: 60px;
+						margin: 0 auto;
+						display: block;
+					}
+
+					figure a {
+						display: block;
+						margin: 0 0 30px;
+					}
+
+					h2.title {
+						font-size: 16px;
+						line-height: 20px;
+						text-align: center;
+						font-weight: 500;
+					}
+					p {
+						font-size: 14px;
+						color: #444;
+						line-height: 20px;
+					}
+				}
+			}
 		}
 	}
 }

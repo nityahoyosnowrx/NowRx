@@ -48,20 +48,18 @@ $yoast_desc = get_post_meta( $id, '_yoast_wpseo_metadesc', true );
 <?php endwhile; endif; ?>
 
 
-<section class="blog" id="blog">
-
-    <main id="main" class="" role="main">
+<section class="resource" id="resource">
 
         <div class="grid-container">
 
             <div class="large-12 cell">
 
-                <div class="main-content">
+                <div class="resource-main-content">
 
                     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
                     <?php
-							get_template_part( 'post-formats/format', get_post_format() );
+							get_template_part( 'post-formats/resource', get_post_format() );
 						?>
 
                     <?php endwhile; ?>
@@ -84,78 +82,6 @@ $yoast_desc = get_post_meta( $id, '_yoast_wpseo_metadesc', true );
                     <?php endif; ?>
 
 
-                    <div class="sidebar-articles">
-                        <div class="MostPopular-wrapper MostPopular-taboolaContainer">
-                            <div class="MostPopular-header">
-                                Trending Now
-                                <div class="MostPopular-headerDivider"></div>
-                            </div>
-                            <div class="MostPopular-slide">
-                                <ol class="MostPopular-list">
-
-                                    <?php
-							// Example argument that defines three posts per page.
-							$args = array( 'posts_per_page' => 4 , 'order'=>'rand','tag' => 'featured',  );
-
-							// Variable to call WP_Query.
-							$trendloop = new WP_Query( $args );
-
-							if ( $trendloop->have_posts() ) :
-								// Start the Loop
-								while ( $trendloop->have_posts() ) : $trendloop->the_post();
-
-							?>
-
-                                    <li class="MostPopular-addIndex">
-
-                                        <a href="<?php  the_permalink();  ?>" class="MostPopular-link">
-
-                                            <span class="posthumb">
-
-                                                <?php if ( has_post_thumbnail( $post->ID ) ): ?>
-
-                                                <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'medium' ); ?>
-
-                                                <img class="MostPopular-thumbnail transition-fade-appear-active lozad"
-                                                    data-src="<?php echo $image[0]; ?>"
-                                                    alt="<?php echo get_post_meta( get_post_thumbnail_id($post->ID), '_wp_attachment_image_alt', true ); ?>" />
-
-                                                <?php else: ?>
-
-                                                <img class="MostPopular-thumbnail transition-fade-appear-active lozad"
-                                                    data-src="<?php echo get_site_url(); ?>/wp-content/uploads/2020/09/IMG_3714-1024x683.jpg"
-                                                    alt="<?php  the_title();  ?>" />
-
-                                                <?php endif; ?>
-
-                                            </span>
-
-                                        </a>
-
-                                        <a href="<?php the_permalink(); ?>" class="MostPopular-link title">
-                                            <?php the_title(); ?>
-                                        </a>
-
-                                        <div class="MostPopular-divider"></div>
-
-                                    </li>
-
-                                    <?php
-								// End the Loop
-								endwhile;
-							else:
-							// If no posts match this query, output this text.
-								_e( 'Sorry, no posts matched your criteria.', 'textdomain' );
-							endif;
-
-							wp_reset_postdata();
-							?>
-
-                                </ol>
-                            </div>
-                        </div>
-
-                    </div>
 
                     <?php
 						// GET TAGS BY POST_ID
@@ -221,10 +147,6 @@ $yoast_desc = get_post_meta( $id, '_yoast_wpseo_metadesc', true );
                 </div>
             </div>
         </section>
-
-
-
-    </main>
 
 </section>
 

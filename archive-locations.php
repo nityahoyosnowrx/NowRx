@@ -289,21 +289,27 @@ gtag('event', 'conversion', {
 
 <main id="main" class="main-class">
 
-    <section class="article archive">
 
-        <article id="post-<?php the_ID(); ?>">
-            <div class="container">
 
-                <header class="article-header tynk locations-header">
-                    <div class="content">
-                        <div class="rvls">
+
+<!-- hero -->
+<section class="hero-home ">
+
+    <div class="container">
+        <div class="content">
+
+            <!-- content -->
+            <div class="column-half content-col">
+
+
+            <div class="rvls">
                             <span class="subheading">
-                                NowRx Pharmacy - Coming to a City Near You
+                                Coming to a City Near You
                             </span>
                         </div>
                         <div class="rvls">
-                            <h1 class="page-title" itemprop="headline">
-                                A Better Local Pharmacy
+                            <h1 class="" itemprop="headline">
+                            A Better Local Pharmacy Delivered
                             </h1>
                         </div>
                         <div class="rvls">
@@ -320,19 +326,26 @@ gtag('event', 'conversion', {
                             </div>
                         </div>
 
-                    </div>
-                    <div class="imageblock">
-                        <img data-src="<?php echo get_template_directory_uri(); ?>/images/NowRx-National-Map-Big.png"
-                            alt="NowRx Pharmacy locations map" width="300px" height="300px" class="pic lozad">
-                    </div>
-                </header>
             </div>
 
+            <!-- image -->
+            <div class="column-half image-col">
 
 
-        </article>
+                <picture class="lozad" data-src="<?php echo get_template_directory_uri(); ?>/images/NowRx-Pharmacy-Delivery-Driver-Dropping-Off-Prescription.webp" data-toggle-class="active">
+                    <source media="(max-width: 1px)" srcset="<?php echo get_template_directory_uri(); ?>/images/NowRx-Pharmacy-Delivery-Driver-Dropping-Off-Prescription.webp">
+                    <source media="(min-width: 2px)" srcset="<?php echo get_template_directory_uri(); ?>/images/NowRx-Pharmacy-Delivery-Driver-Dropping-Off-Prescription.webp">
+                    <img  src="<?php echo get_template_directory_uri(); ?>/images/NowRx-Pharmacy-Delivery-Driver-Dropping-Off-Prescription.webp" class="orbit-image lozad" height="500px" width="650px" alt="NowRx Pharmacy Delivery Driver Dropping Off Prescription">
+                </picture>
 
-    </section>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
 
 
 
@@ -571,36 +584,7 @@ gtag('event', 'conversion', {
 
 
 
-
-<!-- visit faq -->
-<section class="visit-faq">
-    <div class="container">
-        <div class="content">
-            <div class="rvl">
-                <span class="sub-headline">
-                    No Signup Required. No Hidden Fees
-                </span>
-            </div>
-            <div class="rvl">
-                <h2 class="sec-title">
-                    Just a Better Pharmacy
-                </h2>
-            </div>
-            <div class="rvl">
-                <div class="btn-container">
-                    <a data-toggle="for-doctors-learnmore" aria-controls="for-doctors-learnmore" aria-haspopup="true" tabindex="0" class="rx-btn rx-dg">
-                        Request a NowRx Doctor Kit
-                    </a>
-                </div>
-            </div>
-            <div class="rvl">
-                <div class="small-block">
-                    Still have questions about how to get started with NowRx Pharmacy? Email us at <a href="maito:info@nowrx.com" class="alink">info@nowrx.com </a>and we will be happy to help.
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+    <?php include('section-visitblock.php'); ?>
 
 
 

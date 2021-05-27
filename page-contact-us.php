@@ -211,37 +211,7 @@
 </section>
 
 
-<!-- visit faq -->
-<section class="visit-faq">
-    <div class="container">
-        <div class="content">
-            <div class="rvl">
-                <span class="sub-headline">
-                    No Signup Required. No Hidden Fees
-                </span>
-            </div>
-            <div class="rvl">
-                <h2 class="sec-title">
-                    Just a Better Pharmacy
-                </h2>
-            </div>
-            <div class="rvl">
-                <div class="btn-container">
-                    <a data-toggle="for-doctors-learnmore" aria-controls="for-doctors-learnmore" aria-haspopup="true"
-                        tabindex="0" class="rx-btn rx-dg">
-                        Request a NowRx Doctor Kit
-                    </a>
-                </div>
-            </div>
-            <div class="rvl">
-                <div class="small-block">
-                    Still have questions about how to get started with NowRx Pharmacy? Email us at <a
-                        href="maito:info@nowrx.com" class="alink">info@nowrx.com </a>and we will be happy to help.
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+<?php include('section-visitblock.php'); ?>
 
 <!-- faq -->
 <section class="faq-section" id="contactus-faqs">

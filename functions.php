@@ -753,3 +753,97 @@ add_action('parse_query', 'wpb_filter_query');
 
 add_filter('get_search_form', create_function('$a', "return null;"));
 
+
+
+
+
+// Hook <strong>resource_post_type()</strong> to the init action hook
+add_action( 'init', 'resource_post_type' );
+
+// The custom function to register a Resource post type
+function resource_post_type() {
+
+  // Set the labels, this variable is used in the $args array
+  $labels = array(
+    'name'               => __( 'Resources' ),
+    'singular_name'      => __( 'Resource' ),
+    'add_new'            => __( 'Add New Resource' ),
+    'add_new_item'       => __( 'Add New Resource' ),
+    'edit_item'          => __( 'Edit Resource' ),
+    'new_item'           => __( 'New Resource' ),
+    'all_items'          => __( 'All Resources' ),
+    'view_item'          => __( 'View Resources' ),
+    'search_items'       => __( 'Search Resources' )
+  );
+
+  // The arguments for our post type, to be entered as parameter 2 of register_post_type()
+  $args = array(
+    'labels'            => $labels,
+    'description'       => 'Holds our Resources',
+      // Features this CPT supports in Post Editor
+      'supports'            => array('title', 'editor', 'excerpt', 'author', 'thumbnail', 'comments', 'revisions', 'custom-fields', 'page-attributes'),
+      // You can associate this CPT with a taxonomy or custom taxonomy.
+      'taxonomies'          => array('subjects'),
+      /* A hierarchical CPT is like Pages and can have
+          * Parent and child items. A non-hierarchical CPT
+          * is like Posts.
+          */
+      'hierarchical'        => true,
+      'public'              => true,
+      'show_ui'             => true,
+      'show_in_menu'        => true,
+      'show_in_nav_menus'   => true,
+      'show_in_admin_bar'   => true,
+      'menu_position'       => 5,
+      'can_export'          => true,
+      'has_archive'         => true,
+      'exclude_from_search' => false,
+      'publicly_queryable'  => true,
+      'capability_type'     => 'post',
+      'show_in_rest' => true,
+  );
+
+  // Call the actual WordPress function
+  // Parameter 1 is a name for the post type
+  // $args array goes in parameter 2.
+  register_post_type( 'resource', $args);
+}
+
+
+//hook into the init action and call create_book_taxonomies when it fires
+
+add_action( 'init', 'create_resource_category', 0 );
+
+//create a custom taxonomy name it subjects for your posts
+
+function create_resource_category() {
+
+// Add new taxonomy, make it hierarchical like categories
+//first do the translations part for GUI
+
+  $labels = array(
+    'name' => _x( 'Subjects', 'taxonomy general name' ),
+    'singular_name' => _x( 'Subject', 'taxonomy singular name' ),
+    'search_items' =>  __( 'Search Subjects' ),
+    'all_items' => __( 'All Subjects' ),
+    'parent_item' => __( 'Parent Subject' ),
+    'parent_item_colon' => __( 'Parent Subject:' ),
+    'edit_item' => __( 'Edit Subject' ),
+    'update_item' => __( 'Update Subject' ),
+    'add_new_item' => __( 'Add New Subject' ),
+    'new_item_name' => __( 'New Subject Name' ),
+    'menu_name' => __( 'Subjects' ),
+  );
+
+// Now register the taxonomy
+  register_taxonomy('subjects',array('books'), array(
+    'hierarchical' => true,
+    'labels' => $labels,
+    'show_ui' => true,
+    'show_in_rest' => true,
+    'show_admin_column' => true,
+    'query_var' => true,
+    'rewrite' => array( 'slug' => 'subject' ),
+  ));
+
+}

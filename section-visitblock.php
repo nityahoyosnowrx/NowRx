@@ -4,18 +4,18 @@
         <div class="content">
             <div class="rvl">
                 <span class="sub-headline">
-                    Have additional questions about NowRx?
+                    No Signup Required. No Hidden Fees.
                 </span>
             </div>
             <div class="rvl">
                 <h2 class="sec-title">
-                    Visit our FAQ
+                    Just A Better Pharmacy
                 </h2>
             </div>
             <div class="rvl">
                 <div class="btn-container">
-                    <a href="<?= get_site_url(); ?>/faqs/#faqblock" class="rx-btn rx-dg">
-                        Learn More
+                    <a href="<?= get_site_url(); ?>/refill-and-transfer-prescriptions/" class="rx-btn rx-dg">
+                        Get Started
                     </a>
                 </div>
             </div>

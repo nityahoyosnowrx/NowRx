@@ -29,7 +29,7 @@
 
             <div class="rvls">
                     <span class="sub-headline">
-                        A Better Local Pharmacy for doctors Staff
+                        A Better Local Pharmacy Delivered
                     </span>
                 </div>
 
@@ -89,7 +89,7 @@
         <div class="grid-x grid-padding-x text-center">
             <div class="large-12 cell">
                 <div class="rvl">
-                    <p class="pre-headline">Using NowRx Pharmacy is Simple</p>
+                    <p class="pre-headline">Pharmacy Delivery Made Easy</p>
                 </div>
 
                 <div class="rvl">
@@ -269,15 +269,11 @@
             <div class="rvl">
                 <div class="btn-container">
                     <a data-toggle="for-doctors-learnmore" aria-controls="for-doctors-learnmore" aria-haspopup="true" tabindex="0" class="rx-btn rx-dg">
-                        Request a NowRx Doctor Kit
+                        Learn More
                     </a>
                 </div>
             </div>
-            <div class="rvl">
-                <div class="small-block">
-                    Still have questions about how to get started with NowRx Pharmacy? Email us at <a href="maito:info@nowrx.com" class="alink">info@nowrx.com </a>and we will be happy to help.
-                </div>
-            </div>
+
         </div>
     </div>
 </section>
@@ -432,12 +428,12 @@
         <div class="content">
             <div class="rvl">
                 <span class="sub-headline">
-                    Join the NowRx Pharmacy Doctor Feedback Program
+                HELP US IMPROVE NOWRX PHARMACY DELIVERY
                 </span>
             </div>
             <div class="rvl">
                 <h2 class="sec-title">
-                    Take Our Survey - Recieve $40
+                NowRx Doctor Feedback Program
                 </h2>
             </div>
             <div class="rvl">
@@ -447,11 +443,7 @@
                     </a>
                 </div>
             </div>
-            <div class="rvl">
-                <div class="small-block">
-                    *Some restrictions may apply. Must be employed by a licensed and approved medical office.
-                </div>
-            </div>
+
         </div>
     </div>
 </section>
@@ -466,13 +458,13 @@
             <div class="titleblock">
                 <div class="rvl">
                     <span class="sub-headline">
-                        Top Doctor Questions about NowRx
+                    NowRx Pharmacy Delivery
                     </span>
                 </div>
 
                 <div class="rvl">
                     <h2 class="sec-title">
-                        Your Questions Answered
+                    Frequently Asked Questions
                     </h2>
                 </div>
             </div>

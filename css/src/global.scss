@@ -1234,6 +1234,10 @@ section.split-image {
 			font-size: 2.75rem;
 			line-height: 2.9rem;
 		}
+		@media screen and (max-width: 700px) {
+			line-height: 12vw;
+			font-size: 10vw;
+		}
 	}
 
 	span.sub-headline {
@@ -1243,7 +1247,8 @@ section.split-image {
 
 		margin: 0 0 20px;
 		@media screen and (max-width: 992px) {
-			font-size: 3.1vw;
+			font-size: 2.9vw;
+
 			margin: 0 0 20px;
 			display: block;
 		}
@@ -1894,7 +1899,7 @@ article.article-block.location-item {
 			font-size: 2.8rem;
 			text-align: center;
 			margin: 0 0 20px;
-			font-size: calc(31.17647px + 0.88235vw);
+			font-size: calc(30.17647px + 0.88235vw);
 			padding: 0 5px;
 		}
 	}
@@ -2585,13 +2590,10 @@ section#referralform {
 			font-size: 16px;
 		}
 
-
 		&:hover,
-		&:focus{
-
+		&:focus {
 			background: #fff;
 			box-shadow: none;
-
 		}
 	}
 
@@ -2831,11 +2833,11 @@ section#referralform {
 			@media screen and (max-width: 992px) {
 				max-height: 320px;
 			}
-			img{
+			img {
 				@media screen and (max-width: 992px) {
-						max-height: 320px;
-						object-fit: cover;
-						object-position: center;
+					max-height: 320px;
+					object-fit: cover;
+					object-position: center;
 				}
 			}
 		}

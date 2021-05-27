@@ -51,8 +51,7 @@
                 <div class="rvls">
                     <div class="btn-container">
                         <!-- <a class="rx-btn" href="<?= get_site_url(); ?>/refill-and-transfer-prescriptions/">Join Watilist</a> -->
-                        <a class="rx-btn " data-toggle="waitlist" aria-controls="waitlist" aria-haspopup="true"
-                            tabindex="0"> <?php include('reg-arrow.php'); ?> Get Started</a>
+                        <a class="rx-btn " data-toggle="waitlist" aria-controls="waitlist" aria-haspopup="true" id="getstarted-gt" tabindex="0"> <?php include('reg-arrow.php'); ?> Get Started</a>
                         <a class="rx-btn rx-green mrb" href="#howitwork"> <?php include('grn-arrow.php'); ?> How It
                             Works</a>
                     </div>
@@ -69,9 +68,9 @@
                 <picture class="lozad"
                      data-toggle-class="active">
 
-                    <source media="(max-width: 1px)" srcset="<?php echo get_template_directory_uri(); ?>/images/HIV-PrEP-medication-mobile.webp">
-                    <source media="(min-width: 2px)" srcset="<?php echo get_template_directory_uri(); ?>/images/HIV-PrEP-medication.webp">
-                    <img data-src="<?php echo get_template_directory_uri(); ?>/images/HIV-PrEP-medication.webp" class="orbit-image lozad" height="500px" width="650px" alt="HIV PrEP medication">
+                    <source media="(max-width: 1px)" srcset="<?php echo get_template_directory_uri(); ?>/images/hiv-prep-online-couple-for-nowprep.webp">
+                    <source media="(min-width: 2px)" srcset="<?php echo get_template_directory_uri(); ?>/images/hiv-prep-online-couple-for-nowprep.webp">
+                    <img data-src="<?php echo get_template_directory_uri(); ?>/images/hiv-prep-online-couple-for-nowprep.webp" class="orbit-image lozad" height="500px" width="650px" alt="hiv prep online couple for nowprep">
                 </picture>
             </div>
 
@@ -469,33 +468,15 @@ include('section-companies.php'); ?>
                                         <div class="title">A.</div>
                                         <span class="cntx">
                                             <p>
-                                                NowPrep and NowRx pride themselves on price transparency. Below is a
-                                                breakdown of the costs that you can expect while using NowPrEP:
-
-
+                                            NowPrEP consultation, PrEP medication, and courier delivery are completely free for 99% of patients.
                                             </p>
                                             <p>
-                                                Signup and Health Questionnaire: Free
-
+                                            You will also be required to provide a recent negative HIV test (last 3 months), which most insurance plans will cover free of charge.
                                             </p>
                                             <p>
-
-                                                Lab Test: $119 (most health insurance will cover)
+                                            However, if you choose to request a home test kit from NowPrEP it will cost $75.                                            </p>
                                             </p>
-                                            <p>
-                                                Medication: Free
 
-                                            </p>
-                                            <p>
-                                                Same-Day Prescription Delivery: Free
-
-                                            </p>
-                                            <p>
-                                                Same-day delivery typically takes 2-3 hours from the time the
-                                                prescription is written. We also offer a 1 hour expedited delivery for a
-                                                $5 fee.
-
-                                            </p>
                                         </span>
                                     </div>
                                 </div>
@@ -730,7 +711,7 @@ include('section-companies.php'); ?>
 
                                             </p>
                                             <p>
-                                                Signup and Online Health Questionnaire: 30 min
+                                                Signup and Online Health Questionnaire: 3 min
 
                                             </p>
                                             <p>
@@ -1043,8 +1024,7 @@ include('section-companies.php'); ?>
                                             </p>
                                             <p>
                                                 HIV PrEP is NOT for everyone including but not limited to anyone who is
-                                                living with HIV or people who were assigned female at birth because its
-                                                effectiveness has not been studied.
+                                                living with HIV.
 
                                             </p>
                                             <p>
@@ -1140,15 +1120,12 @@ include('section-companies.php'); ?>
 
                                             </p>
                                             <p>
-                                                First, sign up for the NowPrEP service and fill out our health
-                                                questionnaire to assess whether HIV PrEP is right for you.
+                                            First, sign up for the NowPrEP service and fill out our health questionnaire to assess whether HIV PrEP is right for you.
 
                                             </p>
-                                            <p>
-                                                Next, NowPrEP will send you a home test kit or, if you prefer, we will
-                                                set up an in-person HIV test appointment near you.
-
-                                            </p>
+<p>
+Next, NowPrEP will send you a home test kit, or if you prefer order a lab at a testing facility near you.
+</p>
                                             <p>
                                                 Finally, if a NowPrEP physician decides a prescription is right for you,
                                                 we will deliver your medication in hours for free.
