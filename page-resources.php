@@ -10,7 +10,7 @@
                 <div class="context">
                     <h2 class="title">Customer Resource Center</h2>
                     <p>
-                        Everything you need to transform the way you work with Workplace.
+                        Your resources to a better local pharmacy delivered with NowRx.
                     </p>
                 </div>
                 <div class="blocks">
@@ -40,7 +40,7 @@
                                 </a>
                             </h2>
                             <p>
-                                Learn how to launch Workplace and find user guides to help you get started.
+                                Get started with your first pharmacy delivery from NowRx Pharmacy.
                             </p>
                         </div>
                     </div>
@@ -80,7 +80,7 @@
                                 </a>
                             </h2>
                             <p>
-                                Learn how to launch Workplace and find user guides to help you get started.
+                            Check a medication price to see what you could save with NowRx.
                             </p>
                         </div>
                     </div>
@@ -126,7 +126,7 @@
                                 </a>
                             </h2>
                             <p>
-                                Learn how to launch Workplace and find user guides to help you get started.
+                            View frequently asked questions or submit a question to our pharmacists.
                             </p>
                         </div>
                     </div>
@@ -146,7 +146,7 @@
                                 </a>
                             </h2>
                             <p>
-                                Learn how to launch Workplace and find user guides to help you get started.
+                            Learn why thousands of doctors trust NowRx with their patients.
                             </p>
                         </div>
                     </div>
@@ -172,7 +172,7 @@
                                 </a>
                             </h2>
                             <p>
-                                Learn how to launch Workplace and find user guides to help you get started.
+                            Find a local NowRx near you for free same day pharmacy delivery.
                             </p>
                         </div>
                     </div>
@@ -208,7 +208,7 @@
                                 </a>
                             </h2>
                             <p>
-                                Learn how to launch Workplace and find user guides to help you get started.
+                            Submit our online form or talk with a live NowRx pharmacy team member.
                             </p>
                         </div>
                     </div>
@@ -223,30 +223,17 @@
 <section class="visit-faq">
             <div class="container">
                 <div class="content">
-                    <div class="rvl">
                         <span class="sub-headline">
                             No Signup Required. No Hidden Fees.
                         </span>
-                    </div>
-                    <div class="rvl">
                         <h2 class="sec-title">
                         Free Pharmacy Delivery
                         </h2>
-                    </div>
-                    <div class="rvl">
                         <div class="btn-container">
                             <a href="<?= get_site_url(); ?>" class="rx-btn rx-dg">
                             Learn More
                             </a>
                         </div>
-                    </div>
-                    <div class="rvl">
-                        <div class="small-block">
-                            Still have questions about how to get started with NowRx Pharmacy? Email us at <a
-                                href="mailto:info@nowrx.com" class="alink">info@nowrx.com</a> and we will be happy to
-                            help.
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>

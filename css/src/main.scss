@@ -3770,6 +3770,7 @@ section#contactus {
 
 section.resource-sections {
 	padding: 60px 0;
+	margin: 90px 0 0;
 
 	&.hrline {
 		border-bottom: 2px solid #eee;
@@ -3777,13 +3778,21 @@ section.resource-sections {
 
 	.context {
 		text-align: center;
+		padding: 0 20px;
+
 		.title {
 			font-size: 3.5rem;
 			line-height: 1.07;
+			@media screen and (max-width: 700px) {
+				font-size: 1.8rem;
+			}
 		}
 		p {
 			font-size: 1.0625rem;
 			line-height: 1.41;
+			@media screen and (max-width: 700px) {
+				font-size: 0.9625rem;
+			}
 		}
 	}
 
@@ -3815,6 +3824,13 @@ section.resource-sections {
 				margin: 30px 0;
 				width: 33%;
 
+				@media screen and (max-width: 1280px) {
+					width: 50%;
+				}
+				@media screen and (max-width: 700px) {
+					width: 100%;
+				}
+
 				.contentblock figure {
 					margin: 0;
 					width: 100%;
@@ -3835,6 +3851,11 @@ section.resource-sections {
 					border-top-right-radius: 10px;
 					border-bottom-right-radius: 10px;
 					padding: 20px;
+					transition: all .6s;
+
+					&:hover{
+						transform: scale(1.1);
+					}
 
 					svg {
 						max-width: 60px;
@@ -3853,6 +3874,10 @@ section.resource-sections {
 						line-height: 20px;
 						text-align: center;
 						font-weight: 500;
+						@media screen and (max-width: 700px) {
+							font-size: 24px;
+    						line-height: 2.5rem;
+						}
 					}
 					p {
 						font-size: 14px;

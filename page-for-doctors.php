@@ -305,6 +305,12 @@
                                 <meta itemprop="image" content="<?php echo get_template_directory_uri(); ?>/library/images/NowRx-Logo-Pharmacy.png">
                                 <meta itemprop="priceRange" content="$">
                                 <meta itemprop="telephone" content="(844) 466-6979">
+                                <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                    <meta itemprop="streetAddress" content="2224 Old Middlefield Way, Suite J">
+                                    <meta itemprop="postalCode" content="94043">
+                                    <meta itemprop="addressLocality" content="Mountain View California">
+                                    <meta itemprop="addressCountry" content="USA">
+                                </div>
                             </div>
 
                             <h2 class="title">Better Pricing</h2>
@@ -329,7 +335,7 @@
                                 <span itemprop="author" itemscope="" itemtype="http://schema.org/Person">
                                     <h3 class="name" itemprop="name">Dr. Ann Jayaram</h3>
                                     <div class="usertitle">
-                                    Cosmetic Surgeon
+                                        Cosmetic Surgeon
                                     </div>
                                 </span>
 
@@ -346,6 +352,13 @@
                                 <meta itemprop="image" content="<?php echo get_template_directory_uri(); ?>/library/images/NowRx-Logo-Pharmacy.png">
                                 <meta itemprop="priceRange" content="$">
                                 <meta itemprop="telephone" content="(844) 466-6979">
+
+                                <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                    <meta itemprop="streetAddress" content="2224 Old Middlefield Way, Suite J">
+                                    <meta itemprop="postalCode" content="94043">
+                                    <meta itemprop="addressLocality" content="Mountain View California">
+                                    <meta itemprop="addressCountry" content="USA">
+                                </div>
                             </div>
 
                             <h2 class="title">Better Service</h2>
@@ -385,6 +398,12 @@
                                 <meta itemprop="image" content="<?php echo get_template_directory_uri(); ?>/library/images/NowRx-Logo-Pharmacy.png">
                                 <meta itemprop="priceRange" content="$">
                                 <meta itemprop="telephone" content="(844) 466-6979">
+                                <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                    <meta itemprop="streetAddress" content="2224 Old Middlefield Way, Suite J">
+                                    <meta itemprop="postalCode" content="94043">
+                                    <meta itemprop="addressLocality" content="Mountain View California">
+                                    <meta itemprop="addressCountry" content="USA">
+                                </div>
                             </div>
 
                             <h2 class="title">Better Convenience</h2>

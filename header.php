@@ -100,11 +100,9 @@
                                 title="A simple, hassle free pharmacy experience.">How It Works</a></li>
                         <li itemprop="name"><a itemprop="url" href="<?php echo get_site_url(); ?>/testimonials/"
                                 title="See what customers are saying about NowRx Pharmacy.">Testimonials</a></li>
-                        <li itemprop="name"><a itemprop="url" href="<?php echo get_site_url(); ?>/pricing/">Pricing</a>
+                        <li itemprop="name"><a itemprop="url" href="<?php echo get_site_url(); ?>/resources/">Resources</a>
                         </li>
                         <li itemprop="name"><a itemprop="url" href="<?php echo get_site_url(); ?>/blog">Blog</a></li>
-                        <li itemprop="name"><a itemprop="url" href="<?php echo get_site_url(); ?>/faqs/"
-                                title="Have questions about NowRx Pharmacy? Check out our FAQs.">FAQs</a></li>
                         <li itemprop="name" class="buttonfill buttonglimmer">
                             <a class="button secondary rounded shadow rx-btn" itemprop="url"
                                 href="<?= get_site_url(); ?>/refill-and-transfer-prescriptions/">

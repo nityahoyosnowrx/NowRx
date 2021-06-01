@@ -72,6 +72,8 @@
 
 <!-- companies -->
 <?php include('section-companies.php'); ?>
+<?php include('section-visitblock.php'); ?>
+
 
 
 

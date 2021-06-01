@@ -387,14 +387,13 @@ section.interactionchecker {
 
 .autocompleteform {
     position: absolute;
-    padding: 5px;
-    background: #eee;
+    background: #fff;
     display: block;
     margin: 0 0 30px;
-    border-radius: 0 20px;
+    border-radius: 0 15px;
     top: 0;
-    left: 0;
-    right: 0;
+    left: -5vw;
+    right: -5vw;
     opacity: 0;
     visibility: hidden;
     transition: all .3s;
@@ -404,6 +403,10 @@ section.interactionchecker {
     flex-wrap: wrap;
     text-align: left;
     z-index: 1234;
+    box-shadow: 0px 12px 25px 1px #dbdbdb;
+    border: 1px solid #bfbfbf;
+    padding: 15px 15px;
+
 }
 
 .rella {
@@ -416,11 +419,14 @@ section.interactionchecker {
     text-transform: capitalize;
     font-size: 14px;
     margin: 0px 0;
-    padding: 5px;
+    padding: 3px 12px;
     cursor: pointer;
-    border-radius: 5px;
+
+    border-radius: 20px;
     border: 1px solid #c3c3c3;
+
     margin: 5px;
+    background-color: #fff;
 }
 
 .autocompleteform.active {
@@ -435,7 +441,9 @@ section.interactionchecker {
 }
 
 .autocompleteform span.selectnormid:hover {
-    background: #fff;
+    background: #1f88ca;
+    color: #fff;
+    border-color: #1f88ca;
 }
 
 form.icform input {
