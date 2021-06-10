@@ -31,20 +31,23 @@
 
                 <div class="rvls">
                     <span class="sub-headline">
-                        HIV PREVENTION TELEHEALTH
+                    A Better Way to PrEP Online
                     </span>
                 </div>
 
                 <div class="rvls">
                     <h1 class="hiw-title">
-                        <span class="k">HIV PrEP is Easy </span>
+                    <span class="k">HIV PrEP is Easy </span>
                         <span class="k">with NowPrEP</span>
                     </h1>
                 </div>
 
                 <div class="rvls">
                     <p>
-                        PrEP from the comfort & privacy of your home. 99% of patients pay $0 for medication and delivery. Sign up to see if you qualify!
+                    NowPrEP prescribes HIV PrEP medication online & delivers it to your door. 99% of patients pay $0 - Tap below to get started!
+
+
+
                     </p>
                 </div>
 
@@ -103,12 +106,12 @@ include('section-companies.php'); ?>
             <div class="hiw-cell cell large-4 text-center">
                 <div class="rvl">
 
-                    <h3 class="padding-bottom-3">1. Sign Up for NowPrep</h3>
                     <div class="image quatroimg">
                         <img data-toggle-class="active"
                             data-src="<?php echo get_template_directory_uri(); ?>/images/HIV-Prep-Sign-Up-Icon.png"
                             alt="end Us Your Prescription" class="pic lozad">
                     </div>
+                    <h3 class="padding-bottom-3">1. Sign Up for NowPrep</h3>
 
                     <p>
                         Sign up in seconds and fill out our health questionnaire to assess whether NowPrEP is right for
@@ -121,12 +124,12 @@ include('section-companies.php'); ?>
             <div class="hiw-cell cell large-4 text-center">
                 <div class="rvl">
 
-                    <h3 class="padding-bottom-3">2. Complete an HIV Test</h3>
                     <div class="image quatroimg">
                         <img data-toggle-class="active"
                             data-src="<?php echo get_template_directory_uri(); ?>/images/HIV-PrEP-Test-Icon.png"
                             alt="We Confirm Delivery" class="pic lozad ">
                     </div>
+                    <h3 class="padding-bottom-3">2. Complete an HIV Test</h3>
 
                     <p>
                         We will order a full lab test and help you set up an appointment with one of our partner labs
@@ -139,16 +142,15 @@ include('section-companies.php'); ?>
             <div class="hiw-cell cell large-4 text-center">
                 <div class="rvl">
 
-                    <h3 class="padding-bottom-3">3. Get HIV PrEP Delivered</h3>
                     <div class="image quatroimg">
                         <img data-toggle-class="active"
                             data-src="<?php echo get_template_directory_uri(); ?>/images/HIV-Prep-Prescription-Icon.png"
                             alt="Medication is Delivered" class="pic lozad">
                     </div>
+                    <h3 class="padding-bottom-3">3. Get HIV PrEP Delivered</h3>
 
                     <p>
-                        If a NowPrEP physician decides a prescription is right for you, we will deliver your medication
-                        in hours for free.
+                    If a NowPrEP physician decides HIV PrEP Medication is right for you, we will deliver it in hours for free.
                     </p>
                 </div>
             </div>

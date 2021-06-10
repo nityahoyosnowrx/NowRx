@@ -102,12 +102,12 @@
             <div class="hiw-cell cell large-4 text-center">
                 <div class="rvl">
 
-                    <h3 class="padding-bottom-3">1. Send Us Your Prescription</h3>
                     <div class="image">
                         <img data-toggle-class="active"
                             data-src="<?php echo get_template_directory_uri(); ?>/library/images/Prescription-Icon.png"
                             alt="Prescription Icon" class="pic lozad">
                     </div>
+                    <h3 class="padding-bottom-3">1. Send Us Your Prescription</h3>
 
                     <p>
                         Call, fax, or ePrescribe to us like any other pharmacy. We are in all EMRs under NowRx.
@@ -120,12 +120,12 @@
             <div class="hiw-cell cell large-4 text-center">
                 <div class="rvl">
 
-                    <h3 class="padding-bottom-3">2. We Confirm Delivery</h3>
                     <div class="image">
                         <img data-toggle-class="active"
                             data-src="<?php echo get_template_directory_uri(); ?>/library/images/Confirmation-Icon.png"
                             alt="prescription delivery confirmation check mark icon" class="pic lozad ">
                     </div>
+                    <h3 class="padding-bottom-3">2. We Confirm Delivery</h3>
 
                     <p>We will reach out to your patient via phone to set up delivery, collect a copay and provide a consultation.</p>
                 </div>
@@ -135,12 +135,12 @@
             <div class="hiw-cell cell large-4 text-center">
                 <div class="rvl">
 
-                    <h3 class="padding-bottom-3">3. Medication is Delivered</h3>
                     <div class="image">
                         <img data-toggle-class="active"
                             data-src="<?php echo get_template_directory_uri(); ?>/library/images/Car-Icon.png"
                             alt="Prescription Delivery Car Icon" class="pic lozad">
                     </div>
+                    <h3 class="padding-bottom-3">3. Medication is Delivered</h3>
 
                     <p>A NowRx Pharmacy employee will deliver the patient's medication in a few hours or as requested.</p>
                 </div>
@@ -298,42 +298,25 @@
 
                     <!-- block -->
                     <div class="rvl">
-                        <div class="block" itemscope itemtype="http://schema.org/Review">
+                        <div class="block" >
 
-                            <div itemprop="itemReviewed" itemscope itemtype="http://schema.org/LocalBusiness">
-                                <meta itemprop="name" content="NowRx Pharmacy">
-                                <meta itemprop="image" content="<?php echo get_template_directory_uri(); ?>/library/images/NowRx-Logo-Pharmacy.png">
-                                <meta itemprop="priceRange" content="$">
-                                <meta itemprop="telephone" content="(844) 466-6979">
-                                <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-                                    <meta itemprop="streetAddress" content="2224 Old Middlefield Way, Suite J">
-                                    <meta itemprop="postalCode" content="94043">
-                                    <meta itemprop="addressLocality" content="Mountain View California">
-                                    <meta itemprop="addressCountry" content="USA">
-                                </div>
-                            </div>
-
-                            <h2 class="title">Better Pricing</h2>
+                            <h3 class="title">Better Pricing</h3>
 
                             <blockquote>
 
-                                <div class="review" itemprop="reviewRating" itemscope="" itemtype="http://schema.org/Rating">
-                                    <p itemprop="description">
+                                <div class="review">
+                                    <p >
                                     "
                                     NowRx Pharmacy is great for my staff. Their prices are the lowest around and they deliver for free. Try them out, your patients and staff will thank you."
-
-
                                     </p>
-                                    <meta itemprop="ratingValue" content="5">
-                                    </meta>
                                 </div>
 
                                 <div class="imageblock">
-                                    <img itemprop="image" data-toggle-class="active" data-src="<?php echo get_template_directory_uri(); ?>/images/DrJayaram-1.png" class="lozad" alt="Dr. Ann Jayaram giving testimonial for nowrx pharmacy">
+                                    <img  data-toggle-class="active" data-src="<?php echo get_template_directory_uri(); ?>/images/DrJayaram-1.png" class="lozad" alt="Dr. Ann Jayaram giving testimonial for nowrx pharmacy">
                                 </div>
 
-                                <span itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-                                    <h3 class="name" itemprop="name">Dr. Ann Jayaram</h3>
+                                <span >
+                                    <h3 class="name">Dr. Ann Jayaram</h3>
                                     <div class="usertitle">
                                         Cosmetic Surgeon
                                     </div>
@@ -345,40 +328,24 @@
 
                     <!-- block -->
                     <div class="rvl">
-                        <div class="block" itemscope itemtype="http://schema.org/Review">
+                        <div class="block" >
 
-                            <div itemprop="itemReviewed" itemscope itemtype="http://schema.org/LocalBusiness">
-                                <meta itemprop="name" content="NowRx Pharmacy">
-                                <meta itemprop="image" content="<?php echo get_template_directory_uri(); ?>/library/images/NowRx-Logo-Pharmacy.png">
-                                <meta itemprop="priceRange" content="$">
-                                <meta itemprop="telephone" content="(844) 466-6979">
-
-                                <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-                                    <meta itemprop="streetAddress" content="2224 Old Middlefield Way, Suite J">
-                                    <meta itemprop="postalCode" content="94043">
-                                    <meta itemprop="addressLocality" content="Mountain View California">
-                                    <meta itemprop="addressCountry" content="USA">
-                                </div>
-                            </div>
-
-                            <h2 class="title">Better Service</h2>
+                            <h3 class="title">Better Service</h3>
 
                             <blockquote>
 
-                                <div class="review" itemprop="reviewRating" itemscope="" itemtype="http://schema.org/Rating">
-                                    <p itemprop="description">
+                                <div class="review">
+                                    <p >
                                     “NowRx Pharmacy has been instrumental for my practice in providing timely medication delivery, transparent pricing, and excellent customer service.”
                                     </p>
-                                    <meta itemprop="ratingValue" content="5">
-                                    </meta>
                                 </div>
 
                                 <div class="imageblock">
-                                    <img itemprop="image" width="150px" height="150px;" style="max-height:120px" data-toggle-class="active" data-src="<?php echo get_template_directory_uri(); ?>/images/Inna-Yaskin.png" class="lozad" alt="Dr. Inna Yaskin giving testimonial for nowrx pharmacy">
+                                    <img  width="150px" height="150px;" style="max-height:120px" data-toggle-class="active" data-src="<?php echo get_template_directory_uri(); ?>/images/Inna-Yaskin.png" class="lozad" alt="Dr. Inna Yaskin giving testimonial for nowrx pharmacy">
                                 </div>
 
-                                <span itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-                                    <h3 class="name" itemprop="name ">
+                                <span >
+                                    <h3 class="name" >
                                     Dr. Inna Yaskin
                                     </h3>
                                     <div class="usertitle">
@@ -391,40 +358,27 @@
 
                     <!-- block -->
                     <div class="rvl">
-                        <div class="block" itemscope itemtype="http://schema.org/Review">
+                        <div class="block" >
 
-                            <div itemprop="itemReviewed" itemscope itemtype="http://schema.org/LocalBusiness">
-                                <meta itemprop="name" content="NowRx Pharmacy">
-                                <meta itemprop="image" content="<?php echo get_template_directory_uri(); ?>/library/images/NowRx-Logo-Pharmacy.png">
-                                <meta itemprop="priceRange" content="$">
-                                <meta itemprop="telephone" content="(844) 466-6979">
-                                <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-                                    <meta itemprop="streetAddress" content="2224 Old Middlefield Way, Suite J">
-                                    <meta itemprop="postalCode" content="94043">
-                                    <meta itemprop="addressLocality" content="Mountain View California">
-                                    <meta itemprop="addressCountry" content="USA">
-                                </div>
-                            </div>
 
-                            <h2 class="title">Better Convenience</h2>
+
+                            <h3 class="title">Better Convenience</h3>
                             <blockquote>
 
-                                <div class="review" itemprop="reviewRating" itemscope="" itemtype="http://schema.org/Rating">
-                                    <p itemprop="description">
+                                <div class="review">
+                                    <p >
                                     "They really are as good as advertised. They accept standing orders which has saved my office staff significant time and energy. I could not be happier with NowRx!"
 
 
                                     </p>
-                                    <meta itemprop="ratingValue" content="5">
-                                    </meta>
                                 </div>
 
                                 <div class="imageblock">
-                                    <img itemprop="image" data-toggle-class="active" data-src="<?php echo get_template_directory_uri(); ?>/images/Dr.-Tearse.png" class="lozad" alt="Dr. James Tearse giving testimonial for nowrx pharmacy">
+                                    <img  data-toggle-class="active" data-src="<?php echo get_template_directory_uri(); ?>/images/Dr.-Tearse.png" class="lozad" alt="Dr. James Tearse giving testimonial for nowrx pharmacy">
                                 </div>
 
-                                <span itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-                                    <h3 class="name" itemprop="name ">Dr. James Tearse </h3>
+                                <span >
+                                    <h3 class="name" >Dr. James Tearse </h3>
                                     <div class="usertitle">
                                     Opthamology
                                     </div>

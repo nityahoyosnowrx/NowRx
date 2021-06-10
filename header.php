@@ -39,8 +39,8 @@
     <meta name="theme-color" content="#121212">
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
     <!-- ?v=<?php echo time(); ?> -->
-    <!-- <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/public/frontend.css?vs=<?php echo mktime(); ?>"> -->
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/public/frontend.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/public/frontend.css?vs=<?php echo mktime(); ?>">
+    <!-- <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/public/frontend.css"> -->
     <!-- WP HEAD -->
     <?php wp_head(); ?>
     <meta name="p:domain_verify" content="3f36cac4340da88df6ca76c1a431cd53" />

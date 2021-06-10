@@ -138,6 +138,11 @@ section.testimonials-block.triples{
 			flex-direction: column;
 		}
 	}
+	.review {
+		@media screen and (max-width: 700px) {
+			padding: 0 20px;
+		}
+	}
 	.subtitle {
 		font-size: 1.1875rem;
 	}
@@ -182,24 +187,26 @@ section.testimonials-block.triples{
 		color: #038ed8;
 		font-weight: 600;
 		@media screen and (max-width: 700px) {
-			font-size: 4vw;
+			font-size: calc(10.976px + .88235vw);
 		}
 	}
 
 	h2.main-title {
 		text-align: center;
-		font-size: 3.75rem;
-		letter-spacing: -1px;
-		font-weight: 800;
 		margin: 0;
-		line-height: 4.4rem;
-		@media screen and (max-width: 992px) {
-			font-size: 2.95rem;
-			line-height: 2.9rem;
-		}
+
+		font-size: 2.8rem;
+		font-weight: 800;
+		line-height: 1.15;
+		letter-spacing: -.1rem;
+
+
 		@media screen and (max-width: 700px) {
-			font-size: 10vw;
-    		line-height: 12vw;
+			font-size: $font700h2;
+
+		}
+		@media screen and (max-width: 400px) {
+			font-size: $font400h2;
 		}
 	}
 
@@ -230,6 +237,9 @@ section.testimonials-block.triples{
 		}
 	}
 
+	.title {
+		font-size: 1.3rem;
+	  }
 	.block h2.title {
 		text-align: center;
 		font-size: 30px;
@@ -237,9 +247,7 @@ section.testimonials-block.triples{
 	}
 
 	p {
-		font-size: 18px;
 		color: #1a2d3d;
-		font-weight: 500;
 		min-height: 120px;
 		display: block;
 	}

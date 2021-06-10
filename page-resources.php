@@ -8,7 +8,7 @@
         <div class="container">
             <div class="content">
                 <div class="context">
-                    <h2 class="title">Customer Resource Center</h2>
+                    <h1 class="title">Pharmacy Delivery Resources</h1>
                     <p>
                         Your resources to a better local pharmacy delivered with NowRx.
                     </p>

@@ -13,12 +13,13 @@
         <div class="grid-x grid-padding-x steps">
             <div class="hiw-cell cell large-4 text-center">
                 <div class="rvl">
-                    <h3 class="padding-bottom-3">1. Send Us Your Prescription</h3>
                     <div class="image">
                         <img data-toggle-class="active" height="172px" width="172px" data-src="<?php echo get_template_directory_uri(); ?>/library/images/Prescription-Icon.png" alt="Prescription Icon" class="pic lozad">
                     </div>
+                    <h3 class="padding-bottom-3">1. Send Us Your Prescription</h3>
+
                     <p>
-                        <strong>New Prescription: </strong>Tell your doctor to fax or ePrescribe to NowRx. <br>
+                        <strong>New Prescription: </strong>Tell your doctor to fax or ePrescribe to NowRx. <br> <span class="spacing10"></span>
                         <strong>Existing Prescription: </strong>Text <a href="tel:844-466-6979" class="tellink">(844)
                             466-6979</a> or <a href="<?= get_site_url(); ?>/refill-and-transfer-prescriptions/" style="color:#fff;">Transfer
                             Online
@@ -28,10 +29,11 @@
             </div>
             <div class="hiw-cell cell large-4 text-center">
                 <div class="rvl">
-                    <h3 class="padding-bottom-3">2. We Confirm Delivery</h3>
                     <div class="image">
                         <img data-toggle-class="active" height="172px" width="172px" data-src="<?php echo get_template_directory_uri(); ?>/library/images/Confirmation-Icon.png" alt="prescription delivery confirmation check mark icon" class="pic lozad ">
                     </div>
+                    <h3 class="padding-bottom-3">2. We Confirm Delivery</h3>
+
                     <p>We will reach out to you via phone to collect your insurance copay confirm your address and set
                         up a
                         delivery time.</p>
@@ -39,10 +41,11 @@
             </div>
             <div class="hiw-cell cell large-4 text-center">
                 <div class="rvl">
-                    <h3 class="padding-bottom-3">3. Medication is Delivered</h3>
                     <div class="image">
                         <img data-toggle-class="active" height="172px" width="172px" data-src="<?php echo get_template_directory_uri(); ?>/library/images/Car-Icon.png" alt="Prescription Delivery Car Icon" class="pic lozad">
                     </div>
+                    <h3 class="padding-bottom-3">3. Medication is Delivered</h3>
+
                     <p>A NowRx employee will deliver your medication in hours from your local NowRx Pharmacy for free.
                         All you pay is your normal copay.</p>
                 </div>

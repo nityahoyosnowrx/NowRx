@@ -70,7 +70,7 @@
 <!-- faq -->
 <!-- nowprep -->
 <div class="reveal" id="submitaquestion" data-reveal data-close-on-click="true" data-animation-in="slide-in-down"
-    data-animation-out="slide-out-up" style="padding: 60px;">
+    data-animation-out="slide-out-up" >
     <h3 class="text-center">
         Submit a Question
     </h3>
@@ -94,7 +94,7 @@
     </button>
 </div>
 <div class="reveal" id="suggestalocation" data-reveal data-close-on-click="true" data-animation-in="slide-in-down"
-    data-animation-out="slide-out-up" style="padding: 60px;">
+    data-animation-out="slide-out-up" >
     <h3 class="text-center">
         suggest a new location
     </h3>
@@ -151,7 +151,7 @@
     </button>
 </div>
 <!-- for-doctors -->
-<div class="reveal" id="for-doctors-learnmore-second" data-reveal data-close-on-click="true" data-animation-in="slide-in-down" data-animation-out="slide-out-up" style="padding: 60px;">
+<div class="reveal" id="for-doctors-learnmore-second" data-reveal data-close-on-click="true" data-animation-in="slide-in-down" data-animation-out="slide-out-up" >
     <h3 class="text-center">NowRx Doctor Feedback Program</h3>
     <p class="text-center">
         Fill out the form below and a member of our pharmacy team will reach out to you within 24 hours to provide
@@ -191,7 +191,7 @@
     </button>
 </div>
 <div class="reveal" id="make-nowrx-my-pharmacy" data-reveal data-close-on-click="true" data-animation-in="slide-in-down"
-    data-animation-out="slide-out-up" style="padding: 60px;">
+    data-animation-out="slide-out-up" >
     <h3 class="text-center">Make NowRx My Default Pharmacy</h3>
     <p class="text-center">Fill out the form and we'll let your Doctor know to fill your next prescription with
         NowRx.</p>
@@ -215,7 +215,7 @@ endif; ?>
 <!-- after this loads on homepage -->
 <!-- footer -->
 <div class="reveal" id="modal-example" data-reveal data-close-on-click="true" data-animation-in="slide-in-down"
-    data-animation-out="slide-out-up" style="padding: 60px;">
+    data-animation-out="slide-out-up" >
     <p class="text-center">
         <img style="width: 60px; margin-bottom: 2rem; border-radius: 0 15px; margin: 0px 3px;" class="lozad"
             data-src="<?php echo get_template_directory_uri(); ?>/library/images/chat-with-pharmacists-1.jpg"

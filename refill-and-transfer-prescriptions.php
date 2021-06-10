@@ -33,19 +33,21 @@
             <div class="column-half content-col">
 
 
-            <div class="deskcontent">
-                <h1 class="hiw-title">
-                    Pharmacy Delivery Made Easy
-                </h1>
-                <span class="sub-headline">Please complete the form below to request a refill or transfer. Your
-                    local NowRx Pharmacy will then call/text you to confirm all delivery details. </span>
-            </div>
+                <div class="deskcontent">
+                    <!-- desktop h1 -->
+                    <h1 class="hiw-title">
+                        Pharmacy Delivery
+                        Made Easy
+                    </h1>
+                    <span class="sub-headline">Please complete the form below to request a refill or transfer. Your
+                        local NowRx Pharmacy will then call/text you to confirm all delivery details. </span>
+                </div>
 
-            <div class="titlecolumn">
-                <span class="sub-headline">
-                Please complete the form below. Your local NowRx will then call/text you to confirm delivery.
-                </span>
-            </div>
+                <div class="titlecolumn">
+                    <span class="sub-headline">
+                        Please complete the form below. Your local NowRx will then call/text you to confirm delivery.
+                    </span>
+                </div>
 
 
                 <div class="rvls">
@@ -266,14 +268,11 @@
                                         </div>
                                     </cite>
                                     <span class="fullquote">
-                                    <span
-    >"<span style="font-weight: bold; color: #008ed8"
-      >Best pharmacy experience EVER!</span
-    >
-    These guys are like going to your old neighborhood pharmacy, you know the
-    one, where they deliver your medications to you and actually care about the
-    customer? You don't get better service."</span
-  >
+                                        <span>"<span style="font-weight: bold; color: #008ed8">Best pharmacy experience
+                                                EVER!</span>
+                                            These guys are like going to your old neighborhood pharmacy, you know the
+                                            one, where they deliver your medications to you and actually care about the
+                                            customer? You don't get better service."</span>
                                     </span>
 
                                 </blockquote>
@@ -337,14 +336,11 @@
                                         </div>
                                     </cite>
                                     <span class="fullquote">
-                                    <span
-    >"I highly recommend NowRx Pharmacy. I use them professionally as well as
-    personally for my own prescriptions and
-    <span style="font-weight: bold; color: #008ed8"
-      >they really are as good as advertised.</span
-    >
-    I could not be happier with NowRx!"</span
-  >
+                                        <span>"I highly recommend NowRx Pharmacy. I use them professionally as well as
+                                            personally for my own prescriptions and
+                                            <span style="font-weight: bold; color: #008ed8">they really are as good as
+                                                advertised.</span>
+                                            I could not be happier with NowRx!"</span>
                                     </span>
 
                                 </blockquote>
@@ -408,13 +404,10 @@
                                         </div>
                                     </cite>
                                     <span class="fullquote">
-                                    <span
-    >"Companies that
-    <span style="font-weight: bold; color: #008ed8"
-      >ACTUALLY PROVIDE CUSTOMER SERVICE</span
-    >
-    are so rare in this day and age. These guys are awesome!"</span
-  >
+                                        <span>"Companies that
+                                            <span style="font-weight: bold; color: #008ed8">ACTUALLY PROVIDE CUSTOMER
+                                                SERVICE</span>
+                                            are so rare in this day and age. These guys are awesome!"</span>
                                     </span>
 
                                 </blockquote>
@@ -480,15 +473,12 @@
                                         </div>
                                     </cite>
                                     <span class="fullquote">
-                                    <span
-    >"Hands down
-    <span style="font-weight: bold; color: #008ed8"
-      >BEST PHARMACY you could ask for!</span
-    >
-    I no longer have to wait in line to fill my grandmother's medications, and
-    the customer service is amazing. Try them out and you won't regret
-    it!"</span
-  >
+                                        <span>"Hands down
+                                            <span style="font-weight: bold; color: #008ed8">BEST PHARMACY you could ask
+                                                for!</span>
+                                            I no longer have to wait in line to fill my grandmother's medications, and
+                                            the customer service is amazing. Try them out and you won't regret
+                                            it!"</span>
                                     </span>
 
                                 </blockquote>
@@ -552,14 +542,11 @@
                                         </div>
                                     </cite>
                                     <span class="fullquote">
-                                    <span
-    ><span style="font-weight: normal"
-      >"These people, this service is
-      <span style="font-weight: bold; color: #008ed8">AS GOOD AS IT GETS.</span>
-      NowRx sets a new standard that I have never seen anyone get close to. I
-      really can't say enough good things on this service."</span
-    ></span
-  >
+                                        <span><span style="font-weight: normal">"These people, this service is
+                                                <span style="font-weight: bold; color: #008ed8">AS GOOD AS IT
+                                                    GETS.</span>
+                                                NowRx sets a new standard that I have never seen anyone get close to. I
+                                                really can't say enough good things on this service."</span></span>
                                     </span>
 
                                 </blockquote>
@@ -623,13 +610,11 @@
                                         </div>
                                     </cite>
                                     <span class="fullquote">
-                                    "There's a reason every single review is five stars -
-  <span style="font-weight: bold; color: #008ed8"
-    >This pharmacy is AMAZING!</span
-  >
-  Lightning fast response times by pleasant professional staff and customer
-  service like nothing I have ever encountered. Give NowRx a try - you won't
-  regret it!"
+                                        "There's a reason every single review is five stars -
+                                        <span style="font-weight: bold; color: #008ed8">This pharmacy is AMAZING!</span>
+                                        Lightning fast response times by pleasant professional staff and customer
+                                        service like nothing I have ever encountered. Give NowRx a try - you won't
+                                        regret it!"
                                     </span>
 
                                 </blockquote>
@@ -693,11 +678,9 @@
                                         </div>
                                     </cite>
                                     <span class="fullquote">
-                                    <span
-    >"<span style="font-weight: bold; color: #008ed8">Super easy to use.</span>
-    Fast and WAY cheaper than Costco or any other place I've ever
-    checked."</span
-  >
+                                        <span>"<span style="font-weight: bold; color: #008ed8">Super easy to use.</span>
+                                            Fast and WAY cheaper than Costco or any other place I've ever
+                                            checked."</span>
                                     </span>
 
                                 </blockquote>
@@ -761,12 +744,11 @@
                                         </div>
                                     </cite>
                                     <span class="fullquote">
-                                    "<span style="font-weight: bold; color: #008ed8"
-    >This place, these people, are really incredible.</span
-  >
-  They deliver to my house. They process coupons and discounts when I find that
-  they are available. The big chain pharmacies made that process very difficult.
-  I can't say enough!"
+                                        "<span style="font-weight: bold; color: #008ed8">This place, these people, are
+                                            really incredible.</span>
+                                        They deliver to my house. They process coupons and discounts when I find that
+                                        they are available. The big chain pharmacies made that process very difficult.
+                                        I can't say enough!"
                                     </span>
 
                                 </blockquote>
@@ -774,8 +756,8 @@
                         </div>
                     </div>
 
-                                        <!-- item -->
-                                        <div class="quoteitem">
+                    <!-- item -->
+                    <div class="quoteitem">
                         <div class="content">
                             <div class="quote">
                                 <blockquote>
@@ -831,12 +813,11 @@
                                         </div>
                                     </cite>
                                     <span class="fullquote">
-                                    "My husband and I have been using NowRx since early this year and
-    <span style="font-weight: bold; color: #008ed8"
-      >I wish we knew about this pharmacy earlier.</span
-    >
-    It's fast, convenient and their customer service people are very friendly. I
-    would definitely recommend them!"
+                                        "My husband and I have been using NowRx since early this year and
+                                        <span style="font-weight: bold; color: #008ed8">I wish we knew about this
+                                            pharmacy earlier.</span>
+                                        It's fast, convenient and their customer service people are very friendly. I
+                                        would definitely recommend them!"
                                     </span>
 
                                 </blockquote>
@@ -849,7 +830,12 @@
             </div>
             <div class="titlecolumn">
                 <h1 class="hiw-title">
-                    Pharmacy Delivery Made Easy
+                    <span class="k">
+                        Pharmacy Delivery
+                    </span>
+                    <span class="k">
+                        Made Easy
+                    </span>
                 </h1>
 
             </div>
@@ -872,7 +858,7 @@
             <div class="titleblock">
                 <div class="rvl">
                     <span class="sub-headline">
-                    NowRx Pharmacy Delivery
+                        NowRx Pharmacy Delivery
                     </span>
                 </div>
 

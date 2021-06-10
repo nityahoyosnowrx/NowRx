@@ -38,7 +38,7 @@
 	}
 }
 
-a.rx-btn {
+.rx-btn {
 	-webkit-font-smoothing: antialiased;
 	background-color: $m;
 	border: none;
@@ -165,6 +165,13 @@ a.rx-btn {
 			background-color: $m;
 			color: $f;
 		}
+	}
+
+	&[disabled=""]{
+		background-color: #eee;
+		color: #b9b9b9;
+		background-image: none;
+		box-shadow: none;
 	}
 }
 

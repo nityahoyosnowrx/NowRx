@@ -2,6 +2,7 @@
 
 <?php if (has_post_thumbnail( $post->ID ) ): ?>
 <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID),'large'); ?>
+
 <section class="hero"
     style="background: #000 url('<?php echo $image[0]; ?>') no-repeat top center; -webkit-background-size: cover; background-size: cover; padding: 4rem 0px 3rem; color: #fff;">
     <?php endif; ?>

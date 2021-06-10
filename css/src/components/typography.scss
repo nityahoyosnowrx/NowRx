@@ -4,6 +4,31 @@
 // font-family: Verdana, Geneva, sans-serif;
 $fontround:  Verdana, sans-serif;
 
+// subheading
+$font700sub : calc(10.976px + .88235vw);
+$font400sub : 3.2vw;
+
+// h1
+
+$font700h1 : calc(30.97647px + .88235vw);
+$font400h1 : calc(26.976px + 0.88235vw);
+$font375h1 : calc( 7.88235vw);
+
+
+
+// h2
+$font700h2 : calc(26.97647px + .88235vw);
+$font400h2 : calc(23.176px + .88235vw);
+
+// blog h1
+$bfont700h1 : calc(27.97647px + .88235vw);
+$bbont400h1 : calc(22.976px + 0.88235vw);
+
+// blog h2
+$bfont700h2 : calc(23.97647px + .88235vw);
+$bbont400h2 : calc(20.976px + 0.88235vw);
+
+
 blockquote,
 dd,
 div,
