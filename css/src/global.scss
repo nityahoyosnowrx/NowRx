@@ -307,6 +307,7 @@ li.MostPopular-addIndex a.MostPopular-link {
 	color: #444;
 	font-weight: 900;
 	line-height: 20px;
+
 	@media screen and (max-width: 992px) {
 		width: 100%;
 		line-height: 30px;
@@ -318,6 +319,9 @@ li.MostPopular-addIndex a.MostPopular-link {
 		margin: 20px 0 0;
 		line-height: 2rem;
 		padding: 0;
+
+	}
+	@media screen and (max-width: 400px) {
 		font-size: 4vw;
 		line-height: 5vw;
 	}
@@ -611,6 +615,9 @@ header.page {
 			h2 {
 				font-size: 16px;
 				margin: 0 0 5px;
+				@media screen and (max-width: 1280px) {
+					font-size: $font1280h2;
+				}
 				@media screen and (max-width: 700px) {
 					font-size: $font700h2;
 				}
@@ -633,12 +640,19 @@ header.page {
 			line-height: 1.4;
 			font-weight: 900;
 			letter-spacing: -1px;
+
+			@media screen and (max-width: 1280px) {
+				font-size: $font1280h3;
+			}
+
 			@media screen and (max-width: 700px) {
 				font-size: $font700h2;
 			}
+
 			@media screen and (max-width: 400px) {
 				font-size: $font400h2;
 			}
+
 		}
 	}
 	.data {
@@ -745,7 +759,7 @@ header.page {
 				}
 				h2 {
 					@media screen and (max-width: 700px) {
-						font-size: $bfont700h2;
+						font-size: $font700h2;
 					}
 					@media screen and (max-width: 400px) {
 						font-size: $bbont400h2;
@@ -756,13 +770,22 @@ header.page {
 		.contentblock {
 			padding: 0 10px 0px;
 		}
-		article.section.firsttwo h2 {
-			font-size: 14px;
-			margin: 0 0 5px;
-		}
 		article.section.firsttwo {
 			width: 100%;
 			padding: 20px 0;
+			h2 {
+				font-size: 14px;
+				margin: 0 0 5px;
+				@media screen and (max-width: 1280px) {
+					font-size: $font1280h3;
+				}
+				@media screen and (max-width: 700px) {
+					font-size: $font700h2;
+				}
+				@media screen and (max-width: 400px) {
+					font-size: $bbont400h2;
+				}
+			}
 		}
 	}
 
@@ -1249,7 +1272,9 @@ section.split-image {
 		line-height: 1.15;
 		letter-spacing: -0.1rem;
 
-
+		@media screen and (max-width: 1280px) {
+			font-size: $font1280h2;
+		}
 		@media screen and (max-width: 700px) {
 			// line-height: 12vw;
 			font-size: $font700h2;
@@ -1277,12 +1302,12 @@ section.split-image {
 		margin: 0 0 10px;
 
 		@media screen and (max-width: 700px) {
-			font-size:$font700sub;
+			font-size: $font700sub;
 			margin: 0 0 0;
 			display: block;
 		}
 		@media screen and (max-width: 400px) {
-			font-size:$font400sub;
+			font-size: $font400sub;
 		}
 	}
 
@@ -1923,8 +1948,7 @@ article.article-block.location-item {
 	}
 	div#map {
 		@media screen and (max-width: 700px) {
-		max-height: 30vh;
-
+			max-height: 30vh;
 		}
 	}
 	h1.entry-title {
@@ -1940,7 +1964,7 @@ article.article-block.location-item {
 			text-align: center;
 			font-size: $font700h1;
 			margin: 10px 0 20px;
-    		padding: 0;
+			padding: 0;
 		}
 		@media screen and (max-width: 400px) {
 			font-size: $font400h1;
@@ -1948,7 +1972,6 @@ article.article-block.location-item {
 		@media screen and (max-width: 375px) {
 			font-size: $font375h1;
 		}
-
 	}
 	.map-block.reversedblcok {
 		padding-top: 60px;
@@ -2504,6 +2527,9 @@ section.form-and-locations {
 	}
 	h2.sec-title {
 		text-align: center;
+		@media screen and (max-width: 1280px) {
+			font-size: $font1280h2;
+		}
 		@media screen and (max-width: 700px) {
 			font-size: $font700h2;
 		}
@@ -2589,26 +2615,26 @@ section.hero-home.contactpage {
 	}
 }
 
-section.referralform {
-	padding: 20px 0;
+// section.referralform {
+// 	padding: 20px 0;
 
-	.content {
-		.column-half.content-col {
-			max-width: 600px;
-			left: 60px;
-			padding: 40px 40px;
-			@media screen and (max-width: 992px) {
-				left: 0;
-				padding: 40px 0;
-			}
-			h1.hiw-title {
-				@media screen and (max-width: 992px) {
-					font-size: 8.8vw;
-				}
-			}
-		}
-	}
-}
+// 	.content {
+// 		.column-half.content-col {
+// 			// max-width: 600px;
+// 			// left: 60px;
+// 			// padding: 40px 40px;
+// 			@media screen and (max-width: 992px) {
+// 				left: 0;
+// 				padding: 40px 0;
+// 			}
+// 			h1.hiw-title {
+// 				@media screen and (max-width: 992px) {
+// 					// font-size: 8.8vw;
+// 				}
+// 			}
+// 		}
+// 	}
+// }
 section#referralform {
 	padding: 20px 0;
 	max-width: 1430px;
@@ -3196,7 +3222,9 @@ section.split-bubbles {
 		font-weight: 800;
 		line-height: 1.15;
 		letter-spacing: -0.1rem;
-
+		@media screen and (max-width: 1280px) {
+			font-size: $font1280h2;
+		}
 		@media screen and (max-width: 700px) {
 			text-align: center;
 			font-size: $font700h2;
@@ -3208,7 +3236,7 @@ section.split-bubbles {
 	}
 	p.pre-headline {
 		@media screen and (max-width: 700px) {
-			font-size: calc(10.976px + .88235vw);
+			font-size: calc(10.976px + 0.88235vw);
 			margin: 0;
 		}
 	}
@@ -3495,7 +3523,7 @@ section.form-faq {
 			margin: 0 0 20px;
 
 			@media screen and (max-width: 400px) {
-				font-size: calc(9.176px + .88235vw);
+				font-size: calc(9.176px + 0.88235vw);
 				display: block;
 			}
 		}
@@ -3510,7 +3538,7 @@ section.form-faq {
 				font-size: 2.35rem;
 			}
 			@media screen and (max-width: 400px) {
-				font-size: calc(18.176px + .88235vw);
+				font-size: calc(18.176px + 0.88235vw);
 				line-height: 22px;
 			}
 		}
@@ -3834,6 +3862,7 @@ div#for-doctors-learnmore h2.title {
 		align-items: center;
 		justify-content: center;
 		flex-direction: column;
+		min-height: 800px;
 		@media screen and (max-width: 1050px) {
 			width: 100%;
 			padding: 30px 10px 60px;

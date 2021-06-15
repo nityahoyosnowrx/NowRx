@@ -39,7 +39,7 @@
   <div class="grid-container">
     <div class="grid-x grid-padding-x text-center">
       <div class="large-12 cell">
-        <p class="handwriting"><?php the_field('handwriting'); ?></p>
+        <h2 class="handwriting"><?php the_field('handwriting'); ?></h2>
       </div>
     </div>
     <div class="grid-x grid-padding-x padded-section switch-back">
@@ -60,7 +60,7 @@
       </div>
     </div>
 
-    
+
 
   </div>
 </section>
@@ -82,7 +82,7 @@
   <div class="grid-container padded-section">
     <div class="grid-x grid-padding-x text-center">
       <div class="large-12 cell">
-        <p class="handwriting"><?php the_field('handwriting_2'); ?></p>
+        <h2 class="handwriting"><?php the_field('handwriting_2'); ?></h2>
       </div>
     </div>
     <div class="grid-x grid-padding-x padded-section switch-back">

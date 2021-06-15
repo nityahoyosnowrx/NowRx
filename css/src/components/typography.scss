@@ -10,6 +10,7 @@ $font400sub : 3.2vw;
 
 // h1
 
+$font1280h1 : calc(34.97647px + 0.88235vw);
 $font700h1 : calc(30.97647px + .88235vw);
 $font400h1 : calc(26.976px + 0.88235vw);
 $font375h1 : calc( 7.88235vw);
@@ -17,8 +18,12 @@ $font375h1 : calc( 7.88235vw);
 
 
 // h2
+$font1280h2 : calc(30.97647px + .88235vw);
 $font700h2 : calc(26.97647px + .88235vw);
 $font400h2 : calc(23.176px + .88235vw);
+
+// h3
+$font1280h3 : calc(10.97647px + .88235vw);
 
 // blog h1
 $bfont700h1 : calc(27.97647px + .88235vw);

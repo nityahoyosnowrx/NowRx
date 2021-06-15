@@ -36,14 +36,14 @@
             <div class="column-half content-col">
                 <div class="contentblock">
                 <span class="sub-headline ">
-                    <strong>DELIVERING A BETTER PHARMACY ONLINE</strong>
+                    <strong>DELIVERING A BETTER LOCAL PHARMACY</strong>
                 </span>
                 <h1>
                     <span class="k">Free Same Day</span>
                     <span class="k">Pharmacy Delivery</span>
                 </h1>
                 <p>
-                    NowRx is a local pharmacy that offers free same day delivery. Tap get started to transfer or refill your prescriptions online.
+                    NowRx is a local pharmacy that offers free same day delivery. Tap get started to request a prescription delivery today!
                 </p>
                 <div class="btn-container">
                     <a class="rx-btn" href="<?= get_site_url(); ?>/refill-and-transfer-prescriptions/">

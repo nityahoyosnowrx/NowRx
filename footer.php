@@ -9,12 +9,19 @@ else:
     <div class="grid-container">
         <div class="grid-x grid-padding-x">
             <div class="large-2 cell small-order-2 medium-order-1">
-                <p><a href="<?= get_site_url(); ?>/"><img class="logo lozad"
+                <p>
+                    <a href="<?= get_site_url(); ?>/"><img class="logo lozad"
                             data-src="<?php echo get_template_directory_uri(); ?>/library/images/NowRx-Logo-Pharmacy.png"
-                            alt="NowRx Pharmacy Logo" height="28px" width="122px"></a></p>
-                <p class="text-small">&copy; <?= date('Y'); ?> NowRx.com  <br>
-                    All rights reserved. <br>
-                    <a href="<?= get_site_url(); ?>/about-us/">About Us</a><br>
+                            alt="NowRx Pharmacy Logo" height="28px" width="122px"></a>
+<br>
+                            <a href="https://safe.pharmacy/" target="_blank">
+                            <img class="logo lozad phr"
+                        data-src="<?php echo get_template_directory_uri(); ?>/images/dotPharmacy-Logo-Text-for-Redirect.webp"
+                        alt="NowRx Pharmacy Logo" width="122px" height="28px">
+                            </a>
+                        </p>
+                <p class="text-small">&copy; <?= date('Y'); ?> NowRx<br>
+
                     <a href="<?= get_site_url(); ?>/privacy-policy/">Privacy Policy</a><br>
                     <a href="<?= get_site_url(); ?>/hipaa-privacy/">HIPAA Privacy</a><br>
                     <a href="<?= get_site_url(); ?>/telehealth/terms-and-conditions/">Telehealth T&C</a>
@@ -25,6 +32,7 @@ else:
                     <div class="large-3 small-6 cell">
                         <h4>COMPANY</h4>
                         <ul class="footer-menu-col vertical menu text-small">
+                            <li><a href="<?= get_site_url(); ?>/about-us/">About Us</a></li>
                             <li><a href="<?= get_site_url(); ?>/nowprep/">NowPrEP</a></li>
                             <li><a href="<?= get_site_url(); ?>/faqs/">FAQs</a></li>
                             <li><a href="<?= get_site_url(); ?>/locations/">Locations</a></li>
@@ -99,6 +107,9 @@ else:
                     <img class="logo lozad"
                         data-src="<?php echo get_template_directory_uri(); ?>/library/images/NowRx-Pharmacy-Delivery-Logo.webp"
                         alt="NowRx Pharmacy Logo" width="122px" height="28px">
+
+
+
                 </div>
                 <div class="txt">
                     <b>"Best prescription delivery services in 2021" (CNET)</b>

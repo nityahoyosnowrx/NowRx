@@ -67,7 +67,7 @@ body.page-template.page-template-refill-and-transfer-prescriptions .calltoaction
 			@media screen and (max-width: 992px) {
 				margin: 20px 0 0;
 				padding: 15px 25px;
-				font-size: 3.5vw;
+				font-size: calc(12.976px + 0.88235vw)
 			}
 
 			&::before {

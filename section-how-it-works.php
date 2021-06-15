@@ -20,10 +20,7 @@
 
                     <p>
                         <strong>New Prescription: </strong>Tell your doctor to fax or ePrescribe to NowRx. <br> <span class="spacing10"></span>
-                        <strong>Existing Prescription: </strong>Text <a href="tel:844-466-6979" class="tellink">(844)
-                            466-6979</a> or <a href="<?= get_site_url(); ?>/refill-and-transfer-prescriptions/" style="color:#fff;">Transfer
-                            Online
-                            Here</a>.
+                        <strong>Existing Prescription: </strong>Text Us or <a href="<?= get_site_url(); ?>/refill-and-transfer-prescriptions/" style="color:#fff;">Tap Here to Request Prescription Delivery</a>.
                     </p>
                 </div>
             </div>

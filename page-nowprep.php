@@ -31,7 +31,7 @@
 
                 <div class="rvls">
                     <span class="sub-headline">
-                    A Better Way to PrEP Online
+                    An Easier Way to HIV PrEP
                     </span>
                 </div>
 
@@ -44,7 +44,7 @@
 
                 <div class="rvls">
                     <p>
-                    NowPrEP prescribes HIV PrEP medication online & delivers it to your door. 99% of patients pay $0 - Tap below to get started!
+                    NowPrEP prescribes HIV PrEP medication & delivers it to you. 99% of patients pay $0 - Tap below to get started!
 
 
 
@@ -54,7 +54,7 @@
                 <div class="rvls">
                     <div class="btn-container">
                         <!-- <a class="rx-btn" href="<?= get_site_url(); ?>/refill-and-transfer-prescriptions/">Join Watilist</a> -->
-                        <a class="rx-btn " data-toggle="waitlist" aria-controls="waitlist" aria-haspopup="true" id="getstarted-gt" tabindex="0"> <?php include('reg-arrow.php'); ?> Get Started</a>
+                        <a class="rx-btn " id="nowprep-gt-gt" data-toggle="waitlist" aria-controls="waitlist" aria-haspopup="true" id="getstarted-gt" tabindex="0"> <?php include('reg-arrow.php'); ?> Get Started</a>
                         <a class="rx-btn rx-green mrb" href="#howitwork"> <?php include('grn-arrow.php'); ?> How It
                             Works</a>
                     </div>
@@ -93,7 +93,7 @@ include('section-companies.php'); ?>
         <div class="grid-x grid-padding-x text-center">
             <div class="large-12 cell">
                 <div class="rvl">
-                    <p class="pre-headline">Simple HIV PrEP Online</p>
+                    <p class="pre-headline">HIV PrEP Made Easy</p>
                 </div>
 
                 <div class="rvl">
@@ -114,8 +114,7 @@ include('section-companies.php'); ?>
                     <h3 class="padding-bottom-3">1. Sign Up for NowPrep</h3>
 
                     <p>
-                        Sign up in seconds and fill out our health questionnaire to assess whether NowPrEP is right for
-                        you.
+                        Sign up in seconds and fill out our health questionnaire to assess whether you are eligible for PrEP medication.
                     </p>
                 </div>
             </div>
@@ -132,8 +131,7 @@ include('section-companies.php'); ?>
                     <h3 class="padding-bottom-3">2. Complete an HIV Test</h3>
 
                     <p>
-                        We will order a full lab test and help you set up an appointment with one of our partner labs
-                        near you.
+                        We will submit a lab order for a home test kit or an in person lab appointment that is convenient for you.
                     </p>
                 </div>
             </div>
@@ -150,7 +148,7 @@ include('section-companies.php'); ?>
                     <h3 class="padding-bottom-3">3. Get HIV PrEP Delivered</h3>
 
                     <p>
-                    If a NowPrEP physician decides HIV PrEP Medication is right for you, we will deliver it in hours for free.
+                    If a NowPrEP physician decides HIV PrEP Medication is right for you, we will prescribe and deliver it in hours for FREE!
                     </p>
                 </div>
             </div>
@@ -182,10 +180,10 @@ include('section-companies.php'); ?>
             <!-- pill -->
             <div class="pill reganim">
                 <div class="title">
-                    Convenient & Easy to Use
+                    Convenient, Affordable & Easy to Use
                 </div>
                 <div class="text">
-                    Sign up in minutes and get a physician consultation from the comfort and privacy of your home.
+                    Sign up and get a FREE assessment in minutes from the comfort and privacy of your home.
                 </div>
             </div>
             <!-- pill -->
@@ -194,7 +192,7 @@ include('section-companies.php'); ?>
                     Free Prescription Delivery
                 </div>
                 <div class="text">
-                    If Prep is right for your, NowRx will deliver your medication for free within 5 hours.
+                    If PrEP is right for you, NowRx will deliver your medication for free within 5 hours.
                 </div>
             </div>
             <!-- pill -->
@@ -203,16 +201,16 @@ include('section-companies.php'); ?>
                     Insurance Approval Assistance
                 </div>
                 <div class="text">
-                    We help you navigate the insurance approval process to make sure your medications are covered.
+                    We navigate the insurance process to make sure PrEP medications are covered and affordable!
                 </div>
             </div>
             <!-- pill -->
             <div class="pill reganim">
                 <div class="title">
-                    5 Star Rated Customer Service
+                    5 Star Customer Service
                 </div>
                 <div class="text">
-                    Rated 5 stars on Yelp & Google, our staff does everything to provide the best service imaginable.
+                    NowRx staff is rated 5 stars (Yelp/Google) for their dedicated customer service.
                 </div>
             </div>
         </div>

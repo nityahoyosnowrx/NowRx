@@ -214,6 +214,9 @@ header.main {
 				margin: 0;
 				padding: 0 10px;
 				min-width: 100%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
 			}
 		}
 	}
@@ -302,9 +305,12 @@ header.main {
 		font-size: 12px;
 
 		@media screen and (max-width: 1280px) {
-			margin: 20px 0 0;
 			padding: 15px 25px;
-			font-size: 3.5vw;
+			font-size: 18px;
+			width: auto;
+			min-width: 0;
+			display: inline-flex;
+			margin: 20px auto;
 		}
 
 		&::before {
@@ -433,7 +439,7 @@ body.page-template.page-template-refill-and-transfer-prescriptions {
 		}
 		.content {
 			h1.hiw-title {
-				font-size: 2.1rem;
+				// font-size: 2.1rem;
 				text-align: center;
 				margin: 0 0 10px;
 				@media screen and (max-width: 700px) {
@@ -447,8 +453,6 @@ body.page-template.page-template-refill-and-transfer-prescriptions {
 				@media screen and (max-width: 375px) {
 					font-size: $font375h1;
 				}
-
-
 			}
 			.deskcontent {
 				@media screen and (max-width: 992px) {
@@ -484,7 +488,7 @@ body.page-template.page-template-refill-and-transfer-prescriptions {
 				display: block;
 				@media screen and (max-width: 992px) {
 					font-size: 10px;
-					font-size: 3.2vw;
+					font-size: $font700sub;
 				}
 			}
 		}
@@ -500,7 +504,6 @@ body.page-template.page-template-refill-and-transfer-prescriptions {
 			min-height: 230px;
 			margin: 10px 0 0px;
 		}
-
 
 		.quoteitem {
 			transition: all 0.3s;
@@ -813,6 +816,8 @@ section.hero-home {
 	position: relative;
 	margin: 110px 0 0;
 
+
+
 	// 404 page
 	&.page404 {
 		margin: 90px 0 0;
@@ -943,8 +948,9 @@ section.hero-home {
 					h1 {
 						font-size: 10.2vw;
 						margin: 0 0 20px;
-						font-size: calc(26.97647px + 0.88235vw);
+						font-size: $font1280h1;
 						padding: 0 5px;
+
 						@media screen and (max-width: 400px) {
 							font-size: $font400h1;
 						}
@@ -957,7 +963,6 @@ section.hero-home {
 						max-width: 540px;
 						font-size: 14px;
 					}
-
 				}
 			}
 			.column-half.image-col {
@@ -994,6 +999,9 @@ section.hero-home {
 	&.refillstation {
 		padding: 40px 0 0;
 		@media screen and (max-width: 1280px) {
+			padding: 80px 0 0;
+		}
+		@media screen and (max-width: 700px) {
 			padding: 40px 0 0;
 		}
 	}
@@ -1012,17 +1020,7 @@ section.hero-home {
 		// padding: 90px 0 50px;
 	}
 
-	@media screen and (min-width: 1280px) and (max-width: 1100px) {
-		padding: 90px 0;
-	}
 
-	@media screen and (max-width: 1280px) {
-		padding: 83px 0 20px;
-		margin: 20px 0 0;
-		@media screen and (max-width: 700px) {
-			padding: 55px 0 20px;
-		}
-	}
 
 	&.refillstation {
 		.content {
@@ -1092,12 +1090,11 @@ section.hero-home {
 					position: relative;
 					margin-left: 0;
 
-
-					@media screen and (max-width: 1280px) {
+					@media screen and (max-width: 700px) {
 						width: 100%;
 						max-width: 100%;
 						order: 0;
-						margin:20px 0 -80px;
+						margin: 20px 0 -80px;
 					}
 				}
 
@@ -1110,11 +1107,23 @@ section.hero-home {
 						text-align: center;
 						margin: 0 auto;
 						order: 1;
-
-
 					}
 				}
 			}
+		}
+	}
+
+	@media screen and (min-width: 1100px) and (max-width: 1280px) {
+		// padding: 90px 0;
+	}
+
+	@media screen and (max-width: 1280px) {
+		padding: 0 0 20px;
+		// margin: 20px 0 0;
+		// max-width: 900px;
+		// margin: 20px auto 0;
+		@media screen and (max-width: 700px) {
+			padding: 55px 0 20px;
 		}
 	}
 
@@ -1139,6 +1148,7 @@ section.hero-home {
 			width: 100%;
 		}
 	}
+
 	.content {
 		display: flex;
 		align-items: center;
@@ -1172,7 +1182,6 @@ section.hero-home {
 			@media screen and (max-width: 400px) {
 				font-size: 3.2vw;
 			}
-
 		}
 
 		.column-half {
@@ -1198,9 +1207,13 @@ section.hero-home {
 					padding: 40px 30px;
 					// padding: 30px 20px 30px 60px;
 				}
+
+
+
 				@media screen and (max-width: 1280px) {
 					max-width: 100%;
 				}
+
 				padding: 0;
 				p {
 					max-width: 540px;
@@ -1220,12 +1233,12 @@ section.hero-home {
 				margin-left: auto;
 				max-width: 55%;
 
-				@media screen and (max-width: 1200px) {
-				}
 				@media screen and (max-width: 1280px) {
 					width: 100%;
 					margin: 0;
 					max-width: 100%;
+					max-width: 700px;
+    				margin: 0px auto 0;
 				}
 				picture {
 					width: 100%;
@@ -1233,8 +1246,7 @@ section.hero-home {
 			}
 
 			&.content-col {
-				@media screen and (max-width: 1200px) {
-				}
+
 				@media screen and (max-width: 1280px) {
 					width: 100%;
 					// padding: 30px 0 60px;
@@ -1254,7 +1266,9 @@ section.hero-home {
 					border-radius: 0 15px;
 					width: 95%;
 				}
-
+				@media screen and (max-width:1280px) and (min-width:700px) {
+					padding: 40px 20px;
+				}
 			}
 		}
 		.btn-container {
@@ -1269,7 +1283,6 @@ section.hero-home {
 			}
 			@media screen and (max-width: 400px) {
 				margin: 10px 0 0;
-
 			}
 		}
 		h1 {
@@ -1290,13 +1303,28 @@ section.hero-home {
 				}
 			}
 
+			@media screen and (max-width: 1280px) {
+				margin: 0 0 20px;
+				padding: 0 5px;
+				font-size: $font1280h1;
+			}
 
+			@media screen and (max-width: 700px) {
+				font-size: $font700h1;
+			}
+
+			@media screen and (max-width: 400px) {
+				font-size: $font400h1;
+			}
+			@media screen and (max-width: 375px) {
+				font-size: $font375h1;
+			}
 
 			&.hiw-title {
 				// font-size: 3.6rem;
 				@media screen and (max-width: 1280px) {
 					margin: 0 0 20px;
-					font-size: calc(28px + 6 * ((100vw - 320px) / 680));
+					// font-size: calc(28px + 6 * ((100vw - 320px) / 680));
 					padding: 0 5px;
 				}
 
@@ -1309,24 +1337,6 @@ section.hero-home {
 				@media screen and (max-width: 375px) {
 					font-size: $font375h1;
 				}
-			}
-
-			@media screen and (max-width: 1280px) {
-				font-size: 10.2vw;
-				margin: 0 0 20px;
-				font-size: calc(28px + 6 * ((100vw - 320px) / 680));
-				padding: 0 5px;
-			}
-
-			@media screen and (max-width: 700px) {
-				font-size: $font700h1;
-			}
-
-			@media screen and (max-width: 400px) {
-				font-size: $font400h1;
-			}
-			@media screen and (max-width: 375px) {
-				font-size: $font375h1;
 			}
 		}
 		a.alink {
@@ -1446,11 +1456,12 @@ section.how-it-works {
 			top: 60px;
 			right: 0;
 			top: 50%;
-    transform: translateY(-50%);
+			transform: translateY(-50%);
 		}
 
 		@media screen and (max-width: 400px) {
-			top: 50px;top: 50%;
+			top: 50px;
+			top: 50%;
 			transform: translateY(-50%);
 		}
 		img {
@@ -1461,6 +1472,11 @@ section.how-it-works {
 		}
 	}
 }
+section.how-it-works.panel--primary.panel--cta {
+	p {
+		text-align: center;
+	}
+}
 
 // blue box for how it works
 section.how-it-works {
@@ -1469,6 +1485,24 @@ section.how-it-works {
 		max-width: 500px;
 		margin: 0 auto;
 		position: relative;
+		@media screen and (min-width: 700px) and (max-width: 1280px) {
+			max-width: 33%;
+			display: flex;
+			align-items: flex-start;
+			justify-content: center;
+			padding: 0 10px;
+			p {
+				padding-right: 0 !important;
+			}
+			.rvl {
+				width: 100%;
+			}
+		}
+	}
+	&.aboutcta {
+		p {
+			text-align: center;
+		}
 	}
 	&.panel--primary.quatro {
 		.hiw-cell {
@@ -1498,6 +1532,10 @@ section.how-it-works {
 		font-weight: 800;
 		line-height: 1.15;
 		letter-spacing: -0.1rem;
+
+		@media screen and (max-width: 1280px) {
+			font-size: $font1280h2;
+		}
 
 		@media screen and (max-width: 700px) {
 			font-size: $font700h2;
@@ -1555,10 +1593,8 @@ section.how-it-works {
 				font-size: $font700sub;
 			}
 			@media screen and (max-width: 400px) {
-				font-size:$font400sub;
+				font-size: $font400sub;
 			}
-
-
 
 			margin: 0 0 0px;
 		}
@@ -1677,11 +1713,28 @@ section.hero--sub-page {
 			padding: 0;
 		}
 	}
+
+	@media print, screen and (min-width: 64em) {
+		.grid-x > .large-10 {
+			width: 75%;
+		}
+	}
+	@media screen and (min-width: 700px) {
+		.grid-x > .large-2 {
+			width: 25%;
+		}
+	}
+
 	.text-small {
 		font-size: 0.875rem;
 	}
+	img.phr {
+		margin-top: 20px;
+	}
 	.logo {
-		width: 122px;
+		width: 100%;
+		margin-bottom: 10px;
+		max-width: 210px;
 	}
 	a {
 		color: #192d3e;
@@ -1689,6 +1742,7 @@ section.hero--sub-page {
 	.menu a {
 		padding-left: 0px;
 		font-weight: normal;
+		line-height: 1.3;
 	}
 	.disclaimer {
 		margin-top: 2rem;
@@ -1703,6 +1757,17 @@ section.hero--sub-page {
 		font-weight: 800;
 		color: #254e89;
 		font-size: 1rem;
+	}
+
+	.grid-x > .large-3 {
+		@media screen and (min-width: 700px) {
+			width: 25%;
+		}
+	}
+	.grid-x > .large-2 {
+		@media screen and (min-width: 700px) {
+			// width: 16.66667%;
+		}
 	}
 }
 
@@ -2012,13 +2077,13 @@ h1 {
 	font-size: 1rem;
 }
 
-.handwriting {
-	font-family: 'rollerscript-smooth', sans-serif;
-	font-weight: 400;
-	font-style: normal;
-	font-size: 2.5rem;
-	color: #0088ce;
-}
+// .handwriting {
+// 	font-family: 'rollerscript-smooth', sans-serif;
+// 	font-weight: 400;
+// 	font-style: normal;
+// 	font-size: 2.5rem;
+// 	color: #0088ce;
+// }
 
 .headline {
 	font-size: 3.3rem;
@@ -2065,10 +2130,10 @@ h1 {
 	letter-spacing: -0.1rem;
 
 	@media screen and (max-width: 700px) {
-		font-size:$font700h1;
+		font-size: $font700h1;
 	}
 	@media screen and (max-width: 400px) {
-		font-size:$font400h1;
+		font-size: $font400h1;
 	}
 }
 
@@ -2192,12 +2257,16 @@ a.post-link-title {
 	}
 	.headline {
 		font-size: 2rem;
-		margin: 0;
+		// margin: 0;
 	}
 	section.how-it-works .headline {
 		letter-spacing: 0;
 		font-size: 10vw;
 		font-size: calc(25.17647px + 0.88235vw);
+
+		@media screen and (max-width: 1280px) {
+			font-size: $font1280h2;
+		}
 		@media screen and (max-width: 700px) {
 			font-size: $font700h2;
 		}
@@ -2270,7 +2339,7 @@ section.faq-section {
 			margin: 0;
 		}
 		@media screen and (max-width: 400px) {
-			font-size:$font400sub;
+			font-size: $font400sub;
 		}
 	}
 
@@ -2281,9 +2350,11 @@ section.faq-section {
 		font-weight: 800;
 		line-height: 1.15;
 		letter-spacing: -0.1rem;
-
+		@media screen and (max-width: 1280px) {
+			font-size: $font1280h2;
+		}
 		@media screen and (max-width: 700px) {
-			font-size:$font700h2;
+			font-size: $font700h2;
 			margin: 10px 0 20px;
 		}
 		@media screen and (max-width: 400px) {
@@ -2478,7 +2549,9 @@ section.visit-faq {
 		letter-spacing: -0.1rem;
 		// margin: 0 0;
 
-
+		@media screen and (max-width: 1280px) {
+			font-size: $font1280h2;
+		}
 		@media screen and (max-width: 700px) {
 			font-size: $font700h2;
 
@@ -2629,7 +2702,7 @@ section.faq-blocks {
 		margin: 0 0 10px;
 		text-align: center;
 		@media screen and (max-width: 700px) {
-			font-size: calc(10.976px + .88235vw);
+			font-size: calc(10.976px + 0.88235vw);
 			margin: 0;
 		}
 	}
@@ -2644,6 +2717,9 @@ section.faq-blocks {
 			line-height: 1.15;
 			letter-spacing: -0.1rem;
 
+			@media screen and (max-width: 1280px) {
+				font-size: $font1280h2;
+			}
 			@media screen and (max-width: 700px) {
 				font-size: $font700h2;
 				margin: 10px 0 20px;
@@ -2951,6 +3027,9 @@ section.locations-item {
 		line-height: 1.15;
 		letter-spacing: -0.1rem;
 
+		@media screen and (max-width: 1280px) {
+			font-size: $font1280h2;
+		}
 		@media screen and (max-width: 700px) {
 			text-align: center;
 			font-size: $font700h2;
@@ -3002,7 +3081,7 @@ section.locations-item {
 		@media screen and (max-width: 992px) {
 			width: 100%;
 			padding: 10px 0;
-    		margin: 0;
+			margin: 0;
 			.btn-block {
 				a.rx-btn {
 					padding: 5px 20px;
@@ -3837,6 +3916,10 @@ section.pp-section.pp-section--payments {
 		font-weight: 800;
 		line-height: 1.15;
 		letter-spacing: -0.1rem;
+
+		@media screen and (max-width: 1280px) {
+			font-size: $font1280h2;
+		}
 		@media screen and (max-width: 700px) {
 			padding-right: 0;
 			font-size: $font700h2;
@@ -3856,12 +3939,11 @@ section.pp-section.pp-section--payments {
 		display: block;
 		margin: 50px 0 20px;
 		@media screen and (max-width: 700px) {
-			font-size: calc(16.976px + .88235vw);
+			font-size: calc(16.976px + 0.88235vw);
 			line-height: 1.3;
 
 			text-align: center;
 		}
-
 	}
 	.section-inner.pp-inner--split {
 		max-width: 1100px;
@@ -4156,13 +4238,16 @@ section.resource-sections {
 						line-height: 20px;
 						text-align: center;
 						font-weight: bold;
+						@media screen and (max-width: 1280px) {
+							font-size: calc(15.176px + 0.88235vw);
+						}
 
 						@media screen and (max-width: 700px) {
 							font-size: $font700h2;
 							line-height: 1.3;
 						}
 						@media screen and (max-width: 400px) {
-							font-size: calc(15.176px + .88235vw);
+							font-size: calc(15.176px + 0.88235vw);
 						}
 					}
 					p {
