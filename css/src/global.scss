@@ -232,29 +232,28 @@ a.ArticleHeader-eyebrow {
 	@media screen and (max-width: 992px) {
 		flex-direction: column;
 	}
+	article {
+		width: 100%;
+		max-width: calc(100% - 30%);
+
+		background: #fff;
+		padding: 30px;
+		box-shadow: 0 30px 60px rgba(0, 0, 0, 0.05);
+		border-radius: 10px;
+		padding: 30px;
+		background: hsl(0deg, 0%, 100%);
+
+		@media screen and (max-width: 992px) {
+			max-width: 100%;
+			padding: 10px 10px;
+		}
+	}
 }
 
 *,
 :after,
 :before {
 	box-sizing: border-box;
-}
-
-.main-content article {
-	width: 100%;
-	max-width: calc(100% - 30%);
-
-	background: #fff;
-	padding: 30px;
-	box-shadow: 0 30px 60px rgba(0, 0, 0, 0.05);
-	border-radius: 10px;
-	padding: 30px;
-	background: hsl(0deg, 0%, 100%);
-
-	@media screen and (max-width: 992px) {
-		max-width: 100%;
-		padding: 10px 10px;
-	}
 }
 
 .sidebar-articles {
@@ -300,65 +299,65 @@ li.MostPopular-addIndex {
 	}
 }
 
-li.MostPopular-addIndex a.MostPopular-link {
-	width: 50%;
-	display: block;
-	font-size: 14px;
-	color: #444;
-	font-weight: 900;
-	line-height: 20px;
-
-	@media screen and (max-width: 992px) {
-		width: 100%;
-		line-height: 30px;
-		font-size: 26px;
-		margin: 20px 0 0;
-
-		width: 100%;
-		font-size: 1.5rem;
-		margin: 20px 0 0;
-		line-height: 2rem;
-		padding: 0;
-
-	}
-	@media screen and (max-width: 400px) {
-		font-size: 4vw;
-		line-height: 5vw;
-	}
-}
-li.MostPopular-addIndex a.MostPopular-link.title {
-	padding: 0 20px;
-}
-
-li.MostPopular-addIndex a.MostPopular-link {
-	span.posthumb {
-		background-color: #eee;
-		width: 100%;
-		padding-top: 56.25%;
-		position: relative;
+li.MostPopular-addIndex {
+	a.MostPopular-link {
+		width: 50%;
 		display: block;
-		border-radius: 0 15px;
-		overflow: hidden;
-		padding-right: 20px;
-	}
-	img {
-		width: 100%;
-		border-radius: 0;
-		height: 100%;
-		position: absolute;
-		left: 0;
-		bottom: 0;
-		right: 0;
-		display: block;
-		-o-object-fit: cover;
-		object-fit: cover;
-		-o-object-position: center;
-		object-position: center;
-		z-index: 123123;
-		top: 0;
+		font-size: 14px;
+		color: #444;
+		font-weight: 900;
+		line-height: 20px;
+
 		@media screen and (max-width: 992px) {
+			width: 100%;
+			line-height: 30px;
+			font-size: 26px;
+			margin: 20px 0 0;
+
+			width: 100%;
+			font-size: 1.5rem;
+			margin: 20px 0 0;
+			line-height: 2rem;
 			padding: 0;
-			margin: 0;
+		}
+		@media screen and (max-width: 400px) {
+			font-size: 4vw;
+			line-height: 5vw;
+		}
+	}
+	a.MostPopular-link.title {
+		padding: 0 20px;
+	}
+	a.MostPopular-link {
+		span.posthumb {
+			background-color: #eee;
+			width: 100%;
+			padding-top: 56.25%;
+			position: relative;
+			display: block;
+			border-radius: 0 15px;
+			overflow: hidden;
+			padding-right: 20px;
+		}
+		img {
+			width: 100%;
+			border-radius: 0;
+			height: 100%;
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			display: block;
+			-o-object-fit: cover;
+			object-fit: cover;
+			-o-object-position: center;
+			object-position: center;
+			z-index: 123123;
+			top: 0;
+			@media screen and (max-width: 992px) {
+				padding: 0;
+				margin: 0;
+			}
 		}
 	}
 }
@@ -421,15 +420,17 @@ section.entry-content.cf {
 	display: flex;
 }
 
-.newsletter-title h2 {
-	font-size: 34px;
-	margin-right: 30px;
-	font-weight: 700;
-	line-height: 1.1;
-	margin-top: 0;
-	width: 100%;
-	margin-bottom: 5px;
-	color: #000;
+.newsletter-title {
+	h2 {
+		font-size: 34px;
+		margin-right: 30px;
+		font-weight: 700;
+		line-height: 1.1;
+		margin-top: 0;
+		width: 100%;
+		margin-bottom: 5px;
+		color: #000;
+	}
 }
 section.in-the-news.padded-section {
 	.large-4.cell.morefrom {
@@ -652,7 +653,6 @@ header.page {
 			@media screen and (max-width: 400px) {
 				font-size: $font400h2;
 			}
-
 		}
 	}
 	.data {
@@ -2984,212 +2984,6 @@ section.hero-home.referralpage {
 	}
 }
 
-section.split-bubbles {
-	.container {
-		display: flex;
-		max-width: 100%;
-		@media screen and (max-width: 992px) {
-			flex-direction: column;
-		}
-	}
-
-	.content {
-		width: 50%;
-		padding-left: 30px;
-
-		@media screen and (max-width: 992px) {
-			width: 100%;
-			padding: 0;
-		}
-	}
-
-	.imageblock.imgslide {
-		width: 100%;
-		min-height: 1px;
-		img {
-			min-height: 500px;
-			object-fit: cover;
-			object-position: center;
-			will-change: auto;
-			transition: all 1.2s cubic-bezier(0.83, 0, 0.17, 1);
-			transition: all 2.2s cubic-bezier(0.83, 0, 0.17, 1);
-			// transition-delay: .6s;
-
-			width: 0;
-
-			@media screen and (max-width: 992px) {
-				max-height: 300px;
-				min-height: 0;
-			}
-		}
-	}
-
-	.imageblock.imgslide.animatein img {
-		width: 50vw;
-		@media screen and (max-width: 992px) {
-			width: 100%;
-		}
-	}
-
-	.pills {
-		width: 50%;
-		flex-direction: column;
-		padding: 0 30px;
-		padding: 0 30px;
-		max-width: 590px;
-		margin-left: auto;
-		@media screen and (max-width: 992px) {
-			width: 100%;
-			margin: 0 auto;
-			padding: 0;
-		}
-		.pill {
-			display: flex;
-			border-radius: 200px;
-			border: 1px solid #eee;
-			margin: 0 0 30px;
-			align-items: center;
-
-			@media screen and (max-width: 992px) {
-				flex-direction: column;
-				border-radius: 30px;
-				animation: none !important;
-				visibility: visible;
-				opacity: 1;
-				box-shadow: 0 2px 12px -1px #00000012;
-				border-radius: 5px 30px;
-				box-shadow: 0 2px 12px 3px rgba(0, 0, 0, 0.07);
-				border-radius: 0px 15px;
-				margin: 25px 10px;
-			}
-
-			opacity: 0;
-
-			@media screen and (min-width: 992px) {
-				&::after {
-					content: close-quote;
-					position: absolute;
-					top: -3px;
-					left: -3px;
-					right: -3px;
-					bottom: -3px;
-					background: #038ed8;
-					width: 50%;
-					border-radius: 200px 0 0 200px;
-					z-index: -1;
-					border-right: 2px solid #0077b7;
-					box-shadow: 0 2px 15px -3px #00000012;
-				}
-			}
-
-			&.animatein {
-				&:nth-child(even) {
-					position: relative;
-					animation-duration: 2.5s;
-					animation-timing-function: cubic-bezier(0.85, 0, 0.15, 1);
-
-					animation-name: slidein;
-					animation-fill-mode: forwards;
-				}
-			}
-			&.animatein {
-				&:nth-child(odd) {
-					position: relative;
-					animation-duration: 2.5s;
-					animation-timing-function: cubic-bezier(0.85, 0, 0.15, 1);
-
-					animation-name: slideinodd;
-					animation-fill-mode: forwards;
-				}
-			}
-
-			@keyframes slideinodd {
-				0% {
-					opacity: 0;
-					transform: translateX(100px);
-				}
-				25% {
-				}
-				50% {
-					transform: translateX(-0);
-				}
-				100% {
-					box-shadow: 0 2px 15px -3px #00000012;
-					opacity: 1;
-				}
-			}
-
-			@keyframes slidein {
-				0% {
-					opacity: 0;
-					transform: translateX(-100px);
-				}
-				25% {
-				}
-				50% {
-					transform: translateX(-0);
-				}
-				100% {
-					box-shadow: 0 2px 15px -3px #00000012;
-					opacity: 1;
-				}
-			}
-		}
-		.title {
-			width: 50%;
-			// background: #0388cd;
-			color: #fff;
-			padding: 5px 30px 5px 70px;
-			font-weight: 800;
-			font-size: 1.2rem;
-			text-align: center;
-			line-height: 25px;
-			min-height: 170px;
-			display: -webkit-box;
-			display: -webkit-flex;
-			display: -ms-flexbox;
-			display: flex;
-			-webkit-box-align: center;
-			-webkit-align-items: center;
-			-ms-flex-align: center;
-			align-items: center;
-			text-align: left;
-			@media screen and (max-width: 992px) {
-				width: 100%;
-				min-height: 0;
-				text-align: center;
-				padding: 30px 20px 20px;
-				justify-content: center;
-				font-size: 1rem;
-				padding: 20px 20px 20px;
-				justify-content: flex-start;
-
-				font-size: 1.2rem;
-				text-align: left;
-				color: $m;
-				padding: 20px 20px 0px;
-			}
-		}
-		.text {
-			width: 50%;
-			padding: 5px 35px 5px 25px;
-			font-size: 16px;
-			// font-weight: 600;
-			color: #929292;
-			text-align: center;
-			text-align: left;
-			@media screen and (max-width: 992px) {
-				width: 100%;
-				padding: 30px;
-				padding: 5px 20px 20px;
-				padding: 20px 20px 20px;
-				font-size: 1rem;
-				line-height: 1.5;
-				padding: 0 20px 20px;
-			}
-		}
-	}
-}
 
 section.visit-faq.nwprepviti {
 	.small-block {
@@ -3197,84 +2991,6 @@ section.visit-faq.nwprepviti {
 	}
 }
 
-section.split-bubbles {
-	position: relative;
-
-	.container {
-		padding-right: 0.625rem;
-		padding-left: 0.625rem;
-		// max-width: 75rem;
-		margin-left: auto;
-		margin-right: auto;
-		padding: 60px 20px;
-		@media screen and (max-width: 700px) {
-			padding: 60px 5px;
-		}
-	}
-
-	h2.headline {
-		margin: 0 0 20px;
-
-		position: relative;
-		z-index: 123;
-
-		font-size: 2.8rem;
-		font-weight: 800;
-		line-height: 1.15;
-		letter-spacing: -0.1rem;
-		@media screen and (max-width: 1280px) {
-			font-size: $font1280h2;
-		}
-		@media screen and (max-width: 700px) {
-			text-align: center;
-			font-size: $font700h2;
-			margin: 10px 0 20px;
-		}
-		@media screen and (max-width: 400px) {
-			font-size: $font400h2;
-		}
-	}
-	p.pre-headline {
-		@media screen and (max-width: 700px) {
-			font-size: calc(10.976px + 0.88235vw);
-			margin: 0;
-		}
-	}
-
-	.imageblock img {
-		height: 100%;
-		-o-object-fit: cover;
-		object-fit: cover;
-		-o-object-position: center;
-		object-position: center;
-		width: 100%;
-		display: block;
-		height: 100vh;
-		border-radius: 30px 0;
-		position: absolute;
-		top: 120px;
-		transform: translateY(-0%);
-		max-height: 640px;
-		width: 50%;
-		left: 0;
-		margin-top: 60px;
-		@media screen and (min-width: 1700px) {
-			width: 65%;
-			max-height: 640px;
-		}
-		@media screen and (max-width: 992px) {
-			position: relative;
-			min-height: 50vh;
-			border-radius: 30px 0;
-			top: 0;
-			transform: none;
-			max-height: 500px;
-			width: 100%;
-			left: 0;
-			margin: 0 0 30px;
-		}
-	}
-}
 
 .form-component {
 	.grid-container {
@@ -3749,15 +3465,21 @@ div#for-doctors-learnmore h2.title {
 	border-radius: 50px 0;
 	box-shadow: 0 20px 20px 0px rgba(0, 0, 0, 0.12);
 	max-width: 100%;
+	transition: all 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+	transform: translate(-50%, -55%);
+	opacity: 0;
+	display: flex;
+	visibility: hidden;
 	@media screen and (max-width: 992px) {
 		border-radius: 15px 0;
 	}
 
 	&.active {
-		display: flex;
+		opacity: 1;
+		visibility: visible;
+		transform: translate(-50%, -50%);
 		@media screen and (max-width: 992px) {
 			flex-direction: column;
-			display: block;
 		}
 	}
 	h2.title {
@@ -3862,7 +3584,7 @@ div#for-doctors-learnmore h2.title {
 		align-items: center;
 		justify-content: center;
 		flex-direction: column;
-		min-height: 800px;
+		// min-height: 800px;
 		@media screen and (max-width: 1050px) {
 			width: 100%;
 			padding: 30px 10px 60px;

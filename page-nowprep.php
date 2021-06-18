@@ -163,20 +163,16 @@ include('section-companies.php'); ?>
 
 <section class="split-bubbles">
     <div class="container">
-        <div class="content">
-            <div class="rvl">
-                <p class="pre-headline">HIV PrEP from the privacy of your home</p>
-            </div>
 
-            <div class="rvl">
-                <h2 class="headline">Why Choose NowPrep</h2>
-            </div>
-            <div class="imageblock imgslide">
-                <img data-src="<?php echo get_template_directory_uri(); ?>/images/prepimage.jpeg"
-                    alt="couple reading information about nowprep on laptop" class="pic lozad">
-            </div>
+
+       <div class="addimage">
+       <div class="pills">
+       <div class="content">
+                <p class="pre-headline">HIV PrEP from the privacy of your home</p>
+
+                <h2 class="sec-title">Why Choose NowPrep</h2>
+
         </div>
-        <div class="pills">
             <!-- pill -->
             <div class="pill reganim">
                 <div class="title">
@@ -214,6 +210,11 @@ include('section-companies.php'); ?>
                 </div>
             </div>
         </div>
+        <div class="imageblock imgslide">
+                <img data-src="<?php echo get_template_directory_uri(); ?>/images/prepimage.jpeg"
+                    alt="couple reading information about nowprep on laptop" class="pic lozad">
+            </div>
+       </div>
     </div>
 </section>
 
@@ -2390,5 +2391,143 @@ Next, NowPrEP will send you a home test kit, or if you prefer order a lab at a t
 
 
 
+<section class="nowprepnews">
+    <div class="container">
+        <div class="content">
+            <h2 class="sec-title">Learn More About PrEP</h2>
+
+            <div class="contentslider">
+                <!-- Slider main container -->
+                <div class="swiper-container nowprepslider">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+
+
+
+                    <?php
+							// Example argument that defines three posts per page.
+							$args = array( 'posts_per_page' => 4 ,'tag' => 'PrEP',  );
+
+							// Variable to call WP_Query.
+							$trendloop = new WP_Query( $args );
+
+							if ( $trendloop->have_posts() ) :
+								// Start the Loop
+								while ( $trendloop->have_posts() ) : $trendloop->the_post();
+
+							?>
+
+
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <div class="cont">
+                                        <figure class="image">
+                                        <?php if ( has_post_thumbnail( $post->ID ) ): ?>
+
+                                        <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'medium' ); ?>
+
+                                        <img class="MostPopular-thumbnail transition-fade-appear-active lozad"
+                                            data-src="<?php echo $image[0]; ?>"
+                                            alt="<?php echo get_post_meta( get_post_thumbnail_id($post->ID), '_wp_attachment_image_alt', true ); ?>" />
+
+                                        <?php else: ?>
+
+                                        <img class="MostPopular-thumbnail transition-fade-appear-active lozad"
+                                            data-src="<?php echo get_site_url(); ?>/wp-content/uploads/2020/09/IMG_3714-1024x683.jpg"
+                                            alt="<?php  the_title();  ?>" />
+
+                                        <?php endif; ?>
+
+                                        </figure>
+                                        <div class="spac">
+                                        <h3 class="sec-title"><?php  the_title();  ?></h3>
+                                        <p class="txt">
+                                        <?php echo wp_trim_words( get_the_content(), 8); ?>
+
+                                        </p>
+                                        <div class="btn-container">
+                                            <a href="<?php the_permalink(); ?>" class="link">Read More</a>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                    <?php
+								// End the Loop
+								endwhile;
+							else:
+							// If no posts match this query, output this text.
+								_e( 'Sorry, no posts matched your criteria.', 'textdomain' );
+							endif;
+
+							wp_reset_postdata();
+							?>
+
+
+
+
+
+
+
+                </div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+            </div>
+
+            <div class="disclaim">
+                Have questions about NowPrEP or an HIV PrEP pill? Email us at <a href="">telehealth@nowrx.com</a>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<script>
+const swiper = new Swiper('.nowprepslider', {
+  // Optional parameters
+  slidesPerView: 3,
+  centeredSlides:true,
+  loop:true,
+
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  breakpoints: {
+    // when window width is >= 320px
+    1: {
+      slidesPerView: 1,
+    },
+    // when window width is >= 480px
+    700: {
+      slidesPerView: 2,
+      spaceBetween: 30
+    },
+    // when window width is >= 640px
+    1280: {
+      slidesPerView: 3,
+      spaceBetween: 40
+    }
+  }
+
+});
+</script>
 
 <?php get_footer(); ?>

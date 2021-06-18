@@ -292,58 +292,65 @@ gtag('event', 'conversion', {
 
 
 
-<!-- hero -->
-<section class="hero-home ">
+    <!-- hero -->
+    <section class="hero-home ">
 
-    <div class="container">
-        <div class="content">
+        <div class="container">
+            <div class="content">
 
-            <!-- content -->
-            <div class="column-half content-col">
+                <!-- content -->
+                <div class="column-half content-col">
 
 
-            <div class="rvls">
-                            <span class="subheading">
-                                Coming to a City Near You
-                            </span>
-                        </div>
-                        <div class="rvls">
-                            <h1 class="" itemprop="headline">
+                    <div class="rvls">
+                        <span class="subheading">
+                            Coming to a City Near You
+                        </span>
+                    </div>
+                    <div class="rvls">
+                        <h1 class="" itemprop="headline">
                             A Better Local Pharmacy Delivered
-                            </h1>
-                        </div>
-                        <div class="rvls">
-                            <p>
-                                Don't see a NowRx Pharmacy near you? Don't worry! Suggest a location and you could be
-                                our next expansion city.
-                            </p>
-                        </div>
+                        </h1>
+                    </div>
+                    <div class="rvls">
+                        <p>
+                            Don't see a NowRx Pharmacy near you? Don't worry! Suggest a location and you could be
+                            our next expansion city.
+                        </p>
+                    </div>
 
-                        <div class="rvls">
-                            <div class="btn-container">
-                                <a class="rx-btn" href="#locations-item" tabindex="0">View Locations</a>
-                                <a class="rx-btn rx-green mrb" href="<?= get_site_url(); ?>/refill-and-transfer-prescriptions/">Get Started</a>
-                            </div>
+                    <div class="rvls">
+                        <div class="btn-container">
+                            <a class="rx-btn" href="#locations-item" tabindex="0">View Locations</a>
+                            <a class="rx-btn rx-green mrb"
+                                href="<?= get_site_url(); ?>/refill-and-transfer-prescriptions/">Get Started</a>
                         </div>
+                    </div>
+
+                </div>
+
+                <!-- image -->
+                <div class="column-half image-col">
+
+
+                    <picture class="lozad"
+                        data-src="<?php echo get_template_directory_uri(); ?>/images/NowRx-Pharmacy-Delivery-Driver-Dropping-Off-Prescription.webp"
+                        data-toggle-class="active">
+                        <source media="(max-width: 1px)"
+                            srcset="<?php echo get_template_directory_uri(); ?>/images/NowRx-Pharmacy-Delivery-Driver-Dropping-Off-Prescription.webp">
+                        <source media="(min-width: 2px)"
+                            srcset="<?php echo get_template_directory_uri(); ?>/images/NowRx-Pharmacy-Delivery-Driver-Dropping-Off-Prescription.webp">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/NowRx-Pharmacy-Delivery-Driver-Dropping-Off-Prescription.webp"
+                            class="orbit-image lozad" height="500px" width="650px"
+                            alt="NowRx Pharmacy Delivery Driver Dropping Off Prescription">
+                    </picture>
+
+
+                </div>
 
             </div>
-
-            <!-- image -->
-            <div class="column-half image-col">
-
-
-                <picture class="lozad" data-src="<?php echo get_template_directory_uri(); ?>/images/NowRx-Pharmacy-Delivery-Driver-Dropping-Off-Prescription.webp" data-toggle-class="active">
-                    <source media="(max-width: 1px)" srcset="<?php echo get_template_directory_uri(); ?>/images/NowRx-Pharmacy-Delivery-Driver-Dropping-Off-Prescription.webp">
-                    <source media="(min-width: 2px)" srcset="<?php echo get_template_directory_uri(); ?>/images/NowRx-Pharmacy-Delivery-Driver-Dropping-Off-Prescription.webp">
-                    <img  src="<?php echo get_template_directory_uri(); ?>/images/NowRx-Pharmacy-Delivery-Driver-Dropping-Off-Prescription.webp" class="orbit-image lozad" height="500px" width="650px" alt="NowRx Pharmacy Delivery Driver Dropping Off Prescription">
-                </picture>
-
-
-            </div>
-
         </div>
-    </div>
-</section>
+    </section>
 
 
 
@@ -398,6 +405,26 @@ gtag('event', 'conversion', {
                     <!-- item -->
                     <div class="location-item">
                         <a href="<?= get_site_url(); ?>/locations/california/mountain-view/">
+                            <div class="sv">
+                                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                    viewBox="0 0 477.874 477.874" style="enable-background:new 0 0 477.874 477.874;"
+                                    xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <path d="M460.812,0c-2.651-0.001-5.266,0.615-7.637,1.8L323.844,66.483L177.6,1.476c-0.239-0.102-0.512-0.12-0.768-0.222
+			c-0.658-0.246-1.331-0.451-2.014-0.614c-0.679-0.183-1.369-0.326-2.065-0.427c-1.386-0.114-2.779-0.114-4.164,0
+			c-0.696,0.101-1.386,0.244-2.065,0.427c-0.683,0.163-1.356,0.368-2.014,0.614c-0.256,0.102-0.529,0.119-0.768,0.222l-153.6,68.267
+			C3.976,72.481,0.003,78.595,0.004,85.341v375.467c0.003,5.774,2.924,11.155,7.765,14.302c4.842,3.152,10.949,3.64,16.23,1.297
+			l146.671-65.195l146.671,65.195c0.256,0.102,0.529,0,0.785,0.154c4.132,1.848,8.875,1.742,12.919-0.29
+			c0.273-0.119,0.58,0,0.853-0.188l136.533-68.267c5.786-2.891,9.441-8.806,9.438-15.275V17.075
+			C477.875,7.649,470.237,0.004,460.812,0z M153.604,381.448L34.137,434.542V96.435L153.604,43.34V381.448z M307.204,434.542
+			l-119.467-53.094V43.34l119.467,53.094V434.542z M443.737,381.994l-102.4,51.2V95.888l102.4-51.2V381.994z" />
+                                        </g>
+                                    </g>
+                                </svg>
+
+                            </div>
                             <h2 class="sec-title">Mountain View, CA</h2>
                             <span class="desc-item">
                                 <b>ePrescribe:</b> NowRx MtnV (NCPDP: 56565559)
@@ -411,11 +438,9 @@ gtag('event', 'conversion', {
                         </a>
 
                         <div class="btn-block">
-                            <a href="<?= get_site_url(); ?>/locations/california/mountain-view/" class="rx-btn">
-                                View More Information
-                                <span class="arrow">
-                                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="svg-inline--fa fa-chevron-right fa-w-10 fa-2x"><path fill="currentColor" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z" class=""></path></svg>
-                                </span>
+                            <a href="<?= get_site_url(); ?>/locations/california/mountain-view/" class="rx-btn-loca">
+                                Click for More Information
+
                             </a>
                         </div>
 
@@ -424,6 +449,26 @@ gtag('event', 'conversion', {
                     <div class="location-item">
 
                         <a href="<?= get_site_url(); ?>/locations/california/irvine/">
+                            <div class="sv">
+                                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                    viewBox="0 0 477.874 477.874" style="enable-background:new 0 0 477.874 477.874;"
+                                    xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <path d="M460.812,0c-2.651-0.001-5.266,0.615-7.637,1.8L323.844,66.483L177.6,1.476c-0.239-0.102-0.512-0.12-0.768-0.222
+			c-0.658-0.246-1.331-0.451-2.014-0.614c-0.679-0.183-1.369-0.326-2.065-0.427c-1.386-0.114-2.779-0.114-4.164,0
+			c-0.696,0.101-1.386,0.244-2.065,0.427c-0.683,0.163-1.356,0.368-2.014,0.614c-0.256,0.102-0.529,0.119-0.768,0.222l-153.6,68.267
+			C3.976,72.481,0.003,78.595,0.004,85.341v375.467c0.003,5.774,2.924,11.155,7.765,14.302c4.842,3.152,10.949,3.64,16.23,1.297
+			l146.671-65.195l146.671,65.195c0.256,0.102,0.529,0,0.785,0.154c4.132,1.848,8.875,1.742,12.919-0.29
+			c0.273-0.119,0.58,0,0.853-0.188l136.533-68.267c5.786-2.891,9.441-8.806,9.438-15.275V17.075
+			C477.875,7.649,470.237,0.004,460.812,0z M153.604,381.448L34.137,434.542V96.435L153.604,43.34V381.448z M307.204,434.542
+			l-119.467-53.094V43.34l119.467,53.094V434.542z M443.737,381.994l-102.4,51.2V95.888l102.4-51.2V381.994z" />
+                                        </g>
+                                    </g>
+                                </svg>
+
+                            </div>
                             <h2 class="sec-title">Irvine, CA</h2>
                             <span class="desc-item">
                                 <b>ePrescribe:</b> NowRx IRVN (NCPDP: 5670220)
@@ -436,17 +481,35 @@ gtag('event', 'conversion', {
                             </span>
                         </a>
                         <div class="btn-block">
-                            <a href="<?= get_site_url(); ?>/locations/california/irvine/" class="rx-btn">
-                                View More Information
-                                <span class="arrow">
-                                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="svg-inline--fa fa-chevron-right fa-w-10 fa-2x"><path fill="currentColor" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z" class=""></path></svg>
-                                </span>
+                            <a href="<?= get_site_url(); ?>/locations/california/irvine/" class="rx-btn-loca">
+                                Click for More Information
+
                             </a>
                         </div>
                     </div>
                     <!-- item -->
                     <div class="location-item">
                         <a href="<?= get_site_url(); ?>/locations/california/burlingame/">
+                            <div class="sv">
+                                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                    viewBox="0 0 477.874 477.874" style="enable-background:new 0 0 477.874 477.874;"
+                                    xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <path d="M460.812,0c-2.651-0.001-5.266,0.615-7.637,1.8L323.844,66.483L177.6,1.476c-0.239-0.102-0.512-0.12-0.768-0.222
+			c-0.658-0.246-1.331-0.451-2.014-0.614c-0.679-0.183-1.369-0.326-2.065-0.427c-1.386-0.114-2.779-0.114-4.164,0
+			c-0.696,0.101-1.386,0.244-2.065,0.427c-0.683,0.163-1.356,0.368-2.014,0.614c-0.256,0.102-0.529,0.119-0.768,0.222l-153.6,68.267
+			C3.976,72.481,0.003,78.595,0.004,85.341v375.467c0.003,5.774,2.924,11.155,7.765,14.302c4.842,3.152,10.949,3.64,16.23,1.297
+			l146.671-65.195l146.671,65.195c0.256,0.102,0.529,0,0.785,0.154c4.132,1.848,8.875,1.742,12.919-0.29
+			c0.273-0.119,0.58,0,0.853-0.188l136.533-68.267c5.786-2.891,9.441-8.806,9.438-15.275V17.075
+			C477.875,7.649,470.237,0.004,460.812,0z M153.604,381.448L34.137,434.542V96.435L153.604,43.34V381.448z M307.204,434.542
+			l-119.467-53.094V43.34l119.467,53.094V434.542z M443.737,381.994l-102.4,51.2V95.888l102.4-51.2V381.994z" />
+                                        </g>
+                                    </g>
+                                </svg>
+
+                            </div>
                             <h2 class="sec-title">Burlingame, CA</h2>
                             <span class="desc-item">
                                 <b>ePrescribe:</b> NowRx BURL (NCPDP: 5669948)
@@ -459,17 +522,35 @@ gtag('event', 'conversion', {
                             </span>
                         </a>
                         <div class="btn-block">
-                            <a href="<?= get_site_url(); ?>/locations/california/burlingame/" class="rx-btn">
-                                View More Information
-                                <span class="arrow">
-                                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="svg-inline--fa fa-chevron-right fa-w-10 fa-2x"><path fill="currentColor" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z" class=""></path></svg>
-                                </span>
+                            <a href="<?= get_site_url(); ?>/locations/california/burlingame/" class="rx-btn-loca">
+                                Click for More Information
+
                             </a>
                         </div>
                     </div>
                     <!-- item -->
                     <div class="location-item">
                         <a href="<?= get_site_url(); ?>/locations/california/mesa/">
+                            <div class="sv">
+                                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                    viewBox="0 0 477.874 477.874" style="enable-background:new 0 0 477.874 477.874;"
+                                    xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <path d="M460.812,0c-2.651-0.001-5.266,0.615-7.637,1.8L323.844,66.483L177.6,1.476c-0.239-0.102-0.512-0.12-0.768-0.222
+			c-0.658-0.246-1.331-0.451-2.014-0.614c-0.679-0.183-1.369-0.326-2.065-0.427c-1.386-0.114-2.779-0.114-4.164,0
+			c-0.696,0.101-1.386,0.244-2.065,0.427c-0.683,0.163-1.356,0.368-2.014,0.614c-0.256,0.102-0.529,0.119-0.768,0.222l-153.6,68.267
+			C3.976,72.481,0.003,78.595,0.004,85.341v375.467c0.003,5.774,2.924,11.155,7.765,14.302c4.842,3.152,10.949,3.64,16.23,1.297
+			l146.671-65.195l146.671,65.195c0.256,0.102,0.529,0,0.785,0.154c4.132,1.848,8.875,1.742,12.919-0.29
+			c0.273-0.119,0.58,0,0.853-0.188l136.533-68.267c5.786-2.891,9.441-8.806,9.438-15.275V17.075
+			C477.875,7.649,470.237,0.004,460.812,0z M153.604,381.448L34.137,434.542V96.435L153.604,43.34V381.448z M307.204,434.542
+			l-119.467-53.094V43.34l119.467,53.094V434.542z M443.737,381.994l-102.4,51.2V95.888l102.4-51.2V381.994z" />
+                                        </g>
+                                    </g>
+                                </svg>
+
+                            </div>
                             <h2 class="sec-title">Mesa, AZ</h2>
                             <span class="desc-item">
                                 <b>ePrescribe:</b> NowRx MESA (NCPDP: 0364252)
@@ -482,17 +563,35 @@ gtag('event', 'conversion', {
                             </span>
                         </a>
                         <div class="btn-block">
-                            <a href="<?= get_site_url(); ?>/locations/california/mesa/" class="rx-btn">
-                                View More Information
-                                <span class="arrow">
-                                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="svg-inline--fa fa-chevron-right fa-w-10 fa-2x"><path fill="currentColor" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z" class=""></path></svg>
-                                </span>
+                            <a href="<?= get_site_url(); ?>/locations/california/mesa/" class="rx-btn-loca">
+                                Click for More Information
+
                             </a>
                         </div>
                     </div>
                     <!-- item -->
                     <div class="location-item">
                         <a href="<?= get_site_url(); ?>/locations/california/san-jose/">
+                            <div class="sv">
+                                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                    viewBox="0 0 477.874 477.874" style="enable-background:new 0 0 477.874 477.874;"
+                                    xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <path d="M460.812,0c-2.651-0.001-5.266,0.615-7.637,1.8L323.844,66.483L177.6,1.476c-0.239-0.102-0.512-0.12-0.768-0.222
+			c-0.658-0.246-1.331-0.451-2.014-0.614c-0.679-0.183-1.369-0.326-2.065-0.427c-1.386-0.114-2.779-0.114-4.164,0
+			c-0.696,0.101-1.386,0.244-2.065,0.427c-0.683,0.163-1.356,0.368-2.014,0.614c-0.256,0.102-0.529,0.119-0.768,0.222l-153.6,68.267
+			C3.976,72.481,0.003,78.595,0.004,85.341v375.467c0.003,5.774,2.924,11.155,7.765,14.302c4.842,3.152,10.949,3.64,16.23,1.297
+			l146.671-65.195l146.671,65.195c0.256,0.102,0.529,0,0.785,0.154c4.132,1.848,8.875,1.742,12.919-0.29
+			c0.273-0.119,0.58,0,0.853-0.188l136.533-68.267c5.786-2.891,9.441-8.806,9.438-15.275V17.075
+			C477.875,7.649,470.237,0.004,460.812,0z M153.604,381.448L34.137,434.542V96.435L153.604,43.34V381.448z M307.204,434.542
+			l-119.467-53.094V43.34l119.467,53.094V434.542z M443.737,381.994l-102.4,51.2V95.888l102.4-51.2V381.994z" />
+                                        </g>
+                                    </g>
+                                </svg>
+
+                            </div>
                             <h2 class="sec-title">San Jose, CA</h2>
                             <span class="desc-item">
                                 <b>ePrescribe:</b> NowRx SJCE (NCPDP: 5667843)
@@ -505,17 +604,35 @@ gtag('event', 'conversion', {
                             </span>
                         </a>
                         <div class="btn-block">
-                            <a href="<?= get_site_url(); ?>/locations/california/san-jose/" class="rx-btn">
-                                View More Information
-                                <span class="arrow">
-                                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="svg-inline--fa fa-chevron-right fa-w-10 fa-2x"><path fill="currentColor" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z" class=""></path></svg>
-                                </span>
+                            <a href="<?= get_site_url(); ?>/locations/california/san-jose/" class="rx-btn-loca">
+                                Click for More Information
+
                             </a>
                         </div>
                     </div>
                     <!-- item -->
                     <div class="location-item">
                         <a href="<?= get_site_url(); ?>/locations/california/pleasanton/">
+                            <div class="sv">
+                                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                    viewBox="0 0 477.874 477.874" style="enable-background:new 0 0 477.874 477.874;"
+                                    xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <path d="M460.812,0c-2.651-0.001-5.266,0.615-7.637,1.8L323.844,66.483L177.6,1.476c-0.239-0.102-0.512-0.12-0.768-0.222
+			c-0.658-0.246-1.331-0.451-2.014-0.614c-0.679-0.183-1.369-0.326-2.065-0.427c-1.386-0.114-2.779-0.114-4.164,0
+			c-0.696,0.101-1.386,0.244-2.065,0.427c-0.683,0.163-1.356,0.368-2.014,0.614c-0.256,0.102-0.529,0.119-0.768,0.222l-153.6,68.267
+			C3.976,72.481,0.003,78.595,0.004,85.341v375.467c0.003,5.774,2.924,11.155,7.765,14.302c4.842,3.152,10.949,3.64,16.23,1.297
+			l146.671-65.195l146.671,65.195c0.256,0.102,0.529,0,0.785,0.154c4.132,1.848,8.875,1.742,12.919-0.29
+			c0.273-0.119,0.58,0,0.853-0.188l136.533-68.267c5.786-2.891,9.441-8.806,9.438-15.275V17.075
+			C477.875,7.649,470.237,0.004,460.812,0z M153.604,381.448L34.137,434.542V96.435L153.604,43.34V381.448z M307.204,434.542
+			l-119.467-53.094V43.34l119.467,53.094V434.542z M443.737,381.994l-102.4,51.2V95.888l102.4-51.2V381.994z" />
+                                        </g>
+                                    </g>
+                                </svg>
+
+                            </div>
                             <h2 class="sec-title">Pleasanton, CA</h2>
                             <span class="desc-item">
                                 <b>ePrescribe:</b> NowRx Plnt (NCPDP : 5670751)
@@ -528,11 +645,9 @@ gtag('event', 'conversion', {
                             </span>
                         </a>
                         <div class="btn-block">
-                            <a href="<?= get_site_url(); ?>/locations/california/pleasanton/" class="rx-btn">
-                                View More Information
-                                <span class="arrow">
-                                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="svg-inline--fa fa-chevron-right fa-w-10 fa-2x"><path fill="currentColor" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z" class=""></path></svg>
-                                </span>
+                            <a href="<?= get_site_url(); ?>/locations/california/pleasanton/" class="rx-btn-loca">
+                                Click for More Information
+
                             </a>
                         </div>
                     </div>
@@ -540,15 +655,33 @@ gtag('event', 'conversion', {
                     <!-- item -->
                     <div class="location-item">
                         <a href="<?= get_site_url(); ?>/locations/california/van-nuys/">
+                            <div class="sv">
+                                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                    viewBox="0 0 477.874 477.874" style="enable-background:new 0 0 477.874 477.874;"
+                                    xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <path d="M460.812,0c-2.651-0.001-5.266,0.615-7.637,1.8L323.844,66.483L177.6,1.476c-0.239-0.102-0.512-0.12-0.768-0.222
+			c-0.658-0.246-1.331-0.451-2.014-0.614c-0.679-0.183-1.369-0.326-2.065-0.427c-1.386-0.114-2.779-0.114-4.164,0
+			c-0.696,0.101-1.386,0.244-2.065,0.427c-0.683,0.163-1.356,0.368-2.014,0.614c-0.256,0.102-0.529,0.119-0.768,0.222l-153.6,68.267
+			C3.976,72.481,0.003,78.595,0.004,85.341v375.467c0.003,5.774,2.924,11.155,7.765,14.302c4.842,3.152,10.949,3.64,16.23,1.297
+			l146.671-65.195l146.671,65.195c0.256,0.102,0.529,0,0.785,0.154c4.132,1.848,8.875,1.742,12.919-0.29
+			c0.273-0.119,0.58,0,0.853-0.188l136.533-68.267c5.786-2.891,9.441-8.806,9.438-15.275V17.075
+			C477.875,7.649,470.237,0.004,460.812,0z M153.604,381.448L34.137,434.542V96.435L153.604,43.34V381.448z M307.204,434.542
+			l-119.467-53.094V43.34l119.467,53.094V434.542z M443.737,381.994l-102.4,51.2V95.888l102.4-51.2V381.994z" />
+                                        </g>
+                                    </g>
+                                </svg>
+
+                            </div>
                             <h2 class="sec-title">Van Nuys, CA</h2>
 
                         </a>
                         <div class="btn-block">
-                            <a href="<?= get_site_url(); ?>/locations/california/van-nuys/" class="rx-btn">
-                                View More Information
-                                <span class="arrow">
-                                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="svg-inline--fa fa-chevron-right fa-w-10 fa-2x"><path fill="currentColor" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z" class=""></path></svg>
-                                </span>
+                            <a href="<?= get_site_url(); ?>/locations/california/van-nuys/" class="rx-btn-loca">
+                                Click for More Information
+
                             </a>
                         </div>
                     </div>
@@ -556,25 +689,53 @@ gtag('event', 'conversion', {
                     <!-- item -->
                     <div class="location-item">
                         <a href="<?= get_site_url(); ?>/locations/california/hayward/">
+                            <div class="sv">
+                                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                    viewBox="0 0 477.874 477.874" style="enable-background:new 0 0 477.874 477.874;"
+                                    xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <path d="M460.812,0c-2.651-0.001-5.266,0.615-7.637,1.8L323.844,66.483L177.6,1.476c-0.239-0.102-0.512-0.12-0.768-0.222
+			c-0.658-0.246-1.331-0.451-2.014-0.614c-0.679-0.183-1.369-0.326-2.065-0.427c-1.386-0.114-2.779-0.114-4.164,0
+			c-0.696,0.101-1.386,0.244-2.065,0.427c-0.683,0.163-1.356,0.368-2.014,0.614c-0.256,0.102-0.529,0.119-0.768,0.222l-153.6,68.267
+			C3.976,72.481,0.003,78.595,0.004,85.341v375.467c0.003,5.774,2.924,11.155,7.765,14.302c4.842,3.152,10.949,3.64,16.23,1.297
+			l146.671-65.195l146.671,65.195c0.256,0.102,0.529,0,0.785,0.154c4.132,1.848,8.875,1.742,12.919-0.29
+			c0.273-0.119,0.58,0,0.853-0.188l136.533-68.267c5.786-2.891,9.441-8.806,9.438-15.275V17.075
+			C477.875,7.649,470.237,0.004,460.812,0z M153.604,381.448L34.137,434.542V96.435L153.604,43.34V381.448z M307.204,434.542
+			l-119.467-53.094V43.34l119.467,53.094V434.542z M443.737,381.994l-102.4,51.2V95.888l102.4-51.2V381.994z" />
+                                        </g>
+                                    </g>
+                                </svg>
+
+                            </div>
                             <h2 class="sec-title">Hayward, CA</h2>
 
                         </a>
                         <div class="btn-block">
-                            <a href="<?= get_site_url(); ?>/locations/california/hayward/" class="rx-btn">
-                                View More Information
-                                <span class="arrow">
-                                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="svg-inline--fa fa-chevron-right fa-w-10 fa-2x"><path fill="currentColor" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z" class=""></path></svg>
-                                </span>
+                            <a href="<?= get_site_url(); ?>/locations/california/hayward/" class="rx-btn-loca">
+                                Click for More Information
+
                             </a>
                         </div>
                     </div>
 
                     <!-- item -->
                     <div class="location-item signup">
-                        <h2 class="sec-title disclaimer">Don't see a NowRx near you? Suggest a location!</h2>
+                    <a class="ali" data-toggle="suggestalocation" aria-controls="suggestalocation" aria-haspopup="true" tabindex="0">
+                        <h2 class="sec-title disclaimer">
+
+                            Suggest a Location
+                        </h2>
+                        <p>
+                        Don't see a NowRx near you? Suggest a location!
+                        </p>
                         <span class="desc-item" style="display:block;">
-                            <a class="rx-btn" data-toggle="suggestalocation" aria-controls="suggestalocation" aria-haspopup="true" tabindex="0">Suggest a Location</a>
+                            <span  class="rx-btn">
+                            Suggest a Location
                         </span>
+                        </span>
+                        </a>
                     </div>
 
                 </div>
@@ -713,7 +874,9 @@ label.enter {
 </style>
 
 
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmMty5MmMXegrIhIhMHDWOqIu6RQ6m9vg&libraries=geometry,places"></script>
+<script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmMty5MmMXegrIhIhMHDWOqIu6RQ6m9vg&libraries=geometry,places">
+</script>
 
 <script>
 var map;
@@ -726,44 +889,44 @@ window.onload = initMap;
 
 <?php
 
-$coord = '33.410481, -111.884589';
-
-$currentLocation = '';
-
-if(is_single('burlingame')){
-    $coord = '37.59065492066287, -122.36895749879504';
-    $currentLocation = "burlingame";
-}
-if(is_single('san-jose')){
-    $coord = '37.31386495445363, -121.87610133554892';
-    $currentLocation = "san-jose";
-}
-if(is_single('mountain-view')){
-    $coord = '37.39626924351466, -122.08504573831861';
-    $currentLocation = "mountain-view";
-}
-if(is_single('irvine')){
-    $coord = '33.67015776456957, -117.77854787529476';
-    $currentLocation = "irvine";
-}
-if(is_single('pleasanton')){
-    $coord = '37.699004, -121.916914';
-    $currentLocation = "pleasanton";
-}
-if(is_single('van-nuys')){
-    $coord = '34.2150729, -118.4950994';
-    $currentLocation = "van-nuys";
-}
-if(is_single('hayward')){
-    $coord = '37.629392782800444, -122.05598271544449';
-    $currentLocation = "hayward";
-}
-if(is_single('mesa')){
     $coord = '33.410481, -111.884589';
-    $currentLocation = "mesa";
-}
 
-?>
+    $currentLocation = '';
+
+    if (is_single('burlingame')) {
+        $coord = '37.59065492066287, -122.36895749879504';
+        $currentLocation = "burlingame";
+    }
+    if (is_single('san-jose')) {
+        $coord = '37.31386495445363, -121.87610133554892';
+        $currentLocation = "san-jose";
+    }
+    if (is_single('mountain-view')) {
+        $coord = '37.39626924351466, -122.08504573831861';
+        $currentLocation = "mountain-view";
+    }
+    if (is_single('irvine')) {
+        $coord = '33.67015776456957, -117.77854787529476';
+        $currentLocation = "irvine";
+    }
+    if (is_single('pleasanton')) {
+        $coord = '37.699004, -121.916914';
+        $currentLocation = "pleasanton";
+    }
+    if (is_single('van-nuys')) {
+        $coord = '34.2150729, -118.4950994';
+        $currentLocation = "van-nuys";
+    }
+    if (is_single('hayward')) {
+        $coord = '37.629392782800444, -122.05598271544449';
+        $currentLocation = "hayward";
+    }
+    if (is_single('mesa')) {
+        $coord = '33.410481, -111.884589';
+        $currentLocation = "mesa";
+    }
+
+    ?>
 
 function initMap() {
 
