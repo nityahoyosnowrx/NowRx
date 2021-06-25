@@ -1,5 +1,5 @@
 <?php
-    if ( is_page( 'faqs' ) || is_page('nowprep') || is_page('contact-us') || is_archive('locations') || is_page('for-doctors')  || is_singular('locations') ):
+    if ( is_page( 'faqs' ) || is_page('nowprep') || is_page('contact-us') || is_archive('locations') || is_page('for-doctors')  || is_singular('locations') || is_page('telehealth') ):
     ?>
  <!--[if lte IE 8]>
 <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js" defer></script>
@@ -93,6 +93,38 @@
         <span aria-hidden="true">&times;</span>
     </button>
 </div>
+
+<!-- nowprep -->
+<div class="reveal" id="telehealth" data-reveal data-close-on-click="true" data-animation-in="slide-in-down"
+    data-animation-out="slide-out-up" >
+    <h3 class="text-center">
+    Sign Up for NowRx Telehealth
+
+    </h3>
+    <div class="subheading">
+        <p class="center">
+        The NowRx Telehealth App lets you get prescriptions written and delivered without ever leaving the comfort of your home.
+
+
+        </p>
+    </div>
+
+    <script >
+    window.addEventListener('load', function() {
+                setTimeout(function(){
+                    hbspt.forms.create({
+                    region: "na1",
+                    portalId: "5952677",
+                    formId: "33aa45eb-499d-4a4b-b55f-f5a7c7bd5359"
+                    });
+        },2000)
+    });
+    </script>
+    <button class="close-button text-center" data-close aria-label="Close reveal" type="button">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+<!--  -->
 <div class="reveal" id="suggestalocation" data-reveal data-close-on-click="true" data-animation-in="slide-in-down"
     data-animation-out="slide-out-up" >
     <h3 class="text-center">

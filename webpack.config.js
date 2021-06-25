@@ -8,6 +8,7 @@ const DEV = process.env.NODE_ENV === 'development';
 
 module.exports = {
   context: __dirname,
+
   entry: {
     frontend: ['./js/src/global-script.js', './css/src/style.scss'],
   },
@@ -16,7 +17,7 @@ module.exports = {
     filename: '[name]-bundle.js'
   },
   mode: DEV ? 'development' : 'production',
-  devtool: 'none',
+
   performance: {
     hints: false,
     maxEntrypointSize: 512000,
@@ -69,7 +70,7 @@ module.exports = {
     new BrowserSyncPlugin({
       files: '**/*.php',
       proxy: 'http://localhost:8888/dev',
-      
+
     })
   ],
   optimization: {

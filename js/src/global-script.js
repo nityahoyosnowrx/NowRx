@@ -79,12 +79,9 @@ $(document).ready(function() {
 // scrolltop
 // ----------------------------------------------------------------------------------------------------
 $('a[href*="#"]').on('click', function(e) {
-  $('html,body').animate(
-    {
+  $('html,body').animate({
       scrollTop: $($(this).attr('href')).offset().top - 50
-    },
-    800
-  );
+    },800);
   e.preventDefault();
 });
 
@@ -124,7 +121,7 @@ $(document).ready(function() {
 $(document).on('click','[data-toggle]', function(e) {
   e.preventDefault();
   let toggleId = $(this).data('toggle');
-  console.log(toggleId);
+  // console.log(toggleId);
   let stI = '#' + toggleId;
   $(stI).addClass('active');
 
@@ -155,7 +152,7 @@ $(document).ready(function() {
       e.preventDefault();
 
       opeD = $(this).attr('data-opentab');
-      console.log(opeD);
+      // console.log(opeD);
 
       $('.click')
         .parent('.faq-block')
@@ -238,7 +235,7 @@ $(document).ready(function() {
 
     $('span.close-itcon').on('click', function(e) {
       e.stopPropagation();
-      console.log('clicked');
+      // console.log('clicked');
       $('.active-faq.item-block, .active-faq.title, .active-faq.item').removeClass('active-faq');
 
       $('.item').attr('data-opentab', 'false');
@@ -379,7 +376,7 @@ $(document).ready(function() {
         $('.quoteitems .quoteitem:nth-child('+countItem+')').addClass('fadeactive');
       },300)
 
-      console.log(itemC, countItem)
+      // console.log(itemC, countItem)
 
     }
   }, 6000);
@@ -438,7 +435,7 @@ $(document).ready(function(){
 
           if($(sib).val() != ''){
             empty = false;
-            console.log(empty,'falsesb');
+            // console.log(empty,'falsesb');
           } else {
             empty = true;
           }
@@ -488,7 +485,7 @@ $(document).ready(function(){
         });
 
         $('form#referralForm input, .form-content input,.form-content textarea').focus(function() {
-          console.log('Handler for .focus() called.');
+          // console.log('Handler for .focus() called.');
           $(this)
             .siblings('span')
             .addClass('hasstext');

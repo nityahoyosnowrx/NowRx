@@ -813,6 +813,9 @@ section.hero-home {
 	padding: 50px 0;
 	position: relative;
 	margin: 110px 0 0;
+	@media screen and (max-width: 700px) {
+		margin: 30px 0 0;
+	}
 
 	// frontpage
 	&.videodev {
@@ -2975,7 +2978,8 @@ section.locations-item {
 		display: flex;
 		margin: 60px 0 0;
 		flex-wrap: wrap;
-		max-width: 1100px;
+		max-width: 1500px;
+
 		margin: 60px auto 0;
 		justify-content: center;
 
@@ -2989,10 +2993,10 @@ section.locations-item {
 	}
 
 	.locatios-mainblock .location-item {
-		width: 31%;
+		width: 29%;
 		padding: 20px 10px;
 		background: #fff;
-		margin: 10px;
+		margin: 20px 2%;
 		/* box-shadow: 0 3px 10px #0000000f; */
 		border-radius: 15px;
 		text-align: center;
@@ -3012,6 +3016,11 @@ section.locations-item {
 		border-bottom-right-radius: 10px;
 		padding: 20px;
 		transition: all 0.6s;
+
+		min-height: 240px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 
 		&.signup {
 			display: flex;
@@ -4439,7 +4448,10 @@ main#content {
 //   styleguide
 
 section.split-bubbles {
-	padding: 60px 0;
+	padding: 110px 0;
+	@media screen and (max-width: 700px) {
+		padding: 60px 0;
+	}
 
 	.container {
 		max-width: 1400px;
@@ -4453,13 +4465,19 @@ section.split-bubbles {
 		}
 	}
 
-	p.pre-headline{
+	p.pre-headline {
 		@media screen and (max-width: 1280px) {
 			text-align: center;
 		}
+		@media screen and (max-width: 700px) {
+			font-size: $font700sub;
+		}
+		@media screen and (max-width: 400px) {
+			font-size: 3.2vw;
+		}
 	}
 
-	h2{
+	h2 {
 		margin: 0 0 20px;
 		font-size: 2.8rem;
 		font-weight: 800;
@@ -4472,7 +4490,6 @@ section.split-bubbles {
 		}
 		@media screen and (max-width: 700px) {
 			font-size: $font700h2;
-
 		}
 		@media screen and (max-width: 400px) {
 			font-size: $font400h2;
@@ -4499,11 +4516,15 @@ section.split-bubbles {
 		width: 50%;
 		@media screen and (max-width: 1280px) {
 			width: 100%;
+			padding: 0 10px;
 		}
 	}
 
 	.content {
-		padding: 0 20px 30px;
+		padding: 0 0 30px;
+		@media screen and (max-width: 1280px) {
+			padding: 0 0px 30px;
+		}
 	}
 
 	.imageblock {
@@ -4516,10 +4537,10 @@ section.split-bubbles {
 			margin: 0 auto 30px;
 		}
 		img {
-			@media screen and ( min-width: 700px) {
+			@media screen and (min-width: 700px) {
 				min-height: 580px;
-			object-fit: cover;
-			object-position: center;
+				object-fit: cover;
+				object-position: center;
 			}
 		}
 	}
@@ -4549,7 +4570,6 @@ section.nowprepnews {
 		}
 		@media screen and (max-width: 700px) {
 			font-size: $font700h2;
-
 		}
 		@media screen and (max-width: 400px) {
 			font-size: $font400h2;
@@ -4561,7 +4581,7 @@ section.nowprepnews {
 	}
 
 	.cont {
-		padding: 0 ;
+		padding: 0;
 		@media screen and (max-width: 700px) {
 			padding: 0 20px;
 		}
@@ -4625,5 +4645,296 @@ section.nowprepnews {
 	.swiper-button-prev:after {
 		font-weight: bold;
 		font-size: 32px;
+	}
+}
+
+section.welcometele {
+	padding: 140px 0 0;
+
+	@media screen and (max-width: 700px) {
+		padding: 60px 0;
+	}
+	.content {
+		display: flex;
+		@media screen and (max-width: 700px) {
+			flex-direction: column;
+		}
+	}
+
+	.colhalf {
+		width: 50%;
+		@media screen and (max-width: 700px) {
+			width: 100%;
+		}
+	}
+	.colhalf.txt {
+		padding: 30px 90px 0 0;
+		@media screen and (max-width: 1280px) {
+			padding: 30px 30px 60px 0;
+			text-align: center;
+		}
+		@media screen and (max-width: 700px) {
+			padding: 30px 0;
+		}
+	}
+
+	.container {
+		max-width: 1300px;
+		margin: 0 auto;
+		padding: 0 20px;
+		@media screen and (max-width: 700px) {
+			padding: 0 10px;
+		}
+	}
+
+	h1.sec-title {
+		text-transform: capitalize;
+		margin: 0 0 20px;
+		font-size: 3rem;
+		font-weight: 800;
+		line-height: 1.15;
+		letter-spacing: -0.1rem;
+
+		@media screen and (max-width: 1280px) {
+			font-size: $font1280h1;
+		}
+
+		@media screen and (max-width: 700px) {
+			font-size: $font700h1;
+		}
+		@media screen and (max-width: 400px) {
+			font-size: $font400h1;
+		}
+		@media screen and (max-width: 375px) {
+			font-size: $font375h1;
+		}
+	}
+
+	ul.checks {
+		list-style: none;
+		padding: 0;
+		margin: 30px 0 30px;
+		.txt {
+			font-size: 1.2rem;
+			padding-right: 60px;
+			@media screen and (max-width: 700px) {
+				padding: 0;
+				text-align: left;
+				font-size: 1rem;
+			}
+		}
+	}
+
+	a.link {
+		font-size: 1rem;
+		font-weight: bold;
+	}
+	.coform {
+		box-shadow: 0px 7px 20px 0px Rgb(0 0 0 / 15%);
+		padding: 30px;
+		border-radius: 15px;
+
+		box-shadow: 0 5px 30px -25px Rgb(0 0 0/72%);
+		background: #fff;
+		padding: 40px 30px 40px 60px;
+		border-radius: 0 30px;
+		@media screen and (max-width: 700px) {
+			padding: 40px 10px;
+		}
+	}
+	.coform input {
+		margin: 0 0 7px;
+		display: inline-block;
+		width: 90%;
+		max-width: 500px;
+		font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 22px;
+		color: #33475b;
+		border: 1px solid #cbd6e2;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		border-radius: 3px;
+		background-color: #f5f8fa;
+		border-radius: 20px;
+		padding: 0 15px;
+		min-height: 27px;
+		min-width: 100%;
+	}
+
+	.coform label {
+		font-size: 13px;
+		padding: 0 10px;
+	}
+
+	.hs_submit.hs-submit {
+		margin: 0;
+	}
+
+	h2.sec-title {
+		text-align: center;
+		color: #1f88cb;
+		font-size: 1.8rem;
+	}
+
+	p {
+		text-align: center;
+		margin: 0 0 30px;
+	}
+
+	span.check {
+		display: inline-flex;
+		width: 30px;
+		height: 30px;
+		margin-right: 20px;
+	}
+
+	li {
+		display: flex;
+		line-height: 1.2;
+		margin-bottom: 15px;
+	}
+
+	span.check svg {
+		height: 30px;
+		width: 30px;
+		background: #33a532;
+		fill: #fff;
+		border-radius: 50%;
+		padding: 8px;
+	}
+	.mobil {
+		display: none;
+		@media screen and (max-width: 700px) {
+			display: block;
+			.sc-cnj {
+				padding: 0px 20px 0;
+				display: block;
+			}
+		}
+	}
+	img.sc-dcnj {
+		max-width: 170px;
+		margin: 0 0 30px;
+	}
+}
+
+.sc-cnj {
+	margin: 0 auto;
+	display: block;
+	max-width: 1300px;
+	margin: 0 auto;
+	width: 100%;
+	padding: 40px 20px 0;
+	@media screen and (max-width: 700px) {
+		display: none;
+	}
+}
+
+section.teleservices {
+	.bluebox {
+		background: #1f88cb;
+		padding: 40px 30px;
+		span {
+			@media screen and (max-width: 700px) {
+				display: block;
+			}
+		}
+	}
+
+	h2.sec-title {
+		color: #fff;
+		margin: 0;
+		text-align: center;
+
+		color: #fff;
+		text-align: center;
+		font-size: 2.8rem;
+		font-weight: 800;
+		line-height: 1.15;
+		letter-spacing: -0.1rem;
+
+		@media screen and (max-width: 1280px) {
+			font-size: $font1280h2;
+		}
+		@media screen and (max-width: 700px) {
+			font-size: $font700h2;
+		}
+		@media screen and (max-width: 400px) {
+			font-size: $font400h2;
+		}
+	}
+
+	.bluebox .container {
+		max-width: 1300px;
+		margin: 0 auto;
+	}
+
+	.columnsbox {
+	}
+
+	.columnsbox .content {
+		display: flex;
+		padding: 60px 0;
+		@media screen and (max-width: 700px) {
+			flex-direction: column-reverse;
+		}
+	}
+
+	.columnsbox .col {
+		width: 50%;
+		padding: 30px 60px 0 0;
+		display: flex;
+		@media screen and (max-width: 700px) {
+			width: 100%;
+			padding: 30px 0;
+		}
+	}
+
+	.columnsbox .col.image {
+		padding: 0;
+	}
+
+	.columnsbox .col.image figure {
+		margin: 0;
+	}
+
+	.columnsbox .col.image img {
+		border-radius: 30px 0;
+		width: 100%;
+	}
+
+	.columnsbox .col ul.txt {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	.columnsbox .col h3.sec-title {
+		font-size: 1.6rem;
+		color: #1f88cb;
+		@media screen and (max-width: 700px) {
+			font-size: 1.1rem;
+		}
+	}
+
+	.columnsbox .container {
+		max-width: 1300px;
+		margin: 0 auto;
+		padding: 0 20px;
+	}
+	.sv {
+		height: 50px;
+		width: 60px;
+		margin: 20px 30px 0 0;
+	}
+	.sv svg {
+		width: 50px;
+		height: 50px;
+		fill: #505050;
+	}
+	ul.txt li {
+		display: flex;
 	}
 }

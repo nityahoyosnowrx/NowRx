@@ -241,7 +241,7 @@ document.getElementsByTagName('head')[0].appendChild(script);
 if(is_front_page()):
 ?>
 <script async>
-console.log(window.innerWidth);
+// console.log(window.innerWidth);
 let windowW = window.innerWidth;
 if (windowW > 992) {
     document.addEventListener('DOMContentLoaded', function() {

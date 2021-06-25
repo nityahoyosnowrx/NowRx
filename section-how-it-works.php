@@ -1,4 +1,4 @@
-<section class="how-it-works panel--primary">
+<section class="how-it-works panel--primary" id="howitwork">
     <div class="grid-container">
         <div class="grid-x grid-padding-x text-center">
             <div class="large-12 cell">
