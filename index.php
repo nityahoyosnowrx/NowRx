@@ -58,18 +58,25 @@
                     <?php endif; ?>
                 </div>
                 <div class="cnt">
+                <a href="<?php the_permalink(); ?>" class="readlink">
                     <h2><?php
                                    echo mb_strimwidth(get_the_title(), 0, 70, '...');
                                 //    echo wp_trim_words(get_the_title(), 8, '...');
                                    ?></h2>
+                </a>
                     <div class="data">
-                        <?php echo get_the_date('F j Y - h:i a'); ?></div>
+                    <a href="<?php the_permalink(); ?>" class="readlink">
+                        <?php echo get_the_date('F j Y - h:i a'); ?>
+                    </a>
+                    </div>
                     <div class="content">
+                    <a href="<?php the_permalink(); ?>" class="readlink">
                         <?php
                                         // echo wp_trim_words(get_the_content(), 50, '...');
                                         // echo get_the_excerpt();
                                         echo get_post_meta(get_the_ID(), '_yoast_wpseo_metadesc', true);
                                         ?>
+                    </a>
                         <div class="wd">
                             <a href="<?php the_permalink(); ?>" class="readmore">Read More</a>
                         </div>
@@ -110,11 +117,15 @@
                 </div>
                 <div class="contentblock">
                     <h2>
+                    <a href="<?php the_permalink(); ?>" class="readlink">
                         <?php echo wp_trim_words(get_the_title(), 8, '...'); ?>
+                    </a>
                     </h2>
                     <?php if ($postCount == 1 || $postCount == 2 || $postCount == 3) : ?>
                     <div class="content">
+                    <a href="<?php the_permalink(); ?>" class="readlink">
                         <?php echo wp_trim_words(get_the_content(), 0, ''); ?>
+                    </a>
                         <div class="wd">
                             <a href="<?php the_permalink(); ?>" class="readmore">Read More</a>
                         </div>
@@ -124,7 +135,9 @@
                 by <?php echo get_the_author_meta('nickname', $author_id); ?>, <?php echo get_the_date('d, M n Y'); ?>
               </div> -->
                     <div class="content">
+                    <a href="<?php the_permalink(); ?>" class="readlink">
                         <?php echo mb_strimwidth(wp_trim_words(get_the_content(), 100, ''),0, 65, '...'); ?>
+                    </a>
                         <div class="wd">
                             <a href="<?php the_permalink(); ?>" class="readmore">Read More</a>
                         </div>

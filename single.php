@@ -85,6 +85,7 @@ $yoast_desc = get_post_meta( $id, '_yoast_wpseo_metadesc', true );
 
 
                     <div class="sidebar-articles">
+
                         <div class="MostPopular-wrapper MostPopular-taboolaContainer">
                             <div class="MostPopular-header">
                                 Trending Now
@@ -152,6 +153,16 @@ $yoast_desc = get_post_meta( $id, '_yoast_wpseo_metadesc', true );
 							?>
 
                                 </ol>
+                            </div>
+                        </div>
+
+                        <div class="banner-call">
+                            <!-- <div class="subtitle"></div> -->
+                            <h3 class="title">Get Free Same Day Pharmacy Delivery</h3>
+                            <div class="btn-container">
+                                <a href="<?= get_site_url(); ?>" class="rx-btn rx-dg">
+                                Learn More
+                                </a>
                             </div>
                         </div>
 

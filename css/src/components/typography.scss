@@ -34,31 +34,37 @@ $bfont700h2 : calc(23.97647px + .88235vw);
 $bbont400h2 : calc(20.976px + 0.88235vw);
 
 
-blockquote,
-dd,
-div,
-dl,
-dt,
-form,
 h1,
 h2,
 h3,
 h4,
 h5,
 h6,
-li,
-ol,
 p,
+li,
+ol
+{
+	margin: 0;
+	padding: 0;
+}
+blockquote,
+dd,
+div,
+dl,
+dt,
+form,
+
+
 pre,
 td,
 th,
 ul {
-	margin: 0;
-	padding: 0;
+	// margin: 0;
+	// padding: 0;
 }
 
 blockquote {
-	margin: 0;
+	// margin: 0;
 }
 
 body {

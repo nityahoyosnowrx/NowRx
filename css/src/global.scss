@@ -263,9 +263,11 @@ a.ArticleHeader-eyebrow {
 	margin-top: 0;
 	position: relative;
 	z-index: 1;
-	@media screen and (max-width: 992px) {
+	@media screen and (max-width: 700px) {
 		padding: 0;
 		max-width: 100%;
+		display: flex;
+		flex-direction: column-reverse;
 	}
 }
 
@@ -285,6 +287,7 @@ li.MostPopular-addIndex {
 		max-width: 100%;
 		padding: 0 20px 20px;
 		padding: 0 0px 0px;
+		width: 100%;
 	}
 }
 
@@ -1000,6 +1003,7 @@ section.testimonials-block.doctorquotes {
 			border-radius: 0.5rem 0.5rem 0px 0px;
 			display: block;
 		}
+
 	}
 	.de {
 		column-count: 3;
@@ -1172,6 +1176,8 @@ section.testimonials-block.doctorquotes {
 		position: relative;
 		border-radius: 0.5rem;
 		background-color: #fff;
+		margin: 0;
+
 	}
 
 	.swiper-button-next:after,
@@ -2008,10 +2014,7 @@ section.locations-item .locatios-mainblock .location-item > a {
 	color: #192d3e;
 }
 
-section.locations-item .locatios-mainblock .location-item:hover {
-	// background: #eee;
-	transform: scale(1.2);
-}
+
 main.main-class.mainlocation article.article-block.location-item .map-locations .location-item {
 	width: 50%;
 	@media screen and (max-width: 992px) {
