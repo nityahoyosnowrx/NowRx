@@ -77,6 +77,8 @@
   "dependencies": {
     "@babel/polyfill": "^7.6.0",
     "animejs": "^3.2.1",
+    "blueimp-file-upload": "^10.31.0",
+    "cloudinary-jquery-file-upload": "^2.11.4",
     "foundation-sites": "^6.6.3",
     "jquery": "^3.5.1",
     "lozad": "^1.16.0",

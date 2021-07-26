@@ -45,7 +45,7 @@ gtag('event', 'conversion', {'send_to': 'AW-875503484/Bj1NCMmPzboBEPy-vKED'});
                                 <div class="txt">
                                     Follow NowPrEP On Social Media:
                                     <a href="https://www.facebook.com/NowPrEPTelehealth" class="li" target="_blank">Facebook</a>
-                                    <a href="https://www.instagram.com/now_prep/" class="li" target="_blank">Instagram</a>
+                                    <a href="https://www.instagram.com/now_prep" class="li" target="_blank">Instagram</a>
                                 </div>
                             </span>
                         </div>

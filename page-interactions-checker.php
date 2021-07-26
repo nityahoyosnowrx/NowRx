@@ -1,6 +1,6 @@
 <section class="interactionchecker">
     <div class="container">
-        <a class="main-nav-logo" href="https://nowrx.com/" target="_blank"
+        <a class="main-nav-logo" href="https://nowrx.com" target="_blank"
             title="Pharmacy delivery in hours. Just pay your normal copay.">
             <figure class="sk">
                 <img src="<?php echo get_template_directory_uri(); ?>/library/images/NowRx-Logo-Pharmacy.png"

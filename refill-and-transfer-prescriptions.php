@@ -1103,7 +1103,7 @@
                             <div class="title">A.</div>
                             <span class="cntx">
                                 You can view our locations and service areas at <a
-                                    href="https://nowrx.com/locations/">nowrx.com/locations/</a>.
+                                    href="https://nowrx.com/locations">nowrx.com/locations/</a>.
                             </span>
                         </div>
                     </div>
@@ -1204,7 +1204,7 @@
 
             <div class="rvl">
                 <div class="btn-container">
-                    <a href="<?= get_site_url(); ?>/refill-and-transfer-prescriptions/" class="rx-btn rx-dg">
+                    <a href="<?= get_site_url(); ?>/refill-and-transfer-prescriptions" class="rx-btn rx-dg">
                         Get Started
                     </a>
                 </div>

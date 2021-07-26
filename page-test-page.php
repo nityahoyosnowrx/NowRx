@@ -37,7 +37,7 @@
 		<div class="cell large-4 text-center">
 			<img src="<?php echo get_template_directory_uri(); ?>/library/images/icon-1.png" style="height: auto; width: auto; max-width: 100%; max-height: 100px; padding-bottom: 25px;" alt="">
 			<h5 style="color: #274e85;">Send Us Your Prescription</h5>
-			<p style="text-align: left;"><strong>New Prescriptions: </strong>Tell your doctor to fax us or ePrescribe to NowRx.<br> <strong>Existing Prescriptions: </strong><a href="https://try.nowrxpharmacy.com/">Click Here</a></p>
+			<p style="text-align: left;"><strong>New Prescriptions: </strong>Tell your doctor to fax us or ePrescribe to NowRx.<br> <strong>Existing Prescriptions: </strong><a href="https://try.nowrxpharmacy.com">Click Here</a></p>
 		</div>
 
 

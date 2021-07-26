@@ -49,7 +49,7 @@ header.main {
 	position: fixed;
 	left: 0;
 	right: 0;
-	z-index: 1123;
+	z-index: 11234;
 	top: 0;
 	transition: all 0.3s;
 	@media screen and (max-width: 1280px) {
@@ -94,9 +94,12 @@ header.main {
 				padding: 20px 35px 10px;
 				z-index: 123;
 				flex-wrap: wrap;
+
+
 				@media screen and (max-width: 700px) {
 					padding: 5px 20px;
 				}
+
 			}
 		}
 	}
@@ -190,7 +193,7 @@ header.main {
 			background: #eee;
 			opacity: 0;
 			visibility: hidden;
-			background: #1f4f8b;
+			background: #fff;
 			margin-top: 10px;
 
 			padding: 0;
@@ -206,6 +209,8 @@ header.main {
 			opacity: 1;
 			max-height: 100vh;
 			transform: translate(0px, 0px);
+			border-top: 1px solid #eee ;
+				box-shadow: 0 3px 10px -11px #000 inset;
 		}
 		li.buttonfill {
 			margin-left: auto;
@@ -230,9 +235,91 @@ header.main {
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		max-height: calc(100vh - 70px);
+
 		@media screen and (max-width: 1280px) {
 			flex-direction: column;
-			padding: 20px 10px 40px;
+			padding: 20px 10px 10px;
+			height: 100vh;
+			align-items: flex-start;
+			justify-content: flex-start;
+		}
+		@media screen and (max-height: 670px) {
+			padding-top: 0;
+		}
+		li.hidm {
+			@media screen and (min-width: 1280px) {
+				display: none;
+			}
+		}
+		li {
+			@media screen and (max-width: 1280px) {
+				width: 100%;
+				border-bottom: 2px solid #ececec;
+				&:nth-last-child(1){
+					border: none;
+					margin-bottom: 30px;
+					margin-top: auto;
+				}
+			}
+			a {
+				@media screen and (max-width: 1280px) {
+					display: flex;
+					justify-content: flex-start;
+					width: 100%;
+					align-items: center;
+					color: #000;
+				}
+				@media screen and (max-height: 670px) {
+					padding:5px ​20px;
+				}
+				span.ico {
+					display: none;
+					@media screen and (max-width: 1280px) {
+						max-width: 50px;
+						max-height: 50px;
+						width: 100%;
+						display: flex;
+						align-items: center;
+						margin-right: 20px;
+						justify-content: flex-start;
+						svg {
+							max-width: 50px;
+							max-height: 50px;
+							width: 100%;
+						}
+					}
+				}
+				.tk {
+					@media screen and (max-width: 1280px) {
+						width: 100%;
+						display: flex;
+						flex-direction: column;
+						font-size: 1.6rem;
+						font-weight: 800;
+						line-height: 1.15;
+						letter-spacing: -.1rem;
+						&.smalltk {
+							font-size: 1rem;
+						}
+					}
+					@media screen and (max-height: 670px) {
+						font-size: 1rem;
+					}
+					span.sub {
+						display: none;
+						@media screen and (max-width: 1280px) {
+							display:  block;
+							font-size: 1rem;
+							font-weight: 300;
+							line-height: 1.2;
+							margin: 5px 0 0;
+							color: #7d7d7d;
+						}
+					}
+				}
+			}
+
 		}
 	}
 
@@ -308,15 +395,18 @@ header.main {
 
 		@media screen and (max-width: 1280px) {
 			padding: 15px 25px;
-			font-size: 18px;
+			font-size: 12px;
 			width: auto;
 			min-width: 0;
 			display: inline-flex;
 			margin: 20px auto;
 		}
+		@media screen and (max-height: 670px) {
+			margin-top: 5px;
+		}
 		@media screen and (max-width: 700px) {
-			padding: 15px ;
-			font-size: 14px;
+			// padding: 15px ;
+			font-size: 12px;
 		}
 
 		&::before {
@@ -1200,7 +1290,7 @@ section.hero-home {
 
 					background: #fff;
 					box-shadow: 0 0 20px -25px Rgb(0 0 0/72%);
-					margin: -110px 0 0;
+					margin: -20px 0 0;
 					padding: 20px 10px;
 					position: relative;
 					z-index: 21;
@@ -1325,7 +1415,12 @@ section.hero-home {
 			min-height: 260px;
 			min-height: 51vh;
 			@media screen and (max-width: 700px) {
-				min-height: 36vh;
+				min-height: 0vh;
+				max-width: 100vw;
+				margin: 0 auto;
+				max-height: 28vw;
+				object-fit: cover;
+				object-position: top;
 			}
 		}
 	}
@@ -1726,6 +1821,8 @@ section.hero--sub-page {
 			// width: 16.66667%;
 		}
 	}
+
+
 }
 
 /* # Hubspot Form
@@ -1917,9 +2014,7 @@ label.hs-error-msg {
 	padding: 0 20px;
 	height: auto;
 	width: auto;
-	max-width: 220px;
 	max-height: 100px;
-	margin: 0 1.7%;
 	@media screen and (max-width: 1200px) {
 		margin: 10px 0;
 	}
@@ -2071,7 +2166,7 @@ h1 {
 			}
 		}
 		p {
-			font-size: 1rem;
+			// font-size: 1rem;
 		}
 
 		blockquote {
@@ -4680,7 +4775,7 @@ section.split-bubbles {
 	}
 
 	.addimage .pills {
-		padding: 0 40px 0 20px;
+		padding: 0 7.4vw 0 20px;
 		width: 50%;
 		@media screen and (max-width: 1280px) {
 			width: 100%;
@@ -4706,7 +4801,7 @@ section.split-bubbles {
 		}
 		img {
 			@media screen and (min-width: 700px) {
-				min-height: 580px;
+				min-height: 680px;
 				object-fit: cover;
 				object-position: center;
 			}

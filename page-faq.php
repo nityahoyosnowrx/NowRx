@@ -80,7 +80,7 @@
             "name": "Where does NowRx Pharmacy offer prescription delivery?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "NowRx Pharmacy has physical pharmacy locations throughout California and Arizona. We offer free prescription delivery in hours to these cities and surrounding areas. Customers and doctors are also more than welcome to stop by these physical locations to fill a prescription or ask our pharmacist a question. To view our locations and service area maps please visit https://nowrx.com/locations/"
+                "text": "NowRx Pharmacy has physical pharmacy locations throughout California and Arizona. We offer free prescription delivery in hours to these cities and surrounding areas. Customers and doctors are also more than welcome to stop by these physical locations to fill a prescription or ask our pharmacist a question. To view our locations and service area maps please visit https://nowrx.com/locations"
             }
         },
         {
@@ -369,7 +369,7 @@
 
                 <div class="rvls">
                     <div class="btn-container">
-                        <a class="rx-btn" href="<?= get_site_url(); ?>/refill-and-transfer-prescriptions/">
+                        <a class="rx-btn" href="<?= get_site_url(); ?>/refill-and-transfer-prescriptions">
                             <?php include('reg-arrow.php'); ?>
                             get started</a>
                         <a class="rx-btn rx-green mrb" href="#faqblock">
@@ -846,7 +846,7 @@
 
                                             <p>
                                                 To view our locations and service area maps please visit
-                                                <a href="https://nowrx.com/locations/">https://nowrx.com/locations/</a>
+                                                <a href="https://nowrx.com/locations">https://nowrx.com/locations/</a>
                                             </p>
                                         </span>
                                     </div>
@@ -1176,7 +1176,7 @@
                                             <p>Just text us at <a href="tel:844-466-6979">(844) 466-6979</a> a picture
                                                 of the empty prescription bottle you would like us to refill/transfer or
                                                 go to <a
-                                                    href="<?= get_site_url(); ?>/refill-and-transfer-prescriptions/">https://nowrx.com/refill-and-transfer-prescriptions/</a>
+                                                    href="<?= get_site_url(); ?>/refill-and-transfer-prescriptions">https://nowrx.com/refill-and-transfer-prescriptions/</a>
                                                 and fill out our transfer/refill request form.</p>
 
                                             <p>We will take care of the rest!</p>
@@ -1222,7 +1222,7 @@
                                             <p>You can check below to view a full list of NowRx Pharmacy locations and
                                                 enter your address to see if we service your area.</p>
 
-                                            <p><a href="<?= get_site_url(); ?>/locations/">NowRx Pharmacy Locations and
+                                            <p><a href="<?= get_site_url(); ?>/locations">NowRx Pharmacy Locations and
                                                     Service Area Check</a> </p>
                                         </span>
                                     </div>
@@ -2095,16 +2095,16 @@
                                             </p>
                                             <ul>
                                                 <li><a
-                                                        href="https://pubmed.ncbi.nlm.nih.gov/25062079/">https://pubmed.ncbi.nlm.nih.gov/25062079/</a>
+                                                        href="https://pubmed.ncbi.nlm.nih.gov/25062079">https://pubmed.ncbi.nlm.nih.gov/25062079/</a>
                                                 </li>
                                                 <li><a
-                                                        href="https://pubmed.ncbi.nlm.nih.gov/24304158/">https://pubmed.ncbi.nlm.nih.gov/24304158/</a>
+                                                        href="https://pubmed.ncbi.nlm.nih.gov/24304158">https://pubmed.ncbi.nlm.nih.gov/24304158/</a>
                                                 </li>
                                                 <li><a
-                                                        href="https://pubmed.ncbi.nlm.nih.gov/30816817/">https://pubmed.ncbi.nlm.nih.gov/30816817/</a>
+                                                        href="https://pubmed.ncbi.nlm.nih.gov/30816817">https://pubmed.ncbi.nlm.nih.gov/30816817/</a>
                                                 </li>
                                                 <li><a
-                                                        href="https://pubmed.ncbi.nlm.nih.gov/27123916/">https://pubmed.ncbi.nlm.nih.gov/27123916/</a>
+                                                        href="https://pubmed.ncbi.nlm.nih.gov/27123916">https://pubmed.ncbi.nlm.nih.gov/27123916/</a>
                                                 </li>
                                             </ul>
 
@@ -2530,8 +2530,8 @@
 
                                             <p>
                                                 To learn more, please take a look at our <a
-                                                    href="https://nowrx.com/privacy-policy/"> Privacy Policy</a> and <a
-                                                    href="https://nowrx.com/hipaa-privacy/">Privacy Practices</a>.
+                                                    href="https://nowrx.com/privacy-policy"> Privacy Policy</a> and <a
+                                                    href="https://nowrx.com/hipaa-privacy">Privacy Practices</a>.
                                             </p>
                                         </span>
                                     </div>

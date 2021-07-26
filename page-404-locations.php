@@ -35,7 +35,7 @@ gtag('event', 'conversion', {
                         <div class="rvls">
                             <div class="btn-container">
                                 <a class="rx-btn" data-toggle="suggestalocation" aria-controls="suggestalocation" aria-haspopup="true" tabindex="0" >Suggest a Location</a>
-                                <a class="rx-btn rx-txt mrb" href="<?= get_site_url(); ?>/locations/">Return to Locations Page</a>
+                                <a class="rx-btn rx-txt mrb" href="<?= get_site_url(); ?>/locations">Return to Locations Page</a>
                             </div>
 						</div>
 
@@ -45,7 +45,7 @@ gtag('event', 'conversion', {
                                 <div class="txt">
 									Follow NowRx Pharmacy On Social Media:
 									<div class="l">
-									<a href="https://www.facebook.com/NowRx/" class="li" target="_blank">Facebook</a> <a href="https://www.instagram.com/nowrxpharmacy/" class="li" target="_blank">Instagram</a> <a href="https://www.linkedin.com/company/nowrx/" class="li" target="_blank">LinkedIn</a> <a href="https://twitter.com/nowrx" class="li" target="_blank">Twitter</a>
+									<a href="https://www.facebook.com/NowRx" class="li" target="_blank">Facebook</a> <a href="https://www.instagram.com/nowrxpharmacy" class="li" target="_blank">Instagram</a> <a href="https://www.linkedin.com/company/nowrx" class="li" target="_blank">LinkedIn</a> <a href="https://twitter.com/nowrx" class="li" target="_blank">Twitter</a>
 									</div>
                                 </div>
                             </span>

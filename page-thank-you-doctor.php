@@ -47,7 +47,7 @@ gtag('event', 'conversion', {'send_to': 'AW-875503484/Bj1NCMmPzboBEPy-vKED'});
                         <div class="rvl">
                             <span class="follow-links">
                                 <div class="txt">
-                                    Follow NowRx Pharmacy On Social Media: <a href="https://www.facebook.com/NowRx/" class="li" target="_blank">Facebook</a> <a href="https://www.instagram.com/nowrxpharmacy/" class="li" target="_blank">Instagram</a> <a href="https://www.linkedin.com/company/nowrx/" class="li" target="_blank">LinkedIn</a> <a href="https://twitter.com/nowrx" class="li" target="_blank">Twitter</a>
+                                    Follow NowRx Pharmacy On Social Media: <a href="https://www.facebook.com/NowRx" class="li" target="_blank">Facebook</a> <a href="https://www.instagram.com/nowrxpharmacy" class="li" target="_blank">Instagram</a> <a href="https://www.linkedin.com/company/nowrx" class="li" target="_blank">LinkedIn</a> <a href="https://twitter.com/nowrx" class="li" target="_blank">Twitter</a>
                                 </div>
                             </span>
                         </div>

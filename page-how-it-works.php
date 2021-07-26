@@ -41,13 +41,13 @@
 
                 <div class="rvls">
                     <p>
-                    Text <a href="tel:844-466-6979" class="alink">(844) 466-6979</a> or fill out our <a href="<?= get_site_url(); ?>/refill-and-transfer-prescriptions/" target="_blank" class="alink">online prescription form</a>. We will call you to confirm and deliver in hours.
+                    Text <a href="tel:844-466-6979" class="alink">(844) 466-6979</a> or fill out our <a href="<?= get_site_url(); ?>/refill-and-transfer-prescriptions" target="_blank" class="alink">online prescription form</a>. We will call you to confirm and deliver in hours.
                     </p>
                 </div>
 
                 <div class="rvls">
                     <div class="btn-container">
-                        <a class="rx-btn" href="<?= get_site_url(); ?>/refill-and-transfer-prescriptions/">
+                        <a class="rx-btn" href="<?= get_site_url(); ?>/refill-and-transfer-prescriptions">
                         <?php include('reg-arrow.php'); ?>
                             Get Started</a>
                         <a class="rx-btn rx-green mrb" href="#howitwork">
@@ -61,9 +61,9 @@
             <!-- image -->
             <div class="column-half image-col">
                 <picture class="lozad" data-toggle-class="active">
-                    <source media="(max-width: 1px)" srcset="<?php echo get_template_directory_uri(); ?>/images/nowrx-pharmacy-pharmacist-pulling-a-prescription-delivery-from-the-parata-robot-mobile.webp">
-                    <source media="(min-width: 2px)" srcset="<?php echo get_template_directory_uri(); ?>/images/nowrx-pharmacy-pharmacist-pulling-a-prescription-delivery-from-the-parata-robot.webp">
-                    <img data-src="<?php echo get_template_directory_uri(); ?>/images/nowrx-pharmacy-pharmacist-pulling-a-prescription-delivery-from-the-parata-robot.webp" class="orbit-image lozad" height="500px" width="650px" alt="nowrx pharmacy delivery driver bringing prescriptions to a house">
+                    <source media="(max-width: 1px)" srcset="https://ucarecdn.com/1d95c548-1c1d-4ebe-a297-241ccb9ea027/nowrxpharmacypharmacistpullingaprescriptiondeliveryfromtheparatarobotmobile.webp">
+                    <source media="(min-width: 2px)" srcset="https://ucarecdn.com/9122a15c-9238-43a4-8095-02f11860a021/nowrxpharmacypharmacistpullingaprescriptiondeliveryfromtheparatarobot.webp">
+                    <img data-src="https://ucarecdn.com/9122a15c-9238-43a4-8095-02f11860a021/nowrxpharmacypharmacistpullingaprescriptiondeliveryfromtheparatarobot.webp" class="orbit-image lozad" height="500px" width="650px" alt="nowrx pharmacy delivery driver bringing prescriptions to a house">
                 </picture>
             </div>
 
@@ -410,7 +410,7 @@
 
             <div class="rvl">
                 <div class="btn-container">
-                    <a href="<?= get_site_url(); ?>/refill-and-transfer-prescriptions/" class="rx-btn rx-dg">
+                    <a href="<?= get_site_url(); ?>/refill-and-transfer-prescriptions" class="rx-btn rx-dg">
                         Get Started
                     </a>
                 </div>

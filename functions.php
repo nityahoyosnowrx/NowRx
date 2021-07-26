@@ -91,7 +91,7 @@ function disable_emojis()
   remove_filter('comment_text_rss', 'wp_staticize_emoji');
   remove_filter('wp_mail', 'wp_staticize_emoji_for_email');
   add_filter('tiny_mce_plugins', 'disable_emojis_tinymce');
-  add_filter('wp_resource_hints', 'disable_emojis_remove_dns_prefetch', 10, 2);
+  // add_filter('wp_resource_hints', 'disable_emojis_remove_dns_prefetch', 10, 2);
 }
 add_action('init', 'disable_emojis');
 
@@ -288,7 +288,7 @@ and be up and running in seconds.
   //   wp_enqueue_style('googleFonts', '//fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic');
   // }
 
-  add_action('wp_enqueue_scripts', 'bones_fonts');
+  // add_action('wp_enqueue_scripts', 'bones_fonts');
 
   function cc_mime_types($mimes)
   {
@@ -616,7 +616,7 @@ and be up and running in seconds.
                 "@type": "ListItem",
                 "position": 1,
                 "item": {
-                  "@id": "<?php echo get_bloginfo('url'); ?>/products/<?php echo $product_category_slug; ?>/",
+                  "@id": "<?php echo get_bloginfo('url'); ?>/products/<?php echo $product_category_slug; ?>",
                   "name": "<?php echo $product_category_name; ?>"
                 }
               },

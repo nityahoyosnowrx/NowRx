@@ -18,7 +18,7 @@ $mapd = get_field('address');
 ?>
 <script type="application/ld+json">
 {
-    "@context": "https://www.schema.org/",
+    "@context": "https://www.schema.org",
     "@type": "LocalBusiness",
     "name": "<?= __(the_title()); ?>",
     "alternateName": ["NowRx", "NowRx Pharmacy", "Now Rx", "Now Rx Pharmacy"],
@@ -28,7 +28,7 @@ $mapd = get_field('address');
     "telephone": "<?php if(get_field('phone')){ echo get_field('phone'); } else { echo '""';} ?>",
     "sameAs": [
         "https://twitter.com/NowRx?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
-        "https://www.facebook.com/NowRx/"
+        "https://www.facebook.com/NowRx"
     ],
     "openingHoursSpecification": [{
         "@type": "OpeningHoursSpecification",

@@ -356,7 +356,7 @@ function geocodeAddress(addr) {
 
                 console.log('The area contains the address');
                 $('.results-map').html(
-                    'NowRx delivers to this address. <a class="rx-btn mrb" href="<?= get_site_url(); ?>/refill-and-transfer-prescriptions/">Get Started</a>'
+                    'NowRx delivers to this address. <a class="rx-btn mrb" href="<?= get_site_url(); ?>/refill-and-transfer-prescriptions">Get Started</a>'
                 );
                 $('.results-map').removeClass('notfound');
             } else {

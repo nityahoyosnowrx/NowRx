@@ -521,7 +521,7 @@ function geocodeAddress(addr) {
             map.fitBounds(newBounds);
             if ( google.maps.geometry.poly.containsLocation(results[0].geometry.location, polygon) )  {
                 console.log('The area contains the address');
-                $('.results-map').html('NowRx delivers to this address. <a class="rx-btn mrb" href="http://localhost:8888/dev/how-it-works/">Get Started</a>');
+                $('.results-map').html('NowRx delivers to this address. <a class="rx-btn mrb" href="http://localhost:8888/dev/how-it-works">Get Started</a>');
                 $('.results-map').removeClass('notfound');
             } else {
                 console.log('The address is outside of the area.');

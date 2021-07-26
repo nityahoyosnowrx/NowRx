@@ -8,7 +8,7 @@ body {
 		left: 0;
 		right: 0;
 		height: 120vh;
-		background-image: url(../images/NowRx-Pharmacy-Website-Background.webp);
+		background-image: url(https://nowrx.com/wp-content/themes/nowrx-live/images/NowRx-Pharmacy-Website-Background.webp);
 		background-position: 0%;
 		background-size: auto 100%;
 		z-index: -1;
@@ -974,9 +974,14 @@ section.testimonials-block {
 }
 
 section.testimonials-block.doctorquotes {
-	padding: 160px 0 0;
+	padding: 130px 0 0;
+	background: #fff;
+	@media screen and (max-width: 1280px) {
+		padding: 100px 0 0;
+	}
+
 	@media screen and (max-width: 992px) {
-		padding: 110px 0 0;
+		padding: 70px 0 0;
 	}
 	.swiper-slide .content {
 		display: flex;
@@ -1003,19 +1008,25 @@ section.testimonials-block.doctorquotes {
 			border-radius: 0.5rem 0.5rem 0px 0px;
 			display: block;
 		}
-
 	}
 	.de {
+		-webkit-column-count: 3;
+		-moz-column-count: 3;
 		column-count: 3;
 		-webkit-column-fill: balance;
+		-moz-column-fill: balance;
 		column-fill: balance;
 		-webkit-column-gap: 2rem;
-		column-gap: 2rem;
+		-moz-column-gap: 2rem;
+		column-gap: 0;
 		-webkit-transform: translateX(0);
-		-ms-transform: translateX(0);
 		transform: translateX(0);
-		margin: 1rem 0;
-		padding: 0 20px;
+		margin: 0px 0;
+		padding: 20px;
+		background: #fff;
+		display: flex;
+		flex-wrap: wrap;
+
 		@media screen and (max-width: 992px) {
 			column-gap: 2rem;
 			column-count: 1;
@@ -1061,13 +1072,13 @@ section.testimonials-block.doctorquotes {
 		line-height: 25px;
 		text-align: center;
 		margin: 0 0 5px;
+		color: #fff;
 	}
 	.name h2.sec-title {
 		font-size: 14px;
 		line-height: 20px;
 		margin: 0;
-
-		color: #1f88ca;
+		color: #fff;
 	}
 
 	blockquote cite {
@@ -1091,7 +1102,8 @@ section.testimonials-block.doctorquotes {
 		display: block;
 		font-style: normal;
 		line-height: 20px;
-		color: #6d6d6d8c;
+		/* color: #1a2d3d; */
+		color: $f;
 		font-weight: 300;
 	}
 
@@ -1131,30 +1143,59 @@ section.testimonials-block.doctorquotes {
 	}
 
 	.quoteitem {
+		-webkit-transition: all 0.3s;
 		transition: all 0.3s;
-		background-color: #fff;
-
+		background-color: Rgb(255 255 255);
+		-webkit-transform-origin: center;
 		transform-origin: center;
+		-webkit-transition: all 0.2s ease-in-out;
 		transition: all 0.2s ease-in-out;
-		border-radius: 0.5rem;
+		border-radius: 3px;
 		position: relative;
-		margin: 0 0 40px;
-		padding: 30px 30px;
-		box-shadow: 5px 5px 20px 0px rgba(25, 45, 62, 0.2);
+		padding: 20px 60px;
+		-webkit-box-shadow: 5px 5px 20px 0 Rgb(25 45 62 / 20%);
+		box-shadow: 5px 5px 20px 0 Rgb(25 45 62 / 0%);
+		border-bottom: 0px solid #1a74ad;
+		border: 0px solid #eee;
+		background: #1f88ca;
+		border-radius: 20px 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+		width: calc(31% - 20px);
+    margin: 23px;
+
+		@media screen and (max-width: 1280px) {
+			width: calc(45% - 0px);
+			margin: 4% 1%;
+		}
+		@media screen and (max-width: 700px) {
+			width: calc(95% - 0px);
+			margin: 4% 1%;
+
+			padding: 20px;
+
+		}
 
 		&:hover {
 			transform: scale(1.05);
-			box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.1);
+			box-shadow: 0 1.5rem 4rem Rgba(0, 0, 0, 0.1);
 		}
 		&:after {
 			content: '“';
 			position: absolute;
 			font-weight: 600;
 			line-height: 1;
-			left: 15px;
-			top: 2px;
-			color: Rgb(31 136 202 / 9%);
-			font-size: 7rem;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			color: #ffffff2b;
+			font-size: 25rem;
+			line-height: 0;
+			z-index: 0;
+			margin-top: 70px;
 		}
 		.content {
 			padding: 0;
@@ -1165,19 +1206,21 @@ section.testimonials-block.doctorquotes {
 		font-weight: 300;
 		margin: 0 0 1rem;
 		display: block;
-
-		background: #fff;
-		font-size: 1rem;
-		line-height: 1.9rem;
+		font-size: 1.4rem;
+		line-height: 1.5;
 		padding: 10px 0;
+		display: block;
+		color: #fff;
+		@media screen and (max-width: 700px) {
+			font-size: 1rem;
+		}
 	}
 
 	blockquote {
 		position: relative;
 		border-radius: 0.5rem;
-		background-color: #fff;
+		// background-color: ;
 		margin: 0;
-
 	}
 
 	.swiper-button-next:after,
@@ -1205,6 +1248,149 @@ section.testimonials-block.doctorquotes {
 	.content {
 		display: flex;
 		flex-direction: column-reverse;
+	}
+
+	.container {
+		padding: 0;
+		max-width: 100%;
+	}
+	small {
+		display: block;
+		font-size: 1rem;
+		margin: 10px 0 0;
+	}
+	.container > .content {
+		display: flex;
+		flex-direction: row;
+		background: Hsl(207deg 41% 95%);
+		padding: 0;
+		@media screen and (max-width: 1280px) {
+			flex-direction: column;
+		}
+		.txt{
+		@media screen and (max-width: 1280px) {
+			padding: 40px 20px;
+		}
+		}
+	}
+
+
+	.content img.orbit-image.lozad {
+		width: 100%;
+		object-fit: cover;
+		object-position: center;
+		height: 100%;
+		@media screen and (max-width: 700px) {
+			min-height: 0;
+		}
+	}
+
+	.content .txt {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: center;
+		padding: 0 90px;
+		width: 45%;
+		@media screen and (max-width: 1280px) {
+			width: 100%;
+		}
+	}
+
+	.content .txt .subtitle {
+		text-align: left;
+		font-size: 0.7rem;
+	}
+
+	.content .txt h1.main-title {
+		text-align: left;
+		font-size: 2.3rem;
+		line-height: 2.5rem;
+		@media screen and (max-width: 400px) {
+			font-size: $font400h1;
+		}
+	}
+
+	.content .txt .image {
+		width: 55%;
+
+	}
+
+	.content .txt .image {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.content .txt .image figure {
+		height: 100%;
+		width: 100%;
+	}
+
+	.content .image {
+		width: 55%;
+		@media screen and (max-width: 1280px) {
+			width: 100%;
+		}
+	}
+
+	.quoteitem.largeblock {
+		padding: 0;
+		overflow: hidden;
+		position: relative;
+		width: calc(65% - 20px);
+		@media screen and (max-width: 1280px) {
+			width: calc(98% - 0px);
+			margin: 2%;
+		}
+		figure {
+			max-height: 500px;
+		}
+		&:after {
+			display: none;
+		}
+	}
+
+	.quoteitem.largeblock .content {
+		padding: 30px;
+		background: #00000082;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	figure {
+		width: 100%;
+		height: 100%;
+	}
+	.quoteitem.largeblock img.orbit-image.lozad {
+		object-position: 50% 30%;
+		width: 100%;
+		height: 100%;
+		@media screen and (max-width: 700px) {
+			min-height: 50vh;
+		}
+	}
+
+	.quoteitem.largeblock .content span.fullquote {
+		color: #fff;
+		font-size: 1.8rem;
+		@media screen and (max-width: 700px) {
+			font-size: 1rem;
+		}
+	}
+
+	.quoteitem.largeblock .content span.li {
+		color: #fff;
+	}
+
+	.quoteitem.largeblock .content h2.sec-title {
+		color: #fff;
 	}
 }
 
@@ -2014,7 +2200,6 @@ section.locations-item .locatios-mainblock .location-item > a {
 	color: #192d3e;
 }
 
-
 main.main-class.mainlocation article.article-block.location-item .map-locations .location-item {
 	width: 50%;
 	@media screen and (max-width: 992px) {
@@ -2447,7 +2632,7 @@ select {
 	margin-bottom: 25px;
 	padding-bottom: 7px;
 	padding-left: 5px;
-	background-image: url(https://www.nowrx.com/wp-content/themes/nowrx/library/images/5e7e6b8…_dot.svg);
+	background-image: url(https://nowrx.com/wp-content/themes/nowrx-live/library/images/5e7e6b8…_dot.svg);
 	background-position: 12px 0;
 }
 
@@ -2987,13 +3172,11 @@ section.hero-home.referralpage {
 	}
 }
 
-
 section.visit-faq.nwprepviti {
 	.small-block {
 		font-size: 16px;
 	}
 }
-
 
 .form-component {
 	.grid-container {

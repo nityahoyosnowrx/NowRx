@@ -34,13 +34,13 @@ get_header();
                     <div class="locatios-mainblock">
                         <!-- item -->
                         <div class="location-item">
-                            <a href="<?= get_site_url(); ?>/locations/california/mountain-view/">
+                            <a href="<?= get_site_url(); ?>/locations/california/mountain-view">
                                 <h2 class="sec-title">Mountain View, CA</h2>
 
                             </a>
 
                             <div class="btn-block">
-                                <a href="<?= get_site_url(); ?>/locations/california/mountain-view/" class="rx-btn">
+                                <a href="<?= get_site_url(); ?>/locations/california/mountain-view" class="rx-btn">
                                     View Location Information
                                     <span class="arrow">
                                         <svg aria-hidden="true" focusable="false" data-prefix="fas"
@@ -58,12 +58,12 @@ get_header();
                         <!-- item -->
                         <div class="location-item">
 
-                            <a href="<?= get_site_url(); ?>/locations/california/irvine/">
+                            <a href="<?= get_site_url(); ?>/locations/california/irvine">
                                 <h2 class="sec-title">Irvine, CA</h2>
 
                             </a>
                             <div class="btn-block">
-                                <a href="<?= get_site_url(); ?>/locations/california/irvine/" class="rx-btn">
+                                <a href="<?= get_site_url(); ?>/locations/california/irvine" class="rx-btn">
                                     View Location Information
                                     <span class="arrow">
                                         <svg aria-hidden="true" focusable="false" data-prefix="fas"
@@ -79,12 +79,12 @@ get_header();
                         </div>
                         <!-- item -->
                         <div class="location-item">
-                            <a href="<?= get_site_url(); ?>/locations/california/burlingame/">
+                            <a href="<?= get_site_url(); ?>/locations/california/burlingame">
                                 <h2 class="sec-title">Burlingame, CA</h2>
 
                             </a>
                             <div class="btn-block">
-                                <a href="<?= get_site_url(); ?>/locations/california/burlingame/" class="rx-btn">
+                                <a href="<?= get_site_url(); ?>/locations/california/burlingame" class="rx-btn">
                                     View Location Information
                                     <span class="arrow">
                                         <svg aria-hidden="true" focusable="false" data-prefix="fas"
@@ -101,12 +101,12 @@ get_header();
 
                         <!-- item -->
                         <div class="location-item">
-                            <a href="<?= get_site_url(); ?>/locations/california/san-jose/">
+                            <a href="<?= get_site_url(); ?>/locations/california/san-jose">
                                 <h2 class="sec-title">San Jose, CA</h2>
 
                             </a>
                             <div class="btn-block">
-                                <a href="<?= get_site_url(); ?>/locations/california/san-jose/" class="rx-btn">
+                                <a href="<?= get_site_url(); ?>/locations/california/san-jose" class="rx-btn">
                                     View Location Information
                                     <span class="arrow">
                                         <svg aria-hidden="true" focusable="false" data-prefix="fas"
@@ -122,12 +122,12 @@ get_header();
                         </div>
                         <!-- item -->
                         <div class="location-item">
-                            <a href="<?= get_site_url(); ?>/locations/california/pleasanton/">
+                            <a href="<?= get_site_url(); ?>/locations/california/pleasanton">
                                 <h2 class="sec-title">Pleasanton, CA</h2>
 
                             </a>
                             <div class="btn-block">
-                                <a href="<?= get_site_url(); ?>/locations/california/pleasanton/" class="rx-btn">
+                                <a href="<?= get_site_url(); ?>/locations/california/pleasanton" class="rx-btn">
                                     View Location Information
                                     <span class="arrow">
                                         <svg aria-hidden="true" focusable="false" data-prefix="fas"
@@ -144,12 +144,12 @@ get_header();
 
                         <!-- item -->
                         <div class="location-item">
-                            <a href="<?= get_site_url(); ?>/locations/california/van-nuys/">
+                            <a href="<?= get_site_url(); ?>/locations/california/van-nuys">
                                 <h2 class="sec-title">Van Nuys, CA</h2>
 
                             </a>
                             <div class="btn-block">
-                                <a href="<?= get_site_url(); ?>/locations/california/van-nuys/" class="rx-btn">
+                                <a href="<?= get_site_url(); ?>/locations/california/van-nuys" class="rx-btn">
                                     View Location Information
                                     <span class="arrow">
                                         <svg aria-hidden="true" focusable="false" data-prefix="fas"
@@ -166,12 +166,12 @@ get_header();
 
                         <!-- item -->
                         <div class="location-item">
-                            <a href="<?= get_site_url(); ?>/locations/california/hayward/">
+                            <a href="<?= get_site_url(); ?>/locations/california/hayward">
                                 <h2 class="sec-title">Hayward, CA</h2>
 
                             </a>
                             <div class="btn-block">
-                                <a href="<?= get_site_url(); ?>/locations/california/hayward/" class="rx-btn">
+                                <a href="<?= get_site_url(); ?>/locations/california/hayward" class="rx-btn">
                                     View Location Information
                                     <span class="arrow">
                                         <svg aria-hidden="true" focusable="false" data-prefix="fas"

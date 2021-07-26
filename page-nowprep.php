@@ -53,7 +53,7 @@
 
                 <div class="rvls">
                     <div class="btn-container">
-                        <!-- <a class="rx-btn" href="<?= get_site_url(); ?>/refill-and-transfer-prescriptions/">Join Watilist</a> -->
+                        <!-- <a class="rx-btn" href="<?= get_site_url(); ?>/refill-and-transfer-prescriptions">Join Watilist</a> -->
                         <a class="rx-btn " id="nowprep-gt-gt" data-toggle="waitlist" aria-controls="waitlist" aria-haspopup="true" id="getstarted-gt" tabindex="0"> <?php include('reg-arrow.php'); ?> Get Started</a>
                         <a class="rx-btn rx-green mrb" href="#howitwork"> <?php include('grn-arrow.php'); ?> How It
                             Works</a>
@@ -113,7 +113,7 @@ include('section-companies.php'); ?>
                     </div>
                     <h3 class="padding-bottom-3">1. Sign Up for NowPrep</h3>
 
-                    <p>
+                    <p class="txtcenter">
                         Sign up in seconds and fill out our health questionnaire to assess whether you are eligible for PrEP medication.
                     </p>
                 </div>
@@ -130,8 +130,9 @@ include('section-companies.php'); ?>
                     </div>
                     <h3 class="padding-bottom-3">2. Complete an HIV Test</h3>
 
-                    <p>
-                        We will submit a lab order for a home test kit or an in person lab appointment that is convenient for you.
+                    <p class="txtcenter">
+                    Our prescriber will work with you to set up an in person lab test or mail you a home test kit.
+
                     </p>
                 </div>
             </div>
@@ -147,7 +148,7 @@ include('section-companies.php'); ?>
                     </div>
                     <h3 class="padding-bottom-3">3. Get HIV PrEP Delivered</h3>
 
-                    <p>
+                    <p class="txtcenter">
                     If a NowPrEP physician decides HIV PrEP Medication is right for you, we will prescribe and deliver it in hours for FREE!
                     </p>
                 </div>
@@ -176,37 +177,46 @@ include('section-companies.php'); ?>
             <!-- pill -->
             <div class="pill reganim">
                 <div class="title">
-                    Convenient, Affordable & Easy to Use
+                Convenient, Affordable & Easy to Use
                 </div>
                 <div class="text">
-                    Sign up and get a FREE assessment in minutes from the comfort and privacy of your home.
+                Sign up for free and get access to our NowPrEP physicians from the comfort and privacy of your home.
                 </div>
             </div>
             <!-- pill -->
             <div class="pill reganim">
                 <div class="title">
-                    Free Prescription Delivery
+                Free Prescription Delivery
                 </div>
                 <div class="text">
-                    If PrEP is right for you, NowRx will deliver your medication for free within 5 hours.
+                Have PrEP medication delivered right to your door for free on the same day your prescription is written.
                 </div>
             </div>
             <!-- pill -->
             <div class="pill reganim">
                 <div class="title">
-                    Insurance Approval Assistance
+                Insurance Approval Assistance
                 </div>
                 <div class="text">
-                    We navigate the insurance process to make sure PrEP medications are covered and affordable!
+                Get all your Descovy or Truvada PrEP medication covered with the help of our expert pharmacists.
                 </div>
             </div>
             <!-- pill -->
             <div class="pill reganim">
                 <div class="title">
-                    5 Star Customer Service
+                5 Star Customer Service
                 </div>
                 <div class="text">
-                    NowRx staff is rated 5 stars (Yelp/Google) for their dedicated customer service.
+                Receive the best customer service imaginable from our trained pharmacy and physician team members.
+                </div>
+            </div>
+            <!-- pill -->
+            <div class="pill reganim">
+                <div class="title">
+                At Home Test Kits
+                </div>
+                <div class="text">
+                Test yourself from the comfort and convenience of your home with our NowPrEP Home Testing Kits.
                 </div>
             </div>
         </div>

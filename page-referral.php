@@ -30,7 +30,7 @@
                 </div>
                 <div class="rvls">
                     <div class="btn-container">
-                        <!-- <a class="rx-btn" href="<?= get_site_url(); ?>/refill-and-transfer-prescriptions/">Join Watilist</a> -->
+                        <!-- <a class="rx-btn" href="<?= get_site_url(); ?>/refill-and-transfer-prescriptions">Join Watilist</a> -->
                         <a class="rx-btn " href="#referralform">Refer a Friend</a>
                         <a class="rx-btn rx-green mrb" href="#howitwork">How It Works</a>
 

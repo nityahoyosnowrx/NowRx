@@ -3,7 +3,7 @@ import jquery, { ready } from 'jquery';
 window.jQuery = jquery;
 window.$ = jquery;
 
-import 'slick-carousel';
+// import 'slick-carousel';
 
 import lozad from 'lozad';
 
@@ -248,47 +248,47 @@ $(document).ready(function() {
 
 
 
-import anime from 'animejs/lib/anime.es.js';
+// import anime from 'animejs/lib/anime.es.js';
 
-anime
-  .timeline({ loop: 0, direction: 'normal' })
-  .add({
-    targets: '.ml5 .line',
-    opacity: [0.5, 1],
-    scaleX: [0, 1],
-    easing: 'easeInOutExpo',
-    duration: 700
-  })
-  .add({
-    targets: '.ml5 .line',
-    duration: 600,
-    easing: 'easeOutExpo',
-    translateY: (el, i) => -0.625 + 0.625 * 2 * i + 'em'
-  })
-  .add({
-    targets: '.ml5 .ampersand',
-    opacity: [0, 1],
-    scaleY: [0.5, 1],
-    easing: 'easeOutExpo',
-    duration: 600,
-    offset: '-=600'
-  })
-  .add({
-    targets: '.ml5 .letters-left',
-    opacity: [0, 1],
-    translateX: ['0.5em', 0],
-    easing: 'easeOutExpo',
-    duration: 600,
-    offset: '-=300'
-  })
-  .add({
-    targets: '.ml5 .letters-right',
-    opacity: [0, 1],
-    translateX: ['-0.5em', 0],
-    easing: 'easeOutExpo',
-    duration: 600,
-    offset: '-=600'
-  });
+// anime
+//   .timeline({ loop: 0, direction: 'normal' })
+//   .add({
+//     targets: '.ml5 .line',
+//     opacity: [0.5, 1],
+//     scaleX: [0, 1],
+//     easing: 'easeInOutExpo',
+//     duration: 700
+//   })
+//   .add({
+//     targets: '.ml5 .line',
+//     duration: 600,
+//     easing: 'easeOutExpo',
+//     translateY: (el, i) => -0.625 + 0.625 * 2 * i + 'em'
+//   })
+//   .add({
+//     targets: '.ml5 .ampersand',
+//     opacity: [0, 1],
+//     scaleY: [0.5, 1],
+//     easing: 'easeOutExpo',
+//     duration: 600,
+//     offset: '-=600'
+//   })
+//   .add({
+//     targets: '.ml5 .letters-left',
+//     opacity: [0, 1],
+//     translateX: ['0.5em', 0],
+//     easing: 'easeOutExpo',
+//     duration: 600,
+//     offset: '-=300'
+//   })
+//   .add({
+//     targets: '.ml5 .letters-right',
+//     opacity: [0, 1],
+//     translateX: ['-0.5em', 0],
+//     easing: 'easeOutExpo',
+//     duration: 600,
+//     offset: '-=600'
+//   });
 
 // Wrap every letter in a span
 // var textWrapper = document.querySelector('.ml3');
@@ -518,3 +518,9 @@ $(document).ready(function(){
 //     },0)
 //   }
 // });
+
+new PerformanceObserver((entryList) => {
+  for (const entry of entryList.getEntries()) {
+    console.log('LCP candidate:', entry.startTime, entry);
+  }
+}).observe({type: 'largest-contentful-paint', buffered: true});
