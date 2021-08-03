@@ -4,9 +4,14 @@
  <!--[if lte IE 8]>
 <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js" defer></script>
 <![endif]-->
-<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js" defer></script>
+<!-- <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js" async></script> -->
 <!-- <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js" rel="dns-prefetch"></script> -->
+
+
+
+
 <!-- nowprep -->
+
 <div class="reveal twentyone" id="waitlist" data-reveal data-close-on-click="true" data-animation-in="slide-in-down"data-animation-out="slide-out-up">
     <div class="imagblock">
         <img data-src="<?php echo get_template_directory_uri(); ?>/images/doctorwithclipboard.jpeg"
@@ -54,12 +59,10 @@
         </div>
         <div class="form-content">
             <script >
-            window.addEventListener('load', function() {
                     hbspt.forms.create({
                         portalId: "5952677",
                         formId: "ded00596-ad7a-46b6-9069-bb3552b72735"
                     });
-            });
             </script>
         </div>
     </div>
@@ -67,6 +70,7 @@
         <span aria-hidden="true">&times;</span>
     </button>
 </div>
+
 <!-- faq -->
 <!-- nowprep -->
 <div class="reveal" id="submitaquestion" data-reveal data-close-on-click="true" data-animation-in="slide-in-down"
@@ -80,19 +84,20 @@
         </p>
     </div>
     <script >
-    window.addEventListener('load', function() {
-                setTimeout(function(){
             hbspt.forms.create({
                 portalId: "5952677",
                 formId: "aa3d3838-6464-4e9f-911f-d2096f43433c"
             });
-        },2000)
-    });
     </script>
+
+
+
+
     <button class="close-button text-center" data-close aria-label="Close reveal" type="button">
         <span aria-hidden="true">&times;</span>
     </button>
 </div>
+
 
 <!-- nowprep -->
 <div class="reveal" id="telehealth" data-reveal data-close-on-click="true" data-animation-in="slide-in-down"
@@ -110,15 +115,11 @@
     </div>
 
     <script >
-    window.addEventListener('load', function() {
-                setTimeout(function(){
                     hbspt.forms.create({
                     region: "na1",
                     portalId: "5952677",
                     formId: "33aa45eb-499d-4a4b-b55f-f5a7c7bd5359"
                     });
-        },2000)
-    });
     </script>
     <button class="close-button text-center" data-close aria-label="Close reveal" type="button">
         <span aria-hidden="true">&times;</span>
@@ -132,19 +133,16 @@
     </h3>
     <p>NowRx Pharmacy will notify you when we expand our free prescription delivery services to your area</p>
     <script >
-    window.addEventListener('load', function() {
-                setTimeout(function(){
             hbspt.forms.create({
                 portalId: "5952677",
                 formId: "9085621c-0203-44d5-b7e4-f97da3d5cea3"
             });
-        },2000)
-    });
     </script>
     <button class="close-button text-center" data-close aria-label="Close reveal" type="button">
         <span aria-hidden="true">&times;</span>
     </button>
 </div>
+
 <!-- for-doctors -->
 <!-- archive locations -->
 <!-- contact-us -->
@@ -163,14 +161,10 @@
         </div>
         <div class="form-content">
             <script >
-            window.addEventListener('load', function() {
-                setTimeout(function(){
                     hbspt.forms.create({
                         portalId: "5952677",
                         formId: "134ddd71-adf4-414b-a537-24f71e87f48e"
                     });
-                },2000)
-            });
             </script>
         </div>
         <!-- <div class="descbot">
@@ -190,14 +184,10 @@
         details on how to get started.
     </p>
     <script >
-    window.addEventListener('load', function() {
-                setTimeout(function(){
             hbspt.forms.create({
                 portalId: "5952677",
                 formId: "134ddd71-adf4-414b-a537-24f71e87f48e"
             });
-        },2000)
-    });
     </script>
     <button class="close-button text-center" data-close aria-label="Close reveal" type="button">
         <span aria-hidden="true">&times;</span>
@@ -209,14 +199,10 @@
     <h3 class="text-center">Building A Better Pharmacy for<br>Our Doctors & Patients</h3>
     <p class="text-center">Learn Why More Than 4,500 Physicians Trust NowRx!</p>
     <script >
-    window.addEventListener('load', function() {
-                setTimeout(function(){
             hbspt.forms.create({
                 portalId: "5952677",
                 formId: "e7d24a50-ae52-4ec2-a184-a6bbd3eb1382"
             });
-        },2000)
-    });
     </script>
     <button class="close-button" data-close aria-label="Close reveal" type="button">
         <span aria-hidden="true">&times;</span>
@@ -228,14 +214,10 @@
     <p class="text-center">Fill out the form and we'll let your Doctor know to fill your next prescription with
         NowRx.</p>
     <script >
-    window.addEventListener('load', function() {
-                setTimeout(function(){
             hbspt.forms.create({
                 portalId: "5952677",
                 formId: "e7d24a50-ae52-4ec2-a184-a6bbd3eb1382"
             });
-        },2000)
-    });
     </script>
     <button class="close-button" data-close aria-label="Close reveal" type="button">
         <span aria-hidden="true">&times;</span>
@@ -265,3 +247,28 @@ endif; ?>
 </div>
 <!-- reveal overlay -->
 <div class="reveal-overlay"></div>
+
+<script>
+        // override the hbspt functionality while hubspot is loading
+        var hbspt = {
+        //push form to hubcache queue
+        forms:{create:function(c){hubspot.forms.push(c)}},
+        };
+
+        // cache hubspot forms here
+        var hubcache = {
+                forms:[],
+                letsgo:function(){
+                    for (var i in hubspot.forms){
+                    //hubspot is now loaded
+                    hbspt.forms.create(hubcache.forms[i]);
+                    }
+                }
+            }
+        </script>
+        <script
+        type="text/javascript"
+        defer
+        src="//js.hsforms.net/forms/v2.js"
+        onload="hubcache.letsgo()">
+        </script>

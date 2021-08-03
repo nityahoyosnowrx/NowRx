@@ -46,7 +46,7 @@
             <?php else: ?>
               <?php echo get_the_author_meta( 'nickname', $author_id ); ?>
             <?php endif; ?>"
-                            style="background-image: url(https://nowrx.com/wp-content/uploads/2020/02/WordPress-Image.png);">
+                            style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/phil.webp');">
                         </div>
                         <?php endif; ?>
 

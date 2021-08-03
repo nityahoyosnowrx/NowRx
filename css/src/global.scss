@@ -2823,7 +2823,7 @@ section.hero-home.contactpage {
 // 		}
 // 	}
 // }
-section#referralform {
+#referralform {
 	padding: 20px 0;
 	max-width: 1430px;
 	margin: 0 auto;
@@ -2911,7 +2911,7 @@ section#referralform {
 		}
 	}
 
-	span {
+	label > span {
 		font-size: 12px;
 		display: block;
 		text-align: center;
@@ -2922,6 +2922,13 @@ section#referralform {
 		width: 100%;
 		align-items: center;
 		justify-content: center;
+
+		position: absolute;
+			top: 0;
+			left: -9999px;
+			width: 1px;
+			height: 1px;
+			overflow: hidden;
 	}
 	.grid-container {
 		padding: 0;
@@ -3041,7 +3048,7 @@ section#referralform {
 				font-weight: 700;
 				padding-right: 10px;
 				display: block;
-				span {
+				> span {
 					position: absolute;
 					top: 0;
 					left: -9999px;

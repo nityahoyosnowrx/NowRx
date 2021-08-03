@@ -59,8 +59,8 @@ gtag('event', 'conversion', {
             <div class="column-half image-col">
 
                 <picture class="lozad" data-src="<?php echo get_template_directory_uri(); ?>/images/map.jpeg" data-toggle-class="active">
-                    <source media="(max-width: 1px)" srcset="<?php echo get_template_directory_uri(); ?>/images/map.jpeg">
-                    <source media="(min-width: 2px)" srcset="<?php echo get_template_directory_uri(); ?>/images/map.jpeg">
+                    <source media="(max-width: 992px)" srcset="<?php echo get_template_directory_uri(); ?>/images/map.jpeg">
+                    <source media="(min-width: 993px)" srcset="<?php echo get_template_directory_uri(); ?>/images/map.jpeg">
                     <img src="<?php echo get_template_directory_uri(); ?>/images/map.jpeg" class="orbit-image lozad" height="500px" width="650px" alt="nowrx pharmacy delivery happy customers celebrating low drug prices">
                 </picture>
 

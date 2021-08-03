@@ -65,10 +65,10 @@
 
                 <picture class="lozad"
                     data-toggle-class="active">
-                    <source media="(max-width: 1px)" srcset="<?php echo get_template_directory_uri(); ?>/images/doctor-looking-at-nowrx-pharmacy-delivery-for-their-patients-mobile.webp">
-                    <source media="(min-width: 2px)" srcset="<?php echo get_template_directory_uri(); ?>/images/doctor-looking-at-nowrx-pharmacy-delivery-for-their-patients.webp">
-                    <img data-src="<?php echo get_template_directory_uri(); ?>/images/doctor-looking-at-nowrx-pharmacy-delivery-for-their-patients.webp"
-                        class="orbit-image lozad" height="500px" width="650px" alt="doctor looking at nowrx pharmacy delivery for their patients">
+                    <source media="(max-width: 992px)" srcset="<?php echo get_template_directory_uri(); ?>/images/doctor-evaluating-best-pharmacy-delivery-for-patients.webp">
+                    <source media="(min-width: 993px)" srcset="<?php echo get_template_directory_uri(); ?>/images/doctor-evaluating-best-pharmacy-delivery-for-patients.webp">
+                    <img data-src="<?php echo get_template_directory_uri(); ?>/images/doctor-evaluating-best-pharmacy-delivery-for-patients.webp"
+                        class="orbit-image lozad" height="500px" width="650px" alt="doctor evaluating best pharmacy delivery for patients">
                 </picture>
 
 

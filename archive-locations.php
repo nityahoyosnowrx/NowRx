@@ -334,15 +334,15 @@ gtag('event', 'conversion', {
 
 
                     <picture class="lozad"
-                        data-src="<?php echo get_template_directory_uri(); ?>/images/NowRx-Pharmacy-Delivery-Driver-Dropping-Off-Prescription.webp"
+                        data-src="<?php echo get_template_directory_uri(); ?>/images/nowrx-pharmacy-delivery-locations.webp"
                         data-toggle-class="active">
-                        <source media="(max-width: 1px)"
-                            srcset="<?php echo get_template_directory_uri(); ?>/images/NowRx-Pharmacy-Delivery-Driver-Dropping-Off-Prescription.webp">
-                        <source media="(min-width: 2px)"
-                            srcset="<?php echo get_template_directory_uri(); ?>/images/NowRx-Pharmacy-Delivery-Driver-Dropping-Off-Prescription.webp">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/NowRx-Pharmacy-Delivery-Driver-Dropping-Off-Prescription.webp"
+                        <source media="(max-width: 992px)"
+                            srcset="<?php echo get_template_directory_uri(); ?>/images/nowrx-pharmacy-delivery-locations.webp">
+                        <source media="(min-width: 993px)"
+                            srcset="<?php echo get_template_directory_uri(); ?>/images/nowrx-pharmacy-delivery-locations.webp">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/nowrx-pharmacy-delivery-locations.webp"
                             class="orbit-image lozad" height="500px" width="650px"
-                            alt="NowRx Pharmacy Delivery Driver Dropping Off Prescription">
+                            alt="nowrx pharmacy delivery locations">
                     </picture>
 
 

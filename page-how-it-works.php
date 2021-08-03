@@ -61,9 +61,9 @@
             <!-- image -->
             <div class="column-half image-col">
                 <picture class="lozad" data-toggle-class="active">
-                    <source media="(max-width: 1px)" srcset="https://ucarecdn.com/1d95c548-1c1d-4ebe-a297-241ccb9ea027/nowrxpharmacypharmacistpullingaprescriptiondeliveryfromtheparatarobotmobile.webp">
-                    <source media="(min-width: 2px)" srcset="https://ucarecdn.com/9122a15c-9238-43a4-8095-02f11860a021/nowrxpharmacypharmacistpullingaprescriptiondeliveryfromtheparatarobot.webp">
-                    <img data-src="https://ucarecdn.com/9122a15c-9238-43a4-8095-02f11860a021/nowrxpharmacypharmacistpullingaprescriptiondeliveryfromtheparatarobot.webp" class="orbit-image lozad" height="500px" width="650px" alt="nowrx pharmacy delivery driver bringing prescriptions to a house">
+                    <source media="(max-width: 992px)" srcset="<?php echo get_template_directory_uri(); ?>/images/pharmacy-delivery-being-prepared-by-nowrx-pharmacist.webp">
+                    <source media="(min-width: 993px)" srcset="<?php echo get_template_directory_uri(); ?>/images/pharmacy-delivery-being-prepared-by-nowrx-pharmacist.webp">
+                    <img data-src="<?php echo get_template_directory_uri(); ?>/images/pharmacy-delivery-being-prepared-by-nowrx-pharmacist.webp" class="orbit-image lozad" height="500px" width="650px" alt="pharmacy delivery being prepared by nowrx pharmacist">
                 </picture>
             </div>
 

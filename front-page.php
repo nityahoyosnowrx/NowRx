@@ -85,14 +85,12 @@
                 );
                 ?>
 
-                <video title="nowrx pharmacy delivery website video" class="lazy orbit-image" muted  playsinline autoplay loop poster="<?php echo get_template_directory_uri(); ?>/images/<?php echo $itemsLowRes[array_rand($itemsLowRes)]; ?>">
-                    <source type="video/mp4" data-src="https://ucarecdn.com/14cc8225-a2a6-480a-a954-043ed90ff56e/nowrxpharmacydeliverywebsitevideo.mp4" type="video/mp4">
-                    <source type="video/webm" data-src="https://ucarecdn.com/c2bb56e2-27d0-4498-a8af-fe155c217901/NowRxPharmacydeliverywebsitevideo.webm" type="video/webm">
+
+                <video title="nowrx pharmacy delivery website video" class="lazy orbit-image" muted  playsinline autoplay loop >
+                    <source type="video/mp4" data-src="<?php echo get_template_directory_uri(); ?>/images/NowRx Pharmacy delivery website video MP4.mp4" type="video/mp4">
+                    <source type="video/webm" data-src="<?php echo get_template_directory_uri(); ?>/images/NowRx Pharmacy delivery website video.webm" type="video/webm">
                     Sorry, your browser doesn't support embedded videos.
-                    <track default
-                    kind="metadata"
-                    srclang="en"
-                    src="<?php echo get_template_directory_uri(); ?>/images/my_captions.vtt" />
+                    <track default kind="metadata" srclang="en" src="<?php echo get_template_directory_uri(); ?>/images/my_captions.vtt" />
                 </video>
 
                 <!-- $itemsLowRes[array_rand($itemsLowRes)] -->
@@ -104,7 +102,7 @@
                         <img src="<?php echo get_template_directory_uri(); ?>/images" alt="nowrx pharmacy delivery website" width="1600px" height="900px" class="pic limg">
                     </picture> -->
                     <picture class="lozad">
-                    <img src="https://ucarecdn.com/e18c4d0f-9baa-44ec-92d6-397fa288f69d/nowrxpharmacylocalteammemberwatchingcamera.webp" class="pic limg" height="900px" width="1600px" alt="nowrx pharmacy local team member watching camera">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/Pharmacy-delivery-employee-from-nowrx-smiling.webp" class="pic limg" height="900px" width="1600px" alt="Pharmacy delivery employee from nowrx smiling">
                     </picture>
                 </figure>
             </div>

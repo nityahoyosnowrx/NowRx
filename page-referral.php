@@ -12,47 +12,219 @@
         <div class="content">
             <!-- content -->
             <div class="column-half content-col">
-                <div class="rvls">
-                    <span class="sub-headline">
-                        Earn $20 For Every Qualifying Referral
-                    </span>
-                </div>
+
                 <div class="rvls">
                     <h1 class="hiw-title">
-                        NowRx Pharmacy <br> Refer a Friend
+                    Refer A Friend
                     </h1>
-                </div>
-                <div class="rvls">
-                    <p>
-                        Refer your friends to NowRx Pharmacy and receive a $20 Visa Gift Card for each referral that
-                        becomes a customer.
-                    </p>
-                </div>
-                <div class="rvls">
-                    <div class="btn-container">
-                        <!-- <a class="rx-btn" href="<?= get_site_url(); ?>/refill-and-transfer-prescriptions">Join Watilist</a> -->
-                        <a class="rx-btn " href="#referralform">Refer a Friend</a>
-                        <a class="rx-btn rx-green mrb" href="#howitwork">How It Works</a>
-
+                    <div class="blue">
+                        Refer your friends to NowRx Pharmacy and receive a $20 Visa Gift Card for each referral that becomes a customer.
                     </div>
                 </div>
+
+
+                <!-- form -->
+                <div class="formcall">
+                    <div id="referralform">
+                        <div class="containerd">
+                            <div class="contet">
+                                <form id="referralForm" name="referralForm" novalidate method="post"
+                                    action="/hubspot-post-2.php">
+                                    <div class="grid-container">
+                                        <div id="referral-error"
+                                            style="text-align: center;font-size: 14px;color:#f00;background-color:#ffdede;padding: 5px 020px;border-radius: 20px;display:none;">
+                                            Please enter the email address registered with NowRx.com
+                                        </div>
+                                        <div class="desc">
+                                            <p>Enter your name and email address</p>
+                                        </div>
+                                        <div class="grid-x grid-padding-x">
+                                            <div class="medium-6 cell">
+                                                <label>
+                                                    <span>Your Name</span>
+                                                    <input type="text" data-placeholder="Customer Name"
+                                                        placeholder="Your Name" name="referring_name" required>
+                                                </label>
+
+                                            </div>
+                                            <div class="medium-6 cell">
+                                                <label>
+                                                    <span>Your Email Address</span>
+                                                    <input type="email" data-placeholder="Customer Email"
+                                                        placeholder="Your Email Address" name="referring_email"
+                                                        required>
+                                                </label>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="grid-container fillform">
+                                        <div class="desc">
+                                            <p>Enter your referral's name and email address.</p>
+                                        </div>
+
+                                        <div class="item-referrals">
+
+                                            <!-- item -->
+                                            <div class="grid-x grid-padding-x">
+                                                <div class="medium-6 cell">
+                                                    <label>
+                                                        <span>Referral Name</span>
+                                                        <input class="referralinput" type="text"
+                                                            data-placeholder="Customer Name" placeholder="Referral Name"
+                                                            name="referral_name_1" required>
+                                                    </label>
+                                                </div>
+                                                <div class="medium-6 cell">
+                                                    <label>
+                                                        <span>Referral Email Address</span>
+                                                        <input class="referralinput" type="email" class=""
+                                                            data-placeholder="Customer Email"
+                                                            placeholder="Referral Email Address" name="referral_email_1"
+                                                            required>
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                            <!-- item -->
+                                            <div class="grid-x grid-padding-x">
+                                                <div class="medium-6 cell">
+                                                    <label>
+                                                        <span>Referral Name</span>
+                                                        <input type="text" class="referralinput"
+                                                            data-placeholder="Customer Name" placeholder="Referral Name"
+                                                            name="referral_name_2" required>
+                                                    </label>
+
+                                                </div>
+                                                <div class="medium-6 cell">
+                                                    <label>
+                                                        <span>Referral Email Address</span>
+                                                        <input class="referralinput" type="email" class=""
+                                                            data-placeholder="Customer Email"
+                                                            placeholder="Referral Email Address" name="referral_email_2"
+                                                            required>
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                            <!-- item -->
+                                            <div class="grid-x grid-padding-x">
+                                                <div class="medium-6 cell">
+                                                    <label>
+                                                        <span>Referral Name</span>
+                                                        <input type="text" class="referralinput"
+                                                            data-placeholder="Customer Name" placeholder="Referral Name"
+                                                            name="referral_name_3" required>
+                                                    </label>
+
+                                                </div>
+                                                <div class="medium-6 cell">
+                                                    <label>
+                                                        <span>Referral Email Address</span>
+                                                        <input type="email" class="referralinput"
+                                                            data-placeholder="Customer Email"
+                                                            placeholder="Referral Email Address" name="referral_email_3"
+                                                            required>
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                            <!-- item -->
+                                            <div class="grid-x grid-padding-x">
+                                                <div class="medium-6 cell">
+                                                    <label>
+                                                        <span>Referral Name</span>
+                                                        <input type="text" class="referralinput"
+                                                            data-placeholder="Customer Name" placeholder="Referral Name"
+                                                            name="referral_name_4" required>
+                                                    </label>
+
+                                                </div>
+                                                <div class="medium-6 cell">
+                                                    <label>
+                                                        <span>Referral Email Address</span>
+                                                        <input type="email" class="referralinput"
+                                                            data-placeholder="Customer Email"
+                                                            placeholder="Referral Email Address" name="referral_email_4"
+                                                            required>
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                            <!-- item -->
+                                            <div class="grid-x grid-padding-x">
+                                                <div class="medium-6 cell">
+                                                    <label>
+                                                        <span>Referral Name</span>
+                                                        <input type="text" class="referralinput"
+                                                            data-placeholder="Customer Name" placeholder="Referral Name"
+                                                            name="referral_name_5" required>
+                                                    </label>
+
+                                                </div>
+                                                <div class="medium-6 cell">
+                                                    <label>
+                                                        <span>Referral Email Address</span>
+                                                        <input type="email" class="referralinput"
+                                                            data-placeholder="Customer Email"
+                                                            placeholder="Referral Email Address" name="referral_email_5"
+                                                            required>
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <!-- additional people -->
+
+                                        <div class="addtional-people">
+                                            <span class="text">
+                                                <div class="icon">
+                                                    <svg aria-hidden="true" focusable="false" data-prefix="fas"
+                                                        data-icon="plus" role="img" xmlns="http://www.w3.org/2000/svg"
+                                                        viewBox="0 0 448 512"
+                                                        class="svg-inline--fa fa-plus fa-w-14 fa-3x">
+                                                        <path fill="currentColor"
+                                                            d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"
+                                                            class=""></path>
+                                                    </svg>
+                                                </div>
+                                                <div class="en">
+                                                    Enter another referral
+                                                </div>
+                                            </span>
+                                        </div>
+
+                                        <div class="gridd">
+                                            <div class="mediumcl">
+                                                <input type="submit" class="button secondary rounded shadow rx-btn"
+                                                    disabled type="button" value="Submit" id="Submit">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- form -->
+
+
             </div>
 
             <!-- image -->
             <div class="column-half image-col">
+                <picture class="lozad" data-toggle-class="active">
+                    <source media="(max-width: 992px)"
+                        srcset="<?php echo get_template_directory_uri(); ?>/images/daughter-showing-mother-nowrx-pharmacy-delivery-website.webp">
 
-                <picture class="lozad" data-iesrc="<?php echo get_template_directory_uri(); ?>/images/For-Doctors.webp"
-                    data-alt="Pharmacist Ready to Provide Medication" data-toggle-class="active">
-                    <source type="image/jpeg"
-                        srcset="https://images.pexels.com/photos/3768131/pexels-photo-3768131.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
-                    <source type="image/webp"
-                        srcset="<?php echo get_template_directory_uri(); ?>/images/For-Doctors.webp">
-                    <img data-src="<?php echo get_template_directory_uri(); ?>/images/For-Doctors.webp"
-                        class="orbit-image lozad" height="500px" width="650px"
-                        alt="Pharmacist Ready to Provide Medication">
+                    <source media="(min-width: 993px)"
+                        srcset="<?php echo get_template_directory_uri(); ?>/images/daughter-showing-mother-nowrx-pharmacy-delivery-website.webp">
+                    <img data-src="<?php echo get_template_directory_uri(); ?>/images/daughter-showing-mother-nowrx-pharmacy-delivery-website.webp"
+                        class="orbit-image lozad" height="500px" width="650px" alt="daughter showing mother nowrx pharmacy delivery website">
                 </picture>
-
-
             </div>
 
         </div>
@@ -61,172 +233,6 @@
 
 <!-- companies -->
 <?php include('section-companies.php'); ?>
-
-<section class="referralform" id="referralform">
-    <div class="container">
-        <div class="svgicon">
-            <picture class="lozad" data-iesrc="<?php echo get_template_directory_uri(); ?>/images/For-Doctors.webp"
-                data-alt="Pharmacist Ready to Provide Medication" data-toggle-class="active">
-                <source type="image/jpeg"
-                    srcset="https://images.pexels.com/photos/4353618/pexels-photo-4353618.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
-                <source type="image/webp" srcset="<?php echo get_template_directory_uri(); ?>/images/For-Doctors.webp">
-                <img data-src="<?php echo get_template_directory_uri(); ?>/images/For-Doctors.webp"
-                    class="orbit-image lozad" height="500px" width="650px" alt="Pharmacist Ready to Provide Medication">
-            </picture>
-        </div>
-        <div class="content">
-            <div class="sectitle">
-                <h2 class="title">Refer a Friend</h2>
-            </div>
-            <form id="referralForm" name="referralForm" novalidate method="post" action="/hubspot-post-2.php">
-                <div class="grid-container">
-                    <div id="referral-error"
-                        style="text-align: center;font-size: 14px;color:#f00;background-color:#ffdede;padding: 5px 020px;border-radius: 20px;display:none;">
-                        Please enter the email address registered with NowRx.com
-                    </div>
-                    <div class="desc">
-                        <p>Enter your name and email address</p>
-                    </div>
-                    <div class="grid-x grid-padding-x">
-                        <div class="medium-6 cell">
-                            <label>
-                                <span>Your Name</span>
-                                <input type="text" data-placeholder="Customer Name" placeholder="Your Name" name="referring_name" required>
-                            </label>
-
-                        </div>
-                        <div class="medium-6 cell">
-                            <label>
-                                <span>Your Email Address</span>
-                                <input type="email" data-placeholder="Customer Email" placeholder="Your Email Address" name="referring_email" required>
-                            </label>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="grid-container fillform">
-                    <div class="desc">
-                        <p>Enter your referral's name and email address.</p>
-                    </div>
-
-                    <div class="item-referrals">
-
-                        <!-- item -->
-                        <div class="grid-x grid-padding-x">
-                            <div class="medium-6 cell">
-                                <label>
-                                    <span>Referral Name</span>
-                                    <input class="referralinput" type="text" data-placeholder="Customer Name" placeholder="Referral Name" name="referral_name_1" required>
-                                </label>
-                            </div>
-                            <div class="medium-6 cell">
-                                <label>
-                                    <span>Referral Email Address</span>
-                                    <input class="referralinput" type="email" class="" data-placeholder="Customer Email" placeholder="Referral Email Address" name="referral_email_1" required>
-                                </label>
-                            </div>
-                        </div>
-
-                        <!-- item -->
-                        <div class="grid-x grid-padding-x">
-                            <div class="medium-6 cell">
-                                <label>
-                                    <span>Referral Name</span>
-                                    <input type="text" class="referralinput" data-placeholder="Customer Name" placeholder="Referral Name" name="referral_name_2" required>
-                                </label>
-
-                            </div>
-                            <div class="medium-6 cell">
-                                <label>
-                                    <span>Referral Email Address</span>
-                                    <input class="referralinput" type="email" class="" data-placeholder="Customer Email" placeholder="Referral Email Address" name="referral_email_2" required>
-                                </label>
-                            </div>
-                        </div>
-
-                        <!-- item -->
-                        <div class="grid-x grid-padding-x">
-                            <div class="medium-6 cell">
-                                <label>
-                                    <span>Referral Name</span>
-                                    <input type="text" class="referralinput" data-placeholder="Customer Name" placeholder="Referral Name" name="referral_name_3" required>
-                                </label>
-
-                            </div>
-                            <div class="medium-6 cell">
-                                <label>
-                                    <span>Referral Email Address</span>
-                                    <input type="email" class="referralinput" data-placeholder="Customer Email" placeholder="Referral Email Address" name="referral_email_3" required>
-                                </label>
-                            </div>
-                        </div>
-
-                        <!-- item -->
-                        <div class="grid-x grid-padding-x">
-                            <div class="medium-6 cell">
-                                <label>
-                                    <span>Referral Name</span>
-                                    <input type="text" class="referralinput" data-placeholder="Customer Name" placeholder="Referral Name" name="referral_name_4" required>
-                                </label>
-
-                            </div>
-                            <div class="medium-6 cell">
-                                <label>
-                                    <span>Referral Email Address</span>
-                                    <input type="email" class="referralinput" data-placeholder="Customer Email" placeholder="Referral Email Address" name="referral_email_4" required>
-                                </label>
-                            </div>
-                        </div>
-
-                        <!-- item -->
-                        <div class="grid-x grid-padding-x">
-                            <div class="medium-6 cell">
-                                <label>
-                                    <span>Referral Name</span>
-                                    <input type="text" class="referralinput" data-placeholder="Customer Name" placeholder="Referral Name" name="referral_name_5" required>
-                                </label>
-
-                            </div>
-                            <div class="medium-6 cell">
-                                <label>
-                                    <span>Referral Email Address</span>
-                                    <input type="email" class="referralinput" data-placeholder="Customer Email" placeholder="Referral Email Address" name="referral_email_5" required>
-                                </label>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <!-- additional people -->
-
-                    <div class="addtional-people">
-                        <span class="text">
-                            <div class="icon">
-                                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="plus" role="img"
-                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
-                                    class="svg-inline--fa fa-plus fa-w-14 fa-3x">
-                                    <path fill="currentColor"
-                                        d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"
-                                        class=""></path>
-                                </svg>
-                            </div>
-                            <div class="en">
-                                Enter another referral
-                            </div>
-                        </span>
-                    </div>
-
-                    <div class="gridd">
-                        <div class="mediumcl">
-                            <input type="submit" class="button secondary rounded shadow rx-btn" disabled type="button" value="Submit" id="Submit">
-                        </div>
-                    </div>
-                </div>
-            </form>
-        </div>
-    </div>
-</section>
 
 
 <section class="how-it-works panel--primary" id="howitwork">
@@ -291,7 +297,8 @@
                     </div>
 
                     <p>
-                    Once your referral has received their first delivery from NowRx, we will mail you a $20 Gift Card.
+                        Once your referral has received their first delivery from NowRx, we will mail you a $20 Gift
+                        Card.
                     </p>
                 </div>
             </div>

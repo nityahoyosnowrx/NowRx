@@ -223,18 +223,11 @@ endif; ?>
 <?php wp_footer(); ?>
 </div> <!-- closes off canvas content -->
 
-<!-- <script async>
-var script = document.createElement('script');
-script.src = "<?php echo get_template_directory_uri(); ?>/public/frontend-bundle.js";
-document.getElementsByTagName('head')[0].appendChild(script);
-</script> -->
-<script async src="https://ucarecdn.com/2225d6f6-eaf1-457b-b002-7048acc2ebcc/frontendbundle.js"></script>
-
-
 
 <?php
 if(is_front_page()):
 ?>
+<!-- video code -->
 <script async>
 // console.log(window.innerWidth);
 let windowW = window.innerWidth;
@@ -267,10 +260,25 @@ if (windowW > 992) {
 }
 </script>
 <?php endif; ?>
+
 <?php
 // include modals
 get_template_part('footer-modals');
 ?>
+
+    <!-- <script>
+        var usedLaterScript = document.createElement('script');
+        usedLaterScript.src = '<?php echo get_template_directory_uri(); ?>/public/frontend-bundle.js';
+        document.body.appendChild(usedLaterScript);
+    </script> -->
+
+    <script src="<?php echo get_template_directory_uri(); ?>/public/frontend-bundle.js"></script>
+
+
+    <!-- tracking code -->
+    <?php get_template_part('analytics-head'); ?>
+
+
 </body>
 
 </html> <!-- end of site. what a ride! -->

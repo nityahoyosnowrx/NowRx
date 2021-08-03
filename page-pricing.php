@@ -88,10 +88,10 @@
             <!-- image -->
             <div class="column-half image-col">
 
-                <picture class="lozad" data-src="<?php echo get_template_directory_uri(); ?>/images/nowrx-pharmacy-delivery-happy-customers-celebrating-low-drug-prices.webp" data-toggle-class="active">
-                    <source media="(max-width: 1px)" srcset="<?php echo get_template_directory_uri(); ?>/images/nowrx-pharmacy-delivery-happy-customers-celebrating-low-drug-pricess-mobile.webp">
-                    <source media="(min-width: 2px)" srcset="<?php echo get_template_directory_uri(); ?>/images/nowrx-pharmacy-delivery-happy-customers-celebrating-low-drug-prices.webp">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/nowrx-pharmacy-delivery-happy-customers-celebrating-low-drug-prices.webp" class="orbit-image lozad" height="500px" width="650px" alt="nowrx pharmacy delivery happy customers celebrating low drug prices">
+                <picture class="lozad" data-src="<?php echo get_template_directory_uri(); ?>/images/low-drug-prices-cause-excitement-for-couple.webp" data-toggle-class="active">
+                    <source media="(max-width: 992px)" srcset="<?php echo get_template_directory_uri(); ?>/images/low-drug-prices-cause-excitement-for-couple.webp">
+                    <source media="(min-width: 993px)" srcset="<?php echo get_template_directory_uri(); ?>/images/low-drug-prices-cause-excitement-for-couple.webp">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/low-drug-prices-cause-excitement-for-couple.webp" class="orbit-image lozad" height="500px" width="650px" alt="low drug prices cause excitement for couple">
                 </picture>
 
 

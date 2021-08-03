@@ -19,10 +19,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Cache-control" content="public">
 
-    <!-- preload main css -->
-    <link rel="preload" as="image" href="https://ucarecdn.com/1d95c548-1c1d-4ebe-a297-241ccb9ea027/nowrxpharmacypharmacistpullingaprescriptiondeliveryfromtheparatarobotmobile.webp">
 
-    <link rel="preload" href="https://ucarecdn.com/0c44953e-8d80-4875-a1bf-aa1aecc8fe4e/frontend.css" as="style">
+    <!-- preload main css -->
+
+    <!-- <link
+        rel="preload"
+        as="style"
+        onload="this.rel = 'stylesheet'"
+        href='<?php echo get_template_directory_uri(); ?>/public/frontend.css'>
+
+    <noscript>
+        <link
+            rel="stylesheet"
+            href='<?php echo get_template_directory_uri(); ?>/public/frontend.css'>
+    </noscript>
+    <link
+            rel="stylesheet"
+            href='<?php echo get_template_directory_uri(); ?>/public/frontend.css'> -->
+
+    <!-- <link rel="preload" href="<?php echo get_template_directory_uri(); ?>/public/frontend-bundle.js" as="script"> -->
+
+    <link rel="stylesheet" href='<?php echo get_template_directory_uri(); ?>/public/frontend.css?bustcache=11'>
+
 
     <link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
     <link rel="icon" type="image/x-icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
@@ -38,9 +56,6 @@
 
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 
-    <!-- <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/public/frontend.css?vs=<?php echo mktime(); ?>"> -->
-    <!-- <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/public/frontend.css"> -->
-    <link rel="stylesheet" href="https://ucarecdn.com/0c44953e-8d80-4875-a1bf-aa1aecc8fe4e/frontend.css">
 
     <!-- WP HEAD -->
     <?php wp_head(); ?>
@@ -48,17 +63,13 @@
     <meta name="p:domain_verify" content="3f36cac4340da88df6ca76c1a431cd53" />
     <meta name="facebook-domain-verification" content="51y4k3ncdot6d21810cxa2yfje7xzg" />
 
-    <!-- tracking code -->
-    <?php get_template_part('analytics-head'); ?>
+
 
 </head>
 
 <body <?php body_class(); ?>>
 
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5LWZKR7" height="0" width="0"
-            style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
+
 
     <header class="main" role="banner" itemscope itemtype="http://schema.org/WPHeader">
         <div class="container">
@@ -405,9 +416,9 @@
                             </a>
                         </li>
                         <li itemprop="name" class="hidm">
-                            <a itemprop="url" href="<?php echo get_site_url(); ?>/for-doctors">
+                            <a itemprop="url" href="<?php echo get_site_url(); ?>/faqs">
                                 <div class="tk smalltk">
-                                    For Doctors
+                                FAQs
                                 </div>
                             </a>
                         </li>

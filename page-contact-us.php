@@ -50,16 +50,15 @@
             <!-- image -->
             <div class="column-half image-col">
 
-                <picture class="lozad" data-iesrc="<?php echo get_template_directory_uri(); ?>/images/For-Doctors.webp"
-                    data-alt="doctor considering a local nowrx pharmacy for prescription delivery"
-                    data-toggle-class="active">
-                    <source type="image/jpeg"
-                        srcset="<?php echo get_template_directory_uri(); ?>/images/Pharmacist.jpeg">
-                    <source type="image/webp"
-                        srcset="<?php echo get_template_directory_uri(); ?>/images/For-Doctors.webp">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/For-Doctors.webp" class="orbit-image "
-                        height="500px" width="650px"
-                        alt="doctor considering a local nowrx pharmacy for prescription delivery">
+
+
+
+                <picture class="lozad"
+                     data-toggle-class="active">
+
+                    <source media="(max-width: 992px)" srcset="<?php echo get_template_directory_uri(); ?>/images/NowRx-pharmacist-pulling-prescription-delivery-from-parata-robot.webp">
+                    <source media="(min-width: 993px)" srcset="<?php echo get_template_directory_uri(); ?>/images/NowRx-pharmacist-pulling-prescription-delivery-from-parata-robot.webp">
+                    <img data-src="<?php echo get_template_directory_uri(); ?>/images/NowRx-pharmacist-pulling-prescription-delivery-from-parata-robot.webp" class="orbit-image lozad" height="500px" width="650px" alt="NowRx pharmacist pulling prescription delivery from parata robot">
                 </picture>
 
 

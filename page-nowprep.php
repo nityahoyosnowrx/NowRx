@@ -71,9 +71,9 @@
                 <picture class="lozad"
                      data-toggle-class="active">
 
-                    <source media="(max-width: 1px)" srcset="<?php echo get_template_directory_uri(); ?>/images/hiv-prep-online-couple-for-nowprep.webp">
-                    <source media="(min-width: 2px)" srcset="<?php echo get_template_directory_uri(); ?>/images/hiv-prep-online-couple-for-nowprep.webp">
-                    <img data-src="<?php echo get_template_directory_uri(); ?>/images/hiv-prep-online-couple-for-nowprep.webp" class="orbit-image lozad" height="500px" width="650px" alt="hiv prep online couple for nowprep">
+                    <source media="(max-width: 992px)" srcset="<?php echo get_template_directory_uri(); ?>/images/hiv-prep-couple-using-descovy.webp">
+                    <source media="(min-width: 993px)" srcset="<?php echo get_template_directory_uri(); ?>/images/hiv-prep-couple-using-descovy.webp">
+                    <img data-src="<?php echo get_template_directory_uri(); ?>/images/hiv-prep-couple-using-descovy.webp" class="orbit-image lozad" height="500px" width="650px" alt="hiv-prep-couple-using-descovy">
                 </picture>
             </div>
 
@@ -107,8 +107,8 @@ include('section-companies.php'); ?>
                 <div class="rvl">
 
                     <div class="image quatroimg">
-                        <img data-toggle-class="active"
-                            data-src="<?php echo get_template_directory_uri(); ?>/images/HIV-Prep-Sign-Up-Icon.png"
+                        <img width="70px" height="70px" data-toggle-class="active"
+                            data-src="<?php echo get_template_directory_uri(); ?>/images/prescription-delivery-sent-icon.webp"
                             alt="end Us Your Prescription" class="pic lozad">
                     </div>
                     <h3 class="padding-bottom-3">1. Sign Up for NowPrep</h3>
@@ -124,8 +124,8 @@ include('section-companies.php'); ?>
                 <div class="rvl">
 
                     <div class="image quatroimg">
-                        <img data-toggle-class="active"
-                            data-src="<?php echo get_template_directory_uri(); ?>/images/HIV-PrEP-Test-Icon.png"
+                        <img width="70px" height="70px" data-toggle-class="active"
+                            data-src="<?php echo get_template_directory_uri(); ?>/images/prescription-delivery-confirmed-icon.webp"
                             alt="We Confirm Delivery" class="pic lozad ">
                     </div>
                     <h3 class="padding-bottom-3">2. Complete an HIV Test</h3>
@@ -142,8 +142,8 @@ include('section-companies.php'); ?>
                 <div class="rvl">
 
                     <div class="image quatroimg">
-                        <img data-toggle-class="active"
-                            data-src="<?php echo get_template_directory_uri(); ?>/images/HIV-Prep-Prescription-Icon.png"
+                        <img width="70px" height="70px" data-toggle-class="active"
+                            data-src="<?php echo get_template_directory_uri(); ?>/images/prescription-delivery-car-icon.webp"
                             alt="Medication is Delivered" class="pic lozad">
                     </div>
                     <h3 class="padding-bottom-3">3. Get HIV PrEP Delivered</h3>
@@ -177,7 +177,7 @@ include('section-companies.php'); ?>
             <!-- pill -->
             <div class="pill reganim">
                 <div class="title">
-                Convenient, Affordable & Easy to Use
+                Affordable & Easy to Use
                 </div>
                 <div class="text">
                 Sign up for free and get access to our NowPrEP physicians from the comfort and privacy of your home.
@@ -221,8 +221,8 @@ include('section-companies.php'); ?>
             </div>
         </div>
         <div class="imageblock imgslide">
-                <img data-src="<?php echo get_template_directory_uri(); ?>/images/prepimage.jpeg"
-                    alt="couple reading information about nowprep on laptop" class="pic lozad">
+                <img width="700px" height="700px" data-src="<?php echo get_template_directory_uri(); ?>/images/prep-hiv-pill-being-looked-at-by-couple.webp"
+                    alt="prep hiv pill being looked at by couple" class="pic lozad">
             </div>
        </div>
     </div>
@@ -2392,7 +2392,7 @@ Next, NowPrEP will send you a home test kit, or if you prefer order a lab at a t
 
         </div>
         <div class="faq-image">
-            <img data-src="<?php echo get_template_directory_uri(); ?>/images/HIV-PrEP-Doctor-Image.png"
+            <img width="700px" height="700px" data-src="<?php echo get_template_directory_uri(); ?>/images/HIV-PrEP-Doctor-Image.png"
                 alt=" transgender woman looking up" class="pic lozad">
         </div>
     </div>

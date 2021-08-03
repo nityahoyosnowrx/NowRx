@@ -385,9 +385,9 @@
 
                 <picture class="lozad"
                    >
-                    <source media="(max-width: 1px)" srcset="<?php echo get_template_directory_uri(); ?>/images/nowrx-pharmacy-local-team-member-watching-camera-mobile.webp">
-                    <source media="(min-width: 2px)" srcset="<?php echo get_template_directory_uri(); ?>/images/nowrx-pharmacy-local-team-member-watching-camera.webp">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/nowrx-pharmacy-local-team-member-watching-camera.webp" class="orbit-image" height="500px" width="650px" alt="nowrx pharmacy local team member watching camera">
+                    <source media="(max-width: 1px)" srcset="<?php echo get_template_directory_uri(); ?>/images/NowRx-pharmacist-answering-pharmacy-delivery-questions.webp">
+                    <source media="(min-width: 2px)" srcset="<?php echo get_template_directory_uri(); ?>/images/NowRx-pharmacist-answering-pharmacy-delivery-questions.webp">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/NowRx-pharmacist-answering-pharmacy-delivery-questions.webp" class="orbit-image" height="500px" width="650px" alt="NowRx pharmacist answering pharmacy delivery questions">
                 </picture>
             </div>
 
