@@ -3,7 +3,7 @@
 
 <script type="application/ld+json">
 {
-    "@context": "https://www.schema.org",
+    "@context": "https://www.schema.org/",
     "@type": "LocalBusiness",
     "name": "<?= __(the_title()); ?>",
     "alternateName": ["NowRx", "NowRx Pharmacy", "Now Rx", "Now Rx Pharmacy"],
@@ -15,7 +15,7 @@
     "telephone": "(949) 619-6000",
     "sameAs": [
         "https://twitter.com/NowRx?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
-        "https://www.facebook.com/NowRx"
+        "https://www.facebook.com/NowRx/"
     ],
     "openingHoursSpecification": [{
         "@type": "OpeningHoursSpecification",
@@ -55,7 +55,7 @@
             "@type": "Pharmacy",
             "name": "NowRx – Mountain View",
             "description": "NowRx Mountain View is a local retail pharmacy based out of Mountain View California that provides free prescription delivery in 3-5",
-            "url": "<?= site_url(); ?>/locations/california/mountain-view",
+            "url": "<?= site_url(); ?>/locations/california/mountain-view/",
             "@id": "<?= site_url(); ?>/locations/california/mountain-view/#Pharmacy",
             "image": "<?= site_url(); ?>/wp-content/themes/nowrx-optimize/library/images/NowRx-Logo-Pharmacy.png",
             "telephone": "(650) 499-3000",
@@ -83,7 +83,7 @@
             "@type": "Pharmacy",
             "name": "NowRx – Burlingame",
             "description": "NowRx Burlingame is a local retail pharmacy based out of Burlingame California that provides free prescription delivery in 3-5",
-            "url": "<?= site_url(); ?>/locations/california/burlingame",
+            "url": "<?= site_url(); ?>/locations/california/burlingame/",
             "@id": "<?= site_url(); ?>/locations/california/burlingame/#Pharmacy",
             "image": "<?= site_url(); ?>/wp-content/themes/nowrx-optimize/library/images/NowRx-Logo-Pharmacy.png",
             "telephone": "(650) 499-300",
@@ -110,7 +110,7 @@
             "@type": "Pharmacy",
             "name": "NowRx – San Jose",
             "description": "NowRx Burlingame is a local retail pharmacy based out of Burlingame California that provides free prescription delivery in 3-5",
-            "url": "<?= site_url(); ?>/locations/california/san-jose",
+            "url": "<?= site_url(); ?>/locations/california/san-jose/",
             "@id": "<?= site_url(); ?>/locations/california/san-jose/#Pharmacy",
             "image": "<?= site_url(); ?>/wp-content/themes/nowrx-optimize/library/images/NowRx-Logo-Pharmacy.png",
             "telephone": "(650) 499-3000",
@@ -137,7 +137,7 @@
             "@type": "Pharmacy",
             "name": "NowRx – Irvine",
             "description": "NowRx Irvine is a local retail pharmacy based out of Irvine California that provides free prescription delivery in 3-5 hours",
-            "url": "<?= site_url(); ?>/locations/california/irvine",
+            "url": "<?= site_url(); ?>/locations/california/irvine/",
             "@id": "<?= site_url(); ?>/locations/california/irvine/#Pharmacy",
             "image": "<?= site_url(); ?>/wp-content/themes/nowrx-optimize/library/images/NowRx-Logo-Pharmacy.png",
             "telephone": "(949) 619-6000",
@@ -164,7 +164,7 @@
             "@type": "Pharmacy",
             "name": "NowRx – Mesa",
             "description": "NowRx is a local retail pharmacy based out of Mesa Arizona that provides free prescription delivery in 3-5 hours",
-            "url": "<?= site_url(); ?>/locations/arizona/mesa",
+            "url": "<?= site_url(); ?>/locations/arizona/mesa/",
             "@id": "<?= site_url(); ?>/locations/arizona/mesa/#Pharmacy",
             "image": "<?= site_url(); ?>/wp-content/themes/nowrx-optimize/library/images/NowRx-Logo-Pharmacy.png",
             "telephone": "(480) 400-3000",
@@ -192,7 +192,7 @@
             "@type": "Pharmacy",
             "name": "NowRx – Pleasanton",
             "description": "NowRx is a local retail pharmacy based out of Pleasanton Arizona that provides free prescription delivery in 3-5 hours",
-            "url": "<?= site_url(); ?>/locations/arizona/Pleasanton",
+            "url": "<?= site_url(); ?>/locations/arizona/Pleasanton/",
             "@id": "<?= site_url(); ?>/locations/arizona/Pleasanton/#Pharmacy",
             "image": "<?= site_url(); ?>/wp-content/themes/nowrx-optimize/library/images/NowRx-Logo-Pharmacy.png",
             "telephone": "925-701-9424",
@@ -220,7 +220,7 @@
             "@type": "Pharmacy",
             "name": "NowRx – van nuys",
             "description": "NowRx is a local retail pharmacy based out of van nuys California that provides free prescription delivery in 3-5 hours",
-            "url": "<?= site_url(); ?>/locations/california/van-nuys",
+            "url": "<?= site_url(); ?>/locations/california/van-nuys/",
             "@id": "<?= site_url(); ?>/locations/california/van-nuys/#Pharmacy",
             "image": "<?= site_url(); ?>/wp-content/themes/nowrx-optimize/library/images/NowRx-Logo-Pharmacy.png",
             "telephone": "213-263-4391",
@@ -248,7 +248,7 @@
             "@type": "Pharmacy",
             "name": "NowRx – hayward",
             "description": "NowRx is a local retail pharmacy based out of hayward california that provides free prescription delivery in 3-5 hours",
-            "url": "<?= site_url(); ?>/locations/california/hayward",
+            "url": "<?= site_url(); ?>/locations/california/hayward/",
             "@id": "<?= site_url(); ?>/locations/california/hayward/#Pharmacy",
             "image": "<?= site_url(); ?>/wp-content/themes/nowrx-optimize/library/images/NowRx-Logo-Pharmacy.png",
             "telephone": "510-892-2665",
@@ -279,13 +279,6 @@
 
 
 
-
-<!-- Event snippet for Form Completion conversion page -->
-<script>
-gtag('event', 'conversion', {
-    'send_to': 'AW-875503484/Bj1NCMmPzboBEPy-vKED'
-});
-</script>
 
 <main id="main" class="main-class">
 
@@ -323,7 +316,7 @@ gtag('event', 'conversion', {
                         <div class="btn-container">
                             <a class="rx-btn" href="#locations-item" tabindex="0">View Locations</a>
                             <a class="rx-btn rx-green mrb"
-                                href="<?= get_site_url(); ?>/refill-and-transfer-prescriptions">Get Started</a>
+                                href="<?= get_site_url(); ?>/refill-and-transfer-prescriptions/">Get Started</a>
                         </div>
                     </div>
 
@@ -334,15 +327,15 @@ gtag('event', 'conversion', {
 
 
                     <picture class="lozad"
-                        data-src="<?php echo get_template_directory_uri(); ?>/images/nowrx-pharmacy-delivery-locations.webp"
+                        data-src="<?php echo get_template_directory_uri(); ?>/images/NowRx-Pharmacy-Delivery-Driver-Dropping-Off-Prescription.webp"
                         data-toggle-class="active">
-                        <source media="(max-width: 992px)"
-                            srcset="<?php echo get_template_directory_uri(); ?>/images/nowrx-pharmacy-delivery-locations.webp">
-                        <source media="(min-width: 993px)"
-                            srcset="<?php echo get_template_directory_uri(); ?>/images/nowrx-pharmacy-delivery-locations.webp">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/nowrx-pharmacy-delivery-locations.webp"
+                        <source media="(max-width: 1px)"
+                            srcset="<?php echo get_template_directory_uri(); ?>/images/NowRx-Pharmacy-Delivery-Driver-Dropping-Off-Prescription.webp">
+                        <source media="(min-width: 2px)"
+                            srcset="<?php echo get_template_directory_uri(); ?>/images/NowRx-Pharmacy-Delivery-Driver-Dropping-Off-Prescription.webp">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/NowRx-Pharmacy-Delivery-Driver-Dropping-Off-Prescription.webp"
                             class="orbit-image lozad" height="500px" width="650px"
-                            alt="nowrx pharmacy delivery locations">
+                            alt="NowRx Pharmacy Delivery Driver Dropping Off Prescription">
                     </picture>
 
 
@@ -404,7 +397,7 @@ gtag('event', 'conversion', {
                 <div class="locatios-mainblock">
                     <!-- item -->
                     <div class="location-item">
-                        <a href="<?= get_site_url(); ?>/locations/california/mountain-view">
+                        <a href="<?= get_site_url(); ?>/locations/california/mountain-view/">
                             <div class="sv">
                                 <svg height="512" viewBox="0 0 128 128" width="512" xmlns="http://www.w3.org/2000/svg"><g><path d="m107.427 84.289h-30.155a182.929 182.929 0 0 1 -13.272 18.371 182.929 182.929 0 0 1 -13.272-18.371h-30.155l-14.267 37.405h115.388z" fill="#dfeef4"/><path d="m64 6.31a30.711 30.711 0 0 0 -30.71 30.71c-.18 29.3 30.71 65.64 30.71 65.64s30.89-36.34 30.71-65.64a30.711 30.711 0 0 0 -30.71-30.71zm0 43.74a13.03 13.03 0 1 1 13.03-13.03 13.025 13.025 0 0 1 -13.03 13.03z" fill="#f45858"/><path d="m110.74 92.96-57.58 20.48-22.44-29.15h20.01a182.752 182.752 0 0 0 13.27 18.37 182.752 182.752 0 0 0 13.27-18.37h30.16z" fill="#f2da30"/><path d="m29.96 121.694 56.996-20.274 15.604 20.274z" fill="#3ea2e5"/></g></svg>
 
@@ -422,7 +415,7 @@ gtag('event', 'conversion', {
                         </a>
 
                         <div class="btn-block">
-                            <a href="<?= get_site_url(); ?>/locations/california/mountain-view" class="rx-btn-loca">
+                            <a href="<?= get_site_url(); ?>/locations/california/mountain-view/" class="rx-btn-loca">
                                 Click for More Information
 
                             </a>
@@ -432,7 +425,7 @@ gtag('event', 'conversion', {
                     <!-- item -->
                     <div class="location-item">
 
-                        <a href="<?= get_site_url(); ?>/locations/california/irvine">
+                        <a href="<?= get_site_url(); ?>/locations/california/irvine/">
                             <div class="sv">
                                 <svg height="512" viewBox="0 0 128 128" width="512" xmlns="http://www.w3.org/2000/svg"><g><path d="m107.427 84.289h-30.155a182.929 182.929 0 0 1 -13.272 18.371 182.929 182.929 0 0 1 -13.272-18.371h-30.155l-14.267 37.405h115.388z" fill="#dfeef4"/><path d="m64 6.31a30.711 30.711 0 0 0 -30.71 30.71c-.18 29.3 30.71 65.64 30.71 65.64s30.89-36.34 30.71-65.64a30.711 30.711 0 0 0 -30.71-30.71zm0 43.74a13.03 13.03 0 1 1 13.03-13.03 13.025 13.025 0 0 1 -13.03 13.03z" fill="#f45858"/><path d="m110.74 92.96-57.58 20.48-22.44-29.15h20.01a182.752 182.752 0 0 0 13.27 18.37 182.752 182.752 0 0 0 13.27-18.37h30.16z" fill="#f2da30"/><path d="m29.96 121.694 56.996-20.274 15.604 20.274z" fill="#3ea2e5"/></g></svg>
 
@@ -449,7 +442,7 @@ gtag('event', 'conversion', {
                             </span>
                         </a>
                         <div class="btn-block">
-                            <a href="<?= get_site_url(); ?>/locations/california/irvine" class="rx-btn-loca">
+                            <a href="<?= get_site_url(); ?>/locations/california/irvine/" class="rx-btn-loca">
                                 Click for More Information
 
                             </a>
@@ -457,7 +450,7 @@ gtag('event', 'conversion', {
                     </div>
                     <!-- item -->
                     <div class="location-item">
-                        <a href="<?= get_site_url(); ?>/locations/california/burlingame">
+                        <a href="<?= get_site_url(); ?>/locations/california/burlingame/">
                             <div class="sv">
                                 <svg height="512" viewBox="0 0 128 128" width="512" xmlns="http://www.w3.org/2000/svg"><g><path d="m107.427 84.289h-30.155a182.929 182.929 0 0 1 -13.272 18.371 182.929 182.929 0 0 1 -13.272-18.371h-30.155l-14.267 37.405h115.388z" fill="#dfeef4"/><path d="m64 6.31a30.711 30.711 0 0 0 -30.71 30.71c-.18 29.3 30.71 65.64 30.71 65.64s30.89-36.34 30.71-65.64a30.711 30.711 0 0 0 -30.71-30.71zm0 43.74a13.03 13.03 0 1 1 13.03-13.03 13.025 13.025 0 0 1 -13.03 13.03z" fill="#f45858"/><path d="m110.74 92.96-57.58 20.48-22.44-29.15h20.01a182.752 182.752 0 0 0 13.27 18.37 182.752 182.752 0 0 0 13.27-18.37h30.16z" fill="#f2da30"/><path d="m29.96 121.694 56.996-20.274 15.604 20.274z" fill="#3ea2e5"/></g></svg>
 
@@ -474,7 +467,7 @@ gtag('event', 'conversion', {
                             </span>
                         </a>
                         <div class="btn-block">
-                            <a href="<?= get_site_url(); ?>/locations/california/burlingame" class="rx-btn-loca">
+                            <a href="<?= get_site_url(); ?>/locations/california/burlingame/" class="rx-btn-loca">
                                 Click for More Information
 
                             </a>
@@ -482,7 +475,7 @@ gtag('event', 'conversion', {
                     </div>
                     <!-- item -->
                     <div class="location-item">
-                        <a href="<?= get_site_url(); ?>/locations/california/mesa">
+                        <a href="<?= get_site_url(); ?>/locations/california/mesa/">
                             <div class="sv">
                                 <svg height="512" viewBox="0 0 128 128" width="512" xmlns="http://www.w3.org/2000/svg"><g><path d="m107.427 84.289h-30.155a182.929 182.929 0 0 1 -13.272 18.371 182.929 182.929 0 0 1 -13.272-18.371h-30.155l-14.267 37.405h115.388z" fill="#dfeef4"/><path d="m64 6.31a30.711 30.711 0 0 0 -30.71 30.71c-.18 29.3 30.71 65.64 30.71 65.64s30.89-36.34 30.71-65.64a30.711 30.711 0 0 0 -30.71-30.71zm0 43.74a13.03 13.03 0 1 1 13.03-13.03 13.025 13.025 0 0 1 -13.03 13.03z" fill="#f45858"/><path d="m110.74 92.96-57.58 20.48-22.44-29.15h20.01a182.752 182.752 0 0 0 13.27 18.37 182.752 182.752 0 0 0 13.27-18.37h30.16z" fill="#f2da30"/><path d="m29.96 121.694 56.996-20.274 15.604 20.274z" fill="#3ea2e5"/></g></svg>
 
@@ -499,7 +492,7 @@ gtag('event', 'conversion', {
                             </span>
                         </a>
                         <div class="btn-block">
-                            <a href="<?= get_site_url(); ?>/locations/california/mesa" class="rx-btn-loca">
+                            <a href="<?= get_site_url(); ?>/locations/california/mesa/" class="rx-btn-loca">
                                 Click for More Information
 
                             </a>
@@ -507,7 +500,7 @@ gtag('event', 'conversion', {
                     </div>
                     <!-- item -->
                     <div class="location-item">
-                        <a href="<?= get_site_url(); ?>/locations/california/san-jose">
+                        <a href="<?= get_site_url(); ?>/locations/california/san-jose/">
                             <div class="sv">
                                 <svg height="512" viewBox="0 0 128 128" width="512" xmlns="http://www.w3.org/2000/svg"><g><path d="m107.427 84.289h-30.155a182.929 182.929 0 0 1 -13.272 18.371 182.929 182.929 0 0 1 -13.272-18.371h-30.155l-14.267 37.405h115.388z" fill="#dfeef4"/><path d="m64 6.31a30.711 30.711 0 0 0 -30.71 30.71c-.18 29.3 30.71 65.64 30.71 65.64s30.89-36.34 30.71-65.64a30.711 30.711 0 0 0 -30.71-30.71zm0 43.74a13.03 13.03 0 1 1 13.03-13.03 13.025 13.025 0 0 1 -13.03 13.03z" fill="#f45858"/><path d="m110.74 92.96-57.58 20.48-22.44-29.15h20.01a182.752 182.752 0 0 0 13.27 18.37 182.752 182.752 0 0 0 13.27-18.37h30.16z" fill="#f2da30"/><path d="m29.96 121.694 56.996-20.274 15.604 20.274z" fill="#3ea2e5"/></g></svg>
 
@@ -524,7 +517,7 @@ gtag('event', 'conversion', {
                             </span>
                         </a>
                         <div class="btn-block">
-                            <a href="<?= get_site_url(); ?>/locations/california/san-jose" class="rx-btn-loca">
+                            <a href="<?= get_site_url(); ?>/locations/california/san-jose/" class="rx-btn-loca">
                                 Click for More Information
 
                             </a>
@@ -532,7 +525,7 @@ gtag('event', 'conversion', {
                     </div>
                     <!-- item -->
                     <div class="location-item">
-                        <a href="<?= get_site_url(); ?>/locations/california/pleasanton">
+                        <a href="<?= get_site_url(); ?>/locations/california/pleasanton/">
                             <div class="sv">
                                 <svg height="512" viewBox="0 0 128 128" width="512" xmlns="http://www.w3.org/2000/svg"><g><path d="m107.427 84.289h-30.155a182.929 182.929 0 0 1 -13.272 18.371 182.929 182.929 0 0 1 -13.272-18.371h-30.155l-14.267 37.405h115.388z" fill="#dfeef4"/><path d="m64 6.31a30.711 30.711 0 0 0 -30.71 30.71c-.18 29.3 30.71 65.64 30.71 65.64s30.89-36.34 30.71-65.64a30.711 30.711 0 0 0 -30.71-30.71zm0 43.74a13.03 13.03 0 1 1 13.03-13.03 13.025 13.025 0 0 1 -13.03 13.03z" fill="#f45858"/><path d="m110.74 92.96-57.58 20.48-22.44-29.15h20.01a182.752 182.752 0 0 0 13.27 18.37 182.752 182.752 0 0 0 13.27-18.37h30.16z" fill="#f2da30"/><path d="m29.96 121.694 56.996-20.274 15.604 20.274z" fill="#3ea2e5"/></g></svg>
 
@@ -549,7 +542,7 @@ gtag('event', 'conversion', {
                             </span>
                         </a>
                         <div class="btn-block">
-                            <a href="<?= get_site_url(); ?>/locations/california/pleasanton" class="rx-btn-loca">
+                            <a href="<?= get_site_url(); ?>/locations/california/pleasanton/" class="rx-btn-loca">
                                 Click for More Information
 
                             </a>
@@ -558,7 +551,7 @@ gtag('event', 'conversion', {
 
                     <!-- item -->
                     <div class="location-item">
-                        <a href="<?= get_site_url(); ?>/locations/california/van-nuys">
+                        <a href="<?= get_site_url(); ?>/locations/california/van-nuys/">
                             <div class="sv">
                                 <svg height="512" viewBox="0 0 128 128" width="512" xmlns="http://www.w3.org/2000/svg"><g><path d="m107.427 84.289h-30.155a182.929 182.929 0 0 1 -13.272 18.371 182.929 182.929 0 0 1 -13.272-18.371h-30.155l-14.267 37.405h115.388z" fill="#dfeef4"/><path d="m64 6.31a30.711 30.711 0 0 0 -30.71 30.71c-.18 29.3 30.71 65.64 30.71 65.64s30.89-36.34 30.71-65.64a30.711 30.711 0 0 0 -30.71-30.71zm0 43.74a13.03 13.03 0 1 1 13.03-13.03 13.025 13.025 0 0 1 -13.03 13.03z" fill="#f45858"/><path d="m110.74 92.96-57.58 20.48-22.44-29.15h20.01a182.752 182.752 0 0 0 13.27 18.37 182.752 182.752 0 0 0 13.27-18.37h30.16z" fill="#f2da30"/><path d="m29.96 121.694 56.996-20.274 15.604 20.274z" fill="#3ea2e5"/></g></svg>
 
@@ -567,7 +560,7 @@ gtag('event', 'conversion', {
 
                         </a>
                         <div class="btn-block">
-                            <a href="<?= get_site_url(); ?>/locations/california/van-nuys" class="rx-btn-loca">
+                            <a href="<?= get_site_url(); ?>/locations/california/van-nuys/" class="rx-btn-loca">
                                 Click for More Information
 
                             </a>
@@ -576,7 +569,7 @@ gtag('event', 'conversion', {
 
                     <!-- item -->
                     <div class="location-item">
-                        <a href="<?= get_site_url(); ?>/locations/california/hayward">
+                        <a href="<?= get_site_url(); ?>/locations/california/hayward/">
                             <div class="sv">
                                 <svg height="512" viewBox="0 0 128 128" width="512" xmlns="http://www.w3.org/2000/svg"><g><path d="m107.427 84.289h-30.155a182.929 182.929 0 0 1 -13.272 18.371 182.929 182.929 0 0 1 -13.272-18.371h-30.155l-14.267 37.405h115.388z" fill="#dfeef4"/><path d="m64 6.31a30.711 30.711 0 0 0 -30.71 30.71c-.18 29.3 30.71 65.64 30.71 65.64s30.89-36.34 30.71-65.64a30.711 30.711 0 0 0 -30.71-30.71zm0 43.74a13.03 13.03 0 1 1 13.03-13.03 13.025 13.025 0 0 1 -13.03 13.03z" fill="#f45858"/><path d="m110.74 92.96-57.58 20.48-22.44-29.15h20.01a182.752 182.752 0 0 0 13.27 18.37 182.752 182.752 0 0 0 13.27-18.37h30.16z" fill="#f2da30"/><path d="m29.96 121.694 56.996-20.274 15.604 20.274z" fill="#3ea2e5"/></g></svg>
 
@@ -585,7 +578,7 @@ gtag('event', 'conversion', {
 
                         </a>
                         <div class="btn-block">
-                            <a href="<?= get_site_url(); ?>/locations/california/hayward" class="rx-btn-loca">
+                            <a href="<?= get_site_url(); ?>/locations/california/hayward/" class="rx-btn-loca">
                                 Click for More Information
 
                             </a>
@@ -747,7 +740,7 @@ label.enter {
 
 
 <script
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmMty5MmMXegrIhIhMHDWOqIu6RQ6m9vg&libraries=geometry,places">
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBW2sBLEaAvd1-QMDhqdKWJygTnMbBY3xE&libraries=geometry,places">
 </script>
 
 <script>
@@ -756,7 +749,8 @@ var geocoder;
 var marker;
 var polygon;
 var bounds;
-window.onload = initMap;
+// window.onload = initMap;
+
 
 
 <?php
@@ -991,7 +985,7 @@ function geocodeAddress(addr) {
 
                 console.log('The area contains the address');
                 $('.results-map').html(
-                    'NowRx delivers to this address. <a class="rx-btn mrb" href="<?= get_site_url(); ?>/refill-and-transfer-prescriptions">Get Started</a>'
+                    'NowRx delivers to this address. <a class="rx-btn mrb" href="<?= get_site_url(); ?>/refill-and-transfer-prescriptions/">Get Started</a>'
                 );
                 $('.results-map').removeClass('notfound');
             } else {
@@ -1565,6 +1559,8 @@ var hwrdCoords = [{
         lng: -122.201422
     } //San Leandro North
 ];
+
+initMap();
 </script>
 
 

@@ -335,7 +335,7 @@
 
 <section class="split-image">
   <div class="imagefull">
-    <img data-src="<?php echo get_template_directory_uri(); ?>/images/whypeoplelovenowrx.jpg" alt="NowRx Pharmacist Delivering Medication" class="pic lozad">
+    <img data-src="<?php echo get_template_directory_uri(); ?>/images/whypeoplelovenowrx.jpg" alt="why people love nowrx" class="pic lozad">
   </div>
     <div class="container">
         <div class="content">

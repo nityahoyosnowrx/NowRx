@@ -19,28 +19,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Cache-control" content="public">
 
+    <link rel="stylesheet" href='<?php echo get_template_directory_uri(); ?>/public/frontend.css?vc=1111111112'>
 
-    <!-- preload main css -->
-
-    <!-- <link
-        rel="preload"
-        as="style"
-        onload="this.rel = 'stylesheet'"
-        href='<?php echo get_template_directory_uri(); ?>/public/frontend.css'>
-
-    <noscript>
-        <link
-            rel="stylesheet"
-            href='<?php echo get_template_directory_uri(); ?>/public/frontend.css'>
-    </noscript>
-    <link
-            rel="stylesheet"
-            href='<?php echo get_template_directory_uri(); ?>/public/frontend.css'> -->
-
-    <!-- <link rel="preload" href="<?php echo get_template_directory_uri(); ?>/public/frontend-bundle.js" as="script"> -->
-
-    <link rel="stylesheet" href='<?php echo get_template_directory_uri(); ?>/public/frontend.css?bustcache=11'>
-
+    <?php if ( is_page( 'refill-and-transfer-prescriptions' ) ): ?>
+    <script src="<?php echo get_template_directory_uri(); ?>/public/frontend-bundle.js?v=11"></script>
+    <?php endif; ?>
 
     <link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
     <link rel="icon" type="image/x-icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
@@ -63,6 +46,58 @@
     <meta name="p:domain_verify" content="3f36cac4340da88df6ca76c1a431cd53" />
     <meta name="facebook-domain-verification" content="51y4k3ncdot6d21810cxa2yfje7xzg" />
 
+
+
+    <?php if ( is_page( 'refill-and-transfer-prescriptions' ) ): ?>
+
+    <?php else: ?>
+
+        <script src="<?php echo get_template_directory_uri(); ?>/public/frontend-bundle.js?v=1111"></script>
+
+    <?php endif; ?>
+
+
+
+
+
+    <?php if ( is_page(925 ) ||is_page(1410) ): ?>
+            <!-- Global site tag (gtag.js) - Google Analytics -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117353738-1"> </script>
+            <script>
+                window.dataLayer = window.dataLayer || [];
+
+                function gtag() {
+                dataLayer.push(arguments);
+                }
+                gtag('js', new Date());
+
+                gtag('config', 'UA-117353738-1');
+                gtag('config', 'AW-875503484');
+            </script>
+
+
+
+            <?php
+                // https://nowrx.com/prep/register-for-nowprep/thank-you/
+            if ( is_page(1410 ) ): ?>
+                <!-- Event snippet for NowPrEP Contact Form Submission (Thank You Page) conversion page -->
+                <script>
+                gtag('event', 'conversion', {'send_to': 'AW-875503484/PrfHCJq2m40CEPy-vKED'});
+                </script>
+            <?php endif; ?>
+
+
+            <?php
+                // https://nowrx.com/prescription-transfer-thank-you/
+            if ( is_page(925 ) ): ?>
+            <!-- Event snippet for Form Completion conversion page -->
+            <script>
+            gtag('event', 'conversion', {'send_to': 'AW-875503484/Bj1NCMmPzboBEPy-vKED'});
+            </script>
+            <?php endif; ?>
+
+
+<?php endif; ?>
 
 
 </head>
@@ -106,7 +141,7 @@
                             title="Pharmacy delivery in hours. Just pay your normal copay.">
                             <figure class="sk">
                                 <img src="<?php echo get_template_directory_uri(); ?>/images/NowRx-Pharmacy-Delivery-Logo.webp"
-                                    class="orbit-image" alt="NowRx Pharmacy Pharmacy Logo" height="60px" width="150px">
+                                    class="orbit-image" alt="NowRx Pharmacy Delivery Logo" height="60px" width="150px">
                             </figure>
                         </a>
                     </div>

@@ -32,7 +32,6 @@
                     <ul class="checks">
                         <li>
                             <span class="check">
-                                <?xml version="1.0" encoding="iso-8859-1"?>
                                 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="405.272px"
                                     height="405.272px" viewBox="0 0 405.272 405.272"
@@ -47,12 +46,12 @@
 
                             </span>
                             <div class="txt">
-                                Get prescriptions written after a quick assessment
+                            Simple, Convenient, and Affordable
                             </div>
                         </li>
                         <li>
                             <span class="check">
-                                <?xml version="1.0" encoding="iso-8859-1"?>
+
                                 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="405.272px"
                                     height="405.272px" viewBox="0 0 405.272 405.272"
@@ -67,12 +66,12 @@
 
                             </span>
                             <div class="txt">
-                                FREE same-day prescription delivery.
+                            Live Support Available to All Patients
                             </div>
                         </li>
                         <li>
                             <span class="check">
-                                <?xml version="1.0" encoding="iso-8859-1"?>
+
                                 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="405.272px"
                                     height="405.272px" viewBox="0 0 405.272 405.272"
@@ -87,7 +86,7 @@
 
                             </span>
                             <div class="txt">
-                                All from the comfort and convenience of your home!
+                            FREE Same Day Prescription Delivery
                             </div>
                         </li>
                     </ul>
@@ -97,7 +96,7 @@
                 </div>
             </div>
             <div class="mobil">
-            <img alt="telehealth app doctors from NowRx" src="<?php echo get_template_directory_uri(); ?>/images/telehealth-app-doctors-from-NowRx.webp" class="sc-cnj">
+            <img alt="telehealth app doctors from NowRx" data-src="<?php echo get_template_directory_uri(); ?>/images/telehealth-app-doctors-from-NowRx.webp" class="sc-cnj lozad">
             </div>
             <div class="colhalf form">
                 <div class="coform">
@@ -106,7 +105,7 @@
                         Sign Up Today!
                         </h2>
                         <p>
-                        Get prescriptions written and delivered without ever leaving the comfort of your home.
+                        Get prescriptions written and delivered without leaving home.
                         </p>
                     </div>
                     <!--[if lte IE 8]>
@@ -124,27 +123,23 @@
             </div>
         </div>
     </div>
-<img alt="telehealth app doctors from NowRx" src="<?php echo get_template_directory_uri(); ?>/images/telehealth-app-doctors-from-NowRx.webp" class="sc-cnj">
+<img alt="telehealth app doctors from NowRx" data-src="<?php echo get_template_directory_uri(); ?>/images/telehealth-app-doctors-from-NowRx.webp"  width="1260px" height="45px" class="lozad sc-cnj">
 
 </section>
-<!-- companies -->
-<?php include('section-companies.php'); ?>
 
 
 <section class="teleservices" id="teleservices">
-    <div class="bluebox">
-        <div class="container">
-            <div class="content">
-                <h2 class="sec-title">
-                    Telehealth Services <span>We Offer</span>
-                </h2>
-            </div>
-        </div>
-    </div>
+
     <div class="columnsbox">
         <div class="container">
             <div class="content">
                 <div class="col">
+                <span class="sub-headline">
+                Prescribed Online, Delivered in Hours
+                    </span>
+                <h2 class="sec-title">
+                    Telehealth Services
+                </h2>
                     <ul class="txt">
                         <li>
                            <div class="sv">
@@ -180,7 +175,8 @@
                            </div>
                            <div class="kl">
                            <h3 class="sec-title">HIV PrEP Medication</h3>
-                            <p>Sign up and get a FREE assessment in minutes from the comfort and privacy of your home.
+                            <p>
+                            HIV PrEP made easy and affordable. 99% of patients pay $0 copay and delivery is free!
                             </p>
                            </div>
                         </li>
@@ -193,7 +189,7 @@
                                 Herpes Treatment
                             </h3>
                             <p>
-                                If PrEP is right for you, NowRx will deliver your medication for free within 5 hours.
+                            Herpes Treatment prescribed online with free same day delivery right to your door!
                             </p>
                             </div>
                         </li>
@@ -207,8 +203,7 @@
                                 Erectile Dysfunction
                             </h3>
                             <p>
-                                We navigate the insurance process to make sure PrEP medications are covered and
-                                affordable!
+                            Erectile Dysfunction Treatment prescribed online with free same day delivery right to your door!
                             </p>
                             </div>
                         </li>
@@ -217,13 +212,13 @@
                 <div class="col image">
                     <figure>
                         <picture class="lozad"
-                            data-src="<?php echo get_template_directory_uri(); ?>/images/telehealth-app-doctor-image.webp"
+
                             data-toggle-class="active">
                             <source media="(max-width: 1px)"
                                 srcset="<?php echo get_template_directory_uri(); ?>/images/nowrx-pharmacy-delivery-happy-customers-celebrating-low-drug-pricess-mobile.webp">
                             <source media="(min-width: 2px)"
                                 srcset="<?php echo get_template_directory_uri(); ?>/images/telehealth-app-doctor-image.webp">
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/telehealth-app-doctor-image.webp"
+                            <img data-src="<?php echo get_template_directory_uri(); ?>/images/telehealth-app-doctor-image.webp"
                                 class="orbit-image lozad" height="500px" width="650px"
                                 alt="telehealth app doctor image">
                         </picture>

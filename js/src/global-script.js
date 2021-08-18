@@ -7,9 +7,11 @@ window.$ = jquery;
 
 import lozad from 'lozad';
 
-const observer = lozad(); // lazy loads elements with default selector as '.lozad'
-observer.observe();
 
+window.addEventListener('load', function() {
+  const observer = lozad(); // lazy loads elements with default selector as '.lozad'
+  observer.observe();
+});
 jQuery(document).ready(function() {
   if (jQuery('.orbit-container').length) {
     jQuery('.orbit-container').slick({
@@ -23,21 +25,24 @@ jQuery(document).ready(function() {
 // mobilebar
 // ----------------------------------------------------------------------------------------------------
 $(document).ready(function() {
-  let fixmeTop = $('.calltoaction').offset().top; // get initial position of the element
+  if($('.calltoaction').length){
+    let fixmeTop = $('.calltoaction').offset().top; // get initial position of the element
 
-  $(window).scroll(function() {
-    // assign scroll event listener
+    $(window).scroll(function() {
+      // assign scroll event listener
 
-    let currentScroll = $(window).scrollTop(); // get current position
+      let currentScroll = $(window).scrollTop(); // get current position
 
-    if (currentScroll >= 1) {
-      // apply position: fixed if you
-      $('.calltoaction').addClass('fixed');
-    } else {
-      // apply position: static
-      $('.calltoaction').removeClass('fixed');
-    }
-  });
+      if (currentScroll >= 1) {
+        // apply position: fixed if you
+        $('.calltoaction').addClass('fixed');
+      } else {
+        // apply position: static
+        $('.calltoaction').removeClass('fixed');
+      }
+    });
+  }
+
 });
 
 // scroll fix
@@ -60,16 +65,16 @@ $(document).ready(function() {
 // menuclick
 // ----------------------------------------------------------------------------------------------------
 
-$(document).ready(function() {
+window.addEventListener('load', function() {
   let activeMenu = false;
-  $('a.menu-icon-toggle').on('click', function(e) {
+  $(document).on('click','a.menu-icon-toggle', function(e) {
     e.preventDefault();
     if (activeMenu == false) {
-      $('nav.top').toggleClass('active-menu');
+      $('nav.top').addClass('active-menu');
       $('a.menu-icon-toggle .txt').text('Close');
       activeMenu = true;
     } else {
-      $('nav.top').toggleClass('active-menu');
+      $('nav.top').removeClass('active-menu');
       $('a.menu-icon-toggle .txt').text('Menu');
       activeMenu = false;
     }
@@ -144,10 +149,11 @@ $(document).on('click','button.close-button, .reveal-overlay', function(e) {
 
 // tabs
 // ----------------------------------------------------------------------------------------------------
-$(document).ready(function() {
+window.onload = function() {
   if ($('.click').length) {
+    console.log('d');
     let opeD;
-    $('.click').on('click', function(e) {
+    $(document).on('click','.click', function(e) {
       e.stopPropagation();
       e.preventDefault();
 
@@ -186,7 +192,7 @@ $(document).ready(function() {
 
     let openSubModal;
 
-    $('.item .title').on('click', function(e) {
+    $(document).on('click','.item .title', function(e) {
       e.preventDefault();
       e.stopPropagation();
 
@@ -244,7 +250,7 @@ $(document).ready(function() {
       // $(this).find('.item-block').toggleClass('active-faq');
     });
   }
-});
+};
 
 
 
@@ -393,7 +399,7 @@ $(document).ready(function() {
 
 
 
-  var maxHeight = 200;
+  var maxHeight = 250;
 
   $(".quoteitems .quoteitem").each(function(){
     if ($(this).height() > maxHeight) {
@@ -508,19 +514,3 @@ $(document).ready(function(){
   // ready
 });
 
-
-
-// $(document).ready(function(){
-//   if($('.limg').length){
-//     setTimeout(()=>{
-//       let srcD = $('.limg').attr('data-lsrc');
-//       $('.limg').attr('src',srcD);
-//     },0)
-//   }
-// });
-
-// new PerformanceObserver((entryList) => {
-//   for (const entry of entryList.getEntries()) {
-//     console.log('LCP candidate:', entry.startTime, entry);
-//   }
-// }).observe({type: 'largest-contentful-paint', buffered: true});

@@ -1,5 +1,5 @@
 <?php get_header();
-// Template Name: /prep/register-for-NowPrEP/thank-you/
+// Template Name: telehealth/register-for-telehealth/thank-you/
 ?>
 
 
@@ -30,7 +30,7 @@ main#main {
                         </div>
                         <div class="rvl">
                             <h1 class="page-title" itemprop="headline">
-                                You have successfully signed up for NowPrEP Telehealth
+                                You have successfully signed up for NowRx Telehealth
                             </h1>
                         </div>
                         <div class="rvl">
@@ -53,7 +53,6 @@ main#main {
             </div>
 
         </article>
-
     </section>
 
 

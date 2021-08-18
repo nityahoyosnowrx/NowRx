@@ -90,11 +90,7 @@
                 <span class="title">Share with friends:</span>
 
                 <div class="social-icons">
-
-
                     <!-- twitter -->
-
-
                     <a target="_blank"
                         href="http://twitter.com/share?text=Check out this post <?php echo get_the_title(); ?>&url=<?php echo get_permalink(); ?>&hashtags=nowrx,pharmacy,blog"
                         class="social-a">

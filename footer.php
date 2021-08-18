@@ -11,13 +11,13 @@ else:
             <div class="large-2 cell small-order-2 medium-order-1">
                 <p>
                     <a href="<?= get_site_url(); ?>"><img class="logo lozad"
-                            data-src="<?php echo get_template_directory_uri(); ?>/library/images/NowRx-Logo-Pharmacy.png"
-                            alt="NowRx Pharmacy Logo" height="28px" width="122px"></a>
+                            data-src="<?php echo get_template_directory_uri(); ?>/images/NowRx-Pharmacy-Delivery-Logo.webp"
+                            alt="NowRx Pharmacy Delivery Logo" height="28px" width="122px"></a>
 <br>
                             <a href="https://safe.pharmacy" target="_blank">
                             <img class="logo lozad phr"
                         data-src="<?php echo get_template_directory_uri(); ?>/images/dotPharmacy-Logo-Text-for-Redirect.webp"
-                        alt="NowRx Pharmacy Logo" width="122px" height="28px">
+                        alt="best online pharmacy accreditation logo" width="122px" height="28px">
                             </a>
                         </p>
                 <p class="text-small">&copy; <?= date('Y'); ?> NowRx<br>
@@ -192,7 +192,7 @@ else:
 
 <?php if(!is_page('nowprep')):
     if(!is_page('referral')){
-
+        if(!is_page('telehealth')){
     ?>
 <div class="calltoaction">
     <div class="container">
@@ -217,6 +217,7 @@ else:
 </div>
 <?php
     }
+}
 
 endif; ?>
 
@@ -261,6 +262,12 @@ if (windowW > 992) {
 </script>
 <?php endif; ?>
 
+
+<?php if ( is_page( 'refill-and-transfer-prescriptions' ) ): ?>
+<?php else: ?>
+<script src="<?php echo get_template_directory_uri(); ?>/public/frontend-bundle.js?v=11"></script>
+<?php endif; ?>
+
 <?php
 // include modals
 get_template_part('footer-modals');
@@ -271,8 +278,11 @@ get_template_part('footer-modals');
         usedLaterScript.src = '<?php echo get_template_directory_uri(); ?>/public/frontend-bundle.js';
         document.body.appendChild(usedLaterScript);
     </script> -->
+<!-- Start of HubSpot Embed Code -->
+<!-- <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/20518952.js"></script> -->
+<!-- End of HubSpot Embed Code -->
 
-    <script src="<?php echo get_template_directory_uri(); ?>/public/frontend-bundle.js"></script>
+
 
 
     <!-- tracking code -->

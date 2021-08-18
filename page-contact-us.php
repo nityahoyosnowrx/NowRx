@@ -90,10 +90,12 @@
 <![endif]-->
                     <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
                     <script>
+                        window.addEventListener('load', function() {
                     hbspt.forms.create({
                         portalId: "5952677",
                         formId: "c3096955-bd03-4e37-a266-c4fc4cc523a7"
                     });
+                });
                     </script>
                 </div>
             </div>

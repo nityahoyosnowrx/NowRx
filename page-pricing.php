@@ -88,7 +88,7 @@
             <!-- image -->
             <div class="column-half image-col">
 
-                <picture class="lozad" data-src="<?php echo get_template_directory_uri(); ?>/images/low-drug-prices-cause-excitement-for-couple.webp" data-toggle-class="active">
+                <picture class="lozad" data-toggle-class="active">
                     <source media="(max-width: 992px)" srcset="<?php echo get_template_directory_uri(); ?>/images/low-drug-prices-cause-excitement-for-couple.webp">
                     <source media="(min-width: 993px)" srcset="<?php echo get_template_directory_uri(); ?>/images/low-drug-prices-cause-excitement-for-couple.webp">
                     <img src="<?php echo get_template_directory_uri(); ?>/images/low-drug-prices-cause-excitement-for-couple.webp" class="orbit-image lozad" height="500px" width="650px" alt="low drug prices cause excitement for couple">
@@ -192,20 +192,40 @@
                 </div>
                 <div class="rvl">
                     <div class="form-content">
-                        <!--[if lte IE 8]>
-                        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js" defer></script>
-                        <![endif]-->
-                        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js" defer></script>
                         <script defer>
+
                             window.addEventListener('load', function() {
-                                setTimeout(function(){
                                     hbspt.forms.create({
                                         portalId: "5952677",
                                         formId: "e1e60aa0-0007-4875-a14d-edef6831c133"
                                     });
-                                },2000)
                             });
                         </script>
+
+<script>
+        // override the hbspt functionality while hubspot is loading
+        var hbspt = {
+        //push form to hubcache queue
+        forms:{create:function(c){hubspot.forms.push(c)}},
+        };
+
+        // cache hubspot forms here
+        var hubcache = {
+                forms:[],
+                letsgo:function(){
+                    for (var i in hubspot.forms){
+                    //hubspot is now loaded
+                    hbspt.forms.create(hubcache.forms[i]);
+                    }
+                }
+            }
+        </script>
+        <script
+        type="text/javascript"
+        defer
+        src="//js.hsforms.net/forms/v2.js"
+        onload="hubcache.letsgo()">
+        </script>
 
                     </div>
                 </div>

@@ -3,8 +3,13 @@
   ?>
 
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117353738-1"> </script>
+
+
+
+<?php if ( is_page(925 ) ||is_page(1410)): ?>
+<?php else: ?>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117353738-1"> </script>
   <script>
     window.dataLayer = window.dataLayer || [];
 
@@ -16,37 +21,12 @@
     gtag('config', 'UA-117353738-1');
     gtag('config', 'AW-875503484');
   </script>
+<?php endif; ?>
 
 
 
 
 
-
-<?php if(is_page('nowprep') || is_page(1410)): ?>
-
-  <!-- Facebook Pixel Code -->
-  <script async>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '2367951633519977');
-  fbq('track', 'PageView');
-  </script>
-  <noscript>
-  <img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=2367951633519977&ev=PageView&noscript=1"/>
-  </noscript>
-  <!-- End Facebook Pixel Code -->
-
-
-  <?php
-  endif;
-  ?>
 
   <script async type="application/ld+json">
 {

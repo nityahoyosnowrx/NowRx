@@ -67,7 +67,7 @@
             <div class="column-half image-col">
 
                 <picture class="lozad">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/NowRx-Pharmacy-Logo-Icon.webp" class="orbit-image lozad" height="500px" width="650px" alt="NowRx Pharmacy Page Not Found">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/NowRx-Pharmacy-Logo-Icon.webp" class="orbit-image lozad" height="500px" width="650px" alt="NowRx Pharmacy Logo Icon">
                 </picture>
 
 

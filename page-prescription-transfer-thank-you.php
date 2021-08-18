@@ -1,8 +1,5 @@
 <?php get_header(); ?>
-<!-- Event snippet for Form Completion conversion page -->
-<script>
-gtag('event', 'conversion', {'send_to': 'AW-875503484/Bj1NCMmPzboBEPy-vKED'});
-</script>
+
 
 <main id="main" class="main-class" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 

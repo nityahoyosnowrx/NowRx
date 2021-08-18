@@ -35,19 +35,22 @@
 
             <div class="deskcontent">
                 <!-- desktop h1 -->
-                <h1 class="hiw-title">
-                    Pharmacy Delivery
-                    Made Easy
-                </h1>
-                <span class="sub-headline">Please complete the form below to request a prescription delivery. Your
-                    local NowRx Pharmacy will then call/text you to confirm all delivery details. </span>
-            </div>
 
-            <div class="titlecolumn">
+                <h1 class="hiw-title" >
+                        <span class="k">
+                        Pharmacy Delivery
+                        </span>
+                        <span class="k">
+                        Made Easy
+                        </span>
+                </h1>
+
                 <span class="sub-headline">
-                Please complete the form below. Your local NowRx will then call/text you to confirm delivery.
+                Submit the prescription delivery form below and our local NowRx will reach out by phone.
+
                 </span>
             </div>
+
 
 
                 <div class="rvls">
@@ -55,13 +58,17 @@
                         <!--[if lte IE 8]>
                         <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js" ></script>
                         <![endif]-->
-                        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-                        <script>
+                        <script charset="utf-8"  type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+                        <script >
+
                         hbspt.forms.create({
                             portalId: "5952677",
                             formId: "bfc2a11c-c87f-4d3b-ad5e-9fc5878ede37",
+
                         });
                         </script>
+
+
 
                         <style>
                         .pageform input {
@@ -849,17 +856,8 @@
 
                 </div>
             </div>
-            <div class="titlecolumn">
-                <h1 class="hiw-title">
-                <span class="k">
-                    Pharmacy Delivery
-                    </span>
-                    <span class="k">
-                    Made Easy
-                    </span>
-                </h1>
 
-            </div>
+
         </div>
     </div>
 </section>
@@ -1128,8 +1126,7 @@
 
 <section class="split-image">
     <div class="imagefull">
-        <img src="<?php echo get_template_directory_uri(); ?>/images/whypeoplelovenowrx.jpg"
-            alt="NowRx Pharmacist Delivering Medication" class="pic">
+        <img data-src="<?php echo get_template_directory_uri(); ?>/images/free-pharmacy-delivery-being-requested-by-nowrx-customer.webp" alt="free pharmacy delivery being requested by nowrx customer" class=" lozad pic">
     </div>
     <div class="container">
         <div class="content">

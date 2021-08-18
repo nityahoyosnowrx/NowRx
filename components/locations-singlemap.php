@@ -113,7 +113,7 @@ label.enter {
 </style>
 
 
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmMty5MmMXegrIhIhMHDWOqIu6RQ6m9vg&libraries=geometry,places"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBW2sBLEaAvd1-QMDhqdKWJygTnMbBY3xE&libraries=geometry,places"></script>
 
 <script>
 var map;
@@ -121,7 +121,7 @@ var geocoder;
 var marker;
 var polygon;
 var bounds;
-window.onload = initMap;
+
 
 
 <?php
@@ -930,4 +930,5 @@ var hwrdCoords = [{
         lng: -122.201422
     } //San Leandro North
 ];
+initMap();
 </script>

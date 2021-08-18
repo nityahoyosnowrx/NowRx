@@ -1,10 +1,7 @@
 <?php get_header();
 // Template Name: prep/waitlist/thank-you
 ?>
-<!-- Event snippet for Form Completion conversion page -->
-<script>
-gtag('event', 'conversion', {'send_to': 'AW-875503484/Bj1NCMmPzboBEPy-vKED'});
-</script>
+
 
 <style>
     main#main {
