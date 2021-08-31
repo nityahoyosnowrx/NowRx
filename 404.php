@@ -27,7 +27,7 @@
                 <div class="rvls">
 
                     <div class="btn-container">
-                        <a class="rx-btn" href="<?= get_site_url(); ?>">
+                        <a class="rx-btn" href="<?= get_site_url(); ?>/">
                             <span class="arrow">
                                 <svg aria-hidden="true" focusable="false" data-prefix="fas"
                                     data-icon="file-prescription" role="img" xmlns="http://www.w3.org/2000/svg"
@@ -39,7 +39,7 @@
                             </span>
                             Homepage
                         </a>
-                        <a class="rx-btn rx-green mrb" href="<?= get_site_url(); ?>/how-it-works">
+                        <a class="rx-btn rx-green mrb" href="<?= get_site_url(); ?>/how-it-works/">
                             <span class="arrow">
                                 <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="question-circle"
                                     role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"

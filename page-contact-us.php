@@ -34,7 +34,7 @@
                         Talk to a Live Person
                     </h1>
                 <p>
-                    Contact us by filling out the form below or calling your local NowRx. To refill or transfer a prescription,  <b><a href="<?= get_site_url(); ?>/refill-and-transfer-prescriptions">Tap Here</a></b>.
+                    Contact us by filling out the form below or calling your local NowRx. To refill or transfer a prescription,  <b><a href="<?= get_site_url(); ?>/refill-and-transfer-prescriptions/">Tap Here</a></b>.
                 </p>
                 <div class="btn-container">
                         <a class="rx-btn" href="#contactus">
@@ -83,7 +83,7 @@
                 <div class="containerform">
                     <h2 class="sec-title">Get in Touch</h2>
                     <p>For medication refills, transfers, or new prescriptions please use our online transfer form at <a
-                            href="https://nowrx.com/refill-and-transfer-prescriptions">nowrx.com/refill-and-transfer-prescriptions/</a>
+                            href="https://nowrx.com/refill-and-transfer-prescriptions/">nowrx.com/refill-and-transfer-prescriptions/</a>
                     </p>
                     <!--[if lte IE 8]>
 <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
@@ -109,21 +109,21 @@
                 <span class="items">
                     <div class="locatios-mainblock">
                         <div class="location-item"> <a
-                                href="<?= get_site_url(); ?>/locations/california/mountain-view">
+                                href="<?= get_site_url(); ?>/locations/california/mountain-view/">
                                 <h2 class="sec-title">Mountain View, CA</h2>
                             </a>
                             <div class="btn-block"> <a
-                                    href="<?= get_site_url(); ?>/locations/california/mountain-view" class="rx-btn">
+                                    href="<?= get_site_url(); ?>/locations/california/mountain-view/" class="rx-btn">
                                     View More Info
                                 <span class="arrow">
                                     <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="svg-inline--fa fa-chevron-right fa-w-10 fa-2x"><path fill="currentColor" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z" class=""></path></svg>
                                 </span>
                                 </a> </div>
                         </div>
-                        <div class="location-item"> <a href="<?= get_site_url(); ?>/locations/california/irvine">
+                        <div class="location-item"> <a href="<?= get_site_url(); ?>/locations/california/irvine/">
                                 <h2 class="sec-title">Irvine, CA</h2>
                             </a>
-                            <div class="btn-block"> <a href="<?= get_site_url(); ?>/locations/california/irvine"
+                            <div class="btn-block"> <a href="<?= get_site_url(); ?>/locations/california/irvine/"
                                     class="rx-btn"> View More Info
                                 <span class="arrow">
                                     <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="svg-inline--fa fa-chevron-right fa-w-10 fa-2x"><path fill="currentColor" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z" class=""></path></svg>
@@ -131,10 +131,10 @@
                                 </a> </div>
                         </div>
                         <div class="location-item"> <a
-                                href="<?= get_site_url(); ?>/locations/california/burlingame">
+                                href="<?= get_site_url(); ?>/locations/california/burlingame/">
                                 <h2 class="sec-title">Burlingame, CA</h2>
                             </a>
-                            <div class="btn-block"> <a href="<?= get_site_url(); ?>/locations/california/burlingame"
+                            <div class="btn-block"> <a href="<?= get_site_url(); ?>/locations/california/burlingame/"
                                     class="rx-btn"> View More Info
                                     <span class="arrow">
                                     <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="svg-inline--fa fa-chevron-right fa-w-10 fa-2x"><path fill="currentColor" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z" class=""></path></svg>
@@ -142,10 +142,10 @@
                                 </a>
                             </div>
                         </div>
-                            <div class="location-item"> <a href="<?= get_site_url(); ?>/locations/california/mesa">
+                            <div class="location-item"> <a href="<?= get_site_url(); ?>/locations/california/mesa/">
                                     <h2 class="sec-title">Mesa, AZ</h2>
                                 </a>
-                                <div class="btn-block"> <a href="<?= get_site_url(); ?>/locations/california/mesa"
+                                <div class="btn-block"> <a href="<?= get_site_url(); ?>/locations/california/mesa/"
                                         class="rx-btn"> View More Info
                                     <span class="arrow">
                                     <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="svg-inline--fa fa-chevron-right fa-w-10 fa-2x"><path fill="currentColor" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z" class=""></path></svg>
@@ -153,11 +153,11 @@
                                     </a> </div>
                             </div>
                             <div class="location-item"> <a
-                                    href="<?= get_site_url(); ?>/locations/california/san-jose">
+                                    href="<?= get_site_url(); ?>/locations/california/san-jose/">
                                     <h2 class="sec-title">San Jose, CA</h2>
                                 </a>
                                 <div class="btn-block"> <a
-                                        href="<?= get_site_url(); ?>/locations/california/san-jose" class="rx-btn">
+                                        href="<?= get_site_url(); ?>/locations/california/san-jose/" class="rx-btn">
                                         View More Info
                                     <span class="arrow">
                                     <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="svg-inline--fa fa-chevron-right fa-w-10 fa-2x"><path fill="currentColor" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z" class=""></path></svg>
@@ -166,11 +166,11 @@
                             </div>
                             <div class="location-item">
                                  <a
-                                    href="<?= get_site_url(); ?>/locations/california/pleasanton">
+                                    href="<?= get_site_url(); ?>/locations/california/pleasanton/">
                                     <h2 class="sec-title">Pleasanton, CA</h2>
                                 </a>
                                 <div class="btn-block"> <a
-                                        href="<?= get_site_url(); ?>/locations/california/pleasanton"
+                                        href="<?= get_site_url(); ?>/locations/california/pleasanton/"
                                         class="rx-btn"> View More Info
                                     <span class="arrow">
                                     <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="svg-inline--fa fa-chevron-right fa-w-10 fa-2x"><path fill="currentColor" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z" class=""></path></svg>
@@ -179,12 +179,12 @@
                                     </div>
                             </div>
                             <div class="location-item"> <a
-                                    href="<?= get_site_url(); ?>/locations/california/van-nuys">
+                                    href="<?= get_site_url(); ?>/locations/california/van-nuys/">
                                     <h2 class="sec-title">Van Nuys, CA</h2>
                                 </a>
                                 <div class="btn-block">
                                     <a
-                                        href="<?= get_site_url(); ?>/locations/california/van-nuys" class="rx-btn">
+                                        href="<?= get_site_url(); ?>/locations/california/van-nuys/" class="rx-btn">
                                         View More Info
                                     <span class="arrow">
                                     <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="svg-inline--fa fa-chevron-right fa-w-10 fa-2x"><path fill="currentColor" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z" class=""></path></svg>
@@ -193,11 +193,11 @@
                             </div>
                             <div class="location-item">
                                 <a
-                                    href="<?= get_site_url(); ?>/locations/california/hayward">
+                                    href="<?= get_site_url(); ?>/locations/california/hayward/">
                                     <h2 class="sec-title">Hayward, CA</h2>
                                 </a>
                                 <div class="btn-block"> <a
-                                        href="<?= get_site_url(); ?>/locations/california/hayward" class="rx-btn">
+                                        href="<?= get_site_url(); ?>/locations/california/hayward/" class="rx-btn">
                                         View More Info
                                     <span class="arrow">
                                     <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="svg-inline--fa fa-chevron-right fa-w-10 fa-2x"><path fill="currentColor" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z" class=""></path></svg>

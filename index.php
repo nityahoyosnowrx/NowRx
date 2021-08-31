@@ -41,7 +41,7 @@
                     <?php if (has_post_thumbnail($post->ID)) : ?>
                     <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'large'); ?>
                     <?php $imageThumbnail = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'thumbnail'); ?>
-                    <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
+                    <a href="<?php the_permalink() ?>/" rel="bookmark" title="<?php the_title_attribute(); ?>">
                         <picture class="border-styled lozad" style="display: block; min-height: 1rem"
                             data-iesrc="<?php echo $imageThumbnail[0]; ?>"
                             data-alt="<?php echo get_post_meta( get_post_thumbnail_id(), '_wp_attachment_image_alt', true ); ?>">
@@ -50,7 +50,7 @@
                         </picture>
                     </a>
                     <?php else : ?>
-                    <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
+                    <a href="<?php the_permalink() ?>/" rel="bookmark" title="<?php the_title_attribute(); ?>">
                         <img class="border-styled"
                             src="<?php echo get_site_url(); ?>/wp-content/uploads/2020/09/IMG_3714-1024x683.jpg"
                             alt="<?php echo get_post_meta( get_post_thumbnail_id(), '_wp_attachment_image_alt', true ); ?>">
@@ -58,19 +58,19 @@
                     <?php endif; ?>
                 </div>
                 <div class="cnt">
-                <a href="<?php the_permalink(); ?>" class="readlink">
+                <a href="<?php the_permalink(); ?>/" class="readlink">
                     <h2><?php
                                    echo mb_strimwidth(get_the_title(), 0, 70, '...');
                                 //    echo wp_trim_words(get_the_title(), 8, '...');
                                    ?></h2>
                 </a>
                     <div class="data">
-                    <a href="<?php the_permalink(); ?>" class="readlink">
+                    <a href="<?php the_permalink(); ?>/" class="readlink">
                         <?php echo get_the_date('F j Y - h:i a'); ?>
                     </a>
                     </div>
                     <div class="content">
-                    <a href="<?php the_permalink(); ?>" class="readlink">
+                    <a href="<?php the_permalink(); ?>/" class="readlink">
                         <?php
                                         // echo wp_trim_words(get_the_content(), 50, '...');
                                         // echo get_the_excerpt();
@@ -78,7 +78,7 @@
                                         ?>
                     </a>
                         <div class="wd">
-                            <a href="<?php the_permalink(); ?>" class="readmore">Read More</a>
+                            <a href="<?php the_permalink(); ?>/" class="readmore">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -103,12 +103,12 @@
                 <div class="image">
                     <?php if (has_post_thumbnail($post->ID)) : ?>
                     <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'medium'); ?>
-                    <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
+                    <a href="<?php the_permalink() ?>/" rel="bookmark" title="<?php the_title_attribute(); ?>">
                         <img class="border-styled lozad"  data-src="<?php echo $image[0]; ?>"
                             alt="<?php echo get_post_meta( get_post_thumbnail_id(), '_wp_attachment_image_alt', true ); ?>">
                     </a>
                     <?php else : ?>
-                    <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
+                    <a href="<?php the_permalink() ?>/" rel="bookmark" title="<?php the_title_attribute(); ?>">
                         <img class="border-styled"
                             src="<?php echo get_site_url(); ?>/wp-content/uploads/2020/09/IMG_3714-1024x683.jpg"
                             alt="<?php echo get_post_meta( get_post_thumbnail_id(), '_wp_attachment_image_alt', true ); ?>">
@@ -117,17 +117,17 @@
                 </div>
                 <div class="contentblock">
                     <h2>
-                    <a href="<?php the_permalink(); ?>" class="readlink">
+                    <a href="<?php the_permalink(); ?>/" class="readlink">
                         <?php echo wp_trim_words(get_the_title(), 8, '...'); ?>
                     </a>
                     </h2>
                     <?php if ($postCount == 1 || $postCount == 2 || $postCount == 3) : ?>
                     <div class="content">
-                    <a href="<?php the_permalink(); ?>" class="readlink">
+                    <a href="<?php the_permalink(); ?>/" class="readlink">
                         <?php echo wp_trim_words(get_the_content(), 0, ''); ?>
                     </a>
                         <div class="wd">
-                            <a href="<?php the_permalink(); ?>" class="readmore">Read More</a>
+                            <a href="<?php the_permalink(); ?>/" class="readmore">Read More</a>
                         </div>
                     </div>
                     <?php else : ?>
@@ -135,11 +135,11 @@
                 by <?php echo get_the_author_meta('nickname', $author_id); ?>, <?php echo get_the_date('d, M n Y'); ?>
               </div> -->
                     <div class="content">
-                    <a href="<?php the_permalink(); ?>" class="readlink">
+                    <a href="<?php the_permalink(); ?>/" class="readlink">
                         <?php echo mb_strimwidth(wp_trim_words(get_the_content(), 100, ''),0, 65, '...'); ?>
                     </a>
                         <div class="wd">
-                            <a href="<?php the_permalink(); ?>" class="readmore">Read More</a>
+                            <a href="<?php the_permalink(); ?>/" class="readmore">Read More</a>
                         </div>
                     </div>
                     <?php endif; ?>

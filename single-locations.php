@@ -123,15 +123,7 @@ $mapd = get_field('address');
     </article><!-- #post-<?php the_ID(); ?> -->
 
 
-    <section class="searchbar">
-        <div class="map-searchbar">
-            <div class="box">
-                <label for="pac-input" class="enter">Please enter your address below to see if NowRx delivers.</label>
-                <input id="pac-input" class="controls" type="text" placeholder="e.g. 123 Baker St, Sunnyvale CA">
-                <div class="results-map"></div>
-            </div>
-        </div>
-    </section>
+ 
 
 
     <section class="visit-faq">

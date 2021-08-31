@@ -30,11 +30,11 @@ get_header();
                     <div class="locatios-mainblock">
 
                         <div class="location-item">
-                            <a href="<?= get_site_url(); ?>/locations/california/mesa">
+                            <a href="<?= get_site_url(); ?>/locations/california/mesa/">
                                 <h2 class="sec-title">Mesa, AZ</h2>
                             </a>
                             <div class="btn-block">
-                                <a href="<?= get_site_url(); ?>/locations/california/mesa" class="rx-btn">
+                                <a href="<?= get_site_url(); ?>/locations/california/mesa/" class="rx-btn">
                                     View Location Information
                                     <span class="arrow">
                                         <svg aria-hidden="true" focusable="false" data-prefix="fas"

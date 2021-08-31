@@ -109,7 +109,7 @@ $yoast_desc = get_post_meta( $id, '_yoast_wpseo_metadesc', true );
 
                                     <li class="MostPopular-addIndex">
 
-                                        <a href="<?php  the_permalink();  ?>" class="MostPopular-link">
+                                        <a href="<?php  the_permalink();  ?>/" class="MostPopular-link">
 
                                             <span class="posthumb">
 
@@ -133,7 +133,7 @@ $yoast_desc = get_post_meta( $id, '_yoast_wpseo_metadesc', true );
 
                                         </a>
 
-                                        <a href="<?php the_permalink(); ?>" class="MostPopular-link title">
+                                        <a href="<?php the_permalink(); ?>/" class="MostPopular-link title">
                                             <?php the_title(); ?>
                                         </a>
 
@@ -160,7 +160,7 @@ $yoast_desc = get_post_meta( $id, '_yoast_wpseo_metadesc', true );
                             <!-- <div class="subtitle"></div> -->
                             <h3 class="title">Get Free Same Day Pharmacy Delivery</h3>
                             <div class="btn-container">
-                                <a href="<?= get_site_url(); ?>" class="rx-btn rx-dg">
+                                <a href="<?= get_site_url(); ?>/" class="rx-btn rx-dg">
                                 Learn More
                                 </a>
                             </div>
@@ -178,7 +178,7 @@ $yoast_desc = get_post_meta( $id, '_yoast_wpseo_metadesc', true );
                         </li>
                         <?php foreach($tags as $tag) :  ?>
                         <li>
-                            <a class="btn btn-warning" href="<?php bloginfo('url');?>/tag/<?php print_r($tag->slug);?>">
+                            <a class="btn btn-warning" href="<?php bloginfo('url');?>/tag/<?php print_r($tag->slug);?>/">
                                 <?php print_r($tag->name); ?>
                             </a>
                         </li>
@@ -217,7 +217,7 @@ $yoast_desc = get_post_meta( $id, '_yoast_wpseo_metadesc', true );
                     </div>
                     <div class="rvl">
                         <div class="btn-container">
-                            <a href="<?= get_site_url(); ?>" class="rx-btn rx-dg">
+                            <a href="<?= get_site_url(); ?>/" class="rx-btn rx-dg">
                             Learn More
                             </a>
                         </div>

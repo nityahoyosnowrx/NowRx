@@ -39,7 +39,7 @@ get_header(); ?>
                             </p>
                         </div>
                         <div class="rvl">
-                            <p>Live pharmacy support available 7 days/week 8:30am-8pm at <a href="" class="li">(844) 466-6979</a>.</p>
+                            <p>Live pharmacy support available 7 days/week 8:30am-8pm at <a href="tel:8444666979" class="li">(844) 466-6979</a>.</p>
                         </div>
                         <div class="rvl">
                             <span class="follow-links">

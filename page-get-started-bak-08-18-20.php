@@ -151,7 +151,7 @@
                 </nav>
               </div>
               <div class="testimonial-copy">
-                <p class="">If you have any questions about NowRx pharmacy, please visit our <a href="/faqs">Frequently Asked Questions Page</a> or contact us at <a href="mailto:info@nowrx.com">info@nowrx.com</a>.</p>
+                <p class="">If you have any questions about NowRx pharmacy, please visit our <a href="/faqs/">Frequently Asked Questions Page</a> or contact us at <a href="mailto:info@nowrx.com">info@nowrx.com</a>.</p>
               </div>
             </div>
           </div>

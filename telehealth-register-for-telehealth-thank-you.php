@@ -25,7 +25,7 @@ main#main {
                     <div class="content">
                         <div class="rvl">
                             <span class="subheading">
-                                Thank you for choosing NowPrEP
+                                Thank you for choosing NowRx Telehealth
                             </span>
                         </div>
                         <div class="rvl">
@@ -35,15 +35,15 @@ main#main {
                         </div>
                         <div class="rvl">
                             <p>
-                            Please check your email for a link to download the NowPrEP App or tap the App Store or Google Play Icon below. If you have any questions or need help signing up, please contact <a href="mailto:telehealth@nowrx.com">telehealth@nowrx.com</a>
+                            Please check your email for a link to download the NowRx Telehealth App or tap the App Store or Google Play Icon below. If you have any questions or need help signing up, please contact <a href="mailto:telehealth@nowrx.com">telehealth@nowrx.com</a>
                             </p>
                         </div>
                         <div class="rvl">
                             <div class="donl">
-                                <a target="_blank" href="https://apps.apple.com/us/app/nowprep/id1551727680" class="download">
+                                <a target="_blank" href="https://apps.apple.com/us/app/nowrx-telehealth/id1573059382" class="download">
                                     <img src="<?php echo get_template_directory_uri(); ?>/images/appleplay.png" alt="" class="pic">
                                 </a>
-                                <a target="_blank" href="https://play.google.com/store/apps/details?id=com.nowrx.nowprep" class="download">
+                                <a target="_blank" href="https://play.google.com/store/apps/details?id=com.nowrx.telehealth" class="download">
                                 <img src="<?php echo get_template_directory_uri(); ?>/images/googleplay.png" alt="" class="pic">
                                 </a>
                             </div>

@@ -41,7 +41,7 @@
 
                 <div class="rvls">
                     <p>
-                    Text <a href="tel:844-466-6979" class="alink">(844) 466-6979</a> or fill out our <a href="<?= get_site_url(); ?>/refill-and-transfer-prescriptions" target="_blank" class="alink">online prescription form</a>. We will call you to confirm and deliver in hours.
+                    Text <a href="tel:844-466-6979" class="alink">(844) 466-6979</a> or fill out our <a href="<?= get_site_url(); ?>/refill-and-transfer-prescriptions/" target="_blank" class="alink">online prescription form</a>. We will call you to confirm and deliver in hours.
                     </p>
                 </div>
 

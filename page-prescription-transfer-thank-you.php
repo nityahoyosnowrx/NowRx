@@ -30,7 +30,7 @@
                             </p>
                         </div>
                         <div class="rvl">
-                            <p>Live pharmacy support available Mon-Sat: 9am-8pm, Sun: 9am-5:30pm at <a href="" class="c">(844) 466-6979</a>.</p>
+                            <p>Live pharmacy support available Mon-Sat: 9am-8pm, Sun: 9am-5:30pm at <a href="tel:8444666979" class="c">(844) 466-6979</a>.</p>
                         </div>
                         <div class="rvl">
                             <span class="follow-links">
@@ -124,7 +124,7 @@
                                 </div>
                                 <div class="rvl">
                                     <p>
-                                        NowRx Pharmacy can be found in all doctor office electronic prescribing systems. If your doctor has trouble finding us or needs more information, please give us a call at <a href="" class="li">(844) 466-6979</a> and a live pharmacy team member will be happy to assist you.
+                                        NowRx Pharmacy can be found in all doctor office electronic prescribing systems. If your doctor has trouble finding us or needs more information, please give us a call at <a href="tel:8444666979" class="li">(844) 466-6979</a> and a live pharmacy team member will be happy to assist you.
                                     </p>
                                 </div>
                             </div>

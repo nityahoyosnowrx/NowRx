@@ -45,7 +45,7 @@
 
       <p>
       <strong>New Prescription: </strong>Tell your doctor to fax or ePrescribe to NowRx. <br>
-      <strong>Existing Prescription: </strong>Text us at <a href="tel:844-466-6979" class="tellink">(844) 466-6979</a> or submit our online transfer form (<a href="https://nowrx.com/refill-and-transfer-prescriptions" style="color:#fff;">Click Here</a>)</p>
+      <strong>Existing Prescription: </strong>Text us at <a href="tel:844-466-6979" class="tellink">(844) 466-6979</a> or submit our online transfer form (<a href="https://nowrx.com/refill-and-transfer-prescriptions/" style="color:#fff;">Click Here</a>)</p>
 		</div>
 
 
@@ -219,7 +219,7 @@
 	        <p class="pre-headline">Transfer Prescription to NowRX Pharmacy</p>
 	        <h2 class="headline"><div>Get a $20 Visa Card with</div> Your First Prescription Delivery</h2>
 
-          <a href="https://nowrx.com/refill-and-transfer-prescriptions" class="button">Transfer  My Prescriptions</a>
+          <a href="https://nowrx.com/refill-and-transfer-prescriptions/" class="button">Transfer  My Prescriptions</a>
 
         </div>
         <div class="large-12 cell text-center ">
@@ -249,7 +249,7 @@
             <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID),''); ?>
               <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><img class="border-styled" style="margin-bottom: 1rem;" src="<?php echo $image[0]; ?>" alt="<?php the_title(); ?>"></a>
             <?php endif; ?>
-            <h5><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h5>
+            <h5><a href="<?php the_permalink() ?>/" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h5>
           </div>
           <?php endwhile; endif; ?>
         </div>
@@ -321,7 +321,7 @@
 
     <div class="hiw-cell cell large-4 text-center">
       <h3 class="padding-bottom-3"><span class="step">1</span> Send Us Your Prescription</h3>
-			<p style="text-align: left;"><strong>New Prescription: </strong>Tell your doctor to fax or ePrescribe to NowRx. <br><strong>Existing Prescription: </strong><a href="https://try.nowrxpharmacy.com/prescription-delivery" style="color:#fff;">Click Here</a></p>
+			<p style="text-align: left;"><strong>New Prescription: </strong>Tell your doctor to fax or ePrescribe to NowRx. <br><strong>Existing Prescription: </strong><a href="https://try.nowrxpharmacy.com/prescription-delivery/" style="color:#fff;">Click Here</a></p>
 		</div>
 
 
@@ -470,7 +470,7 @@
 	        <p class="pre-headline">Switch Today & Save</p>
 	        <h2 class="headline">Get a $20 Visa <br>Gift Card</h2>
 	        <p>For a limited time only, get a $20 Visa Gift Card for <br>every prescription you transfer to NowRx.*</p>
-	        <a href="https://try.nowrxpharmacy.com/prescription-delivery" class="button">Switch to a Better Pharmacy Today</a>
+	        <a href="https://try.nowrxpharmacy.com/prescription-delivery/" class="button">Switch to a Better Pharmacy Today</a>
 	      </div>
 	    </div>
 	  </div>

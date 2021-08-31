@@ -10,7 +10,7 @@ else:
         <div class="grid-x grid-padding-x">
             <div class="large-2 cell small-order-2 medium-order-1">
                 <p>
-                    <a href="<?= get_site_url(); ?>"><img class="logo lozad"
+                    <a href="<?= get_site_url(); ?>/"><img class="logo lozad"
                             data-src="<?php echo get_template_directory_uri(); ?>/images/NowRx-Pharmacy-Delivery-Logo.webp"
                             alt="NowRx Pharmacy Delivery Logo" height="28px" width="122px"></a>
 <br>
@@ -22,9 +22,9 @@ else:
                         </p>
                 <p class="text-small">&copy; <?= date('Y'); ?> NowRx<br>
 
-                    <a href="<?= get_site_url(); ?>/privacy-policy">Privacy Policy</a><br>
-                    <a href="<?= get_site_url(); ?>/hipaa-privacy">HIPAA Privacy</a><br>
-                    <a href="<?= get_site_url(); ?>/telehealth/terms-and-conditions">Telehealth T&C</a>
+                    <a href="<?= get_site_url(); ?>/privacy-policy/">Privacy Policy</a><br>
+                    <a href="<?= get_site_url(); ?>/hipaa-privacy/">HIPAA Privacy</a><br>
+                    <a href="<?= get_site_url(); ?>/telehealth/terms-and-conditions/">Telehealth T&C</a>
                 </p>
             </div>
             <div class="large-10 cell small-order-1 medium-order-2">
@@ -32,20 +32,21 @@ else:
                     <div class="large-3 small-6 cell">
                         <h4>COMPANY</h4>
                         <ul class="footer-menu-col vertical menu text-small">
-                            <li><a href="<?= get_site_url(); ?>/about-us">About Us</a></li>
-                            <li><a href="<?= get_site_url(); ?>/nowprep">NowPrEP</a></li>
-                            <li><a href="<?= get_site_url(); ?>/locations">Locations</a></li>
+                            <li><a href="<?= get_site_url(); ?>/about-us/">About Us</a></li>
+                            <li><a href="<?= get_site_url(); ?>/telehealth/">Telehealth</a></li>
+                            <li><a href="<?= get_site_url(); ?>/nowprep/">NowPrEP</a></li>
+                            <li><a href="<?= get_site_url(); ?>/locations/">Locations</a></li>
                             <li><a href="https://www.indeed.com/cmp/Nowrx" target="_blank">Careers</a></li>
-                            <li><a href="<?= get_site_url(); ?>/referral">Refer A Friend</a></li>
+                            <li><a href="<?= get_site_url(); ?>/referral/">Refer A Friend</a></li>
                         </ul>
                     </div>
                     <div class="large-3 small-6 cell">
                         <h4>CONTACT US</h4>
                         <ul class="footer-menu-col vertical menu text-small">
                             <!-- <li><a data-toggle="modal-example">Chat With A Pharmacist</a></li> -->
-                            <li><a href="<?= get_site_url(); ?>/refill-and-transfer-prescriptions">Transfer Your Prescription</a></li>
-                            <li><a href="<?= get_site_url(); ?>/for-doctors">For Doctors</a></li>
-                            <li><a href="<?= get_site_url(); ?>/contact-us">Chat With A Pharmacist</a></li>
+                            <li><a href="<?= get_site_url(); ?>/refill-and-transfer-prescriptions/">Transfer Your Prescription</a></li>
+                            <li><a href="<?= get_site_url(); ?>/for-doctors/">For Doctors</a></li>
+                            <li><a href="<?= get_site_url(); ?>/contact-us/">Chat With A Pharmacist</a></li>
                         </ul>
                     </div>
                     <div class="large-3 small-6 cell">
@@ -263,7 +264,7 @@ if (windowW > 992) {
 <?php endif; ?>
 
 
-<?php if ( is_page( 'refill-and-transfer-prescriptions' ) ): ?>
+<?php if ( is_page( 'refill-and-transfer-prescriptions' ) || is_page( 'telehealth' ) ): ?>
 <?php else: ?>
 <script src="<?php echo get_template_directory_uri(); ?>/public/frontend-bundle.js?v=11"></script>
 <?php endif; ?>

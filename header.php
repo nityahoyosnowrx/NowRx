@@ -19,10 +19,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Cache-control" content="public">
 
-    <link rel="stylesheet" href='<?php echo get_template_directory_uri(); ?>/public/frontend.css?vc=1111111112'>
+    <link rel="stylesheet" href='<?php echo get_template_directory_uri(); ?>/public/frontend.css?vc=1231111'>
 
-    <?php if ( is_page( 'refill-and-transfer-prescriptions' ) ): ?>
-    <script src="<?php echo get_template_directory_uri(); ?>/public/frontend-bundle.js?v=11"></script>
+    <?php if ( is_page( 'refill-and-transfer-prescriptions' ) || is_page( 'telehealth' ) ): ?>
+    <script src="<?php echo get_template_directory_uri(); ?>/public/frontend-bundle.js?v=1231111"></script>
     <?php endif; ?>
 
     <link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
@@ -48,11 +48,11 @@
 
 
 
-    <?php if ( is_page( 'refill-and-transfer-prescriptions' ) ): ?>
+    <?php if ( is_page( 'refill-and-transfer-prescriptions' ) || is_page( 'telehealth' ) ): ?>
 
     <?php else: ?>
 
-        <script src="<?php echo get_template_directory_uri(); ?>/public/frontend-bundle.js?v=1111"></script>
+        <script src="<?php echo get_template_directory_uri(); ?>/public/frontend-bundle.js?v=1231111"></script>
 
     <?php endif; ?>
 
@@ -106,7 +106,20 @@
 
 
 
+
     <header class="main" role="banner" itemscope itemtype="http://schema.org/WPHeader">
+                <section class="banner">
+                    <div class="container">
+                        <div class="content">
+                            <a href="https://www.seedinvest.com/nowrx/series.c" target="_blank" class="link">
+                            Invest in NowRx on SeedInvest
+                            <span class="btn">
+                                Learn More
+                            </span>
+                            </a>
+                        </div>
+                    </div>
+                </section>
         <div class="container">
             <div class="content">
                 <div class="rlcontainer">
@@ -132,12 +145,12 @@
                         </a>
                     </div>
                     <div class="linksmsall">
-                        <a href="<?php echo get_site_url(); ?>/pricing" class="linksmal">Pricing</a>
-                        <a href="<?php echo get_site_url(); ?>/how-it-works" class="linksmal">How it Works</a>
+                        <a href="<?php echo get_site_url(); ?>/pricing/" class="linksmal">Pricing</a>
+                        <a href="<?php echo get_site_url(); ?>/how-it-works/" class="linksmal">How it Works</a>
                     </div>
                     <!-- logo -->
                     <div class="logo-block">
-                        <a class="main-nav-logo" href="<?php echo get_site_url(); ?>"
+                        <a class="main-nav-logo" href="<?php echo get_site_url(); ?>/"
                             title="Pharmacy delivery in hours. Just pay your normal copay.">
                             <figure class="sk">
                                 <img src="<?php echo get_template_directory_uri(); ?>/images/NowRx-Pharmacy-Delivery-Logo.webp"
@@ -149,62 +162,9 @@
                 <!-- nav -->
                 <nav class="top">
                     <ul class="nav" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
-                        <li itemprop="name">
-                            <a itemprop="url" href="<?php echo get_site_url(); ?>/how-it-works"
-                                title="A simple, hassle free pharmacy experience.">
-                                <span class="ico">
-                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                        version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 462.2 462.2"
-                                        style="enable-background:new 0 0 462.2 462.2;" xml:space="preserve">
-                                        <g>
-                                            <path style="fill:#008DB3;"
-                                                d="M449.557,235.01c-6.85-16.07-21.91-28.1-40.51-30.23l-70.54-8.06l-37.63-61.16   c-9.62-15.64-26.67-25.17-45.03-25.17h-121.5c-31.66,0-59.43,21.15-67.83,51.68l-0.95,3.45c-2.66,9.69-7.77,18.32-14.62,25.21   c-6.85,6.9-15.46,12.05-25.12,14.78c-10.44,2.94-17.66,12.47-17.66,23.31v67.883l38.41-8.983c0.81-1.88,1.73-3.71,2.75-5.49   c9.59-16.61,27.44-26.93,46.6-26.93s37,10.32,46.58,26.93c1.02,1.78,1.95,3.61,2.75,5.49h163.08c0.79-1.86,1.7-3.67,2.71-5.43   c9.58-16.65,27.45-26.99,46.64-26.99c19.16,0,37,10.32,46.58,26.93c1.02,1.78,1.95,3.61,2.75,5.49h42.82l0.27,0.03l3.12-27.4   c0.13-1.12,0.22-2.23,0.27-3.34C453.867,249.25,452.437,241.77,449.557,235.01z" />
-                                            <path style="fill:#CCCCCC;"
-                                                d="M462.2,299.792L462.2,299.792c0,6.654-5.394,12.048-12.048,12.048h-38.795   c0.05-0.92,0.08-1.85,0.08-2.78c0-7.37-1.51-14.65-4.42-21.34l43.142,0.024C456.81,287.747,462.2,293.14,462.2,299.792z" />
-                                            <path style="fill:#666666;"
-                                                d="M400.437,309.06c0,0.93-0.03,1.86-0.09,2.78c-1.43,22.31-19.98,39.97-42.66,39.97   c-22.69,0-41.24-17.66-42.67-39.97c-0.06-0.92-0.09-1.85-0.09-2.78c0-7.75,2.06-15.02,5.66-21.29   c7.38-12.83,21.23-21.47,37.1-21.47c15.84,0,29.67,8.62,37.05,21.42C398.367,294,400.437,301.29,400.437,309.06z M375.217,309.06   c0-9.67-7.86-17.54-17.53-17.54c-9.68,0-17.54,7.87-17.54,17.54s7.86,17.54,17.54,17.54   C367.357,326.6,375.217,318.73,375.217,309.06z" />
-                                            <path style="fill:#E6E6E6;"
-                                                d="M357.687,291.52c9.67,0,17.53,7.87,17.53,17.54s-7.86,17.54-17.53,17.54   c-9.68,0-17.54-7.87-17.54-17.54C340.147,299.39,348.007,291.52,357.687,291.52z" />
-                                            <path style="fill:#CCCCCC;"
-                                                d="M303.927,309.06c0,0.93,0.03,1.87,0.08,2.78h-154.41c0.05-0.93,0.08-1.86,0.08-2.78   c0-7.37-1.51-14.65-4.42-21.34h163.08C305.437,294.43,303.927,301.7,303.927,309.06z" />
-                                            <path style="fill:#76CDCE;"
-                                                d="M115.967,138.39v58.33h-33.47c0,0,3.9-15.83,6.37-24.79l0.95-3.45c0.5-1.83,1.11-3.6,1.82-5.32   C96.257,151.94,105.097,143.12,115.967,138.39z" />
-                                            <path style="fill:#76CDCE;"
-                                                d="M200.027,134.55v62.17h-69.06v-62.04c1.12-0.09,2.25-0.13,3.38-0.13L200.027,134.55L200.027,134.55z   " />
-                                            <path style="fill:#76CDCE;"
-                                                d="M310.137,196.72h-95.11v-62.17h40.82c9.89,0,19.27,5.24,24.45,13.67L310.137,196.72z" />
-                                            <path style="fill:#666666;"
-                                                d="M138.587,311.84c-1.43,22.31-19.98,39.97-42.66,39.97c-22.69,0-41.24-17.66-42.67-39.97   c-0.06-0.92-0.09-1.85-0.09-2.78c0-7.77,2.07-15.06,5.69-21.34c7.39-12.8,21.22-21.42,37.07-21.42c15.84,0,29.67,8.62,37.05,21.42   c3.63,6.28,5.7,13.57,5.7,21.34C138.677,309.99,138.647,310.92,138.587,311.84z M113.467,309.06c0-9.67-7.87-17.54-17.54-17.54   c-9.68,0-17.54,7.87-17.54,17.54s7.86,17.54,17.54,17.54C105.597,326.6,113.467,318.73,113.467,309.06z" />
-                                            <path style="fill:#E6E6E6;"
-                                                d="M95.927,291.52c9.67,0,17.54,7.87,17.54,17.54s-7.87,17.54-17.54,17.54   c-9.68,0-17.54-7.87-17.54-17.54C78.387,299.39,86.247,291.52,95.927,291.52z" />
-                                            <path style="fill:#CCCCCC;"
-                                                d="M42.167,309.06c0,0.93,0.03,1.86,0.08,2.78H12.06C5.399,311.84,0,306.441,0,299.78l0,0   c0-6.661,5.399-12.06,12.06-12.06h34.517C43.677,294.42,42.167,301.69,42.167,309.06z" />
-                                            <path style="fill:#CCCCCC;"
-                                                d="M256.236,229.631h-15.76c-3.313,0-6-2.686-6-6s2.687-6,6-6h15.76c3.313,0,6,2.686,6,6   S259.55,229.631,256.236,229.631z" />
-                                            <path style="fill:#CCCCCC;"
-                                                d="M148.017,229.631h-15.76c-3.313,0-6-2.686-6-6s2.687-6,6-6h15.76c3.313,0,6,2.686,6,6   S151.33,229.631,148.017,229.631z" />
-                                            <path style="fill:#FFFFFF;"
-                                                d="M453.497,257.01h-12.05c-12.15,0-22-9.85-22-22l0,0h30.11   C452.867,242.245,454.367,249.37,453.497,257.01z" />
-                                            <polygon style="fill:#96E0DE;"
-                                                points="200.027,134.68 200.027,196.72 192.997,196.72 130.967,134.68  " />
-                                            <path style="fill:#96E0DE;"
-                                                d="M310.137,196.72h-32.94l-62.17-62.17h40.82c9.89,0,19.27,5.24,24.45,13.67L310.137,196.72z" />
-                                            <path style="fill:#96E0DE;"
-                                                d="M115.967,138.39v49.1l-24.33-24.33C96.257,151.94,105.097,143.12,115.967,138.39z" />
-                                        </g>
 
-                                    </svg>
-                                </span>
-                                <div class="tk">
-                                    How It Works
-                                    <span class="sub">
-                                    Learn How NowRx Works
-                                    </span>
-                                </div>
-                            </a>
-                        </li>
                         <li itemprop="name">
-                            <a itemprop="url" href="<?php echo get_site_url(); ?>/testimonials" title="See what customers are saying about NowRx Pharmacy.">
+                            <a itemprop="url" href="<?php echo get_site_url(); ?>/testimonials/" title="See what customers are saying about NowRx Pharmacy.">
                                 <span class="ico">
                                     <svg xmlns="http://www.w3.org/2000/svg" height="512" viewBox="0 0 58 58"
                                         width="512">
@@ -243,13 +203,13 @@
                                 <div class="tk">
                                     Testimonials
                                     <span class="sub">
-                                    See What Patients Are Saying
+                                    What Patients Are Saying
                                     </span>
                                 </div>
                             </a>
                         </li>
                         <li itemprop="name">
-                            <a itemprop="url" href="<?php echo get_site_url(); ?>/resources">
+                            <a itemprop="url" href="<?php echo get_site_url(); ?>/resources/">
                                 <span class="ico">
                                     <svg xmlns="http://www.w3.org/2000/svg" id="Capa_1"
                                         enable-background="new 0 0 497 497" height="512" viewBox="0 0 497 497"
@@ -287,13 +247,15 @@
                                         </g>
                                     </svg> </span>
                                 <div class="tk">
-                                    Resources
-                                    <span class="sub">Additional Patient Resources</span>
+                                    For Patients
+                                    <span class="sub">
+                                    Resources For Patients
+                                    </span>
                                 </div>
                             </a>
                         </li>
                         <li itemprop="name">
-                            <a itemprop="url" href="<?php echo get_site_url(); ?>/blog">
+                            <a itemprop="url" href="<?php echo get_site_url(); ?>/blog/">
                                 <span class="ico">
 
                                     <svg xmlns="http://www.w3.org/2000/svg" id="Capa_1"
@@ -430,20 +392,31 @@
                                 </span>
                                 <div class="tk">
                                     Blog
-                                    <span class="sub">Health Tips & Info For You</span>
+                                    <span class="sub">
+                                    Health Tips & Information
+                                    </span>
                                 </div>
                             </a>
                         </li>
-                        <li itemprop="name" class="hidm">
-                            <a itemprop="url" href="<?php echo get_site_url(); ?>/pricing">
 
-                                <div class="tk smalltk">
-                                    Pricing
+                        <li itemprop="name">
+                            <a itemprop="url" href="<?php echo get_site_url(); ?>/telehealth/">
+                                <span class="ico">
+
+                                   <svg id="Capa_1" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg"><g><path d="m488.443 246.995c-4.249 0-7.692-3.443-7.692-7.692v-41.72c0-2.618-2.125-4.748-4.738-4.748h-15.691c-4.249 0-7.692-3.443-7.692-7.692s3.443-7.692 7.692-7.692h15.691c11.095 0 20.122 9.031 20.122 20.132v41.72c0 4.249-3.443 7.692-7.692 7.692z" fill="#5392f9"/><path d="m96.565 188.232c-29.828 0-55.189-14.143-73.34-40.898-14.543-21.435-23.225-50.147-23.225-76.805 0-15.197 2.829-28.383 8.182-38.135 6.405-11.669 16.415-18.096 28.188-18.096h14.859c4.249 0 7.692 3.443 7.692 7.692s-3.443 7.692-7.692 7.692h-14.859c-6.157 0-10.967 3.308-14.703 10.114-4.052 7.382-6.284 18.297-6.284 30.733 0 23.698 7.691 49.182 20.572 68.168 10.57 15.58 29.664 34.151 60.61 34.151s50.041-18.571 60.61-34.151c12.881-18.987 20.572-44.471 20.572-68.169 0-30.149-11.304-40.847-20.985-40.847h-14.86c-4.249 0-7.692-3.443-7.692-7.692s3.443-7.692 7.692-7.692h14.86c22.093 0 36.369 22.072 36.369 56.23 0 26.658-8.682 55.37-23.225 76.806-18.153 26.757-43.513 40.899-73.341 40.899z" fill="#5392f9"/><path d="m61.945 42.834h-17.409c-1.974 0-3.574-1.6-3.574-3.574v-34.541c0-1.974 1.6-3.574 3.574-3.574h17.409c6.202 0 11.229 5.027 11.229 11.229v19.23c0 6.202-5.028 11.23-11.229 11.23z" fill="#ffa95f"/><path d="m131.186 42.834h17.409c1.974 0 3.574-1.6 3.574-3.574v-34.541c0-1.974-1.6-3.574-3.574-3.574h-17.409c-6.202 0-11.229 5.027-11.229 11.229v19.23c-.001 6.202 5.027 11.23 11.229 11.23z" fill="#ffa95f"/><path d="m127.544 159.1v227.108l95.782 10 95.782-10v-227.108l-92.513-10z" fill="#6cbff8"/><path d="m295.035 159.1v257.597c0 5.05-4.094 9.144-9.144 9.144h24.073c5.05 0 9.144-4.094 9.144-9.144v-257.597l-13.192-12.629z" fill="#5fa7ee"/><path d="m309.964 119.466h-173.276c-5.05 0-9.144 4.094-9.144 9.144v30.49h191.564v-30.49c0-5.05-4.094-9.144-9.144-9.144z" fill="#407194"/><path d="m309.964 425.841h-173.276c-5.05 0-9.144-4.094-9.144-9.144v-30.49h191.564v30.49c0 5.051-4.094 9.144-9.144 9.144z" fill="#407194"/><path d="m319.108 416.697v-30.49h-24.073v30.49c0 5.05-4.094 9.144-9.144 9.144h24.073c5.05 0 9.144-4.094 9.144-9.144z" fill="#4071f7"/><path d="m319.108 159.1v-30.49c0-5.05-4.094-9.144-9.144-9.144h-24.072c5.05.001 9.143 4.094 9.143 9.144v30.49z" fill="#365f7e"/><path d="m506.803 510.854h-268.423c-2.87 0-5.197-2.327-5.197-5.197v-172.728c0-2.87 2.327-5.197 5.197-5.197h268.423c2.87 0 5.197 2.327 5.197 5.197v172.728c0 2.871-2.327 5.197-5.197 5.197z" fill="#ddebfd"/><path d="m506.803 327.732h-23.551c2.87 0 5.197 2.327 5.197 5.197v172.728c0 2.87-2.327 5.197-5.197 5.197h23.551c2.87 0 5.197-2.327 5.197-5.197v-172.728c0-2.87-2.327-5.197-5.197-5.197z" fill="#bed9fd"/><path d="m432.014 131.731c-10.13 0-18.341 8.212-18.341 18.341v18.341h36.682v-18.341c.001-10.129-8.211-18.341-18.341-18.341z" fill="#ffa95f"/><path d="m410.874 335.204c4.144 21.741 10.028 40.874 17.505 52.399 1.711 2.637 5.56 2.637 7.27 0 7.477-11.526 13.361-30.658 17.505-52.399l-21.14-10z" fill="#ffa95f"/><path d="m433.815 335.204c-2.598 16.804-6.039 32.049-10.268 43.427 1.529 3.336 3.137 6.36 4.832 8.972 1.711 2.637 5.56 2.637 7.27 0 7.477-11.526 13.361-30.658 17.505-52.399l-9.123-10.811z" fill="#ff8b5a"/><path d="m403.706 171.752v86.591c0 24.105 2.462 52.166 7.169 76.861h42.279c4.707-24.695 7.169-52.755 7.169-76.861v-86.591c0-1.844-1.495-3.338-3.338-3.338h-49.941c-1.844 0-3.338 1.494-3.338 3.338z" fill="#407194"/><path d="m433.815 335.204h19.339c4.707-24.695 7.169-52.755 7.169-76.861v-86.591c0-1.844-1.495-3.338-3.338-3.338h-20.06c1.494 0 2.706 1.495 2.706 3.338v86.591c0 24.11-1.999 52.169-5.816 76.861z" fill="#365f7e"/><path d="m197.283 260.802-23.434-.003c-11.282 0-20.46 9.178-20.46 20.46v61.299c0 2.798-2.276 5.076-5.076 5.076h-105.563c-8.443 0-15.312-6.868-15.312-15.311s6.869-15.312 15.312-15.312h28.86c16.92 0 30.685-13.765 30.685-30.685 0-16.926-13.765-30.696-30.685-30.696h-30.306c-7.646 0-13.865-6.219-13.865-13.865s6.22-13.866 13.865-13.866h48.521c7.957 0 14.43-6.473 14.43-14.429v-25.565c-2.529.214-5.091.328-7.69.328-2.6 0-5.164-.114-7.694-.328v24.611h-47.567c-16.128 0-29.249 13.121-29.249 29.25 0 16.128 13.121 29.249 29.249 29.249h30.307c8.437 0 15.301 6.87 15.301 15.313 0 8.437-6.865 15.302-15.301 15.302h-28.861c-16.925 0-30.695 13.77-30.695 30.695s13.77 30.695 30.695 30.695h105.563c11.281 0 20.459-9.178 20.459-20.459v-61.301c0-2.799 2.277-5.077 5.076-5.077l23.433.003h.001c4.248 0 7.691-3.443 7.692-7.691s-3.442-7.692-7.691-7.693z" fill="#407194"/><path d="m326.725 375.437h-41.617c-4.249 0-7.692-3.443-7.692-7.692s3.443-7.692 7.692-7.692h41.617c4.249 0 7.692 3.443 7.692 7.692s-3.444 7.692-7.692 7.692z" fill="#6cbff8"/><path d="m460.071 426.985h-174.963c-4.249 0-7.692-3.443-7.692-7.692s3.443-7.692 7.692-7.692h174.963c4.249 0 7.692 3.443 7.692 7.692s-3.444 7.692-7.692 7.692z" fill="#5392f9"/><path d="m460.071 478.533h-174.963c-4.249 0-7.692-3.443-7.692-7.692s3.443-7.692 7.692-7.692h174.963c4.249 0 7.692 3.443 7.692 7.692s-3.444 7.692-7.692 7.692z" fill="#5392f9"/><ellipse cx="223.326" cy="268.496" fill="#ddebfd" rx="31.171" ry="31.171" transform="matrix(.987 -.16 .16 .987 -40.125 39.24)"/></g></svg>
+                                </span>
+                                <div class="tk">
+                                Telehealth
+                                    <span class="sub">
+                                    Online Prescription Services
+                                    </span>
                                 </div>
                             </a>
                         </li>
+
+
                         <li itemprop="name" class="hidm">
-                            <a itemprop="url" href="<?php echo get_site_url(); ?>/locations">
+                            <a itemprop="url" href="<?php echo get_site_url(); ?>/locations/">
 
                                 <div class="tk smalltk">
                                     Locations
@@ -451,7 +424,15 @@
                             </a>
                         </li>
                         <li itemprop="name" class="hidm">
-                            <a itemprop="url" href="<?php echo get_site_url(); ?>/faqs">
+                            <a itemprop="url" href="<?php echo get_site_url(); ?>/pricing/">
+
+                                <div class="tk smalltk">
+                                    Pricing
+                                </div>
+                            </a>
+                        </li>
+                        <li itemprop="name" class="hidm">
+                            <a itemprop="url" href="<?php echo get_site_url(); ?>/faqs/">
                                 <div class="tk smalltk">
                                 FAQs
                                 </div>
@@ -459,7 +440,7 @@
                         </li>
                         <li itemprop="name" class="buttonfill buttonglimmer">
                             <a class="button secondary rounded shadow rx-btn" itemprop="url"
-                                href="<?= get_site_url(); ?>/refill-and-transfer-prescriptions">
+                                href="<?= get_site_url(); ?>/refill-and-transfer-prescriptions/">
                                 <span class="arrow">
                                     <svg aria-hidden="true" focusable="false" data-prefix="fas"
                                         data-icon="file-prescription" role="img" xmlns="http://www.w3.org/2000/svg"

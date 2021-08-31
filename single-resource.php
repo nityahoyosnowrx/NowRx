@@ -132,7 +132,7 @@ $yoast_desc = get_post_meta( $id, '_yoast_wpseo_metadesc', true );
                     </div>
                     <div class="rvl">
                         <div class="btn-container">
-                            <a href="<?= get_site_url(); ?>" class="rx-btn rx-dg">
+                            <a href="<?= get_site_url(); ?>/" class="rx-btn rx-dg">
                             Learn More
                             </a>
                         </div>

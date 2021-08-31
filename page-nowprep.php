@@ -1414,7 +1414,7 @@ Next, NowPrEP will send you a home test kit, or if you prefer order a lab at a t
 
                 <div class="faq-block">
                 <div class="disclaim">
-                Have questions about NowPrEP or an HIV PrEP pill? Email us at <a href="">telehealth@nowrx.com</a>
+                Have questions about NowPrEP or an HIV PrEP pill? Email us at <a href="mailto:telehealth@nowrx.com">telehealth@nowrx.com</a>
             </div>
                 </div>
 
@@ -1487,7 +1487,7 @@ Next, NowPrEP will send you a home test kit, or if you prefer order a lab at a t
 
                                         </p>
                                         <div class="btn-container">
-                                            <a href="<?php the_permalink(); ?>" class="link">Read More</a>
+                                            <a href="<?php the_permalink(); ?>/" class="link">Read More</a>
                                         </div>
                                         </div>
                                     </div>
