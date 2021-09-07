@@ -114,7 +114,7 @@ include('section-companies.php'); ?>
                     <h3 class="padding-bottom-3">1. Sign Up for NowPrep</h3>
 
                     <p class="txtcenter">
-                        Sign up in seconds and fill out our health questionnaire to assess whether you are eligible for PrEP medication.
+                        Sign up in seconds and fill out our health questionnaire to see if pre exposure prophylaxis (PrEP) is right for you.
                     </p>
                 </div>
             </div>

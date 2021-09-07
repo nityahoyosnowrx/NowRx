@@ -19,10 +19,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Cache-control" content="public">
 
-    <link rel="stylesheet" href='<?php echo get_template_directory_uri(); ?>/public/frontend.css?vc=1231111'>
+    <link rel="stylesheet" href='<?php echo get_template_directory_uri(); ?>/public/frontend.css?vcc=1234214'>
 
     <?php if ( is_page( 'refill-and-transfer-prescriptions' ) || is_page( 'telehealth' ) ): ?>
-    <script src="<?php echo get_template_directory_uri(); ?>/public/frontend-bundle.js?v=1231111"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/public/frontend-bundle.js?vc=1234214"></script>
     <?php endif; ?>
 
     <link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
@@ -52,7 +52,7 @@
 
     <?php else: ?>
 
-        <script src="<?php echo get_template_directory_uri(); ?>/public/frontend-bundle.js?v=1231111"></script>
+        <script src="<?php echo get_template_directory_uri(); ?>/public/frontend-bundle.js?vc=1234214"></script>
 
     <?php endif; ?>
 
@@ -112,7 +112,12 @@
                     <div class="container">
                         <div class="content">
                             <a href="https://www.seedinvest.com/nowrx/series.c" target="_blank" class="link">
+                            <span class="mk">
+                            <span class="tx">
                             Invest in NowRx on SeedInvest
+                            </span>
+                            <div class="small">*Limited Availability</div>
+                            </span>
                             <span class="btn">
                                 Learn More
                             </span>

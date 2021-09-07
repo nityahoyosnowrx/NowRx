@@ -74,9 +74,8 @@ header.main {
 	}
 
 	section.banner {
-
 		background: $m;
-		transition: all .3s;
+		transition: all 0.3s;
 		@media screen and (min-width: 1280px) {
 			margin: -20px -20px -15px;
 		}
@@ -90,28 +89,71 @@ header.main {
 			align-items: center;
 			justify-content: center;
 			width: 100%;
-			transition: all .3s;
+			transition: all 0.3s;
 			@media screen and (max-width: 700px) {
 				font-size: 0.7rem;
+				flex-wrap: wrap;
+				justify-content: flex-start;
+				flex-direction: column;
+				text-align: center;
+				flex-direction: row;
+				padding: 10px 20px;
+				max-width: 390px;
 			}
-			&:hover{
+			@media screen and (max-width: 400px) {
+				span.tx {
+					display: block;
+				}
+			}
+			@media screen and (max-width: 350px) {
+				flex-direction: column;
+    align-items: center;
+			}
+			&:hover {
 				background-color: $m;
+			}
+			.small {
+				font-size: 8px;
+				margin: 2px 0 0 8px;
+
+				@media screen and (max-width: 700px) {
+					margin: 7px 0 0 0px;
+				}
+			}
+		}
+
+		span.mk {
+			display: flex;
+			@media screen and (max-width: 700px) {
+				flex-direction: column;
+				align-items: center;
+				margin: 0 auto;
+			}
+			@media screen and (max-width: 400px) {
+				margin: 0 auto;
 			}
 		}
 
 		span.btn {
 			border: 1px solid #fff;
-			border-radius: 5px;
+			border-radius: 30px;
 			padding: 8px 14px;
 			margin-left: 20px;
 			text-transform: capitalize;
 			font-size: 12px;
-			transition: all .3s;
+			transition: all 0.3s;
 			font-weight: 500;
 			@media screen and (max-width: 700px) {
 				font-size: 0.7rem;
 				padding: 8px 8px;
 				margin-left: 10px;
+				text-align: center;
+				margin: 15px auto 0;
+				min-width: 110px;
+				margin: 5px 5px 0;
+			}
+			@media screen and (max-width: 400px) {
+				margin: 5px auto 0;
 			}
 			&:hover {
 				background: #fff;
@@ -123,8 +165,6 @@ header.main {
 			padding: 0;
 		}
 	}
-
-
 
 	.content {
 		display: flex;
@@ -5482,7 +5522,7 @@ a.readlink {
 section.storybox {
 	background: #1f88cb;
 	padding: 0 0;
-	margin: 90px 0 0;
+	margin:  0 0;
 
 	@media screen and (max-width: 700px) {
 		padding: 0;
@@ -5495,8 +5535,8 @@ section.storybox {
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		@media screen and (max-width: 700px) {
-			flex-direction: column;
+		@media screen and (max-width: 1280px) {
+			flex-direction: column-reverse;
 		}
 	}
 
@@ -5504,10 +5544,13 @@ section.storybox {
 		width: auto;
 		color: #fff;
 		padding: 0;
+		@media screen and (max-width: 1280px) {
+			width: 100%;
+		}
 		@media screen and (max-width: 700px) {
 			width: 100%;
 			padding: 20px;
-			padding:  0;
+			padding: 0;
 		}
 	}
 
@@ -5516,12 +5559,15 @@ section.storybox {
 	}
 	.col.txcl {
 		width: 70%;
+		@media screen and (max-width: 1280px) {
+			width: 100%;
+		}
 		@media screen and (min-width: 700px) {
 			padding: 60px;
 		}
 		@media screen and (max-width: 700px) {
-				padding:30px 20px;
-				width: 100%;
+			padding: 30px 20px;
+			width: 100%;
 		}
 	}
 	figure {
@@ -5532,7 +5578,6 @@ section.storybox {
 		font-weight: 800;
 		line-height: 1.15;
 		letter-spacing: -0.1rem;
-
 
 		@media screen and (max-width: 1280px) {
 			font-size: $font1280h2;
@@ -5551,8 +5596,9 @@ section.storybox {
 
 		object-fit: cover;
 		object-position: 70%;
+		width: 100%;
 		@media screen and (min-width: 700px) {
-			min-height: 760px;
+			min-height: 600px;
 		}
 	}
 }
@@ -5592,6 +5638,33 @@ section.meetteam {
 			font-size: $font400h2;
 		}
 	}
+
+
+	.contentprofile.smalle .profile {
+		width: 25%;
+
+		@media screen and (max-width: 1280px) {
+			max-width: 50%;
+			width: 100%;
+		}
+		@media screen and (max-width: 700px) {
+			width: 100%;
+			max-width: 100%;
+		}
+	}
+
+	.contentprofile.smalle .profile .image {
+		padding: 0 5px;
+	}
+
+	.contentprofile.smalle .profile h3.sec-title {
+		font-size: 1rem;
+	}
+
+	.contentprofile.smalle .profile .text {
+		padding: 5px 10px;
+	}
+
 	.contentprofile {
 		display: flex;
 		flex-wrap: wrap;
@@ -5599,23 +5672,30 @@ section.meetteam {
 			flex-direction: column;
 		}
 	}
+
 	.profile {
 		display: flex;
-		padding: 0 50px;
+		margin: 0;
 		width: 100%;
 		max-width: 33%;
 		border-radius: 5px 0;
 		margin: 30px auto;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-webkit-flex-direction: column;
+		-ms-flex-direction: column;
 		flex-direction: column;
+		position: relative;
 		@media screen and (max-width: 1280px) {
 			padding: 0 10px;
+			max-width: 50%;
 		}
 		@media screen and (max-width: 700px) {
 			align-items: flex-start;
 			justify-content: center;
 			flex-direction: column;
 			padding: 0;
-			width: 70%;
+			width: 100%;
 			max-width: 100%;
 		}
 	}
@@ -5623,6 +5703,7 @@ section.meetteam {
 	.profile .image {
 		width: 100%;
 		max-width: 540px;
+		padding: 0 20px;
 		@media screen and (max-width: 700px) {
 			max-width: 150px;
 			max-width: 600px;
@@ -5635,33 +5716,66 @@ section.meetteam {
 
 	.profile .text {
 		display: flex;
+		-webkit-box-align: start;
+		-webkit-align-items: flex-start;
+		-ms-flex-align: start;
 		align-items: flex-start;
+		-webkit-box-pack: center;
+		-webkit-justify-content: center;
+		-ms-flex-pack: center;
 		justify-content: center;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-webkit-flex-direction: column;
+		-ms-flex-direction: column;
 		flex-direction: column;
 		width: 100%;
 		padding: 30px 0 0;
+		position: absolute;
+		bottom: -20px;
+		width: auto;
+		left: 30px;
+		right: 30px;
+		padding: 10px 20px;
+		background: #038ed8;
+		border-radius: 3px;
+		p {
+			max-height: 0px;
+			overflow: hidden;
+			transition: all 0.3s;
+			margin: 0;
+		}
 		h3.sec-title {
 			margin: 0;
+			color: #fff;
+			font-size: 1.5rem;
 		}
 		@media screen and (max-width: 700px) {
 			max-width: 100%;
-			padding: 30px 0;
+			// padding: 30px ;
 		}
 	}
+	.profile:hover p {
+		max-height: 300px;
+	}
 
+	.profile .text p {
+		font-size: 0.8rem;
+		color: #fff;
+	}
 	.profile .image img.orbit-image.lozad {
 		@media screen and (min-width: 0) {
-			border-radius: 15px;
+			border-radius: 5px;
 		}
 	}
 
 	.profile .subtitle {
 		font-weight: 900;
 		letter-spacing: 0;
-		color: #038ed8;
+		color: Rgb(255 255 255 / 59%);
 		display: block;
-		margin: 0 0 20px;
-		text-transform: uppercase;
+		margin: 0;
+		text-transform: capitalize;
 		font-family: Verdana, sans-serif;
 		font-size: 0.8rem;
 	}
@@ -5694,6 +5808,10 @@ section.hero-welcome.aboutus {
 		border-radius: 30px;
 		font-weight: 900;
 		font-family: Verdana, sans-serif;
+		background-image: linear-gradient(-180deg, hsla(0, 0%, 100%, 0.1), rgba(0, 0, 0, 0.1));
+		background-color: #1f88cb;
+		color: #fff;
+
 
 		// background-image: linear-gradient(
 		// 	-180deg
@@ -5840,10 +5958,10 @@ section.hero-welcome.aboutus {
 }
 
 section.welcomed {
-	padding:  0 0;
+	padding: 0 0;
 	.content {
 		display: flex;
-		margin: 0 0 ;
+		margin: 0 0;
 		-webkit-box-align: end;
 		align-items: flex-end;
 		width: 100%;
@@ -5854,7 +5972,17 @@ section.welcomed {
 			align-items: flex-start;
 		}
 	}
+	.aboutbtn {
+		padding: 15px 40px;
+		min-width: 23%;
+		margin: 10px 2% 10px 0;
+		line-height: 1.5;
+		background-color: #008ed8;
+		@media screen and (max-width: 700px) {
+			min-width: 250px;
+		}
 
+	}
 
 	a.rx-btn-about {
 		display: flex;
@@ -5867,6 +5995,7 @@ section.welcomed {
 		min-width: 23%;
 		justify-content: center;
 
+
 		// background-image: linear-gradient(
 		// 	-180deg
 		// 	,hsla(0,0%,100%,.1),rgba(0,0,0,.1));
@@ -5875,7 +6004,6 @@ section.welcomed {
 			color: $f;
 		}
 	}
-
 
 	.btn-container {
 		display: flex;
@@ -5899,7 +6027,7 @@ section.welcomed {
 			flex-direction: column;
 			align-items: flex-start;
 			margin: 30px 0 0;
-a.rx-btn-about {
+			a.rx-btn-about {
 				min-width: 70%;
 			}
 			// a.rx-btn-about.on {
@@ -5920,8 +6048,6 @@ a.rx-btn-about {
 		}
 	}
 
-
-
 	.content h1 {
 		margin: 0;
 		width: 100%;
@@ -5938,6 +6064,10 @@ a.rx-btn-about {
 		@media screen and (max-width: 700px) {
 			font-size: 3rem;
 		}
+		@media screen and (max-width: 400px) {
+			font-size: 2.4rem;
+			margin: 0 0 10px;
+		}
 	}
 
 	.content .txt {
@@ -5953,7 +6083,6 @@ a.rx-btn-about {
 
 		@media screen and (max-width: 1700px) {
 			margin-bottom: 0;
-
 		}
 
 		@media screen and (max-width: 1280px) {
@@ -5985,15 +6114,16 @@ a.rx-btn-about {
 	.sub-heading.h5.js-revealText {
 		width: 100%;
 		margin-bottom: 24px;
-		letter-spacing: .15em;
+		letter-spacing: 0.15em;
 		color: #008ed8;
 
-			font-weight: 600;
-	line-height: 1.2em;
-		font-size: 14px!important;
-		letter-spacing: .15em;
+		font-weight: 600;
+		line-height: 1.2em;
+		font-size: 14px !important;
+		letter-spacing: 0.15em;
 		text-transform: uppercase;
-	}.h-dash {
-		letter-spacing: -.15em;
+	}
+	.h-dash {
+		letter-spacing: -0.15em;
 	}
 }
