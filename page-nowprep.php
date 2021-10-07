@@ -131,7 +131,7 @@ include('section-companies.php'); ?>
                     <h3 class="padding-bottom-3">2. Complete an HIV Test</h3>
 
                     <p class="txtcenter">
-                    Our prescriber will work with you to set up an in person lab test or mail you a home test kit.
+                    Upload a recent test result or our prescriber will work with you to set up an in person lab test at a nearby facility.
 
                     </p>
                 </div>
@@ -210,15 +210,7 @@ include('section-companies.php'); ?>
                 Receive the best customer service imaginable from our trained pharmacy and physician team members.
                 </div>
             </div>
-            <!-- pill -->
-            <div class="pill reganim">
-                <div class="title">
-                At Home Test Kits
-                </div>
-                <div class="text">
-                Test yourself from the comfort and convenience of your home with our NowPrEP Home Testing Kits.
-                </div>
-            </div>
+
         </div>
         <div class="imageblock imgslide">
                 <img width="700px" height="700px" data-src="<?php echo get_template_directory_uri(); ?>/images/prep-hiv-pill-being-looked-at-by-couple.webp"
@@ -1429,6 +1421,47 @@ Next, NowPrEP will send you a home test kit, or if you prefer order a lab at a t
 
 </section>
 
+
+<section class="storybox nowprep" id="ourstory">
+    <div class="container">
+        <div class="content">
+
+            <div class="col txcl">
+                <h2 class="sec-title">
+                Pre Exposure Prophylaxis - HIV Prevention Pill Explained
+                </h2>
+                <p>
+                Pre-exposure prophylaxis (also known as PrEP) is a medication taken to reduce the risk of contracting HIV. It is for individuals who do not have HIV but are at high risk for contracting the disease. Truvada and Descovy are the most common HIV PrEP pills used today.
+
+
+                </p>
+                <p>
+                Studies have shown that PrEP is highly effective for preventing HIV when taken as prescribed.
+                </p>
+                <p>
+                According to the CDC website, pre exposure prophylaxis:
+                </p>
+                <ul>
+                    <li>Reduces the risk of getting HIV from sex by about 99%</li>
+                    <li>Reduces the risk of getting HIV from injection drug use by at least 74%</li>
+                </ul>
+                <p>
+To maximize the effectiveness of the PrEP pill you should take the medication as prescribed. Additionally, PrEP only protects against HIV so condom use is still important to maintain good sexual health and defend against other STDs.
+                </p>
+            </div>
+            <div class="col">
+
+                <figure>
+                    <picture class="lozad" data-toggle-class="active">
+                        <source media="(max-width: 992px)" srcset="<?php echo get_template_directory_uri(); ?>/images/pre-exposure-prophylaxis-pills-for-hiv-prevention-against-blue-background.webp">
+                        <source media="(min-width: 993px)" srcset="<?php echo get_template_directory_uri(); ?>/images/pre-exposure-prophylaxis-pills-for-hiv-prevention-against-blue-background.webp">
+                        <img data-src="<?php echo get_template_directory_uri(); ?>/images/pre-exposure-prophylaxis-pills-for-hiv-prevention-against-blue-background.webp" class="orbit-image lozad" height="500px" width="650px" alt="pre exposure prophylaxis pills for hiv prevention against blue background">
+                    </picture>
+                </figure>
+            </div>
+        </div>
+    </div>
+</section>
 
 
 <section class="nowprepnews">

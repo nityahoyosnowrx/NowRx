@@ -364,6 +364,30 @@
                 </div>
             </div>
 
+            <!-- profile -->
+            <div class="profile">
+                <div class="image">
+                    <figure>
+                        <picture class="lozad" data-toggle-class="active">
+                            <source media="(max-width: 992px)" srcset="<?php echo get_template_directory_uri(); ?>/images/pharmacist-for-nowrx-pharmacy-delivery-in-van-nuys.webp">
+                            <source media="(min-width: 993px)" srcset="<?php echo get_template_directory_uri(); ?>/images/pharmacist-for-nowrx-pharmacy-delivery-in-van-nuys.webp">
+                            <img data-src="<?php echo get_template_directory_uri(); ?>/images/pharmacist-for-nowrx-pharmacy-delivery-in-van-nuys.webp" class="orbit-image lozad" height="500px" width="650px" alt="pharmacist for nowrx pharmacy delivery in van nuys">
+                        </picture>
+                    </figure>
+                </div>
+                <div class="text">
+                    <h3 class="sec-title">
+                    Avital Kashanian
+                    </h3>
+                    <div class="subtitle">
+                    pharmacist in charge – Van Nuys
+                    </div>
+                    <p>
+                    Avital obtained her Doctor of Pharmacy (PharmD) from Western University of Health Sciences and a B.S. from UCLA (with honors). Avital is trained in medication therapy management, immunizations, and more. Prior to joining NowRx, Avital was manager and staff pharmacist for several pharmacies/clinics focused on a range of specialty conditions.
+                       </p>
+                </div>
+            </div>
+
 
 
 

@@ -6,10 +6,30 @@
 <![endif]-->
 <!-- <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js" async></script> -->
 <!-- <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js" rel="dns-prefetch"></script> -->
+<script>
+        // override the hbspt functionality while hubspot is loading
+        var hbspt = {
+        //push form to hubcache queue
+        forms:{create:function(c){hubspot.forms.push(c)}},
+        };
 
-
-
-
+        // cache hubspot forms here
+        var hubcache = {
+                forms:[],
+                letsgo:function(){
+                    for (var i in hubspot.forms){
+                    //hubspot is now loaded
+                    hbspt.forms.create(hubcache.forms[i]);
+                    }
+                }
+            }
+        </script>
+        <script
+        type="text/javascript"
+        defer
+        src="//js.hsforms.net/forms/v2.js"
+        onload="hubcache.letsgo()">
+        </script>
 <!-- nowprep -->
 
 <div class="reveal twentyone" id="waitlist" data-reveal data-close-on-click="true" data-animation-in="slide-in-down"data-animation-out="slide-out-up">
@@ -58,7 +78,7 @@
             </p>
         </div>
         <div class="form-content">
-            <script async>
+            <script defer>
             window.addEventListener('load', function() {
                     hbspt.forms.create({
                         portalId: "5952677",
@@ -85,7 +105,7 @@
             Please enter your question below and a NowRx Pharmacy Team member will respond as soon as possible.
         </p>
     </div>
-    <script async>
+    <script defer>
     window.addEventListener('load', function() {
             hbspt.forms.create({
                 portalId: "5952677",
@@ -94,14 +114,10 @@
     });
     </script>
 
-
-
-
     <button class="close-button text-center" data-close aria-label="Close reveal" type="button">
         <span aria-hidden="true">&times;</span>
     </button>
 </div>
-
 
 <!-- nowprep -->
 <div class="reveal" id="telehealth" data-reveal data-close-on-click="true" data-animation-in="slide-in-down"
@@ -118,7 +134,7 @@
         </p>
     </div>
 
-    <script async>
+    <script defer>
     window.addEventListener('load', function() {
                     hbspt.forms.create({
                     region: "na1",
@@ -131,10 +147,6 @@
         <span aria-hidden="true">&times;</span>
     </button>
 </div>
-
-
-
-
 <!--  -->
 <div class="reveal" id="suggestalocation" data-reveal data-close-on-click="true" data-animation-in="slide-in-down"
     data-animation-out="slide-out-up" >
@@ -142,7 +154,7 @@
         suggest a new location
     </h3>
     <p>NowRx Pharmacy will notify you when we expand our free prescription delivery services to your area</p>
-    <script async>
+    <script defer>
     window.addEventListener('load', function() {
             hbspt.forms.create({
                 portalId: "5952677",
@@ -154,7 +166,6 @@
         <span aria-hidden="true">&times;</span>
     </button>
 </div>
-
 <!-- for-doctors -->
 <!-- archive locations -->
 <!-- contact-us -->
@@ -172,7 +183,7 @@
             </p>
         </div>
         <div class="form-content">
-            <script async>
+            <script defer>
             window.addEventListener('load', function() {
                     hbspt.forms.create({
                         portalId: "5952677",
@@ -197,7 +208,7 @@
         Fill out the form below and a member of our pharmacy team will reach out to you within 24 hours to provide
         details on how to get started.
     </p>
-    <script async>
+    <script defer>
     window.addEventListener('load', function() {
             hbspt.forms.create({
                 portalId: "5952677",
@@ -214,7 +225,7 @@
     data-animation-out="slide-out-up" style="padding: 40px;">
     <h3 class="text-center">Building A Better Pharmacy for<br>Our Doctors & Patients</h3>
     <p class="text-center">Learn Why More Than 4,500 Physicians Trust NowRx!</p>
-    <script async>
+    <script defer>
     window.addEventListener('load', function() {
             hbspt.forms.create({
                 portalId: "5952677",
@@ -231,7 +242,7 @@
     <h3 class="text-center">Make NowRx My Default Pharmacy</h3>
     <p class="text-center">Fill out the form and we'll let your Doctor know to fill your next prescription with
         NowRx.</p>
-    <script async>
+    <script defer>
     window.addEventListener('load', function() {
             hbspt.forms.create({
                 portalId: "5952677",
@@ -244,34 +255,8 @@
     </button>
 </div>
 
-<script>
-        // override the hbspt functionality while hubspot is loading
-        var hbspt = {
-        //push form to hubcache queue
-        forms:{create:function(c){hubspot.forms.push(c)}},
-        };
-
-        // cache hubspot forms here
-        var hubcache = {
-                forms:[],
-                letsgo:function(){
-                    for (var i in hubspot.forms){
-                    //hubspot is now loaded
-                    hbspt.forms.create(hubcache.forms[i]);
-                    }
-                }
-            }
-        </script>
-        <script
-        type="text/javascript"
-        defer
-        src="//js.hsforms.net/forms/v2.js"
-        onload="hubcache.letsgo()">
-        </script>
-
 <?php
 endif; ?>
-
 
 <!-- hubspot slow -->
 <!-- after this loads on homepage -->
@@ -293,7 +278,6 @@ endif; ?>
         <span aria-hidden="true">&times;</span>
     </button>
 </div>
-
 
 <!-- reveal overlay -->
 <div class="reveal-overlay"></div>

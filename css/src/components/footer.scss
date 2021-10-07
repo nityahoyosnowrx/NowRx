@@ -113,18 +113,18 @@ body.page-template.page-template-refill-and-transfer-prescriptions .calltoaction
 				transform: translateX(-100%);
 			}
 
-			&.active {
-				// color: #008ed8;
-				box-shadow: 0 5px 10px -1px rgba(31, 136, 202, 0.34);
-				border: 1px solid rgba(#33a532, 0.75);
-				&::after {
-					width: 100%;
-					transform: translateX(100%);
-				}
-				&::before {
-					background-color: #33a532;
-				}
-			}
+			// &.active {
+			// 	// color: #008ed8;
+			// 	box-shadow: 0 5px 10px -1px rgba(31, 136, 202, 0.34);
+			// 	border: 1px solid rgba(#33a532, 0.75);
+			// 	&::after {
+			// 		width: 100%;
+			// 		transform: translateX(100%);
+			// 	}
+			// 	&::before {
+			// 		background-color: #33a532;
+			// 	}
+			// }
 			&:hover {
 				// color: #008ed8;
 				box-shadow: 0 5px 10px -1px rgba(31, 136, 202, 0.34);

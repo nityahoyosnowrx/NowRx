@@ -322,11 +322,11 @@ $(document).ready(function() {
 $(document).ready(function() {
   setInterval(() => {
     setTimeout(() => {
-      $('a.button.secondary.rounded.shadow, .calltoaction .content .rx-btn').addClass('active');
+      // $('a.button.secondary.rounded.shadow, .calltoaction .content .rx-btn').addClass('active');
     }, 0);
 
     setTimeout(() => {
-      $('a.button.secondary.rounded.shadow, .calltoaction .content .rx-btn').removeClass('active');
+      // $('a.button.secondary.rounded.shadow, .calltoaction .content .rx-btn').removeClass('active');
     }, 600);
   }, 4000);
 });
@@ -337,6 +337,25 @@ $(document).ready(function() {
     $('section.popblog').fadeOut();
   });
 });
+
+$(document).ready(function() {
+  $('.nm').on('click', function(e) {
+    e.preventDefault();
+    $(this).toggleClass('act');
+  });
+});
+
+
+function highlight(items, index) {
+  index = index % items.length;
+  items.removeClass("highlight");
+  items.eq(index).addClass('highlight');
+  setTimeout(function() {highlight(items, index + 1)}, 2000);
+}
+
+// highlight($('.m'), 0);
+
+
 
 var dialogShown = localStorage.getItem('popUp');
 
@@ -514,3 +533,35 @@ $(document).ready(function(){
   // ready
 });
 
+
+
+$(document).ready(function() {
+  // reveal if object is already in view port
+  if ($('section.rapid figure.list video').length) {
+    $('section.rapid figure.list video').each(function(i) {
+      var top_of_object = $(this).offset().top;
+      var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+      /* If the object is completely visible in the window, fade it */
+      if (bottom_of_window > top_of_object) {
+        $(this).addClass('animatein');
+        $(this).get(0).play()
+      } else {
+        // reveal object reaches the in view port
+        $(window).scroll(function() {
+          $('section.rapid figure.list video').each(function(i) {
+            var top_of_object = $(this).offset().top;
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+            if (bottom_of_window > top_of_object) {
+              $(this).addClass('animatein');
+              $(this).get(0).play()
+            } else {
+              $(this).removeClass('animatein');
+            }
+          });
+        });
+      }
+    });
+  }
+});

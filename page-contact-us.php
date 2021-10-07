@@ -24,9 +24,6 @@
 
             <!-- content -->
             <div class="column-half content-col">
-
-
-
                     <span class="sub-headline">
                         Contact Nowrx pharmacy support
                     </span>
@@ -39,20 +36,17 @@
                 <div class="btn-container">
                         <a class="rx-btn" href="#contactus">
                             <?php include('reg-arrow.php'); ?>
-                            contact us </a>
+                            contact us
+                        </a>
                         <a class="rx-btn rx-green mrb" href="#contactus-faqs">
                             <?php include('grn-arrow.php'); ?>
-                            View FAQs</a>
+                            View FAQs
+                        </a>
                     </div>
-
             </div>
 
             <!-- image -->
             <div class="column-half image-col">
-
-
-
-
                 <picture class="lozad"
                      data-toggle-class="active">
 
@@ -60,8 +54,6 @@
                     <source media="(min-width: 993px)" srcset="<?php echo get_template_directory_uri(); ?>/images/NowRx-pharmacist-pulling-prescription-delivery-from-parata-robot.webp">
                     <img data-src="<?php echo get_template_directory_uri(); ?>/images/NowRx-pharmacist-pulling-prescription-delivery-from-parata-robot.webp" class="orbit-image lozad" height="500px" width="650px" alt="NowRx pharmacist pulling prescription delivery from parata robot">
                 </picture>
-
-
             </div>
 
         </div>
@@ -86,16 +78,16 @@
                             href="https://nowrx.com/refill-and-transfer-prescriptions/">nowrx.com/refill-and-transfer-prescriptions/</a>
                     </p>
                     <!--[if lte IE 8]>
-<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
-<![endif]-->
-                    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-                    <script>
+                    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+                    <![endif]-->
+                    <script charset="utf-8" type="text/javascript" defer src="//js.hsforms.net/forms/v2.js"></script>
+                    <script defer>
                         window.addEventListener('load', function() {
-                    hbspt.forms.create({
-                        portalId: "5952677",
-                        formId: "c3096955-bd03-4e37-a266-c4fc4cc523a7"
-                    });
-                });
+                            hbspt.forms.create({
+                                portalId: "5952677",
+                                formId: "c3096955-bd03-4e37-a266-c4fc4cc523a7"
+                            });
+                        });
                     </script>
                 </div>
             </div>

@@ -40,7 +40,7 @@
                     <span class="featuredtext">featured</span>
                     <?php if (has_post_thumbnail($post->ID)) : ?>
                     <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'large'); ?>
-                    <?php $imageThumbnail = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'thumbnail'); ?>
+                    <?php $imageThumbnail = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'medium'); ?>
                     <a href="<?php the_permalink() ?>/" rel="bookmark" title="<?php the_title_attribute(); ?>">
                         <picture class="border-styled lozad" style="display: block; min-height: 1rem"
                             data-iesrc="<?php echo $imageThumbnail[0]; ?>"

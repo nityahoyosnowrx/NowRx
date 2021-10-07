@@ -549,6 +549,29 @@
                                 </div>
                             </div>
                             <!-- Slides -->
+<div class="quoteitem largeblocktext largeblock">
+                                <div class="content">
+
+                                    <div class="quote">
+                                        <blockquote>
+                                            <span class="fullquote">
+                                            After complaining about the local pharmacy's service, our family physician recommended NowRx for quick, reliable and friendly service.  The order was placed Saturday morning and the prescriptions were delivered mid afternoon.  The service and delivery staff were efficient and helpful.  We received text updates until our order was delivered.  <b>To my surprise, one prescription not covered by my insurance price was lower than Walgreens.</b> NowRx takes the worry out of ordering and saves my family time.
+
+                                            </span>
+                                            <cite>
+                                                <div class="name">
+                                                    <h2 class="sec-title">- Liz A
+                                                    </h2>
+                                                </div>
+                                                <div class="title">
+                                                    <span class="li">NowRx Pharmacy Customer</span>
+                                                </div>
+                                            </cite>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Slides -->
                             <div class="quoteitem">
                                 <div class="content">
 
@@ -617,6 +640,29 @@
                                             <cite>
                                                 <div class="name">
                                                     <h2 class="sec-title">-Meg M.
+                                                    </h2>
+                                                </div>
+                                                <div class="title">
+                                                    <span class="li">NowRx Pharmacy Customer</span>
+                                                </div>
+                                            </cite>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+                              <!-- Slides -->
+  <div class="quoteitem largeblocktext largeblock">
+                                <div class="content">
+
+                                    <div class="quote">
+                                        <blockquote>
+                                            <span class="fullquote">
+                                            I've been using NowRx for a while now, since long before the pandemic kept me from ever wanting to set foot in a drug store again. They communicate clearly, get meds out to me quickly at home or at work, coordinate everything with my doctor and insurance. <b>I am so happy I found them and always spreading word to friends, family, and doctors.</b> I also appreciate how the drivers, especially Roxy, go above and beyond, for instance, always calling or texting instead of ringing my doorbell, since it makes my dog bark and wake up the baby. Absolutely great!
+
+                                            </span>
+                                            <cite>
+                                                <div class="name">
+                                                    <h2 class="sec-title">- Mark C
                                                     </h2>
                                                 </div>
                                                 <div class="title">
@@ -726,7 +772,29 @@
                                     </div>
                                 </div>
                             </div>
+       <!-- Slides -->
+       <div class="quoteitem largeblocktext largeblock">
+                                <div class="content">
 
+                                    <div class="quote">
+                                        <blockquote>
+                                            <span class="fullquote">
+                                            I began using NowRx when the stay-in-place order took effect on 3/17/20. I called them to transfer prescriptions and a live person answered the phone, unlike endless hold at Walgreens. The person was knowledgeable and friendly and the transfer went smoothly. NowRx will send a text when a refill is due; you text back to arrange delivery to your doorstep.  Before delivery, there will be a reminder text and then a text letting you know you're the next stop. The delivery people adhere to COVID-19 safety procedures and they are polite. <b>I am never going back to a brick and mortar drug store,</b> even after going out is no longer a roll of dice on your life.
+
+                                            </span>
+                                            <cite>
+                                                <div class="name">
+                                                    <h2 class="sec-title">- Tamara N
+                                                    </h2>
+                                                </div>
+                                                <div class="title">
+                                                    <span class="li">NowRx Pharmacy Customer</span>
+                                                </div>
+                                            </cite>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
                             <!-- Slides -->
                             <div class="quoteitem">
                                 <div class="content">
@@ -950,11 +1018,298 @@
                                 </div>
                             </div>
 
+                            <!-- Slides -->
+                            <div class="quoteitem">
+                                <div class="content">
+
+                                    <div class="quote">
+                                        <blockquote>
+                                            <span class="fullquote">
+                                            <b>I adore NowRx</b>. Who wants to wait in line for a medicine in the middle of a Pandemic in a pharmacy with sick people waiting for their prescriptions? I have never waited longer than one hour for my prescriptions to be delivered to my door and that is from the time my doctor calls in the prescription. Price is the same as at Walgreens or CVS.
+
+                                            </span>
+                                            <cite>
+                                                <div class="name">
+                                                    <h2 class="sec-title">- Jody T.
+                                                    </h2>
+                                                </div>
+                                                <div class="title">
+                                                    <span class="li">NowRx Pharmacy Customer</span>
+                                                </div>
+                                            </cite>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+<!-- Slides -->
+<div class="quoteitem largeblocktext largeblock">
+                                <div class="content">
+
+                                    <div class="quote">
+                                        <blockquote>
+                                            <span class="fullquote">
+                                            <b>If I could give NowRx 10 stars, I would!</b> This is by far the very best pharmacy I've ever used! I was skeptical when my doctor told me they could deliver my meds to my house within 2-4 hours with no delivery or other fees at the same price (or lower) than what I was getting through my mail order pharmacy or Walgreens. I was delighted to discover the one Arizona location in nearby Mesa when we moved to the Phoenix area 2 months ago. They have outstanding customer service, are easily reachable by text or phone, and always helpful. They are prompt with any follow up including contacting my doctors for authorizations for refills, and their drivers are prompt and professional. They always text me prior to delivery and after (with a photo of my front door w/the bag).  They are a company definitely "on their game!" I hope they continue to expand and cover other areas in the country where I have family and friends who would absolutely love doing business with them. Thank you NowRx!
+
+                                            </span>
+                                            <cite>
+                                                <div class="name">
+                                                    <h2 class="sec-title">-  Chippy K
+                                                    </h2>
+                                                </div>
+                                                <div class="title">
+                                                    <span class="li">NowRx Pharmacy Customer</span>
+                                                </div>
+                                            </cite>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Slides -->
+                            <div class="quoteitem">
+                                <div class="content">
+
+                                    <div class="quote">
+                                        <blockquote>
+                                            <span class="fullquote">
+                                            I started using NowRx in March 2020 during the beginning stages of the pandemic. My doctor had always recommended them, but I was weary. Honestly .... <b>Who delivers for free, within a few hours of receipt of the prescription, has VERY friendly customer service available by text or phone, has responses that are immediate and delivery employees that obviously love their jobs ...... NowRx does!</b> This service is INCREDIBLE!! I have tried to tip them, but they say they are not allowed to accept tips. USE THIS SERVICE .... It's a game changer!! Bye bye long lines at Walgreens, what a waste of my time you have been!! If your doctor hasn't heard of them yet, by all means tell them!!!!
+
+                                            </span>
+                                            <cite>
+                                                <div class="name">
+                                                    <h2 class="sec-title">- Rena R.
+                                                    </h2>
+                                                </div>
+                                                <div class="title">
+                                                    <span class="li">NowRx Pharmacy Customer</span>
+                                                </div>
+                                            </cite>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Slides -->
+                            <div class="quoteitem">
+                                <div class="content">
+
+                                    <div class="quote">
+                                        <blockquote>
+                                            <span class="fullquote">
+                                            Amazing experience with this pharmacy! My son takes an NDC specific medication and I would ALWAYS have a problem refilling it at Walgreens. From the person I first spoke with (Shalini) to the delivery guy (Ed) both were pleasant, knowledgeable and thorough.  <b>The convenience they give us of picking up and dropping off the prescription from my home...I can't ask for anything more!</b> It sure beats waiting in a wrap around line MULTIPLE times at Walgreens drive thru! Will definitely be returning! Great job guys!
+
+                                            </span>
+                                            <cite>
+                                                <div class="name">
+                                                    <h2 class="sec-title">- Michelle D.
+                                                    </h2>
+                                                </div>
+                                                <div class="title">
+                                                    <span class="li">NowRx Pharmacy Customer</span>
+                                                </div>
+                                            </cite>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Slides -->
+                            <div class="quoteitem">
+                                <div class="content">
+
+                                    <div class="quote">
+                                        <blockquote>
+                                            <span class="fullquote">
+                                            Super easy and efficient to transfer all of our Rx to NowRx. After a phone call, they arranged with our previous pharmacy, and now prescriptions just arrive at our house without any effort on our part. If they need a refill, they contact our doctors and make it happen. <b>Best of all, our prescriptions are much cheaper than the retail pharmacy we used to use.</b> I highly recommend NowRx!
+
+                                            </span>
+                                            <cite>
+                                                <div class="name">
+                                                    <h2 class="sec-title">- Rick F
+                                                    </h2>
+                                                </div>
+                                                <div class="title">
+                                                    <span class="li">NowRx Pharmacy Customer</span>
+                                                </div>
+                                            </cite>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Slides -->
+                            <div class="quoteitem">
+                                <div class="content">
+
+                                    <div class="quote">
+                                        <blockquote>
+                                            <span class="fullquote">
+                                            <b>NowRx Pharmacy, has the best service ever!</b> They are professionals, on time, I don't have to worry about refills, they do everything for me!! Give them a try! You won't be disappointed!!!
+
+                                            </span>
+                                            <cite>
+                                                <div class="name">
+                                                    <h2 class="sec-title">- Madel L
+                                                    </h2>
+                                                </div>
+                                                <div class="title">
+                                                    <span class="li">NowRx Pharmacy Customer</span>
+                                                </div>
+                                            </cite>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+                              <!-- Slides -->
+                              <div class="quoteitem largeblocktext largeblock">
+                                <div class="content">
+
+                                    <div class="quote">
+                                        <blockquote>
+                                            <span class="fullquote">
+                                            Never before has our family experienced such five star service. We cannot recommend NowRx enough. The staff from the drivers, pharmacy technicians to the pharmacists are all amazing to work with. Patience and Yvonne at the Mountain View location are so helpful in meeting our family’s needs. NowRx has helped us navigate through the pandemic by having our medications delivered directly to our home. We have not had to stand in long pharmacy lines. They also actually answer the phone promptly. The other big box pharmacies have a customer wait on hold for up to an hour. <b>NowRx is the most efficient model of how a pharmacy should run. We are very grateful for the professional service that they have given our family.</b> They are the very best!!!
+
+                                            </span>
+                                            <cite>
+                                                <div class="name">
+                                                    <h2 class="sec-title">- Noel M.
+                                                    </h2>
+                                                </div>
+                                                <div class="title">
+                                                    <span class="li">NowRx Pharmacy Customer</span>
+                                                </div>
+                                            </cite>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Slides -->
+                            <div class="quoteitem">
+                                <div class="content">
+
+                                    <div class="quote">
+                                        <blockquote>
+                                            <span class="fullquote">
+                                            I wish I knew about NowRx before! <b>So much better than waiting in line at CVS</b>. The service is amazing. They are so easy to contact and have amazing customer. They also deliver the same day and text you when your driver is near.
+
+                                            </span>
+                                            <cite>
+                                                <div class="name">
+                                                    <h2 class="sec-title">- Adilene T
+                                                    </h2>
+                                                </div>
+                                                <div class="title">
+                                                    <span class="li">NowRx Pharmacy Customer</span>
+                                                </div>
+                                            </cite>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Slides -->
+                            <div class="quoteitem">
+                                <div class="content">
+
+                                    <div class="quote">
+                                        <blockquote>
+                                            <span class="fullquote">
+                                            I LOVE the service of NowRx. I called early for my prescription and boy not even an hour the delivery guy named ADRIAN ding-dong at my door I was sooo impressed.  <b>Employees are all so customer service oriented. I LOVE THIS PHARMACY!</b>
+                                            </span>
+                                            <cite>
+                                                <div class="name">
+                                                    <h2 class="sec-title">- Sally H
+                                                    </h2>
+                                                </div>
+                                                <div class="title">
+                                                    <span class="li">NowRx Pharmacy Customer</span>
+                                                </div>
+                                            </cite>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Slides -->
+                            <div class="quoteitem">
+                                <div class="content">
+
+                                    <div class="quote">
+                                        <blockquote>
+                                            <span class="fullquote">
+                                            This is so much easier than going to the pharmacy. They are quick, efficient, and always pleasant.  <b>No more standing lines!</b> They are also able to fill prescriptions for my dog at very reasonable prices.
+
+                                            </span>
+                                            <cite>
+                                                <div class="name">
+                                                    <h2 class="sec-title">- C.G
+                                                    </h2>
+                                                </div>
+                                                <div class="title">
+                                                    <span class="li">NowRx Pharmacy Customer</span>
+                                                </div>
+                                            </cite>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Slides -->
+                            <div class="quoteitem">
+                                <div class="content">
+
+                                    <div class="quote">
+                                        <blockquote>
+                                            <span class="fullquote">
+                                            NowRx has been very patient, courteous and trustworthy, in handling my complicated medication profile. They are very friendly to work with, and extremely reliable. The delivery staff have show a very high standard of providing the same level of care as the professional staff. I would heartily recommend customers of other delivery pharmacies, to compare the great care they would receive with Now Rx. <b>As a retired RN, I can really appreciate their consistency, and dedication to excellence.</b>
+
+                                            </span>
+                                            <cite>
+                                                <div class="name">
+                                                    <h2 class="sec-title">- Robert D
+                                                    </h2>
+                                                </div>
+                                                <div class="title">
+                                                    <span class="li">NowRx Pharmacy Customer</span>
+                                                </div>
+                                            </cite>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+                            <!-- Slides -->
+                            <div class="quoteitem">
+                                <div class="content">
+
+                                    <div class="quote">
+                                        <blockquote>
+                                            <span class="fullquote">
+                                            Really convenient and reliable way of getting a medication quickly introducing inline at the pharmacy store. Will highly recommend it. They even have an option of one hour delivery if you pay extra.
+
+                                            </span>
+                                            <cite>
+                                                <div class="name">
+                                                    <h2 class="sec-title">- Santosh H
+                                                    </h2>
+                                                </div>
+                                                <div class="title">
+                                                    <span class="li">NowRx Pharmacy Customer</span>
+                                                </div>
+                                            </cite>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
 
 
                         </div>
-
-
                     </div>
                 </div>
             </div>
