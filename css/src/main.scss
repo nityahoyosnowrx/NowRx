@@ -6951,6 +6951,9 @@ body#investor {
 		font-weight: 600;
 		letter-spacing: 0px;
 		text-transform: none;
+		@media screen and (max-width: 700px) {
+			min-width: 220px;
+		}
 	}
 	.button {
 		display: inline-block;
@@ -7033,6 +7036,9 @@ body#investor {
 		text-transform: none;
 		&:hover {
 			background-color: #444;
+		}
+		@media screen and (max-width: 700px) {
+			min-width: 220px;
 		}
 	}
 	.w-inline-block {
@@ -7754,6 +7760,14 @@ body#investor {
 		background-color: transparent;
 		color: #5a5858;
 		text-align: left;
+		.button-wrapper {
+			@media screen and (max-width: 700px) {
+				display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 100%;
+			}
+		}
 	}
 	.invesments-list.list-full.hor {
 		display: -webkit-box;
@@ -7871,11 +7885,29 @@ body#investor {
 		-ms-flex-align: stretch;
 		align-items: stretch;
 	}
+	.col-left .btninvst {
+		padding: 20px 40px 0;
+		display: flex;
+		@media screen and (max-width: 700px) {
+			padding: 20px 0 0;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+	.btninvst {
+		@media screen and (max-width: 700px) {
+		display: flex;
+
+			justify-content: center;
+			align-items: center;
+		}
+	}
 	.col-left {
 		width: 100%;
 		padding-right: 33px;
 		@media screen and (max-width: 700px) {
 			width: 100%;
+			padding: 0;
 		}
 		img {
 			width: 100%;
@@ -9065,6 +9097,9 @@ body#investor {
 			min-width: 310px;
 			font-size: 1rem;
 			font-weight: 700;
+			@media screen and (max-width: 700px) {
+				min-width: 210px;
+			}
 		}
 
 		.header {
@@ -9259,6 +9294,7 @@ body#investor {
 		padding: 30px 0;
 		@media screen and (max-width: 700px) {
 			padding: 20px 0;
+			margin-top: 0px;
 		}
 		.team-intro {
 			max-width: 900px;
@@ -9269,6 +9305,7 @@ body#investor {
 			font-size: 32px;
 			line-height: 42px;
 			text-align: center;
+			padding: 0 20px;
 			.p-sub.p-short.p-center {
 				margin-right: auto;
 				margin-left: auto;
@@ -9313,6 +9350,9 @@ body#investor {
 			text-align: left;
 			cursor: -webkit-grab;
 			cursor: grab;
+			@media screen and (max-width: 700px) {
+				padding: 40px 20px;
+			}
 		}
 		.reviews {
 			display: -webkit-box;

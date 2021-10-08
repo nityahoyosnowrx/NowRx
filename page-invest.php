@@ -90,6 +90,14 @@
     <?php endif; ?>
 
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <script async type=“text/javascript” src=“https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=HcMd6f”></script>
+
+
+
+<!--[if lte IE 8]>
+<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+<![endif]-->
+                        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
 
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 </head>
@@ -264,7 +272,7 @@ else:
                                 </p>
                             </span>
                             <div class="btninvst">
-                                <a href="" class="button button-mobile buy-now w-button">
+                                <a href="https://www.seedinvest.com/nowrx/series.c/?utm_source=nowrxlandingpage1&utm_medium=referral" target="_blank" class="button button-mobile buy-now w-button">
                                     Invest Now
                                 </a>
                             </div>
@@ -376,10 +384,7 @@ else:
                 <div class="w-layout-grid grid-9">
                     <h2 class="h2-left">Get the NowRx <strong>Investor Deck</strong></h2>
                     <div class="form-block w-form">
-                        <!--[if lte IE 8]>
-<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
-<![endif]-->
-                        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+
                         <script>
                         hbspt.forms.create({
                             region: "na1",
@@ -387,6 +392,7 @@ else:
                             formId: "df2a6935-1139-426a-b373-0917788189ad"
                         });
                         </script>
+
 
                     </div>
                 </div>
@@ -462,7 +468,7 @@ else:
                             <video src="<?php echo get_template_directory_uri(); ?>/images/Chart-10.mp4" muted></video>
                         </figure>
                         <div class="callitem">
-                            <a href="" class="button button-mobile buy-now w-button">
+                            <a href="https://www.seedinvest.com/nowrx/series.c/?utm_source=nowrxlandingpage1&utm_medium=referral" target="_blank" class="button button-mobile buy-now w-button">
                                 Invest Now
                             </a>
                         </div>
@@ -651,7 +657,13 @@ else:
                                         customer!</p>
                                 </div>
                             </div>
+                            <div class="btninvst">
+                                <a href="https://www.seedinvest.com/nowrx/series.c/?utm_source=nowrxlandingpage1&utm_medium=referral" target="_blank" class="button button-mobile buy-now w-button">
+                                    Invest Now
+                                </a>
+                            </div>
                         </div>
+
                     </div>
                 </div>
             </section>
@@ -661,10 +673,7 @@ else:
                 <div class="w-layout-grid grid-9">
                     <h2 class="h2-left">Get the NowRx <strong>Investor Deck</strong></h2>
                     <div class="form-block w-form">
-                        <!--[if lte IE 8]>
-<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
-<![endif]-->
-                        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+
                         <script>
                         hbspt.forms.create({
                             region: "na1",
@@ -701,6 +710,7 @@ else:
                                 products or services to others. It is used as a proxy for gauging the customer’s overall
                                 satisfaction and loyalty to the brand.
                             </p>
+
                         </div>
                         <div class="business-box right-box white shadow">
                             <div class="w-layout-gridgrid-8d"><img
@@ -1041,6 +1051,11 @@ else:
                                 </div>
 
                             </div>
+                            <div class="btninvst">
+                                <a href="https://www.seedinvest.com/nowrx/series.c/?utm_source=nowrxlandingpage1&utm_medium=referral" target="_blank" class="button button-mobile buy-now w-button">
+                                    Invest Now
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1164,10 +1179,7 @@ else:
                 <div class="w-layout-grid grid-9">
                     <h2 class="h2-left">Get the NowRx <strong>Investor Deck</strong></h2>
                     <div class="form-block w-form">
-                        <!--[if lte IE 8]>
-<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
-<![endif]-->
-                        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+
                         <script>
                         hbspt.forms.create({
                             region: "na1",
@@ -1313,10 +1325,7 @@ else:
                 <div class="w-layout-grid grid-9">
                     <h2 class="h2-left">Get the NowRx <strong>Investor Deck</strong></h2>
                     <div class="form-block w-form">
-                        <!--[if lte IE 8]>
-<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
-<![endif]-->
-                        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+
                         <script>
                         hbspt.forms.create({
                             region: "na1",
