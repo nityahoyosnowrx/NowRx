@@ -564,4 +564,15 @@ $(document).ready(function() {
       }
     });
   }
+
+
+  $('.closebutton').click(function(){
+    $('section.popupform').fadeOut()
+})
+
+setTimeout(()=>{
+    $('section.popupform').fadeIn()
+},3500)
+
+
 });

@@ -6720,6 +6720,23 @@ header.main.investorhead {
 	@media screen and (max-width: 700px) {
 		padding: 0px;
 	}
+
+	@media screen and (max-width: 1280px){
+		 ul.nav li:last-child {
+			margin-top: 30px;
+		}
+	}
+
+	nav.top {
+		@media screen and (max-width: 1280px) {
+			justify-content: flex-start;
+		}
+	}
+
+
+	ul.nav a:after {
+		display: none;
+	}
 	a.main-nav-logo figure.sk {
 		margin: 0;
 		position: absolute;
@@ -6745,7 +6762,7 @@ header.main.investorhead {
 	nav.top {
 		display: flex;
 		justify-content: flex-end;
-		@media screen and (max-width: 700px) {
+		@media screen and (max-width: 1280px) {
 			justify-content: flex-start;
 		}
 	}
@@ -6754,6 +6771,17 @@ header.main.investorhead {
 			width: 100%;
 			max-width: 100vw;
 			padding: 50px 10px 10px;
+		}
+		a{
+			&:hover{
+				text-decoration: underline;
+				.tk{
+
+				}
+			}
+			.tk{
+
+			}
 		}
 	}
 	ul.nav a.button.button-nav.buy-now.w-button {
@@ -6784,6 +6812,16 @@ body#investor {
 		}
 	}
 
+	img.placeholdermobile {
+		min-height: 560px;
+		width: 100%;
+		object-fit: cover;
+		object-position: 50% 50%;
+		display: none;
+		@media screen and (max-width: 700px) {
+			display: block;
+		}
+	}
 	section#company {
 		margin: 140px 30px 0 0;
 		position: relative;
@@ -6792,8 +6830,15 @@ body#investor {
 		max-width: 1280px;
 		margin-right: auto;
 		margin-left: auto;
+		@media screen and (max-width: 700px) {
+			position: relative;
+			padding: 100px 30px 60px;
+			z-index: 12;
+			max-width: 1280px;
+			margin: 60px auto 0;
+		}
 		@media screen and (max-width: 400px) {
-			padding: 30px 20px;
+			padding: 100px 20px 60px;
 		}
 	}
 
@@ -6844,6 +6889,9 @@ body#investor {
 
 	section#company video {
 		max-width: 100%;
+		@media screen and (max-width: 700px) {
+			display: none;
+		}
 	}
 	.background-video-3 {
 		position: relative;
@@ -6854,6 +6902,8 @@ body#investor {
 		overflow: hidden;
 		z-index: 1;
 		height: 560px;
+		background-position: 90% 50%;
+    background-size: cover;
 	}
 	.w-background-video > video {
 		background-size: cover;
@@ -6938,10 +6988,14 @@ body#investor {
 	.button.buy-now {
 		display: inline-block;
 	}
-
+	.hero-buttons.button-home {
+		@media screen and (max-width: 700px) {
+			width: 100%;
+		}
+	}
 	.button.white-button {
 		margin-right: 25px;
-		padding: 15px;
+		padding: 20px 30px;
 		border-style: none;
 		border-radius: 3px;
 		background-color: #fff;
@@ -6950,27 +7004,23 @@ body#investor {
 		font-size: 14px;
 		font-weight: 600;
 		letter-spacing: 0px;
+		min-width: 300px;
 		text-transform: none;
 		@media screen and (max-width: 700px) {
-			min-width: 220px;
+			min-width: 100%;
 		}
 	}
 	.button {
 		display: inline-block;
 		padding: 15px 20px 15px 15px;
 		border-style: none;
-		border-width: 2px;
-		border-color: #5cb52c;
 		border-radius: 4px;
 		background-color: $m;
-		transition: -webkit-transform 400ms ease;
 		transition: transform 400ms ease;
-		transition: transform 400ms ease, -webkit-transform 400ms ease;
-		font-family: Montserrat, sans-serif;
 		color: #fff;
 		font-size: 14px;
 		line-height: 20px;
-		font-weight: 500;
+		font-weight: 900;
 		letter-spacing: 0px;
 		text-decoration: none;
 		text-transform: none;
@@ -7017,26 +7067,26 @@ body#investor {
 	}
 	.button {
 		display: inline-block;
-		padding: 15px 20px 15px 15px;
-		border-style: none;
-		border-width: 2px;
-		border-color: #5cb52c;
+		padding: 15px 20px ;
 		border-radius: 4px;
 		background-color: $m;
-		transition: -webkit-transform 400ms ease;
-		transition: transform 400ms ease;
-		transition: transform 400ms ease, -webkit-transform 400ms ease;
-		font-family: Montserrat, sans-serif;
+		transition: all 400ms ease;
 		color: #fff;
 		font-size: 14px;
 		line-height: 20px;
-		font-weight: 500;
+		font-weight: 900;
 		letter-spacing: 0px;
 		text-decoration: none;
 		text-transform: none;
+		font-size: 14px;
+		font-weight: 800;
+		letter-spacing: .01rem;
+
 		&:hover {
-			background-color: #444;
+			color: $f;
+			background-color: darken($color: $m, $amount: 20);
 		}
+
 		@media screen and (max-width: 700px) {
 			min-width: 220px;
 		}
@@ -7080,7 +7130,7 @@ body#investor {
 		display: -webkit-flex;
 		display: -ms-flexbox;
 		display: flex;
-		width: 657px;
+		width: 665px;
 		max-width: 100%;
 		height: 100%;
 		margin-top: 0%;
@@ -7181,6 +7231,18 @@ body#investor {
 		grid-row-gap: 16px;
 		grid-column-gap: 16px;
 	}
+	section.section.section-bottom-padding.blue-sec{
+		.w-layout-grid {
+			display: -ms-grid;
+			display: grid;
+			grid-auto-columns: 1fr;
+			grid-template-columns: 1.5fr 1fr 1fr;
+			-ms-grid-rows: auto auto;
+			grid-template-rows: auto auto;
+			grid-row-gap: 16px;
+			grid-column-gap: 16px;
+		}
+	}
 
 	.div-block-10 {
 		display: -webkit-box;
@@ -7251,18 +7313,24 @@ body#investor {
 		}
 	}
 	span.m img {
-		max-height: 30px;
+		max-height: 130px;
 		margin: 10px 0;
+		width: auto;
+		height: auto;
+		object-fit: contain;
+		object-position: center;
+		display: block;
 	}
 	.m.swiper-slide-active {
 		opacity: 1 !important;
 	}
 	span.imgs span.m {
-		display: block;
+		display: flex;
 		font-size: 2rem;
 		font-weight: bold;
 		color: #193a57a3;
-		filter: brightness(20);
+		align-items: center;
+		justify-content: center;
 		opacity: 0.1;
 		transition: all 0.3s;
 		&.highlight {
@@ -7342,7 +7410,7 @@ body#investor {
 		display: grid;
 		grid-auto-columns: 1fr;
 		-ms-grid-columns: 1fr 1fr;
-		grid-template-columns: 1.5fr 1fr 1fr;
+		grid-template-columns: 1fr 1fr ;
 		-ms-grid-rows: auto auto;
 		grid-template-rows: auto auto;
 		grid-row-gap: 16px;
@@ -7439,6 +7507,8 @@ body#investor {
 		grid-column-gap: 75px;
 		-ms-grid-rows: auto;
 		grid-template-rows: auto;
+		z-index: 12;
+		position: relative;
 	}
 	.h2-left {
 		width: 400px;
@@ -7781,6 +7851,9 @@ body#investor {
 		-webkit-align-items: center;
 		-ms-flex-align: center;
 		align-items: center;
+		img{
+			margin-right: 10px;
+		}
 	}
 
 	.invesments-list.list-full {
@@ -8250,6 +8323,11 @@ body#investor {
 		width: 100%;
 		-ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+		> img {
+			@media screen and (min-width: 1280px) {
+				display: none;
+			}
+		}
 	}
 	#w-node-_5f6c87f4-8d40-ac83-0a71-ac3837c92298-a3cc193b {
 		-ms-grid-column-span: 4;
@@ -8296,6 +8374,7 @@ body#investor {
 				font-size: 14px;
 			}
 		}
+
 	}
 
 	.year {
@@ -8335,9 +8414,16 @@ body#investor {
 	.year.deatil {
 		margin-bottom: 26px;
 		font-size: 15px;
+		min-height: 35px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		@media screen and (max-width: 700px) {
 			width: 100%;
-			margin: 0;
+    margin: 0;
+    text-align: left;
+    font-size: 12px;
+    justify-content: flex-start;
 		}
 	}
 	.div-block-9 {
@@ -8863,6 +8949,18 @@ body#investor {
 	}
 
 	.cta {
+		background-repeat: no-repeat;
+		background-position: 100% 50%;
+		&:after {
+			content: close-quote;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background: Rgb(209 16 55 / 80%);
+			z-index: 1;
+		}
 	}
 
 	.cta form {
@@ -8920,6 +9018,9 @@ body#investor {
 		font-weight: 700;
 		text-transform: uppercase;
 		-webkit-appearance: button;
+		&:hover{
+			background-color: darken($color: $m, $amount: 20);
+		}
 		@media screen and (max-width: 700px) {
 			margin: 0 0;
 			width: 100%;
@@ -9064,9 +9165,16 @@ body#investor {
 			display: flex;
 			align-items: center;
 			justify-content: center;
+			background-position: center;
+			background-size: 80% auto;
+			background-repeat: no-repeat;
+			@media screen and (min-width: 700px) {
+				background: none!important;
+			}
 			@media screen and (max-width: 700px) {
 				width: 100%;
-				padding: 30px 0;
+				padding: 30px 10px;
+				min-height: 400px;
 			}
 			video {
 				border-radius: 5px;
@@ -9074,6 +9182,9 @@ body#investor {
 				max-width: 450px;
 				margin: 0 auto;
 				padding: 0 10px;
+				@media screen and (max-width: 700px) {
+					display: none;
+				}
 			}
 		}
 		.callitem {
@@ -9095,8 +9206,6 @@ body#investor {
 		}
 		.callitem a.button.button-mobile.buy-now.w-button {
 			min-width: 310px;
-			font-size: 1rem;
-			font-weight: 700;
 			@media screen and (max-width: 700px) {
 				min-width: 210px;
 			}
@@ -9410,7 +9519,193 @@ body#investor {
 		}
 
 	}
+	.submitted-message {
+		color: #fff;
+		font-size: 0.8rem;
+		p {
+			margin: 0;
+			font-weight: bold;
+
+			letter-spacing: 0px;
+			font-size: 1rem;
+		}
+	}
+	.logo-wrapper img {
+		width: auto;
+		height: auto;
+		max-width: 100%;
+	}
+
+	.logo-wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		min-height: 110px;
+	}
+
+
 
 }
 
 // invest
+
+
+// popupform
+body#investor section.popupform,
+section.popupform {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	background: #fff;
+	padding: 40px 30px;
+	z-index: 324;
+	border-radius: 5px;
+	margin: 20px;
+	// background-image: url("https://assets.website-files.com/5d5d56675dd8937a8bcc193c/5d5ed1486e0dbce67eac23b9_hexagon.svg");
+	background-position: center;
+	background-size: cover;
+	box-shadow: 0 3px 22px 2px Rgb(0 0 0 / 15%);
+	max-width: 600px;
+	display: none;
+	@media screen and (max-width: 700px) {
+		padding: 40px 10px 10px;
+margin: 0;
+border-radius: 5px;
+box-shadow: -7px 0 23px -12px #000;
+margin: 0 5px 5px;
+	}
+
+	h2.title {
+		margin-top: 0;
+		margin-bottom: 10px;
+		color: #274c8d;
+		font-size: 1.7rem;
+		line-height: 1;
+		font-weight: 700;
+		max-width: 350px;
+		@media screen and (max-width: 700px) {
+			font-size: 1rem;
+		}
+	}
+
+	 p {
+		color: #6f6f6f;
+	}
+
+	.closebutton {
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		width: 30px;
+		height: 30px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-weight: bold;
+		cursor: pointer;
+		&:hover{
+			opacity: .3;
+		}
+	}
+
+	 label {
+		width: 1px;
+		height: 1px;
+		overflow: hidden;
+		position: absolute;
+		top: 0;
+		left: -9999px;
+	}
+
+	 form {
+		display: flex;
+		background: #fff;
+		border-radius: 30px;
+		border: 1px solid Rgb(68 68 68 / 25%);
+		padding: 10px;
+		@media screen and (max-width: 700px) {
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+			background: transparent;
+			border: none;
+		}
+	}
+
+	 form input {
+		background: #fff;
+		border: none;
+		border-radius: 0;
+		box-shadow: none;
+		margin: 0;
+		@media screen and (max-width: 700px) {
+			background: #fff;
+			border-radius: 30px;
+			text-align: center;
+			border: 1px solid Rgb(68 68 68 / 25%);
+		}
+	}
+
+	 form input.hs-button.primary.large {
+		margin: 0;
+		padding: 0;
+		border-radius: 40px;
+		padding: 0;
+		min-width: 0;
+		width: auto;
+		display: inline-flex;
+		background: #f31028;
+		padding: 10px 30px;
+		text-transform: uppercase;
+		box-shadow: none;
+		@media screen and (max-width: 700px) {
+			margin: 10px auto 0;
+		}
+	}
+
+	 form .hs_submit.hs-submit {
+		 margin: 0;
+		margin-left: auto;
+		@media screen and (max-width: 700px) {
+			margin: 0 auto;
+		}
+	}
+
+	 form .hs_type {}
+
+	 form .hs_email.hs-email {
+		margin-right: auto;
+		@media screen and (max-width: 700px) {
+			margin: 0 auto;
+			width: 100%;
+		}
+	}
+
+	ul.no-list.hs-error-msgs.inputs-list {
+		color: #444;
+	}
+
+	 label label.hs-error-msg {
+		width: auto;
+		height: auto;
+		left: 0;
+		position: relative;
+		color: #444;
+	}
+
+	 ul.no-list.hs-error-msgs.inputs-list label {
+		position: relative;
+		left: 0;
+		width: auto;
+		height: auto;
+	}
+
+	ul.no-list.hs-error-msgs.inputs-list {
+		position: absolute;
+		bottom: 2px;
+		left: 0;
+		margin: 0;
+	}
+
+}

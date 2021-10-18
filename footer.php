@@ -195,7 +195,7 @@ else:
     if(!is_page('referral')){
         if(!is_page('telehealth')){
     ?>
-<div class="calltoaction">
+<!-- <div class="calltoaction">
     <div class="container">
         <div class="content">
             <a href="<?= get_site_url(); ?>/refill-and-transfer-prescriptions"
@@ -210,7 +210,7 @@ else:
             </a>
         </div>
     </div>
-</div>
+</div> -->
 <?php
     }
 }
@@ -254,10 +254,43 @@ if (windowW > 992) {
 </script>
 <?php endif; ?>
 
+<?php // mobile meta (hooray!)
+    $cachefooter = 'd32';
+    ?>
+
 <?php if ( is_page( 'refill-and-transfer-prescriptions' ) || is_page( 'telehealth' ) || is_page('contact-us') ): ?>
 <?php else: ?>
-<script src="<?php echo get_template_directory_uri(); ?>/public/frontend-bundle.js?vcc=<?= $cachever; ?>"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/public/frontend-bundle.js?vcc='<?= $cachefooter; ?>'"></script>
 <?php endif; ?>
+
+
+<section class="popupform lozad" data-background-image="https://assets.website-files.com/5d5d56675dd8937a8bcc193c/5d5ed1486e0dbce67eac23b9_hexagon.svg">
+    <div class="content">
+        <div class="closebutton">
+            X
+        </div>
+        <h2 class="title">Get the NowRx Investor Deck</h2>
+        <p>
+            Sign up for campaign updates and learn more about the opportunity to invest in NowRx.
+        </p>
+        <div class="formcall">
+                        <script>
+                            window.addEventListener('load', function() {
+                                hbspt.forms.create({
+                                    region: "na1",
+                                    portalId: "5952677",
+                                    formId: "df2a6935-1139-426a-b373-0917788189ad"
+                                });
+                            });
+                        </script>
+        </div>
+    </div>
+</section>
+        <!--[if lte IE 8]>
+            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+        <![endif]-->
+
+        <script charset="utf-8" async defer type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
 
 <?php
 // include modals

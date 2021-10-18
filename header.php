@@ -13,18 +13,18 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title><?php wp_title(''); ?></title>
     <?php // mobile meta (hooray!)
-    $cachever = 112123111111111111111;
+    $cachever = 'de1q32123';
     ?>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Cache-control" content="public">
 
-    <link rel="stylesheet" href='<?php echo get_template_directory_uri(); ?>/public/frontend.css?vcc=<?= $cachever; ?>'>
+    <link rel="stylesheet" href='<?php echo get_template_directory_uri(); ?>/public/frontend.css?vcc="<?= $cachever; ?>"'>
     <?php
     // load script in header on these pages
     if ( is_page( 'refill-and-transfer-prescriptions' ) || is_page( 'telehealth' ) || is_page('contact-us') ): ?>
-        <script src="<?php echo get_template_directory_uri(); ?>/public/frontend-bundle.js?vcc=<?= $cachever; ?>"></script>
+        <script src="<?php echo get_template_directory_uri(); ?>/public/frontend-bundle.js?vcc='<?= $cachever; ?>'"></script>
     <?php endif; ?>
 
     <link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
@@ -88,7 +88,7 @@
                 <section class="banner">
                     <div class="container">
                         <div class="content">
-                            <a href="https://www.seedinvest.com/nowrx/series.c" target="_blank" class="link">
+                            <a href="https://www.seedinvest.com/nowrx/series.c?utm_source=nowrxlp&utm_medium=investbutton" target="_blank" class="link">
                             <span class="mk">
                             <span class="tx">
                             Invest in NowRx on SeedInvest

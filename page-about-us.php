@@ -356,7 +356,7 @@
                     Abeba Hadgu
                     </h3>
                     <div class="subtitle">
-                    pharmacist in charge – Mountain View
+                    pharmacist in charge – Mt. View
                     </div>
                     <p>
                     Abeba is a licensed pharmacist with a passion for patient care and pharmacy operations. Abeba is trained in diabetes care, medication therapy management, immunizations, and medication reconciliation. Prior to NowRx, Abeba spent over 7 years as a Pharmacy Manager and Staff Pharmacist at Rite Aid and CVS.
@@ -383,10 +383,37 @@
                     pharmacist in charge – Van Nuys
                     </div>
                     <p>
-                    Avital obtained her Doctor of Pharmacy (PharmD) from Western University of Health Sciences and a B.S. from UCLA (with honors). Avital is trained in medication therapy management, immunizations, and more. Prior to joining NowRx, Avital was manager and staff pharmacist for several pharmacies/clinics focused on a range of specialty conditions.
+                    Avital obtained her Doctor of Pharmacy (PharmD) from Western University of Health Sciences and a B.A. from UCLA (with honors). Avital is trained in medication therapy management, immunizations, and more. Prior to joining NowRx, Avital was manager and staff pharmacist for several pharmacies/clinics focused on a range of specialty conditions.
                        </p>
                 </div>
             </div>
+
+
+            <!-- profile -->
+            <div class="profile">
+                <div class="image">
+                    <figure>
+                        <picture class="lozad" data-toggle-class="active">
+                            <source media="(max-width: 992px)" srcset="<?php echo get_template_directory_uri(); ?>/images/pharmacist-for-nowrx-pharmacy-delivery-in-burlingame.webp">
+                            <source media="(min-width: 993px)" srcset="<?php echo get_template_directory_uri(); ?>/images/pharmacist-for-nowrx-pharmacy-delivery-in-burlingame.webp">
+                            <img data-src="<?php echo get_template_directory_uri(); ?>/images/pharmacist-for-nowrx-pharmacy-delivery-in-burlingame.webp" class="orbit-image lozad" height="500px" width="650px" alt="pharmacist for nowrx pharmacy delivery in van nuys">
+                        </picture>
+                    </figure>
+                </div>
+                <div class="text">
+                    <h3 class="sec-title">
+                        Tina Lui
+                    </h3>
+                    <div class="subtitle">
+                    pharmacist in charge – Burlingame
+                    </div>
+                    <p>
+                        Tina obtained her Doctor of Pharmacy (Pharm D) from the University of the Pacific in Stockton, CA. Tina is trained in diabetes and blood pressure screening as well as medication therapy management and immunizations. Prior to joining NowRx, Tina spent over 13 years as a Pharmacy Manager at Target and CVS.
+                    </p>
+                </div>
+            </div>
+
+
 
 
 
