@@ -2344,43 +2344,72 @@ h1 {
 			margin-bottom: 1rem;
 		}
 		h1 {
-			font-size: 32px;
+			font-size: 34px;
+			@media screen and (min-width: 700px) {
+				font-size: 50px;
+				line-height: 54px;
+			}
 			@media screen and (max-width: 700px) {
 				font-size: calc(30.97647px + 0.88235vw);
+				font-size: 34px;
+    line-height: 38px;
 			}
 		}
 		h2 {
-			font-size: 28px;
+			font-size: 24px;
+			@media screen and (min-width: 700px) {
+				font-size: 38px;
+				line-height: 42px;
+			}
 			@media screen and (max-width: 700px) {
 				font-size: calc(26.97647px + 0.88235vw);
+				font-size: 24px;
+				line-height: 30px;
 			}
 		}
 		h3 {
-			font-size: 24px;
+			font-size: 19px;
+			@media screen and (min-width: 700px) {
+				font-size: 26px;
+				line-height: 30px;
+			}
 			@media screen and (max-width: 700px) {
 				font-size: calc(22.97647px + 0.88235vw);
+				font-size: 20px;
+				line-height: 26px;
 			}
 		}
 		h4 {
-			font-size: 20px;
+			font-size: 17px;
+			@media screen and (min-width: 700px) {
+				font-size: 22px;
+				margin-bottom: 20px;
+				margin-top: 25px;
+			}
 			@media screen and (max-width: 700px) {
 				font-size: calc(18.97647px + 0.88235vw);
+				font-size: 18px;
+				line-height: 26px;
 			}
 		}
 		h5 {
-			font-size: 18px;
+			font-size: 17px;
 			@media screen and (max-width: 700px) {
 				font-size: calc(14.97647px + 0.88235vw);
+				font-size: 18px;
+				line-height: 26px;
 			}
 		}
 		h6 {
-			font-size: 16px;
+			font-size: 17px;
 			@media screen and (max-width: 700px) {
 				font-size: calc(14.97647px + 0.88235vw);
+				font-size: 18px;
+				line-height: 26px;
 			}
 		}
 		p {
-			// font-size: 1rem;
+			font-size: 17px;
 		}
 
 		blockquote {
@@ -2478,12 +2507,17 @@ h1 {
 	font-weight: 800;
 	line-height: 1.15;
 	letter-spacing: -0.1rem;
+    font-size: 50px;
+    line-height: 54px;
 
 	@media screen and (max-width: 700px) {
 		font-size: $font700h1;
+		font-size: 34px;
+		line-height: 38px;
 	}
 	@media screen and (max-width: 400px) {
 		font-size: $font400h1;
+
 	}
 }
 
@@ -7136,7 +7170,7 @@ body#investor {
 	section#company .text-block-24.cap strong {
 		font-weight: 700;
 		@media screen and (max-width: 700px) {
-			font-weight: 300;
+			font-weight: 400;
 		}
 	}
 
@@ -7147,10 +7181,10 @@ body#investor {
 		@media screen and (max-width: 700px) {
 			width: 100%;
 		}
-		a{
+		a {
 			width: 360px;
-    max-width: 100%;
-    min-width: 0;
+			max-width: 100%;
+			min-width: 0;
 		}
 	}
 	.button.white-button {
@@ -9738,11 +9772,11 @@ body#investor {
 			padding: 60px 20px;
 			background-size: contain;
 		}
-.btnc {
-    @media screen and (max-width: 700px) {
-		margin: 0 auto;
-	}
-}
+		.btnc {
+			@media screen and (max-width: 700px) {
+				margin: 0 auto;
+			}
+		}
 		.absolv {
 			content: close-quote;
 			position: absolute;
@@ -9784,7 +9818,7 @@ body#investor {
 			position: absolute;
 			top: 60px;
 			right: 150px;
-			max-width: 450px;
+			max-width: 455px;
 			justify-content: flex-end;
 			align-items: flex-start;
 			p {
@@ -9966,12 +10000,12 @@ body#investor {
 					z-index: 4;
 				}
 				@media screen and (max-width: 400px) {
-				    max-width: 160px;
-    max-height: 160px;
-    border-radius: 50%;
-    top: 190px;
-    left: 120px;
-    z-index: 4;
+					max-width: 160px;
+					max-height: 160px;
+					border-radius: 50%;
+					top: 190px;
+					left: 120px;
+					z-index: 4;
 				}
 				.priceop {
 					font-size: 2.3rem;
@@ -10001,12 +10035,12 @@ body#investor {
 					z-index: 4;
 				}
 				@media screen and (max-width: 400px) {
-				    max-width: 140px;
-    max-height: 140px;
-    border-radius: 50%;
-    top: 330px;
-    left: 25px;
-    z-index: 4;
+					max-width: 140px;
+					max-height: 140px;
+					border-radius: 50%;
+					top: 330px;
+					left: 25px;
+					z-index: 4;
 				}
 				.priceop {
 					font-size: 1.8rem;
@@ -10038,12 +10072,12 @@ body#investor {
 					z-index: 4;
 				}
 				@media screen and (max-width: 400px) {
-				    max-width: 80px;
-    max-height: 80px;
-    border-radius: 50%;
-    top: 450px;
-    left: 150px;
-    z-index: 4;
+					max-width: 80px;
+					max-height: 80px;
+					border-radius: 50%;
+					top: 450px;
+					left: 150px;
+					z-index: 4;
 				}
 				.logo {
 					margin: 0;

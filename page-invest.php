@@ -23,7 +23,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Cache-control" content="public">
 
-    <link rel="stylesheet" href='<?php echo get_template_directory_uri(); ?>/public/frontend.css?vc="1c131de1s11111131121d"'>
+    <link rel="stylesheet" href='<?php echo get_template_directory_uri(); ?>/public/frontend.css?vc="vc1111212"'>
 
 
     <link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
@@ -202,7 +202,7 @@ jQuery.event.special.mousewheel = {
 
             setTimeout(()=>{
                 $('section.popupform').fadeIn()
-            },3500)
+            },7000)
             activeMenu = false;
             $("header.main ul.nav li a").on('click', function(e) {
                 $('nav.top').removeClass('active-menu');
@@ -368,9 +368,12 @@ else:
                 <div class="container container-main">
                     <div class="heading">
 
-                        <h1 class="h1">Disrupting the <strong>$480B </strong><span class="text-span-10">Retail
-                                Pharmacy Industry</span></h1>
-                        <div class="text-block-24 cap"><strong>With Free Same Day Pharmacy Delivery & Telehealth</strong></div>
+                        <h1 class="h1">
+                            Disrupting the <strong>$480B</strong> Retail Pharmacy Industry
+                        </h1>
+                        <div class="text-block-24 cap">
+                            <strong>WITH FREE SAME DAY DELIVERY AND AMAZING SERVICE</strong>
+                        </div>
 
                         <div class="btnfig">
                         <div class="hero-buttons button-home">
@@ -491,7 +494,7 @@ else:
             <div class="absolv lozad" data-background-image="https://assets.website-files.com/5d5d56675dd8937a8bcc193c/5d5da44fcc16e1ccac834a8f_pill.svg"></div>
                 <div class="container">
                 <span class="desc">
-                *Based on data from <a href="https://www.macrotrends.net/" target="_blank">macrotrends.net</a>, <a href="https://www.spglobal.com/en/" target="_blank">spglobal.com</a>, and  <a href="https://www.seedinvest.com/case-studies">SeedInvestPast</a>. Past performance is no guarantee of future results.</span>
+                *Based on data from <a href="https://www.macrotrends.net/" target="_blank">macrotrends.net</a>, <a href="https://www.spglobal.com/en/" target="_blank">spglobal.com</a>, and  <a href="https://www.seedinvest.com/" target="_blank">SeedInvest</a>. Past performance is no guarantee of future results.</span>
 
                     <div class="stockticker">
 

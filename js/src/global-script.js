@@ -572,7 +572,7 @@ $(document).ready(function() {
 
 setTimeout(()=>{
     $('section.popupform').fadeIn()
-},3500)
+},7000)
 
 
 });
