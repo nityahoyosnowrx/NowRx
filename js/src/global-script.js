@@ -357,22 +357,22 @@ function highlight(items, index) {
 
 
 
-var dialogShown = localStorage.getItem('popUp');
+// var dialogShown = localStorage.getItem('popUp');
 
-if (!dialogShown) {
-  $(document).ready(function() {
-    setTimeout(function() {
-      $('section.popblog')
-        .css('display', 'flex')
-        .hide()
-        .fadeIn();
-    }, 30000);
+// if (!dialogShown) {
+//   $(document).ready(function() {
+//     setTimeout(function() {
+//       $('section.popblog')
+//         .css('display', 'flex')
+//         .hide()
+//         .fadeIn();
+//     }, 30000);
 
-    localStorage.setItem('popUp', 1);
-  });
-} else {
-  $('#dialog1').hide();
-}
+//     localStorage.setItem('popUp', 1);
+//   });
+// } else {
+//   $('#dialog1').hide();
+// }
 
 
 

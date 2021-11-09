@@ -13,7 +13,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title><?php wp_title(''); ?></title>
     <?php // mobile meta (hooray!)
-    $cachever = 'de1q32123';
+    $cachever = 'de1q11231321231';
     ?>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
@@ -85,7 +85,8 @@
 
 <body <?php body_class(); ?>>
     <header class="main" role="banner" itemscope itemtype="http://schema.org/WPHeader">
-                <section class="banner">
+                    <?php if(!is_page('nowprep')): ?>
+                        <section class="banner">
                     <div class="container">
                         <div class="content">
                             <a href="https://www.seedinvest.com/nowrx/series.c?utm_source=nowrxlp&utm_medium=investbutton" target="_blank" class="link">
@@ -102,6 +103,9 @@
                         </div>
                     </div>
                 </section>
+
+                <?php endif; ?>
+
         <div class="container">
             <div class="content">
                 <div class="rlcontainer">

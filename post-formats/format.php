@@ -3,9 +3,9 @@
 
     <header class="article-header entry-header">
 
-        <div class="post-cat">
+    <div class="post-cat">
             <?php $categories = get_the_category();
-   if ( !empty( $categories ) ) { ?>
+            if ( !empty( $categories ) ) { ?>
             <a href="<?php echo esc_url( get_category_link( $categories[0]->term_id ) );?>/"
                 class="ArticleHeader-eyebrow"><?php echo esc_html( $categories[0]->name ); ?></a>
             <?php } ?>
@@ -15,113 +15,75 @@
             <?php the_title(); ?>
         </h1>
 
+        <div class="article-time">
+                        <time data-testid="published-timestamp">
+                            Published <?php echo get_the_date( 'D, M d Y - h:i a' ); ?>
+                        </time>
+                    </div>
+
+
+        <?php $author_id = get_the_author_meta( 'ID' ); ?>
+
+
+        <div class="articleheader-container">
+
+            <div class="author-info">
+
+                <span>
+                    <?php if(get_field( "author_image" )): ?>
+                    <div class="author-portrait" title="<?php if(get_field( "author_name" )): ?>
+                        <?php echo get_field( "author_name" ); ?>
+                        <?php else: ?>
+                        <?php echo get_the_author_meta( 'nickname', $author_id ); ?>
+                        <?php endif; ?>" style="background-image: url(<?php echo get_field( "author_image" ); ?>);"></div>
+                                    <?php else: ?>
+                                    <div class="author-portrait" title="<?php if(get_field( "author_name" )): ?>
+                        <?php echo get_field( "author_name" ); ?>
+                        <?php else: ?>
+                        <?php echo get_the_author_meta( 'nickname', $author_id ); ?>
+                        <?php endif; ?>"
+                        style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/phil.webp');">
+                    </div>
+                    <?php endif; ?>
+                </span>
+
+
+                <div class="author-box">
+                    <span href="#" class="author-name">
+                        <?php if(get_field( "author_name" )): ?>
+                        <?php echo get_field( "author_name" ); ?>
+                        <?php else: ?>
+                        <?php echo get_the_author_meta( 'nickname', $author_id ); ?>
+                        <?php endif; ?>
+
+                    </span>
+
+                    <?php if(get_field( "author_meta" )): ?>
+                    <span class="author-twitter" target="_blank">
+                        <?php echo get_field( "author_meta" ); ?>
+                    </span>
+                    <?php else: ?>
+                    <a href="mailto:<?php echo get_the_author_meta( 'email', $author_id ); ?>"
+                        class="author-twitter" target="_blank">
+                        <?php echo get_the_author_meta( 'email', $author_id ); ?>
+                    </a>
+                    <?php endif; ?>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+
     </header>
     <?php // end article header ?>
 
 
     <div class="blog-content">
-        <div class="article-data">
-            <div class="article-time">
-                <time data-testid="published-timestamp">
-                    Published <?php echo get_the_date( 'D, M d Y - h:i a' ); ?>
-                </time>
-            </div>
 
-            <?php $author_id = get_the_author_meta( 'ID' ); ?>
-
-
-            <div class="articleheader-container">
-
-                <div class="author-info">
-                    <span>
-                        <?php if(get_field( "author_image" )): ?>
-                        <div class="author-portrait" title="<?php if(get_field( "author_name" )): ?>
-                            <?php echo get_field( "author_name" ); ?>
-                            <?php else: ?>
-                            <?php echo get_the_author_meta( 'nickname', $author_id ); ?>
-                            <?php endif; ?>" style="background-image: url(<?php echo get_field( "author_image" ); ?>);"></div>
-                                        <?php else: ?>
-                                        <div class="author-portrait" title="<?php if(get_field( "author_name" )): ?>
-                            <?php echo get_field( "author_name" ); ?>
-                            <?php else: ?>
-                            <?php echo get_the_author_meta( 'nickname', $author_id ); ?>
-                            <?php endif; ?>"
-                            style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/phil.webp');">
-                        </div>
-                        <?php endif; ?>
-
-                    </span>
-
-
-                    <div class="author-box">
-
-                        <span href="#" class="author-name">
-                            <?php if(get_field( "author_name" )): ?>
-                            <?php echo get_field( "author_name" ); ?>
-                            <?php else: ?>
-                            <?php echo get_the_author_meta( 'nickname', $author_id ); ?>
-                            <?php endif; ?>
-
-                        </span>
-
-                        <?php if(get_field( "author_meta" )): ?>
-                        <span class="author-twitter" target="_blank">
-                            <?php echo get_field( "author_meta" ); ?>
-                        </span>
-                        <?php else: ?>
-                        <a href="mailto:<?php echo get_the_author_meta( 'email', $author_id ); ?>"
-                            class="author-twitter" target="_blank">
-                            <?php echo get_the_author_meta( 'email', $author_id ); ?>
-                        </a>
-                        <?php endif; ?>
-
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <?php global $wp; ?>
-
-            <div class="share-to">
-
-                <span class="title">Share with friends:</span>
-
-                <div class="social-icons">
-                    <!-- twitter -->
-                    <a target="_blank"
-                        href="http://twitter.com/share?text=Check out this post <?php echo get_the_title(); ?>&url=<?php echo get_permalink(); ?>&hashtags=nowrx,pharmacy,blog"
-                        class="social-a">
-                        <img class="lozad" data-src="<?php echo get_template_directory_uri(); ?>/images/twitter.svg" alt="">
-                    </a>
-                    <!-- facebook -->
-                    <a href="https://www.facebook.com/share.php?u=<?php echo get_permalink(); ?>&title=<?php echo get_the_title(); ?>"
-                        class="social-a">
-
-                        <img class="lozad" data-src="<?php echo get_template_directory_uri(); ?>/images/facebook.svg" alt="">
-                    </a>
-                    <!-- linkedin -->
-                    <a href="https://www.linkedin.com/shareArticle?mini=true&url=<?php echo get_permalink(); ?>&title=<?php echo get_the_title(); ?>"
-                        class="social-a">
-
-                        <img class="lozad" data-src="<?php echo get_template_directory_uri(); ?>/images/linkedin.svg" alt="">
-                    </a>
-
-                    <!-- email -->
-                    <a href="mailto:?subject=I wanted you to see this post <?php echo get_the_title(); ?> &amp;body=Find at it at <?php echo get_permalink(); ?>."
-                        title="Share by Email" class="social-a">
-                        <img class="lozad" data-src="<?php echo get_template_directory_uri(); ?>/images/email.svg" alt="">
-                    </a>
-
-                </div>
-            </div>
-            <!-- social icons -->
-
-            <div class="line-item"></div>
-
-        </div>
 
         <!-- key points -->
         <?php

@@ -78,23 +78,15 @@ a.ArticleHeader-eyebrow {
 // Post Date
 
 .article-time {
-	margin-right: 30px;
-	font-weight: 600;
-	color: #747474;
-	font-size: 10px;
-	letter-spacing: 1.2px;
-	text-transform: uppercase;
-	margin-bottom: 10px;
-	width: 100%;
-	white-space: normal;
+    white-space: normal;
+    font-weight: 600;
+    font-size: 10px;
+    width: 100%;
+	margin: 0px 0 20px;
+
 	time {
-		margin-right: 30px;
 		font-weight: 600;
-		color: #747474;
 		font-size: 10px;
-		letter-spacing: 1.2px;
-		text-transform: uppercase;
-		margin-bottom: 17px;
 		width: 100%;
 		white-space: normal;
 		font-size: 12px;
@@ -168,7 +160,8 @@ a.ArticleHeader-eyebrow {
 		display: none;
 	}
 	img {
-		border-radius: 0 15px;
+		border-radius: 5px;
+		width: 100%;
 	}
 	figcaption {
 		font-weight: 400;
@@ -251,8 +244,8 @@ a.ArticleHeader-eyebrow {
 
 		background: #fff;
 		padding: 30px;
-		box-shadow: 0 30px 60px rgba(0, 0, 0, 0.05);
-		border-radius: 10px;
+		// box-shadow: 0 30px 60px rgba(0, 0, 0, 0.05);
+		border-radius: 5px;
 		padding: 30px;
 		background: hsl(0deg, 0%, 100%);
 
@@ -281,7 +274,7 @@ a.ArticleHeader-eyebrow {
 		padding: 0;
 		max-width: 100%;
 		display: flex;
-		flex-direction: column-reverse;
+		flex-direction: column;
 	}
 }
 
@@ -292,6 +285,14 @@ li.MostPopular-addIndex {
 	margin: 0 0 20px;
 	align-items: flex-start;
 	justify-content: flex-start;
+	flex-direction: column;
+    background-color: #eaf0f6;
+    border-radius: 5px;
+	overflow: hidden;
+    padding: 0;
+    margin: 0 0 10px;
+    transition: box-shadow .15s ease-in-out,transform .15s ease-in-out,-webkit-transform .15s ease-in-out;
+
 	@media screen and (max-width: 992px) {
 		max-width: 50%;
 		padding: 0 20px 20px;
@@ -303,6 +304,38 @@ li.MostPopular-addIndex {
 		padding: 0 0px 0px;
 		width: 100%;
 	}
+
+	.clk {
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		margin: auto 0 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		padding: 0 10px 10px;
+	}
+
+	.data {
+		font-size: .75rem;
+		font-weight: 500;
+		color: #33475b;
+	}
+
+	.wd {
+		font-size: .75rem;
+		font-weight: 500;
+		color: #33475b;
+		margin-left: 10px;
+	}
+
+	.wd a {
+		font-size: .75rem;
+		font-weight: 500;
+		color: #33475b;
+		font-weight: 600;
+	}
 }
 
 .MostPopular-divider {
@@ -311,6 +344,7 @@ li.MostPopular-addIndex {
 	background: #038ed8;
 	flex: 0 0 100%;
 	margin: 20px 0 0;
+	display: none;
 	@media screen and (max-width: 992px) {
 		display: none;
 	}
@@ -318,12 +352,15 @@ li.MostPopular-addIndex {
 
 li.MostPopular-addIndex {
 	a.MostPopular-link {
-		width: 50%;
+		width: 100%;
 		display: block;
 		font-size: 14px;
 		color: #444;
 		font-weight: 900;
 		line-height: 20px;
+		font-size: .8125rem;
+		margin: 0 0 5px;
+		color: #33475b;
 
 		@media screen and (max-width: 992px) {
 			width: 100%;
@@ -343,7 +380,8 @@ li.MostPopular-addIndex {
 		}
 	}
 	a.MostPopular-link.title {
-		padding: 0 20px;
+		padding: 0 ;
+		padding: 10px 10px 0;
 	}
 	a.MostPopular-link {
 		span.posthumb {
@@ -352,7 +390,7 @@ li.MostPopular-addIndex {
 			padding-top: 56.25%;
 			position: relative;
 			display: block;
-			border-radius: 0 15px;
+			border-radius: 0 ;
 			overflow: hidden;
 			padding-right: 20px;
 		}
@@ -380,17 +418,16 @@ li.MostPopular-addIndex {
 }
 
 .MostPopular-header {
-	font-weight: 800;
-	border-top: 3px solid #cfd8e2;
-	font-size: 18px;
-	line-height: 19px;
-	letter-spacing: 0.03em;
-	text-transform: uppercase;
-	display: inline-block;
-	padding-top: 10px;
-	margin-bottom: 18px;
-	color: #002f6c;
-	width: 100%;
+    color: #fff;
+    background: #038ed8;
+    font-size: .9rem;
+    display: block;
+    letter-spacing: .025rem;
+    padding: 15px 10px;
+    margin: 0 0 1rem;
+    font-weight: 700;
+    border-radius: 5px;
+    width: 100%;
 	@media screen and (max-width: 992px) {
 		text-align: center;
 		padding-top: 20px;
@@ -3759,8 +3796,9 @@ div#for-doctors-learnmore h2.title {
 	.description {
 		margin: 10px 0 50px;
 		// width: 100%;
-		@media screen and (max-width: 992px) {
+		@media screen and (max-width: 700px) {
 			margin: 10px 0;
+			display: none;
 		}
 	}
 	.form-content {
@@ -3799,8 +3837,12 @@ div#for-doctors-learnmore h2.title {
 		flex-direction: column;
 		// min-height: 800px;
 		@media screen and (max-width: 1050px) {
-			width: 100%;
-			padding: 30px 10px 60px;
+		    width: 100%;
+            padding: 30px 10px 60px;
+            display: flex;
+            min-height: 100vh;
+            align-items: center;
+            justify-content: center;
 		}
 	}
 

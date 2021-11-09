@@ -85,7 +85,72 @@ $yoast_desc = get_post_meta( $id, '_yoast_wpseo_metadesc', true );
 
 
                     <div class="sidebar-articles">
+                        <div class="sidebarauthor">
+                        <div class="article-data">
 
+
+
+
+
+
+            <?php global $wp; ?>
+
+            <div class="share-to">
+
+                <span class="title">Share with friends:</span>
+
+                <div class="social-icons">
+                    <!-- twitter -->
+                    <a target="_blank"
+                        href="http://twitter.com/share?text=Check out this post <?php echo get_the_title(); ?>&url=<?php echo get_permalink(); ?>&hashtags=nowrx,pharmacy,blog"
+                        class="social-a">
+                        <img class="lozad" data-src="<?php echo get_template_directory_uri(); ?>/images/twitter.svg" alt="">
+                    </a>
+                    <!-- facebook -->
+                    <a href="https://www.facebook.com/share.php?u=<?php echo get_permalink(); ?>&title=<?php echo get_the_title(); ?>"
+                        class="social-a">
+
+                        <img class="lozad" data-src="<?php echo get_template_directory_uri(); ?>/images/facebook.svg" alt="">
+                    </a>
+                    <!-- linkedin -->
+                    <a href="https://www.linkedin.com/shareArticle?mini=true&url=<?php echo get_permalink(); ?>&title=<?php echo get_the_title(); ?>"
+                        class="social-a">
+
+                        <img class="lozad" data-src="<?php echo get_template_directory_uri(); ?>/images/linkedin.svg" alt="">
+                    </a>
+
+                    <!-- email -->
+                    <a href="mailto:?subject=I wanted you to see this post <?php echo get_the_title(); ?> &amp;body=Find at it at <?php echo get_permalink(); ?>."
+                        title="Share by Email" class="social-a">
+                        <img class="lozad" data-src="<?php echo get_template_directory_uri(); ?>/images/email.svg" alt="">
+                    </a>
+
+                </div>
+            </div>
+            <!-- social icons -->
+
+            <div class="line-item"></div>
+
+        </div>
+                        </div>
+                        <div class="banner-call">
+                            <!-- <div class="subtitle"></div> -->
+                            <h3 class="title">Subscribe via Email</h3>
+                            <div class="formblog">
+                                 <!--[if lte IE 8]>
+<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+<![endif]-->
+<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+                            <script>
+                            hbspt.forms.create({
+                            region: "na1",
+                            portalId: "5952677",
+                            formId: "743c3ddd-5ba0-4dd9-9c25-dd8c8c328c80",
+                            formInstanceId: "2fef",
+                            });
+                            </script>
+                            </div>
+                        </div>
                         <div class="MostPopular-wrapper MostPopular-taboolaContainer">
                             <div class="MostPopular-header">
                                 Trending Now
@@ -137,7 +202,21 @@ $yoast_desc = get_post_meta( $id, '_yoast_wpseo_metadesc', true );
                                             <?php the_title(); ?>
                                         </a>
 
-                                        <div class="MostPopular-divider"></div>
+                                        <div class="clk">
+                                            <div class="data">
+                                                <a href="<?php the_permalink(); ?>/" class="readlink">
+                                                    <?php echo get_the_date('F j Y ');   ?>
+                                                </a>
+                                            </div>
+
+                                            <div class="content">
+                                                <div class="wd">
+                                                    <a href="<?php the_permalink(); ?>/" class="readmore">Read More</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- <div class="MostPopular-divider"></div> -->
 
                                     </li>
 
@@ -156,15 +235,7 @@ $yoast_desc = get_post_meta( $id, '_yoast_wpseo_metadesc', true );
                             </div>
                         </div>
 
-                        <div class="banner-call">
-                            <!-- <div class="subtitle"></div> -->
-                            <h3 class="title">Get Free Same Day Pharmacy Delivery</h3>
-                            <div class="btn-container">
-                                <a href="<?= get_site_url(); ?>/" class="rx-btn rx-dg">
-                                Learn More
-                                </a>
-                            </div>
-                        </div>
+
 
                     </div>
 

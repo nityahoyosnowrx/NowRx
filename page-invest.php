@@ -23,7 +23,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Cache-control" content="public">
 
-    <link rel="stylesheet" href='<?php echo get_template_directory_uri(); ?>/public/frontend.css?vc="vc1111212"'>
+    <link rel="stylesheet" href='<?php echo get_template_directory_uri(); ?>/public/frontend.css?vc="vc11112112"'>
 
 
     <link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
@@ -202,7 +202,7 @@ jQuery.event.special.mousewheel = {
 
             setTimeout(()=>{
                 $('section.popupform').fadeIn()
-            },7000)
+            },5000)
             activeMenu = false;
             $("header.main ul.nav li a").on('click', function(e) {
                 $('nav.top').removeClass('active-menu');
@@ -254,10 +254,36 @@ jQuery.event.special.mousewheel = {
     <meta name="p:domain_verify" content="3f36cac4340da88df6ca76c1a431cd53" />
     <meta name="facebook-domain-verification" content="51y4k3ncdot6d21810cxa2yfje7xzg" />
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117353738-1"> </script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    // gtag('config', 'UA-117353738-1');
+    gtag('config', 'AW-875503484');
+  </script>
+
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5LWZKR7');</script>
+<!-- End Google Tag Manager -->
+
 </head>
 
 <body <?php body_class(); ?> id="investor">
-
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5LWZKR7"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
     <header class="main investorhead" role="banner" itemscope itemtype="http://schema.org/WPHeader">
         <div class="psedo"></div>
         <div class="container">
@@ -394,7 +420,7 @@ else:
                 </div>
                 <div class="main-image">
                     <div role="img" aria-label="pharmacy tech robotics that make nowrx startup stock to watch" class="background-video-3 lozad w-background-video w-background-video-atom lozad">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/top-investment-nowrx-pharmacy-pills.webp" width="400px" height="530px" alt="pharmacy tech robotics that make nowrx startup stock to watch" class="placeholdermobile lozad">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/tech-high-growth-startup-nowrx-pharmacy-robot.webp" width="400px" height="530px" alt="tech high growth startup nowrx pharmacy robot" class="placeholdermobile lozad">
                         <video autoplay="" loop="" class="lozad" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
                             <source data-src="https://assets.website-files.com/5d5d56675dd8937a8bcc193c/5da9eb01c17e28894c3e7f65_mediaio_NowRx_1-transcode.mp4"
                                 data-wf-ignore="true">
@@ -619,6 +645,7 @@ else:
                                 hbspt.forms.create({
                                     region: "na1",
                                     portalId: "5952677",
+                                    formInstanceId: "1",
                                     formId: "df2a6935-1139-426a-b373-0917788189ad"
                                 });
                             });
@@ -909,6 +936,7 @@ else:
                                 hbspt.forms.create({
                                     region: "na1",
                                     portalId: "5952677",
+                                    formInstanceId: "2",
                                     formId: "df2a6935-1139-426a-b373-0917788189ad"
                                 });
                             });
@@ -1293,6 +1321,7 @@ else:
                                 hbspt.forms.create({
                                     region: "na1",
                                     portalId: "5952677",
+                                    formInstanceId: "3",
                                     formId: "df2a6935-1139-426a-b373-0917788189ad"
                                 });
                             });
@@ -1441,6 +1470,7 @@ else:
                                 hbspt.forms.create({
                                     region: "na1",
                                     portalId: "5952677",
+                                    formInstanceId: "4",
                                     formId: "df2a6935-1139-426a-b373-0917788189ad"
                                 });
                             });
@@ -1467,6 +1497,7 @@ else:
                                 hbspt.forms.create({
                                     region: "na1",
                                     portalId: "5952677",
+                                    formInstanceId: "5",
                                     formId: "df2a6935-1139-426a-b373-0917788189ad"
                                 });
                             });
@@ -1556,22 +1587,6 @@ else:
 
 
 
-<?php if ( is_page(925 ) ||is_page(1410)): ?>
-<?php else: ?>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117353738-1"> </script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-
-    // gtag('config', 'UA-117353738-1');
-    gtag('config', 'AW-875503484');
-  </script>
-<?php endif; ?>
 
 
 
@@ -1657,17 +1672,7 @@ return false;
 </script>
 
 
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5LWZKR7"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-5LWZKR7');</script>
-<!-- End Google Tag Manager -->
+
 
     <script async type=“text/javascript”  src=“https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=HcMd6f”></script>
 
@@ -1744,7 +1749,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     'https://connect.facebook.net/en_US/fbevents.js');
     fbq('init', '436318323245107');
     fbq('track', 'PageView');
-    }, 3000);
+    }, 5000);
     </script>
     <noscript><img height="1" width="1" style="display:none"
     src="https://www.facebook.com/tr?id=436318323245107&ev=PageView&noscript=1"

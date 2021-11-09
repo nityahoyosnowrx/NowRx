@@ -85,7 +85,8 @@ else:
         </div>
     </div>
 </footer>
-<?php if(is_single()): ?>
+<?php if(false): ?>
+
 <section class="popblog">
     <div class="container">
         <div class="closeicon">
@@ -263,6 +264,7 @@ if (windowW > 992) {
 <script src="<?php echo get_template_directory_uri(); ?>/public/frontend-bundle.js?vcc='<?= $cachefooter; ?>'"></script>
 <?php endif; ?>
 
+<?php if(!is_page('nowprep')): ?>
 
 <section class="popupform lozad" data-background-image="https://assets.website-files.com/5d5d56675dd8937a8bcc193c/5d5ed1486e0dbce67eac23b9_hexagon.svg">
     <div class="content">
@@ -286,6 +288,8 @@ if (windowW > 992) {
         </div>
     </div>
 </section>
+
+<?php endif; ?>
         <!--[if lte IE 8]>
             <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
         <![endif]-->
