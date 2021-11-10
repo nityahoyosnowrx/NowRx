@@ -50,6 +50,7 @@
 
                 <div class="author-box">
                     <span href="#" class="author-name">
+                        Written by
                         <?php if(get_field( "author_name" )): ?>
                         <?php echo get_field( "author_name" ); ?>
                         <?php else: ?>

@@ -13,7 +13,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title><?php wp_title(''); ?></title>
     <?php // mobile meta (hooray!)
-    $cachever = 'de1q11231321231';
+    $cachever = 'de1q11233113221231';
     ?>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">

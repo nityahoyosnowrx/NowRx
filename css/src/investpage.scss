@@ -241,12 +241,12 @@ body#investor {
 		margin-left: auto;
 		@media screen and (max-width: 700px) {
 			position: relative;
-			padding: 80px 30px 30px;
+			padding: 50px 30px 30px;
 			max-width: 1280px;
 			margin: 60px auto 0;
 		}
 		@media screen and (max-width: 400px) {
-			padding: 80px 20px 30px;
+			padding: 50px 20px 30px;
 		}
 		.btnfig {
 			@media screen and (max-width: 700px) {
@@ -452,8 +452,113 @@ body#investor {
 			width: 360px;
 			max-width: 100%;
 			min-width: 0;
+			margin-bottom: 0;
 		}
 	}
+
+	.mfp-wrap {
+		z-index: 1241231234123;
+	}
+
+	.mfp-bg {
+		z-index: 124124;
+	}
+
+
+
+	.hero-buttons.button-home {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		align-content: center;
+		flex-wrap: nowrap;
+		flex-direction: row;
+		margin-bottom: 12px;
+		@media screen and (max-width: 700px) {
+			align-items: flex-start;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		}
+		a.button.white-button.buy-now.w-button {
+			@media screen and (min-width: 700px) {
+				width: 210px;
+			}
+			@media screen and (max-width: 700px) {
+				margin: 0;
+			}
+
+		}
+		.investmentplay {
+				margin-left: 20px;
+				@media screen and (max-width: 700px) {
+					margin: 30px 0 0;
+				}
+			a.popup-youtube{
+				min-width: 0;
+				margin-bottom: 0;
+				display: flex;
+				align-items: center;
+				width: auto;
+				@media screen and (max-width: 992px) {
+					display: flex;
+					align-items: center;
+					margin: 0;
+					flex-direction: row;
+					justify-content: center;
+				}
+
+					.ico{
+						width: 60px;
+					height: 60px;
+					background: #f31028;
+					border-radius: 50%;
+					padding: 15px;
+					fill: #fff;
+					cursor: pointer;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					transition: all .3s;
+					@media screen and (max-width: 992px) {
+						width: 50px;
+					height: 50px;
+					}
+					svg{
+						width: 30px;
+					height: 30px;
+					}
+					svg#Capa_1 {
+						max-width: 25px;
+					}
+				}
+
+				span.wv {
+					color: #fff;
+					font-weight: bold;
+					margin-left: .9rem;
+					@media screen and (max-width: 700px) {
+						color: #fff;
+						font-weight: 700;
+						margin-left: 10px;
+						font-size: 1.3rem;
+					}
+
+				}
+				&:hover{
+					.ico{
+						background-color: $m;
+					}
+					.wv{
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+	}
+
+
+
 	.button.white-button {
 		margin-right: 25px;
 		padding: 20px 30px;

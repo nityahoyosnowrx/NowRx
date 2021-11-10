@@ -157,17 +157,17 @@
 
 
                         <!--[if lte IE 8]>
-<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
-<![endif]-->
-<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-<script>
-hbspt.forms.create({
-region: "na1",
-portalId: "5952677",
-formId: "743c3ddd-5ba0-4dd9-9c25-dd8c8c328c80",
-formInstanceId: "2fef",
-});
-</script>
+                        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+                        <![endif]-->
+                        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+                        <script>
+                        hbspt.forms.create({
+                        region: "na1",
+                        portalId: "5952677",
+                        formId: "743c3ddd-5ba0-4dd9-9c25-dd8c8c328c80",
+                        formInstanceId: "2fef",
+                        });
+                        </script>
                     </div>
                 </div>
         </div>
