@@ -128,7 +128,7 @@ include('section-companies.php'); ?>
                             data-src="<?php echo get_template_directory_uri(); ?>/images/prescription-delivery-confirmed-icon.webp"
                             alt="prescription delivery confirmed icon" class="pic lozad ">
                     </div>
-                    <h3 class="padding-bottom-3">2. Complete an HIV Test</h3>
+                    <h3 class="padding-bottom-3">2. Complete a PrEP Lab Test</h3>
 
                     <p class="txtcenter">
                     Upload a recent test result or our prescriber will work with you to set up an in person lab test at a nearby facility.
@@ -1467,7 +1467,7 @@ To maximize the effectiveness of the PrEP pill you should take the medication as
 <section class="nowprepnews">
     <div class="container">
         <div class="content">
-            <h2 class="sec-title">Learn More About PrEP</h2>
+            <h2 class="sec-title">Learn More About HIV PrEP</h2>
 
             <div class="contentslider">
                 <!-- Slider main container -->
