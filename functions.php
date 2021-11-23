@@ -847,3 +847,4 @@ function create_resource_category() {
   ));
 
 }
+

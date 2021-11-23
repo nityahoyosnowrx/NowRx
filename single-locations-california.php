@@ -79,7 +79,7 @@ get_header();
                         </div>
                         <!-- item -->
                         <div class="location-item">
-                            <?= get_site_url(); ?>/locations/california/burlingame/">
+                            <a href="<?= get_site_url(); ?>/locations/california/burlingame/">
                                 <h2 class="sec-title">Burlingame, CA</h2>
 
                             </a>

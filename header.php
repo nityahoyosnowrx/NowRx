@@ -13,7 +13,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title><?php wp_title(''); ?></title>
     <?php // mobile meta (hooray!)
-    $cachever = 'de1q112331113221231';
+    $cachever = 'vcach2311111111412';
     ?>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
@@ -85,26 +85,26 @@
 
 <body <?php body_class(); ?>>
     <header class="main" role="banner" itemscope itemtype="http://schema.org/WPHeader">
-                    <?php if(!is_page('nowprep')): ?>
-                        <section class="banner">
-                    <div class="container">
-                        <div class="content">
-                            <a href="https://www.seedinvest.com/nowrx/series.c?utm_source=nowrxlp&utm_medium=investbutton" target="_blank" class="link">
+
+        <?php if(!is_page('nowprep')): ?>
+            <section class="banner">
+                <div class="container">
+                    <div class="content">
+                        <a href="https://nowrx.com/invest/" target="_blank" class="link">
                             <span class="mk">
-                            <span class="tx">
-                            Invest in NowRx on SeedInvest
-                            </span>
-                            <div class="small">*Limited Availability</div>
+                                <span class="tx">
+                                    Invest in NowRx
+                                </span>
+                                <div class="small">*Limited Availability</div>
                             </span>
                             <span class="btn">
                                 Learn More
                             </span>
-                            </a>
-                        </div>
+                        </a>
                     </div>
-                </section>
-
-                <?php endif; ?>
+                </div>
+            </section>
+        <?php endif; ?>
 
         <div class="container">
             <div class="content">

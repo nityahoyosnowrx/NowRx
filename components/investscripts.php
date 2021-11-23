@@ -83,7 +83,7 @@ jQuery.event.special.mousewheel = {
     setTimeout(() => {
         let cnko = new Swiper('.cnko', {
                 // Optional parameters
-                direction: 'vertical',
+                direction: 'horizontal',
                 slidesPerView: 4,
                 loop: true,
                 centeredSlides: true,
@@ -223,6 +223,39 @@ jQuery.event.special.mousewheel = {
                 fixedContentPos: false
             });
         });
+
+        $(document).ready(function() {
+
+            $('.deskplauft').on('click',function(){
+                $('.deskplauft').fadeOut();
+                $('#lvc').get(0).play()
+
+                $('#lvc').attr("controls",true)
+            });
+
+            $('#lvc').hover(function toggleControls() {
+                // if (this.hasAttribute("controls")) {
+                //     this.removeAttribute("controls")
+                // } else {
+                //     this.setAttribute("controls", "controls")
+                // }
+            })
+
+            $('.mobileplauft').on('click',function(){
+                $('.mobileplauft').fadeOut();
+                $('#mobilelvc').get(0).play()
+            });
+
+            $('#mobilelvc').hover(function toggleControls() {
+                if (this.hasAttribute("controls")) {
+                    this.removeAttribute("controls")
+                } else {
+                    this.setAttribute("controls", "controls")
+                }
+            })
+
+        });
+
 
 
 </script>

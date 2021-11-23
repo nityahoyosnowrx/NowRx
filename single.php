@@ -89,58 +89,20 @@ $yoast_desc = get_post_meta( $id, '_yoast_wpseo_metadesc', true );
                         <div class="article-data">
 
 
-
-
-
-
             <?php global $wp; ?>
 
-            <div class="share-to">
 
-                <span class="title">Share with friends:</span>
-
-                <div class="social-icons">
-                    <!-- twitter -->
-                    <a target="_blank"
-                        href="http://twitter.com/share?text=Check out this post <?php echo get_the_title(); ?>&url=<?php echo get_permalink(); ?>&hashtags=nowrx,pharmacy,blog"
-                        class="social-a">
-                        <img class="lozad" data-src="<?php echo get_template_directory_uri(); ?>/images/twitter.svg" alt="">
-                    </a>
-                    <!-- facebook -->
-                    <a href="https://www.facebook.com/share.php?u=<?php echo get_permalink(); ?>&title=<?php echo get_the_title(); ?>"
-                        class="social-a">
-
-                        <img class="lozad" data-src="<?php echo get_template_directory_uri(); ?>/images/facebook.svg" alt="">
-                    </a>
-                    <!-- linkedin -->
-                    <a href="https://www.linkedin.com/shareArticle?mini=true&url=<?php echo get_permalink(); ?>&title=<?php echo get_the_title(); ?>"
-                        class="social-a">
-
-                        <img class="lozad" data-src="<?php echo get_template_directory_uri(); ?>/images/linkedin.svg" alt="">
-                    </a>
-
-                    <!-- email -->
-                    <a href="mailto:?subject=I wanted you to see this post <?php echo get_the_title(); ?> &amp;body=Find at it at <?php echo get_permalink(); ?>."
-                        title="Share by Email" class="social-a">
-                        <img class="lozad" data-src="<?php echo get_template_directory_uri(); ?>/images/email.svg" alt="">
-                    </a>
-
-                </div>
-            </div>
-            <!-- social icons -->
-
-            <div class="line-item"></div>
 
         </div>
                         </div>
                         <div class="banner-call">
                             <!-- <div class="subtitle"></div> -->
-                            <h3 class="title">Subscribe via Email</h3>
+                            <h3 class="title">Get health tips, medication info, and pharmacy resources right to your inbox.</h3>
                             <div class="formblog">
                                  <!--[if lte IE 8]>
-<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
-<![endif]-->
-<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+                                <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+                                <![endif]-->
+                                <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
                             <script>
                             hbspt.forms.create({
                             region: "na1",
@@ -161,7 +123,7 @@ $yoast_desc = get_post_meta( $id, '_yoast_wpseo_metadesc', true );
 
                                     <?php
 							// Example argument that defines three posts per page.
-							$args = array( 'posts_per_page' => 4 , 'order'=>'rand','tag' => 'featured',  );
+							$args = array( 'posts_per_page' => 4 , 'order'=>'rand','tag' => 'trending',  );
 
 							// Variable to call WP_Query.
 							$trendloop = new WP_Query( $args );
@@ -174,7 +136,7 @@ $yoast_desc = get_post_meta( $id, '_yoast_wpseo_metadesc', true );
 
                                     <li class="MostPopular-addIndex">
 
-                                        <a href="<?php  the_permalink();  ?>/" class="MostPopular-link">
+                                        <a href="<?php  echo get_the_permalink();  ?>" class="MostPopular-link">
 
                                             <span class="posthumb">
 
@@ -198,7 +160,7 @@ $yoast_desc = get_post_meta( $id, '_yoast_wpseo_metadesc', true );
 
                                         </a>
 
-                                        <a href="<?php the_permalink(); ?>/" class="MostPopular-link title">
+                                        <a href="<?php echo get_the_permalink(); ?>" class="MostPopular-link title">
                                             <?php the_title(); ?>
                                         </a>
 
@@ -238,6 +200,9 @@ $yoast_desc = get_post_meta( $id, '_yoast_wpseo_metadesc', true );
 
 
                     </div>
+                    <span class="dislcaimerbot">
+                    <b>Disclaimer</b>: This website does not provide medical advice and the information provided throughout the website, including but not limited to, text, graphics, images, and other material are for informational purposes only. It is not intended to be a substitute for professional medical advice, diagnosis, or treatment and you should always seek the advice of your physician or other qualified health care providers if you have questions regarding a medical condition or treatment or before starting or stopping any healthcare or health related regimen. Do not ever disregard or delay seeking medical advice from a qualified professional because of something you have read on <a href="https://nowrx.com">nowrx.com</a>.
+                    </span>
 
                     <?php
 						// GET TAGS BY POST_ID

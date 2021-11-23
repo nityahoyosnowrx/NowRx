@@ -3,11 +3,10 @@
 
     <header class="article-header entry-header">
 
-    <div class="post-cat">
+        <div class="post-cat">
             <?php $categories = get_the_category();
             if ( !empty( $categories ) ) { ?>
-            <a href="<?php echo esc_url( get_category_link( $categories[0]->term_id ) );?>/"
-                class="ArticleHeader-eyebrow"><?php echo esc_html( $categories[0]->name ); ?></a>
+                <a href="<?php echo esc_url( get_category_link( $categories[0]->term_id ) ); ?>/" class="ArticleHeader-eyebrow"><?php echo esc_html( $categories[0]->name ); ?></a>
             <?php } ?>
         </div>
 
@@ -16,35 +15,36 @@
         </h1>
 
         <div class="article-time">
-                        <time data-testid="published-timestamp">
-                            Published <?php echo get_the_date( 'D, M d Y - h:i a' ); ?>
-                        </time>
-                    </div>
+            <time data-testid="published-timestamp">
+                Published <?php echo get_the_date( 'D, M d Y - h:i a' ); ?>
+            </time>
+        </div>
 
 
         <?php $author_id = get_the_author_meta( 'ID' ); ?>
-
 
         <div class="articleheader-container">
 
             <div class="author-info">
 
                 <span>
+
                     <?php if(get_field( "author_image" )): ?>
-                    <div class="author-portrait" title="<?php if(get_field( "author_name" )): ?>
-                        <?php echo get_field( "author_name" ); ?>
-                        <?php else: ?>
-                        <?php echo get_the_author_meta( 'nickname', $author_id ); ?>
-                        <?php endif; ?>" style="background-image: url(<?php echo get_field( "author_image" ); ?>);"></div>
-                                    <?php else: ?>
-                                    <div class="author-portrait" title="<?php if(get_field( "author_name" )): ?>
-                        <?php echo get_field( "author_name" ); ?>
-                        <?php else: ?>
-                        <?php echo get_the_author_meta( 'nickname', $author_id ); ?>
-                        <?php endif; ?>"
-                        style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/phil.webp');">
-                    </div>
+                        <div class="author-portrait" title="<?php if(get_field( "author_name" )): ?>
+                            <?php echo get_field( "author_name" ); ?>
+                            <?php else: ?>
+                            <?php echo get_the_author_meta( 'nickname', $author_id ); ?>
+                            <?php endif; ?>" style="background-image: url(<?php echo get_field( "author_image" ); ?>);"></div>
+                                        <?php else: ?>
+                                        <div class="author-portrait" title="<?php if(get_field( "author_name" )): ?>
+                            <?php echo get_field( "author_name" ); ?>
+                            <?php else: ?>
+                            <?php echo get_the_author_meta( 'nickname', $author_id ); ?>
+                            <?php endif; ?>"
+                            style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/phil.webp');">
+                        </div>
                     <?php endif; ?>
+
                 </span>
 
 
@@ -52,31 +52,58 @@
                     <span href="#" class="author-name">
                         Written by
                         <?php if(get_field( "author_name" )): ?>
-                        <?php echo get_field( "author_name" ); ?>
+                            <?php echo get_field( "author_name" ); ?>
                         <?php else: ?>
-                        <?php echo get_the_author_meta( 'nickname', $author_id ); ?>
+                            <?php echo get_the_author_meta( 'nickname', $author_id ); ?>
                         <?php endif; ?>
-
                     </span>
 
                     <?php if(get_field( "author_meta" )): ?>
-                    <span class="author-twitter" target="_blank">
-                        <?php echo get_field( "author_meta" ); ?>
-                    </span>
+                        <span class="author-twitter" target="_blank">
+                            <?php echo get_field( "author_meta" ); ?>
+                        </span>
                     <?php else: ?>
-                    <a href="mailto:<?php echo get_the_author_meta( 'email', $author_id ); ?>"
-                        class="author-twitter" target="_blank">
-                        <?php echo get_the_author_meta( 'email', $author_id ); ?>
-                    </a>
+                        <a href="mailto:<?php echo get_the_author_meta( 'email', $author_id ); ?>"
+                            class="author-twitter" target="_blank">
+                            <?php echo get_the_author_meta( 'email', $author_id ); ?>
+                        </a>
                     <?php endif; ?>
                 </div>
 
             </div>
-
-
         </div>
 
+        <div class="share-to">
+                <span class="title">Share with friends:</span>
+                <div class="social-icons">
+                    <!-- twitter -->
+                    <a target="_blank"
+                        href="http://twitter.com/share?text=Check out this post <?php echo get_the_title(); ?>&url=<?php echo get_permalink(); ?>&hashtags=nowrx,pharmacy,blog"
+                        class="social-a">
+                        <img class="lozad" data-src="<?php echo get_template_directory_uri(); ?>/images/twitter.svg" alt="">
+                    </a>
+                    <!-- facebook -->
+                    <a href="https://www.facebook.com/share.php?u=<?php echo get_permalink(); ?>&title=<?php echo get_the_title(); ?>"
+                        class="social-a">
 
+                        <img class="lozad" data-src="<?php echo get_template_directory_uri(); ?>/images/facebook.svg" alt="">
+                    </a>
+                    <!-- linkedin -->
+                    <a href="https://www.linkedin.com/shareArticle?mini=true&url=<?php echo get_permalink(); ?>&title=<?php echo get_the_title(); ?>"
+                        class="social-a">
+
+                        <img class="lozad" data-src="<?php echo get_template_directory_uri(); ?>/images/linkedin.svg" alt="">
+                    </a>
+                    <!-- email -->
+                    <!-- <a href="mailto:?subject=I wanted you to see this post <?php echo get_the_title(); ?> &amp;body=Find at it at <?php echo get_permalink(); ?>."
+                        title="Share by Email" class="social-a">
+                        <img class="lozad" data-src="<?php echo get_template_directory_uri(); ?>/images/email.svg" alt="">
+                    </a> -->
+                </div>
+            </div>
+            <!-- social icons -->
+
+            <div class="line-item"></div>
 
 
     </header>
@@ -144,16 +171,16 @@
             <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'large'); ?>
             <?php $imageThumbnail = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'thumbnail'); ?>
 
-            <!-- For an element to be caught, add a block type that is different from the inline and some min-height for correct caught into view -->
-            <picture class="border-styled lozad" data-test="picture" style="display: block; min-height: 1rem"
-                data-iesrc="<?php echo $imageThumbnail[0]; ?>"
-                data-alt="<?php echo get_post_meta( get_post_thumbnail_id(), '_wp_attachment_image_alt', true ); ?>">
-                <source srcset="<?php echo $image[0]; ?>" media="(min-width: 992px)">
-                <source srcset="<?php echo $imageThumbnail[0]; ?>" media="(min-width: 10px)">
-                <!-- NO img element -->
-                <!-- instead of img element, there will be the last source with the minimum dimensions -->
-                <!-- for disabled JS you can set <noscript><img src="images/thumbs/04.jpg" alt=""></noscript> -->
-            </picture>
+                <!-- For an element to be caught, add a block type that is different from the inline and some min-height for correct caught into view -->
+                <picture class="border-styled lozad" data-test="picture" style="display: block; min-height: 1rem"
+                    data-iesrc="<?php echo $imageThumbnail[0]; ?>"
+                    data-alt="<?php echo get_post_meta( get_post_thumbnail_id(), '_wp_attachment_image_alt', true ); ?>">
+                    <source srcset="<?php echo $image[0]; ?>" media="(min-width: 992px)">
+                    <source srcset="<?php echo $imageThumbnail[0]; ?>" media="(min-width: 10px)">
+                    <!-- NO img element -->
+                    <!-- instead of img element, there will be the last source with the minimum dimensions -->
+                    <!-- for disabled JS you can set <noscript><img src="images/thumbs/04.jpg" alt=""></noscript> -->
+                </picture>
             <figcaption>
 
                 <?php
