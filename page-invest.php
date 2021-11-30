@@ -19,7 +19,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Cache-control" content="public">
 
-    <link rel="stylesheet" href='<?php echo get_template_directory_uri(); ?>/public/frontend.css?vc="123211412"'>
+    <link rel="stylesheet" href='<?php echo get_template_directory_uri(); ?>/public/frontend.css?vc="1211212121"'>
 
 
     <link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
@@ -82,22 +82,23 @@
                 <!-- nav -->
                 <nav class="top">
                     <ul class="nav" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
-                        <li itemprop="name">
-                            <a itemprop="url" href="#shareprice">
-                                <div class="tk">
-                                    Share Price
-                                    <span class="sub">
-                                        NowRx share price vs. alternatives
-                                    </span>
-                                </div>
-                            </a>
-                        </li>
+
                         <li itemprop="name">
                             <a itemprop="url" href="#highlights" title="See what customers are saying about NowRx Pharmacy.">
                                 <div class="tk">
                                     Highlights
                                     <span class="sub">
                                         Highlights for NowRx investors
+                                    </span>
+                                </div>
+                            </a>
+                        </li>
+                        <li itemprop="name">
+                            <a itemprop="url" href="#shareprice">
+                                <div class="tk">
+                                    Share Price
+                                    <span class="sub">
+                                        NowRx share price vs. alternatives
                                     </span>
                                 </div>
                             </a>
@@ -155,10 +156,14 @@
                                     With Proprietary Pharmacy Software & Robotics
                                 </p>
                                 <div class="mobilevideo">
-                                    <video title="nowrx pharmacy delivery website video" class="lvimage" id="mobilelvc" poster="<?php echo get_template_directory_uri(); ?>/images/best-startup-to-invest-2021-nowrx-technology.webp">
+                                    <video title="nowrx pharmacy delivery website video" preload class="lvimage" id="mobilelvc" poster="<?php echo get_template_directory_uri(); ?>/images/best-startup-to-invest-2021-nowrx-technology.webp">
                                         <source type="video/mp4" src="<?php echo get_template_directory_uri(); ?>/images/NowRx Pharmacy The Way It Should Be (Series C Investor Video).mp4" type="video/mp4">
                                         Sorry, your browser doesn't support embedded videos.
                                         <track default kind="metadata" srclang="en" src="<?php echo get_template_directory_uri(); ?>/images/my_captions.vtt" />
+                                    </video>
+                                    <video title="video overlay mobile" class="mobilevideooverlay" id="mobvidov" muted autoplay loop   >
+                                        <source type="video/mp4" src="<?php echo get_template_directory_uri(); ?>/images/nowrx-pharmacy-delivery-investor-webpage-video-thumbnail-image-3mbps.mp4" type="video/mp4">
+                                        Sorry, your browser doesn't support embedded videos.
                                     </video>
                                     <div class="plauft mobileplauft">
                                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 263.374 263.374" style="enable-background:new 0 0 263.374 263.374;" xml:space="preserve">
@@ -203,6 +208,10 @@
                                 <source type="video/mp4" src="<?php echo get_template_directory_uri(); ?>/images/NowRx Pharmacy The Way It Should Be (Series C Investor Video).mp4" type="video/mp4">
                                 Sorry, your browser doesn't support embedded videos.
                                 <track default kind="metadata" srclang="en" src="<?php echo get_template_directory_uri(); ?>/images/my_captions.vtt" />
+                            </video>
+                            <video title="video overlay" class="videooverlay" id="vidov" muted autoplay loop>
+                                <source type="video/mp4" src="<?php echo get_template_directory_uri(); ?>/images/nowrx-pharmacy-delivery-investor-webpage-video-thumbnail-image.mp4" type="video/mp4">
+                                Sorry, your browser doesn't support embedded videos.
                             </video>
                             <div class="plauft deskplauft">
                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 263.374 263.374" style="enable-background:new 0 0 263.374 263.374;" xml:space="preserve">
@@ -282,6 +291,164 @@
 
 
 
+            <section class="companyhighlighta">
+                <div class="container">
+                    <figure class="image">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/medical-stock-nowrx-prescription-bag.webp" alt="">
+                    </figure>
+                    <div class="content">
+                        <h2 class="title">Company <b>Highlights</b></h2>
+                        <div class="blockitems">
+                            <!-- item -->
+                            <div class="item">
+                                <div class="numb">
+                                90%
+                                </div>
+                                <div class="mnk">
+                                YoY Growth
+                                </div>
+                                <div class="info">
+                                  In 2020 and on pace to surpass $22M in 2021.
+                                </div>
+                            </div>
+                            <!-- item -->
+                            <div class="item">
+                                <div class="numb">
+                                81%
+
+                                </div>
+                                <div class="mnk">
+                                CAGR
+                                </div>
+                                <div class="info">
+                                Compounded annual growth rate since 2016.
+
+                                </div>
+                            </div>
+                            <!-- item -->
+                            <div class="item">
+                                <div class="numb">
+                                $20M
+                                </div>
+                                <div class="mnk">
+                                Series B
+                                </div>
+                                <div class="info">
+                                Sold out and largest SeedInvest raise to date.
+
+                                </div>
+                            </div>
+                            <!-- item -->
+                            <div class="item">
+                                <div class="numb">
+                                $9M
+
+                                </div>
+                                <div class="mnk">
+                                Shares Sold
+                                </div>
+                                <div class="info">
+                                To over 2,700 investors in the current round.
+
+                                </div>
+                            </div>
+
+                            <!-- item -->
+                            <div class="item">
+                                <div class="numb">
+                                73%
+
+                                </div>
+                                <div class="mnk">
+                                MoM Growth
+                                </div>
+                                <div class="info">
+                                NowRx Telehealth since launching in January.
+
+                                </div>
+                            </div>
+                            <!-- item -->
+                            <div class="item">
+                                <div class="numb">
+                                1,650%
+
+                                </div>
+                                <div class="mnk">
+                                Share Price
+                                </div>
+                                <div class="info">
+                                Increase since initial offering on SeedInvest.
+
+                                </div>
+                            </div>
+                            <!-- item -->
+                            <div class="item">
+                                <div class="numb">
+                                8
+
+                                </div>
+                                <div class="mnk">
+                                Pharmacies
+                                </div>
+                                <div class="info">
+                                DEA licensed and delivering prescriptions.
+
+                                </div>
+                            </div>
+                            <!-- item -->
+                            <div class="item">
+                                <div class="numb">
+                                2
+
+                                </div>
+                                <div class="mnk">
+                                Patents Pending
+                                </div>
+                                <div class="info">
+                                On QuickFilll’s award winning pharmacy tech.
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="callitem">
+                            <a href="https://www.seedinvest.com/nowrx/series.c/?utm_source=nowrxlandingpage1&utm_medium=referral" magic-link="invest-button" target="_blank" class="button button-mobile buy-now w-button">
+                                Invest Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+
+
+            <div class="cta lozad"
+            data-background-image="https://assets.website-files.com/5d5d56675dd8937a8bcc193c/5d5da5103e9e5a775604e1aa_pill2.svg">
+                <div class="w-layout-grid grid-9">
+                    <h2 class="h2-left">Get the NowRx<strong> Investor Deck</strong></h2>
+                    <div class="form-block w-form">
+
+                        <script>
+                            window.addEventListener('load', function() {
+                                hbspt.forms.create({
+                                    region: "na1",
+                                    portalId: "5952677",
+                                    formInstanceId: "1",
+                                    formId: "df2a6935-1139-426a-b373-0917788189ad"
+                                });
+                            });
+                        </script>
+
+
+                    </div>
+                </div>
+            </div>
+
+
+
             <section class="stockprice" id="shareprice" >
                 <div class="absolv lozad" data-background-image="https://assets.website-files.com/5d5d56675dd8937a8bcc193c/5d5da44fcc16e1ccac834a8f_pill.svg"></div>
 
@@ -295,14 +462,14 @@
                         <div class="price">
                             <div class="txt">
                                 <div class="logo">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/images/best-investment-tech-nowrx-logo.webp" alt="">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/images/top-startup-nowrx-white-logo.webp" alt="">
                                 </div>
                             </div>
                             <div class="priceop">
                                 <b>
                                     <span class="rl">
                                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-                                            <path style="fill:#098551;" d="M263.169,3.051c-2.015-1.976-4.73-3.073-7.552-3.051l0,0c-2.834,0.001-5.551,1.129-7.552,3.136  L35.286,216.555c-4.112,4.218-4.026,10.972,0.192,15.084c1.971,1.921,4.608,3.006,7.36,3.028h117.333v266.667  c0,5.891,4.776,10.667,10.667,10.667h170.667c5.891,0,10.667-4.776,10.667-10.667V234.667h116.885  c5.891,0.011,10.675-4.757,10.686-10.648c0.005-2.84-1.123-5.565-3.134-7.571L263.169,3.051z"/>
+                                            <path style="fill:#fff;" d="M263.169,3.051c-2.015-1.976-4.73-3.073-7.552-3.051l0,0c-2.834,0.001-5.551,1.129-7.552,3.136  L35.286,216.555c-4.112,4.218-4.026,10.972,0.192,15.084c1.971,1.921,4.608,3.006,7.36,3.028h117.333v266.667  c0,5.891,4.776,10.667,10.667,10.667h170.667c5.891,0,10.667-4.776,10.667-10.667V234.667h116.885  c5.891,0.011,10.675-4.757,10.686-10.648c0.005-2.84-1.123-5.565-3.134-7.571L263.169,3.051z"/>
                                         </svg>
                                     </span>
                                     1,650%
@@ -324,7 +491,7 @@
                                 <b>
                                     <span class="rl">
                                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-                                            <path style="fill:#098551;" d="M263.169,3.051c-2.015-1.976-4.73-3.073-7.552-3.051l0,0c-2.834,0.001-5.551,1.129-7.552,3.136  L35.286,216.555c-4.112,4.218-4.026,10.972,0.192,15.084c1.971,1.921,4.608,3.006,7.36,3.028h117.333v266.667  c0,5.891,4.776,10.667,10.667,10.667h170.667c5.891,0,10.667-4.776,10.667-10.667V234.667h116.885  c5.891,0.011,10.675-4.757,10.686-10.648c0.005-2.84-1.123-5.565-3.134-7.571L263.169,3.051z"/>
+                                            <path style="fill:#000;" d="M263.169,3.051c-2.015-1.976-4.73-3.073-7.552-3.051l0,0c-2.834,0.001-5.551,1.129-7.552,3.136  L35.286,216.555c-4.112,4.218-4.026,10.972,0.192,15.084c1.971,1.921,4.608,3.006,7.36,3.028h117.333v266.667  c0,5.891,4.776,10.667,10.667,10.667h170.667c5.891,0,10.667-4.776,10.667-10.667V234.667h116.885  c5.891,0.011,10.675-4.757,10.686-10.648c0.005-2.84-1.123-5.565-3.134-7.571L263.169,3.051z"/>
                                         </svg>
                                     </span>
                                     114%
@@ -343,7 +510,7 @@
                                 <b>
                                     <span class="rl">
                                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-                                            <path style="fill:#098551;" d="M263.169,3.051c-2.015-1.976-4.73-3.073-7.552-3.051l0,0c-2.834,0.001-5.551,1.129-7.552,3.136  L35.286,216.555c-4.112,4.218-4.026,10.972,0.192,15.084c1.971,1.921,4.608,3.006,7.36,3.028h117.333v266.667  c0,5.891,4.776,10.667,10.667,10.667h170.667c5.891,0,10.667-4.776,10.667-10.667V234.667h116.885  c5.891,0.011,10.675-4.757,10.686-10.648c0.005-2.84-1.123-5.565-3.134-7.571L263.169,3.051z"/>
+                                            <path style="fill:#000;" d="M263.169,3.051c-2.015-1.976-4.73-3.073-7.552-3.051l0,0c-2.834,0.001-5.551,1.129-7.552,3.136  L35.286,216.555c-4.112,4.218-4.026,10.972,0.192,15.084c1.971,1.921,4.608,3.006,7.36,3.028h117.333v266.667  c0,5.891,4.776,10.667,10.667,10.667h170.667c5.891,0,10.667-4.776,10.667-10.667V234.667h116.885  c5.891,0.011,10.675-4.757,10.686-10.648c0.005-2.84-1.123-5.565-3.134-7.571L263.169,3.051z"/>
                                         </svg>
                                     </span>
                                     96%
@@ -362,7 +529,7 @@
                                 <b>
                                     <span class="rl">
                                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-                                            <path style="fill:#098551;" d="M263.169,3.051c-2.015-1.976-4.73-3.073-7.552-3.051l0,0c-2.834,0.001-5.551,1.129-7.552,3.136  L35.286,216.555c-4.112,4.218-4.026,10.972,0.192,15.084c1.971,1.921,4.608,3.006,7.36,3.028h117.333v266.667  c0,5.891,4.776,10.667,10.667,10.667h170.667c5.891,0,10.667-4.776,10.667-10.667V234.667h116.885  c5.891,0.011,10.675-4.757,10.686-10.648c0.005-2.84-1.123-5.565-3.134-7.571L263.169,3.051z"/>
+                                            <path style="fill:#000;" d="M263.169,3.051c-2.015-1.976-4.73-3.073-7.552-3.051l0,0c-2.834,0.001-5.551,1.129-7.552,3.136  L35.286,216.555c-4.112,4.218-4.026,10.972,0.192,15.084c1.971,1.921,4.608,3.006,7.36,3.028h117.333v266.667  c0,5.891,4.776,10.667,10.667,10.667h170.667c5.891,0,10.667-4.776,10.667-10.667V234.667h116.885  c5.891,0.011,10.675-4.757,10.686-10.648c0.005-2.84-1.123-5.565-3.134-7.571L263.169,3.051z"/>
                                         </svg>
                                     </span>
                                     22%
@@ -376,123 +543,18 @@
                     <div class="txt mainblockheader">
                         <h2 class="title">NowRx <b>Stock Share Price</b> vs. Alternatives </b></h2>
                         <p>
-                            Since its initial Preseed offering in 2016, NowRx has seen consistent growth alongside an increase in share price of 1,650%
+                            Since its initial Preseed offering in 2016, NowRx has seen consistent revenue growth alongside an <b>increase in share price of 1,650%</b>
                         </p>
-                        <div class="btnc">
+
+                    </div>
+                    <div class="btnc">
                             <a href="https://www.seedinvest.com/nowrx/series.c/?utm_source=nowrxlandingpage1&amp;utm_medium=referral" magic-link="invest-button" target="_blank" class="button">
                                 Invest Now
                             </a>
                         </div>
-                    </div>
-
                 </div>
             </section>
 
-
-
-
-
-            <div class="cta lozad"
-            data-background-image="https://assets.website-files.com/5d5d56675dd8937a8bcc193c/5d5da5103e9e5a775604e1aa_pill2.svg">
-                <div class="w-layout-grid grid-9">
-                    <h2 class="h2-left">Get the NowRx <strong>Investor Deck</strong></h2>
-                    <div class="form-block w-form">
-
-                        <script>
-                            window.addEventListener('load', function() {
-                                hbspt.forms.create({
-                                    region: "na1",
-                                    portalId: "5952677",
-                                    formInstanceId: "1",
-                                    formId: "df2a6935-1139-426a-b373-0917788189ad"
-                                });
-                            });
-                        </script>
-
-
-                    </div>
-                </div>
-            </div>
-
-            <section class="rapid" id="highlights">
-                <div class="container">
-                    <div class="header">
-                        <h2 class="title">Rapid <b>Growth</b> & Raving <b>Customers</b></h2>
-                        <p>
-                            NowRx is growing rapidly as patients and doctors are raving about the pharmacy's amazing
-                            service and free same day prescription delivery.
-                        </p>
-                    </div>
-                    <div class="content">
-                        <div class="listblock">
-                            <!-- Item -->
-                            <div class="item">
-                                <div class="number">
-                                    35K+
-                                </div>
-                                <div class="til">
-                                    NowRx Customers
-                                </div>
-                            </div>
-                            <!-- Item -->
-                            <div class="item">
-                                <div class="number">
-                                    365K+
-                                </div>
-                                <div class="til">
-                                    Prescriptions Delivered
-                                </div>
-                            </div>
-                            <!-- Item -->
-                            <div class="item">
-                                <div class="number">
-                                    8
-                                </div>
-                                <div class="til">
-                                    DEA Licensed Pharmacies
-                                </div>
-                            </div>
-                            <!-- Item -->
-                            <div class="item">
-                                <div class="number">
-                                    $2.8M
-                                </div>
-                                <div class="til">
-                                    Prescription Savings (2020)
-                                </div>
-                            </div>
-                            <!-- Item -->
-                            <div class="item">
-                                <div class="number">
-                                    70%
-                                </div>
-                                <div class="til">
-                                    NowRx Telehealth Average MoM Growth Since Launching
-                                </div>
-                            </div>
-                            <!-- Item -->
-                            <div class="item">
-                                <div class="number">
-                                    5 Stars
-                                </div>
-                                <div class="til">
-                                    Average NowRx Patient & Doctor Rating on Yelp
-                                </div>
-                            </div>
-                        </div>
-
-                        <figure class="list lozad" data-background-image="<?php echo get_template_directory_uri(); ?>/images/chart-with-line.webp">
-                            <video data-src="<?php echo get_template_directory_uri(); ?>/images/Chart-10.mp4" muted class="lozad"></video>
-                        </figure>
-
-                        <div class="callitem">
-                            <a href="https://www.seedinvest.com/nowrx/series.c/?utm_source=nowrxlandingpage1&utm_medium=referral" magic-link="invest-button" target="_blank" class="button button-mobile buy-now w-button">
-                                Invest Now
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
 
 
             <div class="quote-section"><img
@@ -688,7 +750,7 @@
 
             <div class="cta lozad" data-background-image="https://assets.website-files.com/5d5d56675dd8937a8bcc193c/5d5da5103e9e5a775604e1aa_pill2.svg">
                 <div class="w-layout-grid grid-9">
-                    <h2 class="h2-left">Get the NowRx <strong>Investor Deck</strong></h2>
+                    <h2 class="h2-left">Get the NowRx<strong> Investor Deck</strong></h2>
                     <div class="form-block w-form">
 
                     <script>
@@ -1073,7 +1135,7 @@
             data-background-image="https://assets.website-files.com/5d5d56675dd8937a8bcc193c/5d5da5103e9e5a775604e1aa_pill2.svg"
                 >
                 <div class="w-layout-grid grid-9">
-                    <h2 class="h2-left">Get the NowRx <strong>Investor Deck</strong></h2>
+                    <h2 class="h2-left">Get the NowRx<strong> Investor Deck</strong></h2>
                     <div class="form-block w-form">
 
                         <script>
@@ -1222,7 +1284,7 @@
             <div class="cta lozad" data-background-image="https://assets.website-files.com/5d5d56675dd8937a8bcc193c/5d5da5103e9e5a775604e1aa_pill2.svg"
                 >
                 <div class="w-layout-grid grid-9">
-                    <h2 class="h2-left">Get the NowRx <strong>Investor Deck</strong></h2>
+                    <h2 class="h2-left">Get the NowRx<strong> Investor Deck</strong></h2>
                     <div class="form-block w-form">
 
                     <script>

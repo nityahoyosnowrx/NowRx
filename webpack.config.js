@@ -17,7 +17,7 @@ module.exports = {
     filename: '[name]-bundle.js'
   },
   mode: DEV ? 'development' : 'production',
-
+  devtool: 'eval',
   performance: {
     hints: false,
     maxEntrypointSize: 512000,

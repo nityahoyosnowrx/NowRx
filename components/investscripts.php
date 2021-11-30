@@ -227,7 +227,7 @@ jQuery.event.special.mousewheel = {
         $(document).ready(function() {
 
             $('.deskplauft').on('click',function(){
-                $('.deskplauft').fadeOut();
+                $('.deskplauft,video#vidov').fadeOut();
                 $('#lvc').get(0).play()
 
                 $('#lvc').attr("controls",true)
@@ -242,16 +242,17 @@ jQuery.event.special.mousewheel = {
             })
 
             $('.mobileplauft').on('click',function(){
-                $('.mobileplauft').fadeOut();
+                $('.mobileplauft,#mobvidov').fadeOut();
                 $('#mobilelvc').get(0).play()
+                $('#mobilelvc').attr("controls",true)
             });
 
             $('#mobilelvc').hover(function toggleControls() {
-                if (this.hasAttribute("controls")) {
-                    this.removeAttribute("controls")
-                } else {
-                    this.setAttribute("controls", "controls")
-                }
+                // if (this.hasAttribute("controls")) {
+                //     this.removeAttribute("controls")
+                // } else {
+                //     this.setAttribute("controls", "controls")
+                // }
             })
 
         });
