@@ -6857,7 +6857,7 @@ section.popupform {
     bottom: 0;
     right: 0;
     background: #fff;
-    padding: 40px 40px;
+    padding: 20px 20px;
     z-index: 14123;
     border-radius: 20px;
     margin: 20px;
@@ -6884,7 +6884,7 @@ section.popupform {
 		max-width: 350px;
 		@media screen and (max-width: 700px) {
 			font-size: 1rem;
-			padding-right: 20px;
+
 		}
 	}
 	svg {
@@ -6965,9 +6965,6 @@ section.popupform {
 		padding: 15px 30px;
 		text-transform: uppercase;
 		box-shadow: none;
-		&:hover{
-			background-color: $m;
-		}
 		@media screen and (max-width: 700px) {
 			margin: 10px auto 0;
 		}

@@ -19,7 +19,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Cache-control" content="public">
 
-    <link rel="stylesheet" href='<?php echo get_template_directory_uri(); ?>/public/frontend.css?vc="1211212121"'>
+    <link rel="stylesheet" href='<?php echo get_template_directory_uri(); ?>/public/frontend.css?vc="1211231112121"'>
 
 
     <link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
@@ -177,7 +177,6 @@
                                 </div>
                                 <div class="infk">
                                     <script>
-                                        window.addEventListener('load', function() {
                                             hbspt.forms.create({
                                                 region: "na1",
                                                 portalId: "5952677",
@@ -193,7 +192,6 @@
                                                     }
                                                 }
                                             });
-                                        });
                                     </script>
                                 </div>
                             </div>
@@ -677,15 +675,16 @@
             </section>
             <section class="comptiv">
                 <div class="container">
-                    <div class="header">
+
+                    <div class="contentx">
+                        <div class="phone">
+                        <div class="header">
                         <h2 class="title">NowRx Pharmacy is Driven By a <strong>Powerful Technology Stack</strong></h2>
                         <p>
                             NowRx's proprietary "QuickFill" software provides a competitive advantage for NowRx by
                             enabling a number of customer benefits.
                         </p>
                     </div>
-                    <div class="contentx">
-                        <div class="phone">
                             <figure>
                                 <img data-src="<?php echo get_template_directory_uri(); ?>/images/stock-to-invest-in-nowrx-mobile-app.webp"
                                     alt="stock to invest in nowrx mobile app" width="550px" height="550px" class="lozad">
@@ -698,7 +697,7 @@
                                 <div class="txt">
                                     <h3 class="title">FREE Same Day Delivery</h3>
                                     <p>Better efficiency & automated processes allow NowRx to provide FREE same day
-                                        delivery profitably!</p>
+                                        delivery!</p>
                                 </div>
                             </div>
                             <!-- block -->
@@ -1019,6 +1018,8 @@
             </section>
 
 
+
+
             <section class="section section-bottom-padding team-sec">
 
                 <div class="container">
@@ -1304,39 +1305,39 @@
 
 
 
-<section class="popupform lozad" data-background-image="https://assets.website-files.com/5d5d56675dd8937a8bcc193c/5d5ed1486e0dbce67eac23b9_hexagon.svg">
-    <div class="content">
-        <div class="closebutton">
-        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="348.333px" height="348.334px" viewBox="0 0 348.333 348.334" style="enable-background:new 0 0 348.333 348.334;"
-	 xml:space="preserve">
-        <g>
-            <path d="M336.559,68.611L231.016,174.165l105.543,105.549c15.699,15.705,15.699,41.145,0,56.85
-                c-7.844,7.844-18.128,11.769-28.407,11.769c-10.296,0-20.581-3.919-28.419-11.769L174.167,231.003L68.609,336.563
-                c-7.843,7.844-18.128,11.769-28.416,11.769c-10.285,0-20.563-3.919-28.413-11.769c-15.699-15.698-15.699-41.139,0-56.85
-                l105.54-105.549L11.774,68.611c-15.699-15.699-15.699-41.145,0-56.844c15.696-15.687,41.127-15.687,56.829,0l105.563,105.554
-                L279.721,11.767c15.705-15.687,41.139-15.687,56.832,0C352.258,27.466,352.258,52.912,336.559,68.611z"/>
-        </g>
-        </svg>
-        </div>
-        <h2 class="title">Get the NowRx Investor Deck</h2>
-        <p>
-            Sign up for campaign updates and learn more about the opportunity to invest in NowRx.
-        </p>
-        <div class="formcall">
-                        <script>
-                            window.addEventListener('load', function() {
-                                hbspt.forms.create({
-                                    region: "na1",
-                                    portalId: "5952677",
-                                    formInstanceId: "5",
-                                    formId: "df2a6935-1139-426a-b373-0917788189ad"
-                                });
-                            });
-                        </script>
-        </div>
-    </div>
-</section>
+            <section class="popupform lozad" data-background-image="https://assets.website-files.com/5d5d56675dd8937a8bcc193c/5d5ed1486e0dbce67eac23b9_hexagon.svg">
+                <div class="content">
+                    <div class="closebutton">
+                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                width="348.333px" height="348.334px" viewBox="0 0 348.333 348.334" style="enable-background:new 0 0 348.333 348.334;"
+                xml:space="preserve">
+                    <g>
+                        <path d="M336.559,68.611L231.016,174.165l105.543,105.549c15.699,15.705,15.699,41.145,0,56.85
+                            c-7.844,7.844-18.128,11.769-28.407,11.769c-10.296,0-20.581-3.919-28.419-11.769L174.167,231.003L68.609,336.563
+                            c-7.843,7.844-18.128,11.769-28.416,11.769c-10.285,0-20.563-3.919-28.413-11.769c-15.699-15.698-15.699-41.139,0-56.85
+                            l105.54-105.549L11.774,68.611c-15.699-15.699-15.699-41.145,0-56.844c15.696-15.687,41.127-15.687,56.829,0l105.563,105.554
+                            L279.721,11.767c15.705-15.687,41.139-15.687,56.832,0C352.258,27.466,352.258,52.912,336.559,68.611z"/>
+                    </g>
+                    </svg>
+                    </div>
+                    <h2 class="title">Get the NowRx Investor Deck</h2>
+                    <p>
+                        Sign up for campaign updates and learn more about the opportunity to invest in NowRx.
+                    </p>
+                    <div class="formcall">
+                                    <script>
+                                        window.addEventListener('load', function() {
+                                            hbspt.forms.create({
+                                                region: "na1",
+                                                portalId: "5952677",
+                                                formInstanceId: "5",
+                                                formId: "df2a6935-1139-426a-b373-0917788189ad"
+                                            });
+                                        });
+                                    </script>
+                    </div>
+                </div>
+            </section>
 
 
 
@@ -1401,8 +1402,6 @@
         // include modals
         get_template_part('components/investfooterscripts');
     ?>
-
-
 
     </body>
 

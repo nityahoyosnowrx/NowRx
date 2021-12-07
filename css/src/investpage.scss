@@ -430,8 +430,8 @@ body#investor {
 			right: 0;
 			bottom: 0;
 			height: 100%;
-    width: 100%;
-    object-fit: cover;
+			width: 100%;
+			object-fit: cover;
 		}
 
 		.mobilevideo {
@@ -512,6 +512,7 @@ body#investor {
 			@media screen and (max-width: 1280px) {
 				padding: 0 20px;
 				text-align: center;
+				margin: 45px auto -100px;
 				font-size: 0.8rem;
 			}
 		}
@@ -538,8 +539,8 @@ body#investor {
 					position: relative;
 					z-index: 23;
 					margin: 15px 0 0;
-					}
 				}
+			}
 			form {
 				max-width: 100%;
 				display: flex;
@@ -651,7 +652,7 @@ body#investor {
 						position: absolute;
 						left: 0;
 						right: 0;
-						top: 50px;
+						top: 20px;
 					}
 				}
 			}
@@ -1430,6 +1431,7 @@ body#investor {
 		color: #303236;
 		font-size: 36px;
 		line-height: 48px;
+		line-height: 1.2;
 		font-weight: 700;
 	}
 	.image-9 {
@@ -2232,7 +2234,7 @@ body#investor {
 			padding: 70px 20px 0;
 		}
 		@media screen and (max-width: 700px) {
-			padding: 40px 10px 0;
+			padding: 40px 20px 0;
 		}
 	}
 
@@ -2305,7 +2307,7 @@ body#investor {
 		border-radius: 10px;
 		background-color: #f5f8fc;
 		@media screen and (max-width: 700px) {
-			padding: 84px 20px;
+			padding: 30px 20px;
 		}
 		@media screen and (max-width: 400px) {
 			padding: 40px 0px;
@@ -3311,15 +3313,14 @@ body#investor {
 	}
 
 	section.comptiv {
-		padding: 90px 60px;
+		padding: 10px 60px 30px;
 		border: 0 solid #d2d2d2;
 		max-width: 1280px;
 		margin: 60px auto;
-		background: #f6f6f6;
+		background: #fff;
 		background-position: 50%;
 		background-size: cover;
 		border-radius: 10px;
-		background-color: #f5f8fc;
 		@media screen and (max-width: 700px) {
 			padding: 40px 20px;
 			margin-bottom: 20px;
@@ -3331,7 +3332,8 @@ body#investor {
 
 		h2.title {
 			color: #000;
-			font-size: 2.8rem;
+			font-size: 2.5rem;
+			line-height: 1.2;
 			font-weight: 400;
 			letter-spacing: -2px;
 			@media screen and (max-width: 700px) {
@@ -3350,27 +3352,32 @@ body#investor {
 		.contentx {
 			display: flex;
 			margin: 60px 0 0;
-			align-items: center;
+			align-items: flex-start;
 			justify-content: center;
 			@media screen and (max-width: 700px) {
 				flex-direction: column;
+				margin: 0px 0 0;
 			}
 		}
 		.blocks {
 			width: 45%;
+			padding:  0 0;
 			@media screen and (max-width: 700px) {
 				width: 100%;
 			}
 		}
 		.phone {
 			width: 60%;
+			padding-right: 60px;
+			display: flex;
+			flex-direction: column;
 			@media screen and (max-width: 700px) {
-				margin-bottom: 20px;
+				margin-bottom: -20px;
 				width: 100%;
+				padding: 0;
 			}
 			img {
 				width: 100%;
-				max-width: 550px;
 			}
 		}
 		figure {
@@ -3381,37 +3388,48 @@ body#investor {
 		// }
 
 		.block {
-			margin: 20px 0;
+			margin: 0 0 20px;
+			display: flex;
 			align-items: flex-start;
 			justify-content: flex-start;
-			display: flex;
-		}
-
-		.nm {
-			color: #0687cf;
-			display: flex;
-			background: #fff;
-			-webkit-box-align: center;
-			-webkit-align-items: center;
-			-ms-flex-align: center;
-			align-items: center;
-			-webkit-box-pack: center;
-			-webkit-justify-content: center;
-			-ms-flex-pack: center;
-			justify-content: center;
-			margin: 7px 0 0;
-			font-weight: 900;
-			font-size: 1.5rem;
-			line-height: 1;
-			padding: 0;
-			width: 40px;
-			height: 40px;
-			border-radius: 3px;
+			background-color: #f5f8fc;
+			padding: 20px 20px;
+			border-radius: 10px;
 			@media screen and (max-width: 700px) {
-				flex-direction: column;
+
 			}
 		}
+		.btninvst{
+			@media screen and (min-width: 700px) {
+				margin: 60px 0 0;
+			}
+		}
+		.nm {
+			justify-content: center;
+			margin: 0px 0 0;
+			font-weight: 900;
+			font-size: 1.8rem;
+			line-height: 1;
+			align-items: center;
+			padding: 0;
+			border-radius: 3px;
+			color: #0587cc;
+			background: #fff;
+			width: 40px;
+			height: 40px;
+			align-items: center;
+			justify-content: center;
+			display: flex;
+			border-radius: 10px;
+			@media screen and (max-width: 700px) {
+				flex-direction: column;
 
+			}
+		}
+		.txt p {
+			margin: 0;
+			line-height: 1.2;
+		}
 		.txt {
 			max-width: calc(100% - 80px);
 			margin-left: 20px;
@@ -3420,6 +3438,7 @@ body#investor {
 		h3.title {
 			font-size: 1.2rem;
 			margin: 0;
+			margin: 0 0 5px;
 		}
 	}
 
@@ -3438,6 +3457,7 @@ body#investor {
 			margin: 0 0 30px;
 			@media screen and (max-width: 700px) {
 				font-size: 2.2rem;
+				margin: 0;
 			}
 			@media screen and (max-width: 400px) {
 				font-size: 1.8rem;
@@ -3655,7 +3675,7 @@ body#investor {
 		overflow: hidden;
 		background-repeat: no-repeat;
 		@media screen and (max-width: 700px) {
-			padding: 60px 20px 140px;
+			padding: 90px 20px 140px;
 			background-size: contain;
 		}
 		.btnc {
@@ -4149,16 +4169,15 @@ body#investor {
 			position: absolute;
 			top: 48%;
 			left: -14%;
-			-webkit-transform: translate(50%,-50%);
-			transform: translate(0%,-50%);
+			-webkit-transform: translate(50%, -50%);
+			transform: translate(0%, -50%);
 			z-index: -1;
 			margin: 0;
 			@media screen and (max-width: 1280px) {
 				width: 50%;
 				position: relative;
 				top: 30px;
-				transform: rotate(
-			90deg);
+				transform: rotate(90deg);
 				z-index: -1;
 				max-width: 260px;
 				max-height: 300px;
@@ -4170,7 +4189,6 @@ body#investor {
 				align-items: center;
 				justify-content: center;
 			}
-
 		}
 
 		.content {
@@ -4230,7 +4248,7 @@ body#investor {
 			display: flex;
 			align-items: center;
 			justify-content: center;
-			margin:  0 0;
+			margin: 0 0;
 			a {
 				min-width: 310px;
 				@media screen and (max-width: 700px) {
@@ -4251,9 +4269,9 @@ body#investor {
 			margin: 0 auto;
 			align-items: center;
 			justify-content: center;
-			padding: 65px  0 75px ;
+			padding: 65px 0 75px;
 			@media screen and (max-width: 700px) {
-				padding: 40px 0 75px;
+				padding: 30px 0 30px;
 			}
 		}
 
@@ -4277,10 +4295,9 @@ body#investor {
 			box-shadow: 0 0 34px Rgb(213 227 248);
 			@media screen and (min-width: 1280px) {
 				&:nth-child(8),
-			&:nth-child(4){
-				margin-right: 0;
-
-			}
+				&:nth-child(4) {
+					margin-right: 0;
+				}
 			}
 			@media screen and (max-width: 1280px) {
 				width: 29%;
@@ -4299,14 +4316,14 @@ body#investor {
 			color: #000;
 			line-height: 1.2;
 			@media screen and (max-width: 700px) {
-font-size: 2rem;
+				font-size: 2rem;
 			}
 		}
 		.mnk {
 			font-weight: 700;
 			color: #0b87cc;
 			font-size: 1.3rem;
-			margin: 5px 0 10px ;
+			margin: 5px 0 10px;
 			line-height: 1.2;
 			text-align: center;
 
@@ -4323,7 +4340,8 @@ font-size: 2rem;
 			line-height: 1.2;
 			margin: 0;
 			@media screen and (max-width: 700px) {
-				font-size: 2.2rem;
+				font-size: 1.8rem;
+				padding: 0 10px;
 			}
 		}
 
@@ -4332,7 +4350,7 @@ font-size: 2rem;
 		}
 
 		.info {
-			font-size: .9rem;
+			font-size: 0.9rem;
 			line-height: 1.2;
 			text-align: center;
 			margin-bottom: 0;
