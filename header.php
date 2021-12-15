@@ -13,7 +13,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title><?php wp_title(''); ?></title>
     <?php // mobile meta (hooray!)
-    $cachever = 'vcach2131111111114112';
+    $cachever = 'vcach213111111111141112';
     ?>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
@@ -114,7 +114,7 @@
 
                         <a class="menu-icon-toggle">
 
-                            <img data-src="<?php echo get_template_directory_uri(); ?>/images/menu.svg" class="lozad" alt="">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/menu.svg" class="" alt="">
 
                             <div class="txt">Menu</div>
                         </a>
@@ -197,6 +197,14 @@
                         </li>
 
 
+                        <li itemprop="name" class="">
+                            <a itemprop="url" href="<?php echo get_site_url(); ?>/faqs/">
+                                <div class="tk smalltk">
+                                FAQs
+                                </div>
+                            </a>
+                        </li>
+
                         <li itemprop="name" class="hidm">
                             <a itemprop="url" href="<?php echo get_site_url(); ?>/locations/">
                                 <div class="tk smalltk">
@@ -204,20 +212,8 @@
                                 </div>
                             </a>
                         </li>
-                        <li itemprop="name" class="hidm">
-                            <a itemprop="url" href="<?php echo get_site_url(); ?>/pricing/">
-                                <div class="tk smalltk">
-                                    Pricing
-                                </div>
-                            </a>
-                        </li>
-                        <li itemprop="name" class="hidm">
-                            <a itemprop="url" href="<?php echo get_site_url(); ?>/faqs/">
-                                <div class="tk smalltk">
-                                FAQs
-                                </div>
-                            </a>
-                        </li>
+
+
                         <li itemprop="name" class="buttonfill buttonglimmer">
                             <a class="button secondary rounded shadow rx-btn" itemprop="url"
                                 href="<?= get_site_url(); ?>/refill-and-transfer-prescriptions/">

@@ -12,14 +12,13 @@
     ?>
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title><?php wp_title(''); ?></title>
-    <meta name="description" content="Disrupting the $480B Retail Pharmacy Industry WITH SAME DAY TELEHEALTH & PHARMACY DELIVERY"/>
 
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Cache-control" content="public">
 
-    <link rel="stylesheet" href='<?php echo get_template_directory_uri(); ?>/public/frontend.css?vc="1211231112121"'>
+    <link rel="stylesheet" href='<?php echo get_template_directory_uri(); ?>/public/frontend.css?vc="121123112111121121"'>
 
 
     <link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
@@ -60,13 +59,13 @@
             <div class="content">
                 <div class="rlcontainer">
                     <div class="responsive-bar">
-                        <a class="menu-icon-toggle" href="">
-                            <img data-src="<?php echo get_template_directory_uri(); ?>/images/menu.svg" class="lozad" alt="">
+                        <a class="menu-icon-toggle" href="#">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/menu.svg" alt="menu toggle">
                             <div class="txt">Menu</div>
                         </a>
                     </div>
                     <div class="linksmsall">
-                        <a href="https://www.seedinvest.com/nowrx/series.c/?utm_source=nowrxlandingpage1&amp;utm_medium=referral" magic-link="invest-button" target="_blank" class="button button-nav buy-now w-button">
+                        <a href="https://www.seedinvest.com/signup?next=/nowrx/series.c/invest&intent=invest%20in%20deal" magic-link="invest-button" target="_blank" class="button button-nav buy-now w-button">
                             INVEST NOW
                         </a>
                     </div>
@@ -93,16 +92,7 @@
                                 </div>
                             </a>
                         </li>
-                        <li itemprop="name">
-                            <a itemprop="url" href="#shareprice">
-                                <div class="tk">
-                                    Share Price
-                                    <span class="sub">
-                                        NowRx share price vs. alternatives
-                                    </span>
-                                </div>
-                            </a>
-                        </li>
+
                         <li itemprop="name">
                             <a itemprop="url" href="#how-it-works">
                                 <div class="tk">
@@ -113,7 +103,16 @@
                                 </div>
                             </a>
                         </li>
-
+                        <li itemprop="name">
+                            <a itemprop="url" href="#proprietarypharmacytech">
+                                <div class="tk">
+                                Pharmacy Tech
+                                    <span class="sub">
+                                    "QuickFill" tech powers a better pharmacy
+                                    </span>
+                                </div>
+                            </a>
+                        </li>
                         <li itemprop="name">
                             <a itemprop="url" href="#competitor">
                                 <div class="tk">
@@ -125,7 +124,7 @@
                             </a>
                         </li>
                         <li itemprop="name">
-                            <a href="https://www.seedinvest.com/nowrx/series.c/?utm_source=nowrxlandingpage1&amp;utm_medium=referral" magic-link="invest-button" target="_blank" class="button button-nav buy-now w-button">
+                            <a href="https://www.seedinvest.com/signup?next=/nowrx/series.c/invest&intent=invest%20in%20deal"  magic-link="invest-button" target="_blank" class="button button-nav buy-now w-button">
                                 INVEST NOW
                             </a>
                         </li>
@@ -156,7 +155,7 @@
                                     With Proprietary Pharmacy Software & Robotics
                                 </p>
                                 <div class="mobilevideo">
-                                    <video title="nowrx pharmacy delivery website video" preload class="lvimage" id="mobilelvc" poster="<?php echo get_template_directory_uri(); ?>/images/best-startup-to-invest-2021-nowrx-technology.webp">
+                                    <video title="nowrx pharmacy delivery website video" preload="none" class="lvimage" id="mobilelvc" poster="<?php echo get_template_directory_uri(); ?>/images/best-startup-to-invest-2021-nowrx-technology.webp">
                                         <source type="video/mp4" src="<?php echo get_template_directory_uri(); ?>/images/NowRx Pharmacy The Way It Should Be (Series C Investor Video).mp4" type="video/mp4">
                                         Sorry, your browser doesn't support embedded videos.
                                         <track default kind="metadata" srclang="en" src="<?php echo get_template_directory_uri(); ?>/images/my_captions.vtt" />
@@ -202,12 +201,12 @@
 
                         <!-- image -->
                         <div class="column-half image-col videomain">
-                            <video title="nowrx pharmacy delivery website video" class="lvimage" id="lvc" poster="<?php echo get_template_directory_uri(); ?>/images/best-startup-to-invest-2021-nowrx-technology.webp"  >
+                            <video title="nowrx pharmacy delivery website video" preload="none" class="lvimage" id="lvc" poster="<?php echo get_template_directory_uri(); ?>/images/best-startup-to-invest-2021-nowrx-technology.webp"  >
                                 <source type="video/mp4" src="<?php echo get_template_directory_uri(); ?>/images/NowRx Pharmacy The Way It Should Be (Series C Investor Video).mp4" type="video/mp4">
                                 Sorry, your browser doesn't support embedded videos.
                                 <track default kind="metadata" srclang="en" src="<?php echo get_template_directory_uri(); ?>/images/my_captions.vtt" />
                             </video>
-                            <video title="video overlay" class="videooverlay" id="vidov" muted autoplay loop>
+                            <video title="video overlay" class="videooverlay" id="vidov" preload="none" muted autoplay loop>
                                 <source type="video/mp4" src="<?php echo get_template_directory_uri(); ?>/images/nowrx-pharmacy-delivery-investor-webpage-video-thumbnail-image.mp4" type="video/mp4">
                                 Sorry, your browser doesn't support embedded videos.
                             </video>
@@ -229,7 +228,7 @@
                     </div>
                 </div>
                 <div class="stl">
-                    *NowRx has already raised over <strong>$8.5M</strong> from more than 2,500 investors in this round!
+                    *NowRx has already raised over <strong>$10M</strong> from more than <strong>3,000</strong> investors in this round!
                 </div>
             </section>
 
@@ -289,7 +288,7 @@
 
 
 
-            <section class="companyhighlighta">
+            <section class="companyhighlighta" id="highlights">
                 <div class="container">
                     <figure class="image">
                         <img src="<?php echo get_template_directory_uri(); ?>/images/medical-stock-nowrx-prescription-bag.webp" alt="">
@@ -410,7 +409,7 @@
 
                         </div>
                         <div class="callitem">
-                            <a href="https://www.seedinvest.com/nowrx/series.c/?utm_source=nowrxlandingpage1&utm_medium=referral" magic-link="invest-button" target="_blank" class="button button-mobile buy-now w-button">
+                            <a href="https://www.seedinvest.com/signup?next=/nowrx/series.c/invest&intent=invest%20in%20deal" magic-link="invest-button" target="_blank" class="button button-mobile buy-now w-button">
                                 Invest Now
                             </a>
                         </div>
@@ -439,136 +438,15 @@
                                 });
                             });
                         </script>
-
-
                     </div>
                 </div>
             </div>
 
 
 
-            <section class="stockprice" id="shareprice" >
-                <div class="absolv lozad" data-background-image="https://assets.website-files.com/5d5d56675dd8937a8bcc193c/5d5da44fcc16e1ccac834a8f_pill.svg"></div>
-
-                <div class="container">
-                    <span class="desc">
-                        *Based on data from <a href="https://www.macrotrends.net/" target="_blank">macrotrends.net</a>, <a href="https://www.spglobal.com/en/" target="_blank">spglobal.com</a>, and  <a href="https://www.seedinvest.com/" target="_blank">SeedInvest</a>. Past performance is no guarantee of future results.
-                    </span>
-
-                    <div class="stockticker">
-
-                        <div class="price">
-                            <div class="txt">
-                                <div class="logo">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/images/top-startup-nowrx-white-logo.webp" alt="">
-                                </div>
-                            </div>
-                            <div class="priceop">
-                                <b>
-                                    <span class="rl">
-                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-                                            <path style="fill:#fff;" d="M263.169,3.051c-2.015-1.976-4.73-3.073-7.552-3.051l0,0c-2.834,0.001-5.551,1.129-7.552,3.136  L35.286,216.555c-4.112,4.218-4.026,10.972,0.192,15.084c1.971,1.921,4.608,3.006,7.36,3.028h117.333v266.667  c0,5.891,4.776,10.667,10.667,10.667h170.667c5.891,0,10.667-4.776,10.667-10.667V234.667h116.885  c5.891,0.011,10.675-4.757,10.686-10.648c0.005-2.84-1.123-5.565-3.134-7.571L263.169,3.051z"/>
-                                        </svg>
-                                    </span>
-                                    1,650%
-                                </b>
-                                <span class="ince">
-                                    Share Price Increase Since 2016*
-                                </span>
-                            </div>
-                        </div>
-
-                        <div class="price">
-                            <div class="txt">
-                                <div class="logo">
-                                S&P 500
-                                </div>
-
-                            </div>
-                            <div class="priceop">
-                                <b>
-                                    <span class="rl">
-                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-                                            <path style="fill:#000;" d="M263.169,3.051c-2.015-1.976-4.73-3.073-7.552-3.051l0,0c-2.834,0.001-5.551,1.129-7.552,3.136  L35.286,216.555c-4.112,4.218-4.026,10.972,0.192,15.084c1.971,1.921,4.608,3.006,7.36,3.028h117.333v266.667  c0,5.891,4.776,10.667,10.667,10.667h170.667c5.891,0,10.667-4.776,10.667-10.667V234.667h116.885  c5.891,0.011,10.675-4.757,10.686-10.648c0.005-2.84-1.123-5.565-3.134-7.571L263.169,3.051z"/>
-                                        </svg>
-                                    </span>
-                                    114%
-                                </b>
-                                <span class="ince">5 year returns*</span>
-                            </div>
-                        </div>
-
-                        <div class="price">
-                            <div class="txt">
-                                <div class="logo">
-                                    DJIA
-                                </div>
-                            </div>
-                            <div class="priceop">
-                                <b>
-                                    <span class="rl">
-                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-                                            <path style="fill:#000;" d="M263.169,3.051c-2.015-1.976-4.73-3.073-7.552-3.051l0,0c-2.834,0.001-5.551,1.129-7.552,3.136  L35.286,216.555c-4.112,4.218-4.026,10.972,0.192,15.084c1.971,1.921,4.608,3.006,7.36,3.028h117.333v266.667  c0,5.891,4.776,10.667,10.667,10.667h170.667c5.891,0,10.667-4.776,10.667-10.667V234.667h116.885  c5.891,0.011,10.675-4.757,10.686-10.648c0.005-2.84-1.123-5.565-3.134-7.571L263.169,3.051z"/>
-                                        </svg>
-                                    </span>
-                                    96%
-                                </b>
-                                <span class="ince">5 year returns*</span>
-                            </div>
-                        </div>
-
-                        <div class="price">
-                            <div class="txt">
-                                <div class="logo">
-                                    Gold
-                                </div>
-                            </div>
-                            <div class="priceop">
-                                <b>
-                                    <span class="rl">
-                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-                                            <path style="fill:#000;" d="M263.169,3.051c-2.015-1.976-4.73-3.073-7.552-3.051l0,0c-2.834,0.001-5.551,1.129-7.552,3.136  L35.286,216.555c-4.112,4.218-4.026,10.972,0.192,15.084c1.971,1.921,4.608,3.006,7.36,3.028h117.333v266.667  c0,5.891,4.776,10.667,10.667,10.667h170.667c5.891,0,10.667-4.776,10.667-10.667V234.667h116.885  c5.891,0.011,10.675-4.757,10.686-10.648c0.005-2.84-1.123-5.565-3.134-7.571L263.169,3.051z"/>
-                                        </svg>
-                                    </span>
-                                    22%
-                                </b>
-                                <span class="ince">5 year returns*</span>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="txt mainblockheader">
-                        <h2 class="title">NowRx <b>Stock Share Price</b> vs. Alternatives </b></h2>
-                        <p>
-                            Since its initial Preseed offering in 2016, NowRx has seen consistent revenue growth alongside an <b>increase in share price of 1,650%</b>
-                        </p>
-
-                    </div>
-                    <div class="btnc">
-                            <a href="https://www.seedinvest.com/nowrx/series.c/?utm_source=nowrxlandingpage1&amp;utm_medium=referral" magic-link="invest-button" target="_blank" class="button">
-                                Invest Now
-                            </a>
-                        </div>
-                </div>
-            </section>
 
 
-
-            <div class="quote-section"><img
-                    data-src="https://assets.website-files.com/5d5d56675dd8937a8bcc193c/614895c983afd43a4f8ad190_image%2021-min.jpg"
-                    loading="lazy" width="169px" height="212px" alt="" class="image-11 lozad">
-                <blockquote class="block-quote"><em class="italic-text">“I highly recommend NowRx Pharmacy. I
-                        use them professionally as well as personally for my own prescriptions and they really
-                        are as good as advertised. They accept standing orders which has saved my office staff
-                        significant time and energy in addition to accurately applying drug coupons to lower out
-                        of pocket costs for my patients. I could not be happier with
-                        NowRx!”</em><br><br><strong>-Dr. James E Tearse, MD</strong></blockquote>
-            </div>
-
-
-            <section id="how-it-works" class="section lozad section-bussiness hand-bg"
-                data-background-image="https://assets.website-files.com/5d5d56675dd8937a8bcc193c/5d5ed1486e0dbce67eac23b9_hexagon.svg">
+            <section id="how-it-works" class="section lozad section-bussiness hand-bg" data-background-image="https://assets.website-files.com/5d5d56675dd8937a8bcc193c/5d5ed1486e0dbce67eac23b9_hexagon.svg">
                 <div class="container">
                     <div class="pricing-wrapper">
                         <div class="business-model lozad model-2" data-background-image="https://assets.website-files.com/5d5d56675dd8937a8bcc193c/5da9e57d43911225f442dcca_nowrx-blue-left-2.png"
@@ -588,6 +466,7 @@
                                         The doctor can then use fax, ePrescribe, or paper to send the prescription.
                                         <br>
                                     </p>
+
                                 </div>
                                 <div class="invesments-list list-full hor"><img width="60px" height="60px"
                                         class="lozad" data-src="https://assets.website-files.com/5d5d56675dd8937a8bcc193c/614899051151975fdb36a408_Group%2079.svg"
@@ -597,6 +476,7 @@
                                         certified NowRx employee will deliver in hours for FREE!
                                         <br>
                                     </p>
+
                                 </div>
                                 <div class="invesments-list list-full hor"><img width="60px" height="60px"
                                         class="lozad" data-src="https://assets.website-files.com/5d5d56675dd8937a8bcc193c/614899065cc8091c4d8b5b18_Group%2080.svg"
@@ -604,9 +484,10 @@
                                     <p class="p-sub p-short p-margin small-dot no-dot">Refills and transfers can be
                                         requested online, by phone, or through the NowRx app. Patients can even set up
                                         automatic refills each month for maximum convenience.<br></p>
+
                                 </div>
                                 <div class="button-wrapper"><a
-                                        href="https://www.seedinvest.com/nowrx/series.c/?utm_source=nowrxlandingpage1&amp;utm_medium=referral"
+                                        href="https://www.seedinvest.com/signup?next=/nowrx/series.c/invest&intent=invest%20in%20deal"
                                         target="_blank" magic-link="invest-button"
                                         class="button white-button button-menu buy-now w-button">Invest Now</a>
                                 </div>
@@ -616,6 +497,9 @@
 
                 </div>
             </section>
+
+
+
             <section class="section blue-section" id="proprietarypharmacytech">
                 <div class="container">
                     <div class="pricing-wrapper">
@@ -737,7 +621,7 @@
                                 </div>
                             </div>
                             <div class="btninvst">
-                                <a href="https://www.seedinvest.com/nowrx/series.c/?utm_source=nowrxlandingpage1&utm_medium=referral" magic-link="invest-button" target="_blank" class="button button-mobile buy-now w-button">
+                                <a href="https://www.seedinvest.com/signup?next=/nowrx/series.c/invest&intent=invest%20in%20deal" magic-link="invest-button" target="_blank" class="button button-mobile buy-now w-button">
                                     Invest Now
                                 </a>
                             </div>
@@ -1008,7 +892,7 @@
 
                             </div>
                             <div class="btninvst">
-                                <a href="https://www.seedinvest.com/nowrx/series.c/?utm_source=nowrxlandingpage1&utm_medium=referral" magic-link="invest-button" target="_blank" class="button button-mobile buy-now w-button">
+                                <a href="https://www.seedinvest.com/signup?next=/nowrx/series.c/invest&intent=invest%20in%20deal" magic-link="invest-button" target="_blank" class="button button-mobile buy-now w-button">
                                     Invest Now
                                 </a>
                             </div>
@@ -1018,6 +902,16 @@
             </section>
 
 
+            <div class="quote-section"><img
+                    data-src="https://assets.website-files.com/5d5d56675dd8937a8bcc193c/614895c983afd43a4f8ad190_image%2021-min.jpg"
+                    loading="lazy" width="169px" height="212px" alt="" class="image-11 lozad">
+                <blockquote class="block-quote"><em class="italic-text">“I highly recommend NowRx Pharmacy. I
+                        use them professionally as well as personally for my own prescriptions and they really
+                        are as good as advertised. They accept standing orders which has saved my office staff
+                        significant time and energy in addition to accurately applying drug coupons to lower out
+                        of pocket costs for my patients. I could not be happier with
+                        NowRx!”</em><br><br><strong>-Dr. James E Tearse, MD</strong></blockquote>
+            </div>
 
 
             <section class="section section-bottom-padding team-sec">
@@ -1127,7 +1021,7 @@
                         loading="lazy" alt="" class="image-8">
                 </div>
                 <div class="button-wrapper button-center"><a
-                        href="https://www.seedinvest.com/nowrx/series.c/?utm_source=nowrxlandingpage1&amp;utm_medium=referral" magic-link="invest-button"
+                        href="https://www.seedinvest.com/signup?next=/nowrx/series.c/invest&intent=invest%20in%20deal" magic-link="invest-button"
                         target="_blank" class="button white-button button-menu buy-now w-button">Invest Now</a>
                 </div>
             </section>

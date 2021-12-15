@@ -108,23 +108,164 @@
 </section>
 <?php include('section-quotes.php'); ?>
 <?php include('section-companies.php'); ?>
-<?php include('section-how-it-works.php'); ?>
+<?php
+// include('section-how-it-works.php'); ?>
+
+
+<section class="workssliders" id="">
+    <div class="container">
+        <header class="title">
+        <p class="pre-headline">Pharmacy Delivery Made Easy</p>
+            <h2 class="title">Here’s How It Works</h2>
+            <p>
+                From pitch decks to project plans, conference keynotes to all-hands meetings, our presentation software gives teams space to share all the work that matters.
+            </p>
+        </header>
+        <div class="swiper-item">
+            <!-- Slider main container -->
+            <div class="swiper howitworksslider">
+                  <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <div class="nm">Step 1</div>
+                    <figure class="img">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/test-image-copy2.jpg" alt="">
+                </figure>
+                <div class="al">
+                <div class="rvl">
+                    <div class="image">
+                        <img data-toggle-class="active" height="172px" width="172px" data-src="<?php echo get_template_directory_uri(); ?>/library/images/Prescription-Icon.png" alt="Prescription Icon" class="pic lozad">
+                    </div>
+                    <h3 class="padding-bottom-3">Send Us Your Prescription</h3>
+
+                    <p>
+                        <strong>New Prescription: </strong>Tell your doctor to fax or ePrescribe to NowRx. <br> <span class="spacing10"></span>
+                        <strong>Existing Prescription: </strong>Text Us or <a href="<?= get_site_url(); ?>/refill-and-transfer-prescriptions/">Tap Here to Request Prescription Delivery</a>.
+                    </p>
+                </div>
+                </div>
+                </div>
+                <!-- Slides -->
+                <div class="swiper-slide sck">
+                <div class="nm">Step 2</div>
+                <!-- <video title="nowrx pharmacy delivery website video" class="lazy orbit-image" muted  playsinline loop >
+                    <source type="video/mp4" data-src="<?php echo get_template_directory_uri(); ?>/images/NowRx Pharmacy delivery website video MP4.mp4" type="video/mp4">
+                    <source type="video/webm" data-src="<?php echo get_template_directory_uri(); ?>/images/NowRx Pharmacy delivery website video.webm" type="video/webm">
+                    Sorry, your browser doesn't support embedded videos.
+                    <track default kind="metadata" srclang="en" src="<?php echo get_template_directory_uri(); ?>/images/my_captions.vtt" />
+                </video> -->
+                <figure class="img">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/telehealth-app-doctor-image.webp" alt="">
+                </figure>
+                <div class="al">
+                <div class="rvl">
+                    <div class="image">
+                        <img data-toggle-class="active" height="172px" width="172px" data-src="<?php echo get_template_directory_uri(); ?>/library/images/Confirmation-Icon.png" alt="prescription delivery confirmation check mark icon" class="pic lozad ">
+                    </div>
+                    <h3 class="padding-bottom-3">We Confirm Delivery</h3>
+
+                    <p>We will reach out to you via phone to collect your insurance copay confirm your address and set
+                        up a
+                        delivery time.</p>
+                </div>
+                </div>
+                </div>
+                <!-- Slides -->
+                <div class="swiper-slide">
+                <div class="nm">Step 3</div>
+                <figure class="img">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/NowRx-Pharmacy-Driver-Delivering-Pharmacy-Bag-to-Customer.png" alt="">
+                </figure>
+                <div class="al">
+                <div class="rvl">
+                    <div class="image">
+                        <img data-toggle-class="active" height="172px" width="172px" data-src="<?php echo get_template_directory_uri(); ?>/library/images/Car-Icon.png" alt="Prescription Delivery Car Icon" class="pic lozad">
+                    </div>
+                    <h3 class="padding-bottom-3">Medication is Delivered</h3>
+
+                    <p>A NowRx employee will deliver your medication in hours from your local NowRx Pharmacy for free.
+                        All you pay is your normal copay.</p>
+                </div>
+                </div>
+                </div>
+
+            </div>
+
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            </div>
+
+        </div>
+        <div class="btn-container">
+                    <a class="rx-btn" href="<?= get_site_url(); ?>/refill-and-transfer-prescriptions/">
+                        <span class="arrow">
+
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/calltoaction.svg" class="pic limg" height="100" width="100" alt="nowrx pharmacy Get Started">
+                        </span>
+                        Get Started
+                    </a>
+
+                </div>
+    </div>
+</section>
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+/>
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script>
+    let menu = ['Send Us Your Prescription', 'Confirm Your Delivery', 'Receive It Same Day, Free']
+    const swiper = new Swiper('.howitworksslider', {
+  // Optional parameters
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable:true,
+    renderBullet: function (index, className) {
+          return '<span class="' + className + '">' + (menu[index]) + '</span>';
+        },
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
+</script>
+
+
+
 <section class="reviewstree">
 <div class="flo">
     <div class="floatpoint">
-    <img data-src="<?php echo get_template_directory_uri(); ?>/images/shield.svg" class="pic limg lozad" height="100" width="100" alt="nowrx pharmacy shield icon">
+    <img src="<?php echo get_template_directory_uri(); ?>/images/shield.svg" class="pic limg"   height="100" width="100" alt="nowrx pharmacy shield icon">
     </div>
     <div class="floatpoint">
-    <img data-src="<?php echo get_template_directory_uri(); ?>/images/shield.svg" class="pic limg lozad" height="100" width="100" alt="nowrx pharmacy shield icon">
+    <img src="<?php echo get_template_directory_uri(); ?>/images/shield.svg" class="pic limg" height="100" width="100" alt="nowrx pharmacy shield icon">
     </div>
     <div class="floatpoint">
-    <img data-src="<?php echo get_template_directory_uri(); ?>/images/shield.svg" class="pic limg lozad" height="100" width="100" alt="nowrx pharmacy shield icon">
+    <img src="<?php echo get_template_directory_uri(); ?>/images/shield.svg" class="pic limg" height="100" width="100" alt="nowrx pharmacy shield icon">
     </div>
     <div class="floatpoint">
-    <img data-src="<?php echo get_template_directory_uri(); ?>/images/shield.svg" class="pic limg lozad" height="100" width="100" alt="nowrx pharmacy shield icon">
+    <img src="<?php echo get_template_directory_uri(); ?>/images/shield.svg" class="pic limg" height="100" width="100" alt="nowrx pharmacy shield icon">
     </div>
     <div class="floatpoint">
-    <img data-src="<?php echo get_template_directory_uri(); ?>/images/shield.svg" class="pic limg lozad" height="100" width="100" alt="nowrx pharmacy shield icon">
+    <img src="<?php echo get_template_directory_uri(); ?>/images/shield.svg" class="pic limg" height="100" width="100" alt="nowrx pharmacy shield icon">
     </div>
 </div>
     <div class="container">
@@ -135,16 +276,16 @@
                     </div>
                     <div class="stars">
                         <div class="st">
-                        <img data-src="<?php echo get_template_directory_uri(); ?>/images/star.svg" class="pic limg lozad" height="100" width="100" alt="nowrx pharmacy star review">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/star.svg" class="pic limg" height="100" width="100" alt="nowrx pharmacy star review">
                         </div>
                         <div class="st">
-                        <img data-src="<?php echo get_template_directory_uri(); ?>/images/star.svg" class="pic limg lozad" height="100" width="100" alt="nowrx pharmacy star review">                        </div>
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/star.svg" class="pic limg" height="100" width="100" alt="nowrx pharmacy star review">                        </div>
                         <div class="st">
-                        <img data-src="<?php echo get_template_directory_uri(); ?>/images/star.svg" class="pic limg lozad" height="100" width="100" alt="nowrx pharmacy star review">                        </div>
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/star.svg" class="pic limg" height="100" width="100" alt="nowrx pharmacy star review">                        </div>
                         <div class="st">
-                        <img data-src="<?php echo get_template_directory_uri(); ?>/images/star.svg" class="pic limg lozad" height="100" width="100" alt="nowrx pharmacy star review">                        </div>
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/star.svg" class="pic limg" height="100" width="100" alt="nowrx pharmacy star review">                        </div>
                         <div class="st">
-                        <img data-src="<?php echo get_template_directory_uri(); ?>/images/star.svg" class="pic limg lozad" height="100" width="100" alt="nowrx pharmacy star review">                        </div>
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/star.svg" class="pic limg" height="100" width="100" alt="nowrx pharmacy star review">                        </div>
                     </div>
                     <div class="nim">Based on over 300 Yelp reviews.</div>
                 </div>
@@ -154,7 +295,7 @@
                         <blockquote class="item">
                             <span class="txt">
                                 <div class="quotefimg">
-                                <img data-src="<?php echo get_template_directory_uri(); ?>/images/quoteicon.svg" class="pic limg lozad" height="100" width="100" alt="nowrx pharmacy quote icon">
+                                <img src="<?php echo get_template_directory_uri(); ?>/images/quoteicon.svg" class="pic limg" height="100" width="100" alt="nowrx pharmacy quote icon">
                                 </div>
                                 "Companies that <b>ACTUALLY PROVIDE CUSTOMER SERVICE</b> are so rare in this day and age. These guys are awesome!"
                             </span>
@@ -168,7 +309,7 @@
                         <blockquote class="item">
                             <span class="txt">
                                 <div class="quotefimg">
-                                     <img data-src="<?php echo get_template_directory_uri(); ?>/images/quoteicon.svg" class="pic limg lozad" height="100" width="100" alt="nowrx pharmacy quote icon">
+                                     <img src="<?php echo get_template_directory_uri(); ?>/images/quoteicon.svg" class="pic limg" height="100" width="100" alt="nowrx pharmacy quote icon">
                                 </div>
                                 "<b>Best Pharmacy experience EVER</b>! These guys are like going to your
                                                 old neighborhood pharmacy, you know the one, where they deliver your
@@ -185,7 +326,7 @@
                         <blockquote class="item">
                             <span class="txt">
                                 <div class="quotefimg">
-                                     <img data-src="<?php echo get_template_directory_uri(); ?>/images/quoteicon.svg" class="pic limg lozad" height="100" width="100" alt="nowrx pharmacy quote icon">
+                                     <img src="<?php echo get_template_directory_uri(); ?>/images/quoteicon.svg" class="pic limg" height="100" width="100" alt="nowrx pharmacy quote icon">
                                 </div>
                                 <b>Best pharmacy I have ever used!</b> I have nothing but good things to say about them. Exemplary customer service, delivery right to your door with text updates, and great pricing. I will be using them for as long as I can!
 
@@ -200,7 +341,7 @@
                         <blockquote class="item">
                             <span class="txt">
                                 <div class="quotefimg">
-                                     <img data-src="<?php echo get_template_directory_uri(); ?>/images/quoteicon.svg" class="pic limg lozad" height="100" width="100" alt="nowrx pharmacy quote icon">
+                                     <img src="<?php echo get_template_directory_uri(); ?>/images/quoteicon.svg" class="pic limg" height="100" width="100" alt="nowrx pharmacy quote icon">
                                 </div>
                                 This is my new pharmacy. <b> Not only was their price lower, but they do same day delivery</b> to my neighborhood. And when you call it's easy to reach a real person. My kind of store!
                             </span>

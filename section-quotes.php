@@ -12,28 +12,28 @@
                                 <div class="stars">
                                     <div class="star">
 
-                                        <img data-src="<?php echo get_template_directory_uri(); ?>/images/starquote.svg"
-                                            class="pic lozad limg" height="100" width="100"
+                                        <img src="<?php echo get_template_directory_uri(); ?>/images/starquote.svg"
+                                            class="pic  limg" height="100" width="100"
                                             alt="nowrx pharmacy star quote">
                                     </div>
                                     <div class="star">
-                                        <img data-src="<?php echo get_template_directory_uri(); ?>/images/starquote.svg"
-                                            class="pic lozad limg" height="100" width="100"
+                                        <img src="<?php echo get_template_directory_uri(); ?>/images/starquote.svg"
+                                            class="pic  limg" height="100" width="100"
                                             alt="nowrx pharmacy star quote">
                                     </div>
                                     <div class="star">
-                                        <img data-src="<?php echo get_template_directory_uri(); ?>/images/starquote.svg"
-                                            class="pic lozad limg" height="100" width="100"
+                                        <img src="<?php echo get_template_directory_uri(); ?>/images/starquote.svg"
+                                            class="pic  limg" height="100" width="100"
                                             alt="nowrx pharmacy star quote">
                                     </div>
                                     <div class="star">
-                                        <img data-src="<?php echo get_template_directory_uri(); ?>/images/starquote.svg"
-                                            class="pic lozad limg" height="100" width="100"
+                                        <img src="<?php echo get_template_directory_uri(); ?>/images/starquote.svg"
+                                            class="pic  limg" height="100" width="100"
                                             alt="nowrx pharmacy star quote">
                                     </div>
                                     <div class="star">
-                                        <img data-src="<?php echo get_template_directory_uri(); ?>/images/starquote.svg"
-                                            class="pic lozad limg" height="100" width="100"
+                                        <img src="<?php echo get_template_directory_uri(); ?>/images/starquote.svg"
+                                            class="pic  limg" height="100" width="100"
                                             alt="nowrx pharmacy star quote">
                                     </div>
                                 </div>
@@ -64,28 +64,28 @@
                                 <h2 class="sec-title">Dr. James Tearse</h2>
                                 <div class="stars">
                                     <div class="star">
-                                        <img data-src="<?php echo get_template_directory_uri(); ?>/images/starquote.svg"
-                                            class="pic lozad limg" height="100" width="100"
+                                        <img src="<?php echo get_template_directory_uri(); ?>/images/starquote.svg"
+                                            class="pic  limg" height="100" width="100"
                                             alt="nowrx pharmacy star quote">
                                     </div>
                                     <div class="star">
-                                        <img data-src="<?php echo get_template_directory_uri(); ?>/images/starquote.svg"
-                                            class="pic lozad limg" height="100" width="100"
+                                        <img src="<?php echo get_template_directory_uri(); ?>/images/starquote.svg"
+                                            class="pic  limg" height="100" width="100"
                                             alt="nowrx pharmacy star quote">
                                     </div>
                                     <div class="star">
-                                        <img data-src="<?php echo get_template_directory_uri(); ?>/images/starquote.svg"
-                                            class="pic lozad limg" height="100" width="100"
+                                        <img src="<?php echo get_template_directory_uri(); ?>/images/starquote.svg"
+                                            class="pic  limg" height="100" width="100"
                                             alt="nowrx pharmacy star quote">
                                     </div>
                                     <div class="star">
-                                        <img data-src="<?php echo get_template_directory_uri(); ?>/images/starquote.svg"
-                                            class="pic lozad limg" height="100" width="100"
+                                        <img src="<?php echo get_template_directory_uri(); ?>/images/starquote.svg"
+                                            class="pic  limg" height="100" width="100"
                                             alt="nowrx pharmacy star quote">
                                     </div>
                                     <div class="star">
-                                        <img data-src="<?php echo get_template_directory_uri(); ?>/images/starquote.svg"
-                                            class="pic lozad limg" height="100" width="100"
+                                        <img src="<?php echo get_template_directory_uri(); ?>/images/starquote.svg"
+                                            class="pic  limg" height="100" width="100"
                                             alt="nowrx pharmacy star quote">
                                     </div>
                                 </div>
@@ -117,28 +117,28 @@
                                 <h2 class="sec-title">Tanya S.</h2>
                                 <div class="stars">
                                     <div class="star">
-                                        <img data-src="<?php echo get_template_directory_uri(); ?>/images/starquote.svg"
-                                            class="pic lozad limg" height="100" width="100"
+                                        <img src="<?php echo get_template_directory_uri(); ?>/images/starquote.svg"
+                                            class="pic  limg" height="100" width="100"
                                             alt="nowrx pharmacy star quote">
                                     </div>
                                     <div class="star">
-                                        <img data-src="<?php echo get_template_directory_uri(); ?>/images/starquote.svg"
-                                            class="pic lozad limg" height="100" width="100"
+                                        <img src="<?php echo get_template_directory_uri(); ?>/images/starquote.svg"
+                                            class="pic  limg" height="100" width="100"
                                             alt="nowrx pharmacy star quote">
                                     </div>
                                     <div class="star">
-                                        <img data-src="<?php echo get_template_directory_uri(); ?>/images/starquote.svg"
-                                            class="pic lozad limg" height="100" width="100"
+                                        <img src="<?php echo get_template_directory_uri(); ?>/images/starquote.svg"
+                                            class="pic  limg" height="100" width="100"
                                             alt="nowrx pharmacy star quote">
                                     </div>
                                     <div class="star">
-                                        <img data-src="<?php echo get_template_directory_uri(); ?>/images/starquote.svg"
-                                            class="pic lozad limg" height="100" width="100"
+                                        <img src="<?php echo get_template_directory_uri(); ?>/images/starquote.svg"
+                                            class="pic  limg" height="100" width="100"
                                             alt="nowrx pharmacy star quote">
                                     </div>
                                     <div class="star">
-                                        <img data-src="<?php echo get_template_directory_uri(); ?>/images/starquote.svg"
-                                            class="pic lozad limg" height="100" width="100"
+                                        <img src="<?php echo get_template_directory_uri(); ?>/images/starquote.svg"
+                                            class="pic  limg" height="100" width="100"
                                             alt="nowrx pharmacy star quote">
                                     </div>
                                 </div>
@@ -170,28 +170,28 @@
                                 <h2 class="sec-title">Melissa A.</h2>
                                 <div class="stars">
                                     <div class="star">
-                                        <img data-src="<?php echo get_template_directory_uri(); ?>/images/starquote.svg"
-                                            class="pic lozad limg" height="100" width="100"
+                                        <img src="<?php echo get_template_directory_uri(); ?>/images/starquote.svg"
+                                            class="pic  limg" height="100" width="100"
                                             alt="nowrx pharmacy star quote">
                                     </div>
                                     <div class="star">
-                                        <img data-src="<?php echo get_template_directory_uri(); ?>/images/starquote.svg"
-                                            class="pic lozad limg" height="100" width="100"
+                                        <img src="<?php echo get_template_directory_uri(); ?>/images/starquote.svg"
+                                            class="pic  limg" height="100" width="100"
                                             alt="nowrx pharmacy star quote">
                                     </div>
                                     <div class="star">
-                                        <img data-src="<?php echo get_template_directory_uri(); ?>/images/starquote.svg"
-                                            class="pic lozad limg" height="100" width="100"
+                                        <img src="<?php echo get_template_directory_uri(); ?>/images/starquote.svg"
+                                            class="pic  limg" height="100" width="100"
                                             alt="nowrx pharmacy star quote">
                                     </div>
                                     <div class="star">
-                                        <img data-src="<?php echo get_template_directory_uri(); ?>/images/starquote.svg"
-                                            class="pic lozad limg" height="100" width="100"
+                                        <img src="<?php echo get_template_directory_uri(); ?>/images/starquote.svg"
+                                            class="pic  limg" height="100" width="100"
                                             alt="nowrx pharmacy star quote">
                                     </div>
                                     <div class="star">
-                                        <img data-src="<?php echo get_template_directory_uri(); ?>/images/starquote.svg"
-                                            class="pic lozad limg" height="100" width="100"
+                                        <img src="<?php echo get_template_directory_uri(); ?>/images/starquote.svg"
+                                            class="pic  limg" height="100" width="100"
                                             alt="nowrx pharmacy star quote">
                                     </div>
                                 </div>

@@ -47,6 +47,7 @@ else:
                             <li><a href="<?= get_site_url(); ?>/refill-and-transfer-prescriptions/">Transfer Your Prescription</a></li>
                             <li><a href="<?= get_site_url(); ?>/for-doctors/">For Doctors</a></li>
                             <li><a href="<?= get_site_url(); ?>/contact-us/">Chat With A Pharmacist</a></li>
+                            <li><a href="<?= get_site_url(); ?>/pricing/">Pricing</a></li>
                         </ul>
                     </div>
                     <div class="large-3 small-6 cell">
