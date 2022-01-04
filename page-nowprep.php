@@ -18,7 +18,7 @@
 
 
 <!-- hero -->
-<section class="hero-home">
+<section class="hero-home block-prephome">
 
 
     <div class="container">

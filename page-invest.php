@@ -18,7 +18,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Cache-control" content="public">
 
-    <link rel="stylesheet" href='<?php echo get_template_directory_uri(); ?>/public/frontend.css?vc="121123112111121121"'>
+    <link rel="stylesheet" href='<?php echo get_template_directory_uri(); ?>/public/frontend.css?vc="12111231112111111211121"'>
 
 
     <link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
@@ -65,7 +65,7 @@
                         </a>
                     </div>
                     <div class="linksmsall">
-                        <a href="https://www.seedinvest.com/signup?next=/nowrx/series.c/invest&intent=invest%20in%20deal" magic-link="invest-button" target="_blank" class="button button-nav buy-now w-button">
+                        <a href="https://www.seedinvest.com/nowrx/series.c" magic-link="invest-button" target="_blank" class="button button-nav buy-now w-button">
                             INVEST NOW
                         </a>
                     </div>
@@ -104,27 +104,27 @@
                             </a>
                         </li>
                         <li itemprop="name">
-                            <a itemprop="url" href="#proprietarypharmacytech">
+                            <a itemprop="url" href="#competetitive-advantage">
                                 <div class="tk">
-                                Pharmacy Tech
+                                Competitive Advantage
                                     <span class="sub">
-                                    "QuickFill" tech powers a better pharmacy
+                                    What makes NowRx different
                                     </span>
                                 </div>
                             </a>
                         </li>
                         <li itemprop="name">
-                            <a itemprop="url" href="#competitor">
+                            <a itemprop="url" href="#testimonials">
                                 <div class="tk">
-                                    Competitors
+                                Testimonials
                                     <span class="sub">
-                                        NowRx vs "next gen" competitors
+                                    Real patient & doctor reviews
                                     </span>
                                 </div>
                             </a>
                         </li>
                         <li itemprop="name">
-                            <a href="https://www.seedinvest.com/signup?next=/nowrx/series.c/invest&intent=invest%20in%20deal"  magic-link="invest-button" target="_blank" class="button button-nav buy-now w-button">
+                            <a href="https://www.seedinvest.com/nowrx/series.c"  magic-link="invest-button" target="_blank" class="button button-nav buy-now w-button">
                                 INVEST NOW
                             </a>
                         </li>
@@ -149,7 +149,7 @@
                                 </span>
                                 <h1>
                                     <span class="kd">Disrupting the <br> <b>$480B</b> </span>
-                                    <span class="kd">Retail <br> Pharmacy Industry</span>
+                                    <span class="kd">Pharmacy Industry</span>
                                 </h1>
                                 <p>
                                     With Proprietary Pharmacy Software & Robotics
@@ -175,13 +175,15 @@
                                     </div>
                                 </div>
                                 <div class="infk">
+                                        <div id="fm16"></div>
                                     <script>
                                             hbspt.forms.create({
                                                 region: "na1",
                                                 portalId: "5952677",
-                                                formInstanceId: "122",
+                                                formInstanceId: "6",
                                                 formId: "df2a6935-1139-426a-b373-0917788189ad",
                                                 locale: 'en',
+                                                target:'#fm16',
                                                 translations: {
                                                     en: {
                                                         submitText: "Get NowRx Pitch Deck",
@@ -228,7 +230,7 @@
                     </div>
                 </div>
                 <div class="stl">
-                    *NowRx has already raised over <strong>$10M</strong> from more than <strong>3,000</strong> investors in this round!
+                    *NowRx has already raised over <strong>$11M</strong> from more than <strong>3,300</strong> investors in this round!
                 </div>
             </section>
 
@@ -315,7 +317,7 @@
 
                                 </div>
                                 <div class="mnk">
-                                CAGR
+                                Revenue
                                 </div>
                                 <div class="info">
                                 Compounded annual growth rate since 2016.
@@ -338,14 +340,14 @@
                             <!-- item -->
                             <div class="item">
                                 <div class="numb">
-                                $9M
+                                $11M
 
                                 </div>
                                 <div class="mnk">
                                 Shares Sold
                                 </div>
                                 <div class="info">
-                                To over 2,700 investors in the current round.
+                                To over 3,300 investors in the current round.
 
                                 </div>
                             </div>
@@ -353,15 +355,13 @@
                             <!-- item -->
                             <div class="item">
                                 <div class="numb">
-                                73%
-
+                                    1,081%
                                 </div>
                                 <div class="mnk">
-                                MoM Growth
+                                    Revenue Growth
                                 </div>
                                 <div class="info">
-                                NowRx Telehealth since launching in January.
-
+                                    NowRx Telehealth from Q1 to Q3 in 2021
                                 </div>
                             </div>
                             <!-- item -->
@@ -409,7 +409,7 @@
 
                         </div>
                         <div class="callitem">
-                            <a href="https://www.seedinvest.com/signup?next=/nowrx/series.c/invest&intent=invest%20in%20deal" magic-link="invest-button" target="_blank" class="button button-mobile buy-now w-button">
+                            <a href="https://www.seedinvest.com/nowrx/series.c" magic-link="invest-button" target="_blank" class="button button-mobile buy-now w-button">
                                 Invest Now
                             </a>
                         </div>
@@ -427,16 +427,15 @@
                 <div class="w-layout-grid grid-9">
                     <h2 class="h2-left">Get the NowRx<strong> Investor Deck</strong></h2>
                     <div class="form-block w-form">
-
+                        <div id="fm7"></div>
                         <script>
-                            window.addEventListener('load', function() {
                                 hbspt.forms.create({
                                     region: "na1",
                                     portalId: "5952677",
-                                    formInstanceId: "1",
-                                    formId: "df2a6935-1139-426a-b373-0917788189ad"
+                                    formInstanceId: "7",
+                                    formId: "df2a6935-1139-426a-b373-0917788189ad",
+                                    target:'#fm7'
                                 });
-                            });
                         </script>
                     </div>
                 </div>
@@ -446,188 +445,86 @@
 
 
 
-            <section id="how-it-works" class="section lozad section-bussiness hand-bg" data-background-image="https://assets.website-files.com/5d5d56675dd8937a8bcc193c/5d5ed1486e0dbce67eac23b9_hexagon.svg">
+            <section id="how-it-works" class="section lozad section-bussiness hand-bg how-it-works" data-background-image="https://assets.website-files.com/5d5d56675dd8937a8bcc193c/5d5ed1486e0dbce67eac23b9_hexagon.svg">
                 <div class="container">
                     <div class="pricing-wrapper">
-                        <div class="business-model lozad model-2" data-background-image="https://assets.website-files.com/5d5d56675dd8937a8bcc193c/5da9e57d43911225f442dcca_nowrx-blue-left-2.png"
-                            >
-                        </div>
                         <div id="how" class="business-model model-1">
-                            <h2 class="h2-box h2-op">How <strong>NowRx</strong> Works</h2>
-                            <p class="p-sub p-short">
-                                Sending a prescription to NowRx is just like sending it to any other retail pharmacy.
-                            </p>
+
+                            <header class="tl">
+                                <h2 class="h2-box h2-op">How It <strong>Works</strong></h2>
+                                <p class="p-sub p-short">
+                                    NowRx is easy to use and transforms hours at a traditional pharmacy into minutes on the phone - here's how it works.
+                                </p>
+                            </header>
+
                             <div class="business-box">
-                                <div class="invesments-list list-full hor"><img width="60px" height="60px"
-                                        class="lozad" data-src="https://assets.website-files.com/5d5d56675dd8937a8bcc193c/61489905e242c2c0d1558b0c_Group%2078.svg"
-                                        loading="lazy" alt="" class="image-10">
-                                    <p class="p-sub p-short p-margin small-dot no-dot">
-                                        When a doctor writes a prescription and asks where to send it, tell them NowRx.
-                                        The doctor can then use fax, ePrescribe, or paper to send the prescription.
-                                        <br>
-                                    </p>
+                                <div class="invesments-list list-full hor">
+                                    <div class="km">
 
-                                </div>
-                                <div class="invesments-list list-full hor"><img width="60px" height="60px"
-                                        class="lozad" data-src="https://assets.website-files.com/5d5d56675dd8937a8bcc193c/614899051151975fdb36a408_Group%2079.svg"
-                                        loading="lazy" alt="" class="image-10">
-                                    <p class="p-sub p-short p-margin small-dot no-dot">Once NowRx receives the
-                                        prescription, the patient is contacted to schedule a delivery and then a HIPAA
-                                        certified NowRx employee will deliver in hours for FREE!
-                                        <br>
-                                    </p>
+                                        <div class="cm">
+                                        <div class="kl">
+                                            <img width="60px" height="60px" class="lozad" data-src="https://assets.website-files.com/5d5d56675dd8937a8bcc193c/61489905e242c2c0d1558b0c_Group%2078.svg"
+                                            loading="lazy" alt="1" class="image-10">
+                                        </div>
+                                        <h3 class="title">Send Us Your Prescription</h3>
+                                        </div>
 
+                                        <p class="p-sub p-short p-margin small-dot no-dot works-paragraph">
+                                            Doctors can send prescriptions to NowRx using their existing prescribing method or patients can use our mobile app and website for transfers/refills.
+                                        </p>
+                                    </div>
+                                    <figure>
+                                        <img src="<?php echo get_template_directory_uri(); ?>/images/doctor-writing-prescription-to-nowrx-copy.webp" alt="doctor writing prescription to nowrx copy">
+                                    </figure>
                                 </div>
-                                <div class="invesments-list list-full hor"><img width="60px" height="60px"
-                                        class="lozad" data-src="https://assets.website-files.com/5d5d56675dd8937a8bcc193c/614899065cc8091c4d8b5b18_Group%2080.svg"
-                                        loading="lazy" alt="" class="image-10">
-                                    <p class="p-sub p-short p-margin small-dot no-dot">Refills and transfers can be
-                                        requested online, by phone, or through the NowRx app. Patients can even set up
-                                        automatic refills each month for maximum convenience.<br></p>
+                                <div class="invesments-list list-full hor">
 
+                                    <div class="km">
+
+                                        <div class="cm">
+                                        <div class="kl">
+                                            <img width="60px" height="60px"
+                                            class="lozad" data-src="https://assets.website-files.com/5d5d56675dd8937a8bcc193c/614899051151975fdb36a408_Group%2079.svg"
+                                            loading="lazy" alt="2" class="image-10">
+                                        </div>
+                                        <h3 class="title">We Confirm Delivery</h3>
+                                        </div>
+
+                                        <p class="p-sub p-short p-margin small-dot no-dot works-paragraph">
+                                            Once NowRx receives the prescription, a pharmacy team member reaches out by phone to set up delivery, take payment, and answer any medication questions.
+                                        </p>
+                                    </div>
+                                    <figure>
+                                        <img src="<?php echo get_template_directory_uri(); ?>/images/AdobeStock_91568410.webp" alt="We Confirm Delivery">
+                                    </figure>
                                 </div>
-                                <div class="button-wrapper"><a
-                                        href="https://www.seedinvest.com/signup?next=/nowrx/series.c/invest&intent=invest%20in%20deal"
-                                        target="_blank" magic-link="invest-button"
-                                        class="button white-button button-menu buy-now w-button">Invest Now</a>
+                                <div class="invesments-list list-full hor">
+                                    <div class="km">
+
+                                        <div class="cm">
+                                        <div class="kl">
+                                            <img width="60px" height="60px"
+                                                class="lozad" data-src="https://assets.website-files.com/5d5d56675dd8937a8bcc193c/614899065cc8091c4d8b5b18_Group%2080.svg"
+                                                loading="lazy" alt="3" class="image-10">
+                                        </div>
+                                        <h3 class="title">Medication is Delivered</h3>
+                                        </div>
+
+                                        <p class="p-sub p-short p-margin small-dot no-dot works-paragraph">
+                                            Finally, a HIPAA certified NowRx pharmacy employee delivers the prescription in hours for free! For refills, patients can opt for auto-refill for maximum convenience.
+                                        </p>
+                                    </div>
+                                    <figure>
+                                        <img src="<?php echo get_template_directory_uri(); ?>/images/prescription-delivery-car-nowrx.webp" alt="Medication is Delivered">
+                                    </figure>
+                                </div>
+                                <div class="button-wrapper">
+                                    <a href="https://www.seedinvest.com/nowrx/series.c" target="_blank" magic-link="invest-button" class="button white-button button-menu buy-now w-button">Invest Now</a>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                </div>
-            </section>
-
-
-
-            <section class="section blue-section" id="proprietarypharmacytech">
-                <div class="container">
-                    <div class="pricing-wrapper">
-                        <div class="cl-80">
-                            <h2 class="h2-box h2-op">NowRx’s Pharmacy Tech Creates a <strong>Better Experience</strong>
-                                for
-                                Customers<br></h2>
-                            <p class="p-sub mar-b">In comparison to antiquated legacy software used by most pharmacies,
-                                NowRx incorporates modern, full stack technology that produces a simple, frictionless
-                                experience for customers.</p>
-                            <div class="text-block-27">Our Technology Stack</div>
-                            <div class="rows row-new _2">
-                                <div class="column-19 top-0"><a href="#/"
-                                        class="featurelogos-2 wh w-inline-block"><img
-                                            data-src="https://assets.website-files.com/5d5d56675dd8937a8bcc193c/613ded89edac67851e60fc3c_Group%2057.svg"
-                                            loading="lazy" width="66px" height="60px" alt="" class="icon-b nom lozad">
-                                        <div>Inventory System</div>
-                                    </a></div>
-                                <div class="column-19 top-0"><a href="#/"
-                                        class="featurelogos-2 wh w-inline-block"><img
-                                            data-src="https://assets.website-files.com/5d5d56675dd8937a8bcc193c/613ded8bcd671550459ff14d_Group%2058.svg"
-                                            loading="lazy"  width="66px" height="60px" alt="" class="icon-b nom lozad">
-                                        <div>Automated Adjudication</div>
-                                    </a></div>
-                                <div class="column-19 top-0"><a href="#/"
-                                        class="featurelogos-2 wh w-inline-block"><img
-                                            data-src="https://assets.website-files.com/5d5d56675dd8937a8bcc193c/613ded8939123e236ce04fcc_Group%2014.svg"
-                                            loading="lazy"  width="66px" height="60px" alt="" class="icon-b nom lozad">
-                                        <div>Chatbots</div>
-                                    </a></div>
-                                <div class="column-19 top-0"><a href="#/"
-                                        class="featurelogos-2 wh w-inline-block"><img
-                                            data-src="https://assets.website-files.com/5d5d56675dd8937a8bcc193c/613ded8839123ef5f5e04fcb_Group%2015.svg"
-                                            loading="lazy"  width="66px" height="60px" alt="" class="icon-b nom lozad">
-                                        <div>Robotics Processing</div>
-                                    </a></div>
-                                <div class="column-19 top-0"><a href="#/"
-                                        class="featurelogos-2 wh w-inline-block"><img
-                                            data-src="https://assets.website-files.com/5d5d56675dd8937a8bcc193c/613ded8b9900f83fb124f372_Group%2060.svg"
-                                            loading="lazy"  width="66px" height="60px" alt="" class="icon-b nom lozad">
-                                        <div>2-Way Msg Physician (EMR)</div>
-                                    </a></div>
-                                <div class="column-19 top-0"><a href="#/"
-                                        class="featurelogos-2 wh w-inline-block"><img
-                                            data-src="https://assets.website-files.com/5d5d56675dd8937a8bcc193c/613ded8a69891454acc1569c_Group%2059.svg"
-                                            loading="lazy"  width="66px" height="60px" alt="" class="icon-b nom lozad">
-                                        <div>Logistics</div>
-                                    </a></div>
-                            </div>
-                        </div>
-                        <div class="image right lozad"
-                            data-background-image="https://assets.website-files.com/5d5d56675dd8937a8bcc193c/613df231d23ae1d3e4ccdcf3_Group%2061-min.jpeg">
-                        </div>
-                    </div>
-                </div>
-                <div class="container"></div>
-            </section>
-            <section class="comptiv">
-                <div class="container">
-
-                    <div class="contentx">
-                        <div class="phone">
-                        <div class="header">
-                        <h2 class="title">NowRx Pharmacy is Driven By a <strong>Powerful Technology Stack</strong></h2>
-                        <p>
-                            NowRx's proprietary "QuickFill" software provides a competitive advantage for NowRx by
-                            enabling a number of customer benefits.
-                        </p>
-                    </div>
-                            <figure>
-                                <img data-src="<?php echo get_template_directory_uri(); ?>/images/stock-to-invest-in-nowrx-mobile-app.webp"
-                                    alt="stock to invest in nowrx mobile app" width="550px" height="550px" class="lozad">
-                            </figure>
-                        </div>
-                        <div class="blocks">
-                            <!-- block -->
-                            <div class="block">
-                                <div class="nm">1</div>
-                                <div class="txt">
-                                    <h3 class="title">FREE Same Day Delivery</h3>
-                                    <p>Better efficiency & automated processes allow NowRx to provide FREE same day
-                                        delivery!</p>
-                                </div>
-                            </div>
-                            <!-- block -->
-                            <div class="block">
-                                <div class="nm">2</div>
-                                <div class="txt">
-                                    <h3 class="title">Reduced Insurance Rejections</h3>
-                                    <p>Intelligent claims adjudication features help the pharmacy process insurance more
-                                        effectively.</p>
-                                </div>
-                            </div>
-                            <!-- block -->
-                            <div class="block">
-                                <div class="nm">3</div>
-                                <div class="txt">
-                                    <h3 class="title">Reduced Out of Stock Issues</h3>
-                                    <p>Machine learning algorithms help automate purchases & maintain proper inventory
-                                        levels.</p>
-                                </div>
-                            </div>
-                            <!-- block -->
-                            <div class="block">
-                                <div class="nm">4</div>
-                                <div class="txt">
-                                    <h3 class="title">Lower Out of Pocket Costs</h3>
-                                    <p>Discount search features find & apply discounts automatically ($2.8M saved in
-                                        2020)</p>
-                                </div>
-                            </div>
-                            <!-- block -->
-                            <div class="block">
-                                <div class="nm">5</div>
-                                <div class="txt">
-                                    <h3 class="title">5 Star Customer Service</h3>
-                                    <p>Optimized workflows & automated processes free pharmacist time for what matters -
-                                        customer!</p>
-                                </div>
-                            </div>
-                            <div class="btninvst">
-                                <a href="https://www.seedinvest.com/signup?next=/nowrx/series.c/invest&intent=invest%20in%20deal" magic-link="invest-button" target="_blank" class="button button-mobile buy-now w-button">
-                                    Invest Now
-                                </a>
-                            </div>
-                        </div>
-
-                    </div>
                 </div>
             </section>
 
@@ -635,72 +532,215 @@
                 <div class="w-layout-grid grid-9">
                     <h2 class="h2-left">Get the NowRx<strong> Investor Deck</strong></h2>
                     <div class="form-block w-form">
-
+                            <div id="fm22"></div>
                     <script>
-                            window.addEventListener('load', function() {
                                 hbspt.forms.create({
                                     region: "na1",
                                     portalId: "5952677",
-                                    formInstanceId: "2",
-                                    formId: "df2a6935-1139-426a-b373-0917788189ad"
+                                    formInstanceId: "22",
+                                    formId: "df2a6935-1139-426a-b373-0917788189ad",
+                                    target:'#fm22'
                                 });
-                            });
                         </script>
 
                     </div>
                 </div>
             </div>
 
-            <section class="section padding-m quickf" id="competitor">
-
+            <section class="section-competetive" id="competetitive-advantage">
                 <div class="container">
-                    <div class="flex hor-mo margin">
-                        <div class="col-left">
-                            <h2 class="blocktitle h2-box h2-op center">
-                                NowRx vs "Next-Gen" Pharmacy <strong>Competitors</strong>
-                            </h2>
-                            <p class="txtuncder">
-                                NowRx's proprietary pharmacy software and robotics provide an unrivaled pharmacy
-                                experience for customers.
-                            </p>
 
-                            <img data-src="https://assets.website-files.com/5d5d56675dd8937a8bcc193c/614897d91c72ce333e5c156b_Group%2088-min.jpg"
-                                loading="lazy" width="800px" height="890px"
-                                sizes="(max-width: 479px) 98vw, (max-width: 991px) 100vw, (max-width: 1439px) 54vw, 705.09765625px"
-                                srcset="https://assets.website-files.com/5d5d56675dd8937a8bcc193c/614897d91c72ce333e5c156b_Group%2088-min-p-500.jpeg 500w, https://assets.website-files.com/5d5d56675dd8937a8bcc193c/614897d91c72ce333e5c156b_Group%2088-min-p-800.jpeg 800w, https://assets.website-files.com/5d5d56675dd8937a8bcc193c/614897d91c72ce333e5c156b_Group%2088-min-p-1080.jpeg 1080w, https://assets.website-files.com/5d5d56675dd8937a8bcc193c/614897d91c72ce333e5c156b_Group%2088-min.jpg 1380w"
-                                alt="" class="image-12 lozad">
+                    <header class="title">
+                        <h2 class="sec-title ">
+                            Competitive <strong>Advantage</strong>
+                        </h2>
+                        <p>
+                            NowRx has several competitive advantages over traditional pharmacy and mail order delivery options that provide a <strong>sustainable defense now and in the near future</strong>.
+                        </p>
+                    </header>
 
-                            <p class="txtunder">
-                                The Net Promoter Score measures the willingness of customers to recommend a company's
-                                products or services to others. It is used as a proxy for gauging the customer’s overall
-                                satisfaction and loyalty to the brand.
-                            </p>
+                    <div class="columns">
 
+                        <div class="row-item">
+                            <div class="context">
+                                <h3 class="sec-title click-pop" data-view="false">Proprietary Pharmacy Software & Robotics
+                                    <span class="click">
+                                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" class="svg-inline--fa fa-angle-right fa-w-8 fa-3x"><path fill="currentColor" d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" class=""></path></svg>
+                                    </span>
+                                </h3>
+                                <p>
+                                Award winning “QuickFill” software increases pharmacy efficiency and reduces dispensing costs while minimizing common retail pharmacy problems like insurance issues, medications out of stock, etc.
+                                </p>
+                            </div>
+                            <div class="image-block">
+                            <figure class="image-item">
+                                <img src="<?php echo get_template_directory_uri(); ?>/images/mechanical.webp" alt="Proprietary Pharmacy Software & Robotics">
+                            </figure>
+                            <p>
+                                Award winning “QuickFill” software increases pharmacy efficiency and reduces dispensing costs while minimizing common retail pharmacy problems like insurance issues, medications out of stock, etc.
+                                </p>
+                            </div>
                         </div>
-                        <div class="business-box right-box white shadow">
-                            <div class="w-layout-gridgrid-8d"><img
-                                    data-src="https://assets.website-files.com/5d5d56675dd8937a8bcc193c/614895cbc74189197fd3ef1e_Group%2087-min.jpg"
-                                    class="lozad" loading="lazy" id="w-node-_89d1b09f-28ec-4318-e2ea-5e98f9bda998-a3cc193b"
-                                    sizes="(max-width: 479px) 95vw, (max-width: 830px) 100vw, 830px"
-                                    srcset="https://assets.website-files.com/5d5d56675dd8937a8bcc193c/614895cbc74189197fd3ef1e_Group%2087-min-p-500.jpeg 500w, https://assets.website-files.com/5d5d56675dd8937a8bcc193c/614895cbc74189197fd3ef1e_Group%2087-min-p-800.jpeg 800w, https://assets.website-files.com/5d5d56675dd8937a8bcc193c/614895cbc74189197fd3ef1e_Group%2087-min.jpg 830w"
-                                    alt=""><img
-                                    data-src="https://assets.website-files.com/5d5d56675dd8937a8bcc193c/614895cd66a325d161c3126e_Group%2086-min.jpg"
-                                    class="lozad" loading="lazy" sizes="(max-width: 479px) 95vw, (max-width: 830px) 100vw, 830px"
-                                    srcset="https://assets.website-files.com/5d5d56675dd8937a8bcc193c/614895cd66a325d161c3126e_Group%2086-min-p-500.jpeg 500w, https://assets.website-files.com/5d5d56675dd8937a8bcc193c/614895cd66a325d161c3126e_Group%2086-min-p-800.jpeg 800w, https://assets.website-files.com/5d5d56675dd8937a8bcc193c/614895cd66a325d161c3126e_Group%2086-min.jpg 830w"
-                                    alt=""><img
-                                    data-src="https://assets.website-files.com/5d5d56675dd8937a8bcc193c/614897646502186d9dee4e7d_Group%2085-min.jpg"
-                                    class="lozad" loading="lazy" sizes="(max-width: 479px) 95vw, (max-width: 830px) 100vw, 830px"
-                                    srcset="https://assets.website-files.com/5d5d56675dd8937a8bcc193c/614897646502186d9dee4e7d_Group%2085-min-p-500.jpeg 500w, https://assets.website-files.com/5d5d56675dd8937a8bcc193c/614897646502186d9dee4e7d_Group%2085-min-p-800.jpeg 800w, https://assets.website-files.com/5d5d56675dd8937a8bcc193c/614897646502186d9dee4e7d_Group%2085-min.jpg 830w"
-                                    alt=""></div>
+
+                        <div class="row-item">
+                            <div class="context">
+                                <h3 class="sec-title click-pop" data-view="false">Low Cost Microfulfillment Pharmacies
+                                    <span class="click">
+                                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" class="svg-inline--fa fa-angle-right fa-w-8 fa-3x"><path fill="currentColor" d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" class=""></path></svg>
+                                    </span>
+                                </h3>
+                                <p>
+                                A single NowRx can service the same volume as up to 20 traditional pharmacies and free same day delivery removes the need for prime retail store front that maximizes walk-in traffic. As a result, NowRx’s fixed overhead is less than 1% of typical large retail chains.
+                                </p>
+                            </div>
+                            <div class="image-block">
+                            <figure class="image-item">
+                                <img src="<?php echo get_template_directory_uri(); ?>/images/cvs.png" alt="Low Cost Microfulfillment Pharmacies">
+                            </figure>
+                            <p>
+                                A single NowRx can service the same volume as up to 20 traditional pharmacies and free same day delivery removes the need for prime retail store front that maximizes walk-in traffic. As a result, NowRx’s fixed overhead is less than 1% of typical large retail chains.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="row-item">
+                            <div class="context">
+                                <h3 class="sec-title click-pop" data-view="false">Digital Based Service Model
+                                    <span class="click">
+                                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" class="svg-inline--fa fa-angle-right fa-w-8 fa-3x"><path fill="currentColor" d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" class=""></path></svg>
+                                    </span>
+                                </h3>
+                                <p>
+                                NowRx can continue expanding within existing territories without the need for major capital expenditure. In addition, NowRx Telehealth is completely software based and requires zero capital expenditure.
+                                </p>
+                            </div>
+                           <div class="image-block">
+                            <figure class="image-item">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/images/doc-perscriptions.webp" alt="Digital Based Service Model">
+                                </figure>
+                             <p>
+                                NowRx can continue expanding within existing territories without the need for major capital expenditure. In addition, NowRx Telehealth is completely software based and requires zero capital expenditure.
+                                </p>
+                           </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="quickfill-section">
+                <div class="container">
+                    <div class="content">
+
+                        <div class="columns">
+                            <div class="column main">
+                            <header class="title">
+                            <h2 class="sec-title">NowRx <strong>"QuickFill"</strong> System</h2>
+                            <p>
+                            Streamlines backend pharmacy operations while reducing bottlenecks and common pharmacy issues that result in bad customer experiences.
+                            </p>
+                        </header>
+                                <figure>
+                                    <img src="<?php echo get_template_directory_uri(); ?>/images/Invest-in-NowRx-QuickFill.webp" alt="Invest in NowRx QuickFill">
+                                </figure>
+                                <div class="content">
+
+                                <p>
+                                NowRx's QuickFill pharmacy technology won a White Coat Award for Highest Accuracy from SureScripts - <b>the leading health information network in the US.</b>
+                                </p>
+                                </div>
+                            </div>
+                            <div class="column side">
+                                <h3 class="title">Features</h3>
+                                <ul class="list">
+                                    <li>
+                                        <figure>
+                                        <img
+                                            data-src="https://assets.website-files.com/5d5d56675dd8937a8bcc193c/613ded89edac67851e60fc3c_Group%2057.svg"
+                                            loading="lazy" width="66px" height="60px" alt="Intelligent Claim Adjudication" class="icon-b nom lozad">
+                                        </figure>
+                                        <span class="text">Intelligent Claim Adjudication</span>
+                                    </li>
+                                    <li>
+                                        <figure>
+                                        <img
+                                            data-src="https://assets.website-files.com/5d5d56675dd8937a8bcc193c/613ded8bcd671550459ff14d_Group%2058.svg"
+                                            loading="lazy"  width="66px" height="60px" alt="Predictive Inventory System(ML)" class="icon-b nom lozad">
+                                        </figure>
+                                        <span class="text">Predictive Inventory System(ML)</span>
+                                    </li>
+                                    <li>
+                                        <figure>
+                                        <img
+                                            data-src="https://assets.website-files.com/5d5d56675dd8937a8bcc193c/613ded8939123e236ce04fcc_Group%2014.svg"
+                                            loading="lazy"  width="66px" height="60px" alt="Chatbot-Assisted Call Center" class="icon-b nom lozad">
+                                        </figure>
+                                        <span class="text">Chatbot-Assisted Call Center</span>
+                                    </li>
+                                    <li>
+                                        <figure>
+                                        <img
+                                            data-src="https://assets.website-files.com/5d5d56675dd8937a8bcc193c/613ded8839123ef5f5e04fcb_Group%2015.svg"
+                                            loading="lazy"  width="66px" height="60px" alt="Logistics & Automated Triage" class="icon-b nom lozad">
+                                        </figure>
+                                        <span class="text">Logistics & Automated Triage</span>
+                                    </li>
+                                    <li>
+                                        <figure>
+                                        <img
+                                            data-src="https://assets.website-files.com/5d5d56675dd8937a8bcc193c/613ded8b9900f83fb124f372_Group%2060.svg"
+                                            loading="lazy"  width="66px" height="60px" alt="End-to-End Robotic Dispensing" class="icon-b nom lozad">
+                                        </figure>
+                                        <span class="text">End-to-End Robotic Dispensing</span>
+                                    </li>
+                                    <li>
+                                        <figure>
+                                        <img
+                                            data-src="https://assets.website-files.com/5d5d56675dd8937a8bcc193c/613ded8a69891454acc1569c_Group%2059.svg"
+                                            loading="lazy"  width="66px" height="60px" alt="Automated Physician Comms" class="icon-b nom lozad">
+                                        </figure>
+                                        <span class="text">Automated Physician Comms</span>
+                                    </li>
+                                </ul>
+                                <div class="patents">
+                                    <span class="patents-block">
+                                        <h3 class="title">Patents</h3>
+                                    </span>
+                                    <ul>
+                                        <li>
+                                        Application (Pending) #: 16249899 – Method and System of an Automated Medication Dispensing and Delivery System
+                                        </li>
+                                        <li>
+                                        Application (Pending) #: 17243575 - Systems, methods, and apparatuses for implementing machine learning model training and deployment for predictive inventory purchasing database
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-
             </section>
 
 
 
+            <div class="cta lozad" data-background-image="https://assets.website-files.com/5d5d56675dd8937a8bcc193c/5d5da5103e9e5a775604e1aa_pill2.svg">
+                <div class="w-layout-grid grid-9">
+                    <h2 class="h2-left">Get the NowRx<strong> Investor Deck</strong></h2>
+                    <div class="form-block w-form">
+                            <div id="fm2"></div>
+                    <script>
+                                hbspt.forms.create({
+                                    region: "na1",
+                                    portalId: "5952677",
+                                    formInstanceId: "2",
+                                    formId: "df2a6935-1139-426a-b373-0917788189ad",
+                                    target:'#fm2'
+                                });
+                        </script>
 
+                    </div>
+                </div>
+            </div>
 
             <section id="testimonials" class="section section-bottom-padding lab">
                 <div class="container testimonials">
@@ -892,7 +932,7 @@
 
                             </div>
                             <div class="btninvst">
-                                <a href="https://www.seedinvest.com/signup?next=/nowrx/series.c/invest&intent=invest%20in%20deal" magic-link="invest-button" target="_blank" class="button button-mobile buy-now w-button">
+                                <a href="https://www.seedinvest.com/nowrx/series.c" magic-link="invest-button" target="_blank" class="button button-mobile buy-now w-button">
                                     Invest Now
                                 </a>
                             </div>
@@ -1021,7 +1061,7 @@
                         loading="lazy" alt="" class="image-8">
                 </div>
                 <div class="button-wrapper button-center"><a
-                        href="https://www.seedinvest.com/signup?next=/nowrx/series.c/invest&intent=invest%20in%20deal" magic-link="invest-button"
+                        href="https://www.seedinvest.com/nowrx/series.c" magic-link="invest-button"
                         target="_blank" class="button white-button button-menu buy-now w-button">Invest Now</a>
                 </div>
             </section>
@@ -1032,16 +1072,15 @@
                 <div class="w-layout-grid grid-9">
                     <h2 class="h2-left">Get the NowRx<strong> Investor Deck</strong></h2>
                     <div class="form-block w-form">
-
+                                <div id="fm3"></div>
                         <script>
-                            window.addEventListener('load', function() {
                                 hbspt.forms.create({
                                     region: "na1",
                                     portalId: "5952677",
                                     formInstanceId: "3",
-                                    formId: "df2a6935-1139-426a-b373-0917788189ad"
+                                    formId: "df2a6935-1139-426a-b373-0917788189ad",
+                                    target:'#fm3'
                                 });
-                            });
                         </script>
 
                     </div>
@@ -1181,16 +1220,15 @@
                 <div class="w-layout-grid grid-9">
                     <h2 class="h2-left">Get the NowRx<strong> Investor Deck</strong></h2>
                     <div class="form-block w-form">
-
+                            <div id="fm4"></div>
                     <script>
-                            window.addEventListener('load', function() {
                                 hbspt.forms.create({
                                     region: "na1",
                                     portalId: "5952677",
                                     formInstanceId: "4",
-                                    formId: "df2a6935-1139-426a-b373-0917788189ad"
+                                    formId: "df2a6935-1139-426a-b373-0917788189ad",
+                                    target:'#fm4'
                                 });
-                            });
                         </script>
 
                     </div>
@@ -1216,18 +1254,18 @@
                     </div>
                     <h2 class="title">Get the NowRx Investor Deck</h2>
                     <p>
-                        Sign up for campaign updates and learn more about the opportunity to invest in NowRx.
+                    Download the NowRx investor pitch deck and see what is driving record demand for shares of NowRx!
                     </p>
                     <div class="formcall">
+                                    <div id="fm5"></div>
                                     <script>
-                                        window.addEventListener('load', function() {
                                             hbspt.forms.create({
                                                 region: "na1",
                                                 portalId: "5952677",
                                                 formInstanceId: "5",
-                                                formId: "df2a6935-1139-426a-b373-0917788189ad"
+                                                formId: "df2a6935-1139-426a-b373-0917788189ad",
+                                                target:'#fm5'
                                             });
-                                        });
                                     </script>
                     </div>
                 </div>

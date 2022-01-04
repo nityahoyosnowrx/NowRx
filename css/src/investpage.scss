@@ -132,9 +132,7 @@ header.main.investorhead {
 			padding: 5px;
 		}
 	}
-	ul.nav a:after {
-		display: none;
-	}
+
 	a.main-nav-logo figure.sk {
 		margin: 0;
 		position: absolute;
@@ -183,8 +181,22 @@ header.main.investorhead {
 			padding: 50px 10px 10px;
 		}
 		a {
+			&:after {
+				content: close-quote;
+				position: absolute;
+				top: 100%;
+				left: 0;
+				right: 0;
+				background: #1f88ca;
+				height: 2px;
+				width: 0;
+				transition: all .3s;
+				margin: 0 auto;
+			}
 			&:hover {
-				text-decoration: underline;
+				&:after {
+					width: 100%;
+				}
 			}
 		}
 	}
@@ -489,7 +501,7 @@ body#investor {
 					margin: 0 0 5px;
 				}
 				@media screen and (max-width: 365px) {
-					font-size: 1.5rem;
+					font-size: 1.7rem;
 				}
 			}
 			p {
@@ -531,7 +543,7 @@ body#investor {
 				margin-bottom: 60px;
 			}
 			@media screen and (max-width: 700px) {
-				padding: 30px 15px 10px;
+				padding: 30px 10px 10px;
 			}
 			.infk {
 				@media screen and (max-width: 700px) {
@@ -677,7 +689,7 @@ body#investor {
 
 			color: #192d3e;
 			@media screen and (max-width: 700px) {
-				margin: 0 0 10px;
+				margin: 0 0 15px;
 			}
 		}
 
@@ -1609,7 +1621,7 @@ body#investor {
 			text-align: center;
 			width: 100%;
 			display: flex;
-			margin: 0 auto;
+			margin: 0 auto 0.2rem;
 			padding: 0;
 			justify-content: center;
 			display: block;
@@ -1824,23 +1836,37 @@ body#investor {
 		color: #303236;
 		line-height: 25px;
 	}
+	header.tl {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		margin: 0 0 20px;
+		h2.h2-box.h2-op {
+			@media screen and (max-width: 700px) {
+				text-align: center;
+			}
+		}
+	}
+	section#how-it-works {
+		margin: 30px 0 0px;
+		padding: 0;
+	}
 
+	section#how-it-works div#how {
+		padding: 60px 0 60px;
+	}
 	.section.section-bussiness.hand-bg {
 		width: 100%;
-		max-width: 1280px;
-		margin-top: 0px;
-		margin-bottom: 40px;
-		padding-top: 0px;
-		padding-bottom: 0px;
+		max-width: 100%;
+		padding-top: 0;
+		padding-bottom: 0;
 		border-radius: 9px;
 		margin: 40px auto;
-		background-color: rgba(255, 1, 27, 0.03);
-		// background-image: url(https://assets.website-files.com/5d5d56675dd8937a8bcc193c/5d5ed1486e0dbce67eac23b9_hexagon.svg), url(https://assets.website-files.com/5d5d56675dd8937a8bcc193c/5d5ed1486e0dbce67eac23b9_hexagon.svg);
-		background-position: 97% 3%, 6% 94%;
-		background-size: 25%, 40%;
-
-		background-repeat: no-repeat, no-repeat;
-		background-attachment: scroll, scroll;
+		background-position: 100% 20%;
+		background-size: 40%;
+		background-repeat: no-repeat;
 	}
 
 	.pricing-wrapper {
@@ -1866,8 +1892,8 @@ body#investor {
 	}
 
 	.business-model.model-1 {
-		width: 75%;
-		padding: 82px 20px;
+		width: 100%;
+		padding: 82px 0;
 		@media screen and (max-width: 700px) {
 			width: 100%;
 			padding: 40px 20px 20px;
@@ -1879,7 +1905,7 @@ body#investor {
 		font-weight: 500;
 	}
 	.pricing-wrapper p.p-sub.p-short {
-		text-align: left;
+		text-align: center;
 	}
 
 	.p-sub.p-short {
@@ -1894,24 +1920,20 @@ body#investor {
 		letter-spacing: 0px;
 	}
 	.business-box {
-		display: -webkit-box;
-		display: -webkit-flex;
-		display: -ms-flexbox;
 		display: flex;
 		width: 100%;
 		padding: 0px 0px 27px;
-		-webkit-box-pack: justify;
-		-webkit-justify-content: space-between;
-		-ms-flex-pack: justify;
-		justify-content: space-between;
-		-webkit-flex-wrap: wrap;
-		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
 		border: 1px none #f4f4f4;
 		background-color: transparent;
 		color: #5a5858;
 		text-align: left;
+		max-width: 1280px;
+		margin: 0 auto;
+		align-items: center;
+		justify-content: center;
 		.button-wrapper {
+			margin: 30px 0 0;
 			@media screen and (max-width: 700px) {
 				display: flex;
 				align-items: center;
@@ -1921,19 +1943,17 @@ body#investor {
 		}
 	}
 	.invesments-list.list-full.hor {
-		display: -webkit-box;
-		display: -webkit-flex;
-		display: -ms-flexbox;
 		display: flex;
-		margin-bottom: 10px;
-		padding-right: 28px;
-		padding-left: 28px;
-		-webkit-box-align: center;
-		-webkit-align-items: center;
-		-ms-flex-align: center;
 		align-items: center;
+		padding: 0 0px 0 30px;
+		margin: 15px 0;
+		min-height: 0;
 		img {
 			margin-right: 10px;
+			@media screen and (max-width: 700px) {
+				order: 2;
+				margin: 0 0 10px;
+			}
 		}
 	}
 
@@ -2075,7 +2095,7 @@ body#investor {
 		letter-spacing: -2px;
 		margin: 0 0 20px;
 		@media screen and (max-width: 700px) {
-			font-size: 1.8rem;
+			font-size: 2rem;
 			line-height: 1.2;
 		}
 	}
@@ -2127,17 +2147,15 @@ body#investor {
 		display: flex;
 		width: 100%;
 		padding: 0px 0px 27px;
-		-webkit-box-pack: justify;
-		-webkit-justify-content: space-between;
-		-ms-flex-pack: justify;
-		justify-content: space-between;
-		-webkit-flex-wrap: wrap;
-		-ms-flex-wrap: wrap;
+		justify-content: center;
 		flex-wrap: wrap;
 		border: 1px none #f4f4f4;
 		background-color: transparent;
 		color: #5a5858;
 		text-align: left;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: flex-start;
 	}
 
 	section.section.padding-m.quickf .container {
@@ -2258,26 +2276,30 @@ body#investor {
 	}
 	.h2-box.h2-op {
 		margin-bottom: 7px;
-		font-size: 2.8rem;
+		font-size: 3.2rem;
 		font-weight: 400;
 		text-align: left;
 		@media screen and (max-width: 700px) {
-			font-size: 2.2rem;
+			font-size: 2rem;
 		}
 		@media screen and (max-width: 400px) {
-			font-size: 1.8rem;
+			font-size: 2rem;
 			line-height: 1.2;
 		}
 	}
 	.p-sub.p-short {
-		width: 560px;
+		width: 700px;
 		margin-top: 0px;
 		margin-bottom: 25px;
 		color: #000;
-		font-size: 18px;
-		line-height: 27px;
+		font-size: 1.2rem;
+		line-height: 1.4;
 		font-weight: 400;
 		letter-spacing: 0px;
+		margin-bottom: 30px;
+		@media screen and (max-width: 700px) {
+			font-size: 17px;
+		}
 	}
 	.invesments-list.list-left {
 		width: 49.59%;
@@ -2563,25 +2585,139 @@ body#investor {
 		margin-left: auto;
 		padding-right: 0px;
 		padding-left: 0px;
+		flex-direction: column;
+		.invesments-list.list-full.hor {
+			width: 100%;
+			display: flex;
+			margin-bottom: 10px;
+			padding-right: 28px;
+			padding-left: 28px;
+			-webkit-box-align: center;
+			align-items: center;
+			display: flex;
+			flex-direction: row;
+			padding: 20px 20px;
+			border-radius: 4px;
+			background-color: #fff;
+			@media screen and (max-width: 400px) {
+				flex-direction: column;
+			}
+			img {
+				margin-right: 20px;
+			}
+		}
 		.p-sub.p-short.p-margin {
 			background-image: none !important;
 		}
 	}
 	.invesments-list.list-full.hor {
-		display: -webkit-box;
-		display: -webkit-flex;
-		display: -ms-flexbox;
 		display: flex;
 		margin-bottom: 10px;
 		padding-right: 28px;
 		padding-left: 28px;
-		-webkit-box-align: center;
-		-webkit-align-items: center;
-		-ms-flex-align: center;
 		align-items: center;
-		@media screen and (max-width: 400px) {
+		min-height: 200px;
+		border-radius: 10px;
+		overflow: hidden;
+		@media screen and (max-width: 700px) {
+			flex-direction: column-reverse;
+			padding: 20px 20px 20px;
+			margin: 0 0 20px;
+		}
+		.km {
+			display: flex;
+			width: 100%;
+			align-items: center;
+			justify-content: center;
 			flex-direction: column;
-			padding: 30px 0px;
+			padding: 30px 20px;
+			text-align: center;
+			min-height: 320px;
+			justify-content: flex-start;
+			@media screen and (max-width: 700px) {
+				width: 100%;
+				padding: 0 0 30px;
+				min-height: 0;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				align-items: flex-start;
+				align-items: center;
+			}
+		}
+
+		.cm {
+			@media screen and (max-width: 700px) {
+				text-align: left;
+				padding-left: 20px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				padding: 0;
+				margin: 0 0 10px;
+				h3 {
+					margin-left: 20px;
+				}
+			}
+		}
+		.kl {
+			@media screen and (max-width: 700px) {
+				padding: 0 0;
+			}
+		}
+		.p-sub.p-short.p-margin.small-dot.no-dot {
+			padding-left: 0;
+			background-image: none;
+			font-size: 1.1rem;
+			color: #353535;
+			@media screen and (max-width: 700px) {
+				margin: 20px auto;
+				padding: 0;
+				margin: 0 auto;
+				max-width: 100%;
+				order: 3;
+				font-size: 1rem;
+				line-height: 1.4;
+				text-align: left;
+				text-align: center;
+			}
+		}
+		h3.title {
+			color: #1e4f8c;
+			font-size: 1.4rem;
+			margin: 15px 0 10px;
+			@media screen and (max-width: 700px) {
+				margin: 0 0 0 20px;
+			}
+		}
+		figure {
+			width: 50%;
+			margin: 0 0 0 40px;
+			width: 100%;
+			overflow: hidden;
+			margin: 0 0 0 auto;
+
+			@media screen and (max-width: 700px) {
+				max-width: 100%;
+				margin: 0 auto 20px;
+				width: 100%;
+				order: 1;
+			}
+			img {
+				display: inline-block;
+				vertical-align: middle;
+				max-width: 100%;
+				height: 260px;
+				object-fit: cover;
+				width: 100%;
+				object-position: center;
+				min-height: 0;
+				@media screen and (max-width: 700px) {
+					margin: 0;
+					border-radius: 10px;
+					height: auto;
+				}
+			}
 		}
 	}
 	.image-10 {
@@ -2738,12 +2874,7 @@ body#investor {
 		display: flex;
 		width: 100%;
 		padding: 0px 0px 27px;
-		-webkit-box-pack: justify;
-		-webkit-justify-content: space-between;
-		-ms-flex-pack: justify;
-		justify-content: space-between;
-		-webkit-flex-wrap: wrap;
-		-ms-flex-wrap: wrap;
+		justify-content: center;
 		flex-wrap: wrap;
 		border: 1px none #f4f4f4;
 		background-color: transparent;
@@ -2768,17 +2899,24 @@ body#investor {
 	}
 
 	.invesments-list.list-full.hor {
-		display: -webkit-box;
-		display: -webkit-flex;
-		display: -ms-flexbox;
 		display: flex;
-		margin-bottom: 10px;
-		padding-right: 28px;
-		padding-left: 28px;
-		-webkit-box-align: center;
-		-webkit-align-items: center;
-		-ms-flex-align: center;
 		align-items: center;
+		min-height: 0;
+		padding: 0 0 0;
+		margin: 15px 0;
+		background: #fff;
+		box-shadow: 0 0 34px Rgb(213 227 248);
+		box-shadow: 1px 1px 40px 0 Rgb(0 0 0/5%);
+		border-radius: 10px;
+		flex-direction: column-reverse;
+		width: 29.3%;
+		margin: 0 2%;
+		@media screen and (max-width: 700px) {
+			flex-direction: column-reverse;
+			padding: 20px 20px 20px;
+			margin: 0 0 20px;
+			width: 100%;
+		}
 	}
 
 	.image-10 {
@@ -3337,10 +3475,10 @@ body#investor {
 			font-weight: 400;
 			letter-spacing: -2px;
 			@media screen and (max-width: 700px) {
-				font-size: 2.2rem;
+				font-size: 2rem;
 			}
 			@media screen and (max-width: 400px) {
-				font-size: 1.8rem;
+				font-size: 2rem;
 				line-height: 1.2;
 			}
 		}
@@ -3454,11 +3592,11 @@ body#investor {
 			text-align: center;
 			margin: 0 0 30px;
 			@media screen and (max-width: 700px) {
-				font-size: 2.2rem;
+				font-size: 2rem;
 				margin: 0;
 			}
 			@media screen and (max-width: 400px) {
-				font-size: 1.8rem;
+				font-size: 2rem;
 				line-height: 1.2;
 				margin-bottom: 0;
 			}
@@ -4338,7 +4476,7 @@ body#investor {
 			line-height: 1.2;
 			margin: 0;
 			@media screen and (max-width: 700px) {
-				font-size: 1.8rem;
+				font-size: 2rem;
 				padding: 0 10px;
 			}
 		}
@@ -4353,6 +4491,15 @@ body#investor {
 			text-align: center;
 			margin-bottom: 0;
 			color: #444;
+		}
+	}
+
+	section.how-it-works {
+		.container {
+			max-width: 1400px;
+			.business-box {
+				max-width: 1400px;
+			}
 		}
 	}
 
@@ -4426,7 +4573,7 @@ body#investor {
 					max-width: 350px;
 					margin: 40px 0;
 				}
-				 img {
+				img {
 					height: 180px;
 					object-fit: cover;
 					object-position: center;
@@ -4486,19 +4633,421 @@ body#investor {
 			}
 		}
 
-		 .button-wrapper {
+		.button-wrapper {
 			display: flex;
 			align-items: center;
 			justify-content: center;
 			margin: 40px 0 0;
 		}
 
-		 .button-wrapper a.button.white-button.button-menu.buy-now.w-button {
+		.button-wrapper a.button.white-button.button-menu.buy-now.w-button {
 			border-radius: 10px;
 			text-transform: uppercase;
 			background-color: #264f88;
 			box-shadow: none;
 			color: #fff;
+		}
+	}
+
+	section.section-competetive {
+		padding: 0 20px;
+		margin: 120px 0 0;
+		@media screen and (max-width: 700px) {
+			padding: 0;
+		}
+
+		.context {
+			h3.sec-title {
+				position: relative;
+				line-height: 1;
+				display: flex;
+				align-items: center;
+				align-items: center;
+				max-width: 500px;
+
+				@media screen and (max-width: 1280px) {
+					font-size: 1rem;
+					margin: 0;
+					margin: 10px 0;
+				}
+			}
+			p {
+				max-width: 500px;
+
+			}
+		}
+
+		.row-item.active-click {
+			background: #e3ebf5;
+		}
+
+		.row-item.active-click .image-block {
+			max-height: 100vh;
+			padding: 20px;
+		}
+
+		.image-block {
+			/* padding: 20px; */
+			transition: all 0.3s;
+		}
+
+		.context h3.sec-title {
+			@media screen and (max-width: 1280px) {
+				cursor: pointer;
+			}
+		}
+
+		.row-item.active-click span.click {
+			transform: rotate(90deg);
+		}
+
+		.context h3.sec-title span.click {
+			transition: all 0.3s;
+		}
+
+		.context h3.sec-title span.click {
+			display: block;
+			width: 30px;
+			height: 30px;
+			margin-left: auto;
+			display: none;
+			@media screen and (max-width: 1280px) {
+				display: block;
+			}
+		}
+
+		.context h3.sec-title span.click svg {
+			width: 30px;
+			height: 30px;
+		}
+
+		.context h3.sec-title:after {
+			content: close-quote;
+			position: absolute;
+			height: 30px;
+			width: 4px;
+			background: #0388cd;
+			right: calc(100% + 15px);
+			border-radius: 2px;
+			top: 0;
+			@media screen and (max-width: 700px) {
+				width: 3px;
+				right: calc(100% + 9px);
+			}
+		}
+
+		.rvl {
+			overflow: visible;
+			> * {
+				opacity: 1;
+			}
+		}
+
+		h2.sec-title {
+			margin-bottom: 7px;
+			font-size: 3.2rem;
+			font-weight: 400;
+			letter-spacing: -2px;
+			font-weight: bold;
+			font-weight: 100;
+			font-weight: 400;
+			strong {
+				color: #0988d0;
+			}
+			@media screen and (max-width: 700px) {
+				font-size: 2rem;
+				line-height: 1.2;
+			}
+		}
+
+		.title p {
+			color: #000;
+			font-size: 1.2rem;
+			line-height: 1.4;
+			font-weight: 400;
+			letter-spacing: 0;
+			margin-bottom: 30px;
+			strong {
+				color: #0988d0;
+			}
+			@media screen and (max-width: 1280px) {
+				font-size: 1.1rem;
+			}
+			@media screen and (max-width: 700px) {
+				font-size: 1.063rem;
+			}
+		}
+
+		.row-item {
+			display: flex;
+			align-items: center;
+			align-items: center;
+			background-color: #f5f8fc;
+
+			padding: 0px 20px 0 60px;
+			border-radius: 10px;
+			margin: 40px 0;
+			@media screen and (min-width: 1280px) {
+				&:nth-child(2) {
+					box-shadow: none;
+				}
+			}
+			@media screen and (max-width: 1280px) {
+				flex-direction: column;
+				padding: 0 0 0px;
+				max-width: 600px;
+				margin: 0 10px 30px;
+			}
+		}
+		.columns {
+			@media screen and (max-width: 1280px) {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				flex-direction: column;
+			}
+		}
+
+		figure.image-item {
+			margin: 0;
+
+			@media screen and (min-width: 1280px) {
+				min-height: 290px;
+				padding: 20px 0;
+			}
+			@media screen and (max-width: 1280px) {
+				max-width: 100%;
+			}
+			img {
+				object-fit: contain;
+				object-position: center;
+				border-radius: 10px;
+			}
+		}
+
+		.context {
+			margin-right: auto;
+			width: 100%;
+			padding: 30px 90px 30px 0;
+			@media screen and (max-width: 1280px) {
+				padding: 10px 20px 10px 30px;
+			}
+			p {
+				@media screen and (max-width: 1280px) {
+					display: none;
+				}
+			}
+		}
+
+		.image-block {
+			margin: 0;
+			max-width: 460px;
+			border-radius: 10px 0;
+			overflow: hidden;
+			width: 100%;
+			@media screen and (max-width: 1280px) {
+				max-height: 0px;
+				overflow: hidden;
+			}
+
+			p {
+				display: none;
+				margin: 20px 0 0;
+
+				@media screen and (max-width: 1280px) {
+					display: block;
+					padding: 0 20px;
+				}
+			}
+		}
+
+		header.title {
+			max-width: 700px;
+			margin: 0 0 60px 0;
+			@media screen and (max-width: 1280px) {
+				max-width: 700px;
+				margin: 0 auto 30px;
+				padding: 0 20px;
+			}
+		}
+
+		.container {
+			max-width: 1320px;
+			margin: 0 auto;
+		}
+	}
+
+	section.quickfill-section {
+		padding: 60px 0;
+		header.title {
+			max-width: 700px;
+			h2.sec-title {
+				margin-bottom: 7px;
+				font-size: 3.2rem;
+				font-weight: 400;
+				letter-spacing: -2px;
+				font-weight: 700;
+				font-weight: 400;
+				@media screen and (max-width: 700px) {
+					font-size: 2rem;
+				}
+			}
+			strong {
+				color: #0e88d0;
+			}
+			p {
+				color: #000;
+				font-size: 1.2rem;
+				line-height: 1.4;
+				font-weight: 400;
+				letter-spacing: 0;
+				margin-bottom: 30px;
+				@media screen and (max-width: 700px) {
+					font-size: 1.063rem;
+				}
+			}
+		}
+		.container {
+			padding: 0 20px ;
+			border-radius: 10px;
+			max-width: 1320px;
+			@media screen and (max-width: 1280px) {
+				padding: 1rem;
+			}
+		}
+		.container > .content {
+			margin: 0 10px;
+			margin: 0 auto;
+			@media screen and (max-width: 700px) {
+				padding: 20px;
+			}
+		}
+
+		.columns {
+			display: flex;
+			margin: 0 auto;
+			@media screen and (max-width: 700px) {
+				flex-direction: column;
+			}
+		}
+
+		.column.main.fixedmain {
+			width: 100%;
+			padding: 0;
+			margin-right: auto;
+			max-width: 700px;
+			padding-right: 30px;
+		}
+
+		.column.side {
+			width: 50%;
+			padding: 0;
+			min-width: 280px;
+			max-width: 500px;
+			margin: 30px 0 0;
+			@media screen and (max-width: 700px) {
+				width: 100%;
+				min-width: 0;
+			}
+			> h3 {
+				margin-top: 20px;
+			}
+		}
+
+		ul.list {
+			padding: 0;
+			margin: 0;
+			list-style: none;
+		}
+
+		li {
+		}
+
+		ul.list li {
+			display: flex;
+			box-shadow: 1px 1px 40px 0 Rgb(0 0 0/5%);
+			border-radius: 10px;
+			margin: 10px 0;
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			padding: 5px 0 5px 20px;
+			background: #fff;
+		}
+
+		.column.main.fixedmain h3.title {
+		}
+
+		.column.main.fixedmain strong {
+			color: #0e88d0;
+		}
+
+		.column.main.fixedmain p {
+		}
+
+		ul.list li span.text {
+			padding: 0 20px;
+		}
+
+		ul.list li figure {
+			margin: 0;
+			img {
+				width: 70px;
+			}
+		}
+
+		.patents {
+			margin: 40px 0 0;
+		}
+
+		.patents ul {
+			margin: 0 0 0;
+			padding: 20px 20px 20px 40px;
+			border-radius: 10px;
+			background-color: #038ed8;
+			line-height: 20px;
+			text-decoration: none;
+			text-transform: none;
+			font-weight: 800;
+			letter-spacing: 0.01rem;
+			background-image: linear-gradient(-180deg, hsla(0, 0%, 100%, 0.1), rgba(0, 0, 0, 0.1));
+		}
+
+		.patents ul li {
+			color: #fff;
+			font-size: 0.8rem;
+			line-height: 1.4;
+			margin: 10px 0;
+		}
+
+		.column.main.fixedmain {
+			figure {
+				margin: 0 0 30px;
+				max-width: 640px;
+			}
+			.content {
+				max-width: 600px;
+			}
+		}
+
+		strong {
+		}
+	}
+
+	span.patents-block {
+		position: relative;
+		display: block;
+		width: 100%;
+
+		h3.title {
+			position: absolute;
+			top: -50%;
+			transform: translate(40px, -50%);
+			font-size: 1rem;
+			background: #d54439;
+			border-radius: 5px;
+			color: #fff;
+			padding: 5px 10px;
 		}
 	}
 }

@@ -157,13 +157,13 @@ $(document).ready(function () {
         var screenTop = $(document).scrollTop();
     });
 
-    $(document).on('click', "input.hs-button.primary.large", function(e){
-        $('html,body').animate({
-            scrollTop: screenTop
-            },800);
-        // var link = "https://www.seedinvest.com/nowrx/series.c/?utm_source=nowrxlandingpage1&utm_medium=referral";
-        //     window.open(link,'newStuff');
-    });
+    // $(document).on('click', "input.hs-button.primary.large", function(e){
+    //     $('html,body').animate({
+    //         scrollTop: screenTop
+    //         },800);
+    //     // var link = "https://www.seedinvest.com/nowrx/series.c/?utm_source=nowrxlandingpage1&utm_medium=referral";
+    //     //     window.open(link,'newStuff');
+    // });
 
     $('.closebutton').click(function(){
         $('section.popupform').fadeOut()
@@ -187,7 +187,7 @@ $(document).ready(function () {
 
 
 
-    $("a.menu-icon-toggle").unbind("click").bind("click", function(){
+    $("a.menu-icon-toggle,.psedo").unbind("click").bind("click", function(){
         if (activeMenu == false) {
             $('nav.top,header.main.investorhead').addClass('active-menu');
             $('a.menu-icon-toggle .txt').text('Close');
@@ -199,22 +199,26 @@ $(document).ready(function () {
         }
     });
 
-    $(".psedo").bind("click", function(){
-        if (activeMenu == false) {
-            $('nav.top,header.main.investorhead').addClass('active-menu');
-            $('a.menu-icon-toggle .txt').text('Close');
-            activeMenu = true;
-        } else {
-            $('nav.top,header.main.investorhead').removeClass('active-menu');
-            $('a.menu-icon-toggle .txt').text('Menu');
-            activeMenu = false;
-        }
-    });
+    // $(".psedo").bind("click", function(){
+    //     if (activeMenu == false) {
+    //         $('nav.top,header.main.investorhead').addClass('active-menu');
+    //         $('a.menu-icon-toggle .txt').text('Close');
+    //         activeMenu = true;
+    //     } else {
+    //         $('nav.top,header.main.investorhead').removeClass('active-menu');
+    //         $('a.menu-icon-toggle .txt').text('Menu');
+    //         activeMenu = false;
+    //     }
+    // });
 
     $('a[href*="#"]').on('click', function(e) {
         $('html,body').animate({
             scrollTop: $($(this).attr('href')).offset().top - 100
             },800);
+
+
+              $('nav.top,header.main.investorhead').removeClass('active-menu');
+
         e.preventDefault();
         });
 
@@ -272,17 +276,38 @@ $('.closebutton').click(function(){
   $('section.popupform').fadeOut()
 })
 
-var popupForm = localStorage.getItem('popupForm')
+// var popupForm = localStorage.getItem('popupForm')
 
-if (!popupForm) {
-setTimeout(()=>{
-  $('section.popupform').fadeIn()
-},7000)
-localStorage.setItem('popupForm', 1)
+// if (!popupForm) {
+// setTimeout(()=>{
+//   $('section.popupform').fadeIn()
+// },7000)
+// localStorage.setItem('popupForm', 1)
 
-}
-else {
-$('section.popupform').hide();
-}
+// }
+// else {
+// $('section.popupform').hide();
+// }
 
 })
+
+// competitive
+$(document).ready(function () {
+  if ($(window).width() < 1280) {
+  $(".click-pop").click(function(e) {
+    $(".row-item").removeClass('active-click')
+    if($(this).data('view') == 'true'){
+
+      $(".row-item").removeClass('active-click')
+      $(this).data('view','false')
+
+    } else {
+
+      $(this).closest('.row-item').addClass('active-click')
+      $(this).data('view','true')
+
+    }
+
+  });
+}
+});

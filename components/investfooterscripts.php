@@ -177,7 +177,7 @@ return false;
 <!-- End Facebook Pixel Code -->
 
     <script>
-    const baseUrl = "https://www.seedinvest.com/signup?next=/nowrx/series.c/invest&intent=invest%20in%20deal";
+    const baseUrl = "https://www.seedinvest.com/nowrx/series.c";
     const utm_source_default = "nowrxinvestpage";
     const utm_medium_default = "referral";
     </script>

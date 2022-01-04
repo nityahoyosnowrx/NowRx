@@ -582,9 +582,9 @@
 
 
 
-    <!-- faq -->
-    <?php
-    get_template_part('components/faq-block'); ?>
+    <!-- FAQ -->
+    <?php get_template_part('components/section-faq-flip'); ?>
+
 
     <!-- visit faq -->
     <?php

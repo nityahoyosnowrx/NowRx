@@ -23,7 +23,7 @@
     <link rel="stylesheet" href='<?php echo get_template_directory_uri(); ?>/public/frontend.css?vcc="<?= $cachever; ?>"'>
     <?php
     // load script in header on these pages
-    if ( is_page( 'refill-and-transfer-prescriptions' ) || is_page( 'telehealth' ) || is_page('contact-us') ): ?>
+    if ( is_page( 'refill-and-transfer-prescriptions' ) || is_page( 'telehealth' ) || is_page('contact-us') || is_singular('post') ): ?>
         <script src="<?php echo get_template_directory_uri(); ?>/public/frontend-bundle.js?vcc='<?= $cachever; ?>'"></script>
     <?php endif; ?>
 
