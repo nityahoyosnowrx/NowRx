@@ -1,4 +1,8 @@
-<?php get_header(); ?>
+<?php get_header();
+
+global $post;
+$currentPage = $post->ID;
+?>
 
 <main id="primary" class="site-main">
     <div class="grid-posts">
@@ -44,20 +48,15 @@
                                 $currentpost = get_the_ID();
                             }
                         ?>
-
                                     <article class="blog-item">
                                         <div class="image">
-                                            <?php
 
-
-                                            if (has_post_thumbnail($post->ID)) : ?>
+                                            <?php if (has_post_thumbnail($post->ID)) : ?>
                                                 <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'large'); ?>
                                                 <?php $imageThumbnail = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'medium'); ?>
 
                                                 <a href="<?php the_permalink() ?>/" rel="bookmark" title="<?php the_title_attribute(); ?>">
-                                                    <picture class="border-styled lozad" style="display: block; min-height: 1rem"
-                                                        data-iesrc="<?php echo $imageThumbnail[0]; ?>"
-                                                        data-alt="<?php echo get_post_meta( get_post_thumbnail_id(), '_wp_attachment_image_alt', true ); ?>">
+                                                    <picture class="border-styled lozad" style="display: block; min-height: 1rem" data-iesrc="<?php echo $imageThumbnail[0]; ?>" data-alt="<?php echo get_post_meta( get_post_thumbnail_id(), '_wp_attachment_image_alt', true ); ?>">
                                                         <source srcset="<?php echo $image[0]; ?>" media="(min-width: 992px)">
                                                         <source srcset="<?php echo $imageThumbnail[0]; ?>" media="(min-width: 10px)">
                                                     </picture>
@@ -69,32 +68,37 @@
                                                         alt="<?php echo get_post_meta( get_post_thumbnail_id(), '_wp_attachment_image_alt', true ); ?>">
                                                 </a>
                                             <?php endif; ?>
-                                        </div>
-                                        <div class="content">
-                                        <h2>
-                                        <a href="<?php the_permalink(); ?>/" class="readlink">
-                                                <?php echo mb_strimwidth(get_the_title(), 0, 70, '...');
 
-                                                ?>
-                                            </a>
-                                        </h2>
+                                        </div>
+
+                                        <div class="content">
+                                            <h2>
+                                                <a href="<?php the_permalink(); ?>/" class="readlink">
+                                                <?php
+                                                            echo wp_trim_words(get_the_title(), 12);
+                                                        ?>
+                                                </a>
+                                            </h2>
                                         <?php if($count == 0):?>
                                             <div class="except">
-                                                <?php echo wp_trim_words(get_the_content(), 50, '...'); ?>
+                                                <?php
+                                                $contentTrimmed =  wp_trim_words(get_the_content(), 50);
+                                                echo mb_strimwidth($contentTrimmed, 0, 175, '..');
+
+                                                ?>
                                             </div>
                                         <?php endif; ?>
 
-
-                                            <div class="databot">
+                                        <div class="databot">
                                             <div class="data">
                                                 <a href="<?php the_permalink(); ?>/" class="readlink">
                                                     <?php echo get_the_date('F j Y - h:i a'); ?>
                                                 </a>
                                             </div>
-                                                <div class="wd">
-                                                    <a href="<?php the_permalink(); ?>/" class="readmore">Read More</a>
-                                                </div>
+                                            <div class="wd">
+                                                <a href="<?php the_permalink(); ?>/" class="readmore">Read More</a>
                                             </div>
+                                        </div>
 
                                         </div>
                                     </article>
@@ -128,28 +132,32 @@
                         if ($queryskde->have_posts()) :
                             while ($queryskde->have_posts()) : $queryskde->the_post();
 
-
+                            if($latest_cpt[0]->ID == get_the_ID()){
+                                continue;
+                            }
                             ?>
 
                                         <article class="side-blog-item">
                                             <div class="content">
                                                 <a href="<?php the_permalink();  ?>/" class="readlink">
-                                                    <h2><?php echo mb_strimwidth(get_the_title(), 0, 70, '...');     ?></h2>
+                                                    <h2>
+                                                        <?php
+                                                        echo  wp_trim_words(get_the_title(), 8);
+                                                        ?>
+                                                    </h2>
                                                 </a>
-
-
                                                 <div class="clk">
-                                                <div class="data">
-                                                    <a href="<?php the_permalink(); ?>/" class="readlink">
-                                                        <?php echo get_the_date('F j Y ');   ?>
-                                                    </a>
-                                                </div>
-
-                                                <div class="content">
-                                                    <div class="wd">
-                                                        <a href="<?php the_permalink(); ?>/" class="readmore">Read More</a>
+                                                    <div class="data">
+                                                        <a href="<?php the_permalink(); ?>/" class="readlink">
+                                                            <?php echo get_the_date('F j Y ');   ?>
+                                                        </a>
                                                     </div>
-                                                </div>
+
+                                                    <div class="content">
+                                                        <div class="wd">
+                                                            <a href="<?php the_permalink(); ?>/" class="readmore">Read More</a>
+                                                        </div>
+                                                    </div>
                                                 </div>
 
                                             </div>
@@ -270,9 +278,12 @@
                                             <a href="<?php the_permalink(); ?>/" class="readlink">
                                                 <?php
                                                     if($countbot == 3 || $countbot == 4 || $countbot == 5){
-                                                        echo mb_strimwidth(get_the_title(), 0, 40, '...');
+
+                                                        echo  wp_trim_words(get_the_title(), 12);
+                                                        // small items
+
                                                     } else{
-                                                        echo mb_strimwidth(get_the_title(), 0, 60, '...');
+                                                        echo  wp_trim_words(get_the_title(), 13);
                                                     }
                                                 ?>
                                             </a>

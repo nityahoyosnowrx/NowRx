@@ -584,87 +584,37 @@ var ocarea = [{
 ];
 
 // mesa
-var mesaCoords = [{
-        lat: 33.457978,
-        lng: -112.333381
-    }, // I10 and Agua Fria
-    {
-        lat: 33.538324,
-        lng: -112.302920
-    }, //Glendale Landfill
-    {
-        lat: 33.669915,
-        lng: -112.320130
-    },
-    {
-        lat: 33.692420,
-        lng: -112.176308
-    }, //Arrowhead Point
-    {
-        lat: 33.710040,
-        lng: -111.960085
-    },
-    {
-        lat: 33.647086,
-        lng: -111.893084
-    }, //101 and Pima
-    {
-        lat: 33.625379,
-        lng: -111.869130
-    }, //N Thompson Peak Pkwy
-    {
-        lat: 33.605021,
-        lng: -111.851949
-    },
-    {
-        lat: 33.593955,
-        lng: -111.833349
-    },
-    {
-        lat: 33.566222,
-        lng: -111.828254
-    },
-    {
-        lat: 33.485470,
-        lng: -111.752808
-    },
-    {
-        lat: 33.474591,
-        lng: -111.683928
-    }, //202 and N. Power
-    {
-        lat: 33.451580,
-        lng: -111.669892
-    },
-    {
-        lat: 33.425921,
-        lng: -111.632895
-    },
-    {
-        lat: 33.296867,
-        lng: -111.643973
-    }, //Phoenix-Mesa Gateway Airport
-    {
-        lat: 33.200262,
-        lng: -111.755451
-    },
-    {
-        lat: 33.203518,
-        lng: -111.900382
-    },
-    {
-        lat: 33.291610,
-        lng: -111.989648
-    },
-    {
-        lat: 33.289047,
-        lng: -112.132352
-    },
-    {
-        lat: 33.457978,
-        lng: -112.333381
-    }
-];
+var mesaCoords = [
+    {lat:33.692420, lng:-112.176308},   //Arrowhead Point
+    {lat:33.710040, lng:-111.960085},
+    {lat:33.647086, lng:-111.893084},   //101 and Pima
+    {lat:33.625379, lng:-111.869130},   //N Thompson Peak Pkwy
+    {lat:33.605021, lng:-111.851949},
+    {lat:33.593955, lng:-111.833349},
+    {lat:33.566222, lng:-111.828254},
+    {lat:33.485470, lng:-111.752808},
+    {lat:33.503645, lng:-111.684238},   //N. Bush Hwy
+    {lat:33.4959016,lng:-111.6388539},  //Phoenix Sign
+    {lat:33.451979, lng:-111.595351},   //Crismon Trailhead
+    {lat:33.451961, lng:-111.476328},   //Apache Junction NE
+    {lat:33.350631, lng:-111.477242},   //Apache Junction SE
+    // {lat:33.474591, lng:-111.683928},   //202 and N. Power
+    // {lat:33.451580, lng:-111.669892},
+    // {lat:33.425921, lng:-111.632895},
+    // {lat:33.296867, lng:-111.643973},   //Phoenix-Mesa Gateway Airport
+    {lat:33.293164, lng:-111.519077},   //Queen Creek
+    {lat:33.206621, lng:-111.495533},   //Pinal County Line
+    {lat:33.200262, lng:-111.755451},
+    {lat:33.203518, lng:-111.900382},
+    {lat:33.291610, lng:-111.989648},
+    {lat:33.289047, lng:-112.132352},
+    {lat:33.371648, lng:-112.311804},  //Phoneix Raceway
+    {lat:33.399077, lng:-112.461650},  //Goodyear SW
+    {lat:33.638025, lng:-112.469626},   //Surprise NW
+    {lat:33.690988, lng:-112.419245},   //Phoenix Metro NW
+    {lat:33.766730, lng:-112.284303}   //303 NW
+
+  ];
 
 
 

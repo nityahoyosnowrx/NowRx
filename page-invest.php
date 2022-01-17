@@ -18,7 +18,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Cache-control" content="public">
 
-    <link rel="stylesheet" href='<?php echo get_template_directory_uri(); ?>/public/frontend.css?vc="12111231112111111211121"'>
+    <link rel="stylesheet" href='<?php echo get_template_directory_uri(); ?>/public/frontend.css?vc="1211123111121111112111121"'>
 
 
     <link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
@@ -186,7 +186,7 @@
                                                 target:'#fm16',
                                                 translations: {
                                                     en: {
-                                                        submitText: "Get NowRx Pitch Deck",
+                                                        submitText: "Download Investor Brief",
                                                         fieldLabels: {
                                                             email: "Electronic mail"
                                                         }
@@ -425,7 +425,7 @@
             <div class="cta lozad"
             data-background-image="https://assets.website-files.com/5d5d56675dd8937a8bcc193c/5d5da5103e9e5a775604e1aa_pill2.svg">
                 <div class="w-layout-grid grid-9">
-                    <h2 class="h2-left">Get the NowRx<strong> Investor Deck</strong></h2>
+                    <h2 class="h2-left">Get the NowRx<strong> Investor Brief</strong></h2>
                     <div class="form-block w-form">
                         <div id="fm7"></div>
                         <script>
@@ -530,7 +530,7 @@
 
             <div class="cta lozad" data-background-image="https://assets.website-files.com/5d5d56675dd8937a8bcc193c/5d5da5103e9e5a775604e1aa_pill2.svg">
                 <div class="w-layout-grid grid-9">
-                    <h2 class="h2-left">Get the NowRx<strong> Investor Deck</strong></h2>
+                    <h2 class="h2-left">Get the NowRx<strong> Investor Brief</strong></h2>
                     <div class="form-block w-form">
                             <div id="fm22"></div>
                     <script>
@@ -725,7 +725,7 @@
 
             <div class="cta lozad" data-background-image="https://assets.website-files.com/5d5d56675dd8937a8bcc193c/5d5da5103e9e5a775604e1aa_pill2.svg">
                 <div class="w-layout-grid grid-9">
-                    <h2 class="h2-left">Get the NowRx<strong> Investor Deck</strong></h2>
+                    <h2 class="h2-left">Get the NowRx<strong> Investor Brief</strong></h2>
                     <div class="form-block w-form">
                             <div id="fm2"></div>
                     <script>
@@ -742,13 +742,70 @@
                 </div>
             </div>
 
-            <section id="testimonials" class="section section-bottom-padding lab">
-                <div class="container testimonials">
-                    <div class="team-intro">
-                        <h2 class="h2-box h2-op h2-center">What People Are Saying <strong>About NowRx</strong></h2>
-                        <p class="p-sub p-short p-center">NowRx has delivered more than 365K prescriptions to over 35K
-                            customers – see what they are saying about NowRx!<br></p>
+            <section class="review-block">
+                <div class="container">
+                    <header class="title">
+                        <h2 class="title">NowRx <strong>Reviews</strong></h2>
+                        <p>
+                        NowRx's "QuickFill" system produces a significantly better experience - here's what doctors and patients are saying about the tech-powered pharmacy.
+                        </p>
+                    </header>
+                    <div class="promote-scores">
+                        <div class="score-item">
+                            <div class="main-content">
+                                <div class="number">
+                                    91
+                                </div>
+                                <div class="text">
+                                    <h3>Net Promoter <strong>Score</strong></h3>
+                                    <p>
+                                    Based on an ongoing survey of over 300 physician office staff. NPS is one of the most widely used metrics to measure the willingness of customers to recommend a company's products or services to others.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="star-rating">
+                                <div class="title"><strong>[</strong> 5 Star Rating For All Locations <strong>]</strong></div>
+                                <div class="stars">
+                                    <div class="star">
+                                    <img
+                                                        data-src="https://assets.website-files.com/5d5d56675dd8937a8bcc193c/5d614c3245d89329dc50d417_stars.svg"
+                                                        alt="" class="stars lozad">
+                                     </div>
+                                    <div class="text">
+                                        <a href="<?php echo get_site_url(); ?>/testimonials/" class="link-review">
+                                            See All Reviews
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-item">
+                            <blockquote>
+                                <span class="text">
+                                I highly recommend NowRx Pharmacy. I
+                        use them professionally as well as personally for my own prescriptions and they really
+                        are as good as advertised. They accept standing orders which has saved my office staff
+                        significant time and energy in addition to accurately applying drug coupons to lower out
+                        of pocket costs for my patients. I could not be happier with
+                        NowRx!
+                                </span>
+                                <cite>
+                                    <figure class="image">
+                                        <img src="https://assets.website-files.com/5d5d56675dd8937a8bcc193c/614895c983afd43a4f8ad190_image%2021-min.jpg" alt="">
+                                    </figure>
+                                    <div class="text-block">
+                                    <div class="name">Dr. James E Tearse, MD</div>
+                                    <div class="title">Ophthalmologist</div>
+                                    <div class="handle">Redwood City, CA</div>
+                                    </div>
+                                </cite>
+                            </blockquote>
+                        </div>
                     </div>
+                    </div>
+
+            <section id="testimonials" class="section section-bottom-padding lab">
+                <div class=" testimonials">
                     <div class="team-intro labs-intro">
                         <div class="container-11">
                             <div id="loop" class="owl-carousel owl-loaded owl-drag">
@@ -771,7 +828,7 @@
                                                 <br>
                                                 </p>
                                                 <div class="review-w">
-                                                    <div>NowRx Customer</div>
+                                                    <!-- <div>NowRx Customer</div> -->
                                                 </div>
                                             </div>
                                         </div>
@@ -787,7 +844,7 @@
                                                 <br>
                                                 </p>
                                                 <div class="review-w">
-                                                    <div>NowRx Customer</div>
+                                                    <!-- <div>NowRx Customer</div> -->
                                                 </div>
                                             </div>
                                         </div>
@@ -803,7 +860,7 @@
                                                 <br>
                                                 </p>
                                                 <div class="review-w">
-                                                    <div>NowRx Customer</div>
+                                                    <!-- <div>NowRx Customer</div> -->
                                                 </div>
                                             </div>
                                         </div>
@@ -821,7 +878,7 @@
                                                     kind of store!<br></p>
                                                 <div class="review-w">
                                                     <!-- <div class="review-person"><em>-Julie B.<br></em></div> -->
-                                                    <div>NowRx Customer</div>
+                                                    <!-- <div>NowRx Customer</div> -->
                                                 </div>
                                             </div>
                                         </div>
@@ -837,7 +894,7 @@
                                                     preference), and they keep providing service at a level I never
                                                     expect.<br></p>
                                                 <div class="review-w">
-                                                    <div>NowRx Customer</div>
+                                                    <!-- <div>NowRx Customer</div> -->
                                                 </div>
                                             </div>
                                         </div>
@@ -851,7 +908,7 @@
                                                         cheaper</strong> than Costco or any other place I've ever
                                                     checked."<br></p>
                                                 <div class="review-w">
-                                                    <div>NowRx Customer</div>
+                                                    <!-- <div>NowRx Customer</div> -->
                                                 </div>
                                             </div>
                                         </div>
@@ -866,7 +923,7 @@
                                                     in getting our prescriptions filled. <strong>They go the extra mile
                                                         in customer service!</strong>"<br></p>
                                                 <div class="review-w">
-                                                    <div>NowRx Customer</div>
+                                                    <!-- <div>NowRx Customer</div> -->
                                                 </div>
                                             </div>
                                         </div>
@@ -882,7 +939,7 @@
                                                     medications to you and actually care about the customer? You don't
                                                     get better service than this."<br></p>
                                                 <div class="review-w">
-                                                    <div>NowRx Customer</div>
+                                                    <!-- <div>NowRx Customer</div> -->
                                                 </div>
                                             </div>
                                         </div>
@@ -896,7 +953,7 @@
                                                 <span class="fullquote"> "<strong>Hands down best pharmacy you could ask for!</strong> I no longer have to wait in line to fill my grandmother's medications, and the customer service is amazing. Try them out and you won't regret it!" </span>
                                                 <br></p>
                                                 <div class="review-w">
-                                                    <div>NowRx Customer</div>
+                                                    <!-- <div>NowRx Customer</div> -->
                                                 </div>
                                             </div>
                                         </div>
@@ -910,7 +967,7 @@
                                                 Responsible business. <strong>Actually the best pharmacy I've used so far.</strong> Delivery is always on time. Customer service is awesome and service is very reliable.
                                                 <br></p>
                                                 <div class="review-w">
-                                                    <div>NowRx Customer</div>
+                                                    <!-- <div>NowRx Customer</div> -->
                                                 </div>
                                             </div>
                                         </div>
@@ -918,10 +975,10 @@
                                     <div class="relnav">
 
                                     <div class="swiper-button-prev">
-                                        <img width="30px" height="30px" src="https://assets.website-files.com/5d2a7a40b9b05dd3c13ea7e7/5d52e91ed4a630a0f23d2a7d_prev-2.svg">
+                                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="svg-inline--fa fa-chevron-left fa-w-10 fa-3x"><path fill="currentColor" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z" class=""></path></svg>
                                     </div>
                                     <div class="swiper-button-next">
-                                        <img width="30px" height="30px" src="https://assets.website-files.com/5d2a7a40b9b05dd3c13ea7e7/5d52e91e48c1ac639ca0f932_next-2.svg">
+                                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="svg-inline--fa fa-chevron-right fa-w-10 fa-3x"><path fill="currentColor" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z" class=""></path></svg>
                                     </div>
                                     </div>
 
@@ -940,9 +997,11 @@
                     </div>
                 </div>
             </section>
+            </section>
 
 
-            <div class="quote-section"><img
+
+            <!-- <div class="quote-section"><img
                     data-src="https://assets.website-files.com/5d5d56675dd8937a8bcc193c/614895c983afd43a4f8ad190_image%2021-min.jpg"
                     loading="lazy" width="169px" height="212px" alt="" class="image-11 lozad">
                 <blockquote class="block-quote"><em class="italic-text">“I highly recommend NowRx Pharmacy. I
@@ -951,7 +1010,7 @@
                         significant time and energy in addition to accurately applying drug coupons to lower out
                         of pocket costs for my patients. I could not be happier with
                         NowRx!”</em><br><br><strong>-Dr. James E Tearse, MD</strong></blockquote>
-            </div>
+            </div> -->
 
 
             <section class="section section-bottom-padding team-sec">
@@ -969,9 +1028,10 @@
                             <div id="w-node-_46417f79-3a8d-7813-ccfe-2b88b8550b62-a3cc193b"><img
                                     data-src="https://assets.website-files.com/5d5d56675dd8937a8bcc193c/6137693b89c4889e4c5fa396_Group%2049.svg"
                                     loading="lazy" alt="" width="400px" height="200px" class="hide-m lozad"></div>
+
                             <div class="timeline-box">
                                 <div class="year">2016</div>
-                                <div>
+                                <div class="full-time">
                                     <div class="white-box time">
                                         <div>Launch 1st micro-fulfillment location in Mountain View, CA</div>
                                     </div>
@@ -979,6 +1039,7 @@
                                 </div>
                                 <div class="logo-wrapper hide2"></div>
                             </div>
+
                             <div class="timeline-box">
                                 <div class="year">2017</div>
                                 <div class="full-time">
@@ -1022,7 +1083,7 @@
                                 </div>
                             </div><img
                                 data-src="https://assets.website-files.com/5d5d56675dd8937a8bcc193c/6137693b89c4889e4c5fa396_Group%2049.svg"
-                                loading="lazy" alt="" class="lozad" width="400px" height="200px"  class="hide-d">
+                                loading="lazy" alt=""  width="400px" height="200px"  class="hide-m lozad hide-d">
                             <div class="timeline-box">
                                 <div class="year blue">2020</div>
                                 <div class="full-time">
@@ -1070,7 +1131,7 @@
             data-background-image="https://assets.website-files.com/5d5d56675dd8937a8bcc193c/5d5da5103e9e5a775604e1aa_pill2.svg"
                 >
                 <div class="w-layout-grid grid-9">
-                    <h2 class="h2-left">Get the NowRx<strong> Investor Deck</strong></h2>
+                    <h2 class="h2-left">Get the NowRx<strong> Investor Brief</strong></h2>
                     <div class="form-block w-form">
                                 <div id="fm3"></div>
                         <script>
@@ -1218,7 +1279,7 @@
             <div class="cta lozad" data-background-image="https://assets.website-files.com/5d5d56675dd8937a8bcc193c/5d5da5103e9e5a775604e1aa_pill2.svg"
                 >
                 <div class="w-layout-grid grid-9">
-                    <h2 class="h2-left">Get the NowRx<strong> Investor Deck</strong></h2>
+                    <h2 class="h2-left">Get the NowRx<strong> Investor Brief</strong></h2>
                     <div class="form-block w-form">
                             <div id="fm4"></div>
                     <script>

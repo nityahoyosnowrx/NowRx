@@ -33,11 +33,9 @@ else:
                         <h4>COMPANY</h4>
                         <ul class="footer-menu-col vertical menu text-small">
                             <li><a href="<?= get_site_url(); ?>/about-us/">About Us</a></li>
-                            <li><a href="<?= get_site_url(); ?>/telehealth/">Telehealth</a></li>
                             <li><a href="<?= get_site_url(); ?>/nowprep/">NowPrEP</a></li>
                             <li><a href="<?= get_site_url(); ?>/locations/">Locations</a></li>
-                            <li><a href="https://www.indeed.com/cmp/Nowrx" target="_blank">Careers</a></li>
-                            <li><a href="<?= get_site_url(); ?>/referral/">Refer A Friend</a></li>
+                            <li><a href="<?= get_site_url(); ?>/contact-us/">Contact Us</a></li>
                         </ul>
                     </div>
                     <div class="large-3 small-6 cell">

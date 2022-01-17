@@ -101,7 +101,7 @@ a.ArticleHeader-eyebrow {
 // Article Profile
 
 .articleheader-container {
-	margin: 0 0 20px;
+	margin: 0 0 ;
 	.author-info {
 		display: flex;
 	}
@@ -122,7 +122,7 @@ a.ArticleHeader-eyebrow {
 		align-items: flex-start;
 		justify-content: center;
 		@media screen and (min-width: 700px) {
-			padding-left: 15px;
+			// padding-left: 15px;
 		}
 
 		.author-name {
@@ -152,7 +152,7 @@ a.ArticleHeader-eyebrow {
     height: 2px;
     background: #eeeeee;
     display: block;
-    margin: 35px 0 20px;
+    margin: 1.5rem 0;
     border-radius: 83px;
 }
 
@@ -320,7 +320,7 @@ li.MostPopular-addIndex {
 		bottom: 0;
 		left: 0;
 		right: 0;
-		padding: 0 10px 10px;
+		padding: 0 1rem 1rem;
 	}
 
 	.data {
@@ -364,11 +364,11 @@ li.MostPopular-addIndex {
 		color: #444;
 		font-weight: 900;
 		line-height: 20px;
-		font-size: .8125rem;
+		font-size: .9rem;
 		margin: 0 0 5px;
 		color: #33475b;
 
-		@media screen and (max-width: 992px) {
+		@media screen and (max-width: 700px) {
 			width: 100%;
 			line-height: 30px;
 			font-size: 26px;
@@ -379,6 +379,7 @@ li.MostPopular-addIndex {
 			margin: 20px 0 0;
 			line-height: 2rem;
 			padding: 0;
+			margin: 0;
 		}
 		@media screen and (max-width: 400px) {
 			font-size: 4vw;
@@ -386,8 +387,8 @@ li.MostPopular-addIndex {
 		}
 	}
 	a.MostPopular-link.title {
-		padding: 0 ;
-		padding: 10px 10px 0;
+		padding: 1rem 1rem 0;
+		margin: 0;
 	}
 	a.MostPopular-link {
 		span.posthumb {
@@ -426,17 +427,17 @@ li.MostPopular-addIndex {
 .MostPopular-header {
     color: #fff;
     background: #038ed8;
-    font-size: .9rem;
+    font-size: 1rem;
     display: block;
     letter-spacing: .025rem;
-    padding: 15px 10px;
+    padding: 0.8rem 1rem;
     margin: 0 0 1rem;
     font-weight: 700;
     border-radius: 5px;
+	line-height: 1.2;
     width: 100%;
 	@media screen and (max-width: 992px) {
 		text-align: center;
-		padding-top: 20px;
 	}
 }
 
@@ -1736,6 +1737,7 @@ section.split-image {
 		font-size: 16px;
 		line-height: 20px;
 		font-weight: 700;
+
 
 		@media screen and (max-width: 700px) {
 			padding: 10px 0 0;

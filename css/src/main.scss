@@ -7113,7 +7113,7 @@ section.entry-content.cf {
 	max-width: 75rem;
 	margin: 0 auto;
 	@media screen and (max-width: 700px) {
-		padding: 160px 10px 0;
+		padding: 130px 10px 0;
 	}
 
 	.blog-container.pagedinner {
@@ -7223,13 +7223,13 @@ section.entry-content.cf {
 			margin-right: 0;
 		}
 		h1 {
-			font-size: 2rem;
+			font-size: 2.2rem;
 			font-weight: 900;
 			line-height: 1.1;
 			width: 100%;
 			background: #038ed8;
 			margin: 0;
-			padding: 30px 20px;
+			padding: 2.025rem;
 			color: #fff;
 			border-radius: 5px;
 			@media screen and (max-width: 700px) {
@@ -7239,7 +7239,8 @@ section.entry-content.cf {
 				width: 100%;
 				background: #038ed8;
 				margin: 0;
-				padding: 40px 20px;
+				// padding: 20px 10px;
+				padding: 1.4rem 1rem;
 				color: #fff;
 				border-radius: 5px;
 			}
@@ -7289,21 +7290,21 @@ section.entry-content.cf {
 			}
 
 			h2 {
-				font-size: 1.5rem;
+				font-size: 2rem;
 				line-height: 1.3125em;
 				margin-bottom: 10px;
 				line-height: 1.15;
 				letter-spacing: -0.1rem;
-				color: #4d4d4d;
+				color: #303030;
 				@media screen and (max-width: 700px) {
-					font-size: 1.2rem;
+					font-size: 1.4rem;
 				}
 			}
 			.except {
-				font-size: 12px;
+				font-size: 0.9rem;
 				line-height: 1.4;
 				margin-top: 0;
-				margin-bottom: auto;
+				margin-bottom: 1rem;
 				color: #515151;
 			}
 			.databot {
@@ -7318,17 +7319,26 @@ section.entry-content.cf {
 				@media screen and (max-width: 700px) {
 					flex-direction: column;
 				}
+				.data {
+					@media screen and (max-width: 700px) {
+						margin: 0 0 5px;
+					}
+				}
 			}
 
 			.content {
-				padding: 30px 0;
 				padding: 1.125rem 1.125rem;
+				padding: 2.025rem;
 				background-color: #eaf0f6;
 				margin-bottom: 0;
 				min-height: 135px;
 
 				display: flex;
 				flex-direction: column;
+				@media screen and (max-width: 700px) {
+					// padding: 1rem;
+					padding: 1.4rem 1rem;
+				}
 			}
 
 			&:nth-child(2) {
@@ -7504,6 +7514,16 @@ section.entry-content.cf {
 				}
 			}
 		}
+
+
+		article.blog-item{
+			@media screen and (max-width: 700px) {
+				margin: 0 0 20px;
+			}
+			h2{
+				font-size: 1.4rem;
+			}
+		}
 	}
 
 	.sideblocks {
@@ -7512,16 +7532,15 @@ section.entry-content.cf {
 			width: 100%;
 		}
 		@media screen and (max-width: 700px) {
-			padding: 10px 0 0;
+			padding: 2rem 0 0;
 		}
 
 		article.side-blog-item {
 			background-color: #eaf0f6;
 			border-radius: 3px;
-			margin: 10px 0;
-			padding: 10px;
+			padding: 1rem;
 			margin: 0 0 10px;
-			height: 81px;
+			height: auto;
 			transition: box-shadow 0.15s ease-in-out, transform 0.15s ease-in-out, -webkit-transform 0.15s ease-in-out;
 			&:hover {
 				box-shadow: 0 10px 50px -5px Rgb(51 71 91 / 12%);
@@ -7530,7 +7549,7 @@ section.entry-content.cf {
 			}
 
 			h2 {
-				font-size: 0.7rem;
+				font-size: 0.9rem;
 				margin: 0 0 5px;
 				color: #33475b;
 			}
@@ -7589,15 +7608,17 @@ section.entry-content.cf {
 		h3.title {
 			color: #fff;
 			background: #038ed8;
-			font-size: 0.9rem;
+			font-size: 1rem;
 			display: block;
 			letter-spacing: 0.025rem;
-			padding: 15px 10px;
+			padding: 0.8rem 1rem;
 			margin: 0 0 1rem;
 			font-weight: 700;
 			border-radius: 5px;
+			line-height: 1.2;
 			width: 100%;
 		}
+
 		.editor {
 			min-height: 349px;
 			display: flex;
@@ -7630,7 +7651,7 @@ section.entry-content.cf {
 		margin-top: 20px;
 		border-radius: 5px;
 		flex-direction: column;
-		min-height: 364px;
+		min-height: 450px;
 		margin-bottom: 20px;
 		position: relative;
 		&:after {
