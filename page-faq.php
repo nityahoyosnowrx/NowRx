@@ -338,67 +338,40 @@
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 
-<!-- hero -->
-<section class="hero-home">
-
-
-
-    <div class="container">
+<section class="landing-block">
+    <div class="container fluid">
         <div class="content">
-
-            <!-- content -->
-            <div class="column-half content-col">
-
-                <div class="rvls">
-                    <span class="sub-headline">
-                        A Better Local Pharmacy Delivered
-                    </span>
-                </div>
-
-                <div class="rvls">
-                    <h1>
-                        <span class="k">Frequently Asked</span>
-                         <span class="k">Questions</span>
-                    </h1>
-                </div>
-
-                <div class="rvls">
-                    <p>Need some help? Check out our frequently asked questions below or submit a question for our
+            <div class="text-content prep-text">
+            <span class="sub-headline">A Better Local Pharmacy Delivered</span>
+            <h1 class="title">
+            <strong>Frequently Asked Questions</strong>
+            </h1>
+            <p>Need some help? Check out our frequently asked questions below or submit a question for our
                         pharmacy team.</p>
-                </div>
-
-                <div class="rvls">
-                    <div class="btn-container">
-                        <a class="rx-btn" href="<?= get_site_url(); ?>/refill-and-transfer-prescriptions/">
+            </div>
+            <div class="btn-container">
+            <a class="rx-btn" href="<?= get_site_url(); ?>/refill-and-transfer-prescriptions/">
                             <?php include('reg-arrow.php'); ?>
                             get started</a>
                         <a class="rx-btn rx-green mrb" href="#faqblock">
                             <?php include('grn-arrow.php'); ?>
                             View FAQs</a>
-                    </div>
-                </div>
-
             </div>
-
-            <!-- image -->
-            <div class="column-half image-col">
-
-                <picture class="lozad"
-                   >
+        </div>
+        <div class="media">
+            <figure class="image">
+                <picture class="lozad">
                     <source media="(max-width: 1px)" srcset="<?php echo get_template_directory_uri(); ?>/images/NowRx-pharmacist-answering-pharmacy-delivery-questions.webp">
                     <source media="(min-width: 2px)" srcset="<?php echo get_template_directory_uri(); ?>/images/NowRx-pharmacist-answering-pharmacy-delivery-questions.webp">
                     <img src="<?php echo get_template_directory_uri(); ?>/images/NowRx-pharmacist-answering-pharmacy-delivery-questions.webp" class="orbit-image" height="500px" width="650px" alt="NowRx pharmacist answering pharmacy delivery questions">
                 </picture>
-            </div>
-
+            </figure>
         </div>
     </div>
 </section>
 
-
 <!-- companies -->
-<?php include('section-companies.php'); ?>
-
+<?php include('components/component-logo-slider.php'); ?>
 
 
 <section class="faq-blocks" id="faqblock">
@@ -2549,23 +2522,18 @@
 
                 <div class="faq-block">
                     <div class="clickmodal" data-opentab="0">
-                        <h2 class="sec-title">
+                        <h2 class="sec-title tiltelink" data-toggle="submitaquestion" aria-controls="submitaquestion"
+                                aria-haspopup="true" tabindex="0">
 
                             <span class="tiltelink" data-toggle="submitaquestion" aria-controls="submitaquestion"
                                 aria-haspopup="true" tabindex="0">Submit a Question</span>
 
-                            <span class="chevron-arrow">
+                            <span class="chevron-arrow  " >
                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                     version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 256 256"
                                     style="enable-background:new 0 0 256 256;" xml:space="preserve">
-                                    <g>
-                                        <g>
                                             <polygon
                                                 points="79.093,0 48.907,30.187 146.72,128 48.907,225.813 79.093,256 207.093,128   " />
-                                        </g>
-                                    </g>
-                                    <g>
-                                    </g>
                                 </svg>
                             </span>
                         </h2>

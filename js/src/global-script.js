@@ -73,11 +73,11 @@ window.addEventListener('load', function() {
   $(document).on('click','a.menu-icon-toggle', function(e) {
     e.preventDefault();
     if (activeMenu == false) {
-      $('nav.top').addClass('active-menu');
+      $('nav.top,a.menu-icon-toggle').addClass('active-menu');
       $('a.menu-icon-toggle .txt').text('Close');
       activeMenu = true;
     } else {
-      $('nav.top').removeClass('active-menu');
+      $('nav.top,a.menu-icon-toggle').removeClass('active-menu');
       $('a.menu-icon-toggle .txt').text('Menu');
       activeMenu = false;
     }
@@ -154,14 +154,12 @@ $(document).on('click','button.close-button, .reveal-overlay', function(e) {
 // ----------------------------------------------------------------------------------------------------
 window.onload = function() {
   if ($('.click').length) {
-    console.log('d');
     let opeD;
     $(document).on('click','.click', function(e) {
       e.stopPropagation();
       e.preventDefault();
 
       opeD = $(this).attr('data-opentab');
-      // console.log(opeD);
 
       $('.click')
         .parent('.faq-block')
@@ -595,15 +593,28 @@ $(document).ready(function() {
 // FAQ Flip
 $(document).ready(function () {
   $(".list-action").click(function(e) {
-    $("li.list-item").removeClass('active-faq')
+    // $("li.list-item").removeClass('active-faq')
 
-    if($(this).data('view') == 'true'){
+    // if($(this).data('view') == 'true'){
+    //   $("li.list-item").removeClass('active-faq')
+    //   $(this).data('view','false')
+    // } else {
+    //   $(this).closest('li.list-item').addClass('active-faq')
+    //   $(this).data('view','true')
+    // }
+
+  });
+
+  $("section.block-frequent-questions .list-item").click(function(e) {
+    $("li.list-item").removeClass('active-faq')
+    if($(this).find('.list-action').data('view') == 'true'){
       $("li.list-item").removeClass('active-faq')
-      $(this).data('view','false')
+      $(this).find('.list-action').data('view','false')
     } else {
-      $(this).closest('li.list-item').addClass('active-faq')
-      $(this).data('view','true')
+      $(this).find('.list-action').closest('li.list-item').addClass('active-faq')
+      $(this).find('.list-action').data('view','true')
     }
 
   });
+
 });

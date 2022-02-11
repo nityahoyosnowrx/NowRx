@@ -9,7 +9,7 @@ body {
 			left: 0;
 			right: 0;
 			height: 120vh;
-			background-image: url(https://nowrx.com/wp-content/themes/nowrx-live/images/NowRx-Pharmacy-Website-Background.webp);
+			// background-image: url(https://nowrx.com/wp-content/themes/nowrx-live/images/NowRx-Pharmacy-Website-Background.webp);
 			background-position: 0%;
 			background-size: auto 100%;
 			z-index: -1;
@@ -22,7 +22,9 @@ a.alink {
 	color: inherit;
 	font-weight: 900;
 }
-
+article.article-block.location-item.statelocation header.entry-header {
+    max-width: 100%;
+}
 header.article-header.entry-header {
 	width: 100%;
 }
@@ -239,9 +241,9 @@ a.ArticleHeader-eyebrow {
 	display: flex;
 	flex-wrap: wrap;
 	margin: 100px 0 0;
-	@media screen and (max-width: 992px) {
+	@media screen and (max-width: 1280px) {
 		flex-direction: column;
-		margin: 140px 0 0;
+		margin: 170px 0 0;
 	}
 	article {
 		width: 100%;
@@ -451,7 +453,7 @@ ol.MostPopular-list {
 }
 
 section#blog {
-	margin: 160px 0 0;
+	margin: 170px 0 0;
 	@media screen and (max-width: 992px) {
 		margin: 0 0;
 		.grid-padding-x > .cell {
@@ -1095,7 +1097,7 @@ section.testimonials-block {
 	h3.name {
 		font-size: 21px;
 		color: #1a2d3d;
-		font-weight: 600;
+		font-weight: bold;
 		line-height: 25px;
 		margin: 0 0 5px;
 		@media screen and (max-width: 400px) {
@@ -1118,7 +1120,7 @@ section.testimonials-block {
 		text-transform: uppercase;
 		margin: 0 0 10px;
 		color: #038ed8;
-		font-weight: 600;
+		font-weight: 900;
 		font-style: normal;
 		font-size: 1.3rem;
 		@media screen and (max-width: 992px) {
@@ -1193,14 +1195,16 @@ section.testimonials-block {
 }
 
 section.testimonials-block.doctorquotes {
-	padding: 130px 0 0;
+	padding:  0 0;
 	background: #fff;
+	margin-top: -30px;
 	@media screen and (max-width: 1280px) {
-		padding: 100px 0 0;
+		padding:  0 0;
+		margin-top: 170px;
 	}
 
 	@media screen and (max-width: 700px) {
-		padding: 100px 0 0;
+		padding:  0 0;
 	}
 
 	.swiper-slide .content {
@@ -1518,6 +1522,7 @@ section.testimonials-block.doctorquotes {
 	.content .txt .subtitle {
 		text-align: left;
 		font-size: 0.7rem;
+		font-weight: bold;
 	}
 
 	.content .txt h1.main-title {
@@ -1934,8 +1939,13 @@ main#main.main-class {
 	header.article-header.tynk {
 		display: flex;
 		margin: 60px 0 90px;
-		@media screen and (max-width: 992px) {
+		@media screen and (max-width: 1280px) {
 			flex-direction: column;
+			align-items: center;
+			margin: 170px 0 90px;
+		}
+		@media screen and (max-width: 400px) {
+			margin-top: 170px;
 		}
 		p {
 			font-size: 16px;
@@ -2372,11 +2382,10 @@ article.article-block.location-item {
 	h1.entry-title {
 		font-size: 2.3rem;
 		letter-spacing: -1px;
-		font-weight: 800;
+		font-weight: bold;
 		line-height: 1em;
 		margin: 0 auto 10px;
 		color: #038ed8;
-		font-weight: 600;
 
 		@media screen and (max-width: 700px) {
 			text-align: center;
@@ -3015,7 +3024,6 @@ section.form-and-locations .container {
 section.hero-home.contactpage {
 	.content {
 		@media screen and (max-width: 992px) {
-			flex-direction: column-reverse;
 			p {
 				margin-bottom: 20px;
 			}
@@ -3631,9 +3639,9 @@ input#Submit {
 
 section.form-faq {
 	position: relative;
-	padding: 200px 0 100px;
-	background: #0388cd;
-	margin-bottom: 150px;
+    padding: 200px 0 170px;
+    background: #0388cd;
+    margin-bottom: 0px;
 	@media screen and (max-width: 400px) {
 		padding: 120px 0 100px;
 	}
@@ -3647,6 +3655,9 @@ section.form-faq {
 
 		@media screen and (max-width: 992px) {
 			padding: 70px 20px;
+		}
+		@media screen and (max-width: 700px) {
+			margin-bottom: -120px;
 		}
 
 		span.sub-headline {

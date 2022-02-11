@@ -16,40 +16,18 @@
 <?php get_header(); ?>
 
 
-
-<!-- hero -->
-<section class="hero-home">
-
-    <div class="container">
+<section class="landing-block">
+    <div class="container fluid">
         <div class="content">
-
-            <!-- content -->
-            <div class="column-half content-col">
-
-
-
-                <div class="rvls">
-                    <span class="sub-headline">
-                        FREE SAME-DAY PHARMACY DELIVERY
-                    </span>
-                </div>
-
-                <div class="rvls">
-                    <h1 class="hiw-title">
-                        <span class="k">All You Pay is</span>
-                         <span class="k">Your Normal Copay</span>
-                    </h1>
-                </div>
-                <div class="rvls">
-                    <p>
-                    With NowRx Pharmacy you get free same-day pharmacy delivery plus 5 star customer service. All you pay for is your medication.
-                    </p>
-                </div>
-
-                <div class="rvls">
-
-                    <div class="btn-container">
-                        <a class="rx-btn" href="<?= get_site_url(); ?>/refill-and-transfer-prescriptions">
+            <div class="text-content prep-text">
+                <span class="sub-headline">   FREE SAME-DAY PHARMACY DELIVERY</span>
+                <h1 class="title"><strong>All You Pay is Your Normal Copay</strong> </h1>
+                <p>
+                With NowRx Pharmacy you get free same-day pharmacy delivery plus 5 star customer service. All you pay for is your medication.
+                     </p>
+             </div>
+            <div class="btn-container">
+            <a class="rx-btn" href="<?= get_site_url(); ?>/refill-and-transfer-prescriptions">
                             <span class="arrow">
                                 <svg aria-hidden="true" focusable="false" data-prefix="fas"
                                     data-icon="file-prescription" role="img" xmlns="http://www.w3.org/2000/svg"
@@ -76,38 +54,29 @@
                 Check Price
 
                         </a>
-
-                    </div>
-                </div>
-
-
-
-
             </div>
-
-            <!-- image -->
-            <div class="column-half image-col">
-
-                <picture class="lozad" data-toggle-class="active">
+        </div>
+        <div class="media">
+            <figure class="image">
+            <picture class="lozad" data-toggle-class="active">
                     <source media="(max-width: 992px)" srcset="<?php echo get_template_directory_uri(); ?>/images/low-drug-prices-cause-excitement-for-couple.webp">
                     <source media="(min-width: 993px)" srcset="<?php echo get_template_directory_uri(); ?>/images/low-drug-prices-cause-excitement-for-couple.webp">
                     <img src="<?php echo get_template_directory_uri(); ?>/images/low-drug-prices-cause-excitement-for-couple.webp" class="orbit-image lozad" height="500px" width="650px" alt="low drug prices cause excitement for couple">
                 </picture>
-
-
-            </div>
-
+            </figure>
         </div>
     </div>
 </section>
 
 
+
 <!-- companies -->
-<?php include('section-companies.php'); ?>
+<?php include('components/component-logo-slider.php'); ?>
 
 
 
-<?php include('section-visitblock.php'); ?>
+<?php
+// include('section-visitblock.php'); ?>
 
 
 

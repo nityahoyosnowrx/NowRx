@@ -178,7 +178,7 @@ $(document).ready(function () {
 
     $("header.main ul.nav li a").on('click', function(e) {
         e.preventDefault();
-        $('nav.top').removeClass('active-menu');
+        $('nav.top,a.menu-icon-toggle').removeClass('active-menu');
         $('a.menu-icon-toggle .txt').text('Menu');
         activeMenu = false;
         return activeMenu;
@@ -189,11 +189,12 @@ $(document).ready(function () {
 
     $("a.menu-icon-toggle,.psedo").unbind("click").bind("click", function(){
         if (activeMenu == false) {
-            $('nav.top,header.main.investorhead').addClass('active-menu');
+
+            $('nav.top,a.menu-icon-toggle,header.main.investorhead').addClass('active-menu');
             $('a.menu-icon-toggle .txt').text('Close');
             activeMenu = true;
         } else {
-            $('nav.top,header.main.investorhead').removeClass('active-menu');
+            $('nav.top,a.menu-icon-toggle,header.main.investorhead').removeClass('active-menu');
             $('a.menu-icon-toggle .txt').text('Menu');
             activeMenu = false;
         }
@@ -201,11 +202,11 @@ $(document).ready(function () {
 
     // $(".psedo").bind("click", function(){
     //     if (activeMenu == false) {
-    //         $('nav.top,header.main.investorhead').addClass('active-menu');
+    //         $('nav.top,a.menu-icon-toggle,header.main.investorhead').addClass('active-menu');
     //         $('a.menu-icon-toggle .txt').text('Close');
     //         activeMenu = true;
     //     } else {
-    //         $('nav.top,header.main.investorhead').removeClass('active-menu');
+    //         $('nav.top,a.menu-icon-toggle,header.main.investorhead').removeClass('active-menu');
     //         $('a.menu-icon-toggle .txt').text('Menu');
     //         activeMenu = false;
     //     }
@@ -217,7 +218,7 @@ $(document).ready(function () {
             },800);
 
 
-              $('nav.top,header.main.investorhead').removeClass('active-menu');
+              $('nav.top,a.menu-icon-toggle,header.main.investorhead').removeClass('active-menu');
 
         e.preventDefault();
         });

@@ -23,7 +23,7 @@
 
 
 
-<?php include('section-companies.php'); ?>
+<?php include('components/component-logo-slider.php'); ?>
 
 
 

@@ -13,18 +13,18 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title><?php wp_title(''); ?></title>
     <?php // mobile meta (hooray!)
-    $cachever = 'vcach2131111111111141112';
+    $cachever = '0';
     ?>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Cache-control" content="public">
 
-    <link rel="stylesheet" href='<?php echo get_template_directory_uri(); ?>/public/frontend.css?vcc="<?= $cachever; ?>"'>
+    <link rel="stylesheet" href='<?php echo get_template_directory_uri(); ?>/public/frontend.css'>
     <?php
     // load script in header on these pages
     if ( is_page( 'refill-and-transfer-prescriptions' ) || is_page( 'telehealth' ) || is_page('contact-us') || is_singular('post') ): ?>
-        <script src="<?php echo get_template_directory_uri(); ?>/public/frontend-bundle.js?vcc='<?= $cachever; ?>'"></script>
+        <script defer src="<?php echo get_template_directory_uri(); ?>/public/frontend-bundle.js"></script>
     <?php endif; ?>
 
     <link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
@@ -47,7 +47,7 @@
     <?php if ( is_page( 'refill-and-transfer-prescriptions' ) || is_page( 'telehealth' ) ): ?>
 
     <?php else: ?>
-        <!-- <script src="<?php echo get_template_directory_uri(); ?>/public/frontend-bundle.js?vcc=<?= $cachever; ?>"></script> -->
+        <!-- <script src="<?php echo get_template_directory_uri(); ?>/public/frontend-bundle.j></script> -->
     <?php endif; ?>
 
     <?php if ( is_page(925 ) ||is_page(1410) ): ?>
@@ -81,10 +81,13 @@
             </script>
             <?php endif; ?>
 <?php endif; ?>
+
+
+
 </head>
 
-<body <?php body_class(); ?>>
-    <header class="main" role="banner" itemscope itemtype="http://schema.org/WPHeader">
+<body <?php body_class(); ?> >
+    <header class="main header-main" role="banner" itemscope itemtype="http://schema.org/WPHeader">
 
         <?php if(!is_page('nowprep')): ?>
             <section class="banner">
@@ -92,14 +95,10 @@
                     <div class="content">
                         <a href="https://nowrx.com/invest/" target="_blank" class="link">
                             <span class="mk">
-                                <span class="tx">
-                                    Invest in NowRx
-                                </span>
-                                <div class="small">*Limited Availability</div>
+                                <span class="tx">Invest in NowRx</span>
+                                <div class="small"><sup>*</sup> Limited Availability</div>
                             </span>
-                            <span class="btn">
-                                Learn More
-                            </span>
+                            <span class="btn">Learn More</span>
                         </a>
                     </div>
                 </div>
@@ -109,130 +108,94 @@
         <div class="container">
             <div class="content">
                 <div class="rlcontainer">
-
+                    <?php if(!is_page('refill-and-transfer-prescriptions')): ?>
+                        <div class="tablet-links">
+                            <a href="<?php echo get_site_url(); ?>/refill-and-transfer-prescriptions/" class="linksmal">Get Started</a>
+                        </div>
+                    <?php endif; ?>
                     <div class="responsive-bar">
-
                         <a class="menu-icon-toggle">
-
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/menu.svg" class="" alt="">
-
-                            <div class="txt">Menu</div>
+                            <div class="bars">
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                            </div>
                         </a>
                     </div>
-                    <div class="linksmsall">
-                        <a href="<?php echo get_site_url(); ?>/pricing/" class="linksmal">Pricing</a>
-                        <a href="<?php echo get_site_url(); ?>/how-it-works/" class="linksmal">How it Works</a>
-                    </div>
+
                     <!-- logo -->
                     <div class="logo-block">
                         <a class="main-nav-logo" href="<?php echo get_site_url(); ?>/"
                             title="Pharmacy delivery in hours. Just pay your normal copay.">
                             <figure class="sk">
-                                <img src="<?php echo get_template_directory_uri(); ?>/images/NowRx-Pharmacy-Delivery-Logo.webp"
+                                <img src="<?php echo get_template_directory_uri(); ?>/images/nowrx-free-same-day-pharmacy-delivery-logo.webp"
                                     class="orbit-image " alt="NowRx Pharmacy Delivery Logo" height="60px" width="150px">
                             </figure>
                         </a>
                     </div>
                 </div>
                 <!-- nav -->
-                <nav class="top">
+                <nav class="top main-menu">
                     <ul class="nav" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
 
-                        <li itemprop="name">
-                            <a itemprop="url" href="<?php echo get_site_url(); ?>/testimonials/" title="See what customers are saying about NowRx Pharmacy.">
-                                <span class="ico">
-
-                                    <img data-src="<?php echo get_template_directory_uri(); ?>/images/testimonials.svg" class="lozad" alt="">
-                                </span>
-                                <div class="tk">
-                                    Testimonials
-                                    <span class="sub">
-                                    What Patients Are Saying
-                                    </span>
-                                </div>
+                        <li itemprop="name" class="hidm bold-mobile">
+                            <a itemprop="url" href="<?php echo get_site_url(); ?>/" title="See what customers are saying about NowRx Pharmacy.">
+                                <div class="tk">Home</div>
                             </a>
                         </li>
                         <li itemprop="name">
-                            <a itemprop="url" href="<?php echo get_site_url(); ?>/resources/">
-                                <span class="ico">
-
-                                    <img data-src="<?php echo get_template_directory_uri(); ?>/images/forpatients.svg" class="lozad" alt="">
-                                </span>
-                                <div class="tk">
-                                    For Patients
-                                    <span class="sub">
-                                    Resources For Patients
-                                    </span>
-                                </div>
+                            <a itemprop="url" href="<?php echo get_site_url(); ?>/resources/" class="">
+                                <div class="tk">For Patients</div>
                             </a>
                         </li>
+
                         <li itemprop="name">
                             <a itemprop="url" href="<?php echo get_site_url(); ?>/blog/">
-                                <span class="ico">
-
-
-                                    <img data-src="<?php echo get_template_directory_uri(); ?>/images/blog.svg" class="lozad" alt="">
-                                </span>
-                                <div class="tk">
-                                    Blog
-                                    <span class="sub">
-                                    Health Tips & Information
-                                    </span>
-                                </div>
+                                <div class="tk">Blog</div>
                             </a>
                         </li>
-
-                        <li itemprop="name">
-                            <a itemprop="url" href="<?php echo get_site_url(); ?>/telehealth/">
-                                <span class="ico">
-                                   <img data-src="<?php echo get_template_directory_uri(); ?>/images/telehealth.svg" class="lozad" alt="">
-                                </span>
-                                <div class="tk">
-                                Telehealth
-                                    <span class="sub">
-                                    Online Prescription Services
-                                    </span>
-                                </div>
-                            </a>
-                        </li>
-
 
                         <li itemprop="name" class="">
                             <a itemprop="url" href="<?php echo get_site_url(); ?>/faqs/">
-                                <div class="tk smalltk">
-                                FAQs
-                                </div>
+                                <div class="tk smalltk">FAQs</div>
                             </a>
                         </li>
 
-                        <li itemprop="name" class="hidm">
-                            <a itemprop="url" href="<?php echo get_site_url(); ?>/locations/">
-                                <div class="tk smalltk">
-                                    Locations
-                                </div>
+                        <li itemprop="name">
+                            <a itemprop="url" href="<?php echo get_site_url(); ?>/testimonials/" title="See what customers are saying about NowRx Pharmacy.">
+                                <div class="tk">Reviews</div>
                             </a>
                         </li>
-
-
-                        <li itemprop="name" class="buttonfill buttonglimmer">
-                            <a class="button secondary rounded shadow rx-btn" itemprop="url"
-                                href="<?= get_site_url(); ?>/refill-and-transfer-prescriptions/">
-                                <span class="arrow">
-
-                                <img data-src="<?php echo get_template_directory_uri(); ?>/images/fillperscription.svg" class="lozad" alt="">
-                                </span>
-                                Transfer or Refill Prescriptions
-                            </a>
+                        <li itemprop="name" class="item-button">
+                            <a class="button-mmenu" itemprop="url" href="<?= get_site_url(); ?>/refill-and-transfer-prescriptions/">Get Started</a>
                         </li>
+
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
-    <?php
-if ( 'post' == get_post_type()  || is_archive('post') ||  'locations' == get_post_type() ):
-else:
+
+<?php
+// if('post' == get_post_type() || is_archive('post') ||  'locations' == get_post_type() ):
+    // if(!is_page('resources')):
+    // else:
 ?>
-    <main>
-        <article>
-            <?php endif; ?>
+<!-- <main> -->
+    <!-- <article> -->
+<?php
+    // endif;
+// endif;
+
+if ( is_single() && 'post' == get_post_type() ) {
+} else {
+    if(is_home()){
+    } else {
+        if('locations' == get_post_type()){
+        } else {
+            echo "<main><article>";
+        }
+    }
+
+}
+?>

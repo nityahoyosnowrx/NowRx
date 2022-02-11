@@ -55,14 +55,14 @@ $currentPage = $post->ID;
                                                 <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'large'); ?>
                                                 <?php $imageThumbnail = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'medium'); ?>
 
-                                                <a href="<?php the_permalink() ?>/" rel="bookmark" title="<?php the_title_attribute(); ?>">
+                                                <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
                                                     <picture class="border-styled lozad" style="display: block; min-height: 1rem" data-iesrc="<?php echo $imageThumbnail[0]; ?>" data-alt="<?php echo get_post_meta( get_post_thumbnail_id(), '_wp_attachment_image_alt', true ); ?>">
                                                         <source srcset="<?php echo $image[0]; ?>" media="(min-width: 992px)">
                                                         <source srcset="<?php echo $imageThumbnail[0]; ?>" media="(min-width: 10px)">
                                                     </picture>
                                                 </a>
                                             <?php else : ?>
-                                                <a href="<?php the_permalink() ?>/" rel="bookmark" title="<?php the_title_attribute(); ?>">
+                                                <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
                                                     <img class="border-image"
                                                         src="<?php echo get_site_url(); ?>/wp-content/uploads/2020/09/IMG_3714-1024x683.jpg"
                                                         alt="<?php echo get_post_meta( get_post_thumbnail_id(), '_wp_attachment_image_alt', true ); ?>">
@@ -73,7 +73,7 @@ $currentPage = $post->ID;
 
                                         <div class="content">
                                             <h2>
-                                                <a href="<?php the_permalink(); ?>/" class="readlink">
+                                                <a href="<?php the_permalink(); ?>" class="readlink">
                                                 <?php
                                                             echo wp_trim_words(get_the_title(), 12);
                                                         ?>
@@ -91,12 +91,12 @@ $currentPage = $post->ID;
 
                                         <div class="databot">
                                             <div class="data">
-                                                <a href="<?php the_permalink(); ?>/" class="readlink">
+                                                <a href="<?php the_permalink(); ?>" class="readlink">
                                                     <?php echo get_the_date('F j Y - h:i a'); ?>
                                                 </a>
                                             </div>
                                             <div class="wd">
-                                                <a href="<?php the_permalink(); ?>/" class="readmore">Read More</a>
+                                                <a href="<?php the_permalink(); ?>" class="readmore">Read More</a>
                                             </div>
                                         </div>
 
@@ -139,7 +139,7 @@ $currentPage = $post->ID;
 
                                         <article class="side-blog-item">
                                             <div class="content">
-                                                <a href="<?php the_permalink();  ?>/" class="readlink">
+                                                <a href="<?php the_permalink();  ?>" class="readlink">
                                                     <h2>
                                                         <?php
                                                         echo  wp_trim_words(get_the_title(), 8);
@@ -148,14 +148,14 @@ $currentPage = $post->ID;
                                                 </a>
                                                 <div class="clk">
                                                     <div class="data">
-                                                        <a href="<?php the_permalink(); ?>/" class="readlink">
+                                                        <a href="<?php the_permalink(); ?>" class="readlink">
                                                             <?php echo get_the_date('F j Y ');   ?>
                                                         </a>
                                                     </div>
 
                                                     <div class="content">
                                                         <div class="wd">
-                                                            <a href="<?php the_permalink(); ?>/" class="readmore">Read More</a>
+                                                            <a href="<?php the_permalink(); ?>" class="readmore">Read More</a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -257,7 +257,7 @@ $currentPage = $post->ID;
                                         <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'large'); ?>
                                         <?php $imageThumbnail = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'medium'); ?>
 
-                                        <a href="<?php the_permalink() ?>/" rel="bookmark" title="<?php the_title_attribute(); ?>">
+                                        <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
                                             <picture class="border-styled lozad" style="display: block; min-height: 1rem"
                                                 data-iesrc="<?php echo $imageThumbnail[0]; ?>"
                                                 data-alt="<?php echo get_post_meta( get_post_thumbnail_id(), '_wp_attachment_image_alt', true ); ?>">
@@ -266,7 +266,7 @@ $currentPage = $post->ID;
                                             </picture>
                                         </a>
                                     <?php else : ?>
-                                        <a href="<?php the_permalink() ?>/" rel="bookmark" title="<?php the_title_attribute(); ?>">
+                                        <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
                                             <img class="border-image"
                                                 src="<?php echo get_site_url(); ?>/wp-content/uploads/2020/09/IMG_3714-1024x683.jpg"
                                                 alt="<?php echo get_post_meta( get_post_thumbnail_id(), '_wp_attachment_image_alt', true ); ?>">
@@ -275,7 +275,7 @@ $currentPage = $post->ID;
                                 </div>
                                     <div class="content">
                                         <h2>
-                                            <a href="<?php the_permalink(); ?>/" class="readlink">
+                                            <a href="<?php the_permalink(); ?>" class="readlink">
                                                 <?php
                                                     if($countbot == 3 || $countbot == 4 || $countbot == 5){
 
@@ -290,12 +290,12 @@ $currentPage = $post->ID;
                                         </h2>
                                         <div class="databot">
                                             <div class="data">
-                                                <a href="<?php the_permalink(); ?>/" class="readlink">
+                                                <a href="<?php the_permalink(); ?>" class="readlink">
                                                     <?php echo get_the_date('F j Y - h:i a'); ?>
                                                 </a>
                                             </div>
                                             <div class="wd">
-                                                <a href="<?php the_permalink(); ?>/" class="readmore">Read More</a>
+                                                <a href="<?php the_permalink(); ?>" class="readmore">Read More</a>
                                             </div>
                                         </div>
 

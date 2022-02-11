@@ -15,144 +15,47 @@
 
 <?php get_header(); ?>
 
-<!-- hero -->
-<section class="hero-home">
 
 
-    <div class="container">
+<section class="landing-block">
+    <div class="container fluid">
         <div class="content">
-
-            <!-- content -->
-            <div class="column-half content-col">
-
-
-
-            <div class="rvls">
-                    <span class="sub-headline">
-                        A Better Local Pharmacy Delivered
-                    </span>
-                </div>
-
-                <div class="rvls">
-                    <h1 class="hiw-title">
-                    See Why 4,500+ Docs Use NowRx
-                    </h1>
-                </div>
-                <div class="rvls">
-                    <p>
-                        We help your staff save time and energy by reducing callbacks and working with insurance to get your patients covered.
-                    </p>
-                </div>
-
-                <div class="rvls">
-                    <div class="btn-container">
-                        <a  class="rx-btn" data-toggle="for-doctors-learnmore" aria-controls="for-doctors-learnmore" aria-haspopup="true" tabindex="0">
-                        <?php include('reg-arrow.php'); ?>
-                        Learn More</a>
-                        <a class="rx-btn rx-green mrb" href="#howitworks-doctors">
-                        <?php include('grn-arrow.php'); ?>
-                        How it Works</a>
-                    </div>
-                </div>
-
-
-
-
+            <div class="text-content">
+                <span class="sub-headline">A BETTER LOCAL PHARMACY DELIVERED</span>
+                <h1 class="title">See Why <strong>Doctors Trust NowRx</strong></h1>
+                <p>We help your staff save time and energy by reducing callbacks and working with insurance to get your patients covered.</p>
             </div>
-
-            <!-- image -->
-            <div class="column-half image-col">
-
-                <picture class="lozad"
+            <div class="btn-container">
+                <a class="rx-btn" data-toggle="for-doctors-learnmore" aria-controls="for-doctors-learnmore" aria-haspopup="true" tabindex="0">
+                    <?php include('reg-arrow.php'); ?>
+                    Learn More
+                </a>
+                <a class="rx-btn rx-green mrb" href="#howitworks-doctors">
+                    <?php include('grn-arrow.php'); ?>
+                    How it Works
+                </a>
+            </div>
+        </div>
+        <div class="media">
+            <figure class="image">
+            <picture class="lozad"
                     data-toggle-class="active">
                     <source media="(max-width: 992px)" srcset="<?php echo get_template_directory_uri(); ?>/images/doctor-evaluating-best-pharmacy-delivery-for-patients.webp">
                     <source media="(min-width: 993px)" srcset="<?php echo get_template_directory_uri(); ?>/images/doctor-evaluating-best-pharmacy-delivery-for-patients.webp">
                     <img data-src="<?php echo get_template_directory_uri(); ?>/images/doctor-evaluating-best-pharmacy-delivery-for-patients.webp"
                         class="orbit-image lozad" height="500px" width="650px" alt="doctor evaluating best pharmacy delivery for patients">
                 </picture>
-
-
-            </div>
-
+            </figure>
         </div>
     </div>
 </section>
-
 
 <!-- companies -->
-<?php include('section-companies.php'); ?>
+<?php include('components/component-logo-slider.php'); ?>
 
-
-
-<section class="how-it-works panel--primary" id="howitworks-doctors">
-    <div class="grid-container">
-        <div class="grid-x grid-padding-x text-center">
-            <div class="large-12 cell">
-                <div class="rvl">
-                    <p class="pre-headline">Pharmacy Delivery Made Easy</p>
-                </div>
-
-                <div class="rvl">
-                    <h2 class="headline">Here’s How It Works</h2>
-                </div>
-            </div>
-        </div>
-        <div class="grid-x grid-padding-x steps">
-
-            <div class="hiw-cell cell large-4 text-center">
-                <div class="rvl">
-
-                    <div class="image">
-                        <img data-toggle-class="active"
-                            data-src="<?php echo get_template_directory_uri(); ?>/library/images/Prescription-Icon.png"
-                            alt="Prescription Icon" class="pic lozad">
-                    </div>
-                    <h3 class="padding-bottom-3">1. Send Us Your Prescription</h3>
-
-                    <p>
-                        Call, fax, or ePrescribe to us like any other pharmacy. We are in all EMRs under NowRx.
-
-                    </p>
-                </div>
-            </div>
-
-
-            <div class="hiw-cell cell large-4 text-center">
-                <div class="rvl">
-
-                    <div class="image">
-                        <img data-toggle-class="active"
-                            data-src="<?php echo get_template_directory_uri(); ?>/library/images/Confirmation-Icon.png"
-                            alt="prescription delivery confirmation check mark icon" class="pic lozad ">
-                    </div>
-                    <h3 class="padding-bottom-3">2. We Confirm Delivery</h3>
-
-                    <p>We will reach out to your patient via phone to set up delivery, collect a copay and provide a consultation.</p>
-                </div>
-            </div>
-
-
-            <div class="hiw-cell cell large-4 text-center">
-                <div class="rvl">
-
-                    <div class="image">
-                        <img data-toggle-class="active"
-                            data-src="<?php echo get_template_directory_uri(); ?>/library/images/Car-Icon.png"
-                            alt="Prescription Delivery Car Icon" class="pic lozad">
-                    </div>
-                    <h3 class="padding-bottom-3">3. Medication is Delivered</h3>
-
-                    <p>A NowRx Pharmacy employee will deliver the patient's medication in a few hours or as requested.</p>
-                </div>
-            </div>
-
-
-        </div>
-    </div>
-</section>
-
-
-
+<div id="howitworks-doctors">
+    <?php include('components/component-how-it-works.php'); ?>
+</div>
 
 <section class="split-image">
   <div class="imagefull">
@@ -251,32 +154,8 @@
 </section>
 
 
+<?php include('section-visitblock.php'); ?>
 
-<!-- visit faq -->
-<section class="visit-faq">
-    <div class="container">
-        <div class="content">
-            <div class="rvl">
-                <span class="sub-headline">
-                    No Signup Required. No Hidden Fees
-                </span>
-            </div>
-            <div class="rvl">
-                <h2 class="sec-title">
-                    Just a Better Pharmacy
-                </h2>
-            </div>
-            <div class="rvl">
-                <div class="btn-container">
-                    <a data-toggle="for-doctors-learnmore" aria-controls="for-doctors-learnmore" aria-haspopup="true" tabindex="0" class="rx-btn rx-dg">
-                        Learn More
-                    </a>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
 
 
 <!-- what doctor saying -->
@@ -424,7 +303,147 @@
 
 
 <!-- FAQ -->
-<?php get_template_part('components/section-faq-flip'); ?>
+
+<section class="block-frequent-questions registration-page">
+    <div class="container fluid">
+        <div class="content">
+            <h2 class="title">Frequently Asked Questions</h2>
+            <p>
+                Get answers to NowRx’s most frequently asked questions or give one of our local pharmacies a call and we will be happy to assist you.
+            </p>
+            <div class="btn-container desktop">
+                <a href="<?= get_site_url(); ?>/faqs/" class="rx-button rx-light">View all FAQs
+                    <div class="icon">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="arrow-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-arrow-right fa-w-14 fa-9x">
+                            <path fill="currentColor" d="M216.464 36.465l-7.071 7.07c-4.686 4.686-4.686 12.284 0 16.971L387.887 239H12c-6.627 0-12 5.373-12 12v10c0 6.627 5.373 12 12 12h375.887L209.393 451.494c-4.686 4.686-4.686 12.284 0 16.971l7.071 7.07c4.686 4.686 12.284 4.686 16.97 0l211.051-211.05c4.686-4.686 4.686-12.284 0-16.971L233.434 36.465c-4.686-4.687-12.284-4.687-16.97 0z" class=""></path>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <section class="faq-block">
+            <div class="container">
+
+                <div class="faq-content">
+                    <ul class="list">
+                        <li class="list-item">
+                            <div class="list-title">
+                                <div class="list-question">
+                                    How long does delivery take from NowRx?
+                                </div>
+                                <div class="list-action" data-view="false">
+                                    <div class="open">
+                                        <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="angle-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="svg-inline--fa fa-angle-down fa-w-10 fa-9x">
+                                            <path fill="currentColor" d="M151.5 347.8L3.5 201c-4.7-4.7-4.7-12.3 0-17l19.8-19.8c4.7-4.7 12.3-4.7 17 0L160 282.7l119.7-118.5c4.7-4.7 12.3-4.7 17 0l19.8 19.8c4.7 4.7 4.7 12.3 0 17l-148 146.8c-4.7 4.7-12.3 4.7-17 0z" class=""></path>
+                                        </svg>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="list-answer">
+                                On average, a HIPAA licensed NowRx pharmacy employee will hand deliver your prescription in 2-4 hours. NowRx also offers a 1hr. expedited option for $5 if you need to get your medication right away.
+                            </div>
+
+                        </li>
+                        <li class="list-item">
+                            <div class="list-title">
+                                <div class="list-question">
+                                    Does NowRx charge more to cover free delivery?
+
+                                </div>
+                                <div class="list-action" data-view="false">
+                                    <div class="open">
+                                        <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="angle-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="svg-inline--fa fa-angle-down fa-w-10 fa-9x">
+                                            <path fill="currentColor" d="M151.5 347.8L3.5 201c-4.7-4.7-4.7-12.3 0-17l19.8-19.8c4.7-4.7 12.3-4.7 17 0L160 282.7l119.7-118.5c4.7-4.7 12.3-4.7 17 0l19.8 19.8c4.7 4.7 4.7 12.3 0 17l-148 146.8c-4.7 4.7-12.3 4.7-17 0z" class=""></path>
+                                        </svg>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="list-answer">
+                                NO. NowRx Pharmacy has physical locations in all of our service areas. We accept walk-ins and our pharmacists are always available to chat in person or over the phone.
+
+                            </div>
+
+                        </li>
+                        <li class="list-item">
+                            <div class="list-title">
+                                <div class="list-question">
+                                    How does NowRx make money?
+
+                                </div>
+                                <div class="list-action" data-view="false">
+                                    <div class="open">
+                                        <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="angle-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="svg-inline--fa fa-angle-down fa-w-10 fa-9x">
+                                            <path fill="currentColor" d="M151.5 347.8L3.5 201c-4.7-4.7-4.7-12.3 0-17l19.8-19.8c4.7-4.7 12.3-4.7 17 0L160 282.7l119.7-118.5c4.7-4.7 12.3-4.7 17 0l19.8 19.8c4.7 4.7 4.7 12.3 0 17l-148 146.8c-4.7 4.7-12.3 4.7-17 0z" class=""></path>
+                                        </svg>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="list-answer">
+                                The proprietary tech inside our pharmacy increases efficiency and reduces our cost to about 1/100th that of a traditional pharmacy like CVS. This enables free same-day delivery.
+                            </div>
+
+                        </li>
+                        <li class="list-item">
+                            <div class="list-title">
+                                <div class="list-question">
+                                    How is NowRx different than mail pharmacy?
+
+                                </div>
+                                <div class="list-action" data-view="false">
+                                    <div class="open">
+                                        <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="angle-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="svg-inline--fa fa-angle-down fa-w-10 fa-9x">
+                                            <path fill="currentColor" d="M151.5 347.8L3.5 201c-4.7-4.7-4.7-12.3 0-17l19.8-19.8c4.7-4.7 12.3-4.7 17 0L160 282.7l119.7-118.5c4.7-4.7 12.3-4.7 17 0l19.8 19.8c4.7 4.7 4.7 12.3 0 17l-148 146.8c-4.7 4.7-12.3 4.7-17 0z" class=""></path>
+                                        </svg>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="list-answer">
+                                We make money like every pharmacy or healthcare service – reimbursement from insurance and copays from the patient.
+
+                            </div>
+
+                        </li>
+                        <li class="list-item">
+                            <div class="list-title">
+                                <div class="list-question">
+                                    What insurance plans does NowRx take?
+                                </div>
+                                <div class="list-action" data-view="false">
+                                    <div class="open">
+                                        <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="angle-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="svg-inline--fa fa-angle-down fa-w-10 fa-9x">
+                                            <path fill="currentColor" d="M151.5 347.8L3.5 201c-4.7-4.7-4.7-12.3 0-17l19.8-19.8c4.7-4.7 12.3-4.7 17 0L160 282.7l119.7-118.5c4.7-4.7 12.3-4.7 17 0l19.8 19.8c4.7 4.7 4.7 12.3 0 17l-148 146.8c-4.7 4.7-12.3 4.7-17 0z" class=""></path>
+                                        </svg>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="list-answer">
+                                NO. Prices are lower than or competitive with all pharmacies. We also automatically search for and apply available coupons to offer the lowest price possible (over $1M saved!).
+                            </div>
+
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <div class="btn-container mobile">
+            <a href="" class="rx-button rx-light">View all FAQs
+                <div class="icon">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="arrow-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-arrow-right fa-w-14 fa-9x">
+                        <path fill="currentColor" d="M216.464 36.465l-7.071 7.07c-4.686 4.686-4.686 12.284 0 16.971L387.887 239H12c-6.627 0-12 5.373-12 12v10c0 6.627 5.373 12 12 12h375.887L209.393 451.494c-4.686 4.686-4.686 12.284 0 16.971l7.071 7.07c4.686 4.686 12.284 4.686 16.97 0l211.051-211.05c4.686-4.686 4.686-12.284 0-16.971L233.434 36.465c-4.686-4.687-12.284-4.687-16.97 0z" class=""></path>
+                    </svg>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
 
 <?php include('section-visitfaq.php'); ?>
 

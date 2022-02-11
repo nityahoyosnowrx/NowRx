@@ -126,35 +126,7 @@ $mapd = get_field('address');
 
 
 
-    <section class="visit-faq">
-        <div class="container">
-            <div class="content">
-                <div class="rvl">
-                    <span class="sub-headline">
-                        No Signup Required. No Hidden Fees.
-                    </span>
-                </div>
-
-                <div class="rvl">
-                    <h2 class="sec-title">
-                        Just a Better Pharmacy
-                    </h2>
-                </div>
-                <div class="rvl">
-                    <div class="btn-container">
-                        <a class="rx-btn rx-dg" data-toggle="suggestalocation" aria-controls="suggestalocation"
-                            aria-haspopup="true" tabindex="0">Request a Location</a>
-                    </div>
-                </div>
-                <div class="rvl">
-                    <div class="small-block">
-                        Still have questions about how to get started with NowRx Pharmacy? Email us at <a href="mailto:info@nowrx.com">info@nowrx.com</a> and
-                        we will be happy to help.
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <?php include('section-visitblock.php'); ?>
 
 <!-- FAQ -->
 <?php get_template_part('components/section-faq-flip'); ?>

@@ -1,164 +1,106 @@
-<?php
-/*
- Template Name: How It Works
- *
- * This is your custom page template. You can create as many of these as you need.
- * Simply name is "page-whatever.php" and in add the "Template Name" title at the
- * top, the same way it is here.
- *
- * When you create your page, you can just select the template and viola, you have
- * a custom page template to call your very own. Your mother would be so proud.
- *
- * For more info: http://codex.wordpress.org/Page_Templates
-*/
-?>
-
 <?php get_header(); ?>
 
 
-
-<!-- hero -->
-<section class="hero-home block-prephome">
-
-
-    <div class="container">
+<section class="landing-block">
+    <div class="container fluid">
         <div class="content">
-
-            <!-- content -->
-            <div class="column-half content-col">
-
-
-
-                <div class="rvls">
-                    <span class="sub-headline">
-                    An Easier Way to HIV PrEP
-                    </span>
-                </div>
-
-                <div class="rvls">
-                    <h1 class="hiw-title">
-                    <span class="k">HIV PrEP is Easy </span>
-                        <span class="k">with NowPrEP</span>
-                    </h1>
-                </div>
-
-                <div class="rvls">
-                    <p>
-                    NowPrEP prescribes HIV PrEP medication & delivers it to you. 99% of patients pay $0 - Tap below to get started!
-
-
-
-                    </p>
-                </div>
-
-                <div class="rvls">
-                    <div class="btn-container">
-                        <!-- <a class="rx-btn" href="<?= get_site_url(); ?>/refill-and-transfer-prescriptions">Join Watilist</a> -->
-                        <a class="rx-btn " id="nowprep-gt-gt" data-toggle="waitlist" aria-controls="waitlist" aria-haspopup="true" id="getstarted-gt" tabindex="0"> <?php include('reg-arrow.php'); ?> Get Started</a>
-                        <a class="rx-btn rx-green mrb" href="#howitwork"> <?php include('grn-arrow.php'); ?> How It
-                            Works</a>
-                    </div>
-                </div>
-
-
-
-
+            <div class="text-content prep-text">
+            <span class="sub-headline">An Easier Way to HIV PrEP</span>
+            <h1 class="title">
+            <strong>HIV PrEP</strong> is Easy With NowPrEP
+            </h1>
+            <p>
+            NowPrEP prescribes <strong>HIV PrEP medication</strong> & delivers it to you. 99% of patients pay $0 - Tap below to get started!
+            </p>
             </div>
-
-            <!-- image -->
-            <div class="column-half image-col">
-
-                <picture class="lozad"
-                     data-toggle-class="active">
-
+            <div class="btn-container">
+            <a class="rx-btn " id="nowprep-gt-gt" data-toggle="waitlist" aria-controls="waitlist" aria-haspopup="true" id="getstarted-gt" tabindex="0"> <?php include('reg-arrow.php'); ?> Get Started</a>
+                    <a class="rx-btn rx-green mrb" href="#howitwork"> <?php include('grn-arrow.php'); ?> How It
+                        Works</a>
+            </div>
+        </div>
+        <div class="media">
+            <figure class="image">
+                <picture class="lozad" data-toggle-class="active">
                     <source media="(max-width: 992px)" srcset="<?php echo get_template_directory_uri(); ?>/images/hiv-prep-couple-using-descovy.webp">
                     <source media="(min-width: 993px)" srcset="<?php echo get_template_directory_uri(); ?>/images/hiv-prep-couple-using-descovy.webp">
                     <img data-src="<?php echo get_template_directory_uri(); ?>/images/hiv-prep-couple-using-descovy.webp" class="orbit-image lozad" height="500px" width="650px" alt="hiv prep couple using descovy">
                 </picture>
-            </div>
-
+            </figure>
         </div>
     </div>
 </section>
 
 
 <!-- companies -->
-<?php
-include('section-companies.php'); ?>
+<?php include('components/component-logo-slider.php'); ?>
 
 
+<section class="columns-work columns-prep" id="howitwork">
+    <div class="container">
+        <header class="title">
+            <h2 class="title">Here’s How It Works</h2>
+            <p>
+            HIV PrEP Made Easy
+            </p>
+        </header>
+        <div class="row-columns">
+            <div class="column-item">
+                <figure class="image">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/prep-online-sign-up.webp" alt="">
+                </figure>
+                <h3 class="title">Sign Up for NowPrep</h3>
+                <p>
+                Sign up in seconds and fill out our health questionnaire to see if pre exposure prophylaxis (PrEP) is right for you.
 
-<section class="how-it-works panel--primary quatro" id="howitwork">
-    <div class="grid-container">
-        <div class="grid-x grid-padding-x text-center">
-            <div class="large-12 cell">
-                <div class="rvl">
-                    <p class="pre-headline">HIV PrEP Made Easy</p>
-                </div>
-
-                <div class="rvl">
-                    <h2 class="headline">Here’s How It Works</h2>
+                </p>
+            </div>
+            <div class="line-position">
+                <div class="lines">
+                    <span class="line"></span><span class="line"></span><span class="line"></span><span class="line"></span><span class="line"></span><span class="line"></span><span class="line"></span><span class="line"></span><span class="line"></span>
                 </div>
             </div>
+            <div class="column-item">
+                <figure class="image">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/prep-online-free-being-checked.webp" alt="">
+                </figure>
+                <h3 class="title">Complete a PrEP Lab</h3>
+                <p>
+                Upload a recent test result or our prescriber will work with you to set up an in person lab test at a nearby facility.
+                </p>
+            </div>
+            <div class="line-position">
+                <div class="lines">
+                    <span class="line"></span><span class="line"></span><span class="line"></span><span class="line"></span><span class="line"></span><span class="line"></span><span class="line"></span><span class="line"></span><span class="line"></span>
+                </div>
+            </div>
+            <div class="column-item">
+                <figure class="image">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/prep-online-delivered.webp" alt="">
+                </figure>
+                <h3 class="title">Get HIV PrEP Delivered</h3>
+                <p>If HIV PrEP medication is right for you, our physician will prescribe it online and we will deliver it in hours for FREE!</p>
+            </div>
+            <div class="line-position">
+                <div class="lines">
+                    <span class="line"></span><span class="line"></span><span class="line"></span><span class="line"></span><span class="line"></span><span class="line"></span><span class="line"></span><span class="line"></span><span class="line"></span>
+                </div>
+            </div>
+            <div class="column-item">
+                <figure class="image">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/nowrx-pharmacy-delivery-driver-bringing-prescriptions-to-a-house-mobile.webp" alt="">
+                </figure>
+                <h3 class="title">Set Up Auto-Refill</h3>
+                <p>Get your PrEP medication automatically delivered each month and an auto-reminder when a new lab order is needed.</p>
+            </div>
+
         </div>
-        <div class="grid-x grid-padding-x steps">
-
-            <div class="hiw-cell cell large-4 text-center">
-                <div class="rvl">
-
-                    <div class="image quatroimg">
-                        <img width="70px" height="70px" data-toggle-class="active"
-                            data-src="<?php echo get_template_directory_uri(); ?>/images/prescription-delivery-sent-icon.webp"
-                            alt="prescription delivery sent icon" class="pic lozad">
-                    </div>
-                    <h3 class="padding-bottom-3">1. Sign Up for NowPrep</h3>
-
-                    <p class="txtcenter">
-                        Sign up in seconds and fill out our health questionnaire to see if pre exposure prophylaxis (PrEP) is right for you.
-                    </p>
-                </div>
-            </div>
-
-
-            <div class="hiw-cell cell large-4 text-center">
-                <div class="rvl">
-
-                    <div class="image quatroimg">
-                        <img width="70px" height="70px" data-toggle-class="active"
-                            data-src="<?php echo get_template_directory_uri(); ?>/images/prescription-delivery-confirmed-icon.webp"
-                            alt="prescription delivery confirmed icon" class="pic lozad ">
-                    </div>
-                    <h3 class="padding-bottom-3">2. Complete a PrEP Lab Test</h3>
-
-                    <p class="txtcenter">
-                    Upload a recent test result or our prescriber will work with you to set up an in person lab test at a nearby facility.
-
-                    </p>
-                </div>
-            </div>
-
-
-            <div class="hiw-cell cell large-4 text-center">
-                <div class="rvl">
-
-                    <div class="image quatroimg">
-                        <img width="70px" height="70px" data-toggle-class="active"
-                            data-src="<?php echo get_template_directory_uri(); ?>/images/prescription-delivery-car-icon.webp"
-                            alt="prescription delivery car icon" class="pic lozad">
-                    </div>
-                    <h3 class="padding-bottom-3">3. Get HIV PrEP Delivered</h3>
-
-                    <p class="txtcenter">
-                    If a NowPrEP physician decides HIV PrEP Medication is right for you, we will prescribe and deliver it in hours for FREE!
-                    </p>
-                </div>
-            </div>
-
-
-
+        <div class="btn-container">
+            <a href="<?php echo get_site_url(); ?>/refill-and-transfer-prescriptions/" class="rx-button">Get Started</a>
         </div>
     </div>
 </section>
+
 
 
 
@@ -1381,23 +1323,11 @@ Next, NowPrEP will send you a home test kit, or if you prefer order a lab at a t
                 <div class="faq-block">
                     <div class="clickmodal" data-opentab="0">
                         <h2 class="sec-title">
-
-                            <span class="tiltelink" data-toggle="submitaquestion" aria-controls="submitaquestion"
-                                aria-haspopup="true" tabindex="0">Submit a Question</span>
-
-                            <span class="chevron-arrow">
-                                <svg
-                                     id="Capa_1" x="0px" y="0px" viewBox="0 0 256 256"
-                                    style="enable-background:new 0 0 256 256;" xml:space="preserve">
+                            <span class="tiltelink" data-toggle="submitaquestion" aria-controls="submitaquestion" aria-haspopup="true" tabindex="0">Submit a Question</span>
+                            <span class="chevron-arrow tiltelink" data-toggle="submitaquestion" aria-controls="submitaquestion" aria-haspopup="true" tabindex="0">
+                                <svg id="Capa_1" x="0px" y="0px" viewBox="0 0 256 256" style="enable-background:new 0 0 256 256;" xml:space="preserve">
                                     <title>Close icon</title>
-
-
-                                            <polygon
-                                                points="79.093,0 48.907,30.187 146.72,128 48.907,225.813 79.093,256 207.093,128   " />
-
-
-
-
+                                    <polygon points="79.093,0 48.907,30.187 146.72,128 48.907,225.813 79.093,256 207.093,128" />
                                 </svg>
                             </span>
                         </h2>

@@ -179,11 +179,37 @@ header.main.investorhead {
 		}
 	}
 	ul.nav {
+
+		@media screen and (max-width: 1280px) {
+			padding: 50px 20px 10px;
+			padding: 0px 20px 20px;
+		}
 		@media screen and (max-width: 700px) {
 			width: 100%;
 			max-width: 100vw;
-			padding: 50px 10px 10px;
+			padding: 50px 20px 10px;
+			padding: 0px 20px 20px;
 		}
+		@media screen and (max-width: 1280px){
+			li a .tk {
+				width: 100%;
+				display: -webkit-box;
+				display: -webkit-flex;
+				display: -ms-flexbox;
+				display: flex;
+				-webkit-box-orient: vertical;
+				-webkit-box-direction: normal;
+				-webkit-flex-direction: column;
+				-ms-flex-direction: column;
+				flex-direction: column;
+				font-size: 1.6rem;
+				font-weight: 800;
+				line-height: 1.15;
+				letter-spacing: -.1rem;
+				letter-spacing: -.6px;
+			}
+		}
+
 		a {
 			&:after {
 				content: close-quote;
@@ -390,6 +416,10 @@ body#investor {
 			list-style: none;
 			margin: 30px 0 0;
 			padding: 0;
+			@media screen and (max-width: 1280px) {
+				position: relative;
+				margin: 10px 0;
+			}
 
 			li {
 				list-style: none;
@@ -485,7 +515,7 @@ body#investor {
 				}
 			}
 			h1 {
-				font-family: Verdana;
+				// font-family: Verdana;
 				font-style: normal;
 				font-weight: 700;
 				font-size: 3rem;
@@ -493,7 +523,7 @@ body#investor {
 				letter-spacing: -0.025em;
 				color: #192d3e;
 				@media screen and (max-width: 1280px) {
-					font-family: Verdana;
+					// font-family: Verdana;
 					font-style: normal;
 					font-weight: 700;
 					font-size: 2rem;
@@ -502,7 +532,7 @@ body#investor {
 					color: #192d3e;
 				}
 				@media screen and (max-width: 700px) {
-					font-family: Verdana;
+					// font-family: Verdana;
 					font-style: normal;
 					font-weight: 700;
 					font-size: 1.8rem;
@@ -567,6 +597,9 @@ body#investor {
 					z-index: 23;
 					margin: 15px 0 0;
 				}
+				.hs_error_rollup{
+					position: absolute;
+				}
 			}
 			form {
 				max-width: 100%;
@@ -612,7 +645,7 @@ body#investor {
 				padding: 0;
 				box-shadow: none;
 				padding: 0 20px;
-				font-family: Verdana;
+				// font-family: Verdana;
 				font-style: normal;
 				font-weight: normal;
 				font-size: 16px;
@@ -636,7 +669,7 @@ body#investor {
 				}
 
 				&::placeholder {
-					font-family: Verdana;
+					// font-family: Verdana;
 					font-style: normal;
 					font-weight: normal;
 					font-size: 16px;
@@ -699,7 +732,7 @@ body#investor {
 		}
 		p {
 			font-size: 1.2rem;
-			font-family: Verdana;
+			// font-family: Verdana;
 			font-style: normal;
 			font-weight: normal;
 			font-size: 18px;
@@ -1608,6 +1641,40 @@ body#investor {
 				justify-content: center;
 				text-align: center;
 			}
+		}
+		.hs_error_rollup{
+			position: absolute;
+			@media screen and (max-width: 1280px) {
+				display: none;
+			}
+		}
+		body#investor .hs_error_rollup {
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+
+		ul.no-list.hs-error-msgs.inputs-list {
+			position: absolute;
+			top: 100%;
+			color: #fff;
+			@media screen and (max-width: 1280px) {
+				position: relative;
+			}
+		}
+
+		ul.no-list.hs-error-msgs.inputs-list label.hs-error-msg {
+			position: relative;
+			top: 0;
+			left: 0;
+			height: auto;
+			width: auto;
+			overflow: visible;
+			color: #fff;
+		}
+
+		label#label-email-df2a6935-1139-426a-b373-0917788189ad_7 {
+			display: none;
 		}
 	}
 	.grid-9 {
@@ -5107,9 +5174,9 @@ body#investor {
 	}
 
 	section.review-block {
-		padding: 90px 0;
+		margin: 90px 0;
 		@media screen and (max-width: 700px) {
-			padding-bottom: 30px;
+			margin-bottom: 30px;
 		}
 
 		header.title {

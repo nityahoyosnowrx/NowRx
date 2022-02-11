@@ -18,7 +18,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Cache-control" content="public">
 
-    <link rel="stylesheet" href='<?php echo get_template_directory_uri(); ?>/public/frontend.css?vc="1211123111121111112111121"'>
+    <link rel="stylesheet" href='<?php echo get_template_directory_uri(); ?>/public/frontend.css?vc="12111123111121111112111121"'>
 
 
     <link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
@@ -42,6 +42,14 @@
         // include modals
         get_template_part('components/investscripts');
     ?>
+
+<script>
+            !function (w, d, t) {
+            w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var i="https://analytics.tiktok.com/i18n/pixel/events.js";ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=i,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};var o=document.createElement("script");o.type="text/javascript",o.async=!0,o.src=i+"?sdkid="+e+"&lib="+t;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(o,a)};
+            ttq.load('C7S8A2DGL1ARI64QOCJ0');
+            ttq.page();
+            }(window, document, 'ttq');
+        </script>
 
 </head>
 
@@ -152,7 +160,7 @@
                                     <span class="kd">Pharmacy Industry</span>
                                 </h1>
                                 <p>
-                                    With Proprietary Pharmacy Software & Robotics
+                                With Free Same Day Medication Delivery
                                 </p>
                                 <div class="mobilevideo">
                                     <video title="nowrx pharmacy delivery website video" preload="none" class="lvimage" id="mobilelvc" poster="<?php echo get_template_directory_uri(); ?>/images/best-startup-to-invest-2021-nowrx-technology.webp">
@@ -230,7 +238,7 @@
                     </div>
                 </div>
                 <div class="stl">
-                    *NowRx has already raised over <strong>$11M</strong> from more than <strong>3,300</strong> investors in this round!
+                    *NowRx has already raised over <strong>$13M</strong> from more than <strong>4,000</strong> investors in this round!
                 </div>
             </section>
 
@@ -290,6 +298,7 @@
 
 
 
+
             <section class="companyhighlighta" id="highlights">
                 <div class="container">
                     <figure class="image">
@@ -298,6 +307,20 @@
                     <div class="content">
                         <h2 class="title">Company <b>Highlights</b></h2>
                         <div class="blockitems">
+                                   <!-- item -->
+                                   <div class="item">
+                                <div class="numb">
+                                $26M
+
+                                </div>
+                                <div class="mnk">
+                                Annualized
+                                </div>
+                                <div class="info">
+                                Based on December 2021 revenue of $2.19M
+
+                                </div>
+                            </div>
                             <!-- item -->
                             <div class="item">
                                 <div class="numb">
@@ -308,6 +331,18 @@
                                 </div>
                                 <div class="info">
                                   In 2020 and on pace to surpass $22M in 2021.
+                                </div>
+                            </div>
+                              <!-- item -->
+                              <div class="item">
+                                <div class="numb">
+                                1,200%
+                                </div>
+                                <div class="mnk">
+                                    Revenue Growth
+                                </div>
+                                <div class="info">
+                                NowRx Telehealth from Q1 to Q4 in 2021
                                 </div>
                             </div>
                             <!-- item -->
@@ -340,44 +375,20 @@
                             <!-- item -->
                             <div class="item">
                                 <div class="numb">
-                                $11M
+                                $13M
 
                                 </div>
                                 <div class="mnk">
                                 Shares Sold
                                 </div>
                                 <div class="info">
-                                To over 3,300 investors in the current round.
+                                To over 4,000 investors in the current round.
 
                                 </div>
                             </div>
 
-                            <!-- item -->
-                            <div class="item">
-                                <div class="numb">
-                                    1,081%
-                                </div>
-                                <div class="mnk">
-                                    Revenue Growth
-                                </div>
-                                <div class="info">
-                                    NowRx Telehealth from Q1 to Q3 in 2021
-                                </div>
-                            </div>
-                            <!-- item -->
-                            <div class="item">
-                                <div class="numb">
-                                1,650%
 
-                                </div>
-                                <div class="mnk">
-                                Share Price
-                                </div>
-                                <div class="info">
-                                Increase since initial offering on SeedInvest.
 
-                                </div>
-                            </div>
                             <!-- item -->
                             <div class="item">
                                 <div class="numb">
@@ -563,7 +574,7 @@
 
                         <div class="row-item">
                             <div class="context">
-                                <h3 class="sec-title click-pop" data-view="false">Proprietary Pharmacy Software & Robotics
+                                <h3 class="sec-title click-pop" data-view="false">With Free Same Day Prescription Delivery
                                     <span class="click">
                                         <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" class="svg-inline--fa fa-angle-right fa-w-8 fa-3x"><path fill="currentColor" d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" class=""></path></svg>
                                     </span>
@@ -742,8 +753,10 @@
                 </div>
             </div>
 
-            <section class="review-block">
-                <div class="container">
+
+            <section class="review-block" >
+
+                <div class="container"><div id="testimonials"></div>
                     <header class="title">
                         <h2 class="title">NowRx <strong>Reviews</strong></h2>
                         <p>
@@ -804,7 +817,7 @@
                     </div>
                     </div>
 
-            <section id="testimonials" class="section section-bottom-padding lab">
+            <section  class="section section-bottom-padding lab">
                 <div class=" testimonials">
                     <div class="team-intro labs-intro">
                         <div class="container-11">

@@ -232,81 +232,9 @@
 </section>
 
 <!-- companies -->
-<?php include('section-companies.php'); ?>
+<?php include('components/component-logo-slider.php'); ?>
 
-
-<section class="how-it-works panel--primary" id="howitwork">
-    <div class="grid-container">
-        <div class="grid-x grid-padding-x text-center">
-            <div class="large-12 cell">
-                <div class="rvl">
-                    <p class="pre-headline">Using NowRx Pharmacy is Simple</p>
-                </div>
-
-                <div class="rvl">
-                    <h2 class="headline">Here’s How It Works</h2>
-                </div>
-            </div>
-        </div>
-        <div class="grid-x grid-padding-x steps">
-
-            <div class="hiw-cell cell large-4 text-center">
-                <div class="rvl">
-
-                    <h3 class="padding-bottom-3">1. Submit Your Referrals</h3>
-                    <div class="image">
-                        <img data-toggle-class="active"
-                            data-src="<?php echo get_template_directory_uri(); ?>/library/images/Prescription-Icon.png"
-                            alt="end Us Your Prescription" class="pic lozad">
-                    </div>
-
-                    <p>
-                        Submit your referrals using our Refer a Friend form. Make sure you use the same email address
-                        NowRx has on file.
-                    </p>
-                </div>
-            </div>
-
-
-            <div class="hiw-cell cell large-4 text-center">
-                <div class="rvl">
-
-                    <h3 class="padding-bottom-3">2. We Notify Your Referrals
-                    </h3>
-                    <div class="image">
-                        <img data-toggle-class="active"
-                            data-src="<?php echo get_template_directory_uri(); ?>/library/images/Confirmation-Icon.png"
-                            alt="We Confirm Delivery" class="pic lozad ">
-                    </div>
-                    <p>
-                        We will send your referrals an email letting them know and telling them how to get started.
-                    </p>
-                </div>
-            </div>
-
-
-            <div class="hiw-cell cell large-4 text-center">
-                <div class="rvl">
-
-                    <h3 class="padding-bottom-3">3. Receive $20 Visa Cards
-                    </h3>
-                    <div class="image">
-                        <img data-toggle-class="active"
-                            data-src="<?php echo get_template_directory_uri(); ?>/library/images/Car-Icon.png"
-                            alt="Medication is Delivered" class="pic lozad">
-                    </div>
-
-                    <p>
-                        Once your referral has received their first delivery from NowRx, we will mail you a $20 Gift
-                        Card.
-                    </p>
-                </div>
-            </div>
-
-
-        </div>
-    </div>
-</section>
+<?php include('components/component-how-it-works.php'); ?>
 
 <!-- FAQ -->
 <?php get_template_part('components/section-faq-flip'); ?>

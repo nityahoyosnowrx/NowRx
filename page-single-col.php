@@ -29,8 +29,6 @@
       </div>
     </div>
   </div>
-</section>
-<section>
   <div class="grid-container">
     <div class="grid-x grid-padding-x align-middle">
       <div class="large-8 large-offset-2 cell">

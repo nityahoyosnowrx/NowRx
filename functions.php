@@ -848,3 +848,18 @@ function create_resource_category() {
 
 }
 
+
+
+
+add_filter( 'body_class','my_body_classes' );
+function my_body_classes( $classes ) {
+
+    if ( is_page('refill-and-transfer-prescriptions') || is_front_page() ) {
+
+        $classes[] = 'font-new';
+
+    }
+
+    return $classes;
+
+}

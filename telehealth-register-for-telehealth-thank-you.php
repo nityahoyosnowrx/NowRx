@@ -4,16 +4,6 @@
 
 
 
-<style>
-main#main {
-    margin: 140px auto 0;
-}
-@media screen and (max-width:992px){
-    main#main {
-    margin: 90px auto 0;
-}
-}
-</style>
 <main id="main" class="main-class" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 
     <section class="article">

@@ -348,7 +348,7 @@
 
 
 
-
+    <?php include('components/component-logo-slider.php'); ?>
 
 
 
@@ -584,11 +584,6 @@
 
     <!-- FAQ -->
     <?php get_template_part('components/section-faq-flip'); ?>
-
-
-    <!-- visit faq -->
-    <?php
-    get_template_part('components/visit-our-faq'); ?>
 
 
 

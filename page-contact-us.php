@@ -15,55 +15,42 @@
 
 <?php get_header(); ?>
 
-<!-- hero -->
-<section class="hero-home contactpage">
 
-
-    <div class="container">
+<section class="landing-block">
+    <div class="container fluid">
         <div class="content">
-
-            <!-- content -->
-            <div class="column-half content-col">
-                    <span class="sub-headline">
-                        Contact Nowrx pharmacy support
-                    </span>
-                    <h1 class="hiw-title">
-                        Talk to a Live Person
-                    </h1>
-                <p>
-                    Contact us by filling out the form below or calling your local NowRx. To refill or transfer a prescription,  <b><a href="<?= get_site_url(); ?>/refill-and-transfer-prescriptions/">Tap Here</a></b>.
-                </p>
-                <div class="btn-container">
-                        <a class="rx-btn" href="#contactus">
-                            <?php include('reg-arrow.php'); ?>
-                            contact us
-                        </a>
-                        <a class="rx-btn rx-green mrb" href="#contactus-faqs">
-                            <?php include('grn-arrow.php'); ?>
-                            View FAQs
-                        </a>
-                    </div>
+            <div class="text-content prep-text">
+                <span class="sub-headline">CONTACT NOWRX PHARMACY SUPPORT</span>
+                <h1 class="title">Talk to a <strong>Live Person</strong></h1>
+                <p>Contact us by filling out the form below or calling your local NowRx. To refill or transfer a prescription,  <b><a href="<?= get_site_url(); ?>/refill-and-transfer-prescriptions/">Tap Here</a></b>.</p>
             </div>
-
-            <!-- image -->
-            <div class="column-half image-col">
-                <picture class="lozad"
-                     data-toggle-class="active">
-
+            <div class="btn-container">
+                <a class="rx-btn" href="#contactus">
+                    <?php include('reg-arrow.php'); ?>
+                    Contact Us
+                </a>
+                <a class="rx-btn rx-green mrb" href="#view-faq">
+                    <?php include('grn-arrow.php'); ?>
+                    View FAQs
+                </a>
+            </div>
+        </div>
+        <div class="media">
+            <figure class="image">
+                <picture class="lozad" data-toggle-class="active">
                     <source media="(max-width: 992px)" srcset="<?php echo get_template_directory_uri(); ?>/images/NowRx-pharmacist-pulling-prescription-delivery-from-parata-robot.webp">
                     <source media="(min-width: 993px)" srcset="<?php echo get_template_directory_uri(); ?>/images/NowRx-pharmacist-pulling-prescription-delivery-from-parata-robot.webp">
                     <img data-src="<?php echo get_template_directory_uri(); ?>/images/NowRx-pharmacist-pulling-prescription-delivery-from-parata-robot.webp" class="orbit-image lozad" height="500px" width="650px" alt="NowRx pharmacist pulling prescription delivery from parata robot">
                 </picture>
-            </div>
-
+            </figure>
         </div>
     </div>
 </section>
 
-
 <!-- companies -->
-<?php include('section-companies.php'); ?>
-<?php include('section-visitblock.php'); ?>
+<?php include('components/component-logo-slider.php'); ?>
+<?php
+// include('section-visitblock.php'); ?>
 
 
 
@@ -206,18 +193,12 @@
 </section>
 
 
-<?php include('section-visitblock.php'); ?>
+    <?php include('section-visitblock.php'); ?>
 
-<!-- FAQ -->
-<?php get_template_part('components/section-faq-flip'); ?>
-
-
-
-
-
-<?php include('section-visitfaq.php'); ?>
-
-
+    <div id="view-faq">
+        <!-- FAQ -->
+        <?php get_template_part('components/section-faq-flip'); ?>
+    </div>
 
 
 <?php get_footer(); ?>

@@ -16,67 +16,40 @@
 <?php get_header(); ?>
 
 
-
-<!-- hero -->
-<section class="hero-home">
-
-    <div class="container">
+<section class="landing-block">
+    <div class="container fluid">
         <div class="content">
-
-            <!-- content -->
-            <div class="column-half content-col">
-
-                <div class="rvls">
-                    <span class="sub-headline">
-                        Delivering Pharmacy in 3 Easy Steps
-                    </span>
-                </div>
-
-                <div class="rvls">
-                    <h1 class="hiw-title">
-                        <span class="k">Pharmacy Delivery </span>
-                        <span class="k">Made Easy</span>
-                    </h1>
-                </div>
-
-                <div class="rvls">
-                    <p>
-                    Text <a href="tel:844-466-6979" class="alink">(844) 466-6979</a> or fill out our <a href="<?= get_site_url(); ?>/refill-and-transfer-prescriptions/" target="_blank" class="alink">online prescription form</a>. We will call you to confirm and deliver in hours.
-                    </p>
-                </div>
-
-                <div class="rvls">
-                    <div class="btn-container">
-                        <a class="rx-btn" href="<?= get_site_url(); ?>/refill-and-transfer-prescriptions">
+            <div class="text-content prep-text">
+                <span class="sub-headline">DELIVERING PHARMACY IN 3 EASY STEPS</span>
+                <h1 class="title"><strong>Pharmacy Delivery</strong> Made Easy</h1>
+                <p>Get started by filling out our <strong>online prescription delivery</strong> form and get your prescription delivered same day!</p>
+             </div>
+            <div class="btn-container">
+            <a class="rx-btn" href="<?= get_site_url(); ?>/refill-and-transfer-prescriptions">
                         <?php include('reg-arrow.php'); ?>
                             Get Started</a>
                         <a class="rx-btn rx-green mrb" href="#howitwork">
                             <?php include('grn-arrow.php'); ?>
                             How it Works</a>
-                    </div>
-                </div>
-
             </div>
-
-            <!-- image -->
-            <div class="column-half image-col">
-                <picture class="lozad" data-toggle-class="active">
+        </div>
+        <div class="media">
+            <figure class="image">
+            <picture class="lozad" data-toggle-class="active">
                     <source media="(max-width: 992px)" srcset="<?php echo get_template_directory_uri(); ?>/images/pharmacy-delivery-being-prepared-by-nowrx-pharmacist.webp">
                     <source media="(min-width: 993px)" srcset="<?php echo get_template_directory_uri(); ?>/images/pharmacy-delivery-being-prepared-by-nowrx-pharmacist.webp">
                     <img data-src="<?php echo get_template_directory_uri(); ?>/images/pharmacy-delivery-being-prepared-by-nowrx-pharmacist.webp" class="orbit-image lozad" height="500px" width="650px" alt="pharmacy delivery being prepared by nowrx pharmacist">
                 </picture>
-            </div>
-
+            </figure>
         </div>
     </div>
 </section>
-<?php include('section-quotes.php'); ?>
+
 
 <!-- companies -->
-<?php include('section-companies.php'); ?>
+<?php include('components/component-logo-slider.php'); ?>
+<?php include('components/component-how-it-works.php'); ?>
 
-
-<?php include('section-how-it-works.php'); ?>
 
 <!-- FAQ -->
 <?php get_template_part('components/section-faq-flip'); ?>
