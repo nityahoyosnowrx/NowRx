@@ -2512,11 +2512,6 @@
                             </div>
                         </div>
 
-
-
-
-
-
                     </div>
                 </div>
 
@@ -2542,8 +2537,7 @@
 
             </div>
             <div class="faq-image">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/Prescription-Bottles-White-BG.jpeg"
-                    alt="Prescription Bottles on White table" class="pic">
+                <img data-src="<?php echo get_template_directory_uri(); ?>/images/Prescription-Bottles-White-BG.webp" alt="Prescription Bottles on White table" width="460" height="310" class="pic lozad">
             </div>
         </div>
     </div>

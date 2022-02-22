@@ -87,10 +87,10 @@
                             <!-- Slides -->
                             <div class="quoteitem largeblock">
                                 <figure>
-                                    <img src="<?php echo get_template_directory_uri(); ?>/images/custom-recieving-rx.jpeg"
+                                    <img data-src="<?php echo get_template_directory_uri(); ?>/images/custom-recieving-rx.webp"
                                         class="orbit-image lozad"
                                         alt="custom-recieving-rx"
-                                        data-loaded="true">
+                                        >
                                 </figure>
                                 <div class="content">
 
@@ -194,10 +194,7 @@
                             <!-- Slides -->
                             <div class="quoteitem largeblock">
                                 <figure>
-                                    <img src="<?php echo get_template_directory_uri(); ?>/images/couple-viewing-nowrx-service.jpeg"
-                                        class="orbit-image lozad"
-                                        alt="couple viewing nowrx service"
-                                        data-loaded="true">
+                                    <img data-src="<?php echo get_template_directory_uri(); ?>/images/couple-viewing-nowrx-service.webp" class="orbit-image lozad" alt="couple viewing nowrx service" />
                                 </figure>
                                 <div class="content">
 
@@ -354,10 +351,7 @@
                             <!-- Slides -->
                             <div class="quoteitem largeblock">
                                 <figure>
-                                    <img src="<?php echo get_template_directory_uri(); ?>/images/couple-happy-with-nowrx-service.jpeg"
-                                        class="orbit-image lozad"
-                                        alt="couple happy with nowrx service"
-                                        data-loaded="true">
+                                    <img data-src="<?php echo get_template_directory_uri(); ?>/images/couple-happy-with-nowrx-service.webp" class="orbit-image lozad" alt="couple happy with nowrx service" />
                                 </figure>
                                 <div class="content">
 
@@ -464,10 +458,10 @@
                             <!-- Slides -->
                             <div class="quoteitem largeblock">
                                 <figure>
-                                    <img src="<?php echo get_template_directory_uri(); ?>/images/couple-talking-about-their-service-with-nowrx-pharmacy.jpeg"
+                                    <img data-src="<?php echo get_template_directory_uri(); ?>/images/couple-talking-about-their-service-with-nowrx-pharmacy.webp"
                                         class="orbit-image lozad"
                                         alt="couple talking about their service with nowrx pharmacy"
-                                        data-loaded="true">
+                                        >
                                 </figure>
                                 <div class="content">
 

@@ -1,5 +1,5 @@
 <?php
-    if ( is_page( 'faqs' ) || is_page('nowprep') || is_page('contact-us') || is_archive('locations') || is_page('for-doctors')  || is_singular('locations') || is_page('telehealth') ):
+    if ( is_page( 'faqs' ) || is_page('nowprep') || is_page('contact-us') || is_archive('locations') || is_page('for-doctors') || is_page('telehealth') ):
     ?>
  <!--[if lte IE 8]>
 <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js" defer></script>
@@ -32,51 +32,14 @@
         </script>
 <!-- nowprep -->
 
-<div class="reveal twentyone" id="waitlist" data-reveal data-close-on-click="true" data-animation-in="slide-in-down"data-animation-out="slide-out-up">
-    <div class="imagblock">
-        <img data-src="<?php echo get_template_directory_uri(); ?>/images/doctorwithclipboard.jpeg"
-            alt="doctor with clipboard" class="pic lozad">
-    </div>
+<div class="reveal twentyone nowprep-modal" id="waitlist" data-reveal data-close-on-click="true" data-animation-in="slide-in-down"data-animation-out="slide-out-up">
+
     <div class="content">
-        <h2 class="title">Get Started</h2>
-        <div class="description">
-            <p class="marginzero">
-                <span class="ick">
-                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check-circle" role="img"
-                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
-                        class="svg-inline--fa fa-check-circle fa-w-16 fa-2x">
-                        <path fill="currentColor"
-                            d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"
-                            class=""></path>
-                    </svg>
-                </span>
-                PrEP online from the comfort of your home
-            </p>
-            <p class="marginzero">
-                <span class="ick">
-                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check-circle" role="img"
-                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
-                        class="svg-inline--fa fa-check-circle fa-w-16 fa-2x">
-                        <path fill="currentColor"
-                            d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"
-                            class=""></path>
-                    </svg>
-                </span>
-                99% of patients pay $0 for PrEP medication
-            </p>
-            <p class="marginzero">
-                <span class="ick">
-                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check-circle" role="img"
-                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
-                        class="svg-inline--fa fa-check-circle fa-w-16 fa-2x">
-                        <path fill="currentColor"
-                            d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"
-                            class=""></path>
-                    </svg>
-                </span>
-                Free PrEP delivery on the day it is prescribed
-            </p>
-        </div>
+        <h2 class="title">
+        <span class="title-image">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/NowRx-Pharmacy-Logo-Icon-mini.webp" alt="NowRx-Pharmacy-Logo-Icon-mini" width="50" height="38">
+            </span>
+        Get Started</h2>
         <div class="form-content">
             <script defer>
             window.addEventListener('load', function() {

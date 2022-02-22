@@ -1,10 +1,4 @@
-
-  <?php // drop Google Analytics Here
-  ?>
-
-
-
-
+<?php // drop Google Analytics Here ?>
 
 <?php if ( is_page(925 ) ||is_page(1410)): ?>
 <?php else: ?>
@@ -23,12 +17,7 @@
   </script>
 <?php endif; ?>
 
-
-
-
-
-
-  <script async type="application/ld+json">
+<script async type="application/ld+json" defer>
 {
   "@context": "http://schema.org",
   "@type": "Organization",
@@ -39,32 +28,25 @@
 
 }
 </script>
-  <?php
 
-if (have_posts()) : while (have_posts()) : the_post(); ?>
-
+<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'large'); ?>
 <?php $author_id = get_the_author_meta( 'ID' ); ?>
-
 <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'large');
-
 $id = get_the_ID();
 $yoast_desc = get_post_meta( $id, '_yoast_wpseo_metadesc', true );
-
 ?>
 
-<script async type="application/ld+json">{
-"@context": "http://schema.org",
-"@type": "WebSite",
-"name": "Prescription Delivery in Hours Now Rx for Free | NowRx Pharmacy",
-        "description": "Prescription Delivery in Hours for Free | NowRx Pharmacy",
-"url": "<?php the_permalink(); ?>",
-"sameAs": ["https://www.facebook.com/NowRx", "https://twitter.com/nowrx", "https://www.linkedin.com/company/nowrx","https://www.instagram.com/nowrxpharmacy"]
-
-
-}</script>
-
-
+<script async type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "WebSite",
+  "name": "Prescription Delivery in Hours Now Rx for Free | NowRx Pharmacy",
+  "description": "Prescription Delivery in Hours for Free | NowRx Pharmacy",
+  "url": "<?php the_permalink(); ?>",
+  "sameAs": ["https://www.facebook.com/NowRx", "https://twitter.com/nowrx", "https://www.linkedin.com/company/nowrx","https://www.instagram.com/nowrxpharmacy"]
+}
+</script>
 
 <script async type="application/ld+json">
 {
@@ -83,7 +65,4 @@ $yoast_desc = get_post_meta( $id, '_yoast_wpseo_metadesc', true );
 }
 </script>
 
-<?php endwhile; endif;
-
-
-?>
+<?php endwhile; endif; ?>

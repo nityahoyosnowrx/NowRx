@@ -11,12 +11,10 @@ get_header();
 ?>
 
 
-
-
 <?php
 $mapd = get_field('address');
 ?>
-<script type="application/ld+json">
+<script type="application/ld+json" defer>
 {
     "@context": "https://www.schema.org",
     "@type": "LocalBusiness",

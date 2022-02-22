@@ -83,9 +83,7 @@
             <div class="col">
 
                 <figure>
-                    <picture class="lozad" data-toggle-class="active">
-                        <source media="(max-width: 992px)" srcset="<?php echo get_template_directory_uri(); ?>/images/pharmacy-delivery-car-charging-at-nowrx-pharmacy.webp">
-                        <source media="(min-width: 993px)" srcset="<?php echo get_template_directory_uri(); ?>/images/pharmacy-delivery-car-charging-at-nowrx-pharmacy.webp">
+                    <picture >
                         <img data-src="<?php echo get_template_directory_uri(); ?>/images/pharmacy-delivery-car-charging-at-nowrx-pharmacy.webp" class="orbit-image lozad" height="500px" width="650px" alt="pharmacy delivery car charging at nowrx pharmacy">
                     </picture>
                 </figure>
@@ -106,9 +104,7 @@
             <div class="profile">
                 <div class="image">
                     <figure>
-                        <picture class="lozad" data-toggle-class="active">
-                            <source media="(max-width: 992px)" srcset="<?php echo get_template_directory_uri(); ?>/library/images/cary-breese.jpg">
-                            <source media="(min-width: 993px)" srcset="<?php echo get_template_directory_uri(); ?>/library/images/cary-breese.jpg">
+                        <picture >
                             <img data-src="<?php echo get_template_directory_uri(); ?>/library/images/cary-breese.jpg" class="orbit-image lozad" height="500px" width="650px" alt="Cary Breese">
                         </picture>
                     </figure>
@@ -129,9 +125,7 @@
             <div class="profile">
                 <div class="image">
                     <figure>
-                        <picture class="lozad" data-toggle-class="active">
-                            <source media="(max-width: 992px)" srcset="<?php echo get_template_directory_uri(); ?>/library/images/sumeet-sheokand.jpg">
-                            <source media="(min-width: 993px)" srcset="<?php echo get_template_directory_uri(); ?>/library/images/sumeet-sheokand.jpg">
+                        <picture >
                             <img data-src="<?php echo get_template_directory_uri(); ?>/library/images/sumeet-sheokand.jpg" class="orbit-image lozad" height="500px" width="650px" alt="Sumeet Sheokand">
                         </picture>
                     </figure>
@@ -155,9 +149,7 @@
             <div class="profile">
                 <div class="image">
                     <figure>
-                        <picture class="lozad" data-toggle-class="active">
-                            <source media="(max-width: 992px)" srcset="<?php echo get_template_directory_uri(); ?>/library/images/melissa-bostock.jpg">
-                            <source media="(min-width: 993px)" srcset="<?php echo get_template_directory_uri(); ?>/library/images/melissa-bostock.jpg">
+                        <picture >
                             <img data-src="<?php echo get_template_directory_uri(); ?>/library/images/melissa-bostock.jpg" class="orbit-image lozad" height="500px" width="650px" alt="Melissa Bostock">
                         </picture>
                     </figure>
@@ -224,9 +216,7 @@
             <div class="profile">
                 <div class="image">
                     <figure>
-                        <picture class="lozad" data-toggle-class="active">
-                            <source media="(max-width: 992px)" srcset="<?php echo get_template_directory_uri(); ?>/images/pharmacist-for-nowrx-pharmacy-delivery-in-irvine.webp">
-                            <source media="(min-width: 993px)" srcset="<?php echo get_template_directory_uri(); ?>/images/pharmacist-for-nowrx-pharmacy-delivery-in-irvine.webp">
+                        <picture >
                             <img data-src="<?php echo get_template_directory_uri(); ?>/images/pharmacist-for-nowrx-pharmacy-delivery-in-irvine.webp" class="orbit-image lozad" height="500px" width="650px" alt="Laemsing Roo pharmacist for nowrx pharmacy delivery in irvine">
                         </picture>
                     </figure>
@@ -248,9 +238,7 @@
             <div class="profile">
                 <div class="image">
                     <figure>
-                        <picture class="lozad" data-toggle-class="active">
-                            <source media="(max-width: 992px)" srcset="<?php echo get_template_directory_uri(); ?>/images/pharmacist-for-nowrx-pharmacy-delivery-in-hayward.webp">
-                            <source media="(min-width: 993px)" srcset="<?php echo get_template_directory_uri(); ?>/images/pharmacist-for-nowrx-pharmacy-delivery-in-hayward.webp">
+                        <picture >
                             <img data-src="<?php echo get_template_directory_uri(); ?>/images/pharmacist-for-nowrx-pharmacy-delivery-in-hayward.webp" class="orbit-image lozad" height="500px" width="650px" alt="Trinh Thai pharmacist for nowrx pharmacy delivery in hayward">
                         </picture>
                     </figure>
@@ -272,9 +260,7 @@
             <div class="profile">
                 <div class="image">
                     <figure>
-                        <picture class="lozad" data-toggle-class="active">
-                            <source media="(max-width: 992px)" srcset="<?php echo get_template_directory_uri(); ?>/images/pharmacist-for-nowrx-pharmacy-delivery-in-san-jose.webp">
-                            <source media="(min-width: 993px)" srcset="<?php echo get_template_directory_uri(); ?>/images/pharmacist-for-nowrx-pharmacy-delivery-in-san-jose.webp">
+                        <picture >
                             <img data-src="<?php echo get_template_directory_uri(); ?>/images/pharmacist-for-nowrx-pharmacy-delivery-in-san-jose.webp" class="orbit-image lozad" height="500px" width="650px" alt="Joanne Thai pharmacist for nowrx pharmacy delivery in san jose">
                         </picture>
                     </figure>
@@ -296,9 +282,7 @@
             <div class="profile">
                 <div class="image">
                     <figure>
-                        <picture class="lozad" data-toggle-class="active">
-                            <source media="(max-width: 992px)" srcset="<?php echo get_template_directory_uri(); ?>/images/pharmacist-for-nowrx-pharmacy-delivery-in-mesa.webp">
-                            <source media="(min-width: 993px)" srcset="<?php echo get_template_directory_uri(); ?>/images/pharmacist-for-nowrx-pharmacy-delivery-in-mesa.webp">
+                        <picture >
                             <img data-src="<?php echo get_template_directory_uri(); ?>/images/pharmacist-for-nowrx-pharmacy-delivery-in-mesa.webp" class="orbit-image lozad" height="500px" width="650px" alt="Antoinette Davis-Hatton pharmacist for nowrx pharmacy delivery in-mesa">
                         </picture>
                     </figure>
@@ -320,9 +304,7 @@
             <div class="profile">
                 <div class="image">
                     <figure>
-                        <picture class="lozad" data-toggle-class="active">
-                            <source media="(max-width: 992px)" srcset="<?php echo get_template_directory_uri(); ?>/images/pharmacist-for-nowrx-pharmacy-delivery-in-pleasanton.webp">
-                            <source media="(min-width: 993px)" srcset="<?php echo get_template_directory_uri(); ?>/images/pharmacist-for-nowrx-pharmacy-delivery-in-pleasanton.webp">
+                        <picture >
                             <img data-src="<?php echo get_template_directory_uri(); ?>/images/pharmacist-for-nowrx-pharmacy-delivery-in-pleasanton.webp" class="orbit-image lozad" height="500px" width="650px" alt="Lily Naanos pharmacist for nowrx pharmacy delivery in pleasanton">
                         </picture>
                     </figure>
@@ -344,9 +326,7 @@
             <div class="profile">
                 <div class="image">
                     <figure>
-                        <picture class="lozad" data-toggle-class="active">
-                            <source media="(max-width: 992px)" srcset="<?php echo get_template_directory_uri(); ?>/images/pharmacist-for-nowrx-pharmacy-delivery-in-mountain-view.webp">
-                            <source media="(min-width: 993px)" srcset="<?php echo get_template_directory_uri(); ?>/images/pharmacist-for-nowrx-pharmacy-delivery-in-mountain-view.webp">
+                        <picture >
                             <img data-src="<?php echo get_template_directory_uri(); ?>/images/pharmacist-for-nowrx-pharmacy-delivery-in-mountain-view.webp" class="orbit-image lozad" height="500px" width="650px" alt="Abeba Hadgu pharmacist for nowrx pharmacy delivery in mountain view">
                         </picture>
                     </figure>
@@ -368,9 +348,7 @@
             <div class="profile">
                 <div class="image">
                     <figure>
-                        <picture class="lozad" data-toggle-class="active">
-                            <source media="(max-width: 992px)" srcset="<?php echo get_template_directory_uri(); ?>/images/pharmacist-for-nowrx-pharmacy-delivery-in-van-nuys.webp">
-                            <source media="(min-width: 993px)" srcset="<?php echo get_template_directory_uri(); ?>/images/pharmacist-for-nowrx-pharmacy-delivery-in-van-nuys.webp">
+                        <picture >
                             <img data-src="<?php echo get_template_directory_uri(); ?>/images/pharmacist-for-nowrx-pharmacy-delivery-in-van-nuys.webp" class="orbit-image lozad" height="500px" width="650px" alt="pharmacist for nowrx pharmacy delivery in van nuys">
                         </picture>
                     </figure>
@@ -393,9 +371,7 @@
             <div class="profile">
                 <div class="image">
                     <figure>
-                        <picture class="lozad" data-toggle-class="active">
-                            <source media="(max-width: 992px)" srcset="<?php echo get_template_directory_uri(); ?>/images/pharmacist-for-nowrx-pharmacy-delivery-in-burlingame.webp">
-                            <source media="(min-width: 993px)" srcset="<?php echo get_template_directory_uri(); ?>/images/pharmacist-for-nowrx-pharmacy-delivery-in-burlingame.webp">
+                        <picture >
                             <img data-src="<?php echo get_template_directory_uri(); ?>/images/pharmacist-for-nowrx-pharmacy-delivery-in-burlingame.webp" class="orbit-image lozad" height="500px" width="650px" alt="pharmacist for nowrx pharmacy delivery in van nuys">
                         </picture>
                     </figure>

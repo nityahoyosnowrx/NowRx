@@ -23,7 +23,7 @@ a.alink {
 	font-weight: 900;
 }
 article.article-block.location-item.statelocation header.entry-header {
-    max-width: 100%;
+	max-width: 100%;
 }
 header.article-header.entry-header {
 	width: 100%;
@@ -80,10 +80,10 @@ a.ArticleHeader-eyebrow {
 // Post Date
 
 .article-time {
-    white-space: normal;
-    font-weight: 600;
-    font-size: 10px;
-    width: 100%;
+	white-space: normal;
+	font-weight: 600;
+	font-size: 10px;
+	width: 100%;
 	margin: 0px 0 20px;
 
 	time {
@@ -103,7 +103,7 @@ a.ArticleHeader-eyebrow {
 // Article Profile
 
 .articleheader-container {
-	margin: 0 0 ;
+	margin: 0 0;
 	.author-info {
 		display: flex;
 	}
@@ -140,7 +140,7 @@ a.ArticleHeader-eyebrow {
 			font-size: 10px;
 			letter-spacing: 1.2px;
 			text-transform: uppercase;
-			p{
+			p {
 				margin: 0;
 				font-size: inherit;
 			}
@@ -150,12 +150,12 @@ a.ArticleHeader-eyebrow {
 
 // Line
 .line-item {
-    width: 100%;
-    height: 2px;
-    background: #eeeeee;
-    display: block;
-    margin: 1.5rem 0;
-    border-radius: 83px;
+	width: 100%;
+	height: 2px;
+	background: #eeeeee;
+	display: block;
+	margin: 1.5rem 0;
+	border-radius: 83px;
 }
 
 // Featured Image
@@ -294,12 +294,12 @@ li.MostPopular-addIndex {
 	align-items: flex-start;
 	justify-content: flex-start;
 	flex-direction: column;
-    background-color: #eaf0f6;
-    border-radius: 5px;
+	background-color: #eaf0f6;
+	border-radius: 5px;
 	overflow: hidden;
-    padding: 0;
-    margin: 0 0 10px;
-    transition: box-shadow .15s ease-in-out,transform .15s ease-in-out,-webkit-transform .15s ease-in-out;
+	padding: 0;
+	margin: 0 0 10px;
+	transition: box-shadow 0.15s ease-in-out, transform 0.15s ease-in-out, -webkit-transform 0.15s ease-in-out;
 
 	@media screen and (max-width: 992px) {
 		max-width: 50%;
@@ -326,20 +326,20 @@ li.MostPopular-addIndex {
 	}
 
 	.data {
-		font-size: .75rem;
+		font-size: 0.75rem;
 		font-weight: 500;
 		color: #33475b;
 	}
 
 	.wd {
-		font-size: .75rem;
+		font-size: 0.75rem;
 		font-weight: 500;
 		color: #33475b;
 		margin-left: 10px;
 	}
 
 	.wd a {
-		font-size: .75rem;
+		font-size: 0.75rem;
 		font-weight: 500;
 		color: #33475b;
 		font-weight: 600;
@@ -366,7 +366,7 @@ li.MostPopular-addIndex {
 		color: #444;
 		font-weight: 900;
 		line-height: 20px;
-		font-size: .9rem;
+		font-size: 0.9rem;
 		margin: 0 0 5px;
 		color: #33475b;
 
@@ -399,7 +399,7 @@ li.MostPopular-addIndex {
 			padding-top: 56.25%;
 			position: relative;
 			display: block;
-			border-radius: 0 ;
+			border-radius: 0;
 			overflow: hidden;
 			padding-right: 20px;
 		}
@@ -427,17 +427,17 @@ li.MostPopular-addIndex {
 }
 
 .MostPopular-header {
-    color: #fff;
-    background: #038ed8;
-    font-size: 1rem;
-    display: block;
-    letter-spacing: .025rem;
-    padding: 0.8rem 1rem;
-    margin: 0 0 1rem;
-    font-weight: 700;
-    border-radius: 5px;
+	color: #fff;
+	background: #038ed8;
+	font-size: 1rem;
+	display: block;
+	letter-spacing: 0.025rem;
+	padding: 0.8rem 1rem;
+	margin: 0 0 1rem;
+	font-weight: 700;
+	border-radius: 5px;
 	line-height: 1.2;
-    width: 100%;
+	width: 100%;
 	@media screen and (max-width: 992px) {
 		text-align: center;
 	}
@@ -462,7 +462,6 @@ section#blog {
 		}
 	}
 }
-
 
 // old sidebar
 
@@ -1195,16 +1194,16 @@ section.testimonials-block {
 }
 
 section.testimonials-block.doctorquotes {
-	padding:  0 0;
+	padding: 0 0;
 	background: #fff;
 	margin-top: -30px;
 	@media screen and (max-width: 1280px) {
-		padding:  0 0;
+		padding: 0 0;
 		margin-top: 170px;
 	}
 
 	@media screen and (max-width: 700px) {
-		padding:  0 0;
+		padding: 0 0;
 	}
 
 	.swiper-slide .content {
@@ -1556,13 +1555,11 @@ section.testimonials-block.doctorquotes {
 		}
 	}
 
- .quoteitem.largeblocktext {
+	.quoteitem.largeblocktext {
 		width: 100%;
 		padding: 60px 60px;
 		min-height: 770px;
 	}
-
-
 
 	.quoteitem.largeblock {
 		padding: 0;
@@ -1742,7 +1739,6 @@ section.split-image {
 		font-size: 16px;
 		line-height: 20px;
 		font-weight: 700;
-
 
 		@media screen and (max-width: 700px) {
 			padding: 10px 0 0;
@@ -3639,9 +3635,9 @@ input#Submit {
 
 section.form-faq {
 	position: relative;
-    padding: 200px 0 170px;
-    background: #0388cd;
-    margin-bottom: 0px;
+	padding: 200px 0 170px;
+	background: #0388cd;
+	margin-bottom: 0px;
 	@media screen and (max-width: 400px) {
 		padding: 120px 0 100px;
 	}
@@ -4017,12 +4013,12 @@ div#for-doctors-learnmore h2.title {
 		flex-direction: column;
 		// min-height: 800px;
 		@media screen and (max-width: 1050px) {
-		    width: 100%;
-            padding: 30px 10px 60px;
-            display: flex;
-            min-height: 100vh;
-            align-items: center;
-            justify-content: center;
+			width: 100%;
+			padding: 30px 10px 60px;
+			display: flex;
+			min-height: 100vh;
+			align-items: center;
+			justify-content: center;
 		}
 	}
 
@@ -4080,6 +4076,70 @@ div#for-doctors-learnmore h2.title {
 		margin: 30px 0 10px;
 		@media screen and (max-width: 992px) {
 			margin: 10px 0;
+		}
+	}
+
+	&.nowprep-modal {
+		box-shadow: none;
+		border-radius: 5px 20px;
+		box-shadow: none;
+		max-width: 500px;
+		width: 100%;
+		@media screen and (max-width: 700px) {
+			max-width: 95%;
+		}
+		.content {
+			width: 100%;
+			min-height: 0;
+			padding: 40px 40px 40px;
+			@media screen and (max-width: 700px) {
+				padding: 40px 20px;
+			}
+		}
+
+		.content .hs_submit.hs-submit {
+			margin: 0;
+		}
+		h2.title {
+			margin: 0 0 20px;
+			font-weight: 700;
+			display: flex;
+		}
+		span.title-image {
+			max-width: 30px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin-right: 10px;
+		}
+
+		.content input.hs-button.primary.large {
+			margin: 0;
+			box-shadow: none;
+			color: #fff;
+		}
+
+		h2.title {
+			margin: 0 0 20px;
+			font-weight: bold;
+		}
+
+		label {
+			margin-left: 8px;
+			font-size: 12px;
+			font-weight: 700;
+			color: #192d3e;
+			margin: 0 10px;
+		}
+
+		input {
+			border-radius: 5px;
+			border: 1px solid #d2d3e5;
+			color: #192d3e;
+			font-size: 0.9rem;
+			padding: 15px;
+			height: auto;
+			line-height: 1.4;
 		}
 	}
 }

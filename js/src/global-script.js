@@ -592,21 +592,22 @@ $(document).ready(function() {
 
 // FAQ Flip
 $(document).ready(function () {
-  $(".list-action").click(function(e) {
-    // $("li.list-item").removeClass('active-faq')
 
-    // if($(this).data('view') == 'true'){
-    //   $("li.list-item").removeClass('active-faq')
-    //   $(this).data('view','false')
-    // } else {
-    //   $(this).closest('li.list-item').addClass('active-faq')
-    //   $(this).data('view','true')
-    // }
-
-  });
+  // $(".list-action").click(function(e) {
+  //   $("li.list-item").removeClass('active-faq')
+  //   if($(this).data('view') == 'true'){
+  //     $("li.list-item").removeClass('active-faq')
+  //     $(this).data('view','false')
+  //   } else {
+  //     $(this).closest('li.list-item').addClass('active-faq')
+  //     $(this).data('view','true')
+  //   }
+  // });
 
   $("section.block-frequent-questions .list-item").click(function(e) {
     $("li.list-item").removeClass('active-faq')
+    $('.list-action').data('view','false')
+
     if($(this).find('.list-action').data('view') == 'true'){
       $("li.list-item").removeClass('active-faq')
       $(this).find('.list-action').data('view','false')

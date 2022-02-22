@@ -18,7 +18,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Cache-control" content="public">
 
-    <link rel="stylesheet" href='<?php echo get_template_directory_uri(); ?>/public/frontend.css?vc="12111123111121111112111121"'>
+    <link rel="stylesheet" href='<?php echo get_template_directory_uri(); ?>/public/frontend.css?v=1333233'>
 
 
     <link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
@@ -156,22 +156,24 @@
                                     </strong>
                                 </span>
                                 <h1>
-                                    <span class="kd">Disrupting the <br> <b>$480B</b> </span>
+                                    <span class="kd">Disrupting the <b>$480B</b> </span>
                                     <span class="kd">Pharmacy Industry</span>
                                 </h1>
                                 <p>
-                                With Free Same Day Medication Delivery
+                                    With Amazing Service and Free Same Day Medication Delivery
                                 </p>
                                 <div class="mobilevideo">
-                                    <video title="nowrx pharmacy delivery website video" preload="none" class="lvimage" id="mobilelvc" poster="<?php echo get_template_directory_uri(); ?>/images/best-startup-to-invest-2021-nowrx-technology.webp">
-                                        <source type="video/mp4" src="<?php echo get_template_directory_uri(); ?>/images/NowRx Pharmacy The Way It Should Be (Series C Investor Video).mp4" type="video/mp4">
+                                    <video title="nowrx pharmacy delivery website video" preload="none" class="lvimage lozad" id="mobilelvc" poster="<?php echo get_template_directory_uri(); ?>/images/best-startup-to-invest-2021-nowrx-technology.webp">
+                                        <source type="video/mp4" data-src="<?php echo get_template_directory_uri(); ?>/images/NowRx Pharmacy The Way It Should Be (Series C Investor Video).mp4" type="video/mp4">
                                         Sorry, your browser doesn't support embedded videos.
                                         <track default kind="metadata" srclang="en" src="<?php echo get_template_directory_uri(); ?>/images/my_captions.vtt" />
                                     </video>
-                                    <video title="video overlay mobile" class="mobilevideooverlay" id="mobvidov" muted autoplay loop   >
-                                        <source type="video/mp4" src="<?php echo get_template_directory_uri(); ?>/images/nowrx-pharmacy-delivery-investor-webpage-video-thumbnail-image-3mbps.mp4" type="video/mp4">
+
+                                    <video title="video overlay mobile" class="mobilevideooverlay lozad" id="mobvidov" muted autoplay loop   width="400" height="200">
+                                        <source type="video/mp4" data-src="<?php echo get_template_directory_uri(); ?>/images/nowrx-pharmacy-delivery-investor-webpage-video-thumbnail-image-3mbps.mp4" type="video/mp4">
                                         Sorry, your browser doesn't support embedded videos.
                                     </video>
+
                                     <div class="plauft mobileplauft">
                                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 263.374 263.374" style="enable-background:new 0 0 263.374 263.374;" xml:space="preserve">
                                             <g>
@@ -216,7 +218,7 @@
                                 Sorry, your browser doesn't support embedded videos.
                                 <track default kind="metadata" srclang="en" src="<?php echo get_template_directory_uri(); ?>/images/my_captions.vtt" />
                             </video>
-                            <video title="video overlay" class="videooverlay" id="vidov" preload="none" muted autoplay loop>
+                            <video title="video overlay" class="videooverlay" id="vidov" preload="none" muted autoplay loop width="560" height="300">
                                 <source type="video/mp4" src="<?php echo get_template_directory_uri(); ?>/images/nowrx-pharmacy-delivery-investor-webpage-video-thumbnail-image.mp4" type="video/mp4">
                                 Sorry, your browser doesn't support embedded videos.
                             </video>
@@ -238,7 +240,7 @@
                     </div>
                 </div>
                 <div class="stl">
-                    *NowRx has already raised over <strong>$13M</strong> from more than <strong>4,000</strong> investors in this round!
+                    *NowRx has already raised over <strong>$14M</strong> from more than <strong>4,700</strong> investors in this round!
                 </div>
             </section>
 
@@ -302,7 +304,7 @@
             <section class="companyhighlighta" id="highlights">
                 <div class="container">
                     <figure class="image">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/medical-stock-nowrx-prescription-bag.webp" alt="">
+                        <img data-src="<?php echo get_template_directory_uri(); ?>/images/medical-stock-nowrx-prescription-bag.webp" alt="" class="lozad">
                     </figure>
                     <div class="content">
                         <h2 class="title">Company <b>Highlights</b></h2>
@@ -375,14 +377,14 @@
                             <!-- item -->
                             <div class="item">
                                 <div class="numb">
-                                $13M
+                                $14M
 
                                 </div>
                                 <div class="mnk">
                                 Shares Sold
                                 </div>
                                 <div class="info">
-                                To over 4,000 investors in the current round.
+                                To over 4,700 investors in the current round.
 
                                 </div>
                             </div>
@@ -439,6 +441,7 @@
                     <h2 class="h2-left">Get the NowRx<strong> Investor Brief</strong></h2>
                     <div class="form-block w-form">
                         <div id="fm7"></div>
+
                         <script>
                                 hbspt.forms.create({
                                     region: "na1",
@@ -485,7 +488,7 @@
                                         </p>
                                     </div>
                                     <figure>
-                                        <img src="<?php echo get_template_directory_uri(); ?>/images/doctor-writing-prescription-to-nowrx-copy.webp" alt="doctor writing prescription to nowrx copy">
+                                        <img data-src="<?php echo get_template_directory_uri(); ?>/images/doctor-writing-prescription-to-nowrx-investor.webp" alt="doctor writing prescription to nowrx copy" class="lozad">
                                     </figure>
                                 </div>
                                 <div class="invesments-list list-full hor">
@@ -506,7 +509,7 @@
                                         </p>
                                     </div>
                                     <figure>
-                                        <img src="<?php echo get_template_directory_uri(); ?>/images/AdobeStock_91568410.webp" alt="We Confirm Delivery">
+                                        <img data-src="<?php echo get_template_directory_uri(); ?>/images/AdobeStock_91568410.webp" alt="We Confirm Delivery" class="lozad">
                                     </figure>
                                 </div>
                                 <div class="invesments-list list-full hor">
@@ -526,7 +529,7 @@
                                         </p>
                                     </div>
                                     <figure>
-                                        <img src="<?php echo get_template_directory_uri(); ?>/images/prescription-delivery-car-nowrx.webp" alt="Medication is Delivered">
+                                        <img data-src="<?php echo get_template_directory_uri(); ?>/images/prescription-delivery-car-nowrx-investor.webp" alt="Medication is Delivered" class="lozad">
                                     </figure>
                                 </div>
                                 <div class="button-wrapper">
@@ -585,7 +588,7 @@
                             </div>
                             <div class="image-block">
                             <figure class="image-item">
-                                <img src="<?php echo get_template_directory_uri(); ?>/images/mechanical.webp" alt="Proprietary Pharmacy Software & Robotics">
+                                <img src="<?php echo get_template_directory_uri(); ?>/images/mechanical.webp" alt="Proprietary Pharmacy Software & Robotics" >
                             </figure>
                             <p>
                                 Award winning “QuickFill” software increases pharmacy efficiency and reduces dispensing costs while minimizing common retail pharmacy problems like insurance issues, medications out of stock, etc.
@@ -606,7 +609,7 @@
                             </div>
                             <div class="image-block">
                             <figure class="image-item">
-                                <img src="<?php echo get_template_directory_uri(); ?>/images/cvs.png" alt="Low Cost Microfulfillment Pharmacies">
+                                <img src="<?php echo get_template_directory_uri(); ?>/images/cvs.webp" alt="Low Cost Microfulfillment Pharmacies">
                             </figure>
                             <p>
                                 A single NowRx can service the same volume as up to 20 traditional pharmacies and free same day delivery removes the need for prime retail store front that maximizes walk-in traffic. As a result, NowRx’s fixed overhead is less than 1% of typical large retail chains.
@@ -652,7 +655,7 @@
                             </p>
                         </header>
                                 <figure>
-                                    <img src="<?php echo get_template_directory_uri(); ?>/images/Invest-in-NowRx-QuickFill.webp" alt="Invest in NowRx QuickFill">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/images/Invest-in-NowRx-QuickFill.webp" alt="Invest in NowRx QuickFill" width="460" height="250">
                                 </figure>
                                 <div class="content">
 
@@ -804,7 +807,7 @@
                                 </span>
                                 <cite>
                                     <figure class="image">
-                                        <img src="https://assets.website-files.com/5d5d56675dd8937a8bcc193c/614895c983afd43a4f8ad190_image%2021-min.jpg" alt="">
+                                        <img data-src="<?php echo get_template_directory_uri(); ?>/images/DrJamesETearseMD.webp" alt="" class="lozad">
                                     </figure>
                                     <div class="text-block">
                                     <div class="name">Dr. James E Tearse, MD</div>
@@ -1161,36 +1164,74 @@
                 </div>
             </div>
 
-            <section id="Opportunity" class="section white growth lozad"
-                data-background-image="https://assets.website-files.com/5d5d56675dd8937a8bcc193c/614895c69feb3f181cc73117_Rectangle%2085-min.jpg">
-                <div class="container">
-                    <h2 class="h2-box h2-op center _2">Growth <strong>Strategy</strong></h2>
-                    <div class="business-box _2">
-                        <div class="invesments-list list-full hor"><img
-                                data-src="https://assets.website-files.com/5d5d56675dd8937a8bcc193c/61489905e242c2c0d1558b0c_Group%2078.svg"
-                                loading="lazy" alt="" class="image-10 lozad">
-                            <p class="p-sub p-short p-margin small-dot no-dot"><strong>96% of new customers come from
-                                    physician referral</strong> and 4% of new customers from digital. We will scale
-                                digital once the physician referral channel is established.<br></p>
-                        </div>
-                        <div class="invesments-list list-full hor"><img
-                                data-src="https://assets.website-files.com/5d5d56675dd8937a8bcc193c/614899051151975fdb36a408_Group%2079.svg"
-                                loading="lazy" alt="" class="image-10 lozad">
-                            <p class="p-sub p-short p-margin small-dot no-dot">New territories to be launched with
-                                resulting exponential increase in total annual orders. West coast expansion underway
-                                now, and <strong>nationwide expansion planned as the next phase.</strong><br></p>
-                        </div>
-                        <div class="invesments-list list-full hor"><img
-                                data-src="https://assets.website-files.com/5d5d56675dd8937a8bcc193c/614899065cc8091c4d8b5b18_Group%2080.svg"
-                                loading="lazy" alt="" class="image-10 lozad">
-                            <p class="p-sub p-short p-margin small-dot no-dot"><strong>Additional opportunities for
-                                    growth include non-prescription health and wellness products,</strong> telehealth
-                                and specialty pharmacies for complex conditions.<br></p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
+           <section id="opportunity" class="growth-section">
+               <div class="container">
+                   <header class="title">
+                       <h2 class="title">Growth <strong>Strategy</strong></h2>
+                       <p>
+                       NowRx has been able to consistently grow its customer base and total revenue using a number of successful growth strategies.
+                       </p>
+                   </header>
+                   <div class="content">
+                       <div class="block">
+                           <figure class="image">
+                               <img src="<?php echo get_template_directory_uri(); ?>/images/nowrx-physician-referral-meeting.webp" alt="">
+                           </figure>
+                           <div class="text">
+                               <div class="number">
+                                   <span>1</span>
+                               </div>
+                               <div class="text-content">
+                                   <h3 class="title">Physician Referral Channel</h3>
+                                   <p>NowRx’s sales team sets appointments with physicians to promote the benefits of NowRx for their patients. This strategy has been successful for the top pharma companies and is the top performing channel to date.</p>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="block reverse">
+                           <figure class="image">
+                               <img src="<?php echo get_template_directory_uri(); ?>/images/daughter-showing-mother-nowrx-pharmacy-delivery-website.webp" alt="">
+                           </figure>
+                           <div class="text">
+                               <div class="number">
+                                   <span>2</span>
+                               </div>
+                               <div class="text-content">
+                                   <h3 class="title">Digital Marketing</h3>
+                                   <p>NowRx promotes awareness through several proven digital marketing channels that will continue to become more effective and efficient as the company expands its nationwide footprint.</p>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="block">
+                           <figure class="image">
+                               <img src="<?php echo get_template_directory_uri(); ?>/images/nowrx-pharmacy-facility-.webp" alt="">
+                           </figure>
+                           <div class="text">
+                               <div class="number">
+                                   <span>3</span>
+                               </div>
+                               <div class="text-content">
+                                   <h3 class="title">Nationwide Expansion</h3>
+                                   <p>NowRx has plans to announce roughly 10 new facilities in 2022 which will more than double its number of existing facilities and provide rapid revenue growth.</p>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="block reverse">
+                           <figure class="image">
+                               <img src="<?php echo get_template_directory_uri(); ?>/images/telehealth-doctor-for-nowrx.webp" alt="">
+                           </figure>
+                           <div class="text">
+                               <div class="number">
+                                   <span>4</span>
+                               </div>
+                               <div class="text-content">
+                                   <h3 class="title">Additional Products & Services</h3>
+                                   <p>NowRx will expand its telehealth service (1,200% growth in 2021) in addition to adding specialty pharmacy for complex conditions and non-prescription health products which offers tremendous opportunities for revenue growth.</p>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </section>
 
 
             <section id="our-team" class="section section-bottom-padding team-sec">
@@ -1289,27 +1330,6 @@
                 </section>
 
             </section>
-            <div class="cta lozad" data-background-image="https://assets.website-files.com/5d5d56675dd8937a8bcc193c/5d5da5103e9e5a775604e1aa_pill2.svg"
-                >
-                <div class="w-layout-grid grid-9">
-                    <h2 class="h2-left">Get the NowRx<strong> Investor Brief</strong></h2>
-                    <div class="form-block w-form">
-                            <div id="fm4"></div>
-                    <script>
-                                hbspt.forms.create({
-                                    region: "na1",
-                                    portalId: "5952677",
-                                    formInstanceId: "4",
-                                    formId: "df2a6935-1139-426a-b373-0917788189ad",
-                                    target:'#fm4'
-                                });
-                        </script>
-
-                    </div>
-                </div>
-            </div>
-
-
 
             <section class="popupform lozad" data-background-image="https://assets.website-files.com/5d5d56675dd8937a8bcc193c/5d5ed1486e0dbce67eac23b9_hexagon.svg">
                 <div class="content">
@@ -1409,6 +1429,13 @@
         get_template_part('components/investfooterscripts');
     ?>
 
+
+
+
+        <?php
+        // Inlined Google Font loading
+        get_template_part('components/font-load'); ?>
     </body>
+
 
 </html> <!-- end of site. what a ride! -->

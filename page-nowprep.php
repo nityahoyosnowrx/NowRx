@@ -1,11 +1,11 @@
 <?php get_header(); ?>
 
 
-<section class="landing-block">
+<section class="landing-block nowprep-landingblock">
     <div class="container fluid">
         <div class="content">
             <div class="text-content prep-text">
-            <span class="sub-headline">An Easier Way to HIV PrEP</span>
+            <span class="sub-headline">An Easier Way to PrEP for HIV</span>
             <h1 class="title">
             <strong>HIV PrEP</strong> is Easy With NowPrEP
             </h1>
@@ -47,7 +47,7 @@
         <div class="row-columns">
             <div class="column-item">
                 <figure class="image">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/prep-online-sign-up.webp" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/prep-online-sign-up.webp" height="92" width="92" alt="prep online sign up">
                 </figure>
                 <h3 class="title">Sign Up for NowPrep</h3>
                 <p>
@@ -62,7 +62,7 @@
             </div>
             <div class="column-item">
                 <figure class="image">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/prep-online-free-being-checked.webp" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/prep-online-free-being-checked.webp"  height="92" width="92"  alt="prep online free being checked">
                 </figure>
                 <h3 class="title">Complete a PrEP Lab</h3>
                 <p>
@@ -76,7 +76,7 @@
             </div>
             <div class="column-item">
                 <figure class="image">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/prep-online-delivered.webp" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/prep-online-delivered.webp"  height="92" width="92"  alt="prep online delivered">
                 </figure>
                 <h3 class="title">Get HIV PrEP Delivered</h3>
                 <p>If HIV PrEP medication is right for you, our physician will prescribe it online and we will deliver it in hours for FREE!</p>
@@ -88,7 +88,7 @@
             </div>
             <div class="column-item">
                 <figure class="image">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/nowrx-pharmacy-delivery-driver-bringing-prescriptions-to-a-house-mobile.webp" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/nowrx-pharmacy-delivery-driver-bringing-prescriptions-to-a-house-mobile.webp"  height="92" width="92"  alt="Set Up Auto-Refill">
                 </figure>
                 <h3 class="title">Set Up Auto-Refill</h3>
                 <p>Get your PrEP medication automatically delivered each month and an auto-reminder when a new lab order is needed.</p>
@@ -96,7 +96,7 @@
 
         </div>
         <div class="btn-container">
-            <a href="<?php echo get_site_url(); ?>/refill-and-transfer-prescriptions/" class="rx-button">Get Started</a>
+            <a class="rx-button" id="nowprep-gt-gt" data-toggle="waitlist" aria-controls="waitlist" aria-haspopup="true" id="getstarted-gt" tabindex="0"> <?php include('reg-arrow.php'); ?> Get Started</a>
         </div>
     </div>
 </section>
@@ -1382,10 +1382,8 @@ To maximize the effectiveness of the PrEP pill you should take the medication as
             <div class="col">
 
                 <figure>
-                    <picture class="lozad" data-toggle-class="active">
-                        <source media="(max-width: 992px)" srcset="<?php echo get_template_directory_uri(); ?>/images/pre-exposure-prophylaxis-pills-for-hiv-prevention-against-blue-background.webp">
-                        <source media="(min-width: 993px)" srcset="<?php echo get_template_directory_uri(); ?>/images/pre-exposure-prophylaxis-pills-for-hiv-prevention-against-blue-background.webp">
-                        <img data-src="<?php echo get_template_directory_uri(); ?>/images/pre-exposure-prophylaxis-pills-for-hiv-prevention-against-blue-background.webp" class="orbit-image lozad" height="500px" width="650px" alt="pre exposure prophylaxis pills for hiv prevention against blue background">
+                    <picture>
+                        <img data-src="<?php echo get_template_directory_uri(); ?>/images/pre-exposure-prophylaxis-pills-for-hiv-prevention-against-blue-background.webp" class="orbit-image lozad" height="500" width="650" alt="pre exposure prophylaxis pills for hiv prevention against blue background">
                     </picture>
                 </figure>
             </div>

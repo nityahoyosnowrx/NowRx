@@ -83,7 +83,7 @@ header.main.header-main {
 			border-bottom: 1px solid transparent;
 			cursor: pointer;
 
-			transition: all 0.3s;
+			transition: all 0s;
 			color: #fff;
 			position: relative;
 			overflow: hidden;
@@ -162,6 +162,10 @@ section.landing-block {
 	@media screen and (max-width: 700px) {
 		margin-bottom: 30px;
 		margin-top: 180px;
+	}
+
+	&.nowprep-landingblock{
+
 	}
 
 	.container {
@@ -399,7 +403,7 @@ section.infoslider.lone {
 		align-items: center;
 		justify-content: center;
 		opacity: 0.1;
-		transition: all 0.3s;
+		transition: all 0s;
 		&.highlight {
 			opacity: 1;
 			// filter: brightness(1);
@@ -950,11 +954,26 @@ section.block-frequent-questions {
 				padding: 11px 0 11px 20px;
 			}
 		}
+
 		.list-answer {
 			transition: all 0s;
 			font-size: 1rem;
 			@media screen and (max-width: 700px) {
 				padding-right: 40px;
+			}
+			p {
+				font-size: inherit;
+				max-width: 100%;
+				@media screen and (max-width: 700px) {
+					text-align: left;
+					font-size: 16px;
+				}
+			}
+			ul {
+				@media screen and (max-width: 700px) {
+					text-align: left;
+				padding: 0 0 0 15px;
+				}
 			}
 		}
 		&.active-faq .close {

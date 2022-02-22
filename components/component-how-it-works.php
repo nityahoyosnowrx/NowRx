@@ -1,4 +1,3 @@
-
 <section class="columns-work">
     <div class="container">
         <header class="title">
@@ -10,7 +9,7 @@
         <div class="row-columns">
             <div class="column-item">
                 <figure class="image">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/For-Doctors.webp" alt="">
+                    <img data-src="<?php echo get_template_directory_uri(); ?>/images/For-Doctors-hiw.webp" alt="Send Us Your Prescription" width="100" height="100" class="lozad">
                 </figure>
                 <h3 class="title">Send Us Your Prescription</h3>
                 <p>Have your doctor send a new prescription or transfer to us online.</p>
@@ -22,7 +21,7 @@
             </div>
             <div class="column-item">
                 <figure class="image">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/Why-Doctors-Love-NowRx.webp" alt="">
+                    <img data-src="<?php echo get_template_directory_uri(); ?>/images/Why-Doctors-Love-NowRx-hiw.webp" width="100" height="100" alt="Confirm Your Delivery" class="lozad">
                 </figure>
                 <h3 class="title">Confirm Your Delivery</h3>
                 <p>We will call and text you to set up
@@ -35,7 +34,7 @@
             </div>
             <div class="column-item">
                 <figure class="image">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/nowrx-pharmacy-delivery-happy-customers-celebrating-low-drug-prices.webp" alt="">
+                    <img data-src="<?php echo get_template_directory_uri(); ?>/images/nowrx-pharmacy-delivery-happy-customers-celebrating-low-drug-prices-hiw.webp" width="100" height="100" alt="Get Your Medication" class="lozad">
                 </figure>
                 <h3 class="title">Get Your Medication</h3>
                 <p>A local NowRx pharmacy employee will
@@ -48,7 +47,7 @@
             </div>
             <div class="column-item">
                 <figure class="image">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/nowrx-pharmacy-delivery-driver-bringing-prescriptions-to-a-house-mobile.webp" alt="">
+                    <img data-src="<?php echo get_template_directory_uri(); ?>/images/nowrx-pharmacy-delivery-driver-bringing-prescriptions-to-a-house-hiw.webp"  width="100" height="100"alt="Set Up Auto-Refill" class="lozad">
                 </figure>
                 <h3 class="title">Set Up Auto-Refill</h3>
                 <p>Get your meds automatically delivered each month without lifting a finger.</p>

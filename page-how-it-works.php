@@ -28,7 +28,7 @@
             <a class="rx-btn" href="<?= get_site_url(); ?>/refill-and-transfer-prescriptions">
                         <?php include('reg-arrow.php'); ?>
                             Get Started</a>
-                        <a class="rx-btn rx-green mrb" href="#howitwork">
+                        <a class="rx-btn rx-green mrb" href="#howitworks">
                             <?php include('grn-arrow.php'); ?>
                             How it Works</a>
             </div>
@@ -36,7 +36,7 @@
         <div class="media">
             <figure class="image">
             <picture class="lozad" data-toggle-class="active">
-                    <source media="(max-width: 992px)" srcset="<?php echo get_template_directory_uri(); ?>/images/pharmacy-delivery-being-prepared-by-nowrx-pharmacist.webp">
+                    <source media="(max-width: 992px)" srcset="<?php echo get_template_directory_uri(); ?>/images/pharmacy-delivery-being-prepared-by-nowrx-pharmacist-m.webp">
                     <source media="(min-width: 993px)" srcset="<?php echo get_template_directory_uri(); ?>/images/pharmacy-delivery-being-prepared-by-nowrx-pharmacist.webp">
                     <img data-src="<?php echo get_template_directory_uri(); ?>/images/pharmacy-delivery-being-prepared-by-nowrx-pharmacist.webp" class="orbit-image lozad" height="500px" width="650px" alt="pharmacy delivery being prepared by nowrx pharmacist">
                 </picture>
@@ -50,9 +50,11 @@
 <?php include('components/component-logo-slider.php'); ?>
 <?php include('components/component-how-it-works.php'); ?>
 
+<div id="howitworks">
 
 <!-- FAQ -->
 <?php get_template_part('components/section-faq-flip'); ?>
+</div>
 
 
 
