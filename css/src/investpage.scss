@@ -251,7 +251,9 @@ header.main.investorhead {
 body#investor {
 	// background: #eceff2;
 	font-family: Nunito, sans-serif;
-
+	main {
+		margin-bottom: 0;
+	}
 	section.wideform {
 		background: linear-gradient(262deg, #7a9bc9 0%, #d54439 30%, #d54439 100%);
 		padding: 60px 20px;
@@ -401,7 +403,7 @@ body#investor {
 		padding: 15px 0;
 	}
 	section.hero-home.videodev.invested {
-		padding: 40px 0 125px;
+		padding: 50px 0 125px;
 		margin: 130px 0 0;
 		overflow: hidden;
 		@media screen and (max-width: 1280px) {
@@ -424,6 +426,9 @@ body#investor {
 			}
 			@media screen and (max-width: 1280px) {
 				flex-direction: column;
+			}
+			@media screen and (max-width: 700px) {
+				margin: 0;
 			}
 		}
 
@@ -4605,27 +4610,25 @@ body#investor {
 		}
 
 		.content .item {
-			width: 29.3%;
+			width: 31.3%;
+			padding: 10px 20px;
+			margin: 1% 1%;
+			min-height: 235px;
 			border: 1px solid #e7eaed;
-			padding: 30px;
+			box-shadow: 0 0 34px #d5e3f8;
+			border-radius: 10px;
+			background: #fff;
 			display: flex;
-			flex-direction: column;
 			align-items: center;
 			justify-content: center;
-			color: #fff;
-			min-height: 175px;
-			width: 22%;
-			padding: 10px;
-			border-radius: 10px;
 			flex-direction: column;
-			background: #fff;
-			margin: 1.5%;
 			color: #eee;
-			box-shadow: 0 0 34px Rgb(213 227 248);
+
+
 			@media screen and (min-width: 1280px) {
 				&:nth-child(8),
 				&:nth-child(4) {
-					margin-right: 0;
+					// margin-right: 0;
 				}
 			}
 			@media screen and (max-width: 1280px) {
@@ -4633,6 +4636,9 @@ body#investor {
 			}
 			@media screen and (max-width: 700px) {
 				width: 46%;
+				padding: 10px 10px;
+				margin: 1%;
+				min-height: 185px;
 			}
 			@media screen and (max-width: 400px) {
 				width: 46%;

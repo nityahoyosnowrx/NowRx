@@ -18,7 +18,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Cache-control" content="public">
 
-    <link rel="stylesheet" href='<?php echo get_template_directory_uri(); ?>/public/frontend.css?v=1333233'>
+    <link rel="stylesheet" href='<?php echo get_template_directory_uri(); ?>/public/frontend.css?=1130'>
 
 
     <link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
@@ -240,7 +240,7 @@
                     </div>
                 </div>
                 <div class="stl">
-                    *NowRx has already raised over <strong>$14M</strong> from more than <strong>4,700</strong> investors in this round!
+                    *NowRx has already raised over <strong>$15M</strong> from more than <strong>4,900</strong> investors in this round!
                 </div>
             </section>
 
@@ -347,44 +347,19 @@
                                 NowRx Telehealth from Q1 to Q4 in 2021
                                 </div>
                             </div>
+
+
                             <!-- item -->
                             <div class="item">
                                 <div class="numb">
-                                81%
-
-                                </div>
-                                <div class="mnk">
-                                Revenue
-                                </div>
-                                <div class="info">
-                                Compounded annual growth rate since 2016.
-
-                                </div>
-                            </div>
-                            <!-- item -->
-                            <div class="item">
-                                <div class="numb">
-                                $20M
-                                </div>
-                                <div class="mnk">
-                                Series B
-                                </div>
-                                <div class="info">
-                                Sold out and largest SeedInvest raise to date.
-
-                                </div>
-                            </div>
-                            <!-- item -->
-                            <div class="item">
-                                <div class="numb">
-                                $14M
+                                $15M
 
                                 </div>
                                 <div class="mnk">
                                 Shares Sold
                                 </div>
                                 <div class="info">
-                                To over 4,700 investors in the current round.
+                                To over 4,900 investors in the current round.
 
                                 </div>
                             </div>

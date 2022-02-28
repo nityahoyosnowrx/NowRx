@@ -619,3 +619,21 @@ $(document).ready(function () {
   });
 
 });
+
+$(document).ready(function () {
+// var popupForm = localStorage.getItem('popupForm')
+
+// if (!popupForm) {
+  setTimeout(()=>{
+    $('.pre-modal-window').addClass('is-active')
+  },15000)
+//   localStorage.setItem('popupForm', 1)
+
+// }
+// else {
+//   $('section.popupform').hide();
+// }
+$(".pre-modal-btn-close").click(function(e) {
+  $('.pre-modal-window').removeClass('is-active')
+});
+});

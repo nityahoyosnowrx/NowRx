@@ -180,8 +180,84 @@ if (is_front_page()) : ?>
 <?php endif; ?>
 
 
+<?php if (is_singular( 'post' ) || is_home()) : ?>
+  <div class="pre-modal-window">
+    <div class="pre-modal">
+      <button class="pre-modal-btn-close bg-transparent" data-var="closeBtn">
+        <svg fill="#111" height="30px" width="30px" viewBox="0 0 24 24">
+          <path d="M15.04 12L24 2.96 21.04 0 12 8.96 3.04 0 0 2.96 9.04 12 0 20.96 3.04 24 12 14.96 21.04 24 24 20.96z"></path>
+        </svg>
+      </button>
+      <div class="pre-modal-view">
+        <div class="unite-container">
+            <header>
+              <div class="nowrx-unite-swoosh">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/NowRx-Pharmacy-Logo-Icon-mini.webp" alt="NowRx-Pharmacy-Logo-Icon-mini" width="50" height="38">
+              </div>
+              <div class="view-header">Subscribe To Our Newsletter</div>
+              <div id="joinMessage" class="view-sub-header nowrx-unite-message">
+              Get blogs, tips, and discounts related to pharmacy delivered right to your inbox each month.
+               </div>
+            </header>
+
+            <!--[if lte IE 8]>
+            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+            <![endif]-->
+            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js" defer></script>
+            <div id="popup-foot">
+
+            </div>
+            <script defer>
+
+            var $document = document.querySelector("body");
+
+            document.addEventListener('load', function(evt) {
+                var $script = document.querySelector("script[src='//js.hsforms.net/forms/v2.js']");
+
+                if (!evt.target.isEqualNode($script)) {
+                    return;
+                }
+
+                // Callback code
+                setTimeout(() => {
+                  // console.log('loaded')
+                  hbspt.forms.create({
+                  region: "na1",
+                  portalId: "5952677",
+                  formId: "743c3ddd-5ba0-4dd9-9c25-dd8c8c328c80",
+                  css: '',
+                  target: "#popup-foot"
+                  })
+                }, 9000);
+
+                // your callback's code
+                setTimeout(() => {
+                  // console.log('loaded')
+                  hbspt.forms.create({
+                        region: "na1",
+                        portalId: "5952677",
+                        formId: "743c3ddd-5ba0-4dd9-9c25-dd8c8c328c80",
+                        css: '',
+                        target: "#popup-foot"
+
+                        })
+                }, 10000);
+
+            }, true);
 
 
+            </script>
+
+
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<?php endif; ?>
 
 <?php // include modals
 get_template_part('footer-modals'); ?>
@@ -191,8 +267,8 @@ get_template_part('footer-modals'); ?>
 get_template_part('analytics-head'); ?>
 
 <?php
-        // Inlined Google Font loading
-        get_template_part('components/font-load'); ?>
+// Inlined Google Font loading
+get_template_part('components/font-load'); ?>
 
 </body>
 

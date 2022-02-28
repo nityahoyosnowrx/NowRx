@@ -21,10 +21,10 @@
                         </figure>
                             <h2 class="title">
 
-                                Get Started
+                            Refill Prescriptions
                             </h2>
                             <p>
-                                Get started with your first pharmacy delivery from NowRx Pharmacy.
+                            Request a refill or transfer existing prescriptions to NowRx from another pharmacy.
                             </p>
                         </a>
 
@@ -46,7 +46,7 @@
                                 How it Works
                             </h2>
                             <p>
-                            We will call you to confirm and deliver in hours.
+                            NowRx offers convenient and reliable same day prescription delivery for FREE - see how it works.
                             </p>
                         </a>
 
@@ -95,7 +95,7 @@
                                 Telehealth
                             </h2>
                             <p>
-                            Telehealth The Way It Should Be
+                            Get treatment online for a variety of conditions and NowRx will deliver any prescriptions to your door for FREE.
                             </p>
                         </a>
                     </div>
@@ -129,7 +129,7 @@
                  <!-- block -->
                  <div class="block">
                     <div class="contentblock">
-                        <a href="<?= get_site_url(); ?>/about-us/">
+                        <a href="<?= get_site_url(); ?>/locations/">
 
                             <figure>
 
@@ -138,10 +138,10 @@
                             </picture>
                                     </figure>
                             <h2 class="title">
-                                About Us
+                           Locations
                             </h2>
                             <p>
-                                Learn more about the NowRx team and our company's vision for healthcare.
+                            See if there is a NowRx location near you or suggest a location if we are not in your area yet.
                             </p>
                         </a>
 

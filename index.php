@@ -174,20 +174,53 @@ $currentPage = $post->ID;
 
                     <div class="blockitem">
                         <header class="title">
-                            <h2 class="title">Subscribe via Email</h2>
+                            <h2 class="title">Subscribe To Our Newsletter</h2>
+                            <p>
+                            NowRx is a tech-powered pharmacy that provides customers with 5-star service and free same day prescription delivery. Learn more at <a href="https://nowrx.com/" target="_blank">https://nowrx.com/</a>.
+                            </p>
                         </header>
-                        <!--[if lte IE 8]>
-                        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
-                        <![endif]-->
-                        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-                        <script>
-                        hbspt.forms.create({
-                        region: "na1",
-                        portalId: "5952677",
-                        formId: "743c3ddd-5ba0-4dd9-9c25-dd8c8c328c80",
-                        formInstanceId: "2fef",
-                        });
-                        </script>
+
+                    <span id="index-form"></span>
+<script defer>
+
+var $document = document.querySelector("body");
+
+document.addEventListener('load', function(evt) {
+    var $script = document.querySelector("script[src='//js.hsforms.net/forms/v2.js']");
+
+    if (!evt.target.isEqualNode($script)) {
+        return;
+    }
+
+    // Callback code
+    setTimeout(() => {
+    //   console.log('loaded')
+      hbspt.forms.create({
+            region: "na1",
+            portalId: "5952677",
+            formId: "743c3ddd-5ba0-4dd9-9c25-dd8c8c328c80",
+            formInstanceId: "2fef",
+            target: "#index-form"
+            });
+    }, 1000);
+
+    // your callback's code
+    // setTimeout(() => {
+    //   console.log('loaded')
+    //   hbspt.forms.create({
+    //         region: "na1",
+    //         portalId: "5952677",
+    //         formId: "743c3ddd-5ba0-4dd9-9c25-dd8c8c328c80",
+    //         formInstanceId: "2fef",
+    //         target: "#index-form"
+    //         });
+    // }, 3500);
+
+}, true);
+
+
+</script>
+
                     </div>
                 </div>
         </div>
@@ -206,7 +239,8 @@ $currentPage = $post->ID;
                     'orderby' => 'date',
                     'order' => 'DESC',
                     'post__not_in' => array($latest_cpt[0]->ID),
-                    'paged' => $paged
+                    'paged' => $paged,
+                    'posts_per_page'=>9,
                 ));
 
                 //set our query's pagination to $paged
@@ -217,7 +251,7 @@ $currentPage = $post->ID;
 
 
                     if(!is_paged()){
-                        if($countbot == 0){
+                        if($countbot == 3){
                             ?>
                             <div class="ctablock">
                                 <a id="cta" class="cta_button wt-blog__cta--pink-red" href="https://nowrx.com/invest/" target="_blank" >
@@ -229,34 +263,67 @@ $currentPage = $post->ID;
 
                         }
                     } else {
-                        if($countbot == 1){
+                        if($countbot == 4){
                     ?>
-                    <div class="blockitem">
-                        <header class="title">
-                            <h2 class="title">Subscribe via Email</h2>
-                        </header>
-                        <!--[if lte IE 8]>
-                        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
-                        <![endif]-->
-                        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-                        <script>
-                        hbspt.forms.create({
-                        region: "na1",
-                        portalId: "5952677",
-                        formId: "743c3ddd-5ba0-4dd9-9c25-dd8c8c328c80",
-                        formInstanceId: "2fef",
-                        });
-                        </script>
-                    </div>
+                        <div class="blockitem">
+                            <header class="title">
+                                <h2 class="title">Subscribe To Our Newsletter</h2>
+                                <p>
+                                NowRx is a tech-powered pharmacy that provides customers with 5-star service and free same day prescription delivery. Learn more at <a href="https://nowrx.com/" target="_blank">https://nowrx.com/</a>.
+                                </p>
+                            </header>
+
+                                <span id="index-form-second"></span>
+
+                                <script defer>
+
+                                var $document = document.querySelector("body");
+
+                                document.addEventListener('load', function(evt) {
+                                    var $script = document.querySelector("script[src='//js.hsforms.net/forms/v2.js']");
+
+                                    if (!evt.target.isEqualNode($script)) {
+                                        return;
+                                    }
+
+                                    // Callback code
+                                    setTimeout(() => {
+                                    //   console.log('loaded')
+                                    hbspt.forms.create({
+                                            region: "na1",
+                                            portalId: "5952677",
+                                            formId: "743c3ddd-5ba0-4dd9-9c25-dd8c8c328c80",
+                                            formInstanceId: "2fef",
+                                            target: "#index-form-second"
+                                            });
+                                    }, 1000);
+
+                                    // your callback's code
+                                    // setTimeout(() => {
+                                    // hbspt.forms.create({
+                                    //         region: "na1",
+                                    //         portalId: "5952677",
+                                    //         formId: "743c3ddd-5ba0-4dd9-9c25-dd8c8c328c80",
+                                    //         formInstanceId: "2fef",
+                                    //         target: "#index-form-second"
+                                    //         });
+                                    // }, 3500);
+
+                                }, true);
+
+
+                                </script>
+
+
+                        </div>
 
                     <?php  } } ?>
 
-                                <article class="blog-item">
+                            <article class="blog-item">
                                 <div class="image">
                                     <?php if (has_post_thumbnail($post->ID)) : ?>
                                         <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'large'); ?>
                                         <?php $imageThumbnail = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'medium'); ?>
-
                                         <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
                                             <picture class="border-styled lozad" style="display: block; min-height: 1rem"
                                                 data-iesrc="<?php echo $imageThumbnail[0]; ?>"
@@ -300,7 +367,7 @@ $currentPage = $post->ID;
                                         </div>
 
                                     </div>
-                                </article>
+                            </article>
 
                         <?php
                         $countbot++;

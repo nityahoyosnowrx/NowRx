@@ -4,7 +4,7 @@
             <?php
             $categories = get_the_category();
             if ( !empty( $categories ) ) { ?>
-                <a href="<?php echo esc_url( get_category_link( $categories[0]->term_id ) ); ?>/" class="ArticleHeader-eyebrow"><?php echo esc_html( $categories[0]->name ); ?></a>
+                <a href="<?php echo esc_url( get_category_link( $categories[0]->term_id ) ); ?>" class="ArticleHeader-eyebrow"><?php echo esc_html( $categories[0]->name ); ?></a>
             <?php } ?>
         </div>
         <h1 class="entry-title single-title">

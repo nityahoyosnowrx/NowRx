@@ -159,9 +159,15 @@ if(is_single('hayward')){
     $currentLocation = "hayward";
 }
 if(is_single('mesa')){
-    $coord = '33.410481, -111.884589';
+    $coord = '33.4656483447172, -112.03032416162027';
     $currentLocation = "mesa";
 }
+
+$zoomLvl = 10;
+if(is_single('mesa')){
+    $zoomLvl = 9;
+}
+
 
 ?>
 
@@ -169,7 +175,7 @@ function initMap() {
 
     map = new google.maps.Map(document.getElementById('map'), {
         center: center,
-        zoom: 10,
+        zoom: <?php echo $zoomLvl; ?>,
         scaleControl: true
     });
 
