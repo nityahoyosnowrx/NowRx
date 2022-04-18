@@ -18,8 +18,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Cache-control" content="public">
 
-    <link rel="stylesheet" href='<?php echo get_template_directory_uri(); ?>/public/frontend.css?=1130'>
+    <link rel="stylesheet" href='<?php echo get_template_directory_uri(); ?>/public/frontend.css?=113111111313330'>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
     <link rel="icon" type="image/x-icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
@@ -35,6 +37,7 @@
 
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 
+
     <!-- WP HEAD -->
     <?php wp_head(); ?>
 
@@ -42,6 +45,9 @@
         // include modals
         get_template_part('components/investscripts');
     ?>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+
+
 
 <script>
             !function (w, d, t) {
@@ -50,6 +56,21 @@
             ttq.page();
             }(window, document, 'ttq');
         </script>
+
+<script>
+!function(w,d){if(!w.rdt){var p=w.rdt=function(){p.sendEvent?p.sendEvent.apply(p,arguments):p.callQueue.push(arguments)};p.callQueue=[];var t=d.createElement("script");t.src="https://www.redditstatic.com/ads/pixel.js",t.async=!0;var s=d.getElementsByTagName("script")[0];s.parentNode.insertBefore(t,s)}}(window,document);rdt('init','t2_4ewc263l');rdt('track', 'PageVisit');
+</script>
+
+<!-- Twitter universal website tag code -->
+<script>
+!function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
+},s.version=‘1.1’,s.queue=[],u=t.createElement(n),u.async=!0,u.src=‘//static.ads-twitter.com/uwt.js’,
+a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,‘script’);
+// Insert Twitter Pixel ID and Standard Event data below
+twq(‘init’,‘o8fgz’);
+twq(‘track’,‘PageView’);
+</script>
+<!-- End Twitter universal website tag code -->
 
 </head>
 
@@ -142,27 +163,117 @@
         </div>
     </header>
 
+
+    <?php
+
+
+function number_format_short( $n, $precision = 1 ) {
+	if ($n < 900) {
+		// 0 - 900
+		$n_format = number_format($n, $precision);
+		$suffix = '';
+	} else if ($n < 900000) {
+		// 0.9k-850k
+		$n_format = number_format($n / 1000, $precision);
+		$suffix = 'K';
+	} else if ($n < 900000000) {
+		// 0.9m-850m
+		$n_format = number_format($n / 1000000, $precision);
+		$suffix = 'M';
+	} else if ($n < 900000000000) {
+		// 0.9b-850b
+		$n_format = number_format($n / 1000000000, $precision);
+		$suffix = 'B';
+	} else {
+		// 0.9t+
+		$n_format = number_format($n / 1000000000000, $precision);
+		$suffix = 'T';
+	}
+
+  // Remove unecessary zeroes after decimal. "1.0" -> "1"; "1.00" -> "1"
+  // Intentionally does not affect partials, eg "1.50" -> "1.50"
+	if ( $precision > 0 ) {
+		$dotzero = '.' . str_repeat( '0', $precision );
+		$n_format = str_replace( $dotzero, '', $n_format );
+	}
+
+	return $n_format . $suffix;
+}
+$curl = curl_init('https://www.seedinvest.com/nowrx/series.c');
+curl_setopt($curl, CURLOPT_RETURNTRANSFER, TRUE);
+
+$page = curl_exec($curl);
+
+if(curl_errno($curl)) // check for execution errors
+{
+echo 'Scraper error: ' . curl_error($curl);
+exit;
+}
+
+curl_close($curl);
+
+
+
+
+
+$regex = '/<span class="primary-count">(.*?)<\/span>/s';
+
+if ( preg_match_all($regex, $page, $list) ){
+    $itemTotal = $list[0][0];
+    $itemUsers = $list[0][1];
+}
+
+$numConvert = str_replace("$",'', $itemTotal);
+
+
+$int = (int) filter_var($numConvert, FILTER_SANITIZE_NUMBER_INT);
+
+$flo = (float)$int;
+
+
+echo number_format_short(abs($flo));
+?>
+
     <main>
         <article>
+        <div class="stl">
+                    <!-- *NowRx has already raised over <strong>$<?php echo number_format_short(abs($flo)); ?></strong> from more than <strong><?php echo $itemUsers; ?></strong> investors in this round! -->
+
+<?php
+$wedding = strtotime("2022-05-21 8:00:00+0400"); // or whenever the wedding is
+$secondsLeft = $wedding - time();
+$days = floor($secondsLeft / (60*60*24)); // here the brackets
+$hours = floor(($secondsLeft - ($days*60*60*24)) / (60*60)); // and here too
+$m = floor(($secondsLeft%3600)/60);
+
+echo "<strong>Time Left to Invest: $days days $hours hours $m mins</strong>";
+
+?>
+
+
+                </div>
             <section class="hero-home videodev invested">
                 <div class="container">
                     <div class="content">
                         <!-- content -->
                         <div class="column-half content-col">
+
                             <div class="contentblock">
+
                                 <span class="sub-headline ">
                                     <strong>
                                         Invest in NowRx
                                     </strong>
                                 </span>
                                 <h1>
-                                    <span class="kd">Disrupting the <b>$480B</b> </span>
-                                    <span class="kd">Pharmacy Industry</span>
+                                    <span class="kd">Tech-Powered</span>
+                                    <span class="kd">Retail Pharmacy</span>
                                 </h1>
                                 <p>
                                     With Amazing Service and Free Same Day Medication Delivery
                                 </p>
                                 <div class="mobilevideo">
+                                    <div class="relative-pos">
                                     <video title="nowrx pharmacy delivery website video" preload="none" class="lvimage lozad" id="mobilelvc" poster="<?php echo get_template_directory_uri(); ?>/images/best-startup-to-invest-2021-nowrx-technology.webp">
                                         <source type="video/mp4" data-src="<?php echo get_template_directory_uri(); ?>/images/NowRx Pharmacy The Way It Should Be (Series C Investor Video).mp4" type="video/mp4">
                                         Sorry, your browser doesn't support embedded videos.
@@ -182,6 +293,21 @@
                                                 </g>
                                             </g>
                                         </svg>
+                                    </div>
+                                    </div>
+                                    <div class="points">
+                                        <div class="point">
+                                            <img class="" src="<?php echo get_template_directory_uri(); ?>/images/rx.png" alt="toe" width="400px" height="200px">
+                                            <div class="text">Licensed Pharmacy</div>
+                                        </div>
+                                        <div class="point">
+                                            <img class="" src="<?php echo get_template_directory_uri(); ?>/images/tool.png" alt="toe" width="400px" height="200px">
+                                            <div class="text">U.S. Licensed Doctors</div>
+                                        </div>
+                                        <div class="point">
+                                            <img class="" src="<?php echo get_template_directory_uri(); ?>/images/fda-c.png" alt="toe" width="400px" height="200px">
+                                            <div class="text">FDA Approved Meds</div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="infk">
@@ -236,13 +362,35 @@
                                     <img src="<?php echo get_template_directory_uri(); ?>/images/Pharmacy-delivery-employee-from-nowrx-smiling.webp" class="pic limg " height="900px" width="1600px" alt="Pharmacy delivery employee from nowrx smiling">
                                 </picture>
                             </figure>
+
+
+                            <div class="points">
+                                        <div class="point">
+                                            <img class="" src="<?php echo get_template_directory_uri(); ?>/images/rx.png" alt="toe" width="400px" height="200px">
+                                            <div class="text">Licensed Pharmacy</div>
+                                        </div>
+                                        <div class="point">
+                                            <img class="" src="<?php echo get_template_directory_uri(); ?>/images/tool.png" alt="toe" width="400px" height="200px">
+                                            <div class="text">U.S. Licensed Doctors</div>
+                                        </div>
+                                        <div class="point">
+                                            <img class="" src="<?php echo get_template_directory_uri(); ?>/images/fda-c.png" alt="toe" width="400px" height="200px">
+                                            <div class="text">FDA Approved Meds</div>
+                                        </div>
+                                    </div>
                         </div>
                     </div>
                 </div>
-                <div class="stl">
-                    *NowRx has already raised over <strong>$15M</strong> from more than <strong>4,900</strong> investors in this round!
-                </div>
+
             </section>
+
+
+
+
+
+
+
+
 
 
             <section class="infoslider">
@@ -312,14 +460,14 @@
                                    <!-- item -->
                                    <div class="item">
                                 <div class="numb">
-                                $26M
+                                $32.3M
 
                                 </div>
                                 <div class="mnk">
-                                Annualized
+                                Annualized Revenue
                                 </div>
                                 <div class="info">
-                                Based on December 2021 revenue of $2.19M
+                                Based on March 2022 revenue of $2.69M
 
                                 </div>
                             </div>
@@ -332,7 +480,7 @@
                                 YoY Growth
                                 </div>
                                 <div class="info">
-                                  In 2020 and on pace to surpass $22M in 2021.
+                                In revenue during 2020. *2021 results coming in April.
                                 </div>
                             </div>
                               <!-- item -->
@@ -352,14 +500,14 @@
                             <!-- item -->
                             <div class="item">
                                 <div class="numb">
-                                $15M
+                                $<?php echo number_format_short(abs($flo)); ?>
 
                                 </div>
                                 <div class="mnk">
                                 Shares Sold
                                 </div>
                                 <div class="info">
-                                To over 4,900 investors in the current round.
+                                To over <?php echo $itemUsers; ?> investors in the current round.
 
                                 </div>
                             </div>
@@ -1341,10 +1489,90 @@
             </section>
 
 
+            <footer class="main-footer">
+  <div class="container fluid">
+    <div class="blocks">
+      <div class="block left">
+        <span class="line">Get prescriptions delivered right to your door in hours for free.</span>
+        <div class="social">
+          <div class="text">Follow Us</div>
+          <div class="social-icons">
+            <div class="icon">
+              <a href="https://www.instagram.com/nowrxpharmacy/?hl=en" target="_blank">
+                <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-instagram fa-w-14 fa-7x">
+                  <path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" class=""></path>
+                </svg>
+              </a>
+            </div>
+            <div class="icon">
+              <a href="https://twitter.com/NowRx" target="_blank">
+                <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-twitter fa-w-16 fa-7x">
+                  <path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" class=""></path>
+                </svg>
+              </a>
+            </div>
+            <div class="icon">
+              <a href="https://www.youtube.com/channel/UCk50FgUjUrddyWKG3ajxdGA" target="_blank">
+                <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="youtube" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-youtube fa-w-18 fa-7x">
+                  <path fill="currentColor" d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z" class=""></path>
+                </svg>
+              </a>
+            </div>
+            <div class="icon">
+              <a href="https://www.facebook.com/NowRx/" target="_blank">
+                <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="svg-inline--fa fa-facebook-f fa-w-10 fa-7x">
+                  <path fill="currentColor" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" class=""></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="block right">
+        <div class="u-list">
+          <ul class="menu-items">
+            <li><a href="<?= get_site_url(); ?>/nowprep/">NowPrEP</a></li>
+            <li><a href="<?= get_site_url(); ?>/for-doctors/">For Doctors</a></li>
+            <li><a href="<?= get_site_url(); ?>/contact-us/">Contact Us</a></li>
+            <li><a href="<?= get_site_url(); ?>/locations/">Locations</a></li>
+          </ul>
+          <ul class="menu-items">
+            <li><a href="<?= get_site_url(); ?>/about-us/">About Us</a></li>
+            <li> <a href="<?= get_site_url(); ?>/privacy-policy/">Privacy Policy</a></li>
+            <li><a href="<?= get_site_url(); ?>/hipaa-privacy/">HIPAA Privacy</a></li>
+            <li><a href="<?= get_site_url(); ?>/telehealth/terms-and-conditions/">Telehealth T&C</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container fluid">
+    <div class="footer-rect">
+      <div class="copright">
+        &copy; NowRx <?= date('Y'); ?> - All Rights Reserved
+      </div>
+      <div class="app">
+        <div class="icon">
+          <a target="_blank" href="https://apps.apple.com/us/app/nowrx-pharmacy-on-demand/id1066924988">
+            <img data-src="<?php echo get_template_directory_uri(); ?>/images/Download_on_the_App_Store_Badge.svg" height="42" width="140" alt="apple play" class="lozad">
+          </a>
+        </div>
+        <div class="icon">
+          <a target="_blank" href="https://play.google.com/store/apps/details?id=com.nowrx.client">
+            <img data-src="<?php echo get_template_directory_uri(); ?>/images/Google_Play_Store_badge_EN.svg" height="42" width="140" alt="google play" class="lozad">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
 
             <footer class="footer wf-section">
                 <div class="footer-links">
-                    <div class="container-10 footer-container w-container"><img
+                    <!-- <div class="container-10 footer-container w-container"><img
                             data-src="https://assets.website-files.com/5d5d56675dd8937a8bcc193c/5d690b818dfed925245b6de0_NowRx-Logo-900px-white.png"
                             height="200px" width="600"
                             alt="" class="logo-2 lozad">
@@ -1353,7 +1581,7 @@
                             <a href="#how-it-works" class="footer-nav-link">HOW IT WORKS</a>
                             <a href="#our-team" class="footer-nav-link">OUR TEAM</a>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="footer-top">
                         <div class="w-container">
                             <div class="footer-bottom-text"><strong class="bold-text">NowRx is offering securities

@@ -1,40 +1,94 @@
 <?php get_header(); ?>
 
-
 <section class="landing-block nowprep-landingblock">
     <div class="container fluid">
         <div class="content">
             <div class="text-content prep-text">
-            <span class="sub-headline">An Easier Way to PrEP for HIV</span>
-            <h1 class="title">
-            <strong>HIV PrEP</strong> is Easy With NowPrEP
-            </h1>
-            <p>
-            NowPrEP prescribes <strong>HIV PrEP medication</strong> & delivers it to you. 99% of patients pay $0 - Tap below to get started!
-            </p>
+                <span class="sub-headline">An Easier Way to PrEP for HIV</span>
+                <h1 class="title"><strong>HIV PrEP</strong> is Easy With NowPrEP</h1>
+                <p>Get <strong>HIV PrEP medication</strong> prescribed and delivered right to your front door - enter your email below to get started.</p>
             </div>
-            <div class="btn-container">
-            <a class="rx-btn " id="nowprep-gt-gt" data-toggle="waitlist" aria-controls="waitlist" aria-haspopup="true" id="getstarted-gt" tabindex="0"> <?php include('reg-arrow.php'); ?> Get Started</a>
-                    <a class="rx-btn rx-green mrb" href="#howitwork"> <?php include('grn-arrow.php'); ?> How It
-                        Works</a>
+            <div class="form-nowprep">
+                <!--[if lte IE 8]>
+                    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+                <![endif]-->
+
+                <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js" defer></script>
+
+                <div id="prep-form"></div>
+
+                <script defer>
+
+                    var $document = document.querySelector("body");
+
+                    document.addEventListener('load', function(evt) {
+
+                        var $script = document.querySelector("script[src='//js.hsforms.net/forms/v2.js']");
+
+                        if (!evt.target.isEqualNode($script)) {
+                            return;
+                        }
+
+                        setTimeout(() => {
+                            hbspt.forms.create({
+                                region: "na1",
+                                portalId: "5952677",
+                                formId: "ded00596-ad7a-46b6-9069-bb3552b72735",
+                                css: '',
+                                cssClass:'dynamic-prep-form',
+                                target: "#prep-form",
+                                translations: {
+                                    en: {
+                                        submitText: "Get Started",
+                                    }
+                                }
+                            })
+                        }, 100);
+
+                        setTimeout(() => {
+                            let formDisplayed = document.getElementsByClassName('dynamic-prep-form');
+
+                            if (formDisplayed.length > 0) {
+                                console.log('exists',formDisplayed.length);
+
+                            } else {
+
+                                hbspt.forms.create({
+                                    region: "na1",
+                                    portalId: "5952677",
+                                    formId: "ded00596-ad7a-46b6-9069-bb3552b72735",
+                                    css: '',
+                                    target: "#prep-form",
+                                    translations: {
+                                    en: {
+                                        submitText: "Get Started",
+                                    }
+                                }
+                                })
+                            }
+
+                        }, 1400);
+
+                    }, true);
+
+
+                </script>
             </div>
         </div>
         <div class="media">
             <figure class="image">
-                <picture class="lozad" data-toggle-class="active">
-                    <source media="(max-width: 992px)" srcset="<?php echo get_template_directory_uri(); ?>/images/hiv-prep-couple-using-descovy.webp">
+                <picture>
+                    <source media="(max-width: 992px)" srcset="<?php echo get_template_directory_uri(); ?>/images/hiv-prep-couple-using-descovy-mobile.webp">
                     <source media="(min-width: 993px)" srcset="<?php echo get_template_directory_uri(); ?>/images/hiv-prep-couple-using-descovy.webp">
-                    <img data-src="<?php echo get_template_directory_uri(); ?>/images/hiv-prep-couple-using-descovy.webp" class="orbit-image lozad" height="500px" width="650px" alt="hiv prep couple using descovy">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/hiv-prep-couple-using-descovy.webp" class="orbit-image" height="500px" width="650px" alt="hiv prep couple using descovy">
                 </picture>
             </figure>
         </div>
     </div>
 </section>
 
-
 <!-- companies -->
 <?php include('components/component-logo-slider.php'); ?>
-
 
 <section class="columns-work columns-prep" id="howitwork">
     <div class="container">
@@ -270,7 +324,7 @@
 
                                             </p>
                                             <p>
-                                                Receive a free doctor consultation, get your PrEP prescription, and have
+                                                Receive a doctor consultation, get your PrEP prescription, and have
                                                 medication delivered right to your door for no additional charge.
 
                                             </p>
@@ -416,11 +470,9 @@
                                             NowPrEP consultation, PrEP medication, and courier delivery are completely free for 99% of patients.
                                             </p>
                                             <p>
-                                            You will also be required to provide a recent negative HIV test (last 3 months), which most insurance plans will cover free of charge.
+                                            You will also be required to provide a recent negative PrEP test (last 3 months), which most insurance plans will cover.
                                             </p>
-                                            <p>
-                                            However, if you choose to request a home test kit from NowPrEP it will cost $75.                                            </p>
-                                            </p>
+
 
                                         </span>
                                     </div>
@@ -659,10 +711,7 @@
                                                 Signup and Online Health Questionnaire: 3 min
 
                                             </p>
-                                            <p>
-                                                Test Kit Delivery and Lab Results: 3-10 business days
 
-                                            </p>
                                             <p>
                                                 Prescription and Medication Delivery: 2-4 hours
 
@@ -1069,7 +1118,7 @@
 
                                             </p>
 <p>
-Next, NowPrEP will send you a home test kit, or if you prefer order a lab at a testing facility near you.
+Next, NowPrEP will order a lab at a testing facility near you.
 </p>
                                             <p>
                                                 Finally, if a NowPrEP physician decides a prescription is right for you,

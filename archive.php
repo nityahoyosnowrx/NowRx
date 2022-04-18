@@ -22,15 +22,9 @@
 
     </div>
     <div class="grid-x grid-margin-x data-equalizer data-equalize-on='medium' id='test-eq'">
-      <!-- &tag_id=29 -->
-      <!-- ^ Featured tag id -->
-      <!-- &cat=2 -->
 
-      <!-- ^ "News" category -->
-      <!-- &cat=28 -->
-      <!-- ^ "Blog" category -->
-      <?php if ( have_posts() ) : while ( have_posts() ) : the_post();
-
+      <?php
+      if ( have_posts() ) : while ( have_posts() ) : the_post();
       $cat_id = get_query_var('cat');
       $category = get_category( $cat_id );
       // var_dump($category->slug);

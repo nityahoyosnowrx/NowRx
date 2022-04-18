@@ -301,6 +301,15 @@ li.MostPopular-addIndex {
 	margin: 0 0 10px;
 	transition: box-shadow 0.15s ease-in-out, transform 0.15s ease-in-out, -webkit-transform 0.15s ease-in-out;
 
+	background-color: #fff;
+    padding: 0px;
+    margin: 0 0 10px;
+    height: auto;
+    transition: box-shadow .15s ease-in-out,transform .15s ease-in-out,-webkit-transform .15s ease-in-out;
+    border: 0 solid #eee;
+    box-shadow: 0 0 10px 8px #f7f7f7, -5px -5px 10px #fff;
+    border-radius: 10px;
+
 	@media screen and (max-width: 992px) {
 		max-width: 50%;
 		padding: 0 20px 20px;
@@ -342,7 +351,7 @@ li.MostPopular-addIndex {
 		font-size: 0.75rem;
 		font-weight: 500;
 		color: #33475b;
-		font-weight: 600;
+		font-weight: 700;
 	}
 }
 
@@ -389,8 +398,9 @@ li.MostPopular-addIndex {
 		}
 	}
 	a.MostPopular-link.title {
-		padding: 1rem 1rem 0;
+		padding: 10px 10px 0;
 		margin: 0;
+		font-weight: 700;
 	}
 	a.MostPopular-link {
 		span.posthumb {

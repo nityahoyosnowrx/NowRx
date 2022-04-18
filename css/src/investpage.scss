@@ -144,16 +144,19 @@ header.main.investorhead {
 		margin: -30px 0 0;
 		top: 0;
 		padding: 30px 15px;
-		border-bottom-left-radius: 4px;
-		border-bottom-right-radius: 4px;
 		background-color: #fff;
 		box-shadow: 0 6px 40px 9px Rgb(69 139 201 / 12%);
+		border-radius: 8px;
 		@media screen and (max-width: 1280px) {
-			margin: -10px 0 0;
+			margin: -34px 0 0;
+			margin: -34px 0 0;
+			top: 0;
+			padding: 27px 10px;
+			padding: 21px 10px;
 		}
 		@media screen and (max-width: 700px) {
 			width: 29vw;
-			margin: -20px 0 0;
+			margin: -34px 0 0;
 			top: 0;
 			padding: 27px 10px;
 		}
@@ -253,6 +256,41 @@ body#investor {
 	font-family: Nunito, sans-serif;
 	main {
 		margin-bottom: 0;
+		overflow: hidden;
+		margin: 90px 0 0;
+		@media screen and (max-width: 1280px) {
+			margin-top: 40px;
+		}
+	}
+	.stl {
+
+
+		width: 100%;
+		font-weight: 200;
+		font-size: 18px;
+		line-height: 23px;
+		max-width: 100%;
+		margin: 100px 0 -100px;
+		background: #d54439;
+		background: linear-gradient(147deg, #038ed8, #d54439 50%, #d54439);
+		padding: 10px;
+		color: #fff;
+		text-align: center;
+		top: 0;
+		position: absolute;
+
+		@media screen and (max-width: 1310px) {
+			// margin: 75px 5vw -50px;
+			margin: 115px 6vw -70px;
+		}
+
+		@media screen and (max-width: 1280px) {
+			text-align: center;
+			margin: 86px auto 0px;
+			font-size: 1rem;
+			line-height: 1;
+			padding: 12px 10px 10px;
+		}
 	}
 	section.wideform {
 		background: linear-gradient(262deg, #7a9bc9 0%, #d54439 30%, #d54439 100%);
@@ -348,6 +386,7 @@ body#investor {
 					padding: 0;
 					box-shadow: none;
 					padding: 0 20px;
+
 					@media screen and (max-width: 1280px) {
 						background: #fff;
 						padding: 10px 10px;
@@ -405,9 +444,9 @@ body#investor {
 	section.hero-home.videodev.invested {
 		padding: 50px 0 125px;
 		margin: 130px 0 0;
-		overflow: hidden;
+		overflow: visible;
 		@media screen and (max-width: 1280px) {
-			margin-top: 50px;
+			margin-top: 70px;
 			padding: 20px 0 125px;
 		}
 		.container {
@@ -416,6 +455,31 @@ body#investor {
 		@media screen and (max-width: 1280px) {
 			.column-half.content-col {
 				margin: 0;
+			}
+		}
+
+		.webinar-callout {
+			margin: 0px 0 50px;
+			@media screen and (max-width: 1280px) {
+				margin: 0px 0 30px;
+			}
+			a.callount-link {
+				display: inline-block;
+				padding: 10px 30px;
+				border-radius: 30px;
+				background: #0088ce;
+				line-height: 1.4;
+				color: #fff;
+				font-weight: bold;
+				transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+				@media screen and (max-width: 700px) {
+					padding: 10px 20px;
+				}
+				&:hover {
+					background: transparent;
+					color: #038ed8;
+					box-shadow: 0 0 0 1px #038ed8, 0 0px 5px 3px #00000029;
+				}
 			}
 		}
 		.content {
@@ -477,6 +541,7 @@ body#investor {
 		.content .column-half.image-col {
 			max-width: 50%;
 			width: 750px;
+			flex-direction: column;
 		}
 		video {
 			object-fit: contain;
@@ -497,6 +562,85 @@ body#investor {
 				min-height: 0;
 			}
 		}
+		.relative-pos {
+			position: relative;
+		}
+		.points {
+			display: flex;
+		    margin: 0vw 0 0;
+    position: absolute;
+    top: calc(100% + 30px);
+			@media screen and (max-width: 1280px) {
+				margin: 30px 0 0;
+				position: relative;
+				top: 0;
+			}
+			@media screen and (max-width: 700px) {
+				margin: 20px 0 10px;
+				align-items: center;
+    justify-content: center;
+			}
+		}
+
+		.points .point {
+			display: flex;
+			align-items: center;
+			margin-right: 20px;
+			position: relative;
+			padding-right: 20px;
+			@media screen and (max-width: 700px) {
+				flex-direction: column;
+				margin-right: 5px;
+				padding-right: 5px;
+
+			}
+		}
+
+		.points .point img {
+			max-width: 40px;
+		}
+
+		.points .point:after {
+			content: close-quote;
+			position: absolute;
+			top: 0;
+			right: 0;
+			height: 20px;
+			width: 1px;
+			background: #b3b2b2;
+			transform: translate(0px, 50%);
+			border-radius: 5px;
+		}
+
+		.points .point .text {
+			font-size: 14px;
+			font-weight: bold;
+			color: #5f5f5f;
+			line-height: 1.2;
+			@media screen and (min-width: 700px) {
+				padding-left: 8px;
+			}
+			@media screen and (max-width: 700px) {
+				font-size: 14px;
+    font-weight: 700;
+    color: #5f5f5f;
+    line-height: 1.2;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+			}
+		}
+
+		.points .point:nth-child(3) {
+			padding: 0;
+			margin: 0;
+		}
+
+		.points .point:nth-child(3):after {
+			display: none;
+		}
+
 		.videomain {
 			@media screen and (max-width: 1280px) {
 				display: none;
@@ -552,6 +696,7 @@ body#investor {
 				line-height: 1.2;
 				letter-spacing: -0.025em;
 				color: #192d3e;
+				max-width: 44vw;
 				@media screen and (max-width: 1280px) {
 					// font-family: Verdana;
 					font-style: normal;
@@ -560,6 +705,9 @@ body#investor {
 					line-height: 1.2;
 					letter-spacing: -0.025em;
 					color: #192d3e;
+					max-width: 450px;
+					margin-left: auto;
+					margin-right: auto;
 				}
 				@media screen and (max-width: 700px) {
 					// font-family: Verdana;
@@ -571,9 +719,14 @@ body#investor {
 					color: #192d3e;
 					padding: 0;
 					margin: 0 0 5px;
+					margin-left: auto;
+					margin-right: auto;
 				}
 				@media screen and (max-width: 365px) {
 					font-size: 1.7rem;
+				}
+				.kd{
+					display: block;
 				}
 			}
 			p {
@@ -587,29 +740,7 @@ body#investor {
 				}
 			}
 		}
-		.stl {
-			margin: 75px auto -50px;
-			text-align: left;
-			width: 100%;
-			padding: 0 20px;
-			font-weight: 200;
-			font-size: 18px;
-			line-height: 23px;
 
-			max-width: 1600px;
-			max-width: 100%;
-			margin: 75px 9vw -50px;
-			@media screen and (max-width: 1310px) {
-				margin: 75px 5vw -50px;
-			}
-
-			@media screen and (max-width: 1280px) {
-				padding: 0 20px;
-				text-align: center;
-				margin: 45px auto -100px;
-				font-size: 0.8rem;
-			}
-		}
 		.column-half.content-col {
 			background: transparent;
 			box-shadow: none;
@@ -633,6 +764,10 @@ body#investor {
 			.infk {
 				max-width: 600px;
 				max-width: 36vw;
+				max-width: 600px;
+				@media screen and (max-width: 1600px) {
+					max-width: 500px;
+				}
 				@media screen and (max-width: 1310px) {
 					max-width: 40vw;
 				}
@@ -692,8 +827,7 @@ body#investor {
 				margin-right: auto;
 				padding: 0;
 				box-shadow: none;
-				padding: 0 20px;
-				// font-family: Verdana;
+				padding: 0 0 0 20px;
 				font-style: normal;
 				font-weight: normal;
 				font-size: 16px;
@@ -3114,12 +3248,12 @@ body#investor {
 	}
 
 	.footer-links {
-		margin-top: 50px;
+		margin-top: 0;
 		padding-top: 32px;
 		padding-bottom: 0px;
 		border-top: 1px none #131313;
 		border-bottom: 0px none hsla(0, 0%, 100%, 0.04);
-		background-color: #111;
+		background-color: #132c3e;
 		box-shadow: none;
 		text-align: center;
 	}
@@ -3166,7 +3300,7 @@ body#investor {
 		margin-bottom: 0px;
 		padding-top: 20px;
 		padding-bottom: 20px;
-		background-color: #111;
+		background-color: #132c3e;
 		color: #269f6c;
 	}
 
@@ -4624,7 +4758,6 @@ body#investor {
 			flex-direction: column;
 			color: #eee;
 
-
 			@media screen and (min-width: 1280px) {
 				&:nth-child(8),
 				&:nth-child(4) {
@@ -5620,7 +5753,8 @@ body#investor {
 			@media screen and (min-width: 1280px) {
 				min-height: 410px;
 			}
-		}.text-content {
+		}
+		.text-content {
 			@media screen and (max-width: 1280px) {
 				text-align: center;
 			}

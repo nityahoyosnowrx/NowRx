@@ -63,6 +63,103 @@
 
 <?php include('components/component-how-it-works.php'); ?>
 
+
+<section class="firt-step-block">
+    <div class="container">
+        <header class="main-header">
+            <h2 class="title">
+                <span class="block">
+                How To Send a
+                </span>
+                 Prescription to NowRx
+            </h2>
+            <p>It’s easy to setup a new prescription or transfer/refill your current prescription with NowRx.</p>
+        </header>
+        <div class="setup-slide">
+            <div class="header-block">
+                <div class="click current" data-tab="0">
+                    <span class="block">Send New</span> Prescription
+                </div>
+                <div class="click" data-tab="1">
+                    <span class="block">Transfer or Refill a</span> Prescription
+                </div>
+            </div>
+            <div class="sliding-items">
+                <div class="slider-main">
+                    <div class="slide">
+                    <div class="float-icon-ri">
+                            <img data-src="<?php echo get_template_directory_uri(); ?>/images/rx-icons/ICO-New-Rx.svg" class="lozad" alt="ICO New Rx">
+                        </div>
+                        <span class="inline-title">Initiated By</span>
+                        <div class="context-de">
+                        <span class="icon">
+                                <img data-src="<?php echo get_template_directory_uri(); ?>/images/rx-icons/ICO-Doctor.svg" class="pic limg lozad" height="26" width="26" alt="ICO Doctor">
+                            </span>
+                            Doctor
+                        </div>
+                        <span class="inline-title">HOW YOU CAN SEND</span>
+                        <div class="context">
+                            <span class="line starred">
+                                <div class="star-float">
+                                    <img data-src="<?php echo get_template_directory_uri(); ?>/images/rx-icons/ICO-Star.svg" alt="ICO Star" class="lozad">
+                                </div>
+                                <span class="icon">
+                                    <img data-src="<?php echo get_template_directory_uri(); ?>/images/rx-icons/ICO-Web.svg" class="pic limg lozad" height="26" width="26" alt="ICO Web">
+                                </span>
+                                <span class="txt"><strong>ePrescribe</strong> - Tell your doctor to electronically prescribe to NowRx.</span>
+                            </span>
+                            <span class="line">
+                                <span class="icon">
+                                    <img data-src="<?php echo get_template_directory_uri(); ?>/images/rx-icons/ICO-Fax.svg" class="pic limg lozad" height="26" width="26" alt="ICO Fax">
+                                </span>
+                                <span class="txt"><strong>Fax</strong> - They can also fax the prescription to the closest <a href="<?php echo get_site_url(); ?>/locations" class="link">NowRx location</a>.</span>
+                            </span>
+
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="float-icon-ri">
+                            <img data-src="<?php echo get_template_directory_uri(); ?>/images/rx-icons/ICO-Transfer-Rx.svg" class="lozad" alt="ICO Transfer Rx">
+                        </div>
+                        <span class="inline-title">Initiated By</span>
+                        <div class="context-de">
+                            <span class="icon">
+                                <img data-src="<?php echo get_template_directory_uri(); ?>/images/rx-icons/ICO-Doctor.svg" class="pic limg lozad" height="26" width="26" alt="ICO Doctor">
+                            </span>
+                            You
+                        </div>
+                        <span class="inline-title">HOW YOU CAN SEND</span>
+                        <div class="context">
+                            <span class="line starred">
+                            <div class="star-float">
+                            <img data-src="<?php echo get_template_directory_uri(); ?>/images/rx-icons/ICO-Star.svg" class="lozad" alt="ico star">
+                                </div>
+                                <span class="icon">
+                                    <img data-src="<?php echo get_template_directory_uri(); ?>/images/rx-icons/ICO-Web.svg" class="pic lozad limg " height="26" width="26" alt="ICO Web">
+                                </span>
+                                <span class="txt"><strong>Online Form</strong> - <a href="<?php echo get_site_url(); ?>/refill-and-transfer-prescriptions/" class="link">Use our online form</a> to request a prescription delivery.</span>
+                            </span>
+                            <span class="line">
+
+                                <span class="icon">
+                                    <img data-src="<?php echo get_template_directory_uri(); ?>/images/rx-icons/ICO-Call-Text.svg" class="pic lozad limg " height="26" width="26" alt="ICO Call Text">
+                                </span>
+                                <span class="txt"><strong>Call or Text</strong> - You can also call or text your local NowRx to get started.</span>
+                            </span>
+                            <span class="line">
+                                <span class="icon">
+                                    <img data-src="<?php echo get_template_directory_uri(); ?>/images/rx-icons/ICO-App.svg" class="pic lozad limg " height="26" width="26" alt="ICO App">
+                                </span>
+                                <span class="txt"><strong>Mobile App</strong> - Lastly, you can download the NowRx Pharmacy app.</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <?php include('components/frontpage-reviews.php'); ?>
 
 <?php include('components/section-faq-flip.php'); ?>

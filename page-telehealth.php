@@ -264,28 +264,6 @@ formId: "33aa45eb-499d-4a4b-b55f-f5a7c7bd5359"
     </div>
 </section>
 
-<section class="visit-faq nwprepviti">
-    <div class="container">
-        <div class="content">
-            <div class="rvl">
-                <span class="sub-headline">
-                    Telehealth the way it should be
-                </span>
-            </div>
-            <div class="rvl">
-                <h2 class="sec-title">
-                    Join NowRx Telehealth
-                </h2>
 
-            </div>
-            <div class="rvl">
-                <div class="btn-container">
-                    <a class="rx-btn rx-dg" data-toggle="telehealth" aria-controls="telehealth" aria-haspopup="true" tabindex="0">Get Started</a>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
 
 <?php get_footer(); ?>

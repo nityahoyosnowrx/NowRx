@@ -77,12 +77,12 @@ if (is_single() && 'post' == get_post_type()) {
       </div>
       <div class="app">
         <div class="icon">
-          <a target="_blank" href="https://apps.apple.com/us/app/nowrx-telehealth/id1573059382">
+          <a target="_blank" href="https://apps.apple.com/us/app/nowrx-pharmacy-on-demand/id1066924988">
             <img data-src="<?php echo get_template_directory_uri(); ?>/images/Download_on_the_App_Store_Badge.svg" height="42" width="140" alt="apple play" class="lozad">
           </a>
         </div>
         <div class="icon">
-          <a target="_blank" href="https://play.google.com/store/apps/details?id=com.nowrx.telehealth">
+          <a target="_blank" href="https://play.google.com/store/apps/details?id=com.nowrx.client">
             <img data-src="<?php echo get_template_directory_uri(); ?>/images/Google_Play_Store_badge_EN.svg" height="42" width="140" alt="google play" class="lozad">
           </a>
         </div>
@@ -92,6 +92,11 @@ if (is_single() && 'post' == get_post_type()) {
 </footer>
 
 <?php wp_footer(); ?>
+
+<?php if (is_page('refill-and-transfer-prescriptions') || is_page('telehealth') || is_page('contact-us') || is_singular('post')) : ?>
+<?php else : ?>
+  <script defer src="<?php echo get_template_directory_uri(); ?>/public/frontend-bundle.js"></script>
+<?php endif; ?>
 
 <!-- </div> -->
 
@@ -134,10 +139,7 @@ if (is_front_page()) : ?>
   </script>
 <?php endif; ?>
 
-<?php if (is_page('refill-and-transfer-prescriptions') || is_page('telehealth') || is_page('contact-us') || is_singular('post')) : ?>
-<?php else : ?>
-  <script defer src="<?php echo get_template_directory_uri(); ?>/public/frontend-bundle.js"></script>
-<?php endif; ?>
+
 
 <?php if (!is_page('nowprep')) : ?>
   <?php if (is_page('invest')) : ?>
@@ -181,6 +183,7 @@ if (is_front_page()) : ?>
 
 
 <?php if (is_singular( 'post' ) || is_home()) : ?>
+
   <div class="pre-modal-window">
     <div class="pre-modal">
       <button class="pre-modal-btn-close bg-transparent" data-var="closeBtn">
@@ -200,12 +203,24 @@ if (is_front_page()) : ?>
                </div>
             </header>
 
-            <!--[if lte IE 8]>
-            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
-            <![endif]-->
-            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js" defer></script>
-            <div id="popup-foot">
 
+            <!-- <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js" defer async></script> -->
+
+            <script defer>
+setTimeout(function() {
+    // Get the head tag
+    var head_ID = document.getElementsByTagName("head")[0];
+    // Create script element
+    var script_element = document.createElement('script');
+    // Set the script type to JavaScript
+    script_element.type = 'text/javascript';
+    // External JS file
+    script_element.src = '//js.hsforms.net/forms/v2.js';
+    head_ID.appendChild(script_element);
+}, 4000);
+            </script>
+
+            <div id="popup-foot">
             </div>
             <script defer>
 
@@ -268,7 +283,24 @@ get_template_part('analytics-head'); ?>
 
 <?php
 // Inlined Google Font loading
-get_template_part('components/font-load'); ?>
+// get_template_part('components/font-load');
+?>
+
+<!-- <link rel="stylesheet" href='<?php echo get_template_directory_uri(); ?>/public/frontend.css'> -->
+
+<?php if(is_singular('post')): ?>
+<script defer>
+setTimeout(() => {
+  var giftofspeed = document.createElement('link');
+giftofspeed.rel = 'stylesheet';
+giftofspeed.href = '<?php echo get_template_directory_uri(); ?>/public/frontend.css';
+giftofspeed.type = 'text/css';
+var godefer = document.getElementsByTagName('link')[0];
+godefer.parentNode.insertBefore(giftofspeed, godefer);
+}, 9000);
+</script>
+
+<?php endif; ?>
 
 </body>
 

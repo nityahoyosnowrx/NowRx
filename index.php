@@ -11,13 +11,13 @@ $currentPage = $post->ID;
 
             <!-- main items -->
             <div class="mainblock ">
-                <?php if(!is_paged()){ ?>
-                <header class="page ">
-                    <h1>
-                        Health Tips, Medical Information, & Pharmacy Resources For You
-                    </h1>
-                </header>
-                <?php } ?>
+                    <?php if(!is_paged()){ ?>
+                    <header class="page ">
+                        <h1>
+                            Health Tips, Medical Information, & Pharmacy Resources For You
+                        </h1>
+                    </header>
+                    <?php } ?>
                 <?php
 
                     $latest_cpt = get_posts("post_type=post&numberposts=1&tag=featured");
@@ -119,7 +119,7 @@ $currentPage = $post->ID;
            <!-- sideitems -->
                 <div class="sideblocks">
                     <div class="top">
-                    <h3 class="title">Most Popular</h3>
+                    <h3 class="title"> Trending Now</h3>
                         <?php
                         $queryskde = new WP_Query(array(
                             'post_status' => 'publish',
@@ -176,50 +176,15 @@ $currentPage = $post->ID;
                         <header class="title">
                             <h2 class="title">Subscribe To Our Newsletter</h2>
                             <p>
-                            NowRx is a tech-powered pharmacy that provides customers with 5-star service and free same day prescription delivery. Learn more at <a href="https://nowrx.com/" target="_blank">https://nowrx.com/</a>.
+                            Get blogs, tips, and discounts related to pharmacy delivered right to your inbox each month.
                             </p>
+                            <div class="btnc">
+                                <a href="<?php echo get_site_url(); ?>/blog/subscribe/" class="button secondary rounded shadow rx-btn">
+                                Learn More
+                                </a>
+                            </div>
                         </header>
 
-                    <span id="index-form"></span>
-<script defer>
-
-var $document = document.querySelector("body");
-
-document.addEventListener('load', function(evt) {
-    var $script = document.querySelector("script[src='//js.hsforms.net/forms/v2.js']");
-
-    if (!evt.target.isEqualNode($script)) {
-        return;
-    }
-
-    // Callback code
-    setTimeout(() => {
-    //   console.log('loaded')
-      hbspt.forms.create({
-            region: "na1",
-            portalId: "5952677",
-            formId: "743c3ddd-5ba0-4dd9-9c25-dd8c8c328c80",
-            formInstanceId: "2fef",
-            target: "#index-form"
-            });
-    }, 1000);
-
-    // your callback's code
-    // setTimeout(() => {
-    //   console.log('loaded')
-    //   hbspt.forms.create({
-    //         region: "na1",
-    //         portalId: "5952677",
-    //         formId: "743c3ddd-5ba0-4dd9-9c25-dd8c8c328c80",
-    //         formInstanceId: "2fef",
-    //         target: "#index-form"
-    //         });
-    // }, 3500);
-
-}, true);
-
-
-</script>
 
                     </div>
                 </div>
@@ -269,50 +234,16 @@ document.addEventListener('load', function(evt) {
                             <header class="title">
                                 <h2 class="title">Subscribe To Our Newsletter</h2>
                                 <p>
-                                NowRx is a tech-powered pharmacy that provides customers with 5-star service and free same day prescription delivery. Learn more at <a href="https://nowrx.com/" target="_blank">https://nowrx.com/</a>.
+                                Get blogs, tips, and discounts related to pharmacy delivered right to your inbox each month.
                                 </p>
+                                <div class="btnc">
+                                <a href="<?php echo get_site_url(); ?>/blog/subscribe/" class="button secondary rounded shadow rx-btn">
+                                Learn More
+                                </a>
+                            </div>
                             </header>
 
-                                <span id="index-form-second"></span>
 
-                                <script defer>
-
-                                var $document = document.querySelector("body");
-
-                                document.addEventListener('load', function(evt) {
-                                    var $script = document.querySelector("script[src='//js.hsforms.net/forms/v2.js']");
-
-                                    if (!evt.target.isEqualNode($script)) {
-                                        return;
-                                    }
-
-                                    // Callback code
-                                    setTimeout(() => {
-                                    //   console.log('loaded')
-                                    hbspt.forms.create({
-                                            region: "na1",
-                                            portalId: "5952677",
-                                            formId: "743c3ddd-5ba0-4dd9-9c25-dd8c8c328c80",
-                                            formInstanceId: "2fef",
-                                            target: "#index-form-second"
-                                            });
-                                    }, 1000);
-
-                                    // your callback's code
-                                    // setTimeout(() => {
-                                    // hbspt.forms.create({
-                                    //         region: "na1",
-                                    //         portalId: "5952677",
-                                    //         formId: "743c3ddd-5ba0-4dd9-9c25-dd8c8c328c80",
-                                    //         formInstanceId: "2fef",
-                                    //         target: "#index-form-second"
-                                    //         });
-                                    // }, 3500);
-
-                                }, true);
-
-
-                                </script>
 
 
                         </div>

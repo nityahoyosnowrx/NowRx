@@ -637,3 +637,33 @@ $(".pre-modal-btn-close").click(function(e) {
   $('.pre-modal-window').removeClass('is-active')
 });
 });
+
+
+// How To Send a Prescription to NowRx
+
+$(document).on('click','.header-block .click', function(e) {
+  e.preventDefault();
+
+
+  $('.header-block .click').removeClass('current')
+  $(this).addClass("current")
+
+  let toggleId = $(this).data('tab');
+  console.log(toggleId)
+switch (toggleId) {
+  case 0:
+    $('.sliding-items').removeClass('secondslide')
+    $('.sliding-items').addClass('firstslide')
+    break;
+  case 1:
+    $('.sliding-items').removeClass('firstslide')
+    $('.sliding-items').addClass('secondslide')
+    break;
+  default:
+    break;
+}
+
+
+
+
+});
