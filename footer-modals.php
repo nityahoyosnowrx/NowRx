@@ -1,9 +1,7 @@
-<?php if (is_page('nowprep')) : ?>
-    <!--[if lte IE 8]>
-        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
-    <![endif]-->
 
-    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js" defer></script>
+
+<?php if (is_page('nowprep')) : ?>
+
 <div class="reveal twentyone nowprep-modal" id="waitlist" data-reveal data-close-on-click="true" data-animation-in="slide-in-down" data-animation-out="slide-out-up">
     <div class="content">
         <h2 class="title">
@@ -54,6 +52,7 @@
                 }, true);
             </script>
 
+
         </div>
     </div>
     <button class="close-button text-center" data-close aria-label="Close reveal" type="button">
@@ -68,7 +67,7 @@
         <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
     <![endif]-->
 
-    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js" defer></script>
+    <!-- <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js" defer></script> -->
     <!-- faq -->
     <!-- nowprep -->
     <div class="reveal" id="submitaquestion" data-reveal data-close-on-click="true" data-animation-in="slide-in-down" data-animation-out="slide-out-up">
@@ -76,7 +75,7 @@
         <div class="subheading">
             <p class="center">Please enter your question below and a NowRx Pharmacy Team member will respond as soon as possible.</p>
         </div>
-        <div id="question-form-submit"></div>
+        <div id="question-form-submitdd"></div>
         <script defer>
             var $document = document.querySelector("body");
 
@@ -92,11 +91,10 @@
                     // console.log('loaded')
                     hbspt.forms.create({
                         region: "na1",
-
                         css: '',
                         portalId: "5952677",
                         formId: "aa3d3838-6464-4e9f-911f-d2096f43433c",
-                        target: "#question-form-submit",
+                        target: "#question-form-submitdd",
                     })
                 }, 3000);
 
@@ -105,11 +103,10 @@
                     // console.log('loaded')
                     hbspt.forms.create({
                         region: "na1",
-
                         css: '',
                         portalId: "5952677",
                         formId: "aa3d3838-6464-4e9f-911f-d2096f43433c",
-                        target: "#question-form-submit",
+                        target: "#question-form-submitdd",
 
                     })
                 }, 4000);
@@ -128,7 +125,7 @@
         <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
     <![endif]-->
 
-    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js" defer></script>
+    <!-- <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js" defer></script> -->
     <!-- nowprep -->
     <div class="reveal" id="telehealth" data-reveal data-close-on-click="true" data-animation-in="slide-in-down" data-animation-out="slide-out-up">
         <h3 class="text-center">Sign Up for NowRx Telehealth</h3>
@@ -185,7 +182,7 @@
         <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
     <![endif]-->
 
-    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js" defer></script>
+    <!-- <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js" defer></script> -->
     <!-- suggest a new location -->
     <div class="reveal" id="suggestalocation" data-reveal data-close-on-click="true" data-animation-in="slide-in-down" data-animation-out="slide-out-up">
         <h3 class="text-center">suggest a new location</h3>
@@ -246,7 +243,7 @@
         <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
     <![endif]-->
 
-    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js" defer></script>
+    <!-- <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js" defer></script> -->
     <!-- for-doctors -->
     <!-- archive locations -->
     <!-- contact-us -->
@@ -318,7 +315,7 @@ if ( is_page('for-doctors') ) :
         <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
     <![endif]-->
 
-    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js" defer></script>
+    <!-- <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js" defer></script> -->
     <!-- for-doctors -->
     <div class="reveal" id="for-doctors-learnmore-second" data-reveal data-close-on-click="true" data-animation-in="slide-in-down" data-animation-out="slide-out-up">
         <h3 class="text-center">NowRx Doctor Feedback Program</h3>
@@ -383,7 +380,7 @@ if (is_page('for-doctors')) :
         <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
     <![endif]-->
 
-    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js" defer></script>
+    <!-- <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js" defer></script> -->
     <!--for-doctors -->
     <div class="reveal" id="for-doctors" data-reveal data-close-on-click="true" data-animation-in="slide-in-down" data-animation-out="slide-out-up" style="padding: 40px;">
         <h3 class="text-center">Building A Better Pharmacy for<br>Our Doctors & Patients</h3>
@@ -508,7 +505,7 @@ if (is_page('cwecwec') ) :
         <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
     <![endif]-->
 
-    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js" defer></script>
+    <!-- <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js" defer></script> -->
 <!-- hubspot slow -->
 <!-- after this loads on homepage -->
 <!-- footer -->

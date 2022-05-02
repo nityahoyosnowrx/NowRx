@@ -1215,6 +1215,11 @@ section.testimonials-block.doctorquotes {
 	@media screen and (max-width: 700px) {
 		padding: 0 0;
 	}
+	.content{
+		img{
+			width: 100%;
+		}
+	}
 
 	.swiper-slide .content {
 		display: flex;

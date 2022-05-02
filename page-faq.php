@@ -15,7 +15,7 @@
 
 <?php get_header(); ?>
 
-<script type="application/ld+json">
+<script type="application/ld+json" defer>
 {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -361,9 +361,9 @@
         <div class="media">
             <figure class="image">
                 <picture class="lozad">
-                    <source media="(max-width: 1px)" srcset="<?php echo get_template_directory_uri(); ?>/images/NowRx-pharmacist-answering-pharmacy-delivery-questions.webp">
-                    <source media="(min-width: 2px)" srcset="<?php echo get_template_directory_uri(); ?>/images/NowRx-pharmacist-answering-pharmacy-delivery-questions.webp">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/NowRx-pharmacist-answering-pharmacy-delivery-questions.webp" class="orbit-image" height="500px" width="650px" alt="NowRx pharmacist answering pharmacy delivery questions">
+                    <source media="(max-width: 992px)" srcset="<?php echo get_template_directory_uri(); ?>/images/NowRx-pharmacist-answering-pharmacy-delivery-questions-m.webp">
+                    <source media="(min-width: 993px)" srcset="<?php echo get_template_directory_uri(); ?>/images/NowRx-pharmacist-answering-pharmacy-delivery-questions.webp">
+                    <img  class="orbit-image" height="500px" width="650px" alt="NowRx pharmacist answering pharmacy delivery questions">
                 </picture>
             </figure>
         </div>

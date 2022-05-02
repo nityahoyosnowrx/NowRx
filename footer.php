@@ -91,16 +91,179 @@ if (is_single() && 'post' == get_post_type()) {
   </div>
 </footer>
 
-<?php wp_footer(); ?>
 
-<?php if (is_page('refill-and-transfer-prescriptions') || is_page('telehealth') || is_page('contact-us') || is_singular('post')) : ?>
-<?php else : ?>
-  <script defer src="<?php echo get_template_directory_uri(); ?>/public/frontend-bundle.js"></script>
-<?php endif; ?>
 
 <!-- </div> -->
 
 <!-- closes off canvas content -->
+
+
+<?php if (is_singular('post') || is_home()) : ?>
+
+  <div class="pre-modal-window">
+    <div class="pre-modal">
+      <button class="pre-modal-btn-close bg-transparent" data-var="closeBtn">
+        <svg fill="#111" height="30px" width="30px" viewBox="0 0 24 24">
+          <path d="M15.04 12L24 2.96 21.04 0 12 8.96 3.04 0 0 2.96 9.04 12 0 20.96 3.04 24 12 14.96 21.04 24 24 20.96z"></path>
+        </svg>
+      </button>
+      <div class="pre-modal-view">
+        <div class="unite-container">
+          <header>
+            <div class="nowrx-unite-swoosh">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/NowRx-Pharmacy-Logo-Icon-mini.webp" alt="NowRx-Pharmacy-Logo-Icon-mini" width="50" height="38">
+            </div>
+            <div class="view-header">Subscribe To Our Newsletter</div>
+            <div id="joinMessage" class="view-sub-header nowrx-unite-message">
+              Get blogs, tips, and discounts related to pharmacy delivered right to your inbox each month.
+            </div>
+          </header>
+
+          <!--[if lte IE 8]>
+            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+            <![endif]-->
+          <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js" defer></script>
+          <div id="popup-foot">
+          </div>
+          <script defer>
+            var $document = document.querySelector("body");
+
+            document.addEventListener('load', function(evt) {
+              var $script = document.querySelector("script[src='//js.hsforms.net/forms/v2.js']");
+
+              if (!evt.target.isEqualNode($script)) {
+                return;
+              }
+
+              // Callback code
+              setTimeout(() => {
+                // console.log('loaded')
+                hbspt.forms.create({
+                  region: "na1",
+                  portalId: "5952677",
+                  formId: "743c3ddd-5ba0-4dd9-9c25-dd8c8c328c80",
+                  css: '',
+                  target: "#popup-foot"
+                })
+              }, 9000);
+
+              // your callback's code
+              setTimeout(() => {
+                // console.log('loaded')
+                hbspt.forms.create({
+                  region: "na1",
+                  portalId: "5952677",
+                  formId: "743c3ddd-5ba0-4dd9-9c25-dd8c8c328c80",
+                  css: '',
+                  target: "#popup-foot"
+
+                })
+              }, 10000);
+
+            }, true);
+          </script>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+<?php endif; ?>
+
+
+<!--  -->
+<!--[if lte IE 8]>
+    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+    <![endif]-->
+<script charset="utf-8" async type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'" />
+<noscript>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" type="text/css" />
+</noscript>
+
+<script src="<?php echo get_template_directory_uri(); ?>/public/frontend-bundle.js"></script>
+
+<?php get_template_part('footer-modals'); ?>
+
+<?php wp_footer(); ?>
+
+<?php if (is_page('nowprep') || is_page('referral') || is_page('telehealth') || is_page('how-it-works') || is_page('pricing') || is_front_page() || is_page('faqs') || is_page('testimonials') || is_page('refill-and-transfer-prescriptions') || is_page('resources') || is_page('for-doctors') || is_page('contact-us') || is_post_type_archive('locations') || is_page('privacy-policy') || is_page('hipaa-privacy') || is_page('terms-and-conditions')) : ?>
+  <script defer async>
+    window.onscroll = function() {
+      cnt++;
+      myFunction(cnt)
+
+    };
+    let cnt = 0;
+
+    function myFunction(cnt) {
+      console.log(cnt)
+      if (document.documentElement.scrollTop > 50) {
+        if (cnt == 1) {
+          setTimeout(() => {
+            var giftofspeed = document.createElement('link');
+            giftofspeed.rel = 'stylesheet';
+            giftofspeed.href = '<?php echo get_template_directory_uri(); ?>/public/frontend.css';
+            giftofspeed.type = 'text/css';
+            var godefer = document.getElementsByTagName('link')[0];
+            godefer.parentNode.insertBefore(giftofspeed, godefer);
+
+            setTimeout(() => {
+          jQuery("#inline-style").remove();
+         }, 300);
+
+
+          }, 3000);
+        }
+
+      } else {
+        if (cnt == 1) {
+          var giftofspeed = document.createElement('link');
+          giftofspeed.rel = 'stylesheet';
+          giftofspeed.href = '<?php echo get_template_directory_uri(); ?>/public/frontend.css';
+          giftofspeed.type = 'text/css';
+          var godefer = document.getElementsByTagName('link')[0];
+          godefer.parentNode.insertBefore(giftofspeed, godefer);
+
+         setTimeout(() => {
+          jQuery("#inline-style").remove();
+         }, 300);
+        }
+      }
+    }
+
+
+    if (document.documentElement.scrollTop > 50) {
+        if (cnt == 1) {
+          setTimeout(() => {
+            var giftofspeed = document.createElement('link');
+            giftofspeed.rel = 'stylesheet';
+            giftofspeed.href = '<?php echo get_template_directory_uri(); ?>/public/frontend.css';
+            giftofspeed.type = 'text/css';
+            var godefer = document.getElementsByTagName('link')[0];
+            godefer.parentNode.insertBefore(giftofspeed, godefer);
+
+            setTimeout(() => {
+          jQuery("#inline-style").remove();
+         }, 300);
+
+
+          }, 0);
+        }
+
+      }
+
+  </script>
+<?php else : ?>
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/public/frontend.css">
+<?php endif; ?>
+
+
+
+<?php
+// tracking code
+get_template_part('analytics-head'); ?>
 
 <?php
 // Video load on homepage
@@ -139,168 +302,6 @@ if (is_front_page()) : ?>
   </script>
 <?php endif; ?>
 
-
-
-<?php if (!is_page('nowprep')) : ?>
-  <?php if (is_page('invest')) : ?>
-    <section class="popupform lozad" data-background-image="https://assets.website-files.com/5d5d56675dd8937a8bcc193c/5d5ed1486e0dbce67eac23b9_hexagon.svg">
-      <div class="content">
-        <div class="closebutton">
-          <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="348.333px" height="348.334px" viewBox="0 0 348.333 348.334" style="enable-background:new 0 0 348.333 348.334;" xml:space="preserve">
-            <g>
-              <path d="M336.559,68.611L231.016,174.165l105.543,105.549c15.699,15.705,15.699,41.145,0,56.85
-                        c-7.844,7.844-18.128,11.769-28.407,11.769c-10.296,0-20.581-3.919-28.419-11.769L174.167,231.003L68.609,336.563
-                        c-7.843,7.844-18.128,11.769-28.416,11.769c-10.285,0-20.563-3.919-28.413-11.769c-15.699-15.698-15.699-41.139,0-56.85
-                        l105.54-105.549L11.774,68.611c-15.699-15.699-15.699-41.145,0-56.844c15.696-15.687,41.127-15.687,56.829,0l105.563,105.554
-                        L279.721,11.767c15.705-15.687,41.139-15.687,56.832,0C352.258,27.466,352.258,52.912,336.559,68.611z" />
-            </g>
-          </svg>
-        </div>
-        <h2 class="title">Get the NowRx Investor Deck</h2>
-        <p>Download the NowRx investor pitch deck and see what is driving record demand for shares of NowRx!</p>
-        <div class="formcall">
-          <script>
-            window.addEventListener('load', function() {
-              hbspt.forms.create({
-                region: "na1",
-                portalId: "5952677",
-                formId: "df2a6935-1139-426a-b373-0917788189ad"
-              });
-            });
-          </script>
-        </div>
-      </div>
-    </section>
-
-
-    <!--[if lte IE 8]>
-        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
-    <![endif]-->
-    <script charset="utf-8" async defer type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-
-  <?php endif; ?>
-<?php endif; ?>
-
-
-<?php if (is_singular( 'post' ) || is_home()) : ?>
-
-  <div class="pre-modal-window">
-    <div class="pre-modal">
-      <button class="pre-modal-btn-close bg-transparent" data-var="closeBtn">
-        <svg fill="#111" height="30px" width="30px" viewBox="0 0 24 24">
-          <path d="M15.04 12L24 2.96 21.04 0 12 8.96 3.04 0 0 2.96 9.04 12 0 20.96 3.04 24 12 14.96 21.04 24 24 20.96z"></path>
-        </svg>
-      </button>
-      <div class="pre-modal-view">
-        <div class="unite-container">
-            <header>
-              <div class="nowrx-unite-swoosh">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/NowRx-Pharmacy-Logo-Icon-mini.webp" alt="NowRx-Pharmacy-Logo-Icon-mini" width="50" height="38">
-              </div>
-              <div class="view-header">Subscribe To Our Newsletter</div>
-              <div id="joinMessage" class="view-sub-header nowrx-unite-message">
-              Get blogs, tips, and discounts related to pharmacy delivered right to your inbox each month.
-               </div>
-            </header>
-
-
-            <!-- <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js" defer async></script> -->
-
-            <script defer>
-setTimeout(function() {
-    // Get the head tag
-    var head_ID = document.getElementsByTagName("head")[0];
-    // Create script element
-    var script_element = document.createElement('script');
-    // Set the script type to JavaScript
-    script_element.type = 'text/javascript';
-    // External JS file
-    script_element.src = '//js.hsforms.net/forms/v2.js';
-    head_ID.appendChild(script_element);
-}, 4000);
-            </script>
-
-            <div id="popup-foot">
-            </div>
-            <script defer>
-
-            var $document = document.querySelector("body");
-
-            document.addEventListener('load', function(evt) {
-                var $script = document.querySelector("script[src='//js.hsforms.net/forms/v2.js']");
-
-                if (!evt.target.isEqualNode($script)) {
-                    return;
-                }
-
-                // Callback code
-                setTimeout(() => {
-                  // console.log('loaded')
-                  hbspt.forms.create({
-                  region: "na1",
-                  portalId: "5952677",
-                  formId: "743c3ddd-5ba0-4dd9-9c25-dd8c8c328c80",
-                  css: '',
-                  target: "#popup-foot"
-                  })
-                }, 9000);
-
-                // your callback's code
-                setTimeout(() => {
-                  // console.log('loaded')
-                  hbspt.forms.create({
-                        region: "na1",
-                        portalId: "5952677",
-                        formId: "743c3ddd-5ba0-4dd9-9c25-dd8c8c328c80",
-                        css: '',
-                        target: "#popup-foot"
-
-                        })
-                }, 10000);
-
-            }, true);
-
-
-            </script>
-
-
-
-
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-<?php endif; ?>
-
-<?php // include modals
-get_template_part('footer-modals'); ?>
-
-<?php
-// tracking code
-get_template_part('analytics-head'); ?>
-
-<?php
-// Inlined Google Font loading
-// get_template_part('components/font-load');
-?>
-
-<!-- <link rel="stylesheet" href='<?php echo get_template_directory_uri(); ?>/public/frontend.css'> -->
-
-<?php if(is_singular('post')): ?>
-<script defer>
-setTimeout(() => {
-  var giftofspeed = document.createElement('link');
-giftofspeed.rel = 'stylesheet';
-giftofspeed.href = '<?php echo get_template_directory_uri(); ?>/public/frontend.css';
-giftofspeed.type = 'text/css';
-var godefer = document.getElementsByTagName('link')[0];
-godefer.parentNode.insertBefore(giftofspeed, godefer);
-}, 9000);
-</script>
-
-<?php endif; ?>
 
 </body>
 

@@ -1,5 +1,6 @@
 <?php get_header(); ?>
 
+
 <section class="landing-block nowprep-landingblock">
     <div class="container fluid">
         <div class="content">
@@ -13,11 +14,13 @@
                     <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
                 <![endif]-->
 
-                <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js" defer></script>
+                <!-- <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js" defer></script> -->
 
-                <div id="prep-form"></div>
+                <div id="prep-form">
 
-                <script defer>
+                </div>
+
+                <script defer async>
 
                     var $document = document.querySelector("body");
 
@@ -35,7 +38,7 @@
                                 portalId: "5952677",
                                 formId: "ded00596-ad7a-46b6-9069-bb3552b72735",
                                 css: '',
-                                cssClass:'dynamic-prep-form',
+                                cssClass: 'dynamic-prep-form',
                                 target: "#prep-form",
                                 translations: {
                                     en: {
@@ -43,13 +46,13 @@
                                     }
                                 }
                             })
-                        }, 100);
+                        }, 0);
 
                         setTimeout(() => {
                             let formDisplayed = document.getElementsByClassName('dynamic-prep-form');
 
                             if (formDisplayed.length > 0) {
-                                console.log('exists',formDisplayed.length);
+                                console.log('exists', formDisplayed.length);
 
                             } else {
 
@@ -60,32 +63,32 @@
                                     css: '',
                                     target: "#prep-form",
                                     translations: {
-                                    en: {
-                                        submitText: "Get Started",
+                                        en: {
+                                            submitText: "Get Started",
+                                        }
                                     }
-                                }
                                 })
                             }
 
-                        }, 1400);
+                        }, 4400);
 
                     }, true);
-
-
                 </script>
             </div>
         </div>
         <div class="media">
             <figure class="image">
                 <picture>
-                    <source media="(max-width: 992px)" srcset="<?php echo get_template_directory_uri(); ?>/images/hiv-prep-couple-using-descovy-mobile.webp">
                     <source media="(min-width: 993px)" srcset="<?php echo get_template_directory_uri(); ?>/images/hiv-prep-couple-using-descovy.webp">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/hiv-prep-couple-using-descovy.webp" class="orbit-image" height="500px" width="650px" alt="hiv prep couple using descovy">
+                    <source media="(max-width: 992px)" srcset="<?php echo get_template_directory_uri(); ?>/images/hiv-prep-online-couple-for-nowprep-mobile-400.webp">
+                    <img  class="orbit-image " height="500px" width="650px" alt="hiv prep couple using descovy">
                 </picture>
             </figure>
         </div>
     </div>
 </section>
+
+
 
 <!-- companies -->
 <?php include('components/component-logo-slider.php'); ?>
@@ -101,7 +104,7 @@
         <div class="row-columns">
             <div class="column-item">
                 <figure class="image">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/prep-online-sign-up.webp" height="92" width="92" alt="prep online sign up">
+                    <img data-src="<?php echo get_template_directory_uri(); ?>/images/prep-online-sign-up.webp" height="92" width="92" alt="prep online sign up" class="lozad">
                 </figure>
                 <h3 class="title">Sign Up for NowPrep</h3>
                 <p>
@@ -116,7 +119,7 @@
             </div>
             <div class="column-item">
                 <figure class="image">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/prep-online-free-being-checked.webp"  height="92" width="92"  alt="prep online free being checked">
+                    <img data-src="<?php echo get_template_directory_uri(); ?>/images/prep-online-free-being-checked.webp"  height="92" width="92"  alt="prep online free being checked" class="lozad">
                 </figure>
                 <h3 class="title">Complete a PrEP Lab</h3>
                 <p>
@@ -130,7 +133,7 @@
             </div>
             <div class="column-item">
                 <figure class="image">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/prep-online-delivered.webp"  height="92" width="92"  alt="prep online delivered">
+                    <img data-src="<?php echo get_template_directory_uri(); ?>/images/prep-online-delivered.webp"  height="92" width="92"  alt="prep online delivered" class="lozad">
                 </figure>
                 <h3 class="title">Get HIV PrEP Delivered</h3>
                 <p>If HIV PrEP medication is right for you, our physician will prescribe it online and we will deliver it in hours for FREE!</p>
@@ -142,7 +145,7 @@
             </div>
             <div class="column-item">
                 <figure class="image">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/nowrx-pharmacy-delivery-driver-bringing-prescriptions-to-a-house-mobile.webp"  height="92" width="92"  alt="Set Up Auto-Refill">
+                    <img data-src="<?php echo get_template_directory_uri(); ?>/images/nowrx-pharmacy-delivery-driver-bringing-prescriptions-to-a-house-mobile.webp"  height="92" width="92"  alt="Set Up Auto-Refill" class="lozad">
                 </figure>
                 <h3 class="title">Set Up Auto-Refill</h3>
                 <p>Get your PrEP medication automatically delivered each month and an auto-reminder when a new lab order is needed.</p>
@@ -150,7 +153,7 @@
 
         </div>
         <div class="btn-container">
-            <a class="rx-button" id="nowprep-gt-gt" data-toggle="waitlist" aria-controls="waitlist" aria-haspopup="true" id="getstarted-gt" tabindex="0"> <?php include('reg-arrow.php'); ?> Get Started</a>
+            <a class="rx-button" id="nowprep-gt-gt" data-toggle="waitlist" aria-controls="waitlist" aria-haspopup="true" id="getstarted-gt" tabindex="0">  Get Started</a>
         </div>
     </div>
 </section>
@@ -1515,20 +1518,9 @@ To maximize the effectiveness of the PrEP pill you should take the medication as
 							wp_reset_postdata();
 							?>
 
-
-
-
-
-
-
                 </div>
-
             </div>
-
-
-
         </div>
-
     </div>
 </section>
 

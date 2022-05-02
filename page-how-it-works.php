@@ -35,10 +35,10 @@
         </div>
         <div class="media">
             <figure class="image">
-            <picture class="lozad" data-toggle-class="active">
-                    <source media="(max-width: 992px)" srcset="<?php echo get_template_directory_uri(); ?>/images/pharmacy-delivery-being-prepared-by-nowrx-pharmacist-m.webp">
+                <picture class="" data-toggle-class="active">
+                    <source media="(max-width: 992px)" srcset="<?php echo get_template_directory_uri(); ?>/images/pharmacy-delivery-being-prepared-by-nowrx-pharmacist-mobile.webp">
                     <source media="(min-width: 993px)" srcset="<?php echo get_template_directory_uri(); ?>/images/pharmacy-delivery-being-prepared-by-nowrx-pharmacist.webp">
-                    <img data-src="<?php echo get_template_directory_uri(); ?>/images/pharmacy-delivery-being-prepared-by-nowrx-pharmacist.webp" class="orbit-image lozad" height="500px" width="650px" alt="pharmacy delivery being prepared by nowrx pharmacist">
+                    <img class="orbit-image " height="500px" width="650px" alt="pharmacy delivery being prepared by nowrx pharmacist">
                 </picture>
             </figure>
         </div>

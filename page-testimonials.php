@@ -39,11 +39,10 @@
             <div class="image">
                 <figure>
 
-                        <picture class="lozad" data-toggle-class="active">
-                            <source media="(max-width: 992px)" srcset="<?php echo get_template_directory_uri(); ?>/images/Best-Prescription-Delivery-Service-for-Northern-California-and-Orange-County-Residents-mobile.webp">
-
-                            <source media="(min-width: 993px)" srcset="<?php echo get_template_directory_uri(); ?>/images/Best Prescription Delivery Service for Northern California and Orange County Residents.webp">
-                            <img data-src="<?php echo get_template_directory_uri(); ?>/images/Best Prescription Delivery Service for Northern California and Orange County Residents.webp" class="orbit-image lozad" height="500px" width="650px" alt="nowrx pharmacy delivery happy customers celebrating low drug prices">
+                        <picture class=" " data-toggle-class="active">
+                            <source media="(max-width: 992px)" srcset="<?php echo get_template_directory_uri(); ?>/images/BestPrescriptionDeliveryServiceforNorthernCaliforniaandOrangeCountyResidents-m.webp">
+                            <source media="(min-width: 993px)" srcset="<?php echo get_template_directory_uri(); ?>/images/Best-Prescription-Delivery-Service-for-Northern-California-and-Orange-County-Residents.webp">
+                            <img   class="orbit-image " height="500px" width="650px" alt="nowrx pharmacy delivery happy customers celebrating low drug prices">
                         </picture>
 
                 </figure>

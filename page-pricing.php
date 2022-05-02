@@ -58,10 +58,10 @@
         </div>
         <div class="media">
             <figure class="image">
-            <picture class="lozad" data-toggle-class="active">
-                    <source media="(max-width: 992px)" srcset="<?php echo get_template_directory_uri(); ?>/images/low-drug-prices-cause-excitement-for-couple.webp">
+            <picture class="" data-toggle-class="active">
+                    <source media="(max-width: 992px)" srcset="<?php echo get_template_directory_uri(); ?>/images/low-drug-prices-cause-excitement-for-couple-m.webp">
                     <source media="(min-width: 993px)" srcset="<?php echo get_template_directory_uri(); ?>/images/low-drug-prices-cause-excitement-for-couple.webp">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/low-drug-prices-cause-excitement-for-couple.webp" class="orbit-image lozad" height="500px" width="650px" alt="low drug prices cause excitement for couple">
+                    <img class="orbit-image " height="500px" width="650px" alt="low drug prices cause excitement for couple">
                 </picture>
             </figure>
         </div>

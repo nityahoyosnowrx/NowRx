@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 
-<script type="application/ld+json">
+<script type="application/ld+json" defer>
 {
     "@context": "https://www.schema.org/",
     "@type": "LocalBusiness",
@@ -326,15 +326,14 @@
                 <div class="column-half image-col">
 
 
-                    <picture class="lozad"
-                        data-src="<?php echo get_template_directory_uri(); ?>/images/NowRx-Pharmacy-Delivery-Driver-Dropping-Off-Prescription.webp"
+                    <picture class=""
                         data-toggle-class="active">
-                        <source media="(max-width: 1px)"
+                        <source media="(max-width: 993px)"
+                            srcset="<?php echo get_template_directory_uri(); ?>/images/NowRx-Pharmacy-Delivery-Driver-Dropping-Off-Prescription-n.webp">
+                        <source media="(min-width: 992px)"
                             srcset="<?php echo get_template_directory_uri(); ?>/images/NowRx-Pharmacy-Delivery-Driver-Dropping-Off-Prescription.webp">
-                        <source media="(min-width: 2px)"
-                            srcset="<?php echo get_template_directory_uri(); ?>/images/NowRx-Pharmacy-Delivery-Driver-Dropping-Off-Prescription.webp">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/NowRx-Pharmacy-Delivery-Driver-Dropping-Off-Prescription.webp"
-                            class="orbit-image lozad" height="500px" width="650px"
+                        <img
+                            class="orbit-image " height="500px" width="650px"
                             alt="NowRx Pharmacy Delivery Driver Dropping Off Prescription">
                     </picture>
 

@@ -873,3 +873,34 @@ function add_slug_body_class( $classes ) {
   return $classes;
 }
 add_filter( 'body_class', 'add_slug_body_class' );
+
+/*  DISABLE GUTENBERG STYLE IN HEADER| WordPress 5.9 */
+function wps_deregister_styles() {
+  wp_dequeue_style( 'global-styles' );
+}
+add_action( 'wp_enqueue_scripts', 'wps_deregister_styles', 100 );
+
+add_filter('json_enabled', '__return_false');
+add_filter('json_jsonp_enabled', '__return_false');
+
+remove_action( 'template_redirect', 'rest_output_link_header', 11 );
+
+remove_action( 'wp_head',      'wp_oembed_add_discovery_links'         );
+
+remove_action( 'wp_head',      'rest_output_link_wp_head'              );
+
+
+function itsme_disable_feed() {
+  wp_die( __( 'No feed available, please visit the <a href="'. esc_url( home_url( '/' ) ) .'">homepage</a>!' ) );
+ }
+
+ add_action('do_feed', 'itsme_disable_feed', 1);
+ add_action('do_feed_rdf', 'itsme_disable_feed', 1);
+ add_action('do_feed_rss', 'itsme_disable_feed', 1);
+ add_action('do_feed_rss2', 'itsme_disable_feed', 1);
+ add_action('do_feed_atom', 'itsme_disable_feed', 1);
+ add_action('do_feed_rss2_comments', 'itsme_disable_feed', 1);
+ add_action('do_feed_atom_comments', 'itsme_disable_feed', 1);
+
+ remove_action( 'wp_head', 'feed_links_extra', 3 );
+remove_action( 'wp_head', 'feed_links', 2 );

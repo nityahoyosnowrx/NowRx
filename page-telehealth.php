@@ -108,17 +108,52 @@
                         Get prescriptions written and delivered without leaving home.
                         </p>
                     </div>
-                    <!--[if lte IE 8]>
-<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
-<![endif]-->
-<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-<script>
-hbspt.forms.create({
-region: "na1",
+
+
+
+
+<div id="popup-telehealth"></div>
+            <script defer>
+
+            var $document = document.querySelector("body");
+
+            document.addEventListener('load', function(evt) {
+                var $script = document.querySelector("script[src='//js.hsforms.net/forms/v2.js']");
+
+                if (!evt.target.isEqualNode($script)) {
+                    return;
+                }
+
+                // Callback code
+                setTimeout(() => {
+                  // console.log('loaded')
+                  hbspt.forms.create({
+                    region: "na1",
+                        portalId: "5952677",
+                        formId: "33aa45eb-499d-4a4b-b55f-f5a7c7bd5359",
+                  css: '',
+                  target: "#popup-telehealth"
+                  })
+                }, 0000);
+
+                // your callback's code
+                setTimeout(() => {
+                  // console.log('loaded')
+                  hbspt.forms.create({
+                    region: "na1",
 portalId: "5952677",
-formId: "33aa45eb-499d-4a4b-b55f-f5a7c7bd5359"
-});
-</script>
+formId: "33aa45eb-499d-4a4b-b55f-f5a7c7bd5359",
+                        css: '',
+                        target: "#popup-telehealth"
+
+                        })
+                }, 10000);
+
+            }, true);
+
+
+            </script>
+
                 </div>
             </div>
         </div>

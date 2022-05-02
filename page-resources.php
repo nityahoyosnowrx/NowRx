@@ -15,8 +15,11 @@
                     <div class="contentblock">
                         <a href="<?= get_site_url(); ?>/refill-and-transfer-prescriptions/">
                         <figure>
-                        <picture class="lozad">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/Pharmacy-delivery-employee-from-nowrx-smiling.webp" class="pic limg " height="900px" width="1600px" alt="Pharmacy delivery employee from nowrx smiling">
+                        <picture class="">
+                        <source media="(max-width: 992px)" srcset="<?php echo get_template_directory_uri(); ?>/images/Pharmacy-delivery-employee-from-nowrx-smiling-320.webp">
+                    <source media="(min-width: 993px)" srcset="<?php echo get_template_directory_uri(); ?>/images/Pharmacy-delivery-employee-from-nowrx-smiling.webp">
+
+                    <img class="pic limg " height="900px" width="1600px" alt="Pharmacy delivery employee from nowrx smiling">
                 </picture>
                         </figure>
                             <h2 class="title">

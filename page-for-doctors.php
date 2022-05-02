@@ -38,12 +38,12 @@
         </div>
         <div class="media">
             <figure class="image">
-            <picture class="lozad"
+            <picture class=" "
                     data-toggle-class="active">
-                    <source media="(max-width: 992px)" srcset="<?php echo get_template_directory_uri(); ?>/images/doctor-evaluating-best-pharmacy-delivery-for-patients.webp">
+                    <source media="(max-width: 992px)" srcset="<?php echo get_template_directory_uri(); ?>/images/doctor-evaluating-best-pharmacy-delivery-for-patients-m.webp">
                     <source media="(min-width: 993px)" srcset="<?php echo get_template_directory_uri(); ?>/images/doctor-evaluating-best-pharmacy-delivery-for-patients.webp">
-                    <img data-src="<?php echo get_template_directory_uri(); ?>/images/doctor-evaluating-best-pharmacy-delivery-for-patients.webp"
-                        class="orbit-image lozad" height="500px" width="650px" alt="doctor evaluating best pharmacy delivery for patients">
+                    <img
+                        class="orbit-image  " height="500px" width="650px" alt="doctor evaluating best pharmacy delivery for patients">
                 </picture>
             </figure>
         </div>

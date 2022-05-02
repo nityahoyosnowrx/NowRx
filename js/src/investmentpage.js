@@ -4,10 +4,10 @@ window.jQuery = jquery;
 window.$ = jquery;
 
 // import Swiper JS
-import Swiper from 'swiper/bundle';
+// import Swiper from 'swiper/bundle';
 
 // import Swiper styles
-import 'swiper/swiper.scss';
+// import 'swiper/swiper.scss';
 
 // import 'slick-carousel';
 

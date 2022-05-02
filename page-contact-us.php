@@ -37,10 +37,10 @@
         </div>
         <div class="media">
             <figure class="image">
-                <picture class="lozad" data-toggle-class="active">
-                    <source media="(max-width: 992px)" srcset="<?php echo get_template_directory_uri(); ?>/images/NowRx-pharmacist-pulling-prescription-delivery-from-parata-robot.webp">
+                <picture class="" data-toggle-class="active">
+                    <source media="(max-width: 992px)" srcset="<?php echo get_template_directory_uri(); ?>/images/NowRx-pharmacist-pulling-prescription-delivery-from-parata-robot-m.webp">
                     <source media="(min-width: 993px)" srcset="<?php echo get_template_directory_uri(); ?>/images/NowRx-pharmacist-pulling-prescription-delivery-from-parata-robot.webp">
-                    <img data-src="<?php echo get_template_directory_uri(); ?>/images/NowRx-pharmacist-pulling-prescription-delivery-from-parata-robot.webp" class="orbit-image lozad" height="500px" width="650px" alt="NowRx pharmacist pulling prescription delivery from parata robot">
+                    <img  class="orbit-image " height="500px" width="650px" alt="NowRx pharmacist pulling prescription delivery from parata robot">
                 </picture>
             </figure>
         </div>
