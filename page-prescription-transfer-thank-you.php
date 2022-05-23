@@ -9,9 +9,7 @@
 
                 <header class="article-header tynk">
 
-                    <div class="imageblock">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/AdobeStock_91568410.webp" alt="NowRx Pharmacy Pharmacist on desk" width="300px" height="300px" class="pic">
-                    </div>
+
 
                     <div class="content">
                         <div class="rvl">
@@ -24,30 +22,36 @@
                             Our Local Pharmacy Will Reach Out to You Shortly
                             </h1>
                         </div>
+
                         <div class="rvl">
                             <p>
-                                *Delivery at all locations available M-F 9am-5pm (Saturday available in SF Bay Area)
+                            If you have questions, text our local pharmacy team at <a href="tel:8444666979" class="c">(844) 466-6979</a>.
                             </p>
-                        </div>
-                        <div class="rvl">
-                            <p>Live pharmacy support available Mon-Sat: 9am-8pm, Sun: 9am-5:30pm at <a href="tel:8444666979" class="c">(844) 466-6979</a>.</p>
                         </div>
                         <div class="rvl">
                             <span class="follow-links">
                                 <div class="txt">
-                                    Follow NowRx Pharmacy On Social Media: <a href="https://www.facebook.com/NowRx" class="li" target="_blank">Facebook</a> <a href="https://www.instagram.com/nowrxpharmacy" class="li" target="_blank">Instagram</a> <a href="https://www.linkedin.com/company/nowrx" class="li" target="_blank">LinkedIn</a> <a href="https://twitter.com/nowrx" class="li" target="_blank">Twitter</a>
+                                    Follow NowRx Pharmacy On Social Media:
+                                    <div class="links">
+                                    <a href="https://www.facebook.com/NowRx" class="li" target="_blank">Facebook</a>
+                                    <a href="https://www.instagram.com/nowrxpharmacy" class="li" target="_blank">Instagram</a>
+                                    <a href="https://www.youtube.com/channel/UCk50FgUjUrddyWKG3ajxdGA" class="li" target="_blank">YouTube</a>
+                                    </div>
                                 </div>
                             </span>
                         </div>
                     </div>
                 </header>
             </div>
-
+            <img alt="telehealth app doctors from NowRx" src="<?php echo get_template_directory_uri(); ?>/images/telehealth-app-doctors-from-nowrxv3.webp" width="1300px" height="470px" class="fullimage" style="display: block;margin: 0 auto;padding: 0;">
             <section class="entry-content" itemprop="articleBody">
                 <div class="whatnext">
                     <div class="bluetitle">
                         <div class="container">
                             <div class="rvl">
+                            <span class="subheading" style="text-align: center;">
+                                Thank you for Choosing NowRx
+                            </span>
                                 <h2 class="sec-title">What You Should Expect Next</h2>
                             </div>
                         </div>
@@ -57,9 +61,10 @@
                             <!-- block -->
                             <div class="block">
                                 <div class="imageblock">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/images/message.png" alt="pharmacy phone with messages icon" class="pic">
+                                    <img src="https://images.pexels.com/photos/789822/pexels-photo-789822.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="pharmacy phone with messages icon" class="pic">
                                 </div>
                                 <div class="rvl">
+                                <h3 class="title">reach out</h3>
                                     <p class="span">
                                     Your local NowRx Pharmacy will reach out to you by call and text at the number you provided. Please have your insurance and prescription information ready so that we may better assist you.
                                     </p>
@@ -69,11 +74,12 @@
                             <!-- block -->
                             <div class="block">
                                 <div class="imageblock">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/images/files.png" alt="folder of prescription and health files icon" class="pic">
+                                    <img src="https://images.pexels.com/photos/8441815/pexels-photo-8441815.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="folder of prescription and health files icon" class="pic">
                                 </div>
                                 <div class="rvl">
+                                <h3 class="title">Transfer</h3>
                                     <p class="span">
-                                    If you are transferring a prescription from another pharmacy, we will call you once the transfer is received to confirm your copay. If you have any questions about the status of a prescription, please text us :)
+                                    If you are transferring a prescription from another pharmacy, we will call you once the transfer is received to confirm your copay. If you have any questions about the status of a prescription, please text us at <a href="tel:844-466-6979">844-466-6979</a>.
                                     </p>
                                 </div>
                             </div>
@@ -81,9 +87,10 @@
                             <!-- block -->
                             <div class="block">
                                 <div class="imageblock">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/images/time.png" alt="man sitting down waiting for prescription delivery icon" class="pic">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/images/NowRx-Pharmacy-Delivery-Driver-Dropping-Off-Prescription.webp" alt="man sitting down waiting for prescription delivery icon" class="pic">
                                 </div>
                                 <div class="rvl">
+                                <h3 class="title">Delivery</h3>
                                     <p class="span">
                                     Once payment has been approved just sit back, relax, and a NowRx Pharmacy team member will deliver your medication to you in under 5 hours or as requested. We also offer a 1-hour delivery option for a $5 fee.
                                     </p>
@@ -137,11 +144,11 @@
 
     </section>
 
+
 <!-- FAQ -->
 <?php get_template_part('components/section-faq-flip'); ?>
 
 
-    <?php include('section-visitfaq.php'); ?>
 
 
 

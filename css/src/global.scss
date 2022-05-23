@@ -302,13 +302,13 @@ li.MostPopular-addIndex {
 	transition: box-shadow 0.15s ease-in-out, transform 0.15s ease-in-out, -webkit-transform 0.15s ease-in-out;
 
 	background-color: #fff;
-    padding: 0px;
-    margin: 0 0 10px;
-    height: auto;
-    transition: box-shadow .15s ease-in-out,transform .15s ease-in-out,-webkit-transform .15s ease-in-out;
-    border: 0 solid #eee;
-    box-shadow: 0 0 10px 8px #f7f7f7, -5px -5px 10px #fff;
-    border-radius: 10px;
+	padding: 0px;
+	margin: 0 0 10px;
+	height: auto;
+	transition: box-shadow 0.15s ease-in-out, transform 0.15s ease-in-out, -webkit-transform 0.15s ease-in-out;
+	border: 0 solid #eee;
+	box-shadow: 0 0 10px 8px #f7f7f7, -5px -5px 10px #fff;
+	border-radius: 10px;
 
 	@media screen and (max-width: 992px) {
 		max-width: 50%;
@@ -1215,8 +1215,8 @@ section.testimonials-block.doctorquotes {
 	@media screen and (max-width: 700px) {
 		padding: 0 0;
 	}
-	.content{
-		img{
+	.content {
+		img {
 			width: 100%;
 		}
 	}
@@ -1946,14 +1946,23 @@ main#main.main-class {
 			padding: 0 20px;
 		}
 	}
-
+	img.fullimage {
+		margin: 0 auto;
+	}
 	header.article-header.tynk {
 		display: flex;
 		margin: 60px 0 90px;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		max-width: 840px;
+		margin: 0 auto 0px;
+
 		@media screen and (max-width: 1280px) {
 			flex-direction: column;
 			align-items: center;
-			margin: 170px 0 90px;
+			margin: 170px auto 0;
 		}
 		@media screen and (max-width: 400px) {
 			margin-top: 170px;
@@ -1977,6 +1986,9 @@ main#main.main-class {
 		span.follow-links {
 			margin: 25px 0 0;
 			display: block;
+			.links {
+				display: inline-flex;
+			}
 		}
 
 		.imageblock {
@@ -2001,9 +2013,11 @@ main#main.main-class {
 				height: 100%;
 			}
 		}
-
+		.content-thank {
+			text-align: left;
+			max-width: 600px;
+		}
 		.content {
-			padding-left: 60px;
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
@@ -2044,8 +2058,25 @@ main#main.main-class {
 		}
 	}
 
+	.disclaimer.thank-page {
+		max-width: 1020px;
+		font-size: 0.8rem;
+    margin: 0 auto 30px;
+		text-align: center;
+	}
+
 	.whatnext {
-		// background: #e4e4e4;
+		padding: 90px 0;
+		background: #fcfcfc;
+		margin: 0px 0 60px;
+		@media screen and (max-width: 700px) {
+			padding: 60px 0;
+			background: #fcfcfc;
+			margin: 0 0 0px;
+		}
+		&.small {
+			padding: 0;
+		}
 		&.tydoc {
 			background: darken($color: #e4e4e4, $amount: 0);
 			.blocks {
@@ -2062,13 +2093,6 @@ main#main.main-class {
 		.bluetitle {
 			position: relative;
 			&:after {
-				content: close-quote;
-				position: absolute;
-				top: 0;
-				left: 0;
-				width: 80vw;
-				height: 100%;
-				background-color: $m;
 				@media screen and (max-width: 992px) {
 					width: 100%;
 				}
@@ -2078,13 +2102,14 @@ main#main.main-class {
 				position: relative;
 				z-index: 1;
 				h2.sec-title {
-					color: #fff;
 					margin: 0;
-					padding: 20px 20px;
+					padding: 20px;
 					font-weight: 900;
+					text-align: center;
+					padding: 0 0 40px;
 					@media screen and (max-width: 992px) {
 						font-size: 1.5rem;
-						padding: 20px 0;
+						padding: 0 0 0px;
 					}
 				}
 			}
@@ -2093,11 +2118,14 @@ main#main.main-class {
 			display: grid;
 			grid-template-columns: 1fr 1fr 1fr;
 			grid-gap: 60px;
-			padding: 60px 0 120px;
-			padding: 80px 0 80px;
+			padding: 20px 0;
 
 			@media screen and (max-width: 992px) {
 				grid-template-columns: 1fr;
+				align-items: center;
+				justify-content: center;
+				display: flex;
+				flex-direction: column;
 			}
 
 			@media screen and (max-width: 992px) {
@@ -2107,19 +2135,47 @@ main#main.main-class {
 				}
 			}
 			.block {
-				padding: 30px 20px;
-				background: #fff;
-				border-radius: 0 20px;
-				box-shadow: 0 13px 20px -10px #0000005e;
+				text-align: center;
+				background: #ffffff;
+				border-radius: 0px 0px 5px 5px;
+				padding: 0px 40px 40px;
+				border-top: 0px solid #ffffff;
+				border-radius: 5px;
+				overflow: hidden;
+				box-shadow: 0 10px 20px -12px #00000014;
+				border: 1px solid #f2f1ef;
+				width: 100%;
+				margin: 0;
+				@media screen and (max-width: 700px) {
+					padding: 0px 20px 20px;
+				}
+				h3 {
+					text-transform: capitalize;
+					margin: 0;
+					font-weight: 900;
+					@media screen and (max-width: 700px) {
+						font-size: 1.2rem;
+					}
+				}
 			}
 			.imageblock {
 				align-items: center;
 				display: flex;
 				justify-content: center;
 				margin: 0 0 30px;
+				background: #eaeef5;
+				margin: 0 -40px 20px;
+				@media screen and (max-width: 700px) {
+					margin: 0 -20px 20px;
+				}
 				img {
-					max-width: 140px;
-					max-height: 140px;
+					border-bottom: 4px solid #038ed8;
+					height: 230px;
+					width: 100%;
+					object-fit: cover;
+					@media screen and (max-width: 700px) {
+						height: 160px;
+					}
 				}
 			}
 		}
@@ -2129,43 +2185,47 @@ main#main.main-class {
 		}
 	}
 
+	span.follow-links.bottom {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+	}
+
+	span.follow-links.bottom a.li {
+		margin: 0 5px;
+		font-weight: bold;
+	}
+
 	.delivery-prescribe {
 		padding: 0 0 60px;
+
+		&.base-thankyou {
+			padding: 60px 0;
+		}
 
 		.bluetitle {
 			position: relative;
 			&:after {
-				content: close-quote;
-				position: absolute;
-				top: 0;
-				right: 0;
-				width: 80vw;
-				height: 100%;
-				background-color: $m;
-				@media screen and (max-width: 992px) {
-					width: 100%;
-				}
 			}
 			.container {
 				position: relative;
 				z-index: 1;
 				display: flex;
-				justify-content: flex-end;
+				justify-content: center;
+				align-items: center;
 				h2.sec-title {
-					color: #fff;
-					margin: 0;
-					padding: 20px 20px;
-					font-weight: 900;
 					@media screen and (max-width: 992px) {
 						font-size: 1.5rem;
-						padding: 20px 0;
+						text-align: center;
 					}
 				}
 			}
 		}
 		.content-block {
 			display: flex;
-			padding: 60px 0 0;
+			padding: 0 0;
 			@media screen and (max-width: 992px) {
 				flex-direction: column;
 			}
@@ -2181,8 +2241,18 @@ main#main.main-class {
 		.cntx {
 			width: 100%;
 			padding: 0px 0 0 60px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
 			@media screen and (max-width: 992px) {
 				padding: 0px 0 0;
+			}
+			h2.page-title {
+				font-size: 2.2rem;
+				font-weight: 900;
+				@media screen and (max-width: 700px) {
+					font-size: 1.2rem;
+				}
 			}
 		}
 	}
@@ -2307,6 +2377,7 @@ article.article-block.location-item {
 					margin: 0;
 					@media screen and (max-width: 650px) {
 						font-size: 1.5rem;
+						text-align: center;
 						line-height: 2.5rem;
 					}
 				}

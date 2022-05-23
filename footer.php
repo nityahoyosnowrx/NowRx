@@ -58,7 +58,7 @@ if (is_single() && 'post' == get_post_type()) {
             <li><a href="<?= get_site_url(); ?>/nowprep/">NowPrEP</a></li>
             <li><a href="<?= get_site_url(); ?>/for-doctors/">For Doctors</a></li>
             <li><a href="<?= get_site_url(); ?>/contact-us/">Contact Us</a></li>
-            <li><a href="<?= get_site_url(); ?>/locations/">Locations</a></li>
+            <li><a href="<?= get_site_url(); ?>/invest/">Investors</a></li>
           </ul>
           <ul class="menu-items">
             <li><a href="<?= get_site_url(); ?>/about-us/">About Us</a></li>
@@ -122,7 +122,7 @@ if (is_single() && 'post' == get_post_type()) {
           <!--[if lte IE 8]>
             <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
             <![endif]-->
-          <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js" defer></script>
+          <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
           <div id="popup-foot">
           </div>
           <script defer>
@@ -172,10 +172,7 @@ if (is_single() && 'post' == get_post_type()) {
 
 
 <!--  -->
-<!--[if lte IE 8]>
-    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
-    <![endif]-->
-<script charset="utf-8" async type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'" />
 <noscript>
@@ -184,9 +181,10 @@ if (is_single() && 'post' == get_post_type()) {
 
 <script src="<?php echo get_template_directory_uri(); ?>/public/frontend-bundle.js"></script>
 
-<?php get_template_part('footer-modals'); ?>
 
 <?php wp_footer(); ?>
+
+
 
 <?php if (is_page('nowprep') || is_page('referral') || is_page('telehealth') || is_page('how-it-works') || is_page('pricing') || is_front_page() || is_page('faqs') || is_page('testimonials') || is_page('refill-and-transfer-prescriptions') || is_page('resources') || is_page('for-doctors') || is_page('contact-us') || is_post_type_archive('locations') || is_page('privacy-policy') || is_page('hipaa-privacy') || is_page('terms-and-conditions')) : ?>
   <script defer async>
@@ -198,7 +196,7 @@ if (is_single() && 'post' == get_post_type()) {
     let cnt = 0;
 
     function myFunction(cnt) {
-      console.log(cnt)
+      // console.log(cnt)
       if (document.documentElement.scrollTop > 50) {
         if (cnt == 1) {
           setTimeout(() => {
@@ -213,7 +211,7 @@ if (is_single() && 'post' == get_post_type()) {
           jQuery("#inline-style").remove();
          }, 300);
 
-
+        //  console.log('d.')
           }, 3000);
         }
 
@@ -234,9 +232,7 @@ if (is_single() && 'post' == get_post_type()) {
     }
 
 
-    if (document.documentElement.scrollTop > 50) {
-        if (cnt == 1) {
-          setTimeout(() => {
+    setTimeout(() => {
             var giftofspeed = document.createElement('link');
             giftofspeed.rel = 'stylesheet';
             giftofspeed.href = '<?php echo get_template_directory_uri(); ?>/public/frontend.css';
@@ -248,15 +244,32 @@ if (is_single() && 'post' == get_post_type()) {
           jQuery("#inline-style").remove();
          }, 300);
 
+        //  console.log('d.n')
+          }, 3000);
 
-          }, 0);
-        }
+    // if (document.documentElement.scrollTop > 50) {
+    //     if (cnt == 1) {
+    //       setTimeout(() => {
+    //         var giftofspeed = document.createElement('link');
+    //         giftofspeed.rel = 'stylesheet';
+    //         giftofspeed.href = '<?php echo get_template_directory_uri(); ?>/public/frontend.css';
+    //         giftofspeed.type = 'text/css';
+    //         var godefer = document.getElementsByTagName('link')[0];
+    //         godefer.parentNode.insertBefore(giftofspeed, godefer);
 
-      }
+    //         setTimeout(() => {
+    //       jQuery("#inline-style").remove();
+    //      }, 300);
+
+
+    //       }, 0);
+    //     }
+
+    //   }
 
   </script>
 <?php else : ?>
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/public/frontend.css">
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/public/frontend.css?v=111111112">
 <?php endif; ?>
 
 
@@ -302,6 +315,7 @@ if (is_front_page()) : ?>
   </script>
 <?php endif; ?>
 
+<?php get_template_part('footer-modals'); ?>
 
 </body>
 

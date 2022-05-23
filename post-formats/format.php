@@ -109,17 +109,12 @@
             endif;
             ?>
             <!-- key points -->
-            <?php if (has_post_thumbnail( $post->ID ) ): ?>
+            <?php $image; if (has_post_thumbnail( $post->ID ) ): ?>
             <?php
             //   $image = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID),'');
             ?>
             <figure class="article-featured-image">
-                <!-- <picture data-test="picture" itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
-                    <source srcset="<?php echo $image[0]; ?>" media="(min-width: 1340px)">
-                    <source srcset="<?php echo $image[0]; ?>" media="(min-width: 1020px)">
-                    <source srcset="<?php echo $image[0]; ?>" media="(min-width: 760px)">
-                    <img itemprop="url" src="<?php echo $image[0]; ?>" alt="<?php echo get_post_meta( get_post_thumbnail_id(), '_wp_attachment_image_alt', true ); ?>" class="lozad">
-                </picture> -->
+
                 <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'large'); ?>
                 <?php $imageThumbnail = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'thumbnail'); ?>
                     <!-- For an element to be caught, add a block type that is different from the inline and some min-height for correct caught into view -->

@@ -157,6 +157,12 @@ if (have_posts()) : while (have_posts()) : the_post(); ?>
                     <span class="dislcaimerbot">
                         <b>Disclaimer</b>: This website does not provide medical advice and the information provided throughout the website, including but not limited to, text, graphics, images, and other material are for informational purposes only. It is not intended to be a substitute for professional medical advice, diagnosis, or treatment and you should always seek the advice of your physician or other qualified health care providers if you have questions regarding a medical condition or treatment or before starting or stopping any healthcare or health related regimen. Do not ever disregard or delay seeking medical advice from a qualified professional because of something you have read on <a href="https://nowrx.com">nowrx.com</a>.
                     </span>
+
+
+                    <div id="cmt-template">
+                    <?php comments_template(); ?>
+                    </div>
+
                     <?php
                     // GET TAGS BY POST_ID
                     $tags = get_the_tags($post->ID);
@@ -167,7 +173,9 @@ if (have_posts()) : while (have_posts()) : the_post(); ?>
                                 Tags
                             </span>
                         </li>
-                        <?php foreach($tags as $tag) :  ?>
+                        <?php
+                        if (is_array($tags) || is_object($tags))
+                        foreach($tags as $tag) :  ?>
                         <li>
                             <a class="btn btn-warning" href="<?php bloginfo('url');?>/tag/<?php print_r($tag->slug);?>/">
                                 <?php print_r($tag->name); ?>
@@ -219,5 +227,7 @@ if (have_posts()) : while (have_posts()) : the_post(); ?>
         </section>
     </main>
 </section>
+
+
 
 <?php get_footer(); ?>

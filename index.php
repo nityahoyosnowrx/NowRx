@@ -198,15 +198,27 @@ $currentPage = $post->ID;
             <?php
                 //get the current page
                 $countbot = 0;
+                if(is_paged()){
+                    $querybot = new WP_Query(array(
+                        'post_status' => 'publish',
+                        'orderby' => 'date',
+                        'order' => 'DESC',
+                        'post__not_in' => array($latest_cpt[0]->ID),
+                        'paged' => $paged,
+                        'posts_per_page'=>10,
+                    ));
+                } else {
+                    $querybot = new WP_Query(array(
+                        'post_status' => 'publish',
+                        'orderby' => 'date',
+                        'order' => 'DESC',
+                        'post__not_in' => array($latest_cpt[0]->ID),
+                        'paged' => $paged,
+                        'posts_per_page'=>7,
+                    ));
+                }
                 //custom loop using WP_Query
-                $querybot = new WP_Query(array(
-                    'post_status' => 'publish',
-                    'orderby' => 'date',
-                    'order' => 'DESC',
-                    'post__not_in' => array($latest_cpt[0]->ID),
-                    'paged' => $paged,
-                    'posts_per_page'=>9,
-                ));
+
 
                 //set our query's pagination to $paged
                 // $querybot->query('post_type=post' . '&paged=' . $paged);
@@ -228,9 +240,9 @@ $currentPage = $post->ID;
 
                         }
                     } else {
-                        if($countbot == 4){
+                            if (($countbot % 3) == 0){
                     ?>
-                        <div class="blockitem">
+                        <div class="blockitem" >
                             <header class="title">
                                 <h2 class="title">Subscribe To Our Newsletter</h2>
                                 <p>
@@ -242,9 +254,6 @@ $currentPage = $post->ID;
                                 </a>
                             </div>
                             </header>
-
-
-
 
                         </div>
 

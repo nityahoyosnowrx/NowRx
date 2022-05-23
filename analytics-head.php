@@ -60,7 +60,7 @@ $yoast_desc = get_post_meta( $id, '_yoast_wpseo_metadesc', true );
         },
         "datePublished": "<?php echo get_the_date( 'D, M d Y - h:i a' ); ?>",
         "dateModified": "<?php echo get_the_modified_date(); ?>",
-        "description": "<?php echo $yoast_desc; ?>",
+        "description": "<?php   echo htmlentities($yoast_desc); ?>",
         "inLanguage": "en-US"
 }
 </script>
