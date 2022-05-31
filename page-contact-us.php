@@ -64,18 +64,69 @@
                     <p>For medication refills, transfers, or new prescriptions please use our online transfer form at <a
                             href="https://nowrx.com/refill-and-transfer-prescriptions/">nowrx.com/refill-and-transfer-prescriptions/</a>
                     </p>
-                    <!--[if lte IE 8]>
-                    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
-                    <![endif]-->
-                    <script charset="utf-8" type="text/javascript" defer src="//js.hsforms.net/forms/v2.js"></script>
-                    <script defer>
-                        window.addEventListener('load', function() {
+
+
+
+<div id="contactus-form">
+
+                </div>
+
+                <script defer async>
+
+                    var $document = document.querySelector("body");
+
+                    document.addEventListener('load', function(evt) {
+
+                        var $script = document.querySelector("script[src='//js.hsforms.net/forms/v2.js']");
+
+                        if (!evt.target.isEqualNode($script)) {
+                            return;
+                        }
+
+                        setTimeout(() => {
                             hbspt.forms.create({
+                                region: "na1",
                                 portalId: "5952677",
-                                formId: "c3096955-bd03-4e37-a266-c4fc4cc523a7"
-                            });
-                        });
-                    </script>
+                                formId: "c3096955-bd03-4e37-a266-c4fc4cc523a7",
+                                formInstanceId: "main1",
+                                css: '',
+                                cssClass: 'dynamic-contactus-form',
+                                target: "#contactus-form",
+                                translations: {
+                                    en: {
+                                        submitText: "Get Started",
+                                    }
+                                }
+                            })
+                        }, 0);
+
+                        setTimeout(() => {
+                            let formDisplayed = document.getElementsByClassName('dynamic-contactus-form');
+
+                            if (formDisplayed.length > 0) {
+                                // console.log('exists', formDisplayed.length);
+
+                            } else {
+
+                                hbspt.forms.create({
+                                    region: "na1",
+                                    portalId: "5952677",
+                                formId: "c3096955-bd03-4e37-a266-c4fc4cc523a7",
+                                    formInstanceId: "main1",
+                                    css: '',
+                                    target: "#contactus-form",
+                                    translations: {
+                                        en: {
+                                            submitText: "Get Started",
+                                        }
+                                    }
+                                })
+                            }
+
+                        }, 4400);
+
+                    }, true);
+                </script>
                 </div>
             </div>
             <div class="locations-list">

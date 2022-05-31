@@ -161,40 +161,64 @@
                 </div>
                 <div class="rvl">
                     <div class="form-content">
-                        <script defer>
 
-                            window.addEventListener('load', function() {
-                                    hbspt.forms.create({
-                                        portalId: "5952677",
-                                        formId: "e1e60aa0-0007-4875-a14d-edef6831c133"
-                                    });
-                            });
-                        </script>
+ <div id="pricing-form"></div>
 
-<script>
-        // override the hbspt functionality while hubspot is loading
-        var hbspt = {
-        //push form to hubcache queue
-        forms:{create:function(c){hubspot.forms.push(c)}},
-        };
+<script defer>
+    var $document = document.querySelector("body");
 
-        // cache hubspot forms here
-        var hubcache = {
-                forms:[],
-                letsgo:function(){
-                    for (var i in hubspot.forms){
-                    //hubspot is now loaded
-                    hbspt.forms.create(hubcache.forms[i]);
+    document.addEventListener('load', function(evt) {
+
+        var $script = document.querySelector("script[src='//js.hsforms.net/forms/v2.js']");
+
+        if (!evt.target.isEqualNode($script)) {
+            return;
+        }
+
+        setTimeout(() => {
+            hbspt.forms.create({
+                region: "na1",
+                portalId: "5952677",
+                                        formId: "e1e60aa0-0007-4875-a14d-edef6831c133",
+                formInstanceId: "2fef",
+                css: '',
+                cssClass: 'dynamic-pricing-form',
+                target: "#pricing-form",
+                translations: {
+                    en: {
+                        submitText: "Get Started",
                     }
                 }
+            })
+        }, 100);
+
+        setTimeout(() => {
+            let formDisplayed = document.getElementsByClassName('dynamic-pricing-form');
+
+            if (formDisplayed.length > 0) {
+                console.log('exists', formDisplayed.length);
+
+            } else {
+
+                hbspt.forms.create({
+                    region: "na1",
+                    portalId: "5952677",
+                                        formId: "e1e60aa0-0007-4875-a14d-edef6831c133",
+                    formInstanceId: "2fef",
+                    css: '',
+                    target: "#pricing-form",
+                    translations: {
+                        en: {
+                            submitText: "Get Started",
+                        }
+                    }
+                })
             }
-        </script>
-        <script
-        type="text/javascript"
-        defer
-        src="//js.hsforms.net/forms/v2.js"
-        onload="hubcache.letsgo()">
-        </script>
+
+        }, 1400);
+
+    }, true);
+</script>
 
                     </div>
                 </div>

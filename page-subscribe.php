@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<section class="form-landing">
+<section class="form-landingmain">
     <div class="content">
         <h1 class="title">
         Get Health News Right to Your Inbox
@@ -11,9 +11,9 @@
                     <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
                 <![endif]-->
 
-                <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js" defer></script>
+                <!-- <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js" defer></script> -->
 
-                <div id="prep-form"></div>
+                <div id="subscribe-form"></div>
 
                 <script defer>
 
@@ -34,8 +34,8 @@
             formId: "743c3ddd-5ba0-4dd9-9c25-dd8c8c328c80",
             formInstanceId: "2fef",
                                 css: '',
-                                cssClass:'dynamic-prep-form',
-                                target: "#prep-form",
+                                cssClass:'dynamic-subscribe-form',
+                                target: "#subscribe-form",
                                 translations: {
                                     en: {
                                         submitText: "Get Started",
@@ -45,7 +45,7 @@
                         }, 100);
 
                         setTimeout(() => {
-                            let formDisplayed = document.getElementsByClassName('dynamic-prep-form');
+                            let formDisplayed = document.getElementsByClassName('dynamic-subscribe-form');
 
                             if (formDisplayed.length > 0) {
                                 console.log('exists',formDisplayed.length);
@@ -58,7 +58,7 @@
             formId: "743c3ddd-5ba0-4dd9-9c25-dd8c8c328c80",
             formInstanceId: "2fef",
                                     css: '',
-                                    target: "#prep-form",
+                                    target: "#subscribe-form",
                                     translations: {
                                     en: {
                                         submitText: "Get Started",

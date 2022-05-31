@@ -16,7 +16,7 @@ body {
 			background-repeat: no-repeat;
 		}
 	}
-}
+}body.page-template-default section#content {margin-top: 160px;}
 
 a.alink {
 	color: inherit;
@@ -243,7 +243,7 @@ a.ArticleHeader-eyebrow {
 	margin: 100px 0 0;
 	@media screen and (max-width: 1280px) {
 		flex-direction: column;
-		margin: 170px 0 0;
+		margin: 110px 0 0;
 	}
 	article {
 		width: 100%;
@@ -1209,7 +1209,7 @@ section.testimonials-block.doctorquotes {
 	margin-top: -30px;
 	@media screen and (max-width: 1280px) {
 		padding: 0 0;
-		margin-top: 170px;
+		margin-top: 120px;
 	}
 
 	@media screen and (max-width: 700px) {
@@ -1962,10 +1962,10 @@ main#main.main-class {
 		@media screen and (max-width: 1280px) {
 			flex-direction: column;
 			align-items: center;
-			margin: 170px auto 0;
+			margin: 120px auto 0;
 		}
 		@media screen and (max-width: 400px) {
-			margin-top: 170px;
+			margin-top: 120px;
 		}
 		p {
 			font-size: 16px;
@@ -3139,7 +3139,7 @@ section.hero-home.contactpage {
 // 		}
 // 	}
 // }
-#referralform {
+#referralformform {
 	padding: 20px 0;
 	max-width: 1430px;
 	margin: 0 auto;

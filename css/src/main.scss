@@ -1169,14 +1169,14 @@ section.hero-home {
 	margin: 110px 0 0;
 
 	@media screen and (max-width: 1280px) {
-		margin: 175px 0 0;
+		margin: 100px 0 0;
 		padding-top: 0px;
 	}
 	@media screen and (max-width: 700px) {
-		margin: 170px 0 0;
+		margin: 100px 0 0;
 	}
 	@media screen and (max-width: 400px) {
-		margin: 150px 0 0;
+		margin: 100px 0 0;
 	}
 
 	&.block-prephome {
@@ -1340,7 +1340,7 @@ section.hero-home {
 		padding: 0;
 		margin-top: -110px;
 		@media screen and (max-width: 1280px) {
-			margin-top: 160px;
+			margin-top: 90px;
 		}
 
 		.content {
@@ -2785,7 +2785,7 @@ a.post-link-title {
 		text-align: center;
 	}
 	section.hero--sub-page {
-		padding: 0;
+		// padding: 0;
 	}
 	section.how-it-works {
 		.hiw-cell.hiw-cell {
@@ -4832,7 +4832,7 @@ section.resource-sections {
 	margin: 0px 0 0;
 
 	@media screen and (max-width: 1280px) {
-		padding-top: 100px;
+		padding-top: 40px;
 	}
 
 	&.hrline {
@@ -5466,10 +5466,10 @@ section.nowprepnews {
 section.welcometele {
 	padding: 0 0;
 	@media screen and (max-width: 1280px) {
-		padding-top: 90px;
+		padding-top: 30px;
 	}
 	@media screen and (max-width: 700px) {
-		padding: 90px 0 0;
+		padding: 30px 0 0;
 	}
 	.content {
 		display: flex;
@@ -6576,7 +6576,7 @@ section.welcomed {
 			max-width: 1300px;
 		}
 		@media screen and (max-width: 1550px) {
-			padding: 200px 9.28vw 7.14vw;
+			padding: 120px 9.28vw 7.14vw;
 		}
 	}
 	.sub-heading.h5.js-revealText {
@@ -7026,7 +7026,7 @@ section.reviewstree {
 }
 
 section.blogmain {
-	padding: 90px 0;
+	padding: 90px 20px;
 
 	article.section-blog-post {
 		width: 23%;
@@ -7356,10 +7356,10 @@ section.entry-content.cf {
 	max-width: 75rem;
 	margin: 0 auto;
 	@media screen and (max-width: 1280px) {
-		padding-top: 170px;
+		padding-top: 120px;
 	}
 	@media screen and (max-width: 700px) {
-		padding: 170px 10px 0;
+		padding: 120px 10px 0;
 	}
 
 	.blog-container.pagedinner {
@@ -8828,7 +8828,16 @@ section.locations-flex {
 		@media screen and (max-width: 700px) {
 			width: 100%;
 		}
+		&:hover {background: #038ed8;color: #fff;border-radius: 5px;}
+
+		&:hover h2.sec-title {color: #fff;}
+
+		&:hover a.rx-btn-loca {color: #038ed8;background: #fff;border-radius: 10px;}
+
+		&:hover p {color: #fff;}
 	}
+
+
 
 	.locatios-mainblock .location-item .sv {
 		display: none;
@@ -8960,6 +8969,7 @@ section.locations-flex {
 			box-shadow: none;
 			background: #eee;
 			padding: 7px 20px;
+			border-radius: 30px;
 		}
 
 		span.btn:hover {

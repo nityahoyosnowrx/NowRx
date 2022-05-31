@@ -25,7 +25,7 @@
 
                 <!-- form -->
                 <div class="formcall">
-                    <div id="referralform">
+                    <div id="referralformform">
                         <div class="containerd">
                             <div class="contet">
                                 <form id="referralForm" name="referralForm" novalidate method="post"
@@ -88,7 +88,7 @@
                                             </div>
 
                                             <!-- item -->
-                                            <div class="grid-x grid-padding-x">
+                                            <div class="grid-x grid-padding-x" style="display:none;">
                                                 <div class="medium-6 cell">
                                                     <label>
                                                         <span>Referral Name</span>
@@ -110,7 +110,7 @@
                                             </div>
 
                                             <!-- item -->
-                                            <div class="grid-x grid-padding-x">
+                                            <div class="grid-x grid-padding-x" style="display:none;">
                                                 <div class="medium-6 cell">
                                                     <label>
                                                         <span>Referral Name</span>
@@ -132,7 +132,7 @@
                                             </div>
 
                                             <!-- item -->
-                                            <div class="grid-x grid-padding-x">
+                                            <div class="grid-x grid-padding-x" style="display:none;">
                                                 <div class="medium-6 cell">
                                                     <label>
                                                         <span>Referral Name</span>
@@ -154,7 +154,7 @@
                                             </div>
 
                                             <!-- item -->
-                                            <div class="grid-x grid-padding-x">
+                                            <div class="grid-x grid-padding-x" style="display:none;">
                                                 <div class="medium-6 cell">
                                                     <label>
                                                         <span>Referral Name</span>
@@ -263,16 +263,69 @@
                 <div class="rvl">
                     <div class="form-content">
 
-                        <!--[if lte IE 8]>
-<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
-<![endif]-->
-                        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-                        <script>
-                        hbspt.forms.create({
-                            portalId: "5952677",
-                            formId: "79574438-8e30-404e-a02f-4424317036e4"
-                        });
-                        </script>
+
+
+<div id="referral-form">
+
+                </div>
+
+                <script defer async>
+
+                    var $document = document.querySelector("body");
+
+                    document.addEventListener('load', function(evt) {
+
+                        var $script = document.querySelector("script[src='//js.hsforms.net/forms/v2.js']");
+
+                        if (!evt.target.isEqualNode($script)) {
+                            return;
+                        }
+
+                        setTimeout(() => {
+                            hbspt.forms.create({
+                                region: "na1",
+                                portalId: "5952677",
+                            formId: "79574438-8e30-404e-a02f-4424317036e4",
+
+                                formInstanceId: "main1",
+                                css: '',
+                                cssClass: 'dynamic-referral-form',
+                                target: "#referral-form",
+                                translations: {
+                                    en: {
+                                        submitText: "Get Started",
+                                    }
+                                }
+                            })
+                        }, 0);
+
+                        setTimeout(() => {
+                            let formDisplayed = document.getElementsByClassName('dynamic-referral-form');
+
+                            if (formDisplayed.length > 0) {
+                                // console.log('exists', formDisplayed.length);
+
+                            } else {
+
+                                hbspt.forms.create({
+                                    region: "na1",
+                                    portalId: "5952677",
+                            formId: "79574438-8e30-404e-a02f-4424317036e4",
+                                    formInstanceId: "main1",
+                                    css: '',
+                                    target: "#referral-form",
+                                    translations: {
+                                        en: {
+                                            submitText: "Get Started",
+                                        }
+                                    }
+                                })
+                            }
+
+                        }, 4400);
+
+                    }, true);
+                </script>
 
 
                     </div>
@@ -365,15 +418,13 @@ jQuery(document).ready(function() {
 
         //validating email in system
         jQuery.ajax({
-            url: "https://nowrx.com/hubspot-check-email.php?referring_email=" + referring_email,
+            url: "<?php echo get_site_url(); ?>/hubspot-check-email.php?referring_email=" + referring_email,
             success: function(data) {
-                console.log(data);
+                // console.log(data);
                 if (data == 0) {
-                    jQuery("#referral-error").html(
-                        "Please enter the email address registered with NowRx.com");
+                    jQuery("#referral-error").html("Please enter the email address registered with NowRx.com");
                     jQuery("#referral-error").show(500);
-                    jQuery('input[name="referring_email"]').css("background-color",
-                        "#ffdede");
+                    jQuery('input[name="referring_email"]').css("background-color", "#ffdede");
                     console.log('email not found');
                     return false;
                 } else {

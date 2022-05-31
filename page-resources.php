@@ -155,24 +155,7 @@
     </div>
 </section>
 
-<!-- visit faq -->
-<section class="visit-faq">
-    <div class="container">
-        <div class="content">
-            <span class="sub-headline">
-                No Signup Required. No Hidden Fees.
-            </span>
-            <h2 class="sec-title">
-                Free Pharmacy Delivery
-            </h2>
-            <div class="btn-container">
-                <a href="<?= get_site_url(); ?>/" class="rx-btn rx-dg">
-                    Learn More
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
+
 <article>
 
 <section class="blogmain">

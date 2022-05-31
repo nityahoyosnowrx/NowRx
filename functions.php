@@ -323,7 +323,6 @@ and be up and running in seconds.
         'base' => str_replace($big, '%#%', esc_url(get_pagenum_link($big))),
         'format' => '?paged=%#%',
         'current' => $current_page,
-        'total' => $total_pages,
       ));
     }
   }
@@ -904,3 +903,19 @@ function itsme_disable_feed() {
 
 //  remove_action( 'wp_head', 'feed_links_extra', 3 );
 // remove_action( 'wp_head', 'feed_links', 2 );
+
+
+add_filter('comment_form_default_fields', 'unset_url_field');
+function unset_url_field($fields){
+    if(isset($fields['url']))
+       unset($fields['url']);
+       return $fields;
+}
+
+add_filter('comment_form_default_fields', 'email_filtered');
+function email_filtered($fields)
+{
+  if(isset($fields['email']))
+   unset($fields['email']);
+  return $fields;
+}

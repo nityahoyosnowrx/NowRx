@@ -32,10 +32,10 @@ body.page-template > .grid-container {
 body.single-locations main#main {
 	padding: 0;
 	position: relative;
-	margin: 240px auto 0;
+	margin: 170px auto 0;
 	@media screen and (max-width: 992px) {
 		padding: 0px 0 0;
-		margin: 175px auto 0;
+		margin: 125px auto 0;
 	}
 }
 
@@ -190,6 +190,9 @@ body.page-template-default section#content {
 
 section.hero--sub-page {
 	padding: 200px 0 60px;
+	@media screen and (max-width: 1280px) {
+		padding-top: 130px;
+	}
 }
 
 body.page-template.page-template-telehealth-register-for-telehealth-thank-you.page-template-telehealth-register-for-telehealth-thank-you-php
@@ -199,7 +202,7 @@ body.page-template.page-template-page-thank-you-doctor > main,
 .page-template-default > main,
 .page-template-page-thanyou-base > main,
 .page-template-pageprepregister-for-NowPrEPthank-you main {
-	margin: 200px auto 60px;
+	margin: 160px auto 60px;
 	@media screen and (max-width: 1280px) {
 		margin: 90px auto 60px;
 	}

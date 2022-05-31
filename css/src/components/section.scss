@@ -157,11 +157,11 @@ a.rx-button.rx-light .icon {
 }
 
 section.landing-block {
-	margin: 200px 0 75px;
+	margin: 160px 0 125px;
 
 	@media screen and (max-width: 700px) {
 		margin-bottom: 30px;
-		margin-top: 180px;
+		margin-top: 120px;
 	}
 
 	&.nowprep-landingblock {
@@ -1218,7 +1218,7 @@ section.block-frequent-questions {
 section.fold-block {
 	margin: 180px 9vw 75px;
 	@media screen and (max-width: 700px) {
-		margin: 170px 0 75px;
+		margin: 120px 0 75px;
 	}
 	h1.title {
 		display: flex;
@@ -1323,7 +1323,7 @@ section.fold-block {
 			li.hs-form-checkbox {
 				margin: 10px 0;
 				@media screen and (max-width: 700px) {
-					margin:  0;
+					margin: 0;
 				}
 			}
 			fieldset.form-columns-1 .hs-input {
@@ -1373,7 +1373,7 @@ section.fold-block {
 				font-size: 12px;
 				font-weight: bold;
 				color: #192d3e;
-				margin: 0 ;
+				margin: 0;
 			}
 
 			.hs_switch_to_nowrx_pharmacy label span {
@@ -1955,7 +1955,141 @@ section.firt-step-block {
 	}
 }
 
-section.form-landing {
+section.landing-block.form-landing {
+
+
+
+#prep-form{
+	@media screen and (max-width: 1280px) {
+		margin-bottom: 30px;
+	}
+}
+
+	h1.title {
+		font-size: 3rem;
+		font-weight: 700;
+		@media screen and (max-width: 700px) {
+			font-size: 30px;
+		}
+	}
+
+	[type='color'],
+	[type='date'],
+	[type='datetime-local'],
+	[type='datetime'],
+	[type='email'],
+	[type='month'],
+	[type='number'],
+	[type='password'],
+	[type='search'],
+	[type='tel'],
+	[type='text'],
+	[type='time'],
+	[type='url'],
+	[type='week'],
+	textarea {
+		border: none;
+		box-shadow: none;
+	}
+	fieldset.form-columns-1 .hs-input {
+		min-width: 100%;
+	}
+	input.hs-button.primary.large {
+		margin: 20px 0 0;
+		background: #038ed8;
+		box-shadow: none;
+		border: none;
+	}
+
+	.hs_submit.hs-submit {
+		display: block;
+		margin: 0;
+	}
+
+	.hs-form-ded00596-ad7a-46b6-9069-bb3552b72735_3734397d-584c-43cb-b271-e53e038564b7
+		fieldset.form-columns-1
+		.hs-input {
+		width: 100%;
+	}
+
+	.hs_city label,
+	.hs_email label,
+	.hs_firstname label,
+	.hs_lastname label,
+	.hs_phone label {
+		font-size: 0.8rem;
+	}
+	form {
+		@media screen and (min-width: 1280px) {
+			max-width: 540px;
+			background: #fff;
+			padding: 10px 10px;
+			display: flex;
+			border-radius: 30px;
+			justify-content: space-between;
+			align-items: center;
+			margin: 20px 0 0;
+			box-shadow: 0 5px 30px -10px Rgb(0 0 0 / 52%);
+			background: #fff;
+			padding: 10px;
+			border: 1px solid #e6e6e6;
+		}
+		@media screen and (max-width: 1280px) {
+			flex-direction: column;
+		}
+		label {
+			position: absolute;
+			top: 0;
+			left: -9999px;
+			width: 1px;
+			height: 1px;
+			overflow: hidden;
+		}
+		.input {
+			input {
+				margin: 0;
+				border: none;
+				margin-right: auto;
+				padding: 0;
+				box-shadow: none;
+				padding: 0 20px;
+
+				@media screen and (max-width: 1280px) {
+					box-shadow: 0 5px 30px -10px Rgb(0 0 0 / 52%);
+					background: #fff;
+					padding: 10px;
+					border: 1px solid #e6e6e6;
+					padding: 30px;
+					border-radius: 50px;
+				}
+			}
+		}
+
+		input.hs-button.primary.large {
+			@media screen and (min-width: 1280px) {
+				background: #d54439;
+				width: auto;
+				min-width: auto;
+				text-transform: uppercase;
+				font-weight: bold;
+				margin-left: 20px;
+				margin: 0;
+			}
+			@media screen and (max-width: 1280px) {
+				width: 100%;
+				width: 100%;
+				padding: 20px;
+				background: #d54439;
+				margin: 10px 0 0px;
+			}
+		}
+	}
+}
+
+
+
+
+section.form-landingmain {
 	display: flex;
 	align-items: center;
 	position: relative;

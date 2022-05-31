@@ -92,12 +92,6 @@ if (is_single() && 'post' == get_post_type()) {
 </footer>
 
 
-
-<!-- </div> -->
-
-<!-- closes off canvas content -->
-
-
 <?php if (is_singular('post') || is_home()) : ?>
 
   <div class="pre-modal-window">
@@ -119,10 +113,7 @@ if (is_single() && 'post' == get_post_type()) {
             </div>
           </header>
 
-          <!--[if lte IE 8]>
-            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
-            <![endif]-->
-          <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+
           <div id="popup-foot">
           </div>
           <script defer>
@@ -171,152 +162,57 @@ if (is_single() && 'post' == get_post_type()) {
 <?php endif; ?>
 
 
-<!--  -->
+    <script src="<?php echo get_template_directory_uri(); ?>/public/frontend-bundle.js"></script>
 
-
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'" />
-<noscript>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" type="text/css" />
-</noscript>
-
-<script src="<?php echo get_template_directory_uri(); ?>/public/frontend-bundle.js"></script>
-
-
-<?php wp_footer(); ?>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&family=Nunito:wght@200;300;500;600;800&display=swap" rel="stylesheet">
 
 
 
-<?php if (is_page('nowprep') || is_page('referral') || is_page('telehealth') || is_page('how-it-works') || is_page('pricing') || is_front_page() || is_page('faqs') || is_page('testimonials') || is_page('refill-and-transfer-prescriptions') || is_page('resources') || is_page('for-doctors') || is_page('contact-us') || is_post_type_archive('locations') || is_page('privacy-policy') || is_page('hipaa-privacy') || is_page('terms-and-conditions')) : ?>
-  <script defer async>
-    window.onscroll = function() {
-      cnt++;
-      myFunction(cnt)
-
-    };
-    let cnt = 0;
-
-    function myFunction(cnt) {
-      // console.log(cnt)
-      if (document.documentElement.scrollTop > 50) {
-        if (cnt == 1) {
-          setTimeout(() => {
-            var giftofspeed = document.createElement('link');
-            giftofspeed.rel = 'stylesheet';
-            giftofspeed.href = '<?php echo get_template_directory_uri(); ?>/public/frontend.css';
-            giftofspeed.type = 'text/css';
-            var godefer = document.getElementsByTagName('link')[0];
-            godefer.parentNode.insertBefore(giftofspeed, godefer);
-
-            setTimeout(() => {
-          jQuery("#inline-style").remove();
-         }, 300);
-
-        //  console.log('d.')
-          }, 3000);
-        }
-
-      } else {
-        if (cnt == 1) {
-          var giftofspeed = document.createElement('link');
-          giftofspeed.rel = 'stylesheet';
-          giftofspeed.href = '<?php echo get_template_directory_uri(); ?>/public/frontend.css';
-          giftofspeed.type = 'text/css';
-          var godefer = document.getElementsByTagName('link')[0];
-          godefer.parentNode.insertBefore(giftofspeed, godefer);
-
-         setTimeout(() => {
-          jQuery("#inline-style").remove();
-         }, 300);
-        }
-      }
-    }
+  <?php wp_footer(); ?>
 
 
-    setTimeout(() => {
-            var giftofspeed = document.createElement('link');
-            giftofspeed.rel = 'stylesheet';
-            giftofspeed.href = '<?php echo get_template_directory_uri(); ?>/public/frontend.css';
-            giftofspeed.type = 'text/css';
-            var godefer = document.getElementsByTagName('link')[0];
-            godefer.parentNode.insertBefore(giftofspeed, godefer);
+  <?php
+  // tracking code
+  get_template_part('analytics-head'); ?>
 
-            setTimeout(() => {
-          jQuery("#inline-style").remove();
-         }, 300);
-
-        //  console.log('d.n')
-          }, 3000);
-
-    // if (document.documentElement.scrollTop > 50) {
-    //     if (cnt == 1) {
-    //       setTimeout(() => {
-    //         var giftofspeed = document.createElement('link');
-    //         giftofspeed.rel = 'stylesheet';
-    //         giftofspeed.href = '<?php echo get_template_directory_uri(); ?>/public/frontend.css';
-    //         giftofspeed.type = 'text/css';
-    //         var godefer = document.getElementsByTagName('link')[0];
-    //         godefer.parentNode.insertBefore(giftofspeed, godefer);
-
-    //         setTimeout(() => {
-    //       jQuery("#inline-style").remove();
-    //      }, 300);
-
-
-    //       }, 0);
-    //     }
-
-    //   }
-
-  </script>
-<?php else : ?>
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/public/frontend.css?v=111111112">
-<?php endif; ?>
-
-
-
-<?php
-// tracking code
-get_template_part('analytics-head'); ?>
-
-<?php
-// Video load on homepage
-if (is_front_page()) : ?>
-  <!-- video code -->
-  <script async>
-    // console.log(window.innerWidth);
-    let windowW = window.innerWidth;
-    if (windowW > 992) {
-      document.addEventListener('DOMContentLoaded', function() {
-        var lazyVideos = [].slice.call(document.querySelectorAll('video.lazy'));
-        if ('IntersectionObserver' in window) {
-          var lazyVideoObserver = new IntersectionObserver(function(entries, observer) {
-            entries.forEach(function(video) {
-              if (video.isIntersecting) {
-                for (var source in video.target.children) {
-                  var videoSource = video.target.children[source];
-                  if (typeof videoSource.tagName === 'string' && videoSource
-                    .tagName === 'SOURCE') {
-                    videoSource.src = videoSource.dataset.src;
+  <?php
+  // Video load on homepage
+  if (is_front_page()) : ?>
+    <!-- video code -->
+    <script async>
+      // console.log(window.innerWidth);
+      let windowW = window.innerWidth;
+      if (windowW > 992) {
+        document.addEventListener('DOMContentLoaded', function() {
+          var lazyVideos = [].slice.call(document.querySelectorAll('video.lazy'));
+          if ('IntersectionObserver' in window) {
+            var lazyVideoObserver = new IntersectionObserver(function(entries, observer) {
+              entries.forEach(function(video) {
+                if (video.isIntersecting) {
+                  for (var source in video.target.children) {
+                    var videoSource = video.target.children[source];
+                    if (typeof videoSource.tagName === 'string' && videoSource
+                      .tagName === 'SOURCE') {
+                      videoSource.src = videoSource.dataset.src;
+                    }
                   }
+                  video.target.load();
+                  video.target.classList.remove('lazy');
+                  video.target.play();
+                  lazyVideoObserver.unobserve(video.target);
                 }
-                video.target.load();
-                video.target.classList.remove('lazy');
-                video.target.play();
-                lazyVideoObserver.unobserve(video.target);
-              }
+              });
             });
-          });
-          lazyVideos.forEach(function(lazyVideo) {
-            lazyVideoObserver.observe(lazyVideo);
-          });
-        }
-      });
-    }
-  </script>
-<?php endif; ?>
+            lazyVideos.forEach(function(lazyVideo) {
+              lazyVideoObserver.observe(lazyVideo);
+            });
+          }
+        });
+      }
+    </script>
+  <?php endif; ?>
 
-<?php get_template_part('footer-modals'); ?>
+  <?php get_template_part('footer-modals'); ?>
 
-</body>
-
+  </body>
 </html>

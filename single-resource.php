@@ -116,37 +116,7 @@ $yoast_desc = get_post_meta( $id, '_yoast_wpseo_metadesc', true );
             </div>
         </div>
 
-        <!-- visit faq -->
-        <section class="visit-faq">
-            <div class="container">
-                <div class="content">
-                    <div class="rvl">
-                        <span class="sub-headline">
-                            No Signup Required. No Hidden Fees.
-                        </span>
-                    </div>
-                    <div class="rvl">
-                        <h2 class="sec-title">
-                        Free Pharmacy Delivery
-                        </h2>
-                    </div>
-                    <div class="rvl">
-                        <div class="btn-container">
-                            <a href="<?= get_site_url(); ?>/" class="rx-btn rx-dg">
-                            Learn More
-                            </a>
-                        </div>
-                    </div>
-                    <div class="rvl">
-                        <div class="small-block">
-                            Still have questions about how to get started with NowRx Pharmacy? Email us at <a
-                                href="mailto:info@nowrx.com" class="alink">info@nowrx.com</a> and we will be happy to
-                            help.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+
 
 </section>
 
