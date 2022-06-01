@@ -15,7 +15,7 @@
 
 <?php get_header(); ?>
 
-
+<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js" defer></script>
 
 <section class="landing-block">
     <div class="container fluid">
@@ -329,12 +329,12 @@
 
                 <div class="faq-content">
                     <ul class="list">
-                        <li class="list-item">
+                        <li class="list-item-nw">
                             <div class="list-title">
                                 <div class="list-question">
                                     How long does delivery take from NowRx?
                                 </div>
-                                <div class="list-action" data-view="false">
+                                <div class="list-action-nw" data-view="false">
                                     <div class="open">
                                         <svg style="max-width:20px;max-height:20px;" aria-hidden="true" focusable="false" data-prefix="far" data-icon="angle-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="svg-inline--fa fa-angle-down fa-w-10 fa-9x">
                                             <path fill="currentColor" d="M151.5 347.8L3.5 201c-4.7-4.7-4.7-12.3 0-17l19.8-19.8c4.7-4.7 12.3-4.7 17 0L160 282.7l119.7-118.5c4.7-4.7 12.3-4.7 17 0l19.8 19.8c4.7 4.7 4.7 12.3 0 17l-148 146.8c-4.7 4.7-12.3 4.7-17 0z" class=""></path>
@@ -352,13 +352,13 @@
                              </div>
 
                         </li>
-                        <li class="list-item">
+                        <li class="list-item-nw">
                             <div class="list-title">
                                 <div class="list-question">
                                     Does NowRx charge more to cover free delivery?
 
                                 </div>
-                                <div class="list-action" data-view="false">
+                                <div class="list-action-nw" data-view="false">
                                     <div class="open">
                                         <svg style="max-width:20px;max-height:20px;" aria-hidden="true" focusable="false" data-prefix="far" data-icon="angle-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="svg-inline--fa fa-angle-down fa-w-10 fa-9x">
                                             <path fill="currentColor" d="M151.5 347.8L3.5 201c-4.7-4.7-4.7-12.3 0-17l19.8-19.8c4.7-4.7 12.3-4.7 17 0L160 282.7l119.7-118.5c4.7-4.7 12.3-4.7 17 0l19.8 19.8c4.7 4.7 4.7 12.3 0 17l-148 146.8c-4.7 4.7-12.3 4.7-17 0z" class=""></path>
@@ -372,13 +372,13 @@
                             </div>
 
                         </li>
-                        <li class="list-item">
+                        <li class="list-item-nw">
                             <div class="list-title">
                                 <div class="list-question">
                                     How does NowRx make money?
 
                                 </div>
-                                <div class="list-action" data-view="false">
+                                <div class="list-action-nw" data-view="false">
                                     <div class="open">
                                         <svg style="max-width:20px;max-height:20px;" aria-hidden="true" focusable="false" data-prefix="far" data-icon="angle-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="svg-inline--fa fa-angle-down fa-w-10 fa-9x">
                                             <path fill="currentColor" d="M151.5 347.8L3.5 201c-4.7-4.7-4.7-12.3 0-17l19.8-19.8c4.7-4.7 12.3-4.7 17 0L160 282.7l119.7-118.5c4.7-4.7 12.3-4.7 17 0l19.8 19.8c4.7 4.7 4.7 12.3 0 17l-148 146.8c-4.7 4.7-12.3 4.7-17 0z" class=""></path>
@@ -392,13 +392,13 @@
                              </div>
 
                         </li>
-                        <li class="list-item">
+                        <li class="list-item-nw">
                             <div class="list-title">
                                 <div class="list-question">
                                     How is NowRx different than mail pharmacy?
 
                                 </div>
-                                <div class="list-action" data-view="false">
+                                <div class="list-action-nw" data-view="false">
                                     <div class="open">
                                         <svg style="max-width:20px;max-height:20px;" aria-hidden="true" focusable="false" data-prefix="far" data-icon="angle-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="svg-inline--fa fa-angle-down fa-w-10 fa-9x">
                                             <path fill="currentColor" d="M151.5 347.8L3.5 201c-4.7-4.7-4.7-12.3 0-17l19.8-19.8c4.7-4.7 12.3-4.7 17 0L160 282.7l119.7-118.5c4.7-4.7 12.3-4.7 17 0l19.8 19.8c4.7 4.7 4.7 12.3 0 17l-148 146.8c-4.7 4.7-12.3 4.7-17 0z" class=""></path>
@@ -412,12 +412,12 @@
                             </div>
 
                         </li>
-                        <li class="list-item">
+                        <li class="list-item-nw">
                             <div class="list-title">
                                 <div class="list-question">
                                     What insurance plans does NowRx take?
                                 </div>
-                                <div class="list-action" data-view="false">
+                                <div class="list-action-nw" data-view="false">
                                     <div class="open">
                                         <svg style="max-width:20px;max-height:20px;" aria-hidden="true" focusable="false" data-prefix="far" data-icon="angle-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="svg-inline--fa fa-angle-down fa-w-10 fa-9x">
                                             <path fill="currentColor" d="M151.5 347.8L3.5 201c-4.7-4.7-4.7-12.3 0-17l19.8-19.8c4.7-4.7 12.3-4.7 17 0L160 282.7l119.7-118.5c4.7-4.7 12.3-4.7 17 0l19.8 19.8c4.7 4.7 4.7 12.3 0 17l-148 146.8c-4.7 4.7-12.3 4.7-17 0z" class=""></path>
@@ -449,9 +449,123 @@
     </div>
 </section>
 
-<?php include('section-visitfaq.php'); ?>
+
+  <!--[if lte IE 8]>
+        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+    <![endif]-->
+
+    <!-- <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js" defer></script> -->
+    <!-- for-doctors -->
+    <div class="reveal" id="for-doctors-learnmore-second" data-reveal data-close-on-click="true" data-animation-in="slide-in-down" data-animation-out="slide-out-up">
+        <h3 class="text-center">NowRx Doctor Feedback Program</h3>
+        <p class="text-center">
+            Fill out the form below and a member of our pharmacy team will reach out to you within 24 hours to provide
+            details on how to get started.
+        </p>
 
 
+    <div id="doctofeedback"></div>
+            <script defer>
+                var $document = document.querySelector("body");
 
+                document.addEventListener('load', function(evt) {
+                    var $script = document.querySelector("script[src='//js.hsforms.net/forms/v2.js']");
+
+                    if (!evt.target.isEqualNode($script)) {
+                        return;
+                    }
+
+                    // Callback code
+                    setTimeout(() => {
+                        // console.log('loaded')
+                        hbspt.forms.create({
+                            region: "na1",
+                            css: '',
+                            target: "#doctofeedback",
+                            portalId: "5952677",
+                            formId: "134ddd71-adf4-414b-a537-24f71e87f48e"
+
+                        })
+                    }, 3000);
+
+                    // your callback's code
+                    setTimeout(() => {
+                        // console.log('loaded')
+                        hbspt.forms.create({
+                            region: "na1",
+
+                            css: '',
+
+                            target: "#doctofeedback",
+                            portalId: "5952677",
+                            formId: "134ddd71-adf4-414b-a537-24f71e87f48e"
+
+
+                        })
+                    }, 4000);
+
+                }, true);
+            </script>
+        <button class="close-button text-center" data-close aria-label="Close reveal" type="button">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+
+    <!--[if lte IE 8]>
+        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+    <![endif]-->
+
+    <!-- <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js" defer></script> -->
+    <!--for-doctors -->
+    <div class="reveal" id="for-doctors" data-reveal data-close-on-click="true" data-animation-in="slide-in-down" data-animation-out="slide-out-up" style="padding: 40px;">
+        <h3 class="text-center">Building A Better Pharmacy for<br>Our Doctors & Patients</h3>
+        <p class="text-center">Learn Why More Than 4,500 Physicians Trust NowRx!</p>
+
+ <div id="buildbetter"></div>
+            <script defer>
+                var $document = document.querySelector("body");
+
+                document.addEventListener('load', function(evt) {
+                    var $script = document.querySelector("script[src='//js.hsforms.net/forms/v2.js']");
+
+                    if (!evt.target.isEqualNode($script)) {
+                        return;
+                    }
+
+                    // Callback code
+                    setTimeout(() => {
+                        // console.log('loaded')
+                        hbspt.forms.create({
+                            region: "na1",
+                            css: '',
+                            target: "#buildbetter",
+                            portalId: "5952677",
+                    formId: "e7d24a50-ae52-4ec2-a184-a6bbd3eb1382"
+
+                        })
+                    }, 3000);
+
+                    // your callback's code
+                    setTimeout(() => {
+                        // console.log('loaded')
+                        hbspt.forms.create({
+                            region: "na1",
+
+                            css: '',
+
+                            target: "#buildbetter",
+                            portalId: "5952677",
+                    formId: "e7d24a50-ae52-4ec2-a184-a6bbd3eb1382"
+
+
+                        })
+                    }, 4000);
+
+                }, true);
+            </script>
+        <button class="close-button" data-close aria-label="Close reveal" type="button">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
 
 <?php get_footer(); ?>

@@ -173,32 +173,7 @@
 </section>
 
 
-
-<!-- visit faq -->
-<section class="visit-faq">
-    <div class="container">
-        <div class="content">
-            <div class="rvl">
-                <span class="sub-headline">
-                    A Better Local Pharmacy
-                </span>
-            </div>
-            <div class="rvl">
-                <h2 class="sec-title">
-                Find a NowRx
-                </h2>
-            </div>
-            <div class="rvl">
-                <div class="btn-container">
-                    <a href="<?= get_site_url(); ?>/locations/" class="rx-btn rx-dg">
-                        View Locations
-                    </a>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
+<?php include('section-visitblock.php'); ?>
 
 
 <!-- what doctor saying -->
@@ -399,7 +374,7 @@
 </section>
 
 
-<?php include('section-visitblock.php'); ?>
+
 
 
 

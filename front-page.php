@@ -47,18 +47,23 @@
                 <source type="video/mp4" src="<?php echo get_template_directory_uri(); ?>/images/pharmacy-delivery-website-video.mp4" type="video/mp4">
                 <source type="video/webm" src="<?php echo get_template_directory_uri(); ?>/images/pharmacy-delivery-website-video.webm" type="video/webm">
                 Sorry, your browser doesn't support embedded videos.
-                <track default kind="metadata" srclang="en" src="<?php echo get_template_directory_uri(); ?>/images/pharmacy-delivery-website-video-captions.vtt" />
+                <track id="trackvideo" default kind="metadata" srclang="en" data-src="<?php echo get_template_directory_uri(); ?>/images/pharmacy-delivery-website-video-captions.vtt" />
             </video>
             <script defer async>
                 if (window.innerWidth > 1280) {
 
-                var videoElement = document.getElementById('mainvideo');
+                    var videoElement = document.getElementById('mainvideo');
+                    var trackvideo = document.getElementById('trackvideo');
 
-                videoElement.loop = true;
-                videoElement.autoplay = true;
-                videoElement.playsinline = true;
-                videoElement.muted = true;
-                videoElement.preload = 'auto';
+                    videoElement.loop = true;
+                    videoElement.autoplay = true;
+                    videoElement.playsinline = true;
+                    videoElement.muted = true;
+                    videoElement.preload = 'auto';
+                    let tracksrc = trackvideo.getAttribute("data-src");
+                    trackvideo.src=tracksrc;
+
+
                 }
             </script>
             <figure class="image">

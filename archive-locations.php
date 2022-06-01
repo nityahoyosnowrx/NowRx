@@ -1,5 +1,6 @@
 <?php get_header(); ?>
 
+<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js" defer></script>
 
 <script type="application/ld+json" defer>
     {
@@ -1796,7 +1797,65 @@ var locations = [
 </script>
 
 
+  <!--[if lte IE 8]>
+        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+    <![endif]-->
 
+    <!-- <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js" defer></script> -->
+    <!-- suggest a new location -->
+    <div class="reveal" id="suggestalocation" data-reveal data-close-on-click="true" data-animation-in="slide-in-down" data-animation-out="slide-out-up">
+        <h3 class="text-center">suggest a new location</h3>
+        <p>NowRx Pharmacy will notify you when we expand our free prescription delivery services to your area</p>
+
+
+            <div id="location-suggestion"></div>
+            <script defer>
+                var $document = document.querySelector("body");
+
+                document.addEventListener('load', function(evt) {
+                    var $script = document.querySelector("script[src='//js.hsforms.net/forms/v2.js']");
+
+                    if (!evt.target.isEqualNode($script)) {
+                        return;
+                    }
+
+                    // Callback code
+                    setTimeout(() => {
+                        // console.log('loaded')
+                        hbspt.forms.create({
+                            region: "na1",
+
+                            css: '',
+
+                            target: "#location-suggestion",
+                            portalId: "5952677",
+                    formId: "9085621c-0203-44d5-b7e4-f97da3d5cea3"
+
+                        })
+                    }, 3000);
+
+                    // your callback's code
+                    setTimeout(() => {
+                        // console.log('loaded')
+                        hbspt.forms.create({
+                            region: "na1",
+
+                            css: '',
+
+                            target: "#location-suggestion",
+                            portalId: "5952677",
+                    formId: "9085621c-0203-44d5-b7e4-f97da3d5cea3"
+
+
+                        })
+                    }, 4000);
+
+                }, true);
+            </script>
+        <button class="close-button text-center" data-close aria-label="Close reveal" type="button">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
 
 
 

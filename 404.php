@@ -21,7 +21,7 @@
                         <span class="k">Went Wrong</span>
                     </h1>
                     <p>
-                        Check that you have typed in the page URL corretly or navigate to the corect page using the buttons below.
+                    Check that you have typed in the page URL correctly or navigate to the correct page using the buttons below.
                     </p>
 
                 <div class="rvls">

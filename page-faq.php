@@ -15,6 +15,8 @@
 
 <?php get_header(); ?>
 
+<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js" defer></script>
+
 <script type="application/ld+json" defer>
 {
     "@context": "https://schema.org",
@@ -2545,10 +2547,65 @@
 
 
 
-<?php include('section-visitblock.php'); ?>
 
 
 <?php endwhile;
 endif; ?>
+
+ <!--[if lte IE 8]>
+        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+    <![endif]-->
+
+    <!-- <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js" defer></script> -->
+    <!-- faq -->
+    <!-- nowprep -->
+    <div class="reveal" id="submitaquestion" data-reveal data-close-on-click="true" data-animation-in="slide-in-down" data-animation-out="slide-out-up">
+        <h3 class="text-center">Submit a Question</h3>
+        <div class="subheading">
+            <p class="center">Please enter your question below and a NowRx Pharmacy Team member will respond as soon as possible.</p>
+        </div>
+        <div id="question-form-submitdd"></div>
+        <script defer>
+            var $document = document.querySelector("body");
+
+            document.addEventListener('load', function(evt) {
+                var $script = document.querySelector("script[src='//js.hsforms.net/forms/v2.js']");
+
+                if (!evt.target.isEqualNode($script)) {
+                    return;
+                }
+
+                // Callback code
+                setTimeout(() => {
+                    // console.log('loaded')
+                    hbspt.forms.create({
+                        region: "na1",
+                        css: '',
+                        portalId: "5952677",
+                        formId: "aa3d3838-6464-4e9f-911f-d2096f43433c",
+                        target: "#question-form-submitdd",
+                    })
+                }, 3000);
+
+                // your callback's code
+                setTimeout(() => {
+                    // console.log('loaded')
+                    hbspt.forms.create({
+                        region: "na1",
+                        css: '',
+                        portalId: "5952677",
+                        formId: "aa3d3838-6464-4e9f-911f-d2096f43433c",
+                        target: "#question-form-submitdd",
+
+                    })
+                }, 4000);
+
+            }, true);
+        </script>
+
+        <button class="close-button text-center" data-close aria-label="Close reveal" type="button">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
 
 <?php get_footer(); ?>

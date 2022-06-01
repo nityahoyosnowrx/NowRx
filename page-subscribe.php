@@ -1,5 +1,7 @@
 <?php get_header(); ?>
 
+<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js" defer></script>
+
 <section class="form-landingmain">
     <div class="content">
         <h1 class="title">

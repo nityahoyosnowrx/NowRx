@@ -6,6 +6,7 @@
 
 <?php get_header(); ?>
 
+
 <!-- hero -->
 <section class="hero-home referralform">
     <div class="container">
@@ -18,7 +19,7 @@
                     Refer A Friend
                     </h1>
                     <div class="blue">
-                        Refer your friends to NowRx Pharmacy and receive a $20 Visa Gift Card for each referral that becomes a customer.
+                    Refer your friends to NowRx Pharmacy and receive a $20 Visa Card for every qualifying referral.
                     </div>
                 </div>
 
@@ -240,102 +241,6 @@
 <?php get_template_part('components/section-faq-flip'); ?>
 
 
-<!-- visit faq -->
-<section class="form-faq">
-    <div class="custom-shape-divider-top-1610578846">
-        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path d="M0,0V7.23C0,65.52,268.63,112.77,600,112.77S1200,65.52,1200,7.23V0Z" class="shape-fill"></path>
-        </svg>
-    </div>
-    <div class="container">
-        <div class="content">
-            <div class="formloop">
-                <div class="rvl">
-                    <span class="sub-headline">
-                        Have additional questions about the Refer a Friend program?
-                    </span>
-                </div>
-                <div class="rvl">
-                    <h2 class="sec-title">
-                        Submit a Question
-                    </h2>
-                </div>
-                <div class="rvl">
-                    <div class="form-content">
-
-
-
-<div id="referral-form">
-
-                </div>
-
-                <script defer async>
-
-                    var $document = document.querySelector("body");
-
-                    document.addEventListener('load', function(evt) {
-
-                        var $script = document.querySelector("script[src='//js.hsforms.net/forms/v2.js']");
-
-                        if (!evt.target.isEqualNode($script)) {
-                            return;
-                        }
-
-                        setTimeout(() => {
-                            hbspt.forms.create({
-                                region: "na1",
-                                portalId: "5952677",
-                            formId: "79574438-8e30-404e-a02f-4424317036e4",
-
-                                formInstanceId: "main1",
-                                css: '',
-                                cssClass: 'dynamic-referral-form',
-                                target: "#referral-form",
-                                translations: {
-                                    en: {
-                                        submitText: "Get Started",
-                                    }
-                                }
-                            })
-                        }, 0);
-
-                        setTimeout(() => {
-                            let formDisplayed = document.getElementsByClassName('dynamic-referral-form');
-
-                            if (formDisplayed.length > 0) {
-                                // console.log('exists', formDisplayed.length);
-
-                            } else {
-
-                                hbspt.forms.create({
-                                    region: "na1",
-                                    portalId: "5952677",
-                            formId: "79574438-8e30-404e-a02f-4424317036e4",
-                                    formInstanceId: "main1",
-                                    css: '',
-                                    target: "#referral-form",
-                                    translations: {
-                                        en: {
-                                            submitText: "Get Started",
-                                        }
-                                    }
-                                })
-                            }
-
-                        }, 4400);
-
-                    }, true);
-                </script>
-
-
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-</section>
 
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"
     integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>

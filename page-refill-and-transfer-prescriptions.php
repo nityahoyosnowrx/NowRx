@@ -15,6 +15,7 @@
 
 <?php get_header(); ?>
 
+<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js" defer></script>
 
 <section class="fold-block">
     <div class="container fluid">
@@ -115,12 +116,12 @@
 
                 <div class="faq-content">
                     <ul class="list">
-                        <li class="list-item">
+                        <li class="list-item-nw">
                             <div class="list-title">
                                 <div class="list-question">
                                     How long does delivery take from NowRx?
                                 </div>
-                                <div class="list-action" data-view="false">
+                                <div class="list-action-nw" data-view="false">
                                     <div class="open">
                                         <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="angle-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="svg-inline--fa fa-angle-down fa-w-10 fa-9x">
                                             <path fill="currentColor" d="M151.5 347.8L3.5 201c-4.7-4.7-4.7-12.3 0-17l19.8-19.8c4.7-4.7 12.3-4.7 17 0L160 282.7l119.7-118.5c4.7-4.7 12.3-4.7 17 0l19.8 19.8c4.7 4.7 4.7 12.3 0 17l-148 146.8c-4.7 4.7-12.3 4.7-17 0z" class=""></path>
@@ -138,13 +139,13 @@
                              </div>
 
                         </li>
-                        <li class="list-item">
+                        <li class="list-item-nw">
                             <div class="list-title">
                                 <div class="list-question">
                                     Does NowRx charge more to cover free delivery?
 
                                 </div>
-                                <div class="list-action" data-view="false">
+                                <div class="list-action-nw" data-view="false">
                                     <div class="open">
                                         <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="angle-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="svg-inline--fa fa-angle-down fa-w-10 fa-9x">
                                             <path fill="currentColor" d="M151.5 347.8L3.5 201c-4.7-4.7-4.7-12.3 0-17l19.8-19.8c4.7-4.7 12.3-4.7 17 0L160 282.7l119.7-118.5c4.7-4.7 12.3-4.7 17 0l19.8 19.8c4.7 4.7 4.7 12.3 0 17l-148 146.8c-4.7 4.7-12.3 4.7-17 0z" class=""></path>
@@ -158,13 +159,13 @@
                             </div>
 
                         </li>
-                        <li class="list-item">
+                        <li class="list-item-nw">
                             <div class="list-title">
                                 <div class="list-question">
                                     How does NowRx make money?
 
                                 </div>
-                                <div class="list-action" data-view="false">
+                                <div class="list-action-nw" data-view="false">
                                     <div class="open">
                                         <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="angle-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="svg-inline--fa fa-angle-down fa-w-10 fa-9x">
                                             <path fill="currentColor" d="M151.5 347.8L3.5 201c-4.7-4.7-4.7-12.3 0-17l19.8-19.8c4.7-4.7 12.3-4.7 17 0L160 282.7l119.7-118.5c4.7-4.7 12.3-4.7 17 0l19.8 19.8c4.7 4.7 4.7 12.3 0 17l-148 146.8c-4.7 4.7-12.3 4.7-17 0z" class=""></path>
@@ -178,13 +179,13 @@
                              </div>
 
                         </li>
-                        <li class="list-item">
+                        <li class="list-item-nw">
                             <div class="list-title">
                                 <div class="list-question">
                                     How is NowRx different than mail pharmacy?
 
                                 </div>
-                                <div class="list-action" data-view="false">
+                                <div class="list-action-nw" data-view="false">
                                     <div class="open">
                                         <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="angle-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="svg-inline--fa fa-angle-down fa-w-10 fa-9x">
                                             <path fill="currentColor" d="M151.5 347.8L3.5 201c-4.7-4.7-4.7-12.3 0-17l19.8-19.8c4.7-4.7 12.3-4.7 17 0L160 282.7l119.7-118.5c4.7-4.7 12.3-4.7 17 0l19.8 19.8c4.7 4.7 4.7 12.3 0 17l-148 146.8c-4.7 4.7-12.3 4.7-17 0z" class=""></path>
@@ -198,12 +199,12 @@
                             </div>
 
                         </li>
-                        <li class="list-item">
+                        <li class="list-item-nw">
                             <div class="list-title">
                                 <div class="list-question">
                                     What insurance plans does NowRx take?
                                 </div>
-                                <div class="list-action" data-view="false">
+                                <div class="list-action-nw" data-view="false">
                                     <div class="open">
                                         <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="angle-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="svg-inline--fa fa-angle-down fa-w-10 fa-9x">
                                             <path fill="currentColor" d="M151.5 347.8L3.5 201c-4.7-4.7-4.7-12.3 0-17l19.8-19.8c4.7-4.7 12.3-4.7 17 0L160 282.7l119.7-118.5c4.7-4.7 12.3-4.7 17 0l19.8 19.8c4.7 4.7 4.7 12.3 0 17l-148 146.8c-4.7 4.7-12.3 4.7-17 0z" class=""></path>

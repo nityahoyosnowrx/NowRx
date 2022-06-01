@@ -2,7 +2,7 @@
 // Template name: Invest
 ?>
 
-
+<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js" defer></script>
 
 <section class="landing-block form-landing">
     <div class="container fluid">

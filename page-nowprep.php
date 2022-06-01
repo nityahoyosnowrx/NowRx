@@ -1,7 +1,8 @@
 <?php get_header(); ?>
 
+<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js" defer></script>
 
-<section class="landing-block nowprep-landingblock">
+<section class="landing-block nowprep-landingblock" id="nowprep-getstarted">
     <div class="container fluid">
         <div class="content">
             <div class="text-content prep-text">
@@ -155,7 +156,7 @@
 
         </div>
         <div class="btn-container">
-            <a class="rx-button" id="nowprep-gt-gt" data-toggle="waitlist" aria-controls="waitlist" aria-haspopup="true" id="getstarted-gt" tabindex="0">  Get Started</a>
+            <a class="rx-button" id="nowprep-gt-gt" href="#nowprep-getstarted">  Get Started</a>
         </div>
     </div>
 </section>
@@ -242,9 +243,7 @@
             </div>
             <div class="rvl">
                 <div class="btn-container">
-
-                    <a class="rx-btn rx-dg" data-toggle="waitlist" aria-controls="waitlist" aria-haspopup="true"
-                        tabindex="0">Get Started</a>
+                    <a class="rx-btn rx-dg" href="#nowprep-getstarted">Get Started</a>
                 </div>
             </div>
 
@@ -1525,6 +1524,125 @@ To maximize the effectiveness of the PrEP pill you should take the medication as
         </div>
     </div>
 </section>
+
+
+
+<div class="reveal twentyone nowprep-modal" id="waitlist" data-reveal data-close-on-click="true" data-animation-in="slide-in-down" data-animation-out="slide-out-up">
+    <div class="content">
+        <h2 class="title">
+            <span class="title-image">
+                <img data-src="<?php echo get_template_directory_uri(); ?>/images/NowRx-Pharmacy-Logo-Icon-mini.webp" class="lozad" alt="NowRx-Pharmacy-Logo-Icon-mini" width="50" height="38">
+            </span>
+            Get Started
+        </h2>
+        <div class="form-content">
+            <div id="prep-form-footer"></div>
+            <script defer>
+                var $document = document.querySelector("body");
+
+                document.addEventListener('load', function(evt) {
+                    var $script = document.querySelector("script[src='//js.hsforms.net/forms/v2.js']");
+
+                    if (!evt.target.isEqualNode($script)) {
+                        return;
+                    }
+
+                    // Callback code
+                    setTimeout(() => {
+                        // console.log('loaded')
+                        hbspt.forms.create({
+                            region: "na1",
+
+                            css: '',
+                            portalId: "5952677",
+                            target: "#prep-form-footer",
+                            formId: "ded00596-ad7a-46b6-9069-bb3552b72735"
+                        })
+                    }, 3000);
+
+                    // your callback's code
+                    setTimeout(() => {
+                        // console.log('loaded')
+                        hbspt.forms.create({
+                            region: "na1",
+
+                            css: '',
+                            portalId: "5952677",
+                            target: "#prep-form-footer",
+                            formId: "ded00596-ad7a-46b6-9069-bb3552b72735"
+
+                        })
+                    }, 4000);
+
+                }, true);
+            </script>
+
+
+        </div>
+    </div>
+    <button class="close-button text-center" data-close aria-label="Close reveal" type="button">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+
+ <!--[if lte IE 8]>
+        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+    <![endif]-->
+
+    <!-- <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js" defer></script> -->
+    <!-- faq -->
+    <!-- nowprep -->
+    <div class="reveal" id="submitaquestion" data-reveal data-close-on-click="true" data-animation-in="slide-in-down" data-animation-out="slide-out-up">
+        <h3 class="text-center">Submit a Question</h3>
+        <div class="subheading">
+            <p class="center">Please enter your question below and a NowRx Pharmacy Team member will respond as soon as possible.</p>
+        </div>
+        <div id="question-form-submitdd"></div>
+        <script defer>
+            var $document = document.querySelector("body");
+
+            document.addEventListener('load', function(evt) {
+                var $script = document.querySelector("script[src='//js.hsforms.net/forms/v2.js']");
+
+                if (!evt.target.isEqualNode($script)) {
+                    return;
+                }
+
+                // Callback code
+                setTimeout(() => {
+                    // console.log('loaded')
+                    hbspt.forms.create({
+                        region: "na1",
+                        css: '',
+                        portalId: "5952677",
+                        formId: "aa3d3838-6464-4e9f-911f-d2096f43433c",
+                        target: "#question-form-submitdd",
+                    })
+                }, 3000);
+
+                // your callback's code
+                setTimeout(() => {
+                    // console.log('loaded')
+                    hbspt.forms.create({
+                        region: "na1",
+                        css: '',
+                        portalId: "5952677",
+                        formId: "aa3d3838-6464-4e9f-911f-d2096f43433c",
+                        target: "#question-form-submitdd",
+
+                    })
+                }, 4000);
+
+            }, true);
+        </script>
+
+        <button class="close-button text-center" data-close aria-label="Close reveal" type="button">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+
+
+
 
 
 <?php get_footer(); ?>
