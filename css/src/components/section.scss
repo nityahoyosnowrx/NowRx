@@ -381,7 +381,7 @@ section.landing-block {
 				}
 			}
 			video {
-				min-height: 350px;
+				// min-height: 350px;
 				width: 100%;
 				border-radius: 0 30px;
 				@media screen and (max-width: 1280px) {
@@ -1402,6 +1402,7 @@ section.fold-block {
 				height: 10px;
 				width: 10px;
 				margin: 0;
+				margin-right: 5px;
 				background: transparent;
 				border-radius: 50%;
 				border: 1px solid #038ed8;
@@ -1957,7 +1958,11 @@ section.firt-step-block {
 
 section.landing-block.form-landing {
 
-
+	div#invest-form{
+		@media screen and (max-width: 1280px) {
+			margin-bottom: 20px;
+		}
+	}
 
 #prep-form{
 	@media screen and (max-width: 1280px) {

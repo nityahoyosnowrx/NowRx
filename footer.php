@@ -12,6 +12,10 @@ if (is_single() && 'post' == get_post_type()) {
 }
 ?>
 
+<!-- Load main css in footer after critical css -->
+
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/public/frontend.css?v=c32" rel="stylesheet" type="text/css">
+
 <footer class="main-footer">
   <div class="container fluid">
     <div class="blocks">
@@ -92,6 +96,20 @@ if (is_single() && 'post' == get_post_type()) {
 </footer>
 
 
+<!-- load hubspot code in footer for single blog posts only -->
+
+<?php if ( is_single() && 'post' == get_post_type() ) { ?>
+    <!--[if lte IE 8]>
+    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+    <![endif]-->
+    <script charset="utf-8"  type="text/javascript" src="//js.hsforms.net/forms/v2.js" defer></script>
+<?php } else { ?>
+
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&family=Nunito:wght@200;300;500;600;800&display=swap" rel="stylesheet">
+
+
+
+  <!-- blog post popup -->
 <?php if (is_singular('post') || is_home()) : ?>
 
   <div class="pre-modal-window">
@@ -162,10 +180,13 @@ if (is_single() && 'post' == get_post_type()) {
 <?php endif; ?>
 
 
-    <script src="<?php echo get_template_directory_uri(); ?>/public/frontend-bundle.js"></script>
+<!-- main js file -->
 
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&family=Nunito:wght@200;300;500;600;800&display=swap" rel="stylesheet">
 
+<?php } ?>
+
+
+<script src="<?php echo get_template_directory_uri(); ?>/public/frontend-bundle.js" defer></script>
 
 
   <?php wp_footer(); ?>
@@ -175,42 +196,6 @@ if (is_single() && 'post' == get_post_type()) {
   // tracking code
   get_template_part('analytics-head'); ?>
 
-  <?php
-  // Video load on homepage
-  if (is_front_page()) : ?>
-    <!-- video code -->
-    <script async>
-      // console.log(window.innerWidth);
-      let windowW = window.innerWidth;
-      if (windowW > 992) {
-        document.addEventListener('DOMContentLoaded', function() {
-          var lazyVideos = [].slice.call(document.querySelectorAll('video.lazy'));
-          if ('IntersectionObserver' in window) {
-            var lazyVideoObserver = new IntersectionObserver(function(entries, observer) {
-              entries.forEach(function(video) {
-                if (video.isIntersecting) {
-                  for (var source in video.target.children) {
-                    var videoSource = video.target.children[source];
-                    if (typeof videoSource.tagName === 'string' && videoSource
-                      .tagName === 'SOURCE') {
-                      videoSource.src = videoSource.dataset.src;
-                    }
-                  }
-                  video.target.load();
-                  video.target.classList.remove('lazy');
-                  video.target.play();
-                  lazyVideoObserver.unobserve(video.target);
-                }
-              });
-            });
-            lazyVideos.forEach(function(lazyVideo) {
-              lazyVideoObserver.observe(lazyVideo);
-            });
-          }
-        });
-      }
-    </script>
-  <?php endif; ?>
 
   <?php get_template_part('footer-modals'); ?>
 
