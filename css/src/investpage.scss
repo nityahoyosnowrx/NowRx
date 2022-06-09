@@ -443,6 +443,7 @@ body#investor {
 			}
 
 			input.hs-button.primary.large {
+
 				@media screen and (min-width: 1280px) {
 					background: #d54439;
 					width: auto;
@@ -458,6 +459,9 @@ body#investor {
 					border-radius: 88px;
 					padding: 22px 20px;
 					margin: 10px 0 0px;
+				}
+				&:hover{
+					background-color: #000;
 				}
 			}
 		}
@@ -925,6 +929,9 @@ body#investor {
 				}
 				@media screen and (max-width: 700px) {
 					padding: 20px 14px;
+				}
+				&:hover{
+					background-color: #000;
 				}
 			}
 			.fig {

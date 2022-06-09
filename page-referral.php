@@ -8,7 +8,7 @@
 
 
 <!-- hero -->
-<section class="hero-home referralform">
+<section class="hero-referral-form">
     <div class="container">
         <div class="content">
             <!-- content -->
@@ -68,7 +68,17 @@
                                         <div class="item-referrals">
 
                                             <!-- item -->
-                                            <div class="grid-x grid-padding-x">
+                                            <div class="grid-x grid-padding-x" id="prime">
+                                                <style>
+                                                    #prime{
+                                                        display:flex!important;
+                                                    }
+                                                    @media screen  and (max-wdith:700px) {
+                                                        #prime{
+                                                        display:flex!important;
+                                                    }
+                                                    }
+                                                </style>
                                                 <div class="medium-6 cell">
                                                     <label>
                                                         <span>Referral Name</span>

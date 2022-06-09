@@ -254,7 +254,7 @@
 
 
 
-<section class="faq-blocks prep" id="faq">
+<section class="faq-blocks prep docprep" id="faq">
     <div class="container">
         <div class="topcontent content">
             <span class="sub-headline">
@@ -273,20 +273,8 @@
                         <h2 class="sec-title">
                             Common NowPrep FAQS
                             <span class="chevron-arrow">
-                                <svg
-                                     id="Capa_1" x="0px" y="0px" viewBox="0 0 256 256"
-                                    style="enable-background:new 0 0 256 256;" xml:space="preserve">
-                                    <title>Close icon</title>
-
-
-                                            <polygon
-                                                points="79.093,0 48.907,30.187 146.72,128 48.907,225.813 79.093,256 207.093,128   " />
-
-
-
-
-                                </svg>
-                            </span>
+                                    <img src="data:image/svg+xml;base64,IDxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDI1NiAyNTY7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8Zz4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHBvbHlnb24gcG9pbnRzPSI3OS4wOTMsMCA0OC45MDcsMzAuMTg3IDE0Ni43MiwxMjggNDguOTA3LDIyNS44MTMgNzkuMDkzLDI1NiAyMDcuMDkzLDEyOCAgICIgLz4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvc3ZnPg==" alt="arrow">
+                                </span>
                         </h2>
                     </div>
                     <div class="block-content">
@@ -295,16 +283,8 @@
                             <span class="title">
                                 What is NowPrEP?
                                 <span class="question-svg">
-                                    <svg
-                                         id="Capa_1" x="0px" y="0px" viewBox="0 0 490.661 490.661"
-                                        style="enable-background:new 0 0 490.661 490.661;" xml:space="preserve">
-
-                                            <path
-                                                d="M453.352,236.091L48.019,1.424c-3.285-1.899-7.36-1.899-10.688,0c-3.285,1.899-5.333,5.419-5.333,9.237v469.333    c0,3.819,2.048,7.339,5.333,9.237c1.643,0.939,3.499,1.429,5.333,1.429c1.856,0,3.691-0.469,5.355-1.429l405.333-234.667    c3.285-1.92,5.312-5.44,5.312-9.237S456.637,237.989,453.352,236.091z" />
-
-
-                                    </svg>
-                                </span>
+                                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgNDkwLjY2MSA0OTAuNjYxIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0OTAuNjYxIDQ5MC42NjE7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8Zz4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHBhdGggZD0iTTQ1My4zNTIsMjM2LjA5MUw0OC4wMTksMS40MjRjLTMuMjg1LTEuODk5LTcuMzYtMS44OTktMTAuNjg4LDBjLTMuMjg1LDEuODk5LTUuMzMzLDUuNDE5LTUuMzMzLDkuMjM3djQ2OS4zMzMgICAgYzAsMy44MTksMi4wNDgsNy4zMzksNS4zMzMsOS4yMzdjMS42NDMsMC45MzksMy40OTksMS40MjksNS4zMzMsMS40MjljMS44NTYsMCwzLjY5MS0wLjQ2OSw1LjM1NS0xLjQyOWw0MDUuMzMzLTIzNC42NjcgICAgYzMuMjg1LTEuOTIsNS4zMTItNS40NCw1LjMxMi05LjIzN1M0NTYuNjM3LDIzNy45ODksNDUzLjM1MiwyMzYuMDkxeiIgLz4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2c+CgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9zdmc+" alt="">
+                                    </span>
                             </span>
                             <div class="item-block">
                                 <div class="block">
@@ -345,16 +325,8 @@
                             <span class="title">
                                 Who is NowPrEP for?
                                 <span class="question-svg">
-                                    <svg
-                                         id="Capa_1" x="0px" y="0px" viewBox="0 0 490.661 490.661"
-                                        style="enable-background:new 0 0 490.661 490.661;" xml:space="preserve">
-
-                                            <path
-                                                d="M453.352,236.091L48.019,1.424c-3.285-1.899-7.36-1.899-10.688,0c-3.285,1.899-5.333,5.419-5.333,9.237v469.333    c0,3.819,2.048,7.339,5.333,9.237c1.643,0.939,3.499,1.429,5.333,1.429c1.856,0,3.691-0.469,5.355-1.429l405.333-234.667    c3.285-1.92,5.312-5.44,5.312-9.237S456.637,237.989,453.352,236.091z" />
-
-
-                                    </svg>
-                                </span>
+                                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgNDkwLjY2MSA0OTAuNjYxIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0OTAuNjYxIDQ5MC42NjE7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8Zz4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHBhdGggZD0iTTQ1My4zNTIsMjM2LjA5MUw0OC4wMTksMS40MjRjLTMuMjg1LTEuODk5LTcuMzYtMS44OTktMTAuNjg4LDBjLTMuMjg1LDEuODk5LTUuMzMzLDUuNDE5LTUuMzMzLDkuMjM3djQ2OS4zMzMgICAgYzAsMy44MTksMi4wNDgsNy4zMzksNS4zMzMsOS4yMzdjMS42NDMsMC45MzksMy40OTksMS40MjksNS4zMzMsMS40MjljMS44NTYsMCwzLjY5MS0wLjQ2OSw1LjM1NS0xLjQyOWw0MDUuMzMzLTIzNC42NjcgICAgYzMuMjg1LTEuOTIsNS4zMTItNS40NCw1LjMxMi05LjIzN1M0NTYuNjM3LDIzNy45ODksNDUzLjM1MiwyMzYuMDkxeiIgLz4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2c+CgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9zdmc+" alt="">
+                                    </span>
                             </span>
                             <div class="item-block">
                                 <div class="block">
@@ -389,16 +361,8 @@
                             <span class="title">
                                 How does the NowPrEP process work?
                                 <span class="question-svg">
-                                    <svg
-                                         id="Capa_1" x="0px" y="0px" viewBox="0 0 490.661 490.661"
-                                        style="enable-background:new 0 0 490.661 490.661;" xml:space="preserve">
-
-                                            <path
-                                                d="M453.352,236.091L48.019,1.424c-3.285-1.899-7.36-1.899-10.688,0c-3.285,1.899-5.333,5.419-5.333,9.237v469.333    c0,3.819,2.048,7.339,5.333,9.237c1.643,0.939,3.499,1.429,5.333,1.429c1.856,0,3.691-0.469,5.355-1.429l405.333-234.667    c3.285-1.92,5.312-5.44,5.312-9.237S456.637,237.989,453.352,236.091z" />
-
-
-                                    </svg>
-                                </span>
+                                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgNDkwLjY2MSA0OTAuNjYxIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0OTAuNjYxIDQ5MC42NjE7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8Zz4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHBhdGggZD0iTTQ1My4zNTIsMjM2LjA5MUw0OC4wMTksMS40MjRjLTMuMjg1LTEuODk5LTcuMzYtMS44OTktMTAuNjg4LDBjLTMuMjg1LDEuODk5LTUuMzMzLDUuNDE5LTUuMzMzLDkuMjM3djQ2OS4zMzMgICAgYzAsMy44MTksMi4wNDgsNy4zMzksNS4zMzMsOS4yMzdjMS42NDMsMC45MzksMy40OTksMS40MjksNS4zMzMsMS40MjljMS44NTYsMCwzLjY5MS0wLjQ2OSw1LjM1NS0xLjQyOWw0MDUuMzMzLTIzNC42NjcgICAgYzMuMjg1LTEuOTIsNS4zMTItNS40NCw1LjMxMi05LjIzN1M0NTYuNjM3LDIzNy45ODksNDUzLjM1MiwyMzYuMDkxeiIgLz4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2c+CgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9zdmc+" alt="">
+                                    </span>
                             </span>
                             <div class="item-block">
                                 <div class="block">
@@ -444,16 +408,8 @@
                             <span class="title">
                                 Does NowPrEP cost anything?
                                 <span class="question-svg">
-                                    <svg
-                                         id="Capa_1" x="0px" y="0px" viewBox="0 0 490.661 490.661"
-                                        style="enable-background:new 0 0 490.661 490.661;" xml:space="preserve">
-
-                                            <path
-                                                d="M453.352,236.091L48.019,1.424c-3.285-1.899-7.36-1.899-10.688,0c-3.285,1.899-5.333,5.419-5.333,9.237v469.333    c0,3.819,2.048,7.339,5.333,9.237c1.643,0.939,3.499,1.429,5.333,1.429c1.856,0,3.691-0.469,5.355-1.429l405.333-234.667    c3.285-1.92,5.312-5.44,5.312-9.237S456.637,237.989,453.352,236.091z" />
-
-
-                                    </svg>
-                                </span>
+                                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgNDkwLjY2MSA0OTAuNjYxIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0OTAuNjYxIDQ5MC42NjE7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8Zz4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHBhdGggZD0iTTQ1My4zNTIsMjM2LjA5MUw0OC4wMTksMS40MjRjLTMuMjg1LTEuODk5LTcuMzYtMS44OTktMTAuNjg4LDBjLTMuMjg1LDEuODk5LTUuMzMzLDUuNDE5LTUuMzMzLDkuMjM3djQ2OS4zMzMgICAgYzAsMy44MTksMi4wNDgsNy4zMzksNS4zMzMsOS4yMzdjMS42NDMsMC45MzksMy40OTksMS40MjksNS4zMzMsMS40MjljMS44NTYsMCwzLjY5MS0wLjQ2OSw1LjM1NS0xLjQyOWw0MDUuMzMzLTIzNC42NjcgICAgYzMuMjg1LTEuOTIsNS4zMTItNS40NCw1LjMxMi05LjIzN1M0NTYuNjM3LDIzNy45ODksNDUzLjM1MiwyMzYuMDkxeiIgLz4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2c+CgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9zdmc+" alt="">
+                                    </span>
                             </span>
                             <div class="item-block">
                                 <div class="block">
@@ -488,16 +444,8 @@
                             <span class="title">
                                 Is NowPrEP safe?
                                 <span class="question-svg">
-                                    <svg
-                                         id="Capa_1" x="0px" y="0px" viewBox="0 0 490.661 490.661"
-                                        style="enable-background:new 0 0 490.661 490.661;" xml:space="preserve">
-
-                                            <path
-                                                d="M453.352,236.091L48.019,1.424c-3.285-1.899-7.36-1.899-10.688,0c-3.285,1.899-5.333,5.419-5.333,9.237v469.333    c0,3.819,2.048,7.339,5.333,9.237c1.643,0.939,3.499,1.429,5.333,1.429c1.856,0,3.691-0.469,5.355-1.429l405.333-234.667    c3.285-1.92,5.312-5.44,5.312-9.237S456.637,237.989,453.352,236.091z" />
-
-
-                                    </svg>
-                                </span>
+                                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgNDkwLjY2MSA0OTAuNjYxIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0OTAuNjYxIDQ5MC42NjE7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8Zz4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHBhdGggZD0iTTQ1My4zNTIsMjM2LjA5MUw0OC4wMTksMS40MjRjLTMuMjg1LTEuODk5LTcuMzYtMS44OTktMTAuNjg4LDBjLTMuMjg1LDEuODk5LTUuMzMzLDUuNDE5LTUuMzMzLDkuMjM3djQ2OS4zMzMgICAgYzAsMy44MTksMi4wNDgsNy4zMzksNS4zMzMsOS4yMzdjMS42NDMsMC45MzksMy40OTksMS40MjksNS4zMzMsMS40MjljMS44NTYsMCwzLjY5MS0wLjQ2OSw1LjM1NS0xLjQyOWw0MDUuMzMzLTIzNC42NjcgICAgYzMuMjg1LTEuOTIsNS4zMTItNS40NCw1LjMxMi05LjIzN1M0NTYuNjM3LDIzNy45ODksNDUzLjM1MiwyMzYuMDkxeiIgLz4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2c+CgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9zdmc+" alt="">
+                                    </span>
                             </span>
                             <div class="item-block">
                                 <div class="block">
@@ -543,16 +491,8 @@
                             <span class="title">
                                 What is required to use NowPrEP?
                                 <span class="question-svg">
-                                    <svg
-                                         id="Capa_1" x="0px" y="0px" viewBox="0 0 490.661 490.661"
-                                        style="enable-background:new 0 0 490.661 490.661;" xml:space="preserve">
-
-                                            <path
-                                                d="M453.352,236.091L48.019,1.424c-3.285-1.899-7.36-1.899-10.688,0c-3.285,1.899-5.333,5.419-5.333,9.237v469.333    c0,3.819,2.048,7.339,5.333,9.237c1.643,0.939,3.499,1.429,5.333,1.429c1.856,0,3.691-0.469,5.355-1.429l405.333-234.667    c3.285-1.92,5.312-5.44,5.312-9.237S456.637,237.989,453.352,236.091z" />
-
-
-                                    </svg>
-                                </span>
+                                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgNDkwLjY2MSA0OTAuNjYxIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0OTAuNjYxIDQ5MC42NjE7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8Zz4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHBhdGggZD0iTTQ1My4zNTIsMjM2LjA5MUw0OC4wMTksMS40MjRjLTMuMjg1LTEuODk5LTcuMzYtMS44OTktMTAuNjg4LDBjLTMuMjg1LDEuODk5LTUuMzMzLDUuNDE5LTUuMzMzLDkuMjM3djQ2OS4zMzMgICAgYzAsMy44MTksMi4wNDgsNy4zMzksNS4zMzMsOS4yMzdjMS42NDMsMC45MzksMy40OTksMS40MjksNS4zMzMsMS40MjljMS44NTYsMCwzLjY5MS0wLjQ2OSw1LjM1NS0xLjQyOWw0MDUuMzMzLTIzNC42NjcgICAgYzMuMjg1LTEuOTIsNS4zMTItNS40NCw1LjMxMi05LjIzN1M0NTYuNjM3LDIzNy45ODksNDUzLjM1MiwyMzYuMDkxeiIgLz4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2c+CgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9zdmc+" alt="">
+                                    </span>
                             </span>
                             <div class="item-block">
                                 <div class="block">
@@ -585,16 +525,8 @@
                             <span class="title">
                                 How does NowPrEP protect my information?
                                 <span class="question-svg">
-                                    <svg
-                                         id="Capa_1" x="0px" y="0px" viewBox="0 0 490.661 490.661"
-                                        style="enable-background:new 0 0 490.661 490.661;" xml:space="preserve">
-
-                                            <path
-                                                d="M453.352,236.091L48.019,1.424c-3.285-1.899-7.36-1.899-10.688,0c-3.285,1.899-5.333,5.419-5.333,9.237v469.333    c0,3.819,2.048,7.339,5.333,9.237c1.643,0.939,3.499,1.429,5.333,1.429c1.856,0,3.691-0.469,5.355-1.429l405.333-234.667    c3.285-1.92,5.312-5.44,5.312-9.237S456.637,237.989,453.352,236.091z" />
-
-
-                                    </svg>
-                                </span>
+                                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgNDkwLjY2MSA0OTAuNjYxIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0OTAuNjYxIDQ5MC42NjE7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8Zz4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHBhdGggZD0iTTQ1My4zNTIsMjM2LjA5MUw0OC4wMTksMS40MjRjLTMuMjg1LTEuODk5LTcuMzYtMS44OTktMTAuNjg4LDBjLTMuMjg1LDEuODk5LTUuMzMzLDUuNDE5LTUuMzMzLDkuMjM3djQ2OS4zMzMgICAgYzAsMy44MTksMi4wNDgsNy4zMzksNS4zMzMsOS4yMzdjMS42NDMsMC45MzksMy40OTksMS40MjksNS4zMzMsMS40MjljMS44NTYsMCwzLjY5MS0wLjQ2OSw1LjM1NS0xLjQyOWw0MDUuMzMzLTIzNC42NjcgICAgYzMuMjg1LTEuOTIsNS4zMTItNS40NCw1LjMxMi05LjIzN1M0NTYuNjM3LDIzNy45ODksNDUzLjM1MiwyMzYuMDkxeiIgLz4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2c+CgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9zdmc+" alt="">
+                                    </span>
                             </span>
                             <div class="item-block">
                                 <div class="block">
@@ -633,16 +565,8 @@
                             <span class="title">
                                 Can NowPrEP help me if I already have a prescription?
                                 <span class="question-svg">
-                                    <svg
-                                         id="Capa_1" x="0px" y="0px" viewBox="0 0 490.661 490.661"
-                                        style="enable-background:new 0 0 490.661 490.661;" xml:space="preserve">
-
-                                            <path
-                                                d="M453.352,236.091L48.019,1.424c-3.285-1.899-7.36-1.899-10.688,0c-3.285,1.899-5.333,5.419-5.333,9.237v469.333    c0,3.819,2.048,7.339,5.333,9.237c1.643,0.939,3.499,1.429,5.333,1.429c1.856,0,3.691-0.469,5.355-1.429l405.333-234.667    c3.285-1.92,5.312-5.44,5.312-9.237S456.637,237.989,453.352,236.091z" />
-
-
-                                    </svg>
-                                </span>
+                                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgNDkwLjY2MSA0OTAuNjYxIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0OTAuNjYxIDQ5MC42NjE7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8Zz4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHBhdGggZD0iTTQ1My4zNTIsMjM2LjA5MUw0OC4wMTksMS40MjRjLTMuMjg1LTEuODk5LTcuMzYtMS44OTktMTAuNjg4LDBjLTMuMjg1LDEuODk5LTUuMzMzLDUuNDE5LTUuMzMzLDkuMjM3djQ2OS4zMzMgICAgYzAsMy44MTksMi4wNDgsNy4zMzksNS4zMzMsOS4yMzdjMS42NDMsMC45MzksMy40OTksMS40MjksNS4zMzMsMS40MjljMS44NTYsMCwzLjY5MS0wLjQ2OSw1LjM1NS0xLjQyOWw0MDUuMzMzLTIzNC42NjcgICAgYzMuMjg1LTEuOTIsNS4zMTItNS40NCw1LjMxMi05LjIzN1M0NTYuNjM3LDIzNy45ODksNDUzLjM1MiwyMzYuMDkxeiIgLz4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2c+CgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9zdmc+" alt="">
+                                    </span>
                             </span>
                             <div class="item-block">
                                 <div class="block">
@@ -679,16 +603,8 @@
                             <span class="title">
                                 How long does it take for me to receive a PrEP prescription?
                                 <span class="question-svg">
-                                    <svg
-                                         id="Capa_1" x="0px" y="0px" viewBox="0 0 490.661 490.661"
-                                        style="enable-background:new 0 0 490.661 490.661;" xml:space="preserve">
-
-                                            <path
-                                                d="M453.352,236.091L48.019,1.424c-3.285-1.899-7.36-1.899-10.688,0c-3.285,1.899-5.333,5.419-5.333,9.237v469.333    c0,3.819,2.048,7.339,5.333,9.237c1.643,0.939,3.499,1.429,5.333,1.429c1.856,0,3.691-0.469,5.355-1.429l405.333-234.667    c3.285-1.92,5.312-5.44,5.312-9.237S456.637,237.989,453.352,236.091z" />
-
-
-                                    </svg>
-                                </span>
+                                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgNDkwLjY2MSA0OTAuNjYxIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0OTAuNjYxIDQ5MC42NjE7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8Zz4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHBhdGggZD0iTTQ1My4zNTIsMjM2LjA5MUw0OC4wMTksMS40MjRjLTMuMjg1LTEuODk5LTcuMzYtMS44OTktMTAuNjg4LDBjLTMuMjg1LDEuODk5LTUuMzMzLDUuNDE5LTUuMzMzLDkuMjM3djQ2OS4zMzMgICAgYzAsMy44MTksMi4wNDgsNy4zMzksNS4zMzMsOS4yMzdjMS42NDMsMC45MzksMy40OTksMS40MjksNS4zMzMsMS40MjljMS44NTYsMCwzLjY5MS0wLjQ2OSw1LjM1NS0xLjQyOWw0MDUuMzMzLTIzNC42NjcgICAgYzMuMjg1LTEuOTIsNS4zMTItNS40NCw1LjMxMi05LjIzN1M0NTYuNjM3LDIzNy45ODksNDUzLjM1MiwyMzYuMDkxeiIgLz4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2c+CgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9zdmc+" alt="">
+                                    </span>
                             </span>
                             <div class="item-block">
                                 <div class="block">
@@ -735,16 +651,8 @@
                             <span class="title">
                                 What is the difference between NowPrEP and NowRx Pharmacy?
                                 <span class="question-svg">
-                                    <svg
-                                         id="Capa_1" x="0px" y="0px" viewBox="0 0 490.661 490.661"
-                                        style="enable-background:new 0 0 490.661 490.661;" xml:space="preserve">
-
-                                            <path
-                                                d="M453.352,236.091L48.019,1.424c-3.285-1.899-7.36-1.899-10.688,0c-3.285,1.899-5.333,5.419-5.333,9.237v469.333    c0,3.819,2.048,7.339,5.333,9.237c1.643,0.939,3.499,1.429,5.333,1.429c1.856,0,3.691-0.469,5.355-1.429l405.333-234.667    c3.285-1.92,5.312-5.44,5.312-9.237S456.637,237.989,453.352,236.091z" />
-
-
-                                    </svg>
-                                </span>
+                                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgNDkwLjY2MSA0OTAuNjYxIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0OTAuNjYxIDQ5MC42NjE7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8Zz4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHBhdGggZD0iTTQ1My4zNTIsMjM2LjA5MUw0OC4wMTksMS40MjRjLTMuMjg1LTEuODk5LTcuMzYtMS44OTktMTAuNjg4LDBjLTMuMjg1LDEuODk5LTUuMzMzLDUuNDE5LTUuMzMzLDkuMjM3djQ2OS4zMzMgICAgYzAsMy44MTksMi4wNDgsNy4zMzksNS4zMzMsOS4yMzdjMS42NDMsMC45MzksMy40OTksMS40MjksNS4zMzMsMS40MjljMS44NTYsMCwzLjY5MS0wLjQ2OSw1LjM1NS0xLjQyOWw0MDUuMzMzLTIzNC42NjcgICAgYzMuMjg1LTEuOTIsNS4zMTItNS40NCw1LjMxMi05LjIzN1M0NTYuNjM3LDIzNy45ODksNDUzLjM1MiwyMzYuMDkxeiIgLz4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2c+CgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9zdmc+" alt="">
+                                    </span>
                             </span>
                             <div class="item-block">
                                 <div class="block">
@@ -790,16 +698,8 @@
                             <span class="title">
                                 Can NowPrEP share information with my primary care physician?
                                 <span class="question-svg">
-                                    <svg
-                                         id="Capa_1" x="0px" y="0px" viewBox="0 0 490.661 490.661"
-                                        style="enable-background:new 0 0 490.661 490.661;" xml:space="preserve">
-
-                                            <path
-                                                d="M453.352,236.091L48.019,1.424c-3.285-1.899-7.36-1.899-10.688,0c-3.285,1.899-5.333,5.419-5.333,9.237v469.333    c0,3.819,2.048,7.339,5.333,9.237c1.643,0.939,3.499,1.429,5.333,1.429c1.856,0,3.691-0.469,5.355-1.429l405.333-234.667    c3.285-1.92,5.312-5.44,5.312-9.237S456.637,237.989,453.352,236.091z" />
-
-
-                                    </svg>
-                                </span>
+                                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgNDkwLjY2MSA0OTAuNjYxIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0OTAuNjYxIDQ5MC42NjE7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8Zz4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHBhdGggZD0iTTQ1My4zNTIsMjM2LjA5MUw0OC4wMTksMS40MjRjLTMuMjg1LTEuODk5LTcuMzYtMS44OTktMTAuNjg4LDBjLTMuMjg1LDEuODk5LTUuMzMzLDUuNDE5LTUuMzMzLDkuMjM3djQ2OS4zMzMgICAgYzAsMy44MTksMi4wNDgsNy4zMzksNS4zMzMsOS4yMzdjMS42NDMsMC45MzksMy40OTksMS40MjksNS4zMzMsMS40MjljMS44NTYsMCwzLjY5MS0wLjQ2OSw1LjM1NS0xLjQyOWw0MDUuMzMzLTIzNC42NjcgICAgYzMuMjg1LTEuOTIsNS4zMTItNS40NCw1LjMxMi05LjIzN1M0NTYuNjM3LDIzNy45ODksNDUzLjM1MiwyMzYuMDkxeiIgLz4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2c+CgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9zdmc+" alt="">
+                                    </span>
                             </span>
                             <div class="item-block">
                                 <div class="block">
@@ -838,20 +738,8 @@
                         <h2 class="sec-title">
                             Pre Exposure Prophylaxis (PrEP) FAQs
                             <span class="chevron-arrow">
-                                <svg
-                                     id="Capa_1" x="0px" y="0px" viewBox="0 0 256 256"
-                                    style="enable-background:new 0 0 256 256;" xml:space="preserve">
-                                    <title>Close icon</title>
-
-
-                                            <polygon
-                                                points="79.093,0 48.907,30.187 146.72,128 48.907,225.813 79.093,256 207.093,128   " />
-
-
-
-
-                                </svg>
-                            </span>
+                                    <img src="data:image/svg+xml;base64,IDxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDI1NiAyNTY7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8Zz4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHBvbHlnb24gcG9pbnRzPSI3OS4wOTMsMCA0OC45MDcsMzAuMTg3IDE0Ni43MiwxMjggNDguOTA3LDIyNS44MTMgNzkuMDkzLDI1NiAyMDcuMDkzLDEyOCAgICIgLz4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvc3ZnPg==" alt="arrow">
+                                </span>
                         </h2>
                     </div>
                     <div class="block-content">
@@ -860,16 +748,8 @@
                             <span class="title">
                                 What is Pre Exposure Prophylaxis (PrEP)?
                                 <span class="question-svg">
-                                    <svg
-                                         id="Capa_1" x="0px" y="0px" viewBox="0 0 490.661 490.661"
-                                        style="enable-background:new 0 0 490.661 490.661;" xml:space="preserve">
-
-                                            <path
-                                                d="M453.352,236.091L48.019,1.424c-3.285-1.899-7.36-1.899-10.688,0c-3.285,1.899-5.333,5.419-5.333,9.237v469.333    c0,3.819,2.048,7.339,5.333,9.237c1.643,0.939,3.499,1.429,5.333,1.429c1.856,0,3.691-0.469,5.355-1.429l405.333-234.667    c3.285-1.92,5.312-5.44,5.312-9.237S456.637,237.989,453.352,236.091z" />
-
-
-                                    </svg>
-                                </span>
+                                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgNDkwLjY2MSA0OTAuNjYxIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0OTAuNjYxIDQ5MC42NjE7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8Zz4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHBhdGggZD0iTTQ1My4zNTIsMjM2LjA5MUw0OC4wMTksMS40MjRjLTMuMjg1LTEuODk5LTcuMzYtMS44OTktMTAuNjg4LDBjLTMuMjg1LDEuODk5LTUuMzMzLDUuNDE5LTUuMzMzLDkuMjM3djQ2OS4zMzMgICAgYzAsMy44MTksMi4wNDgsNy4zMzksNS4zMzMsOS4yMzdjMS42NDMsMC45MzksMy40OTksMS40MjksNS4zMzMsMS40MjljMS44NTYsMCwzLjY5MS0wLjQ2OSw1LjM1NS0xLjQyOWw0MDUuMzMzLTIzNC42NjcgICAgYzMuMjg1LTEuOTIsNS4zMTItNS40NCw1LjMxMi05LjIzN1M0NTYuNjM3LDIzNy45ODksNDUzLjM1MiwyMzYuMDkxeiIgLz4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2c+CgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9zdmc+" alt="">
+                                    </span>
                             </span>
                             <div class="item-block">
                                 <div class="block">
@@ -925,16 +805,8 @@
                             <span class="title">
                                 Is Pre Exposure Prophylaxis (PrEP) safe?
                                 <span class="question-svg">
-                                    <svg
-                                         id="Capa_1" x="0px" y="0px" viewBox="0 0 490.661 490.661"
-                                        style="enable-background:new 0 0 490.661 490.661;" xml:space="preserve">
-
-                                            <path
-                                                d="M453.352,236.091L48.019,1.424c-3.285-1.899-7.36-1.899-10.688,0c-3.285,1.899-5.333,5.419-5.333,9.237v469.333    c0,3.819,2.048,7.339,5.333,9.237c1.643,0.939,3.499,1.429,5.333,1.429c1.856,0,3.691-0.469,5.355-1.429l405.333-234.667    c3.285-1.92,5.312-5.44,5.312-9.237S456.637,237.989,453.352,236.091z" />
-
-
-                                    </svg>
-                                </span>
+                                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgNDkwLjY2MSA0OTAuNjYxIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0OTAuNjYxIDQ5MC42NjE7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8Zz4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHBhdGggZD0iTTQ1My4zNTIsMjM2LjA5MUw0OC4wMTksMS40MjRjLTMuMjg1LTEuODk5LTcuMzYtMS44OTktMTAuNjg4LDBjLTMuMjg1LDEuODk5LTUuMzMzLDUuNDE5LTUuMzMzLDkuMjM3djQ2OS4zMzMgICAgYzAsMy44MTksMi4wNDgsNy4zMzksNS4zMzMsOS4yMzdjMS42NDMsMC45MzksMy40OTksMS40MjksNS4zMzMsMS40MjljMS44NTYsMCwzLjY5MS0wLjQ2OSw1LjM1NS0xLjQyOWw0MDUuMzMzLTIzNC42NjcgICAgYzMuMjg1LTEuOTIsNS4zMTItNS40NCw1LjMxMi05LjIzN1M0NTYuNjM3LDIzNy45ODksNDUzLjM1MiwyMzYuMDkxeiIgLz4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2c+CgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9zdmc+" alt="">
+                                    </span>
                             </span>
                             <div class="item-block">
                                 <div class="block">
@@ -988,16 +860,8 @@
                             <span class="title">
                                 Is Pre Exposure Prophylaxis (PrEP) right for me?
                                 <span class="question-svg">
-                                    <svg
-                                         id="Capa_1" x="0px" y="0px" viewBox="0 0 490.661 490.661"
-                                        style="enable-background:new 0 0 490.661 490.661;" xml:space="preserve">
-
-                                            <path
-                                                d="M453.352,236.091L48.019,1.424c-3.285-1.899-7.36-1.899-10.688,0c-3.285,1.899-5.333,5.419-5.333,9.237v469.333    c0,3.819,2.048,7.339,5.333,9.237c1.643,0.939,3.499,1.429,5.333,1.429c1.856,0,3.691-0.469,5.355-1.429l405.333-234.667    c3.285-1.92,5.312-5.44,5.312-9.237S456.637,237.989,453.352,236.091z" />
-
-
-                                    </svg>
-                                </span>
+                                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgNDkwLjY2MSA0OTAuNjYxIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0OTAuNjYxIDQ5MC42NjE7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8Zz4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHBhdGggZD0iTTQ1My4zNTIsMjM2LjA5MUw0OC4wMTksMS40MjRjLTMuMjg1LTEuODk5LTcuMzYtMS44OTktMTAuNjg4LDBjLTMuMjg1LDEuODk5LTUuMzMzLDUuNDE5LTUuMzMzLDkuMjM3djQ2OS4zMzMgICAgYzAsMy44MTksMi4wNDgsNy4zMzksNS4zMzMsOS4yMzdjMS42NDMsMC45MzksMy40OTksMS40MjksNS4zMzMsMS40MjljMS44NTYsMCwzLjY5MS0wLjQ2OSw1LjM1NS0xLjQyOWw0MDUuMzMzLTIzNC42NjcgICAgYzMuMjg1LTEuOTIsNS4zMTItNS40NCw1LjMxMi05LjIzN1M0NTYuNjM3LDIzNy45ODksNDUzLjM1MiwyMzYuMDkxeiIgLz4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2c+CgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9zdmc+" alt="">
+                                    </span>
                             </span>
                             <div class="item-block">
                                 <div class="block">
@@ -1043,16 +907,8 @@
                             <span class="title">
                                 How does Pre Exposure Prophylaxis (PrEP) work?
                                 <span class="question-svg">
-                                    <svg
-                                         id="Capa_1" x="0px" y="0px" viewBox="0 0 490.661 490.661"
-                                        style="enable-background:new 0 0 490.661 490.661;" xml:space="preserve">
-
-                                            <path
-                                                d="M453.352,236.091L48.019,1.424c-3.285-1.899-7.36-1.899-10.688,0c-3.285,1.899-5.333,5.419-5.333,9.237v469.333    c0,3.819,2.048,7.339,5.333,9.237c1.643,0.939,3.499,1.429,5.333,1.429c1.856,0,3.691-0.469,5.355-1.429l405.333-234.667    c3.285-1.92,5.312-5.44,5.312-9.237S456.637,237.989,453.352,236.091z" />
-
-
-                                    </svg>
-                                </span>
+                                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgNDkwLjY2MSA0OTAuNjYxIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0OTAuNjYxIDQ5MC42NjE7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8Zz4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHBhdGggZD0iTTQ1My4zNTIsMjM2LjA5MUw0OC4wMTksMS40MjRjLTMuMjg1LTEuODk5LTcuMzYtMS44OTktMTAuNjg4LDBjLTMuMjg1LDEuODk5LTUuMzMzLDUuNDE5LTUuMzMzLDkuMjM3djQ2OS4zMzMgICAgYzAsMy44MTksMi4wNDgsNy4zMzksNS4zMzMsOS4yMzdjMS42NDMsMC45MzksMy40OTksMS40MjksNS4zMzMsMS40MjljMS44NTYsMCwzLjY5MS0wLjQ2OSw1LjM1NS0xLjQyOWw0MDUuMzMzLTIzNC42NjcgICAgYzMuMjg1LTEuOTIsNS4zMTItNS40NCw1LjMxMi05LjIzN1M0NTYuNjM3LDIzNy45ODksNDUzLjM1MiwyMzYuMDkxeiIgLz4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2c+CgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9zdmc+" alt="">
+                                    </span>
                             </span>
                             <div class="item-block">
                                 <div class="block">
@@ -1085,16 +941,8 @@
                             <span class="title">
                                 How do I get Pre Exposure Prophylaxis (PrEP) through NowPrEP?
                                 <span class="question-svg">
-                                    <svg
-                                         id="Capa_1" x="0px" y="0px" viewBox="0 0 490.661 490.661"
-                                        style="enable-background:new 0 0 490.661 490.661;" xml:space="preserve">
-
-                                            <path
-                                                d="M453.352,236.091L48.019,1.424c-3.285-1.899-7.36-1.899-10.688,0c-3.285,1.899-5.333,5.419-5.333,9.237v469.333    c0,3.819,2.048,7.339,5.333,9.237c1.643,0.939,3.499,1.429,5.333,1.429c1.856,0,3.691-0.469,5.355-1.429l405.333-234.667    c3.285-1.92,5.312-5.44,5.312-9.237S456.637,237.989,453.352,236.091z" />
-
-
-                                    </svg>
-                                </span>
+                                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgNDkwLjY2MSA0OTAuNjYxIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0OTAuNjYxIDQ5MC42NjE7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8Zz4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHBhdGggZD0iTTQ1My4zNTIsMjM2LjA5MUw0OC4wMTksMS40MjRjLTMuMjg1LTEuODk5LTcuMzYtMS44OTktMTAuNjg4LDBjLTMuMjg1LDEuODk5LTUuMzMzLDUuNDE5LTUuMzMzLDkuMjM3djQ2OS4zMzMgICAgYzAsMy44MTksMi4wNDgsNy4zMzksNS4zMzMsOS4yMzdjMS42NDMsMC45MzksMy40OTksMS40MjksNS4zMzMsMS40MjljMS44NTYsMCwzLjY5MS0wLjQ2OSw1LjM1NS0xLjQyOWw0MDUuMzMzLTIzNC42NjcgICAgYzMuMjg1LTEuOTIsNS4zMTItNS40NCw1LjMxMi05LjIzN1M0NTYuNjM3LDIzNy45ODksNDUzLjM1MiwyMzYuMDkxeiIgLz4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2c+CgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9zdmc+" alt="">
+                                    </span>
                             </span>
                             <div class="item-block">
                                 <div class="block">
@@ -1140,16 +988,8 @@ Next, NowPrEP will order a lab at a testing facility near you.
                             <span class="title">
                                 How much does Pre Exposure Prophylaxis (PrEP) cost?
                                 <span class="question-svg">
-                                    <svg
-                                         id="Capa_1" x="0px" y="0px" viewBox="0 0 490.661 490.661"
-                                        style="enable-background:new 0 0 490.661 490.661;" xml:space="preserve">
-
-                                            <path
-                                                d="M453.352,236.091L48.019,1.424c-3.285-1.899-7.36-1.899-10.688,0c-3.285,1.899-5.333,5.419-5.333,9.237v469.333    c0,3.819,2.048,7.339,5.333,9.237c1.643,0.939,3.499,1.429,5.333,1.429c1.856,0,3.691-0.469,5.355-1.429l405.333-234.667    c3.285-1.92,5.312-5.44,5.312-9.237S456.637,237.989,453.352,236.091z" />
-
-
-                                    </svg>
-                                </span>
+                                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgNDkwLjY2MSA0OTAuNjYxIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0OTAuNjYxIDQ5MC42NjE7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8Zz4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHBhdGggZD0iTTQ1My4zNTIsMjM2LjA5MUw0OC4wMTksMS40MjRjLTMuMjg1LTEuODk5LTcuMzYtMS44OTktMTAuNjg4LDBjLTMuMjg1LDEuODk5LTUuMzMzLDUuNDE5LTUuMzMzLDkuMjM3djQ2OS4zMzMgICAgYzAsMy44MTksMi4wNDgsNy4zMzksNS4zMzMsOS4yMzdjMS42NDMsMC45MzksMy40OTksMS40MjksNS4zMzMsMS40MjljMS44NTYsMCwzLjY5MS0wLjQ2OSw1LjM1NS0xLjQyOWw0MDUuMzMzLTIzNC42NjcgICAgYzMuMjg1LTEuOTIsNS4zMTItNS40NCw1LjMxMi05LjIzN1M0NTYuNjM3LDIzNy45ODksNDUzLjM1MiwyMzYuMDkxeiIgLz4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2c+CgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9zdmc+" alt="">
+                                    </span>
                             </span>
                             <div class="item-block">
                                 <div class="block">
@@ -1180,16 +1020,8 @@ Next, NowPrEP will order a lab at a testing facility near you.
                             <span class="title">
                                 How effective is Pre Exposure Prophylaxis (PrEP)?
                                 <span class="question-svg">
-                                    <svg
-                                         id="Capa_1" x="0px" y="0px" viewBox="0 0 490.661 490.661"
-                                        style="enable-background:new 0 0 490.661 490.661;" xml:space="preserve">
-
-                                            <path
-                                                d="M453.352,236.091L48.019,1.424c-3.285-1.899-7.36-1.899-10.688,0c-3.285,1.899-5.333,5.419-5.333,9.237v469.333    c0,3.819,2.048,7.339,5.333,9.237c1.643,0.939,3.499,1.429,5.333,1.429c1.856,0,3.691-0.469,5.355-1.429l405.333-234.667    c3.285-1.92,5.312-5.44,5.312-9.237S456.637,237.989,453.352,236.091z" />
-
-
-                                    </svg>
-                                </span>
+                                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgNDkwLjY2MSA0OTAuNjYxIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0OTAuNjYxIDQ5MC42NjE7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8Zz4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHBhdGggZD0iTTQ1My4zNTIsMjM2LjA5MUw0OC4wMTksMS40MjRjLTMuMjg1LTEuODk5LTcuMzYtMS44OTktMTAuNjg4LDBjLTMuMjg1LDEuODk5LTUuMzMzLDUuNDE5LTUuMzMzLDkuMjM3djQ2OS4zMzMgICAgYzAsMy44MTksMi4wNDgsNy4zMzksNS4zMzMsOS4yMzdjMS42NDMsMC45MzksMy40OTksMS40MjksNS4zMzMsMS40MjljMS44NTYsMCwzLjY5MS0wLjQ2OSw1LjM1NS0xLjQyOWw0MDUuMzMzLTIzNC42NjcgICAgYzMuMjg1LTEuOTIsNS4zMTItNS40NCw1LjMxMi05LjIzN1M0NTYuNjM3LDIzNy45ODksNDUzLjM1MiwyMzYuMDkxeiIgLz4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2c+CgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9zdmc+" alt="">
+                                    </span>
                             </span>
                             <div class="item-block">
                                 <div class="block">
@@ -1237,16 +1069,8 @@ Next, NowPrEP will order a lab at a testing facility near you.
                             <span class="title">
                                 How quickly does Pre Exposure Prophylaxis (PrEP) work?
                                 <span class="question-svg">
-                                    <svg
-                                         id="Capa_1" x="0px" y="0px" viewBox="0 0 490.661 490.661"
-                                        style="enable-background:new 0 0 490.661 490.661;" xml:space="preserve">
-
-                                            <path
-                                                d="M453.352,236.091L48.019,1.424c-3.285-1.899-7.36-1.899-10.688,0c-3.285,1.899-5.333,5.419-5.333,9.237v469.333    c0,3.819,2.048,7.339,5.333,9.237c1.643,0.939,3.499,1.429,5.333,1.429c1.856,0,3.691-0.469,5.355-1.429l405.333-234.667    c3.285-1.92,5.312-5.44,5.312-9.237S456.637,237.989,453.352,236.091z" />
-
-
-                                    </svg>
-                                </span>
+                                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgNDkwLjY2MSA0OTAuNjYxIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0OTAuNjYxIDQ5MC42NjE7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8Zz4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHBhdGggZD0iTTQ1My4zNTIsMjM2LjA5MUw0OC4wMTksMS40MjRjLTMuMjg1LTEuODk5LTcuMzYtMS44OTktMTAuNjg4LDBjLTMuMjg1LDEuODk5LTUuMzMzLDUuNDE5LTUuMzMzLDkuMjM3djQ2OS4zMzMgICAgYzAsMy44MTksMi4wNDgsNy4zMzksNS4zMzMsOS4yMzdjMS42NDMsMC45MzksMy40OTksMS40MjksNS4zMzMsMS40MjljMS44NTYsMCwzLjY5MS0wLjQ2OSw1LjM1NS0xLjQyOWw0MDUuMzMzLTIzNC42NjcgICAgYzMuMjg1LTEuOTIsNS4zMTItNS40NCw1LjMxMi05LjIzN1M0NTYuNjM3LDIzNy45ODksNDUzLjM1MiwyMzYuMDkxeiIgLz4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2c+CgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9zdmc+" alt="">
+                                    </span>
                             </span>
                             <div class="item-block">
                                 <div class="block">
@@ -1278,16 +1102,8 @@ Next, NowPrEP will order a lab at a testing facility near you.
                             <span class="title">
                                 Does Pre Exposure Prophylaxis (PrEP) prevent other STDs?
                                 <span class="question-svg">
-                                    <svg
-                                         id="Capa_1" x="0px" y="0px" viewBox="0 0 490.661 490.661"
-                                        style="enable-background:new 0 0 490.661 490.661;" xml:space="preserve">
-
-                                            <path
-                                                d="M453.352,236.091L48.019,1.424c-3.285-1.899-7.36-1.899-10.688,0c-3.285,1.899-5.333,5.419-5.333,9.237v469.333    c0,3.819,2.048,7.339,5.333,9.237c1.643,0.939,3.499,1.429,5.333,1.429c1.856,0,3.691-0.469,5.355-1.429l405.333-234.667    c3.285-1.92,5.312-5.44,5.312-9.237S456.637,237.989,453.352,236.091z" />
-
-
-                                    </svg>
-                                </span>
+                                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgNDkwLjY2MSA0OTAuNjYxIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0OTAuNjYxIDQ5MC42NjE7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8Zz4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHBhdGggZD0iTTQ1My4zNTIsMjM2LjA5MUw0OC4wMTksMS40MjRjLTMuMjg1LTEuODk5LTcuMzYtMS44OTktMTAuNjg4LDBjLTMuMjg1LDEuODk5LTUuMzMzLDUuNDE5LTUuMzMzLDkuMjM3djQ2OS4zMzMgICAgYzAsMy44MTksMi4wNDgsNy4zMzksNS4zMzMsOS4yMzdjMS42NDMsMC45MzksMy40OTksMS40MjksNS4zMzMsMS40MjljMS44NTYsMCwzLjY5MS0wLjQ2OSw1LjM1NS0xLjQyOWw0MDUuMzMzLTIzNC42NjcgICAgYzMuMjg1LTEuOTIsNS4zMTItNS40NCw1LjMxMi05LjIzN1M0NTYuNjM3LDIzNy45ODksNDUzLjM1MiwyMzYuMDkxeiIgLz4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2c+CgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9zdmc+" alt="">
+                                    </span>
                             </span>
                             <div class="item-block">
                                 <div class="block">
@@ -1326,16 +1142,8 @@ Next, NowPrEP will order a lab at a testing facility near you.
                             <span class="title">
                                 Is Pre Exposure Prophylaxis (PrEP) safe to take with other prescription drugs?
                                 <span class="question-svg">
-                                    <svg
-                                         id="Capa_1" x="0px" y="0px" viewBox="0 0 490.661 490.661"
-                                        style="enable-background:new 0 0 490.661 490.661;" xml:space="preserve">
-
-                                            <path
-                                                d="M453.352,236.091L48.019,1.424c-3.285-1.899-7.36-1.899-10.688,0c-3.285,1.899-5.333,5.419-5.333,9.237v469.333    c0,3.819,2.048,7.339,5.333,9.237c1.643,0.939,3.499,1.429,5.333,1.429c1.856,0,3.691-0.469,5.355-1.429l405.333-234.667    c3.285-1.92,5.312-5.44,5.312-9.237S456.637,237.989,453.352,236.091z" />
-
-
-                                    </svg>
-                                </span>
+                                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgNDkwLjY2MSA0OTAuNjYxIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0OTAuNjYxIDQ5MC42NjE7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8Zz4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHBhdGggZD0iTTQ1My4zNTIsMjM2LjA5MUw0OC4wMTksMS40MjRjLTMuMjg1LTEuODk5LTcuMzYtMS44OTktMTAuNjg4LDBjLTMuMjg1LDEuODk5LTUuMzMzLDUuNDE5LTUuMzMzLDkuMjM3djQ2OS4zMzMgICAgYzAsMy44MTksMi4wNDgsNy4zMzksNS4zMzMsOS4yMzdjMS42NDMsMC45MzksMy40OTksMS40MjksNS4zMzMsMS40MjljMS44NTYsMCwzLjY5MS0wLjQ2OSw1LjM1NS0xLjQyOWw0MDUuMzMzLTIzNC42NjcgICAgYzMuMjg1LTEuOTIsNS4zMTItNS40NCw1LjMxMi05LjIzN1M0NTYuNjM3LDIzNy45ODksNDUzLjM1MiwyMzYuMDkxeiIgLz4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2c+CgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9zdmc+" alt="">
+                                    </span>
                             </span>
                             <div class="item-block">
                                 <div class="block">
@@ -1378,10 +1186,8 @@ Next, NowPrEP will order a lab at a testing facility near you.
                         <h2 class="sec-title">
                             <span class="tiltelink" data-toggle="submitaquestion" aria-controls="submitaquestion" aria-haspopup="true" tabindex="0">Submit a Question</span>
                             <span class="chevron-arrow tiltelink" data-toggle="submitaquestion" aria-controls="submitaquestion" aria-haspopup="true" tabindex="0">
-                                <svg id="Capa_1" x="0px" y="0px" viewBox="0 0 256 256" style="enable-background:new 0 0 256 256;" xml:space="preserve">
-                                    <title>Close icon</title>
-                                    <polygon points="79.093,0 48.907,30.187 146.72,128 48.907,225.813 79.093,256 207.093,128" />
-                                </svg>
+                            <img src="data:image/svg+xml;base64,IDxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDI1NiAyNTY7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8Zz4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHBvbHlnb24gcG9pbnRzPSI3OS4wOTMsMCA0OC45MDcsMzAuMTg3IDE0Ni43MiwxMjggNDguOTA3LDIyNS44MTMgNzkuMDkzLDI1NiAyMDcuMDkzLDEyOCAgICIgLz4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvc3ZnPg==" alt="arrow">
+
                             </span>
                         </h2>
                     </div>

@@ -62,8 +62,6 @@
                     videoElement.preload = 'auto';
                     let tracksrc = trackvideo.getAttribute("data-src");
                     trackvideo.src=tracksrc;
-
-
                 }
             </script>
             <figure class="image">
@@ -181,9 +179,5 @@
 <?php include('components/frontpage-reviews.php'); ?>
 
 <?php include('components/section-faq-flip.php'); ?>
-
-
-
-
 
 <?php get_footer(); ?>

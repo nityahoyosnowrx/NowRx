@@ -589,7 +589,7 @@
         </div>
     </div>
 </section>
-
+<!--
 <script defer>
     let reviewsSwiper = new Swiper('.reviews-slide', {
         // Optional parameters
@@ -625,4 +625,4 @@
         }
 
     });
-</script>
+</script> -->

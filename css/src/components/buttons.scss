@@ -8,13 +8,7 @@
 	// width: 75%;
 	a.rx-btn {
 		display: inline-flex;
-		-webkit-box-align: center;
-		-webkit-align-items: center;
-		-ms-flex-align: center;
 		align-items: center;
-		-webkit-box-pack: center;
-		-webkit-justify-content: center;
-		-ms-flex-pack: center;
 		justify-content: center;
 		min-width: 260px;
 		background: transparent;
@@ -90,7 +84,7 @@
 	font-size: 14px;
 	font-weight: 800;
 
-	@media screen and (min-width: 992px) and (max-width:1200px) {
+	@media screen and (min-width: 992px) and (max-width: 1200px) {
 		min-width: 190px;
 	}
 
@@ -169,7 +163,7 @@
 		}
 	}
 
-	&[disabled=""]{
+	&[disabled=''] {
 		background-color: #eee;
 		color: #b9b9b9;
 		background-image: none;

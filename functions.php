@@ -748,7 +748,7 @@ function wpb_filter_query($query, $error = true){
   }
 }
 
-add_action('parse_query', 'wpb_filter_query');
+// add_action('parse_query', 'wpb_filter_query');
 
 // add_filter('get_search_form', create_function('$a', "return null;"));
 
