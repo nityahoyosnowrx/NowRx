@@ -1770,29 +1770,30 @@ section.split-image {
 
 input.hs-button.primary.large {
 	-webkit-font-smoothing: antialiased;
-	background-color: #038ed8;
-	text-decoration: none;
-	user-select: none;
-	letter-spacing: 1px;
-	font-weight: 600;
-	display: inline-block;
-	vertical-align: middle;
-	padding: 15px 40px;
-	border: 1px solid transparent;
-	transition: all 0.25s ease-out, color 0.25s ease-out;
-	font-family: inherit;
-	line-height: 1;
-	text-align: center;
-	cursor: pointer;
-	background-color: #33a532;
-	color: #fff;
-	font-size: 14px;
-	text-transform: capitalize;
-	border-radius: 30px;
-	margin: 10px;
-	box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.15);
-	min-width: 200px;
-	-webkit-appearance: none;
+    text-decoration: none;
+    user-select: none;
+    letter-spacing: 1px;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 15px 40px;
+    border: none;
+    transition: all .25s ease-out,color .25s ease-out;
+    line-height: 1;
+    text-align: center;
+    cursor: pointer;
+    background-color: #038ed8;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 30px;
+    margin: 10px;
+    box-shadow: 0 5px 5px 0 Rgb(0 0 0 / 15%);
+    min-width: 200px;
+    -webkit-appearance: none;
+    text-transform: uppercase;
+    font-weight: 700;
+	&:hover{
+		background-color: #225088;
+	}
 }
 
 // input[type='color'],
@@ -1848,7 +1849,7 @@ input.hs-button.primary.large {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin: 0 0 30px;
+	margin: 0 0 ;
 }
 
 // .hs-form-134ddd71-adf4-414b-a537-24f71e87f48e_a5f89851-d95e-41cb-be88-46c797e53696 fieldset.form-columns-1 .hs-input {

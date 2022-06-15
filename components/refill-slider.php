@@ -34,7 +34,7 @@
                         </div>
                         <div class="right-item">
                             <figure>
-                                <img src="<?php echo get_template_directory_uri(); ?>/images/Prescription-delivery-review-from-sarah-s.webp" alt="Prescription Delivery Review from sarah s">
+                                <img data-src="<?php echo get_template_directory_uri(); ?>/images/Prescription-delivery-review-from-sarah-s.webp" alt="Prescription Delivery Review from sarah s" class="lozad">
                             </figure>
                         </div>
                     </header>
@@ -75,7 +75,7 @@
                         </div>
                         <div class="right-item">
                             <figure>
-                                <img src="<?php echo get_template_directory_uri(); ?>/images/Prescription-delivery-review-from-tony-m.jpeg" alt="Prescription delivery review from tony m">
+                                <img data-src="<?php echo get_template_directory_uri(); ?>/images/Prescription-delivery-review-from-tony-m.jpeg" alt="Prescription delivery review from tony m" class="lozad">
                             </figure>
                         </div>
                     </header>
@@ -115,7 +115,7 @@
                         </div>
                         <div class="right-item">
                             <figure>
-                                <img src="<?php echo get_template_directory_uri(); ?>/images/Prescription-delivery-review-from-danna-y.jpeg" alt="Prescription delivery review from tony m">
+                                <img data-src="<?php echo get_template_directory_uri(); ?>/images/Prescription-delivery-review-from-danna-y.jpeg" alt="Prescription delivery review from tony m" class="lozad">
                             </figure>
                         </div>
                     </header>
@@ -154,7 +154,7 @@
                         </div>
                         <div class="right-item">
                             <figure>
-                                <img src="<?php echo get_template_directory_uri(); ?>/images/Prescription-Delivery-Review-from-Chris-S.webp" alt="Prescription Delivery Review from Chris S">
+                                <img data-src="<?php echo get_template_directory_uri(); ?>/images/Prescription-Delivery-Review-from-Chris-S.webp" alt="Prescription Delivery Review from Chris S" class="lozad">
                             </figure>
                         </div>
                     </header>
@@ -194,7 +194,7 @@
                         </div>
                         <div class="right-item">
                             <figure>
-                                <img src="<?php echo get_template_directory_uri(); ?>/images/Prescription-Delivery-Review-from-Michael-H..webp" alt="Prescription Delivery Review from Michael H">
+                                <img data-src="<?php echo get_template_directory_uri(); ?>/images/Prescription-Delivery-Review-from-Michael-H..webp" alt="Prescription Delivery Review from Michael H" class="lozad">
                             </figure>
                         </div>
                     </header>
@@ -234,7 +234,7 @@
                         </div>
                         <div class="right-item">
                             <figure>
-                                <img src="<?php echo get_template_directory_uri(); ?>/images/Prescription-delivery-review-from-vistoria-h.jpeg" alt="Prescription Delivery Review from Michael H">
+                                <img data-src="<?php echo get_template_directory_uri(); ?>/images/Prescription-delivery-review-from-vistoria-h.jpeg" alt="Prescription Delivery Review from Michael H" class="lozad">
                             </figure>
                         </div>
                     </header>
@@ -276,7 +276,7 @@
                         </div>
                         <div class="right-item">
                             <figure>
-                                <img src="<?php echo get_template_directory_uri(); ?>/images/Prescription-Delivery-Review-from-Julie-B.webp" alt="Prescription Delivery Review from Julie B">
+                                <img data-src="<?php echo get_template_directory_uri(); ?>/images/Prescription-Delivery-Review-from-Julie-B.webp" alt="Prescription Delivery Review from Julie B" class="lozad">
                             </figure>
                         </div>
                     </header>
@@ -316,7 +316,7 @@
                         </div>
                         <div class="right-item">
                             <figure>
-                                <img src="<?php echo get_template_directory_uri(); ?>/images/Prescription-Delivery-Review-from-Eli-K.webp" alt="Prescription Delivery Review from Eli K">
+                                <img data-src="<?php echo get_template_directory_uri(); ?>/images/Prescription-Delivery-Review-from-Eli-K.webp" alt="Prescription Delivery Review from Eli K" class="lozad">
                             </figure>
                         </div>
                     </header>
@@ -356,7 +356,7 @@
                         </div>
                         <div class="right-item">
                             <figure>
-                                <img src="<?php echo get_template_directory_uri(); ?>/images/Prescription-Delivery-Review-from-Danielle-B.webp" alt="Prescription Delivery Review from Danielle B">
+                                <img data-src="<?php echo get_template_directory_uri(); ?>/images/Prescription-Delivery-Review-from-Danielle-B.webp" alt="Prescription Delivery Review from Danielle B" class="lozad">
                             </figure>
                         </div>
                     </header>
@@ -395,7 +395,7 @@
                         </div>
                         <div class="right-item">
                             <figure>
-                                <img src="<?php echo get_template_directory_uri(); ?>/images/Prescription-Delivery-Review-from-Mark-C.webp" alt="Prescription Delivery Review from Mark C">
+                                <img data-src="<?php echo get_template_directory_uri(); ?>/images/Prescription-Delivery-Review-from-Mark-C.webp" alt="Prescription Delivery Review from Mark C" class="lozad">
                             </figure>
                         </div>
                     </header>
@@ -435,7 +435,7 @@
                         </div>
                         <div class="right-item">
                             <figure>
-                                <img src="<?php echo get_template_directory_uri(); ?>/images/Prescription-Delivery-Review-from-Andrea-B.webp" alt="Prescription Delivery Review from Andrea B">
+                                <img data-src="<?php echo get_template_directory_uri(); ?>/images/Prescription-Delivery-Review-from-Andrea-B.webp" alt="Prescription Delivery Review from Andrea B" class="lozad">
                             </figure>
                         </div>
                     </header>
@@ -476,7 +476,7 @@
                         </div>
                         <div class="right-item">
                             <figure>
-                                <img src="<?php echo get_template_directory_uri(); ?>/images/Prescription-delivery-review-from-christene-M.jpeg" alt="Prescription Delivery Review from Michael H">
+                                <img data-src="<?php echo get_template_directory_uri(); ?>/images/Prescription-delivery-review-from-christene-M.jpeg" alt="Prescription Delivery Review from Michael H" class="lozad">
                             </figure>
                         </div>
                     </header>
@@ -516,7 +516,7 @@
                         </div>
                         <div class="right-item">
                             <figure>
-                                <img src="<?php echo get_template_directory_uri(); ?>/images/Prescription-delivery-review-from-neil-c.jpeg" alt="Prescription Delivery Review from Michael H">
+                                <img data-src="<?php echo get_template_directory_uri(); ?>/images/Prescription-delivery-review-from-neil-c.jpeg" alt="Prescription Delivery Review from Michael H" class="lozad">
                             </figure>
                         </div>
                     </header>

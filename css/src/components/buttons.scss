@@ -59,7 +59,7 @@
 	line-height: 1;
 	text-align: center;
 	cursor: pointer;
-	background-color: #33a532;
+	background-color: #048eda;
 	color: #fff;
 	font-size: 1rem;
 	text-transform: capitalize;
@@ -113,7 +113,7 @@
 		min-width: 100%;
 	}
 	&:hover {
-		background-color: $m;
+		background-color: #254e89;
 		color: $f;
 		span.arrow {
 			transform: translateX(-10px) scale(0.7);

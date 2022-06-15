@@ -5684,7 +5684,7 @@ section.welcometele {
 		background-color: #f5f8fa;
 		border-radius: 20px;
 		padding: 0 15px;
-		min-height: 27px;
+		min-height: 40px;
 		min-width: 100%;
 	}
 
@@ -8819,35 +8819,27 @@ div#respond textarea#comment {
 }
 
 div#respond input#submit {
-	display: -webkit-inline-box;
-	display: -ms-inline-flexbox;
 	display: inline-flex;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
-	padding: 12px 35px;
-	font-size: 0.8rem;
-	font-weight: 700;
-	line-height: 1.2;
-	text-align: center;
-	text-transform: uppercase;
-	white-space: nowrap;
-	vertical-align: middle;
-	cursor: pointer;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-	border: 0;
-	-webkit-transition: 0.2s all;
-	-o-transition: 0.2s all;
-	transition: 0.2s all;
-	background-color: #1c1c1c;
-	border-color: #000;
-	border-style: solid;
-	color: #fff;
+    align-items: center;
+    padding: 12px 35px;
+    font-size: .8rem;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+    text-transform: uppercase;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    border: 0;
+    transition: all .2s;
+    background-color: #038ed8;
+    border-color: #000;
+    border-style: solid;
+    color: #fff;
+    border-radius: 30px;
 	&:hover{
-		background-color: $m;
+		background-color: #00334d;
 	}
 }
 
@@ -9187,7 +9179,7 @@ section.locations-flex {
 		background-color: #f5f8fa;
 		border-radius: 20px;
 		padding: 0 15px;
-		min-height: 27px;
+		min-height: 40px;
 		min-width: 100%;
 
 		@media screen and (max-width: 992px) {
@@ -9209,28 +9201,22 @@ section.locations-flex {
 	}
 
 	input#Submit {
-		min-width: 0;
 		border-radius: 30px;
 		width: auto;
 		margin: 0;
-		min-width: 210px;
-		padding: 15px 20px;
-		background-image: -webkit-gradient(
-			linear,
-			left top,
-			left bottom,
-			from(hsla(0, 0%, 100%, 0.1)),
-			to(rgba(0, 0, 0, 0.1))
-		);
-		font-size: 14px;
+		font-size: 16px;
 		font-weight: 800;
-		padding: 10px 30px;
-		min-width: 240px;
-		background-image: linear-gradient(-180deg, hsla(0, 0%, 100%, 0.1), rgba(0, 0, 0, 0.1));
-		background-color: #32a531;
+		padding: 10px 25px;
+		background-image: none;
+		border: none;
+		background-color: #038ed8;
 		color: #fff;
+		min-width: 200px;
 		&[disabled] {
 			opacity: 0.5;
+		}
+		&:hover{
+			background-color: #00334d;
 		}
 	}
 
