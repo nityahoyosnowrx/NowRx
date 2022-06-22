@@ -80,6 +80,19 @@
 
     <?php get_template_part('/components/critical-css'); ?>
 
+    <?php
+    if(is_singular('post')):
+        if (have_posts()) : while (have_posts()) : the_post();
+            $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'large');
+            // var_dump($image);
+            ?>
+            <link rel="preload" as="image" href="<?php echo $image[0]; ?>">
+    <?php
+            endwhile;
+        endif;
+    endif;
+    ?>
+
 </head>
 
 <body <?php body_class(); ?>>

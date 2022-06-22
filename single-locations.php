@@ -98,12 +98,7 @@ $mapd = get_field('address');
             <div class="map-block">
 
 
-                <div class="maphours">
-                    <span class="hourtitle">Hours of Operation</span>
-                    <span class="time">
-                        Monday - Friday | 9am - 5pm
-                    </span>
-                </div>
+
 
                 <div class="map-tem">
                     <div id="map"></div>

@@ -56,9 +56,10 @@ $currentPage = $post->ID;
                                                 <?php $imageThumbnail = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'medium'); ?>
 
                                                 <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
-                                                    <picture class="border-styled lozad" style="display: block; min-height: 1rem" data-iesrc="<?php echo $imageThumbnail[0]; ?>" data-alt="<?php echo get_post_meta( get_post_thumbnail_id(), '_wp_attachment_image_alt', true ); ?>">
+                                                    <picture class="border-styled " style="display: block; min-height: 1rem" data-iesrc="<?php echo $imageThumbnail[0]; ?>" data-alt="<?php echo get_post_meta( get_post_thumbnail_id(), '_wp_attachment_image_alt', true ); ?>">
                                                         <source srcset="<?php echo $image[0]; ?>" media="(min-width: 992px)">
                                                         <source srcset="<?php echo $imageThumbnail[0]; ?>" media="(min-width: 10px)">
+                                                        <img src="data:image/jpeg;base64,/some_lqip_in_base_64==" width="766" height="430">
                                                     </picture>
                                                 </a>
                                             <?php else : ?>
@@ -124,10 +125,14 @@ $currentPage = $post->ID;
                         $queryskde = new WP_Query(array(
                             'post_status' => 'publish',
                             'orderby' => 'date',
-                            'order' => 'ASC',
+                            'order' => 'DESC',
+                            'tag'=>'trending',
+                            'posts_per_page' => 4,
+                            'paged' => $paged,
+                            'post__not_in' => array($latest_cpt[0]->ID),
                         ));
                         //set our query's pagination to $paged
-                        $queryskde->query('post_type=post&posts_per_page=3&tag=trending');
+                        // $queryskde->query('post_type=post&posts_per_page=3&tag=trending');
 
                         if ($queryskde->have_posts()) :
                             while ($queryskde->have_posts()) : $queryskde->the_post();
