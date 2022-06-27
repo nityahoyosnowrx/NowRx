@@ -56,10 +56,10 @@ $currentPage = $post->ID;
                                                 <?php $imageThumbnail = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'medium'); ?>
 
                                                 <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
-                                                    <picture class="border-styled " style="display: block; min-height: 1rem" data-iesrc="<?php echo $imageThumbnail[0]; ?>" data-alt="<?php echo get_post_meta( get_post_thumbnail_id(), '_wp_attachment_image_alt', true ); ?>">
+                                                    <picture class="border-styled " style="display: block; min-height: 1rem">
                                                         <source srcset="<?php echo $image[0]; ?>" media="(min-width: 992px)">
                                                         <source srcset="<?php echo $imageThumbnail[0]; ?>" media="(min-width: 10px)">
-                                                        <img src="data:image/jpeg;base64,/some_lqip_in_base_64==" width="766" height="430">
+                                                        <img src="data:image/jpeg;base64,/some_lqip_in_base_64==" width="766" height="430" alt="<?php echo get_post_meta( get_post_thumbnail_id(), '_wp_attachment_image_alt', true ); ?>">
                                                     </picture>
                                                 </a>
                                             <?php else : ?>

@@ -358,18 +358,96 @@
                     </h2>
                 </header>
 
-                <div class="map-tem">
+                <!-- <div class="map-tem">
                     <div id="map"></div>
                     <div id="side_bar"></div>
-                </div>
+                </div> -->
 
 
 
 
-                <div class="filter">
+                <!-- <div class="filter">
                 <input id="address" type="text" value="Palo Alto, CA"></input>
                 <input type="button" value="Search" onclick="codeAddress();"></input>
-                <!-- <div id="info"></div> -->
+                <div id="info"></div>
+                </div> -->
+
+                <div id="dropdown-locations">
+                        <button class="dropdown-list" id="locationsBtn">
+                        Select a Location
+                            <span class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M224 416c-8.188 0-16.38-3.125-22.62-9.375l-192-192c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L224 338.8l169.4-169.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-192 192C240.4 412.9 232.2 416 224 416z"/></svg>
+                            </span>
+                        </button>
+                        <div class="list-dropdown">
+                            <ul class="list">
+                            <li class="list-li">
+                                    <a href=<?= get_site_url(); ?>/locations/california/mesa/" class="link">Mesa, AZ
+
+                                <span class="link">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/images/pillsin.svg" alt="">
+                                </span>
+                            </a>
+                                </li>
+                                <li class="list-li">
+                                    <a href=<?= get_site_url(); ?>/locations/california/mountain-view/" class="link">Mountain View, CA
+
+                                <span class="link">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/images/pillsin.svg" alt="">
+                                </span>
+                            </a>
+                                </li>
+                                <li class="list-li">
+                                    <a href=<?= get_site_url(); ?>/locations/california/irvine/" class="link">Irvine, CA
+
+                                <span class="link">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/images/pillsin.svg" alt="">
+                                </span>
+                            </a>
+                                </li>
+                                <li class="list-li">
+                                    <a href=<?= get_site_url(); ?>/locations/california/burlingame/" class="link">Burlingame, CA
+
+                                <span class="link">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/images/pillsin.svg" alt="">
+                                </span>
+                            </a>
+                                </li>
+
+                                <li class="list-li">
+                                    <a href=<?= get_site_url(); ?>/locations/california/san-jose/" class="link">San Jose, CA
+
+                                <span class="link">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/images/pillsin.svg" alt="">
+                                </span>
+                            </a>
+                                </li>
+                                <li class="list-li">
+                                    <a href=<?= get_site_url(); ?>/locations/california/pleasanton/" class="link">Pleasonton, CA
+
+                                <span class="link">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/images/pillsin.svg" alt="">
+                                </span>
+                            </a>
+                                </li>
+                                <li class="list-li">
+                                    <a href=<?= get_site_url(); ?>/locations/california/van-nuys/" class="link">Van Nuys, CA
+
+                                <span class="link">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/images/pillsin.svg" alt="">
+                                </span>
+                            </a>
+                                </li>
+                                <li class="list-li">
+                                    <a href=<?= get_site_url(); ?>/locations/california/hayward/" class="link">Hayward, CA
+
+                                <span class="link">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/images/pillsin.svg" alt="">
+                                </span>
+                            </a>
+                                </li>
+                            </ul>
+                        </div>
                 </div>
 
 
@@ -411,9 +489,9 @@
                     </div>
                     <!-- item -->
                     <div class="location-item">
+                    <a href="<?= get_site_url(); ?>/locations/california/irvine/">
 
                         <figure class="image"><img src="https://images.unsplash.com/photo-1615470721367-af2ef285d85f?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2669" alt=""></figure>
-                        <a href="<?= get_site_url(); ?>/locations/california/irvine/">
                             <div class="sv">
                                 <svg height="512" viewBox="0 0 128 128" width="512" xmlns="http://www.w3.org/2000/svg">
                                     <g>
@@ -670,7 +748,7 @@
 
 
 
-
+<!--
 <style>
     #map_canvas {
   margin: 0;
@@ -792,10 +870,10 @@
         font-size: 13px;
         font-weight: 300;
     }
-</style>
+</style> -->
 
 
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmMty5MmMXegrIhIhMHDWOqIu6RQ6m9vg&libraries=geometry,places"></script>
+<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmMty5MmMXegrIhIhMHDWOqIu6RQ6m9vg&libraries=geometry,places"></script> -->
 
 <script>
     // var map;
@@ -1644,151 +1722,151 @@
 
 
 
-    var geocoder = null;
-var map = null;
-var customerMarker = null;
-var gmarkers = [];
-var closest = [];
+//     var geocoder = null;
+// var map = null;
+// var customerMarker = null;
+// var gmarkers = [];
+// var closest = [];
 
-function initialize() {
-  // alert("init");
-  geocoder = new google.maps.Geocoder();
-  map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 9,
-    center: new google.maps.LatLng(52.6699927, -0.7274620),
-    mapTypeId: google.maps.MapTypeId.ROADMAP
-  });
-  var infowindow = new google.maps.InfoWindow();
-  var marker, i;
-  var bounds = new google.maps.LatLngBounds();
-//   document.getElementById('info').innerHTML = "found " + locations.length + " locations<br>";
-  for (i = 0; i < locations.length; i++) {
-    var coordStr = locations[i][4];
-    var coords = coordStr.split(",");
-    var pt = new google.maps.LatLng(parseFloat(coords[0]), parseFloat(coords[1]));
-    bounds.extend(pt);
-    marker = new google.maps.Marker({
-      position: pt,
-      map: map,
-      icon: locations[i][5],
-      address: locations[i][2],
-      title: locations[i][0],
-      html: locations[i][0] + "<br>" + locations[i][2]
-    });
-    gmarkers.push(marker);
-    google.maps.event.addListener(marker, 'click', (function(marker, i) {
-        return function() {
-          infowindow.setContent(marker.html);
-          infowindow.open(map, marker);
-        }
-      })
-      (marker, i));
-  }
-  map.fitBounds(bounds);
+// function initialize() {
+//   // alert("init");
+//   geocoder = new google.maps.Geocoder();
+//   map = new google.maps.Map(document.getElementById('map'), {
+//     zoom: 9,
+//     center: new google.maps.LatLng(52.6699927, -0.7274620),
+//     mapTypeId: google.maps.MapTypeId.ROADMAP
+//   });
+//   var infowindow = new google.maps.InfoWindow();
+//   var marker, i;
+//   var bounds = new google.maps.LatLngBounds();
+// //   document.getElementById('info').innerHTML = "found " + locations.length + " locations<br>";
+//   for (i = 0; i < locations.length; i++) {
+//     var coordStr = locations[i][4];
+//     var coords = coordStr.split(",");
+//     var pt = new google.maps.LatLng(parseFloat(coords[0]), parseFloat(coords[1]));
+//     bounds.extend(pt);
+//     marker = new google.maps.Marker({
+//       position: pt,
+//       map: map,
+//       icon: locations[i][5],
+//       address: locations[i][2],
+//       title: locations[i][0],
+//       html: locations[i][0] + "<br>" + locations[i][2]
+//     });
+//     gmarkers.push(marker);
+//     google.maps.event.addListener(marker, 'click', (function(marker, i) {
+//         return function() {
+//           infowindow.setContent(marker.html);
+//           infowindow.open(map, marker);
+//         }
+//       })
+//       (marker, i));
+//   }
+//   map.fitBounds(bounds);
 
-}
+// }
 
-function codeAddress() {
-  var numberOfResults = 25;
-  var numberOfDrivingResults = 5;
-  var address = document.getElementById('address').value;
-  map.setZoom(9);
+// function codeAddress() {
+//   var numberOfResults = 25;
+//   var numberOfDrivingResults = 5;
+//   var address = document.getElementById('address').value;
+//   map.setZoom(9);
 
-  geocoder.geocode({
-    'address': address
-  }, function(results, status) {
-    if (status == google.maps.GeocoderStatus.OK) {
-      map.setCenter(results[0].geometry.location);
-      if (customerMarker) customerMarker.setMap(null);
-      customerMarker = new google.maps.Marker({
-        map: map,
-        position: results[0].geometry.location
-      });
-      closest = findClosestN(results[0].geometry.location, numberOfResults);
-      // get driving distance
-      closest = closest.splice(0, numberOfResults);
-      calculateDistances(results[0].geometry.location, closest, numberOfDrivingResults);
-    } else {
-      alert('Geocode was not successful for the following reason: ' + status);
-    }
-  });
-}
+//   geocoder.geocode({
+//     'address': address
+//   }, function(results, status) {
+//     if (status == google.maps.GeocoderStatus.OK) {
+//       map.setCenter(results[0].geometry.location);
+//       if (customerMarker) customerMarker.setMap(null);
+//       customerMarker = new google.maps.Marker({
+//         map: map,
+//         position: results[0].geometry.location
+//       });
+//       closest = findClosestN(results[0].geometry.location, numberOfResults);
+//       // get driving distance
+//       closest = closest.splice(0, numberOfResults);
+//       calculateDistances(results[0].geometry.location, closest, numberOfDrivingResults);
+//     } else {
+//       alert('Geocode was not successful for the following reason: ' + status);
+//     }
+//   });
+// }
 
-function findClosestN(pt, numberOfResults) {
-  var closest = [];
-//   document.getElementById('info').innerHTML += "processing " + gmarkers.length + "<br>";
-  for (var i = 0; i < gmarkers.length; i++) {
-    gmarkers[i].distance = google.maps.geometry.spherical.computeDistanceBetween(pt, gmarkers[i].getPosition());
-    // document.getElementById('info').innerHTML += "process " + i + ":" + gmarkers[i].getPosition().toUrlValue(6) + ":" + gmarkers[i].distance.toFixed(2) + "<br>";
-    gmarkers[i].setMap(null);
-    closest.push(gmarkers[i]);
-  }
-  closest.sort(sortByDist);
-  return closest;
-}
+// function findClosestN(pt, numberOfResults) {
+//   var closest = [];
+// //   document.getElementById('info').innerHTML += "processing " + gmarkers.length + "<br>";
+//   for (var i = 0; i < gmarkers.length; i++) {
+//     gmarkers[i].distance = google.maps.geometry.spherical.computeDistanceBetween(pt, gmarkers[i].getPosition());
+//     // document.getElementById('info').innerHTML += "process " + i + ":" + gmarkers[i].getPosition().toUrlValue(6) + ":" + gmarkers[i].distance.toFixed(2) + "<br>";
+//     gmarkers[i].setMap(null);
+//     closest.push(gmarkers[i]);
+//   }
+//   closest.sort(sortByDist);
+//   return closest;
+// }
 
-function sortByDist(a, b) {
-  return (a.distance - b.distance)
-}
+// function sortByDist(a, b) {
+//   return (a.distance - b.distance)
+// }
 
-function calculateDistances(pt, closest, numberOfResults) {
-  var service = new google.maps.DistanceMatrixService();
-  var request = {
-    origins: [pt],
-    destinations: [],
-    travelMode: google.maps.TravelMode.DRIVING,
-    unitSystem: google.maps.UnitSystem.METRIC,
-    avoidHighways: false,
-    avoidTolls: false
-  };
-  for (var i = 0; i < closest.length; i++) {
-    request.destinations.push(closest[i].getPosition());
-  }
-  service.getDistanceMatrix(request, function(response, status) {
-    if (status != google.maps.DistanceMatrixStatus.OK) {
-      alert('Error was: ' + status);
-    } else {
-      var origins = response.originAddresses;
-      var destinations = response.destinationAddresses;
-      var outputDiv = document.getElementById('side_bar');
-      outputDiv.innerHTML = '<h3>Nearest Locations</h3>';
-      outputDiv.classList.add("active");
+// function calculateDistances(pt, closest, numberOfResults) {
+//   var service = new google.maps.DistanceMatrixService();
+//   var request = {
+//     origins: [pt],
+//     destinations: [],
+//     travelMode: google.maps.TravelMode.DRIVING,
+//     unitSystem: google.maps.UnitSystem.METRIC,
+//     avoidHighways: false,
+//     avoidTolls: false
+//   };
+//   for (var i = 0; i < closest.length; i++) {
+//     request.destinations.push(closest[i].getPosition());
+//   }
+//   service.getDistanceMatrix(request, function(response, status) {
+//     if (status != google.maps.DistanceMatrixStatus.OK) {
+//       alert('Error was: ' + status);
+//     } else {
+//       var origins = response.originAddresses;
+//       var destinations = response.destinationAddresses;
+//       var outputDiv = document.getElementById('side_bar');
+//       outputDiv.innerHTML = '<h3>Nearest Locations</h3>';
+//       outputDiv.classList.add("active");
 
 
-      var results = response.rows[0].elements;
-      // save title and address in record for sorting
-      for (var i = 0; i < closest.length; i++) {
-        results[i].title = closest[i].title;
-        results[i].address = closest[i].address;
-        results[i].idx_closestMark = i;
-      }
-      results.sort(sortByDistDM);
-      for (var i = 0;
-        ((i < numberOfResults) && (i < closest.length)); i++) {
-        closest[i].setMap(map);
-        outputDiv.innerHTML += "<div class='locatonitem'><a href='javascript:google.maps.event.trigger(closest[" + results[i].idx_closestMark + "],\"click\");'>" + results[i].title + '</a><br>' + results[i].address + "<br>" + results[i].distance.text + ' appoximately ' + results[i].duration.text + '<br></div>';
-      }
-    }
-  });
-}
+//       var results = response.rows[0].elements;
+//       // save title and address in record for sorting
+//       for (var i = 0; i < closest.length; i++) {
+//         results[i].title = closest[i].title;
+//         results[i].address = closest[i].address;
+//         results[i].idx_closestMark = i;
+//       }
+//       results.sort(sortByDistDM);
+//       for (var i = 0;
+//         ((i < numberOfResults) && (i < closest.length)); i++) {
+//         closest[i].setMap(map);
+//         outputDiv.innerHTML += "<div class='locatonitem'><a href='javascript:google.maps.event.trigger(closest[" + results[i].idx_closestMark + "],\"click\");'>" + results[i].title + '</a><br>' + results[i].address + "<br>" + results[i].distance.text + ' appoximately ' + results[i].duration.text + '<br></div>';
+//       }
+//     }
+//   });
+// }
 
-function sortByDistDM(a, b) {
-  return (a.distance.value - b.distance.value)
-}
+// function sortByDistDM(a, b) {
+//   return (a.distance.value - b.distance.value)
+// }
 
-google.maps.event.addDomListener(window, 'load', initialize);
-// Store Name[0],delivery[1],Address[2],Delivery Zone[3],Coordinates[4] data from FusionTables pizza stores example
-var locations = [
-  ["burlingame", "no", "burlingame, USA", "polygon", "37.58752971358246, -122.3740210794692", "http://maps.google.com/mapfiles/ms/icons/yellow.png"],
-["san-jose", "no", "san-jose, USA", "polygon", "37.30548177620453, -121.86341245055891", "http://maps.google.com/mapfiles/ms/icons/yellow.png"],
-["mountain-view", "no", "mountain-view, USA", "polygon", "37.40896234551496, -122.0836722973587", "http://maps.google.com/mapfiles/ms/icons/yellow.png"],
-["irvine", "no", "irvine, USA", "polygon", "33.671060999133054, -117.78370002094705", "http://maps.google.com/mapfiles/ms/icons/yellow.png"],
-["pleasanton", "no", "pleasanton, USA", "polygon", "37.66751653864867, -121.87849056355327", "http://maps.google.com/mapfiles/ms/icons/yellow.png"],
-["van-nuys", "no", "van-nuys, USA", "polygon", "34.20060954951781, -118.45333623367563", "http://maps.google.com/mapfiles/ms/icons/yellow.png"],
-["hayward", "no", "hayward, USA", "polygon", "37.63140568400543, -122.084409386676", "http://maps.google.com/mapfiles/ms/icons/yellow.png"],
-["mesa", "no", "mesa, USA", "polygon", "33.374268887924956, -111.80059004642737", "http://maps.google.com/mapfiles/ms/icons/yellow.png"]
+// google.maps.event.addDomListener(window, 'load', initialize);
+// // Store Name[0],delivery[1],Address[2],Delivery Zone[3],Coordinates[4] data from FusionTables pizza stores example
+// var locations = [
+//   ["burlingame", "no", "burlingame, USA", "polygon", "37.58752971358246, -122.3740210794692", "http://maps.google.com/mapfiles/ms/icons/yellow.png"],
+// ["san-jose", "no", "san-jose, USA", "polygon", "37.30548177620453, -121.86341245055891", "http://maps.google.com/mapfiles/ms/icons/yellow.png"],
+// ["mountain-view", "no", "mountain-view, USA", "polygon", "37.40896234551496, -122.0836722973587", "http://maps.google.com/mapfiles/ms/icons/yellow.png"],
+// ["irvine", "no", "irvine, USA", "polygon", "33.671060999133054, -117.78370002094705", "http://maps.google.com/mapfiles/ms/icons/yellow.png"],
+// ["pleasanton", "no", "pleasanton, USA", "polygon", "37.66751653864867, -121.87849056355327", "http://maps.google.com/mapfiles/ms/icons/yellow.png"],
+// ["van-nuys", "no", "van-nuys, USA", "polygon", "34.20060954951781, -118.45333623367563", "http://maps.google.com/mapfiles/ms/icons/yellow.png"],
+// ["hayward", "no", "hayward, USA", "polygon", "37.63140568400543, -122.084409386676", "http://maps.google.com/mapfiles/ms/icons/yellow.png"],
+// ["mesa", "no", "mesa, USA", "polygon", "33.374268887924956, -111.80059004642737", "http://maps.google.com/mapfiles/ms/icons/yellow.png"]
 
-];
+// ];
 
 
 

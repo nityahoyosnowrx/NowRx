@@ -117,14 +117,10 @@
 
                 <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'large'); ?>
                 <?php $imageThumbnail = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'thumbnail'); ?>
-                    <picture class="border-styled " data-test="picture" style="display: block; min-height: 1rem"
-                        data-iesrc="<?php echo $imageThumbnail[0]; ?>"
-                        data-alt="<?php echo get_post_meta( get_post_thumbnail_id(), '_wp_attachment_image_alt', true ); ?>">
+                    <picture class="border-styled" style="display: block; min-height: 1rem">
                         <source srcset="<?php echo $image[0]; ?>" media="(min-width: 992px)">
                         <source srcset="<?php echo $imageThumbnail[0]; ?>" media="(min-width: 10px)">
-                        <!-- NO img element -->
-                        <!-- instead of img element, there will be the last source with the minimum dimensions -->
-                        <img src="data:image/jpeg;base64,/some_lqip_in_base_64==" width="766" height="430">
+                        <img src="data:image/jpeg;base64,/some_lqip_in_base_64==" width="766" height="430" alt="<?php echo get_post_meta( get_post_thumbnail_id(), '_wp_attachment_image_alt', true ); ?>">
 
                     </picture>
                 <figcaption>
