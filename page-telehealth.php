@@ -96,7 +96,7 @@
                 </div>
             </div>
             <div class="mobil">
-            <img alt="telehealth app doctors from NowRx" src="<?php echo get_template_directory_uri(); ?>/images/telehealthbanner1.webp" width="600px" height="200px" class="sc-cnj">
+            <img alt="telehealth app doctors from NowRx" src="<?php echo get_template_directory_uri(); ?>/images/telehealthbanner1.webp" width="600px" height="200px" class="sc-cnj" >
             </div>
             <div class="colhalf form">
                 <div class="coform">
@@ -159,7 +159,7 @@ formId: "33aa45eb-499d-4a4b-b55f-f5a7c7bd5359",
         </div>
     </div>
 
-    <img alt="telehealth app doctors from NowRx" src="<?php echo get_template_directory_uri(); ?>/images/telehealth-app-doctors-from-nowrxv3.webp"  width="1300px" height="470px" class=" sc-cnj">
+    <img alt="telehealth app doctors from NowRx" src="<?php echo get_template_directory_uri(); ?>/images/telehealth-app-doctors-from-nowrxv3.webp"  width="1300px" height="470px" class=" sc-cnj" style="display:block;margin:0 auto;">
 
 
 </section>
@@ -267,7 +267,7 @@ formId: "33aa45eb-499d-4a4b-b55f-f5a7c7bd5359",
                              </div>
                             <div class="kl">
                             <h3 class="sec-title">
-                            Migraines (Coming Soon)
+                            Migraines
                             </h3>
                             <p>
                             Migraine treatment without any headache. Get same day relief for any migraine!

@@ -28,7 +28,7 @@
                     </span>
                     Get Started
                 </h1>
-                <p>Thank you for choosing NowRx. To set up a prescription delivery we just need a little bit of contact information. Please ensure that all information you submit is correct and up to date in order to avoid delays.</p>
+                <p>To set up a prescription delivery with NowRx Pharmacy we need a little bit of contact information. Please ensure that all information you submit is correct and up to date in order to avoid delays.</p>
             </header>
             <?php include('components/refill-slider.php'); ?>
         </div>
