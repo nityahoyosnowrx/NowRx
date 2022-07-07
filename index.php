@@ -84,7 +84,7 @@ $currentPage = $post->ID;
                                             <div class="except">
                                                 <?php
                                                 $contentTrimmed =  wp_trim_words(get_the_content(), 50);
-                                                echo mb_strimwidth($contentTrimmed, 0, 175, '..');
+                                                echo mb_strimwidth($contentTrimmed, 0, 230, '..');
 
                                                 ?>
                                             </div>

@@ -159,9 +159,7 @@ if (have_posts()) : while (have_posts()) : the_post(); ?>
                     </span>
 
 
-                    <div id="cmt-template">
-                    <?php comments_template(); ?>
-                    </div>
+
 
                     <?php
                     // GET TAGS BY POST_ID

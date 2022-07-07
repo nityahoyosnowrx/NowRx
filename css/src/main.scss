@@ -7609,7 +7609,7 @@ section.blogmain {
 	.blog-container.brbot.pagedinner {
 		article.blog-item {
 			@media screen and (max-width: 700px) {
-				width: calc(100% - 0);
+				width: calc(100% - 0px);
 				margin: 10px 00px;
 			}
 
@@ -7734,9 +7734,14 @@ section.blogmain {
 				font-size: 1.8rem;
 				margin-bottom: 10px;
 				line-height: 1.15;
+				// line-height: 2rem;
 				color: #303030;
 				font-weight: 800;
 				letter-spacing: 0;
+
+				// height: 4rem;
+    			// overflow: hidden;
+
 				@media screen and (max-width: 700px) {
 					font-size: 1.4rem;
 				}
@@ -7747,6 +7752,22 @@ section.blogmain {
 				margin-top: 0;
 				margin-bottom: 1rem;
 				color: #515151;
+
+				// line-height: 1.4em;
+    			// height: 2.8em;
+    			// overflow: hidden;
+				@media screen and (max-width: 700px) {
+					display: -webkit-box;
+					-webkit-box-orient: vertical;
+					-webkit-line-clamp: 4;
+					overflow: hidden;
+				}
+				@media screen and (max-width: 400px) {
+					display: -webkit-box;
+					-webkit-box-orient: vertical;
+					-webkit-line-clamp: 4;
+					overflow: hidden;
+				}
 			}
 			.databot {
 				text-transform: uppercase;

@@ -1386,7 +1386,6 @@ section.fold-block {
 			li.hs-form-checkbox {
 				margin: 10px 0;
 				@media screen and (max-width: 700px) {
-					margin: 0;
 				}
 			}
 			fieldset.form-columns-1 .hs-input {
@@ -1394,6 +1393,9 @@ section.fold-block {
 			}
 			label.hs-form-checkbox-display {
 				margin: 0;
+    display: flex;
+    align-items: center;
+    height: 20px;
 				@media screen and (max-width: 700px) {
 					padding: 10px 0;
 				}
@@ -1459,16 +1461,27 @@ section.fold-block {
 					margin-left: 10px;
 				}
 			}
-
+			.hs-input {
+				width: 100%;
+				border-radius: 5px;
+				border: 1px solid #d2d3e5;
+				color: #192d3e;
+				font-size: .9rem;
+				padding: 15px;
+				height: auto;
+				line-height: 1.4;
+			}
 			.hs_switch_to_nowrx_pharmacy input[type='checkbox'] {
 				padding: 5px;
-				height: 10px;
-				width: 10px;
-				margin: 0;
-				margin-right: 5px;
-				background: transparent;
-				border-radius: 50%;
-				border: 1px solid #038ed8;
+    height: 20px;
+    width: 20px;
+    margin: 0 10px 0px 0;
+    background: transparent;
+    border-radius: 50%;
+    border: 1px solid #038ed8;
+	&:hover{
+		background-color: #eee;
+	}
 			}
 			.hs_switch_to_nowrx_pharmacy input[type='checkbox']:checked {
 				background-color: #0088ce;

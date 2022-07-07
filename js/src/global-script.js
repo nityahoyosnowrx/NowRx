@@ -730,18 +730,19 @@ window.addEventListener('DOMContentLoaded', event => {
 });
 
 
-window.addEventListener('DOMContentLoaded', event => {
-  var rsliderLoad = document.getElementsByClassName('locatios-mainblock');
-  if (rsliderLoad.length > 0) {
-    window.addEventListener("load", function(){
-      var element = document.getElementById("dropdown-locations");
+// window.addEventListener('DOMContentLoaded', event => {
+//   var rsliderLoad = document.getElementsByClassName('locatios-mainblock');
+//   if (rsliderLoad.length > 0) {
+//     window.addEventListener("load", function(){
+//       var element = document.getElementById("dropdown-locations");
+//       document.getElementById("locationsBtn").onclick = function(){
+//         console.log('d')
+//         element.classList.toggle("activeLi");
 
+//       };
+//     });
+//   }
+// });
 
-      document.getElementById("locationsBtn").onclick = function(){
-        console.log('d')
-        element.classList.toggle("activeLi");
-
-      };
-    });
-  }
-});
+import locationdropdown from './components/locationdropdown.js';
+ new locationdropdown()
