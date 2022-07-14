@@ -1,4 +1,5 @@
-<?php get_header();
+<?php
+get_header();
 
 global $post;
 $currentPage = $post->ID;
@@ -76,7 +77,8 @@ $currentPage = $post->ID;
                                             <h2>
                                                 <a href="<?php the_permalink(); ?>" class="readlink">
                                                 <?php
-                                                            echo wp_trim_words(get_the_title(), 12);
+                                                            // echo wp_trim_words(get_the_title(), 12);
+                                                            echo get_the_title();
                                                         ?>
                                                 </a>
                                             </h2>
@@ -84,7 +86,8 @@ $currentPage = $post->ID;
                                             <div class="except">
                                                 <?php
                                                 $contentTrimmed =  wp_trim_words(get_the_content(), 50);
-                                                echo mb_strimwidth($contentTrimmed, 0, 230, '..');
+                                                // echo mb_strimwidth($contentTrimmed, 0, 230, '..');
+                                                echo $contentTrimmed;
 
                                                 ?>
                                             </div>
@@ -133,7 +136,6 @@ $currentPage = $post->ID;
                         ));
                         //set our query's pagination to $paged
                         // $queryskde->query('post_type=post&posts_per_page=3&tag=trending');
-
                         if ($queryskde->have_posts()) :
                             while ($queryskde->have_posts()) : $queryskde->the_post();
 
@@ -148,6 +150,7 @@ $currentPage = $post->ID;
                                                     <h2>
                                                         <?php
                                                         echo  wp_trim_words(get_the_title(), 8);
+
                                                         ?>
                                                     </h2>
                                                 </a>
@@ -236,10 +239,22 @@ $currentPage = $post->ID;
                         if($countbot == 3){
                             ?>
                             <div class="ctablock">
-                                <a id="cta" class="cta_button wt-blog__cta--pink-red" href="https://nowrx.com/invest/" target="_blank" >
-                                    <h3 >Own Shares of NowRx Through SeedInvest</h3>
-                                    <span class="button secondary rounded shadow rx-btn">Learn More</span>
+                            <div class="blockitem" id="cta-block">
+                        <header class="title">
+                            <h2 class="title">Subscribe To <br> Our Newsletter</h2>
+                            <p>
+                            Get blogs, tips, and discounts related to pharmacy delivered right to your inbox each month.
+                            </p>
+                            <div class="btnc">
+                                <a href="<?php echo get_site_url(); ?>/blog/subscribe/" class="button secondary rounded shadow rx-btn">
+                                Learn More
                                 </a>
+                            </div>
+                        </header>
+
+
+                    </div>
+
                             </div>
                             <?php
 
@@ -289,14 +304,17 @@ $currentPage = $post->ID;
                                         <h2>
                                             <a href="<?php the_permalink(); ?>" class="readlink">
                                                 <?php
-                                                    if($countbot == 3 || $countbot == 4 || $countbot == 5){
+                                                    if($countbot == 4 || $countbot == 5){
 
                                                         echo  wp_trim_words(get_the_title(), 12);
                                                         // small items
+                                                    }else if($countbot == 3){
+                                                        echo  get_the_title();
 
                                                     } else{
                                                         echo  wp_trim_words(get_the_title(), 13);
                                                     }
+
                                                 ?>
                                             </a>
                                         </h2>

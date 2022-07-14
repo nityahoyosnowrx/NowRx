@@ -1783,7 +1783,7 @@ section.hero-home {
 		object-position: center;
 		display: block;
 		min-height: 20vh;
-		border-radius: 15px;
+		border-radius:0 10px;
 
 		position: relative;
 		top: 0;
@@ -5043,7 +5043,7 @@ section.resource-sections {
 				}
 
 				.contentblock img {
-					border-radius: 10px;
+					border-radius:0 10px;
 				}
 
 				.contentblock {
@@ -7863,7 +7863,24 @@ section.blogmain {
 				border: 1px solid #62a6d7;
 			}
 		}
-
+		#cta-block{
+			min-height: 590px;
+			margin: 0;
+			@media screen and (max-width: 700px) {
+				min-height: 290px;
+			}
+			header.title {
+				max-width: 100%;
+			}
+			h2.title {
+				font-size: 1.8rem;
+				line-height: 1;
+				letter-spacing: -.1rem;
+				@media screen and (max-width: 700px) {
+					font-size: 2rem;
+				}
+			}
+		}
 		a#cta {
 			background: #038ed8;
 			text-align: center;
@@ -9854,7 +9871,7 @@ section.hero-referral-form {
 		object-position: center;
 		display: block;
 		min-height: 20vh;
-		border-radius: 15px;
+		border-radius:0 10px;
 
 		position: relative;
 		top: 0;
