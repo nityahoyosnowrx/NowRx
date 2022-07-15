@@ -30,9 +30,9 @@ jobs:
 
           
           # will put all file under this path
-          local_path: /Applications/MAMP/htdocs/dev/wp-content/themes/NowRx
+          local_path: ./Applications/MAMP/htdocs/dev/wp-content/themes/NowRx
           # files will copy to under remote_path
-          remote_path: /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/nowrx
+          remote_path: ./opt/bitnami/apps/wordpress/htdocs/wp-content/themes/nowrx
           
           # sftp args
           args: '-o ConnectTimeout=5'
