@@ -192,12 +192,13 @@ $currentPage = $post->ID;
                                 </a>
                             </div>
                         </header>
-
-
                     </div>
                 </div>
         </div>
         <?php } ?>
+
+
+
 
         <div class="blog-container brbot  <?php if(is_paged()){echo'pagedinner';} ?>">
              <!-- main items -->
@@ -234,6 +235,13 @@ $currentPage = $post->ID;
                 if ($querybot->have_posts()) :
                     while ($querybot->have_posts()) : $querybot->the_post();
 
+                    if($countbot == 3):
+                    ?>
+                    <?php if(!is_paged()): ?>
+                   <span></span>
+                    <?php endif; ?>
+                    <?php endif; ?>
+                    <?php
 
                     if(!is_paged()){
                         if($countbot == 3){
@@ -304,7 +312,7 @@ $currentPage = $post->ID;
                                         <h2>
                                             <a href="<?php the_permalink(); ?>" class="readlink">
                                                 <?php
-                                                    if($countbot == 4 || $countbot == 5){
+                                                    if($countbot == 5 || $countbot == 6){
 
                                                         echo  wp_trim_words(get_the_title(), 12);
                                                         // small items

@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<section class="blog" id="blog" style="padding-top: 4rem;">
+<section class="blog" id="blog">
   <div class="grid-container container-featured-posts">
     <div class="grid-x grid-padding-x headline-container">
     <?php
@@ -14,23 +14,40 @@
       $subText = 'To subscribe to the NowRx blog, <a href="https://nowrx.com/blog/">click here.</a>';
     }
     ?>
+          <div class="blockitem interior">
+                        <header class="title">
+                            <h2 class="title">Subscribe To Our Newsletter</h2>
+                            <p>
+                            Get blogs, tips, and discounts related to pharmacy delivered right to your inbox each month.
+                            </p>
+                            <div class="btnc">
+                                <a href="<?php echo get_site_url(); ?>/blog/subscribe/" class="button secondary rounded shadow rx-btn">
+                                Learn More
+                                </a>
+                            </div>
+                        </header>
+                    </div>
       <div class="large-8 large-offset-2 cell text-center">
-        <h1 class="headline"><?php echo $titleText ?></h1>
-        <p><?php echo $subText; ?></p>
+        <h1 class="headline"><?php echo get_the_archive_title(); ?></h1>
       </div>
 
 
+
     </div>
-    <div class="grid-x grid-margin-x data-equalizer data-equalize-on='medium' id='test-eq'">
+
+    <div class="grid-x grid-margin-x" data-equalizer data-equalize-on="medium">
 
       <?php
       if ( have_posts() ) : while ( have_posts() ) : the_post();
       $cat_id = get_query_var('cat');
       $category = get_category( $cat_id );
       // var_dump($category->slug);
-      if (!has_category($category->slug)){
-        continue;
+      if(!empty($category->slug)){
+        if (!has_category($category->slug)){
+          continue;
+        }
       }
+
       ?>
 
       <div class="large-4 cell featured-post--card">

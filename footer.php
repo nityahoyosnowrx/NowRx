@@ -64,7 +64,7 @@ if (is_single() && 'post' == get_post_type()) {
           <ul class="menu-items">
             <li><a href="<?= get_site_url(); ?>/about-us/">About Us</a></li>
             <li> <a href="<?= get_site_url(); ?>/privacy-policy/">Privacy Policy</a></li>
-            <li><a href="<?= get_site_url(); ?>/hipaa-privacy/">HIPAA Privacy</a></li>
+            <li><a href="https://nowrx.hrmdirect.com/employment/index.php" target="_blank">Careers</a></li>
             <li><a href="<?= get_site_url(); ?>/telehealth/terms-and-conditions/">Telehealth T&C</a></li>
           </ul>
         </div>
