@@ -238,7 +238,27 @@ $currentPage = $post->ID;
                     if($countbot == 3):
                     ?>
                     <?php if(!is_paged()): ?>
-                   <span></span>
+                    <div class="tags__block">
+                                    <header class="tag__header">
+                                        <h2 class="title">Explore More Topics</h2>
+                                        <p>Ready to brush up on something new? We've got more to read right this way.</p>
+                                    </header>
+                                    <div class="tags__container">
+                                    <?php
+                        $tagField = get_field('tags', 'option');
+                        // var_dump($tagField);
+                        foreach ($tagField as $key => $value) {
+                            ?>
+                                <span class="tags__tag">
+                                    <a href="<?php echo get_site_url(); ?>/tag/<?php echo $value->slug; ?>" class="tag__link">
+                                        <?php echo $value->name; ?>
+                                    </a>
+                                </span>
+                            <?php
+                        }
+                    ?>
+                                    </div>
+                    </div>
                     <?php endif; ?>
                     <?php endif; ?>
                     <?php

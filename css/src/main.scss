@@ -2527,7 +2527,7 @@ h3 {
 		h5,
 		h6 {
 			line-height: 1.15;
-			letter-spacing: -0.1rem;
+			letter-spacing: 0px;
 			font-weight: 800;
 			margin-bottom: 1rem;
 		}
@@ -8081,12 +8081,10 @@ section.blogmain {
 			box-shadow: 0px 0px 10px 8px #f7f7f7, -5px -5px 10px #ffffff;
 			border-radius: 10px;
 			&:hover {
-				// box-shadow: 0 10px 50px -5px Rgb(51 71 91 / 12%);
-				transform: none;
-				img.border-image{
-					-webkit-transform: scale(1.014);
-					transform: scale(1.014);
-				}
+				box-shadow: 0 10px 50px -5px Rgb(51 71 91 / 12%);
+				-webkit-transform: scale(1.014);
+				transform: scale(1.014);
+
 			}
 
 			h2 {
