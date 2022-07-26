@@ -85,8 +85,8 @@
             </section>
             <div class="disclaimer thank-page">
                 <p>
-                *Please note that due to federal law we cannot offer a $20 gift federally or state subsidized insurance including but not limited to Medicare or Medicaid. We apologize for the inconvenience and please feel free to contact us at <a href="mailto:info@nowrx.com">info@nowrx.com</a> if you have any questions.
-                </p>
+                *Please note that due to federal law we cannot offer a $20 gift card for federally or state subsidized insurance including but not limited to Medicare or Medicaid. We apologize for the inconvenience and please feel free to contact us at <a href="mailto:info@nowrx.com">info@nowrx.com</a> if you have any questions.
+                 </p>
             </div>
             <span class="follow-links bottom">
                                 <div class="txt">

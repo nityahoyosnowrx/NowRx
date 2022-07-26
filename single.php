@@ -200,8 +200,19 @@ if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 
 
-  <!-- blog post popup -->
-    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js" defer></script>
+<!-- blog post popup -->
+<!-- <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js" defer></script> -->
+
+<!--
+<script>
+setTimeout(function(){
+    var resource = document.createElement('script');
+  resource.async = "true";
+  resource.src = "//js.hsforms.net/forms/v2.js";
+  var script = document.getElementsByTagName('script')[0];
+  script.parentNode.insertBefore(resource, script);
+},3000);
+</script>
 <div class="pre-modal-window">
   <div class="pre-modal">
     <button class="pre-modal-btn-close bg-transparent" data-var="closeBtn">
@@ -266,7 +277,7 @@ if (have_posts()) : while (have_posts()) : the_post(); ?>
     </div>
   </div>
 </div>
-</div>
+</div> -->
 
 
 <?php get_footer(); ?>

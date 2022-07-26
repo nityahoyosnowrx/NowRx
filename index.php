@@ -184,7 +184,7 @@ $currentPage = $post->ID;
                         <header class="title">
                             <h2 class="title">Subscribe To Our Newsletter</h2>
                             <p>
-                            Get blogs, tips, and discounts related to pharmacy delivered right to your inbox each month.
+                            Get blogs, tips, and discounts related to pharmacy delivered right to your inbox each week.
                             </p>
                             <div class="btnc">
                                 <a href="<?php echo get_site_url(); ?>/blog/subscribe/" class="button secondary rounded shadow rx-btn">
@@ -271,7 +271,7 @@ $currentPage = $post->ID;
                         <header class="title">
                             <h2 class="title">Subscribe To <br> Our Newsletter</h2>
                             <p>
-                            Get blogs, tips, and discounts related to pharmacy delivered right to your inbox each month.
+                            Get blogs, tips, and discounts related to pharmacy delivered right to your inbox each week.
                             </p>
                             <div class="btnc">
                                 <a href="<?php echo get_site_url(); ?>/blog/subscribe/" class="button secondary rounded shadow rx-btn">
@@ -294,7 +294,7 @@ $currentPage = $post->ID;
                             <header class="title">
                                 <h2 class="title">Subscribe To Our Newsletter</h2>
                                 <p>
-                                Get blogs, tips, and discounts related to pharmacy delivered right to your inbox each month.
+                                Get blogs, tips, and discounts related to pharmacy delivered right to your inbox each week.
                                 </p>
                                 <div class="btnc">
                                 <a href="<?php echo get_site_url(); ?>/blog/subscribe/" class="button secondary rounded shadow rx-btn">
