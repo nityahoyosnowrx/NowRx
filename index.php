@@ -85,9 +85,10 @@ $currentPage = $post->ID;
                                         <?php if($count == 0):?>
                                             <div class="except">
                                                 <?php
-                                                $contentTrimmed =  wp_trim_words(get_the_content(), 50);
+                                                // $contentTrimmed =  wp_trim_words(get_the_content(), 150);
                                                 // echo mb_strimwidth($contentTrimmed, 0, 230, '..');
-                                                echo $contentTrimmed;
+                                                // echo $contentTrimmed;
+                                                echo substr(get_post_meta($post->ID, '_yoast_wpseo_metadesc', true), 0, 999);
 
                                                 ?>
                                             </div>
@@ -334,13 +335,13 @@ $currentPage = $post->ID;
                                                 <?php
                                                     if($countbot == 5 || $countbot == 6){
 
-                                                        echo  wp_trim_words(get_the_title(), 12);
+                                                        echo  wp_trim_words(get_the_title(), 112);
                                                         // small items
                                                     }else if($countbot == 3){
                                                         echo  get_the_title();
 
                                                     } else{
-                                                        echo  wp_trim_words(get_the_title(), 13);
+                                                        echo  wp_trim_words(get_the_title(), 131);
                                                     }
 
                                                 ?>
