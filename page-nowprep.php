@@ -1158,17 +1158,7 @@
                     </div>
                 </div>
 
-                <div class="faq-block">
-                    <div class="clickmodal" data-opentab="0">
-                        <h2 class="sec-title">
-                            <span class="tiltelink" data-toggle="submitaquestion" aria-controls="submitaquestion" aria-haspopup="true" tabindex="0">Submit a Question</span>
-                            <span class="chevron-arrow tiltelink" data-toggle="submitaquestion" aria-controls="submitaquestion" aria-haspopup="true" tabindex="0">
-                                <img src="data:image/svg+xml;base64,IDxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDI1NiAyNTY7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8Zz4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHBvbHlnb24gcG9pbnRzPSI3OS4wOTMsMCA0OC45MDcsMzAuMTg3IDE0Ni43MiwxMjggNDguOTA3LDIyNS44MTMgNzkuMDkzLDI1NiAyMDcuMDkzLDEyOCAgICIgLz4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvc3ZnPg==" alt="arrow">
 
-                            </span>
-                        </h2>
-                    </div>
-                </div>
 
                 <div class="faq-block">
                     <div class="disclaim">

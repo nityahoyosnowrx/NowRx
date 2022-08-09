@@ -1812,7 +1812,7 @@ section.hero-home {
 			min-height: 51vh;
 
 			@media screen and (max-width: 700px) {
-				min-height: 36vh;
+				min-height: 0;
 				max-width: 100vw;
 				margin: 0 auto;
 				max-height: 36vh;
@@ -9062,23 +9062,23 @@ section.locations-flex {
 			width: calc(100% - 20px);
 		}
 		&:hover {
-			background: #254e86;
-			color: #fff;
-			border-radius: 5px;
+			// background: #254e86;
+			// color: #fff;
+			// border-radius: 5px;
 		}
 
 		&:hover h2.sec-title {
-			color: #fff;
+			// color: #fff;
 		}
 
 		&:hover a.rx-btn-loca {
-			color: #234e8b;
-			background: #fff;
-			border-radius: 10px;
+			// color: #234e8b;
+			// background: #fff;
+			// border-radius: 10px;
 		}
 
 		&:hover p {
-			color: #fff;
+			// color: #fff;
 		}
 	}
 
@@ -9086,11 +9086,23 @@ section.locations-flex {
 		display: none;
 	}
 
-	.locatios-mainblock .location-item figure.image {
-		margin: 0 0 20px;
-		border-radius: 5px;
-		overflow: hidden;
-		display: flex;
+	.locatios-mainblock .location-item {
+		figure.image {
+			margin: 0 0 20px;
+			border-radius: 5px;
+			overflow: hidden;
+			display: flex;
+			img{
+				transition: all .6s;
+			}
+		}
+		&:hover{
+			figure.image {
+				img{
+					transform: scale(1.1);
+				}
+			}
+		}
 	}
 
 	.locatios-mainblock .location-item h2.sec-title {

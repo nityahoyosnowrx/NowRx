@@ -121,8 +121,9 @@ $currentPage = $post->ID;
             </div>
 
             <?php if(!is_paged()){ ?>
+
            <!-- sideitems -->
-                <div class="sideblocks">
+            <div class="sideblocks">
                     <div class="top">
                     <h3 class="title"> Trending Now</h3>
                         <?php
@@ -194,8 +195,9 @@ $currentPage = $post->ID;
                             </div>
                         </header>
                     </div>
+
                 </div>
-        </div>
+            </div>
         <?php } ?>
 
 
