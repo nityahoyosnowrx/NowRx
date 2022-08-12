@@ -1,22 +1,5 @@
 <?php // drop Google Analytics Here ?>
 
-<?php if ( is_page(925 ) ||is_page(1410)): ?>
-<?php else: ?>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117353738-1"> </script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-
-    gtag('config', 'UA-117353738-1');
-    gtag('config', 'AW-875503484');
-  </script>
-<?php endif; ?>
-
 <script async type="application/ld+json" defer>
 {
   "@context": "http://schema.org",
@@ -28,6 +11,7 @@
 
 }
 </script>
+
 
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'large'); ?>
@@ -66,3 +50,24 @@ $yoast_desc = get_post_meta( $id, '_yoast_wpseo_metadesc', true );
 </script>
 
 <?php endwhile; endif; ?>
+
+
+<?php
+// load everywhere except thank you page
+if ( is_page(925 ) ||is_page(1410)): ?>
+<?php else: ?>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117353738-1"> </script>
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-117353738-1');
+    gtag('config', 'AW-875503484');
+  </script>
+<?php endif; ?>

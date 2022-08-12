@@ -79,6 +79,21 @@
 
 <?php include('components/component-how-it-works.php'); ?>
 
+<div class="block-subscribe">
+<div class="subscribe-blockitem">
+                        <header class="title">
+                            <h2 class="title">Subscribe to Healthcare in 5</h2>
+                            <p>
+                            Get blogs, tips, and discounts related to pharmacy delivered right to your inbox each week.
+                            </p>
+                            <div class="btnc">
+                                <a href="<?php echo get_site_url(); ?>/blog/subscribe/" class="button secondary rounded shadow rx-btn">
+                                Learn More
+                                </a>
+                            </div>
+                        </header>
+                    </div>
+</div>
 
 <section class="firt-step-block">
     <div class="container">
@@ -176,7 +191,25 @@
     </div>
 </section>
 
+
 <?php include('components/frontpage-reviews.php'); ?>
+
+<div class="block-subscribe">
+<div class="subscribe-blockitem">
+                        <header class="title">
+                            <h2 class="title">Subscribe to Healthcare in 5</h2>
+                            <p>
+                            Get blogs, tips, and discounts related to pharmacy delivered right to your inbox each week.
+                            </p>
+                            <div class="btnc">
+                                <a href="<?php echo get_site_url(); ?>/blog/subscribe/" class="button secondary rounded shadow rx-btn">
+                                Learn More
+                                </a>
+                            </div>
+                        </header>
+                    </div>
+</div>
+
 
 <?php include('components/section-faq-flip.php'); ?>
 

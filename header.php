@@ -23,7 +23,7 @@
     <link rel="icon" type="image/x-icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
 
     <link rel="dns-prefetch" href="https://www.googletagmanager.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <?php // or, set /favicon.ico for IE10 win ?>
@@ -43,7 +43,8 @@
     <meta name="facebook-domain-verification" content="51y4k3ncdot6d21810cxa2yfje7xzg" />
 
     <?php
-    // Google Analytics
+    // thank you pages
+    // prescription transfer thank you || You Have Successfully Signed Up For NowPrEP Telehealth
     if ( is_page(925 ) ||is_page(1410) ): ?>
 
         <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -76,22 +77,11 @@
                 gtag('event', 'conversion', {'send_to': 'AW-875503484/Bj1NCMmPzboBEPy-vKED'});
             </script>
         <?php endif; ?>
+
     <?php endif; ?>
 
-    <?php get_template_part('/components/critical-css'); ?>
-
     <?php
-    if(is_singular('post')):
-        if (have_posts()) : while (have_posts()) : the_post();
-            $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'large');
-            // var_dump($image);
-            ?>
-            <link rel="preload" as="image" href="<?php echo $image[0]; ?>">
-    <?php
-            endwhile;
-        endif;
-    endif;
-    ?>
+    get_template_part('/components/critical-css'); ?>
 
 </head>
 
