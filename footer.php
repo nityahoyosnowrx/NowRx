@@ -97,7 +97,7 @@ if (is_single() && 'post' == get_post_type()) {
 
 
   <?php // Main CSS loaded after critical css ?>
-  <link rel="preload" href="<?php echo get_template_directory_uri(); ?>/public/frontend.css" as="style" onload="setTimeout(() => {this.onload=null;this.rel='stylesheet'}, 4000);">
+  <link rel="preload" href="<?php echo get_template_directory_uri(); ?>/public/frontend.css" as="style" onload="setTimeout(() => {this.onload=null;this.rel='stylesheet'}, 0);">
   <noscript><link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/public/frontend.css" rel="stylesheet" type="text/css"></noscript>
 
   <?php // Main Font ?>

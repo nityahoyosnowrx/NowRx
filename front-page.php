@@ -196,18 +196,18 @@
 
 <div class="block-subscribe">
 <div class="subscribe-blockitem">
-                        <header class="title">
-                            <h2 class="title">Subscribe to Healthcare in 5</h2>
-                            <p>
-                            Get blogs, tips, and discounts related to pharmacy delivered right to your inbox each week.
-                            </p>
-                            <div class="btnc">
-                                <a href="<?php echo get_site_url(); ?>/blog/subscribe/" class="button secondary rounded shadow rx-btn">
-                                Learn More
-                                </a>
-                            </div>
-                        </header>
-                    </div>
+    <header class="title">
+        <h2 class="title">Subscribe to Healthcare in 5</h2>
+        <p>
+        Get blogs, tips, and discounts related to pharmacy delivered right to your inbox each week.
+        </p>
+        <div class="btnc">
+            <a href="<?php echo get_site_url(); ?>/blog/subscribe/" class="button secondary rounded shadow rx-btn">
+            Learn More
+            </a>
+        </div>
+    </header>
+</div>
 </div>
 
 
