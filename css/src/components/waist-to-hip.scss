@@ -1,4 +1,5 @@
-section#content {
+.wh-container {
+
 	.calculator h1 {
 		position: relative;
 		line-height: 1.2;
@@ -29,6 +30,38 @@ section#content {
 
 	.calculator {
 		width: 50%;
+		@media screen and (max-width: 700px) {
+			width: 100%;
+		}
+
+		.input_calc {
+			margin: 40px 0 0;
+
+			button.calculate-btn {
+				box-sizing: border-box;
+				padding: 13px 16px;
+				border: 1px solid #038ed8;
+				background: #038ed8;
+				color: #fff;
+				cursor: pointer;
+				font-size: 15px;
+				font-weight: 700;
+				margin: 0;
+				border-radius: 30px;
+				box-shadow: none;
+				text-transform: uppercase;
+				display: inline-flex;
+				max-width: 100%;
+				min-width: 0;
+				width: 240px;
+				text-align: center;
+				align-items: center;
+				justify-content: center;
+				&:hover {
+					background: #254e88;
+				}
+			}
+		}
 	}
 
 	.content {
@@ -97,12 +130,21 @@ section#content {
 	}
 }
 
-html section#content .content {
-	justify-content: flex-start;
-	padding-left: 120px;
+.wh-container {
+	margin-bottom: 60px !important;
+	@media screen and (max-width: 700px) {
+		flex-direction: column;
+	}
+	.content {
+		justify-content: flex-start;
+		padding-left: 120px;
+
+
+	}
 }
-section#content h2 {
+.wh-container h2 {
 	font-size: 1.5rem;
+	padding: 0 0 10px;
 }
 
 span.input_field {
@@ -118,8 +160,8 @@ span.input_field {
 span.input_field .input {
 	margin-left: auto;
 	display: flex;
-    align-items: center;
-    justify-content: flex-start;
+	align-items: center;
+	justify-content: flex-start;
 }
 
 span.input_field input.field {
@@ -183,46 +225,84 @@ span.input_field .unit {
 	}
 }
 
-
-
 .sub-content {
-    margin: 40px 20px 0;
+	margin: 40px 20px 0;
 }
 header.title {
-    h2.title {
-        text-align: center;
-        margin: 0 0 40px;
-        text-transform: capitalize;
-        position: relative;
-    }
+	h2.title {
+		text-align: center;
+		margin: 0 0 40px;
+		text-transform: capitalize;
+		position: relative;
+	}
 
-    h2.title:after {
-        content: close-quote;
-        position: absolute;
-        top: 110%;
-        left: 0;
-        right: 0;
-        height: 4px;
-        width: 30%;
-        background: #008ed8;
-        margin: 0 auto;
-    }
+	h2.title:after {
+		content: close-quote;
+		position: absolute;
+		top: 110%;
+		left: 0;
+		right: 0;
+		height: 4px;
+		width: 30%;
+		background: #008ed8;
+		margin: 0 auto;
+	}
 }
 h3.title {
-    font-size: 1.3rem;
+	font-size: 1.3rem;
 }
 
-
-
 .side-content {
-    width: 60%;
-    padding-left: 60px;
+	width: 60%;
+	padding-left: 60px;
+	@media screen and (max-width: 700px) {
+		width: 100%;
+		padding: 60px 0 0;
+	}
 }
 
 .side-content .block {
-    border-radius: 10px;
-    padding: 40px;
-    box-shadow: 0 2px 4px rgb(0 0 0 / 20%);
+	border-radius: 10px;
+	padding: 40px;
+	box-shadow: 0 2px 4px rgb(0 0 0 / 20%);
+	position: relative;
+	min-height: 400px;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+
+	span.title-image {
+		display: flex;
+		justify-content: center;
+		opacity: 0.3;
+		margin: 30px 0 0;
+	}
+	h3.title {
+		margin: 0;
+	}
+	.results-block {
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		display: flex;
+		background: #fff;
+		opacity: 0;
+		visibility: hidden;
+		justify-content: center;
+		flex-direction: column;
+		align-items: flex-start;
+		align-items: center;
+		padding: 40px;
+		&.active {
+			opacity: 1;
+			visibility: visible;
+		}
+		header.title {
+			width: 100%;
+		}
+	}
 }
 .input-container.results-container {
 	padding: 0;
@@ -238,24 +318,22 @@ h3.title {
 }
 
 table#whresults {
-	margin: 60px 0 0;
-	padding: 20px;
 	text-align: left;
 	border-collapse: collapse;
 }
 span.false-label {
-    margin-right: 20px;
-    font-weight: 700;
-    padding: 5px 1px 0;
-    font-size: 0.8rem;
+	margin-right: 20px;
+	font-weight: 700;
+	padding: 5px 1px 0;
+	font-size: 0.8rem;
 }
 th {
-    padding: 0 20px 10px;
+	padding: 0 20px 10px;
 }
 table#whresults tr td {
-    padding: 12px 20px;
-    line-height: 1;
-    border: 1px solid #b0b0b0;
+	padding: 12px 20px;
+	line-height: 1;
+	border: 1px solid #b0b0b0;
 }
 
 .tr-high.m-high .male {

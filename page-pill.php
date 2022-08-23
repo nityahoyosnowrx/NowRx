@@ -1,56 +1,65 @@
 <?php get_header(); ?>
 
-<section id="content" class="grid-container">
+<section  class="grid-container pill-calculator">
 
-<div class="container">
-    <div class="content">
-       <div class="date-picker">
-        <span class="title">Select Date first filled</span>
-       <div class="flatpickr-calendar"></div>
-       </div>
-       <div class="dayfill">
-       <div class="text-title">Days Supply Filled:</div>
-        <div class="time-selector">
+    <div class="container">
+        <div class="content">
+           <div class="main-block">
+           <div class="date-picker">
+                <span class="title">Select Date first filled</span>
+                <div class="flatpickr-calendar"></div>
+            </div>
+            <div class="dayfill">
+                <div class="text-title">Days Supply Filled:</div>
+                <div class="time-selector">
 
-            <span class="days">
+                    <span class="days">
 
-                <div class="number_input" data-currentvalue=""></div>
-            </span>
+                        <div class="number_input" data-currentvalue=""></div>
+                    </span>
 
-            <div class="nuber_selector" id="numPad">
-                <div>
-                    <span data-number="7" class="number_pad"><span class="number">7</span></span>
-                    <span data-number="8" class="number_pad"><span class="number">8</span></span>
-                    <span data-number="9" class="number_pad"><span class="number">9</span></span>
-                </div>
-                <div>
-                    <span data-number="4" class="number_pad"><span class="number">4</span></span>
-                    <span data-number="5" class="number_pad"><span class="number">5</span></span>
-                    <span data-number="6" class="number_pad"><span class="number">6</span></span>
-                </div>
-                <div>
-                    <span data-number="1" class="number_pad"><span class="number">1</span></span>
-                    <span data-number="2" class="number_pad"><span class="number">2</span></span>
-                    <span data-number="3" class="number_pad"><span class="number">3</span></span>
-                </div>
-                <div>
-                    <span class="dec number_pad" data-number="."><span class="number">.</span></span>
-                    <span class="zero number_pad" data-number="0"><span class="number">0</span></span>
-                    <span class="del"><span class="number">DEL</span></span>
+                    <div class="nuber_selector" id="numPad">
+                        <div>
+                            <span data-number="7" class="number_pad"><span class="number">7</span></span>
+                            <span data-number="8" class="number_pad"><span class="number">8</span></span>
+                            <span data-number="9" class="number_pad"><span class="number">9</span></span>
+                        </div>
+                        <div>
+                            <span data-number="4" class="number_pad"><span class="number">4</span></span>
+                            <span data-number="5" class="number_pad"><span class="number">5</span></span>
+                            <span data-number="6" class="number_pad"><span class="number">6</span></span>
+                        </div>
+                        <div>
+                            <span data-number="1" class="number_pad"><span class="number">1</span></span>
+                            <span data-number="2" class="number_pad"><span class="number">2</span></span>
+                            <span data-number="3" class="number_pad"><span class="number">3</span></span>
+                        </div>
+                        <div>
+                            <span class="dec number_pad" data-number="."><span class="number">.</span></span>
+                            <span class="zero number_pad" data-number="0"><span class="number">0</span></span>
+                            <span class="del"><span class="number">DEL</span></span>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-       </div>
+            <div class="calculate">
+                <div class="results">
+                    <div class="result"></div>
+                </div>
+                <button class="bnt-calc">Calculate</button>
 
-        <div class="calculate">
-        <div class="results">
-                <div class="result"></div>
             </div>
-            <button class="bnt-calc">Calculate</button>
+           </div>
+
+            <div class="info">
+            Prescription Refill Calculator: What is it and all you need to Know | If you’re like most people, you probably take prescriptions for medications on a regular basis. But what if you didn’t have to? What if there was a way to get your medications without having to go to the doctor? That’s what calculators can do for you. With calculators, you can refill your prescriptions in minutes without ever going to the doctor. Just enter the code that is sent to your calculator and you’re good to go! And don’t forget, calculators are also great for studying!
+
+
+            </div>
+
 
         </div>
     </div>
-</div>
 
 </section>
 
@@ -64,14 +73,14 @@
     $(".flatpickr-calendar").flatpickr({
         inline: true,
         dateFormat: "Y-m-d",
-        onChange:function(selectedDates, dateStr, instance){
+        onChange: function(selectedDates, dateStr, instance) {
             console.log(dateStr)
             dateSelected = dateStr;
         }
     });
 
 
-    $(".number_pad").on('click',function(e){
+    $(".number_pad").on('click', function(e) {
 
         let value = $('.number_input');
         // click value
@@ -81,40 +90,35 @@
 
         stringformat = "" + currentValue + inputValue;
 
-        value.data('currentvalue',stringformat)
+        value.data('currentvalue', stringformat)
         value.html(stringformat)
 
 
     });
 
-    $(".del").on('click',function(e){
+    $(".del").on('click', function(e) {
         let value = $('.number_input');
         let currentValue = value.html();
 
         currentValue = currentValue.slice(0, -1)
         value.html(currentValue)
-        console.log( currentValue)
+        console.log(currentValue)
     });
 
-    $(".bnt-calc").on('click',function(e){
+    $(".bnt-calc").on('click', function(e) {
         let num = $('.days .number_input').html();
         let value = parseInt(num);
-        dateMain =  new Date(dateSelected);
+        dateMain = new Date(dateSelected);
 
         let now = new Date(dateMain);
         now = new Date(now.toDateString());
 
-        console.log( dateMain)
+        console.log(dateMain)
 
         const inFiveDays = new Date(new Date(now).setDate(now.getDate() + value)).toDateString();
 
         $('.result').html("Refill date: " + inFiveDays.toLocaleString());
     });
-
-
-
-
-
 </script>
 
 
