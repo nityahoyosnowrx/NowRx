@@ -46,19 +46,36 @@ span.del {
 .pill-calculator {
 	.content {
 		display: flex;
+		align-items: flex-start;
 		gap: 0 60px;
-
-
-
 	}
-    .info {
-        max-width: 490px;
-    }
+	.info {
+		border-radius: 10px;
+		padding: 40px;
+		box-shadow: 0 2px 7px 0px rgb(0 0 0 / 20%);
+		position: relative;
+		align-items: center;
+		display: flex;
+		justify-content: flex-start;
+		flex-direction: column;
+		position: relative;
+		@media screen and (max-width: 700px) {
+			padding: 20px;
+		}
+	}
+	span.title-image {
+		margin: 40px 0 0;
+		opacity: 0.2;
+	}
 }
 
 .pill-calculator .content {
 	display: flex;
 	gap: 0 60px;
+	@media screen and (max-width: 700px) {
+		flex-direction: column;
+        align-items: center;
+	}
 }
 
 .pill-calculator .date-picker {
@@ -68,17 +85,18 @@ span.del {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	@media screen and (max-width: 700px) {
+		padding: 0 0 40px;
+        max-width: 350px;
+		width: 100%;
+	}
 }
 .dayfill {
 	width: 100%;
 
-
-    padding: 50px 0 0;
-    .time-selector {
-        box-shadow: 1px 0 0 #eee, -1px 0 0 #eee, 0 1px 0 #eee, 0 -1px 0 #eee, 0 3px 13px rgb(0 0 0 / 8%);
-        padding: 20px 20px;
-        background: #f6f6f6;
-    }
+	padding: 50px 0 0;
+	.time-selector {
+	}
 }
 .pill-calculator .calculate {
 	width: 100%;
@@ -92,27 +110,21 @@ span.del {
 .text-title {
 	text-align: center;
 	padding: 0 0 10px;
+	font-weight: 800;
 }
 span.days {
-	padding: 0px 20px;
 	display: flex;
 	margin: 0 0 10px;
-	.number_input {
-		font-size: 2rem;
-		font-weight: 700;
-		min-height: 50px;
-		border: 1px solid #eee;
-		border-radius: 5px;
-		box-shadow: 0 3px 6px -2px #d2d2d2 inset;
-		text-align: center;
+	.days-to-fill {
 		width: 100%;
-		background: #f8f8f8;
+		display: flex;
 	}
 }
 span.title {
 	text-align: center;
 	display: block;
 	padding: 0 0 10px;
+	font-weight: 800;
 }
 span.number {
 	font-size: 1rem;
@@ -126,26 +138,18 @@ button.bnt-calc {
 	font-size: 16px;
 	padding: 10px 25px;
 	width: auto;
-	display: -webkit-inline-box;
-	display: -webkit-inline-flex;
-	display: -ms-inline-flexbox;
 	display: inline-flex;
 	background: #038ed8;
 	-webkit-box-shadow: none;
 	box-shadow: none;
 	border-radius: 30px;
 	min-width: 200px;
-	-webkit-box-align: center;
-	-webkit-align-items: center;
-	-ms-flex-align: center;
 	align-items: center;
-	-webkit-box-pack: center;
-	-webkit-justify-content: center;
-	-ms-flex-pack: center;
 	justify-content: center;
 	font-weight: 700;
 	margin: 0;
 	border: none;
+	cursor: pointer;
 	&:hover {
 		background-color: $d-blue;
 	}
@@ -159,7 +163,32 @@ button.bnt-calc {
 	line-height: 1.2;
 	margin: 0 0 20px;
 }
-
 .results {
-	margin: 20px 0 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #284c8b;
+	font-size: 1.3rem;
+	text-align: center;
+	font-weight: 700;
+	line-height: 1.2;
+	margin: 0 0 20px;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.3s;
+	padding: 40px;
+	@media screen and (max-width: 700px) {
+		padding: 20px;
+		text-align: left;
+	}
+	&.active {
+		visibility: visible;
+		opacity: 1;
+	}
 }

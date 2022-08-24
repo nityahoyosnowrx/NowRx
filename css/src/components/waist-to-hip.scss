@@ -36,7 +36,10 @@
 
 		.input_calc {
 			margin: 40px 0 0;
-
+			@media screen and (max-width: 700px) {
+				display: flex;
+				justify-content: center;
+			}
 			button.calculate-btn {
 				box-sizing: border-box;
 				padding: 13px 16px;
@@ -188,6 +191,8 @@ span.input_field .unit {
 
 .label {
 	font-weight: 700;
+    padding-right: 20px;
+    line-height: 1.2;
 }
 
 .border-input {
@@ -234,6 +239,7 @@ header.title {
 		margin: 0 0 40px;
 		text-transform: capitalize;
 		position: relative;
+		font-size: 1.6rem;
 	}
 
 	h2.title:after {
@@ -260,7 +266,10 @@ h3.title {
 		padding: 60px 0 0;
 	}
 }
-
+input.input {
+    font-weight: 800;
+    font-size: 1.2rem;
+}
 .side-content .block {
 	border-radius: 10px;
 	padding: 40px;
@@ -270,6 +279,9 @@ h3.title {
 	display: flex;
     align-items: center;
     justify-content: center;
+	@media screen and (max-width: 700px) {
+		padding: 20px;
+	}
 
 	span.title-image {
 		display: flex;
@@ -295,6 +307,10 @@ h3.title {
 		align-items: flex-start;
 		align-items: center;
 		padding: 40px;
+		transition: all .6s;
+		@media screen and (max-width: 700px) {
+			padding: 20px;
+		}
 		&.active {
 			opacity: 1;
 			visibility: visible;
@@ -319,6 +335,7 @@ h3.title {
 
 table#whresults {
 	text-align: left;
+	margin: 20px 0 0;
 	border-collapse: collapse;
 }
 span.false-label {

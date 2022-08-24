@@ -31,12 +31,14 @@
         <span class="input_field">
             <div class="label">Enter waist circumference</div>
             <div class="input-container border-input">
-                <div class="input"><input type="number" class="field input-waist"></div>
+                <div class="input">
+                    <input type="number" value="" class="field input-waist">
+                </div>
                 <div class="unit">
-                    <select name="" id="">
-                        <option value="">CM</option>
-                        <option value="">IN</option>
-                        <option value="">MM</option>
+                    <select name="" id="unit-waist">
+                        <option value="cm" selected>CM</option>
+                        <option value="in">IN</option>
+                        <option value="mm">MM</option>
                     </select>
                 </div>
             </div>
@@ -44,12 +46,14 @@
         <span class="input_field">
             <div class="label">Enter hip circumference</div>
             <div class="input-container border-input">
-                <div class="input"><input type="number" class="field input-hip"></div>
+                <div class="input">
+                    <input type="number" value="" class="field input-hip">
+                </div>
                 <div class="unit">
-                    <select name="" id="">
-                        <option value="">CM</option>
-                        <option value="">IN</option>
-                        <option value="">MM</option>
+                    <select name="" id="unit-hip">
+                        <option value="cm" selected>CM</option>
+                        <option value="in">IN</option>
+                        <option value="mm">MM</option>
                     </select>
                 </div>
             </div>
@@ -76,44 +80,44 @@
                 </span>
             </div>
             <div class="results-block">
-            <header class="title">
+                <header class="title">
                     <h2 class="title">Results</h2>
                 </header>
                 <div class="input_result input_field">
                     <div class="label">Your waist-hip ratio</div>
                     <div class="input-container results-container">
-                        <input aria-label="Your waist-hip ratio" autocomplete="off" class="input" placeholder="" type="number" value="">
+                        <input aria-label="Your waist-hip ratio" autocomplete="off" readonly class="input" placeholder="" type="number" value="">
                     </div>
                 </div>
                 <table id="whresults">
-                <tbody>
-                    <tr>
-                        <th>Female</th>
-                        <th>Male</th>
-                        <th>Health Risk</th>
-                    </tr>
-                    <tr class="tr-low">
-                        <td class="female">0.80 or lower</td>
-                        <td class="male">0.95 or lower</td>
-                        <td class="whrGreen">Low health risk</td>
-                    </tr>
-                    <tr class="tr-moderate">
-                        <td class="female">0.81 to 0.84</td>
-                        <td class="male">0.96 to 1.0</td>
-                        <td class="whrOrange">Moderate risk</td>
-                    </tr>
-                    <tr class="tr-high">
-                        <td class="female">0.85 or higher</td>
-                        <td class="male">1.0 or higher</td>
-                        <td class="whrRed">High risk</td>
-                    </tr>
-                </tbody>
-            </table>
+                    <tbody>
+                        <tr>
+                            <th class="female">Female</th>
+                            <th class="male">Male</th>
+                            <th>Health Risk</th>
+                        </tr>
+                        <tr class="tr-low">
+                            <td class="female">0.80 or lower</td>
+                            <td class="male">0.95 or lower</td>
+                            <td class="whrGreen">Low health risk</td>
+                        </tr>
+                        <tr class="tr-moderate">
+                            <td class="female">0.81 to 0.84</td>
+                            <td class="male">0.96 to 1.0</td>
+                            <td class="whrOrange">Moderate risk</td>
+                        </tr>
+                        <tr class="tr-high">
+                            <td class="female">0.85 or higher</td>
+                            <td class="male">1.0 or higher</td>
+                            <td class="whrRed">High risk</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
 
 
- </div>
+    </div>
 
 </section>
 
@@ -219,6 +223,7 @@
         let inputWaist = $('.input-waist');
         let inputHip = $('.input-hip');
         let valW, valH;
+
         $(inputWaist).keyup(function() {
             let valW = $(this).val();
             valH = $('.input-hip').val();
@@ -226,6 +231,7 @@
                 // calculateWH(valW, valH)
             }
         });
+
         $(inputHip).keyup(function() {
             let valH = $(this).val();
             valW = $('.input-waist').val();
@@ -234,11 +240,156 @@
             }
         });
 
-        $(' button.calculate-btn').on('click',function(){
+        $(' button.calculate-btn').on('click', function() {
             let valH = $(inputHip).val();
             let valW = $(inputWaist).val();
             calculateWH(valW, valH)
             $('.results-block').addClass('active');
+        });
+
+        function convertCMToMM(value){
+            value = value * 10;
+            value = Math.round((value + Number.EPSILON) * 100) / 100;
+            return value;
+        }
+        function convertCMToIN(value){
+            value = value / 2.54;
+            value = Math.round((value + Number.EPSILON) * 100) / 100;
+            return value;
+        }
+
+        function convertINToMM(value){
+            value = value * 25.4;
+            value = Math.round((value + Number.EPSILON) * 100) / 100;
+            return value;
+        }
+        function convertINToCM(value){
+            value = value * 2.54;
+            value = Math.round((value + Number.EPSILON) * 100) / 100;
+            return value;
+        }
+
+        function convertMMToCM(value){
+            value = value / 10;
+            value = Math.round((value + Number.EPSILON) * 100) / 100;
+            return value;
+        }
+        function convertMMToIN(value){
+            value = value / 25.4;
+            value = Math.round((value + Number.EPSILON) * 100) / 100;
+            return value;
+        }
+
+        let currentUnit = "cm";
+        let inputValWaist = $('.input-waist').val();
+            let inputValHip = $('.input-hip').val();
+
+        $('.input-waist, .input-hip').on('change',function(){
+             inputValWaist = $('.input-waist').val();
+             inputValHip = $('.input-hip').val();
+        });
+
+        $('#unit-hip, #unit-waist').on('change',function(){
+            let val = $(this).val();
+
+            inputValWaist = $('.input-waist').val();
+             inputValHip = $('.input-hip').val();
+
+            let hField = $('.input-hip');
+            let wField = $('.input-waist');
+
+            let cmW =  inputValWaist;
+            let cmH = inputValHip;
+
+            let wCon = inputValWaist;
+            let hCOn = inputValHip;
+
+            // let currentUnit = $(this).val();
+
+            // selected value
+            if(val == 'in'){
+                $("#unit-hip, #unit-waist").val('in');
+                // if cm
+                if(currentUnit == "cm"){
+                     wCon =  convertCMToIN(inputValWaist);
+                     hCOn = convertCMToIN(inputValHip);
+                    console.log(inputValWaist,wCon)
+                    wField.val(wCon);
+                    hField.val(hCOn);
+
+                    currentUnit = "in";
+                }
+
+
+                // if mm
+                if(currentUnit == "mm"){
+                     wCon =  convertMMToIN(inputValWaist);
+                     hCOn = convertMMToIN(inputValHip);
+
+                    wField.val(wCon);
+                    hField.val(hCOn);
+
+                    currentUnit = "in";
+                }
+            }
+
+            // selected value
+            if(val == 'cm'){
+                $("#unit-hip, #unit-waist").val('cm');
+                // if MM
+                if(currentUnit == "in"){
+                     wCon =  convertINToCM(inputValWaist);
+                     hCOn = convertINToCM(inputValHip);
+
+                    wField.val(wCon);
+                    hField.val(hCOn);
+
+                    console.log(inputValWaist,wCon)
+
+                    currentUnit = "cm";
+                }
+
+
+                // if IN
+                if(currentUnit == "mm"){
+                     wCon =  convertMMToCM(inputValWaist);
+                     hCOn = convertMMToCM(inputValHip);
+
+                    wField.val(wCon);
+                    hField.val(hCOn);
+
+                    currentUnit = "cm";
+                }
+            }
+            // selected value
+            if(val == 'mm'){
+                $("#unit-hip, #unit-waist").val('mm');
+                // if CM
+                if(currentUnit == "cm"){
+                     wCon =  convertCMToMM(inputValWaist);
+                     hCOn = convertCMToMM(inputValHip);
+
+                    wField.val(wCon);
+                    hField.val(hCOn);
+                    currentUnit = "mm";
+                }
+
+
+                // if IN
+                if(currentUnit == "in"){
+                     wCon =  convertINToMM(inputValWaist);
+                     hCOn = convertINToMM(inputValHip);
+
+                    wField.val(wCon);
+                    hField.val(hCOn);
+
+                    currentUnit = "mm";
+                }
+            }
+
+            console.log(currentUnit)
+
+
         });
 
 
@@ -251,6 +402,17 @@
             $('.tr-low,.tr-moderate,.tr-high').removeClass(function(index, className) {
                 return (className.match(/(^|\s)m-\S+/g) || []).join(' ');
             });
+
+            mainResult = Math.round((mainResult + Number.EPSILON) * 100) / 100
+
+            console.log(mainResult)
+
+            if ($('.radio-btn:checked').val() == 'female') {
+                $('td.male,th.male').hide();
+            }
+            if ($('.radio-btn:checked').val() == 'male') {
+                $('td.female,th.female').hide();
+            }
 
             if (mainResult <= .93) {
                 $('.tr-low').addClass('m-low');
@@ -271,8 +433,6 @@
             } else if (mainResult >= 0.85 && mainResult <= 10) {
                 $('.tr-high').addClass('f-high');
             }
-
-
 
             $('.input_result .input').val(mainResult);
         }
