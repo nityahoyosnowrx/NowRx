@@ -7188,12 +7188,18 @@ section.welcomed {
 // }
 
 section.blogmain {
-	padding: 90px 20px;
+	padding: 90px 90px;
+	@media screen and (max-width: 1280px) {
+		padding: 90px 20px;
+	}
 
 	article.section-blog-post {
 		width: 23%;
-		margin: 1% 1%;
-		box-shadow: 0 5px 13px 0 Rgb(0 0 0/1%), 0 4px 10px 0 Rgb(0 0 0/1%);
+		border-radius: 5px 0;
+		overflow: hidden;
+		margin: 1%;
+		box-shadow: 0 9px 13px 0px rgb(0 0 0 / 1%), 0 0px 4px 0px rgb(0 0 0 / 10%);
+
 		@media screen and (max-width: 1280px) {
 			width: 48%;
 		}

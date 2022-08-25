@@ -9,7 +9,7 @@
         <header>
             <h1>Waist to Hip Ratio Calculator</h1>
             <p>
-                The waist-hip ratio is generally an indicator or measure of health and the risk of developing serious health conditions, such as diabetes, asthma, or Alzheimer's disease.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium aliquid nostrum quae odit illum quos, necessitatibutate. Doloribus.
             </p>
         </header>
         <span class="input_field">
@@ -72,14 +72,14 @@
                     <h2 class="title">how to measure your waist to hip ratio</h2>
                 </header>
                 <h3 class="title">Waist Circumference</h3>
-                <p>Measure around your body the point of your bellybutton</p>
+                <p>Measure around your body the point of your belly button</p>
                 <h3 class="title">Hip Circumference</h3>
                 <p>Measure around your body at the widest point of your buttocks</p>
                 <span class="title-image">
                     <img src="<?php echo get_template_directory_uri(); ?>/images/NowRx-Pharmacy-Logo-Icon-mini.webp" alt="NowRx-Pharmacy-Logo-Icon-mini" width="50" height="38">
                 </span>
             </div>
-            <div class="results-block">
+            <div class="results-block" id="results">
                 <header class="title">
                     <h2 class="title">Results</h2>
                 </header>
@@ -121,7 +121,7 @@
 
 </section>
 
-<div class="block-subscribe">
+<!-- <div class="block-subscribe">
     <div class="subscribe-blockitem">
         <header class="title">
             <h2 class="title">Subscribe to Healthcare in 5</h2>
@@ -135,7 +135,7 @@
             </div>
         </header>
     </div>
-</div>
+</div> -->
 
 <article>
 
@@ -390,6 +390,9 @@
             console.log(currentUnit)
 
 
+
+
+
         });
 
 
@@ -435,6 +438,8 @@
             }
 
             $('.input_result .input').val(mainResult);
+
+            document.getElementById("results").scrollIntoView({behavior: "smooth"});
         }
 
     });

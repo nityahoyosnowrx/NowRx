@@ -1,11 +1,11 @@
 .wh-container {
-
 	.calculator h1 {
 		position: relative;
 		line-height: 1.2;
 		font-weight: 700;
 		margin: 0 0 30px;
-		font-size: 2rem;
+		font-size: 2.2rem;
+		padding-bottom: 10px;
 	}
 
 	.calculator h1:after {
@@ -30,12 +30,14 @@
 
 	.calculator {
 		width: 50%;
-		@media screen and (max-width: 700px) {
+		@media screen and (max-width: 1280px) {
 			width: 100%;
 		}
 
 		.input_calc {
-			margin: 40px 0 0;
+			margin: 70px 0 0;
+			display: flex;
+			justify-content: center;
 			@media screen and (max-width: 700px) {
 				display: flex;
 				justify-content: center;
@@ -135,14 +137,16 @@
 
 .wh-container {
 	margin-bottom: 60px !important;
-	@media screen and (max-width: 700px) {
+	max-width: 100%;
+	padding: 0 90px;
+	max-width: 1500px;
+	@media screen and (max-width: 1280px) {
 		flex-direction: column;
+		padding: 0 20px;
 	}
 	.content {
 		justify-content: flex-start;
 		padding-left: 120px;
-
-
 	}
 }
 .wh-container h2 {
@@ -153,9 +157,13 @@
 span.input_field {
 	display: flex;
 	align-items: center;
-	margin: 10px 0;
-	border-bottom: 1px solid #eee;
-	padding-bottom: 10px;
+	max-width: 520px;
+	margin: 30px auto;
+	@media screen and (max-width: 1280px) {
+		flex-direction: column;
+		align-items: flex-start;
+		max-width: 380px;
+	}
 }
 .input_field input {
 }
@@ -181,6 +189,9 @@ span.input_field .unit {
 .input_result {
 	display: flex;
 	align-items: center;
+	@media screen and (max-width: 1280px) {
+		flex-direction: column;
+	}
 }
 
 .input_result input.input {
@@ -191,8 +202,8 @@ span.input_field .unit {
 
 .label {
 	font-weight: 700;
-    padding-right: 20px;
-    line-height: 1.2;
+	padding-right: 20px;
+	line-height: 1.2;
 }
 
 .border-input {
@@ -200,9 +211,14 @@ span.input_field .unit {
 }
 .input-container {
 	position: relative;
-	margin-left: auto;
-
+	// margin-left: auto;
 	border-radius: 5px;
+	@media screen and (max-width: 1280px) {
+		width: 100%;
+	}
+	@media screen and (max-width: 1280px) {
+		margin: 10px 0 0;
+	}
 	.unit {
 		position: absolute;
 		top: 0;
@@ -217,7 +233,10 @@ span.input_field .unit {
 	.unit select {
 		margin: 0;
 		border: none;
-		background: transparent;
+		background: initial;
+		font-weight: 900;
+		font-size: 0.7rem;
+		color: $blue;
 	}
 
 	.input {
@@ -239,7 +258,7 @@ header.title {
 		margin: 0 0 40px;
 		text-transform: capitalize;
 		position: relative;
-		font-size: 1.6rem;
+		font-size: 1.3rem;
 	}
 
 	h2.title:after {
@@ -255,20 +274,25 @@ header.title {
 	}
 }
 h3.title {
-	font-size: 1.3rem;
+	font-size: 1rem;
 }
 
 .side-content {
-	width: 60%;
-	padding-left: 60px;
-	@media screen and (max-width: 700px) {
+	width: 100%;
+	max-width: 520px;
+	margin-left: auto;
+	padding: 70px 0 0;
+	padding-left: 20px;
+	@media screen and (max-width: 1280px) {
 		width: 100%;
 		padding: 60px 0 0;
+		margin: 0 auto;
+		max-width: 350px;
 	}
 }
 input.input {
-    font-weight: 800;
-    font-size: 1.2rem;
+	font-weight: 800;
+	font-size: 1.2rem;
 }
 .side-content .block {
 	border-radius: 10px;
@@ -277,10 +301,11 @@ input.input {
 	position: relative;
 	min-height: 400px;
 	display: flex;
-    align-items: center;
-    justify-content: center;
+	align-items: center;
+	justify-content: center;
 	@media screen and (max-width: 700px) {
 		padding: 20px;
+		min-height: 500px;
 	}
 
 	span.title-image {
@@ -307,7 +332,7 @@ input.input {
 		align-items: flex-start;
 		align-items: center;
 		padding: 40px;
-		transition: all .6s;
+		transition: all 0.6s;
 		@media screen and (max-width: 700px) {
 			padding: 20px;
 		}
@@ -322,15 +347,23 @@ input.input {
 }
 .input-container.results-container {
 	padding: 0;
+
 }
 
 .input-container.results-container input.input {
 	border: oldlace;
 	box-shadow: none;
-	border-bottom: 1px solid #bcbcbc;
+	// border-bottom: 1px solid #bcbcbc;
 	border-radius: 0;
-	max-width: 100px;
+	max-width: 130px;
 	margin: 0;
+	font-size: 2rem;
+	color: $d-blue;
+	padding: 0;
+	@media screen and (max-width: 1280px) {
+		max-width: 100%;
+		text-align: center;
+	}
 }
 
 table#whresults {
@@ -351,6 +384,9 @@ table#whresults tr td {
 	padding: 12px 20px;
 	line-height: 1;
 	border: 1px solid #b0b0b0;
+	@media screen and (max-width: 1280px) {
+		padding: 5px 10px;
+	}
 }
 
 .tr-high.m-high .male {
