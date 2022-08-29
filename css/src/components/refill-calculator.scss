@@ -1,7 +1,10 @@
+section.grid-container.pill-calculator {
+    margin-bottom: 120px;
+}
+
 .nuber_selector {
 	display: flex;
 	flex-direction: column;
-	max-width: 400px;
 	margin: 0 auto;
 }
 
@@ -42,6 +45,26 @@ span.del {
 	background: $blue;
 	color: $f;
 }
+h1.title {
+	position: relative;
+	line-height: 1.2;
+	font-weight: 700;
+	margin: 0 0 30px;
+	font-size: 2.2rem;
+	padding-bottom: 10px;
+	&:after {
+		content: close-quote;
+		position: absolute;
+		top: 110%;
+		left: 0;
+		right: 0;
+		height: 4px;
+		width: 30%;
+		background: #008ed8;
+		margin: 0 auto;
+	}
+}
+
 
 .pill-calculator {
 	.content {
@@ -51,16 +74,41 @@ span.del {
 	}
 	.info {
 		border-radius: 10px;
-		padding: 40px;
-		box-shadow: 0 2px 7px 0px rgb(0 0 0 / 20%);
+		box-shadow: 0 2px 4px rgb(0 0 0 / 20%);
 		position: relative;
-		align-items: center;
 		display: flex;
-		justify-content: flex-start;
+		align-items: flex-start;
+		justify-content: center;
 		flex-direction: column;
-		position: relative;
+		width: 100%;
+		max-width: 660px;
+		margin-left: auto;
+		padding: 40px 40px;
 		@media screen and (max-width: 700px) {
 			padding: 20px;
+		}
+		h2.title {
+			text-align: center;
+			margin: 0 0 40px;
+			text-transform: capitalize;
+			position: relative;
+			font-size: 1.3rem;
+		}
+		h2.title:after {
+			content: close-quote;
+			position: absolute;
+			top: 110%;
+			left: 0;
+			right: 0;
+			height: 4px;
+			width: 30%;
+			background: #008ed8;
+			margin: 0 auto;
+		}
+
+		h3.title {
+			font-size: 1rem;
+			margin: 0;
 		}
 	}
 	span.title-image {
@@ -74,7 +122,7 @@ span.del {
 	gap: 0 60px;
 	@media screen and (max-width: 700px) {
 		flex-direction: column;
-        align-items: center;
+		align-items: center;
 	}
 }
 
@@ -87,8 +135,12 @@ span.del {
 	justify-content: center;
 	@media screen and (max-width: 700px) {
 		padding: 0 0 40px;
-        max-width: 350px;
+		max-width: 350px;
 		width: 100%;
+	}
+	header {
+		text-align: center;
+		margin: 0 0 30px;
 	}
 }
 .dayfill {
@@ -114,10 +166,27 @@ span.del {
 }
 span.days {
 	display: flex;
-	margin: 0 0 10px;
+	position: relative;
+	max-width: 250px;
+	margin: 0 auto 10px;
 	.days-to-fill {
 		width: 100%;
 		display: flex;
+	}
+	.daysfills {
+		box-shadow: none;
+	}
+	.days-label {
+		margin: 0;
+		border: none;
+		background: initial;
+		font-weight: 900;
+		font-size: 0.7rem;
+		color: #0088cf;
+		display: inline-flex;
+		position: absolute;
+		top: 15px;
+		right: 40px;
 	}
 }
 span.title {
@@ -164,7 +233,7 @@ button.bnt-calc {
 	margin: 0 0 20px;
 }
 .results {
-	position: absolute;
+	position: relative;
 	top: 0;
 	left: 0;
 	right: 0;
@@ -173,22 +242,40 @@ button.bnt-calc {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	color: #284c8b;
-	font-size: 1.3rem;
-	text-align: center;
-	font-weight: 700;
-	line-height: 1.2;
+
 	margin: 0 0 20px;
 	opacity: 0;
 	visibility: hidden;
 	transition: all 0.3s;
-	padding: 40px;
+	flex-direction: column;
+	display: none;
+
 	@media screen and (max-width: 700px) {
-		padding: 20px;
 		text-align: left;
 	}
+
 	&.active {
 		visibility: visible;
 		opacity: 1;
+		display: block;
+	}
+
+	.result{
+		font-size: 1.3rem;
+		text-align: center;
+		font-weight: 700;
+		line-height: 1.2;
+		font-weight: 700;
+    line-height: 1.2;
+	}
+
+	span.disclaimer {
+		margin: 20px 0 0;
+		display: block;
+		font-size: .8rem;
+		font-style: italic;
+		font-weight: normal;
+		text-align: left;
+		color: #444;
 	}
 }
