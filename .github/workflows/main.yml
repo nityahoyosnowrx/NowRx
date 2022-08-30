@@ -9,7 +9,6 @@ jobs:
   # This workflow contains a single job called "SFTP"
   deploy-via-sftp:
     runs-on: ubuntu-latest
-    name: build&deploy
     steps:
       - uses: actions/checkout@v2
 
