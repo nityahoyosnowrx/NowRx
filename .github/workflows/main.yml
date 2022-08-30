@@ -12,7 +12,7 @@ jobs:
       - name: Copy folder content recursively to remote
         uses: garygrossgarten/github-action-scp@release
         with:
-          local: /Users/barnettj7/Sites/wp-valet/wp-content/themes/NowRx/*
+          local: /Users/barnettj7/Sites/wp-valet/wp-content/themes/NowRx
           remote: ~/Sites/wp-valet/wp-content/themes/NowRx
           host: 54.212.95.216
           username: bitnami
