@@ -16,4 +16,4 @@ jobs:
           remote: ~/Sites/wp-valet/wp-content/themes/NowRx
           host: 54.212.95.216
           username: bitnami
-          privateKey: ${{ secrets.DEPLOY_KEY }}
+          privateKey: ${{ secrets.SSH_PRIVATE_KEY }}
