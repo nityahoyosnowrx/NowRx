@@ -6,16 +6,13 @@
         <div class="content">
             <div class="main-block">
                 <header>
-                    <h1 class="title">Refill Calculator</h1>
+                    <h1 class="title">Prescription Refill Calculator</h1>
                     <p class="subtext">Input your measurements into the waist to hip ratio calculator below to determine your risk of cardiovascular and metabolic disease.
 
                     </p>
                 </header>
 
-                <div class="date-picker">
-                    <span class="title">Select Date first filled</span>
-                    <div class="flatpickr-calendar"></div>
-                </div>
+
                 <div class="dayfill">
                     <div class="text-title">Days Supply Filled:</div>
                     <div class="time-selector">
@@ -37,18 +34,16 @@
 
             <div class="info">
                 <div class="display-block">
-                    <header>
-                        <h2 class="title">How To Measure Prescription Refill Calculator</h2>
-                    </header>
+                <div class="date-picker">
+                    <span class="title">Select Date first filled</span>
+                    <div class="flatpickr-calendar"></div>
 
-                    <h3 class="title">Select Date first filled</h3>
-                    <p>
-                        Prescription Refill Calculator: What is it and all you need to Know | If you’re like most people, you probably take prescriptions for medications on a regular basis. But what if you didn’t have to? What if there was a way to get your medications without having to go to the doctor? That’s what calculators can do for you. With calculators, you can refill your prescriptions in minutes without ever going to the doctor. Just enter the code that is sent to your calculator and you’re good to go! And don’t forget, calculators are also great for studying!
-                    </p>
-                    <h3 class="title">Days Supply Filled</h3>
-                    <p>
-                        Prescription Refill Calculator: What is it and all you need to Know | If you’re like most people, you probably take prescriptions for medications on a regular basis. But what if you didn’t , you can refill your prescriptions in minutes without ever going to go! And don’t forget, calculators are also great for studying!
-                    </p>
+                </div>
+                <div class="calculate">
+
+                    <button class="bnt-calc">Calculate</button>
+
+                </div>
                     <span class="title-image">
                         <img src="<?php echo get_template_directory_uri(); ?>/images/NowRx-Pharmacy-Logo-Icon-mini.webp" alt="NowRx-Pharmacy-Logo-Icon-mini" width="50" height="38">
                     </span>

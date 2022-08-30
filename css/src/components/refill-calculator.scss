@@ -1,5 +1,5 @@
 section.grid-container.pill-calculator {
-    margin-bottom: 120px;
+	margin-bottom: 120px;
 }
 
 .nuber_selector {
@@ -52,6 +52,10 @@ h1.title {
 	margin: 0 0 30px;
 	font-size: 2.2rem;
 	padding-bottom: 10px;
+	@media screen and (max-width: 700px) {
+		margin: 0;
+		margin-bottom: 20px;
+	}
 	&:after {
 		content: close-quote;
 		position: absolute;
@@ -65,16 +69,16 @@ h1.title {
 	}
 }
 
-
 .pill-calculator {
 	.content {
 		display: flex;
 		align-items: flex-start;
 		gap: 0 60px;
+		@media screen and (max-width: 700px) {
+			flex-direction: column-reverse;
+		}
 	}
 	.info {
-		border-radius: 10px;
-		box-shadow: 0 2px 4px rgb(0 0 0 / 20%);
 		position: relative;
 		display: flex;
 		align-items: flex-start;
@@ -83,9 +87,22 @@ h1.title {
 		width: 100%;
 		max-width: 660px;
 		margin-left: auto;
-		padding: 40px 40px;
-		@media screen and (max-width: 700px) {
-			padding: 20px;
+		justify-content: center;
+		align-items: center;
+		.calculate {
+			display: none;
+			@media screen and (max-width: 700px) {
+				display: flex;
+				margin: 30px 0 0;
+				align-items: center;
+				justify-content: center;
+			}
+		}
+		.display-block {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
 		}
 		h2.title {
 			text-align: center;
@@ -125,7 +142,41 @@ h1.title {
 		align-items: center;
 	}
 }
-
+.flatpickr-current-month .flatpickr-monthDropdown-months {
+	font-size: 0.8rem;
+    font-weight: 900;
+}
+.flatpickr-current-month input.cur-year {
+	font-size: 0.8rem;
+    font-weight: 900;
+}
+.flatpickr-current-month input.cur-year {
+	font-size: 0.8rem;
+    font-weight: 900;
+}
+.flatpickr-months .flatpickr-prev-month, .flatpickr-months .flatpickr-next-month {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+span.flatpickr-day.today:not(.selected), span.flatpickr-day.prevMonthDay.today:not(.selected), span.flatpickr-day.nextMonthDay.today:not(.selected){
+	border-bottom-color: $d-blue;
+}
+span.flatpickr-weekday {
+    font-weight: 900;
+    color: #008ed8;
+}
+.flatpickr-day.today {
+    color: #fff;
+    background: #008ed8;
+}
+span.flatpickr-day {
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+.flatpickr-innerContainer {
+    box-shadow: 0px 4px 8px -8px #0000006b inset;
+}
 .pill-calculator .date-picker {
 }
 .main-block {
@@ -146,7 +197,10 @@ h1.title {
 .dayfill {
 	width: 100%;
 
-	padding: 50px 0 0;
+	padding: 0 0;
+	@media screen and (max-width: 700px) {
+		padding: 0;
+	}
 	.time-selector {
 	}
 }
@@ -157,6 +211,9 @@ h1.title {
 	justify-content: center;
 	flex-direction: column;
 	margin: 0 0;
+	@media screen and (max-width: 700px) {
+		display: none;
+	}
 }
 
 .text-title {
@@ -260,19 +317,19 @@ button.bnt-calc {
 		display: block;
 	}
 
-	.result{
+	.result {
 		font-size: 1.3rem;
 		text-align: center;
 		font-weight: 700;
 		line-height: 1.2;
 		font-weight: 700;
-    line-height: 1.2;
+		line-height: 1.2;
 	}
 
 	span.disclaimer {
 		margin: 20px 0 0;
 		display: block;
-		font-size: .8rem;
+		font-size: 0.8rem;
 		font-style: italic;
 		font-weight: normal;
 		text-align: left;

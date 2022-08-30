@@ -1,27 +1,20 @@
-name: CIc
+name: CIC
 
 on:
   push:
     branches: [ main ]
-  workflow_dispatch:
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    name: Deploy Job
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-        with:
-          fetch-depth: 2
-
-      - name: Deploy files
-        uses: wlixcc/SFTP-Deploy-Action@v1.0
-        with:
-          username: 'bitnami'
-          server: 'www-staging.nowrx.com'
-          port: 2222
-          ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
-          local_path: './Users/barnettj7/Sites/wp-valet/wp-content/themes/NowRx/*'
-          remote_path: '~/Sites/wp-valet/wp-content/themes/NowRx'
-          args: '-o ConnectTimeout=10'
+   	  - uses: actions/checkout@v2
+      - name: ssh deploy
+        uses: easingthemes/ssh-deploy@v2.1.4
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.DEPLOY_KEY }}
+          REMOTE_HOST: 'www-staging.nowrx.com'
+          REMOTE_USER: 'bitnami'
+          REMOTE_PORT: '2222'
+          SOURCE: "./Users/barnettj7/Sites/wp-valet/wp-content/themes/NowRx/*"
+          TARGET: '~/Sites/wp-valet/wp-content/themes/NowRx'
