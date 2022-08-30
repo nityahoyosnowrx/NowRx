@@ -1,4 +1,4 @@
-name: CICc
+name: CICccsc
 
 on:
   push:
