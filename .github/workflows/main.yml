@@ -27,7 +27,7 @@ jobs:
           server: 'www-staging.nowrx.com'
           port: 22 # default is 22
           ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
-            local_path: '/Users/barnettj7/Sites/wp-valet/wp-content/themes/NowRx/*'
+            local_path: '/Users/barnettj7/Sites/wp-valet/wp-content/themes/NowRx'
             remote_path: '/opt/bitnami/apps/wordpress/htdocs/wp-content/themes/nowrx'
 
           # sftp args
