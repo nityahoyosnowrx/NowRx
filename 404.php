@@ -12,9 +12,7 @@
             <div class="column-half content-col">
 
 
-                    <span class="sub-headline">
-                    Error 404 - Page Not FOund
-                    </span>
+                    <span class="sub-headline">Error 404 - Page Not Found</span>
 
                     <h1 class="hiw-title">
                         <span class="k">Ooop's Something</span>
