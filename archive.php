@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<section class="blog" id="blog">
+<section class="blog" id="blog" >
 
   <?php
     $cat_id = get_query_var('cat',$post->ID);
