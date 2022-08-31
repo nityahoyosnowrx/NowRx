@@ -249,7 +249,7 @@
             <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID),''); ?>
               <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><img class="border-styled" style="margin-bottom: 1rem;" src="<?php echo $image[0]; ?>" alt="<?php the_title(); ?>"></a>
             <?php endif; ?>
-            <h5><a href="<?php the_permalink() ?>/" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h5>
+            <h5><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h5>
           </div>
           <?php endwhile; endif; ?>
         </div>

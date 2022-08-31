@@ -260,11 +260,11 @@
                             <div class="image">
                                 <?php if (has_post_thumbnail($post->ID)) : ?>
                                     <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'medium'); ?>
-                                    <a href="<?php the_permalink() ?>/" rel="bookmark" title="<?php the_title_attribute(); ?>">
+                                    <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
                                         <img class="border-styled lozad" data-src="<?php echo $image[0]; ?>" alt="<?php echo get_post_meta(get_post_thumbnail_id(), '_wp_attachment_image_alt', true); ?>">
                                     </a>
                                 <?php else : ?>
-                                    <a href="<?php the_permalink() ?>/" rel="bookmark" title="<?php the_title_attribute(); ?>">
+                                    <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
                                         <img class="border-styled" src="<?php echo get_site_url(); ?>/wp-content/uploads/2020/09/IMG_3714-1024x683.jpg" alt="<?php echo get_post_meta(get_post_thumbnail_id(), '_wp_attachment_image_alt', true); ?>">
                                     </a>
                                 <?php endif; ?>
@@ -272,16 +272,16 @@
 
                             <div class="contentblock">
                                 <h2>
-                                    <a href="<?php the_permalink(); ?>/" class="readlink">
+                                    <a href="<?php the_permalink(); ?>" class="readlink">
                                         <?php echo wp_trim_words(get_the_title(), 8, '...'); ?>
                                     </a>
                                 </h2>
                                 <div class="content">
-                                    <a href="<?php the_permalink(); ?>/" class="readlink">
+                                    <a href="<?php the_permalink(); ?>" class="readlink">
                                         <?php echo mb_strimwidth(wp_trim_words(get_the_content(), 100, ''), 0, 65, '...'); ?>
                                     </a>
                                     <div class="wd">
-                                        <a href="<?php the_permalink(); ?>/" class="readmore">Read More</a>
+                                        <a href="<?php the_permalink(); ?>" class="readmore">Read More</a>
                                     </div>
                                 </div>
                             </div>

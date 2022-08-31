@@ -119,13 +119,13 @@ if (have_posts()) : while (have_posts()) : the_post(); ?>
                                         </a>
                                         <div class="clk">
                                             <div class="data">
-                                                <a href="<?php the_permalink(); ?>/" class="readlink">
+                                                <a href="<?php the_permalink(); ?>" class="readlink">
                                                     <?php echo get_the_date('F j Y ');   ?>
                                                 </a>
                                             </div>
                                             <div class="content">
                                                 <div class="wd">
-                                                    <a href="<?php the_permalink(); ?>/" class="readmore">Read More</a>
+                                                    <a href="<?php the_permalink(); ?>" class="readmore">Read More</a>
                                                 </div>
                                             </div>
                                         </div>
