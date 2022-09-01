@@ -1,71 +1,73 @@
 section.grid-container.pill-calculator {
-	margin-bottom: 120px;
-}
+	margin-bottom: 140px;
 
-.nuber_selector {
-	display: flex;
-	flex-direction: column;
-	margin: 0 auto;
-}
-
-.nuber_selector div {
-	display: flex;
-	justify-content: space-evenly;
-}
-
-span.del,
-span.zero,
-span.dec,
-.nuber_selector div span.number_pad {
-	padding: 0px 0px;
-	font-size: 1.6rem;
-	width: 50px;
-	height: 50px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background: #eee;
-	border-bottom: 2px solid #d5d5d5;
-	margin: 4px 4px;
-	cursor: pointer;
-	border-radius: 3px;
-
-	span.number {
-		position: relative;
-	}
-}
-
-span.del {
-}
-
-.time-selector {
-}
-
-.nuber_selector div span.number_pad:hover {
-	background: $blue;
-	color: $f;
-}
-h1.title {
-	position: relative;
-	line-height: 1.2;
-	font-weight: 700;
-	margin: 0 0 30px;
-	font-size: 2.2rem;
-	padding-bottom: 10px;
-	@media screen and (max-width: 700px) {
-		margin: 0;
-		margin-bottom: 20px;
-	}
-	&:after {
-		content: close-quote;
-		position: absolute;
-		top: 110%;
-		left: 0;
-		right: 0;
-		height: 4px;
-		width: 30%;
-		background: #008ed8;
+	.nuber_selector {
+		display: flex;
+		flex-direction: column;
 		margin: 0 auto;
+	}
+
+	.nuber_selector div {
+		display: flex;
+		justify-content: space-evenly;
+	}
+
+	span.del,
+	span.zero,
+	span.dec,
+	.nuber_selector div span.number_pad {
+		padding: 0px 0px;
+		font-size: 1.6rem;
+		width: 50px;
+		height: 50px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background: #eee;
+		border-bottom: 2px solid #d5d5d5;
+		margin: 4px 4px;
+		cursor: pointer;
+		border-radius: 3px;
+
+		span.number {
+			position: relative;
+		}
+	}
+
+	span.del {
+	}
+
+	.time-selector {
+	}
+
+	.nuber_selector div span.number_pad:hover {
+		background: $blue;
+		color: $f;
+	}
+	h1.title {
+		position: relative;
+		line-height: 1.2;
+		font-weight: 700;
+		margin: 0 0 30px;
+		font-size: 2.2rem;
+		padding-bottom: 10px;
+		display: inline-flex;
+		@media screen and (max-width: 700px) {
+			margin: 0;
+			margin-bottom: 20px;
+			text-align: center;
+		}
+		&:after {
+			content: close-quote;
+			position: absolute;
+			top: 110%;
+			left: 0;
+			right: 0;
+			height: 4px;
+			width: 30%;
+			background: #008ed8;
+			margin: 0 auto;
+		}
 	}
 }
 
@@ -74,9 +76,20 @@ h1.title {
 		display: flex;
 		align-items: flex-start;
 		gap: 0 60px;
+		margin: 0 auto;
 		@media screen and (max-width: 700px) {
 			flex-direction: column-reverse;
 		}
+	}
+	.mobile-calendar{
+		display: none;
+		margin: 0 0 60px;
+		@media screen and (max-width: 700px) {
+			display: block;
+		}
+	}
+	.main-block {
+		max-width: 550px;
 	}
 	.info {
 		position: relative;
@@ -84,11 +97,19 @@ h1.title {
 		align-items: flex-start;
 		justify-content: center;
 		flex-direction: column;
-		width: 100%;
-		max-width: 550px;
+
 		margin-left: auto;
 		justify-content: center;
 		align-items: center;
+		padding-top: 40px;
+		@media screen and (max-width: 700px) {
+			margin: 0;
+		}
+		.date-picker{
+			@media screen and (max-width: 700px) {
+				display: none;
+			}
+		}
 		.calculate {
 			display: none;
 			@media screen and (max-width: 700px) {
@@ -132,207 +153,274 @@ h1.title {
 		margin: 40px 0 0;
 		opacity: 0.2;
 	}
-}
 
-.pill-calculator .content {
-	display: flex;
-	gap: 0 60px;
-	@media screen and (max-width: 700px) {
-		flex-direction: column;
-		align-items: center;
-	}
-}
-.flatpickr-current-month .flatpickr-monthDropdown-months {
-	font-size: 0.8rem;
-    font-weight: 900;
-}
-.flatpickr-current-month input.cur-year {
-	font-size: 0.8rem;
-    font-weight: 900;
-}
-.flatpickr-current-month input.cur-year {
-	font-size: 0.8rem;
-    font-weight: 900;
-}
-.flatpickr-months .flatpickr-prev-month, .flatpickr-months .flatpickr-next-month {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-span.flatpickr-day.today:not(.selected), span.flatpickr-day.prevMonthDay.today:not(.selected), span.flatpickr-day.nextMonthDay.today:not(.selected){
-	border-bottom-color: $d-blue;
-}
-span.flatpickr-weekday {
-    font-weight: 900;
-    color: #008ed8;
-}
-.flatpickr-day.today {
-    color: #fff;
-    background: #008ed8;
-}
-span.flatpickr-day {
-    font-weight: 600;
-    font-size: 0.8rem;
-}
-.flatpickr-innerContainer {
-    box-shadow: 0px 4px 8px -8px #0000006b inset;
-}
-.pill-calculator .date-picker {
-}
-.main-block {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	@media screen and (max-width: 700px) {
-		padding: 0 0 40px;
-		max-width: 350px;
-		width: 100%;
-	}
-	header {
+	.warning {
+		position: relative;
+		bottom: 0;
 		text-align: center;
-		margin: 0 0 30px;
+		color: #d20f3b;
+		display: inline-flex;
+		font-size: 0.8rem;
+		font-weight: 900;
+		margin: 10px 0;
 	}
-}
-.dayfill {
-	width: 100%;
-
-	padding: 0 0;
-	@media screen and (max-width: 700px) {
-		padding: 0;
-	}
-	.time-selector {
-	}
-}
-.pill-calculator .calculate {
-	width: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-	margin: 0 0;
-	@media screen and (max-width: 700px) {
-		display: none;
-	}
-}
-
-.text-title {
-	text-align: center;
-	padding: 0 0 10px;
-	font-weight: 800;
-}
-span.days {
-	display: flex;
-	position: relative;
-	max-width: 250px;
-	margin: 0 auto 10px;
-	.days-to-fill {
-		width: 100%;
+	.reset-container {
+		justify-content: center;
+		align-items: center;
+		margin: 30px 0 0;
 		display: flex;
 	}
-	.daysfills {
+	.reset {
+		color: #fff;
+		position: relative;
+		overflow: hidden;
+		font-size: 16px;
+		padding: 10px 25px;
+		width: auto;
+		display: inline-flex;
+		background: #038ed8;
+		-webkit-box-shadow: none;
 		box-shadow: none;
-	}
-	.days-label {
+		border-radius: 30px;
+		min-width: 200px;
+		font-weight: 700;
 		margin: 0;
 		border: none;
-		background: initial;
-		font-weight: 900;
-		font-size: 0.7rem;
-		color: #0088cf;
-		display: inline-flex;
-		position: absolute;
-		top: 15px;
-		right: 40px;
+		cursor: pointer;
 	}
-}
-span.title {
-	text-align: center;
-	display: block;
-	padding: 0 0 10px;
-	font-weight: 800;
-}
-span.number {
-	font-size: 1rem;
-	line-height: 1;
-}
 
-button.bnt-calc {
-	color: #fff;
-	position: relative;
-	overflow: hidden;
-	font-size: 16px;
-	padding: 10px 25px;
-	width: auto;
-	display: inline-flex;
-	background: #038ed8;
-	-webkit-box-shadow: none;
-	box-shadow: none;
-	border-radius: 30px;
-	min-width: 200px;
-	align-items: center;
-	justify-content: center;
-	font-weight: 700;
-	margin: 0;
-	border: none;
-	cursor: pointer;
-	&:hover {
-		background-color: $d-blue;
+	.content {
+		display: flex;
+		gap: 0 60px;
+		@media screen and (max-width: 700px) {
+			flex-direction: column;
+			align-items: center;
+		}
 	}
-}
+	.flatpickr-calendar {
+		@media screen and (min-width: 800px) {
+			width: 400px;
+		}
 
-.result {
-	color: #284c8b;
-	font-size: 1.3rem;
-	text-align: center;
-	font-weight: 700;
-	line-height: 1.2;
-	margin: 0 0 20px;
-}
-.results {
-	position: relative;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	background: #fff;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-
-	margin: 0 0 20px;
-	opacity: 0;
-	visibility: hidden;
-	transition: all 0.3s;
-	flex-direction: column;
-	display: none;
-
-	@media screen and (max-width: 700px) {
+	}
+	.flatpickr-days {
+		@media screen and (min-width: 800px) {
+			width: 400px;
+		}
+	}
+	.dayContainer {
+		padding: 0;
+		outline: 0;
 		text-align: left;
+		width: 500px;
+		min-width: 307.875px;
+		max-width: 500px;
+	}
+	.flatpickr-day {
+		height: 40px;
+	}
+	.flatpickr-current-month .flatpickr-monthDropdown-months {
+		font-size: 0.8rem;
+		font-weight: 900;
+	}
+	.flatpickr-current-month input.cur-year {
+		font-size: 0.8rem;
+		font-weight: 900;
+	}
+	.flatpickr-current-month input.cur-year {
+		font-size: 0.8rem;
+		font-weight: 900;
+	}
+	.flatpickr-months .flatpickr-prev-month,
+	.flatpickr-months .flatpickr-next-month {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	span.flatpickr-day.today:not(.selected),
+	span.flatpickr-day.prevMonthDay.today:not(.selected),
+	span.flatpickr-day.nextMonthDay.today:not(.selected) {
+		border-bottom-color: $d-blue;
+	}
+	span.flatpickr-weekday {
+		font-weight: 900;
+		color: #008ed8;
+	}
+	.flatpickr-day.today {
+	}
+	span.flatpickr-day {
+		font-weight: 600;
+		font-size: 0.8rem;
+	}
+	.flatpickr-innerContainer {
+		box-shadow: 0px 4px 8px -8px #0000006b inset;
+	}
+	.main-block {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		@media screen and (max-width: 700px) {
+			padding: 0 0 40px;
+			max-width: 350px;
+			width: 100%;
+		}
+		header {
+			text-align: left;
+			margin: 0 0 15px;
+		}
+	}
+	.dayfill {
+		width: 100%;
+		padding: 0;
+		display: flex;
+		align-items: center;
+		@media screen and (max-width: 700px) {
+			padding: 0;
+			flex-direction: column;
+
+		}
+		.time-selector {
+		}
+	}
+	.calculate {
+		width: 100%;
+		display: flex;
+		align-items: flex-start;
+		justify-content: center;
+		flex-direction: column;
+		margin: 55px 0 0;
+		@media screen and (max-width: 700px) {
+			// display: none;
+			align-items: center;
+		}
+
 	}
 
-	&.active {
-		visibility: visible;
-		opacity: 1;
+	.text-title {
+		text-align: left;
+		padding: 0 0 0px;
+		font-weight: 800;
+		line-height: 1;
+		margin-right: 40px;
+		@media screen and (max-width: 700px) {
+			margin: 0 0 20px;
+		}
+	}
+	span.days {
+		display: flex;
+		position: relative;
+		max-width: 250px;
+		margin: 0 auto;
+		.days-to-fill {
+			width: 100%;
+			display: flex;
+		}
+		.daysfills {
+			box-shadow: none;
+			margin: 0;
+		}
+		.days-label {
+			margin: 0;
+			border: none;
+			background: initial;
+			font-weight: 900;
+			font-size: 0.7rem;
+			color: #0088cf;
+			display: inline-flex;
+			position: absolute;
+			top: 15px;
+			right: 40px;
+		}
+	}
+	span.title {
+		text-align: center;
 		display: block;
+		padding: 5px 0 10px;
+		font-weight: 800;
+	}
+	span.number {
+		font-size: 1rem;
+		line-height: 1;
+	}
+
+	button.bnt-calc {
+		color: #fff;
+		position: relative;
+		overflow: hidden;
+		font-size: 16px;
+		padding: 10px 25px;
+		width: auto;
+		display: inline-flex;
+		background: #038ed8;
+		-webkit-box-shadow: none;
+		box-shadow: none;
+		border-radius: 30px;
+		min-width: 200px;
+		align-items: center;
+		justify-content: center;
+		font-weight: 700;
+		margin: 0;
+		border: none;
+		cursor: pointer;
+		&:hover {
+			background-color: $d-blue;
+		}
 	}
 
 	.result {
+		color: #284c8b;
 		font-size: 1.3rem;
 		text-align: center;
 		font-weight: 700;
 		line-height: 1.2;
-		font-weight: 700;
-		line-height: 1.2;
+		margin: 0 0 20px;
 	}
+	.results {
+		position: relative;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: #fff;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 
-	span.disclaimer {
-		margin: 20px 0 0;
-		display: block;
-		font-size: 0.8rem;
-		font-style: italic;
-		font-weight: normal;
-		text-align: left;
-		color: #444;
+		margin: 0 0 20px;
+		opacity: 0;
+		visibility: hidden;
+		transition: all 0.3s;
+		flex-direction: column;
+		display: none;
+
+		@media screen and (max-width: 700px) {
+			text-align: left;
+		}
+
+		&.active {
+			visibility: visible;
+			opacity: 1;
+			display: block;
+		}
+
+		.result {
+			font-size: 1.3rem;
+			text-align: center;
+			font-weight: 700;
+			line-height: 1.2;
+			font-weight: 700;
+			line-height: 1.2;
+		}
+
+		span.disclaimer {
+			margin: 20px 0 0;
+			display: block;
+			font-size: 0.8rem;
+			font-style: italic;
+			font-weight: normal;
+			text-align: left;
+			color: #444;
+		}
 	}
 }

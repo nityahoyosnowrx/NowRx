@@ -56,7 +56,7 @@ if (is_single() && 'post' == get_post_type()) {
       <div class="block right">
         <div class="u-list">
           <ul class="menu-items">
-            <li><a href="<?= get_site_url(); ?>/nowprep/">NowPrEP</a></li>
+            <li><a href="<?= get_site_url(); ?>/locations/">Locations</a></li>
             <li><a href="<?= get_site_url(); ?>/for-doctors/">For Doctors</a></li>
             <li><a href="<?= get_site_url(); ?>/contact-us/">Contact Us</a></li>
             <li><a href="<?= get_site_url(); ?>/invest/">Investors</a></li>

@@ -12,13 +12,19 @@
                     </p>
                 </header>
 
+                <div class="warning"></div>
 
+                <div class="mobile-calendar">
+                <div class="date-picker">
+                    <span class="title">Select Last Date Filled:</span>
+                    <div class="flatpickr-calendar"></div>
+                </div>
+                </div>
                 <div class="dayfill">
-                    <div class="text-title">Days Supply Filled:</div>
+                    <div class="text-title">Number of Days Supplied:</div>
                     <div class="time-selector">
 
                         <span class="days">
-
                             <input class="daysfills" type="number">
                             <span class="days-label">Days</span>
                         </span>
@@ -26,24 +32,17 @@
                     </div>
                 </div>
                 <div class="calculate">
-
                     <button class="bnt-calc">Calculate</button>
-
                 </div>
             </div>
 
             <div class="info">
                 <div class="display-block">
                 <div class="date-picker">
-                    <span class="title">Select Date first filled</span>
+                    <span class="title">Select Last Date Filled:</span>
                     <div class="flatpickr-calendar"></div>
-
                 </div>
-                <div class="calculate">
 
-                    <button class="bnt-calc">Calculate</button>
-
-                </div>
                     <span class="title-image">
                         <img src="<?php echo get_template_directory_uri(); ?>/images/NowRx-Pharmacy-Logo-Icon-mini.webp" alt="NowRx-Pharmacy-Logo-Icon-mini" width="50" height="38">
                     </span>
@@ -54,9 +53,16 @@
                         <h2 class="title">Results</h2>
                     </header>
                     <div class="result"></div>
+                    <div class="text">
+                    Do not wait to run out of medication to request a prescription refill. Visit <a href="<?php echo get_site_url(); ?>/refill-and-transfer-prescriptions/"><?php echo get_site_url(); ?>/refill-and-transfer-prescriptions/</a> to request free delivery of your prescriptions today!
+
+                    </div>
                     <span class="disclaimer">
                         *This assessment is being provided solely for informational purposes and should never take the place of advice from a qualified health professional.
                     </span>
+                    <div class="reset-container">
+                        <button class="reset">Select Different Date or Days</button>
+                    </div>
                 </div>
 
             </div>
@@ -181,24 +187,52 @@
         }
     });
 
-
-
+    $(".reset").on('click', function(e) {
+        $('.results').removeClass('active');
+        $('.display-block').show();
+    });
 
     $(".bnt-calc").on('click', function(e) {
-        let num = $('input.daysfills').val();
-        let value = parseInt(num);
-        value++;
-        dateMain = new Date(dateSelected);
+        let warningArray = [];
+        let inputVal = $('.daysfills').val();
 
-        let now = new Date(dateMain);
-        now = new Date(now.toDateString());
+        $('.warning').html('');
 
-        console.log(dateMain)
+        if( !inputVal) {
+            console.log( inputVal);
+            warningArray.push('daysfilled');
+        }
 
-        const inFiveDays = new Date(new Date(now).setDate(now.getDate() + value)).toDateString();
-        $('.results').addClass('active');
-        $('.display-block').hide();
-        $('.result').html("Refill date calculated: " + inFiveDays.toLocaleString());
+        if( typeof dateSelected === 'undefined' ) {
+            console.log(typeof dateSelected);
+            warningArray.push('dateselected');
+        }
+
+        if(warningArray.includes('daysfilled')){
+            $('.warning').append('Please set a number for number of days filled. </br>');
+        }
+        if(warningArray.includes('dateselected')){
+            $('.warning').append('Please select a date.');
+        }
+
+        if(warningArray.length == 0){
+            let num = $('input.daysfills').val();
+            let value = parseInt(num);
+            value++;
+            dateMain = new Date(dateSelected);
+
+            let now = new Date(dateMain);
+            now = new Date(now.toDateString());
+
+            console.log(dateMain)
+
+            const inFiveDays = new Date(new Date(now).setDate(now.getDate() + value)).toDateString();
+            $('.results').addClass('active');
+            $('.display-block').hide();
+            $('.result').html("Refill date calculated: " + inFiveDays.toLocaleString());
+        }
+
+
     });
 </script>
 
