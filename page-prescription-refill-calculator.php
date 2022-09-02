@@ -32,7 +32,7 @@
                     </div>
                 </div>
                 <div class="calculate">
-                    <button class="bnt-calc">Calculate</button>
+                    <button class="bnt-calc rx-btn">Calculate</button>
                 </div>
             </div>
 
@@ -54,14 +54,15 @@
                     </header>
                     <div class="result"></div>
                     <div class="text">
-                    Do not wait to run out of medication to request a prescription refill. Visit <a href="<?php echo get_site_url(); ?>/refill-and-transfer-prescriptions/"><?php echo get_site_url(); ?>/refill-and-transfer-prescriptions/</a> to request free delivery of your prescriptions today!
+                    Do not wait to run out of medication to request a prescription refill. Visit <a href="<?php echo get_site_url(); ?>/refill-and-transfer-prescriptions/"><?php echo get_site_url(); ?>/</a> to request free delivery of your prescriptions today!
 
                     </div>
-                    <span class="disclaimer">
-                        *This assessment is being provided solely for informational purposes and should never take the place of advice from a qualified health professional.
-                    </span>
-                    <div class="reset-container">
-                        <button class="reset">Select Different Date or Days</button>
+
+                    <!-- <div class="reset-container"> -->
+                        <!-- <button class="reset rx-btn">Restart</button> -->
+                    <!-- </div> -->
+                    <div class="cta">
+                        <a class="rx-btn" itemprop="url" href="<?= get_site_url(); ?>/refill-and-transfer-prescriptions/">Refill Prescription</a>
                     </div>
                 </div>
 

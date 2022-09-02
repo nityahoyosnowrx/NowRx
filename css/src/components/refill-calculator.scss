@@ -81,7 +81,7 @@ section.grid-container.pill-calculator {
 			flex-direction: column-reverse;
 		}
 	}
-	.mobile-calendar{
+	.mobile-calendar {
 		display: none;
 		margin: 0 0 60px;
 		@media screen and (max-width: 700px) {
@@ -102,13 +102,18 @@ section.grid-container.pill-calculator {
 		justify-content: center;
 		align-items: center;
 		padding-top: 40px;
+		max-width: 400px;
 		@media screen and (max-width: 700px) {
 			margin: 0;
 		}
-		.date-picker{
+		.date-picker {
 			@media screen and (max-width: 700px) {
 				display: none;
 			}
+		}
+		.text {
+			text-align: center;
+			margin: 0 0 20px;
 		}
 		.calculate {
 			display: none;
@@ -165,30 +170,22 @@ section.grid-container.pill-calculator {
 		margin: 10px 0;
 	}
 	.reset-container {
-		justify-content: center;
-		align-items: center;
-		margin: 30px 0 0;
+		justify-content: flex-start;
+		align-items: flex-start;
+		margin: 10px 0 30px;
 		display: flex;
 	}
 	.reset {
-		color: #fff;
-		position: relative;
-		overflow: hidden;
-		font-size: 16px;
-		padding: 10px 25px;
-		width: auto;
-		display: inline-flex;
-		background: #038ed8;
-		-webkit-box-shadow: none;
-		box-shadow: none;
-		border-radius: 30px;
-		min-width: 200px;
-		font-weight: 700;
 		margin: 0;
-		border: none;
-		cursor: pointer;
+		background: transparent;
+		color: #038ed8;
+		padding: 0;
+		min-width: 0;
 	}
-
+	.cta {
+		display: flex;
+		justify-content: center;
+	}
 	.content {
 		display: flex;
 		gap: 0 60px;
@@ -201,7 +198,6 @@ section.grid-container.pill-calculator {
 		@media screen and (min-width: 800px) {
 			width: 400px;
 		}
-
 	}
 	.flatpickr-days {
 		@media screen and (min-width: 800px) {
@@ -278,7 +274,6 @@ section.grid-container.pill-calculator {
 		@media screen and (max-width: 700px) {
 			padding: 0;
 			flex-direction: column;
-
 		}
 		.time-selector {
 		}
@@ -294,7 +289,6 @@ section.grid-container.pill-calculator {
 			// display: none;
 			align-items: center;
 		}
-
 	}
 
 	.text-title {
@@ -345,24 +339,7 @@ section.grid-container.pill-calculator {
 	}
 
 	button.bnt-calc {
-		color: #fff;
-		position: relative;
-		overflow: hidden;
-		font-size: 16px;
-		padding: 10px 25px;
-		width: auto;
-		display: inline-flex;
-		background: #038ed8;
-		-webkit-box-shadow: none;
-		box-shadow: none;
-		border-radius: 30px;
-		min-width: 200px;
-		align-items: center;
-		justify-content: center;
-		font-weight: 700;
 		margin: 0;
-		border: none;
-		cursor: pointer;
 		&:hover {
 			background-color: $d-blue;
 		}
