@@ -1,4 +1,14 @@
 section.bmi-calculator {
+	margin-bottom: 140px;
+	.padded-container {
+		max-width: 1200px;
+		gap: 0 60px;
+		@media screen and (max-width: 700px) {
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		}
+	}
 	span.input-field {
 		display: flex;
 		align-items: center;
@@ -9,8 +19,8 @@ section.bmi-calculator {
 			text-align: left;
 			padding: 0;
 			line-height: 1;
-            margin-right: 10px;
-            min-width: 20px;
+			margin-right: 10px;
+			min-width: 20px;
 		}
 		span.label {
 			text-align: left;
@@ -20,66 +30,100 @@ section.bmi-calculator {
 			margin-right: 40px;
 		}
 
-		 .input {
-            margin: 0;
+		.input {
+			margin: 0;
 			box-shadow: none;
 			margin-right: 10px;
 		}
 	}
 
+	div#result {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		span.weight-results {
+			font-size: 1.3rem;
+			text-align: center;
+			font-weight: 700;
+			line-height: 1.2;
+			color: #284c8b;
+			margin: 0 0 20px;
+		}
+	}
+
+	.title {
+		@include calculatorTitle();
+	}
+	span.title-image {
+		margin: 40px 0 0;
+		opacity: 0.2;
+		display: flex;
+		justify-content: center;
+		width: 100%;
+	}
+
 	.padded-container {
 		display: flex;
-		padding: 0 90px;
 		.form-content {
-			max-width: 530px;
+			max-width: 550px;
 			margin-right: auto;
 		}
 
 		.info {
-			width: 50%;
+			width: 100%;
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			margin-left: auto;
+			justify-content: center;
+			align-items: flex-start;
+			max-width: 400px;
+            border-radius: 10px;
+            padding: 40px;
+            box-shadow: 0 2px 4px rgb(0 0 0 / 20%);
+			@media screen and (max-width: 700px) {
+				margin: 0 auto;
+			}
 		}
 
 		.social {
 			display: flex;
 		}
 	}
-    .glossary-list {
-        padding: 20px 0;
-    }
+	.glossary-list {
+		padding: 20px 0;
+	}
 
-    .glossary-list ul {
-        margin: 0;
-        list-style: none;
-        padding: 0;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0px;
-    }
+	.glossary-list ul {
+		margin: 0;
+		list-style: none;
+		padding: 0;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0px;
+	}
 
-    .glossary-list ul li {
-        flex: 50%;
-        padding: 20px;
-    }
+	.glossary-list ul li {
+		flex: 50%;
+		padding: 20px;
+	}
 
-    .image-container {
-        width: 30px;
-        height: 30px;
-        margin: 0 0 20px;
-    }
+	.image-container {
+		margin: 0px 0 0;
+		opacity: 0.2;
+	}
 
-    .text-container {
-    }
+	.text-container {
+	}
 
-    .text-container h4 {
-        font-size: 1rem;
-    }
+	.text-container h4 {
+		font-size: 1rem;
+	}
 
-    header.module-header {
-        display: grid;
-        justify-content: center;
-    }
-
-
-
+	header.module-header {
+		display: grid;
+		justify-content: center;
+	}
 }
-

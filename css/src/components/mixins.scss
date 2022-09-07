@@ -13,8 +13,8 @@
 }
 
 @mixin line-height($heightValue: 12) {
-	line-height: $heightValue + px; //fallback for old browsers
-	line-height: (0.125 * $heightValue) + rem;
+	// line-height: $heightValue + px; //fallback for old browsers
+	// line-height: (0.125 * $heightValue) + rem;
 }
 @include line-height(16);
 
@@ -24,8 +24,8 @@
 }
 
 @mixin font-size($size) {
-	font-size: $size;
-	font-size: calculateRem($size);
+	// font-size: $size;
+	// font-size: calculateRem($size);
 }
 @include font-size(14px);
 
@@ -66,4 +66,33 @@
 @mixin font-size($step) {
 	font-size: var(--fs-#{$step});
 	line-height: var(--lh-#{$step});
+}
+
+
+@mixin calculatorTitle(){
+		position: relative;
+		line-height: 1.2;
+		font-weight: 700;
+		margin: 0 0 30px;
+		font-size: 2.2rem;
+		padding-bottom: 10px;
+		display: inline-flex;
+        width: 100%;
+        justify-content: center;
+		@media screen and (max-width: 700px) {
+			margin: 0;
+			margin-bottom: 20px;
+			text-align: center;
+		}
+		&:after {
+			content: close-quote;
+			position: absolute;
+			top: 110%;
+			left: 0;
+			right: 0;
+			height: 4px;
+			width: 30%;
+			background: #008ed8;
+			margin: 0 auto;
+		}
 }
