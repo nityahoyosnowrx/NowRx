@@ -1,0 +1,69 @@
+@mixin pseudo($display: block, $pos: absolute, $content: '') {
+	content: $content;
+	display: $display;
+	position: $pos;
+}
+@mixin position($position: absolute, $top: null, $right: null, $bottom: null, $left: null, $z-index: initial) {
+	position: $position;
+	top: $top;
+	right: $right;
+	bottom: $bottom;
+	left: $left;
+	z-index: $z-index;
+}
+
+@mixin line-height($heightValue: 12) {
+	line-height: $heightValue + px; //fallback for old browsers
+	line-height: (0.125 * $heightValue) + rem;
+}
+@include line-height(16);
+
+@function calculateRem($size) {
+	$remSize: $size / 16px;
+	@return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+	font-size: $size;
+	font-size: calculateRem($size);
+}
+@include font-size(14px);
+
+//Padding mixin
+@mixin padding($top, $right, $bottom, $left) {
+	padding-top: $top;
+	padding-right: $right;
+	padding-bottom: $bottom;
+	padding-left: $left;
+}
+//Margin mixin
+@mixin margin($top, $right, $bottom, $left) {
+	margin-top: $top;
+	margin-right: $right;
+	margin-bottom: $bottom;
+	margin-left: $left;
+}
+
+@mixin font-size($font-size, $line-height: normal, $letter-spacing: normal) {
+	font-size: $font-size * 1px;
+	// font-size: $font-size * 0.1rem;
+	// example using rem values and 62.5% font-size so 1rem = 10px
+
+	@if $line-height==normal {
+		line-height: normal;
+	} @else {
+		line-height: $line-height / $font-size;
+	}
+
+	@if $letter-spacing==normal {
+		letter-spacing: normal;
+	} @else {
+		letter-spacing: #{$letter-spacing / $font-size}em;
+	}
+}
+//   @include font-size(12, 18, 1.2);
+
+@mixin font-size($step) {
+	font-size: var(--fs-#{$step});
+	line-height: var(--lh-#{$step});
+}

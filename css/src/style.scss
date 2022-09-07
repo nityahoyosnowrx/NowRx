@@ -1,3 +1,5 @@
+@import './components/mixins';
+
 @import './components/typography';
 
 @import './components/globals';
@@ -6,9 +8,9 @@
 @import './components/layout';
 @import './components/refill-calculator';
 @import './components/waist-to-hip';
+@import './components/bmi';
 
 @import './main';
 @import './global';
-
 
 // @import './components/footer';
