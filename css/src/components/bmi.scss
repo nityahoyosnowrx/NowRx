@@ -52,10 +52,35 @@ section.bmi-calculator {
 			margin: 0 0 20px;
 		}
 	}
-
+	h2.title-secondary {
+		font-size: 1.4rem;
+	}
 	.title {
 		@include calculatorTitle();
 	}
+
+	ul.weight-list {
+		padding: 0;
+		margin: 0;
+		width: 100%;
+
+		li {
+			display: flex;
+			justify-content: flex-start;
+		}
+
+		 li span {
+			margin-right: 10px;
+			display: flex;
+			&.w {
+				margin: 0 0 0 auto;
+				display: block;
+				font-weight: 900;
+			}
+		}
+	}
+
+
 	span.title-image {
 		margin: 40px 0 0;
 		opacity: 0.2;

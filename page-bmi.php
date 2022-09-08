@@ -12,16 +12,16 @@
                 <span class="input-field">
                     <span class="label">Height</span>
 
-                    <input type="number" class="input height-input">
+                    <input type="number" max="900" class="input height-input">
                     <label for="ft">ft</label>
 
-                    <input type="number" class="input height-in-input">
-                    <label for="in">in</label>
+                    <input type="number" max="900" class="input height-in-input">
+                    <label for="in" >in</label>
                 </span>
                 <span class="input-field">
                     <span class="label">Weight</span>
 
-                    <input type="number" class="input weight-input">
+                    <input type="number" max="900" class="input weight-input">
                     <label for="lbs">lbs</label>
                 </span>
                 <span class="input-submit">
@@ -34,14 +34,15 @@
         <div id="result">
 
         </div>
+        <h2 class="title-secondary">What is BMI?</h2>
             <p>
                 This BMI calculator will give your estimated number. Enter your height and weight below, then click the "Submit" button. If your BMI is above 25, losing weight is a smart idea.
             </p>
-            <ul>
-                <li>Less than 18.5 = Underweight</li>
-                <li>Between 18.5 - 24.9 = Healthy Weight</li>
-                <li>Between 25 - 29.9 = Overweight</li>
-                <li>Over 30 = Obese</li>
+            <ul class="weight-list">
+                <li><span>Less than 18.5</span><span class="w">Underweight</span></li>
+                <li><span>Between 18.5 - 24.9</span><span class="w">Healthy Weight</span></li>
+                <li><span>Between 25 - 29.9</span><span class="w">Overweight</span></li>
+                <li><span>Over 30</span><span class="w">Obese</span></li>
             </ul>
             <div class="bmi-chart">
             <!-- <img src="https://medical.azureedge.net/images/0aa8713b-421f-445f-996a-0aed1695b5a2.jpg" alt=""> -->

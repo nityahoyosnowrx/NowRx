@@ -225,7 +225,26 @@
                     </div>
                 </div>
 
-
+                <!-- block -->
+                <div class="block">
+                    <div class="contentblock">
+                        <a href="<?= get_site_url(); ?>/bmi/">
+                            <figure>
+                                <picture class="lozad">
+                                    <source media="(max-width: 993px)" srcset="https://images.pexels.com/photos/53404/scale-diet-fat-health-53404.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2">
+                                    <source media="(min-width: 992px)" srcset="https://images.pexels.com/photos/53404/scale-diet-fat-health-53404.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2">
+                                    <img class="orbit-image lozad" height="500px" width="650px" alt="nowrx pharmacy delivery prescription refill calculator">
+                                 </picture>
+                            </figure>
+                            <h2 class="title">
+                                BMI Calculator
+                            </h2>
+                            <p>
+                                Find out when you need to refill your prescription at the pharmacy next with this prescription refill calculator.
+                            </p>
+                        </a>
+                    </div>
+                </div>
 
             </div>
         </div>
